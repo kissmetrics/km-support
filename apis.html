@@ -7,18 +7,4 @@ permalink: /apis/
 ---     
 <p>KISSmetrics provides an official API for several languages. For most users we recommend using the JavaScript Library. Please also consider using our <a href='/getting-started/ways-to-send-us-data'>other ways of sending us data</a>, as we are including direct integrations with several platforms like Mailchimp, Recurly, and your own MySQL database.</p>
 
-{% for page in site.categories.apis %}
-
-<ul class="summary" > 
-  <li>
-    <a href="{{page.url}}">
-      <h3>
-      {{ page.title }}
-      </h3>
-      <p>{{page.summary}}</p>
-    </a>
-  </li>
-</ul>
-
-
-{% endfor %}
+{% include summaries/apis_summary.html %}

@@ -99,6 +99,8 @@ This guide explained how to *read* a cohort report, but these articles will give
 * Dan Martell - "Cohort Metrics for Startups Revealed – Part I: Plain English". <http://500.co/2011/07/13/cohort-metrics-for-startups-revealed-part-i-plain-english/>
 * Dan Martell - "Cohort Metrics for Startups Revealed – Part Ii: Aged Groups". <http://500.co/2011/07/14/cohort-metrics-for-startups-revealed-part-ii-aged-groups/>
 
+{% include summaries/cohort_report_summary.html %}
+
 [full-options]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/cohort-report/full-options.png
 [report]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/cohort-report/graph.png
 [people]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/cohort-report/people.png

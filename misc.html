@@ -7,18 +7,4 @@ permalink: /misc/
 ---
 <p>Additional topics not covered elsewhere.</p>
 
-{% for page in site.categories.misc %}
-
-<ul class="summary" > 
-  <li>
-    <a href="{{page.url}}">
-      <h3>
-      {{ page.title }}
-      </h3>
-      <p>{{page.summary}}</p>
-    </a>
-  </li>
-</ul>
-
-
-{% endfor %}
+{% include summaries/misc_summary.html %}

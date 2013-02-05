@@ -1,0 +1,15 @@
+{% for page in site.categories.cohort-report %}
+
+<ul class="summary" > 
+  <li>
+    <a href="{{page.url}}">
+      <h3>
+      {{ page.title }}
+      </h3>
+      <p>{{page.summary}}</p>
+    </a>
+  </li>
+</ul>
+
+
+{% endfor %}

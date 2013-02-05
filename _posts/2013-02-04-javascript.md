@@ -39,8 +39,8 @@ The JavaScript library looks like this:
 
 Please see:
 
-* [@apis/common-methods] for information and examples on recording events, setting properties and identifying users.
-* [@javascript-specific] for information on our asynchronous API, tracking clicks, forms, multiple domains and other issues specific to the Javascript API
+* [Common Methods][common] for information and examples on recording events, setting properties and identifying users.
+* [JavaScript Library Specifics][js-specific] for information on our asynchronous API, tracking clicks, forms, multiple domains and other issues specific to the Javascript API
 
 ## Events Automatically Tracked
 
@@ -117,8 +117,13 @@ You may still find this information useful. If you have that information separat
 
 Our JavaScript library depends on cookies to work properly. Browsers do not let you set cookies in `localhost`, so please refer to our guide on [developing locally][local].
 
+{% include summaries/javascript_summary.html %}
+
 [utm]: /integrations/utm-variables#google-analytics-8217-auto-tagging-vs-manual-tagging
 [js-settings]: https://www.kissmetrics.com/product.js_settings
 [settings]:https://www.kissmetrics.com/settings
 [local]: /advanced/local-development
 [fields-not-tracked]: /apis/javascript/javascript-specific/protected-form-fields
+
+[common]: /apis/common-methods
+[js-specific]: /apis/javascript/javascript-specific

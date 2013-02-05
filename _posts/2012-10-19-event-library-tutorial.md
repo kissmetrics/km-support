@@ -53,4 +53,6 @@ loadKMTrackableVideo("53aa1d1fd5", 640, 400, "Events Library Introduction");
 </script>
 <br />
 
+{% include summaries/event_library_tutorial_summary.html %}
+
 [event-library]: https://www.kissmetrics.com/wizard

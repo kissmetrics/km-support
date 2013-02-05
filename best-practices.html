@@ -7,18 +7,4 @@ permalink: /best-practices/
 ---
 <p>Our Best Practices section lists some of the important events and properties you may want to track. Our <a href='/use-cases'>Use Cases</a> section can help give you ideas on how to utilize these individual events and report on what you're looking for.</p>
 
-{% for page in site.categories.best-practices %}
-
-<ul class="summary" > 
-  <li>
-    <a href="{{page.url}}">
-      <h3>
-      {{ page.title }}
-      </h3>
-      <p>{{page.summary}}</p>
-    </a>
-  </li>
-</ul>
-
-
-{% endfor %}
+{% include summaries/best_practices_summary.html %}

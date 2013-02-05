@@ -7,18 +7,4 @@ permalink: /use-cases/
 ---
 <p>This section takes you through use cases of using KISSmetrics, starting from determining what events and properties to track, to putting those events/properties together in the right reporting tools.</p>
 
-{% for page in site.categories.use-cases %}
-
-<ul class="summary" > 
-  <li>
-    <a href="{{page.url}}">
-      <h3>
-      {{ page.title }}
-      </h3>
-      <p>{{page.summary}}</p>
-    </a>
-  </li>
-</ul>
-
-
-{% endfor %}
+{% include summaries/use_cases_summary.html %}

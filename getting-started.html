@@ -7,18 +7,4 @@ permalink: /getting-started/
 ---
 <p>Here is a high-level overview of how KISSmetrics works and how to get started.</p>
 
-{% for page in site.categories.getting-started reversed %}
-
-<ul class="summary" > 
-  <li>
-    <a href="{{page.url}}">
-      <h3>
-      {{ page.title }}
-      </h3>
-      <p>{{page.summary}}</p>
-    </a>
-  </li>
-</ul>
-
-
-{% endfor %}
+{% include summaries/getting_started_summary.html %}

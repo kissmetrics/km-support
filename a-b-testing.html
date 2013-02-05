@@ -53,18 +53,4 @@ permalink: /a-b-testing/
 
 <p><img src='http://cl.ly/image/440D2p032k2g/B%20Results.png' alt='A/B Results' /></p>
 
-{% for page in site.categories.a-b-testing %}
-
-<ul class="summary" > 
-  <li>
-    <a href="{{page.url}}">
-      <h3>
-      {{ page.title }}
-      </h3>
-      <p>{{page.summary}}</p>
-    </a>
-  </li>
-</ul>
-
-
-{% endfor %}
+{% include summaries/AB_testing_summary.html %}

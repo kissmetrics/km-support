@@ -53,6 +53,8 @@ In your [site settings][site-settings], follow the smaller link in the Event Lib
 
 In your [site settings][site-settings], follow the smaller link in the Event Library section to "[View Total Counts][count]".
 
+{% include summaries/event_library_summary.html %}
+
 [site-settings]: https://www.kissmetrics.com/settings
 [event-library]: https://www.kissmetrics.com/wizard
 [auto-track]: apis/javascript#events-automatically-tracked
