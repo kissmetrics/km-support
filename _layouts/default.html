@@ -2,7 +2,11 @@
 <html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
   <head>
     <meta content='text/html; charset=utf-8' http-equiv='content-type' />
-    <title>KISSmetrics Documentation</title>
+    {% if page.title %}
+      <title>{{ page.title }} - KISSmetrics Documentation</title>
+    {% else %}
+      <title>KISSmetrics Documentation</title>
+    {% endif %}
     <link href='/css/screen.css' media='screen' rel='stylesheet' type='text/css' />
   </head>
 
