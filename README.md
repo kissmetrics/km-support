@@ -21,11 +21,7 @@ If you've used Github before, it's pretty straightforward to get started.
 * You can fork the repository if you're making only one or two changes
 * You can be added as a contributor to the repository, and clone it that way.
 
-## TODO
-
-Repository isn't final yet, but it will likely be at:
-
-[https://github.com/kissmetrics/km-support]() 
+Repository is at [https://github.com/kissmetrics/km-support]() 
 
 # 2. To run the server:
 
