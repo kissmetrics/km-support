@@ -5,6 +5,7 @@ title: "JavaScript Library"
 tags: []
 author: Eric Fung
 summary: Our JavaScript Library is our most full-featured library and is what we recommend for most users.
+permalink: /apis/javascript/
 ---
 Our Javascript Library is our most full-featured library and is what we recommend for most users. It has extra provisions for:
 

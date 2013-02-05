@@ -4,6 +4,7 @@ title: Event Library
 categories: tools
 author: Eric Fung
 summary: The Event Library lists all of your events. It also contains the Event Wizard, which lets you create new rules to record events without additional code changes.
+permalink: /tools/event-library/
 ---
 The [Event Library][event-library] lists all of your site's events. These are grouped into two categories:
 

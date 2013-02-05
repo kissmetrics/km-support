@@ -4,6 +4,7 @@ title: Events - Visits the URL
 categories: [tools, event-library]
 author: Eric Fung
 summary: Trigger events when someone visits a URL.
+permalink: /tools/event-library/events-url/
 ---
 ## Create the Event
 

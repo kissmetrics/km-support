@@ -4,6 +4,7 @@ title: Data Discrepancies
 categories: troubleshooting
 author: Eric Fung
 summary: How do I verify the accuracy of my reports?
+permalink: /troubleshooting/data-discrepancies/
 ---
 Trying to make sense of the amount of data you collect in KISSmetrics can be daunting, especially if you notice a difference between our data and data from your databases or another analytics platform. This page discusses the following:
 

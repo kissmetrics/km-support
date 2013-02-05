@@ -4,6 +4,7 @@ title: Power Report
 categories: tools
 author: Eric Fung
 summary: The Power Report lets you manipulate all of your events and properties in different ways, like a pivot table.
+permalink: /tools/power-report/
 ---
 **The Power Report is available to our customers on our [Advanced Plans][pricing].**
 
