@@ -5,7 +5,7 @@ title: "Testing: How to Verify KISSmetrics Is Working"
 tags: []
 author: Eric Fung
 summary: Learn how to test KISSmetrics and keep the test data separate from your "real" data. 
-permalink: /getting-started/testing-km/
+permalink: /getting-started/testing-km/index.html
 ---
 When you are starting out, we highly recommended that you set up a separate Test Site as a sandbox. That way, any events you create while testing will not interfere with the real data you collect from your Production site.
 

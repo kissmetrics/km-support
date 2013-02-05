@@ -4,7 +4,7 @@ title: Cohort Report
 categories: tools
 author: Eric Fung
 summary: The Cohort report provides a breakdown of the time it took people to do one event to doing another event.
-permalink: /tools/cohort-report/
+permalink: /tools/cohort-report/index.html
 ---
 Our cohort report shows you the people who progress from doing one event to doing another event. It also shows you if people are repeatedly doing a single event.
 

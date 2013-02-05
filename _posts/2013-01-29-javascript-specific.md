@@ -5,7 +5,7 @@ categories: [apis,javascript]
 tags: []
 author: Eric Fung
 summary: Information on extra capabilities of our JavaScript Library, in addition to the methods common to all APIs.
-permalink: /apis/javascript/javascript-specific/
+permalink: /apis/javascript/javascript-specific/index.html
 ---
 ## Quick Reference
 

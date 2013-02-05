@@ -4,7 +4,7 @@ title: Event Library
 categories: tutorial
 author: Lars Lofgren
 summary: The Event Library is used to register new events on your website without additional code changes.
-permalink: /tutorial/event-library-tutorial/
+permalink: /tutorial/event-library-tutorial/index.html
 ---
 In KISSmetrics, there are two types of events. Those that can easily be set up from within KISSmetrics and those that need help from a developer or engineer. The [Event Library][event-library] is perfect for the easy ones that you can set up right now without constantly adding code to your site.
 
