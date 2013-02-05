@@ -117,7 +117,7 @@ To quickly test your URL pattern without creating an event, you can open up your
     > KM.um("/beta/*");
     true
 
-[visits-the-url]: attachments/tools/event-library/visits-the-url.png
+[visits-the-url]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/event-library/visits-the-url.png
 [page-views]: /apis/javascript/events-automatically-tracked#page-views
 [js-settings]: https://www.kissmetrics.com/product.js_settings
 [wildcards]: /tools/event-library/events-url/wildcards

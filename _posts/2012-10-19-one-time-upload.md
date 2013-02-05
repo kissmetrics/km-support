@@ -48,6 +48,6 @@ Completed uploads will be archived, and you will be able to refer to when they w
 
 For the purpose of housekeeping, you can delete completed entries. Note that **this does not delete the events that were brought in from the CSV file.**
 
-[screenshot-1]: attachments/integrations/csv-import/csv-up-1.png
-[screenshot-2]: attachments/integrations/csv-import/csv-up-2.png
-[screenshot-3]: attachments/integrations/csv-import/csv-up-3.png
+[screenshot-1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/csv-up-1.png
+[screenshot-2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/csv-up-2.png
+[screenshot-3]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/csv-up-3.png

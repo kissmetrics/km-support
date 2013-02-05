@@ -156,4 +156,4 @@ If you expand the "Embed Type" box, you can expand the Advanced Options and swit
 	loadKMTrackableVideo("3f023d87a8", 640, 400, "My Wistia Video");
 	</script>
 	
-[wistia-embed]: attachments/how-tos/tracking-video/wistia-embed.png
+[wistia-embed]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/tracking-video/wistia-embed.png

@@ -59,4 +59,4 @@ mrtaft2      | ht@example.com | 1230768000
 [Attached is a sample .csv file][sample-csv] for reference.
 
 [pep]: /getting-started/people-events-properties
-[sample-csv]: attachments/integrations/csv-import/csv-import-sample.csv
+[sample-csv]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/csv-import-sample.csv

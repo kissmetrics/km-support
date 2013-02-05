@@ -117,7 +117,7 @@ You may still find this information useful. If you have that information separat
 
 Our JavaScript library depends on cookies to work properly. Browsers do not let you set cookies in `localhost`, so please refer to our guide on [developing locally][local].
 
-[utm]: /integrations/google-analytics#google-analytics-8217-auto-tagging-vs-manual-tagging
+[utm]: /integrations/utm-variables#google-analytics-8217-auto-tagging-vs-manual-tagging
 [js-settings]: https://www.kissmetrics.com/product.js_settings
 [settings]:https://www.kissmetrics.com/settings
 [local]: /advanced/local-development

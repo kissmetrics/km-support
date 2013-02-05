@@ -94,8 +94,8 @@ So for example, if your Mailchimp campaign links to `http://www.yoursite.com/lan
 [url]: /apis/url
 [url-builder]: /apis/url#url-builder
 
-[sskey1]: attachments/integrations/mailchimp/api-key-1.png
-[sskey2]: attachments/integrations/mailchimp/api-key-2.png
-[ssmc1]: attachments/integrations/mailchimp/mailchimp-1.png
-[ssmc2]: attachments/integrations/mailchimp/mailchimp-2.png
-[ssmc3]: attachments/integrations/mailchimp/mailchimp-3.png
+[sskey1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/mailchimp/api-key-1.png
+[sskey2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/mailchimp/api-key-2.png
+[ssmc1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/mailchimp/mailchimp-1.png
+[ssmc2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/mailchimp/mailchimp-2.png
+[ssmc3]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/mailchimp/mailchimp-3.png

@@ -106,14 +106,14 @@ CSV files that have been processed will be moved to a folder within your bucket:
 
 [aws]: https://aws.amazon.com
 [aws-logging]: http://docs.amazonwebservices.com/AmazonS3/latest/UG/index.html?ManagingBucketLogging.html
-[screenshot-1]: attachments/integrations/csv-import/csv-up-1.png
-[screenshot-2]: attachments/integrations/csv-import/csv-up-2.png
-[ss-bucket-1]: attachments/integrations/csv-import/recurring-bucket-1.png
-[ss-bucket-2]: attachments/integrations/csv-import/recurring-bucket-2.png
-[ss-bucket-3]: attachments/integrations/csv-import/recurring-bucket-3.png
-[ss-bucket-4]: attachments/integrations/csv-import/recurring-bucket-4.png
-[ss-bucket-5]: attachments/integrations/csv-import/recurring-bucket-5.png
-[ss-bucket-6]: attachments/integrations/csv-import/recurring-bucket-6.png
+[screenshot-1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/csv-up-1.png
+[screenshot-2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/csv-up-2.png
+[ss-bucket-1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/recurring-bucket-1.png
+[ss-bucket-2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/recurring-bucket-2.png
+[ss-bucket-3]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/recurring-bucket-3.png
+[ss-bucket-4]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/recurring-bucket-4.png
+[ss-bucket-5]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/recurring-bucket-5.png
+[ss-bucket-6]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/recurring-bucket-6.png
 
 [1]: http://www.kissmetrics.com/settings
 [2]: http://www.kissmetric.com/external_data

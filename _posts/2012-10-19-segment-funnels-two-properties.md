@@ -28,7 +28,7 @@ This updates the funnel to now show only people who have signed up for a Free pl
 
 Currently, you are unable to save this filter for your funnels. Also, if your filter happens to not return any results, please switch to a different report and switch back to the current report to clear the filter. We are working to further improve the ability to segment by more than one property, so thank you for your patience as we build on this feature.
 
-[ss1]: attachments/how-tos/segment-funnels-two-properties/1-funnel.png
-[ss2]: attachments/how-tos/segment-funnels-two-properties/2-add.png
-[ss3]: attachments/how-tos/segment-funnels-two-properties/3-define.png
-[ss4]: attachments/how-tos/segment-funnels-two-properties/4-results.png
+[ss1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/segment-funnels-two-properties/1-funnel.png
+[ss2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/segment-funnels-two-properties/2-add.png
+[ss3]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/segment-funnels-two-properties/3-define.png
+[ss4]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/segment-funnels-two-properties/4-results.png
