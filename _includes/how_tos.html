@@ -1,0 +1,12 @@
+<li>
+  <a href='/how-tos'>How To's, Examples, and Best Practices</a>
+  <ul>
+  
+  {% for page in site.categories.how-tos %}
+    <li>
+      <a href="{{page.url}}">{{ page.title }}</a>
+    </li>
+  {% endfor %}
+  
+  </ul>
+</li>

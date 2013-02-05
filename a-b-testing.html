@@ -1,0 +1,70 @@
+---
+layout: post
+title: "A/B Testing"
+tags: []
+author: Eric Fung
+permalink: /a-b-testing/
+---
+<p>A/B tests are statistical experiments that help you decide whether a change is actually making a significant impact on your product.</p>
+
+<p>To give a real example for a SaaS product, let's say you want to test the difference between two welcome emails that get sent out when a customer signs up for a trial.</p>
+
+<a name='example'> </a><h3>Example</h3>
+
+<p>Here's how it could play out:</p>
+
+<ol>
+<li>For new trial signups going forward, give half of your customers a long, detailed welcome email, and give the other half a shorter welcome email.</li>
+
+<li>Record which version they saw.</li>
+
+<li>Record whether these people end up paying for the full version. <strong><em>This is the key performance metric you're trying to improve with the test.</em></strong> The test answers: "Did the email version influence more people to convert?"</li>
+
+<li>Report on the results, comparing how the two conditions performed. Make sure enough people have run through the test to show that the results are actually due to the different emails, and not a result of chance.</li>
+</ol>
+
+<a name='what-every-a-b-test-needs'> </a><h2>What Every A/B Test Needs</h2>
+
+<p>You can run an A/B test using KISSmetrics' JavaScript Library, or set up the test through a homebrew solution on your servers, or use a service like Optimizely, Visual Website Optimizer or Google Website Optimizer.</p>
+
+<p>Regardless of how the test is run, <strong>every A/B test needs the same three things</strong>:</p>
+
+<ol>
+<li>Each visitor is <em>randomly assigned</em> to a variation, either A or B.</li>
+
+<li>Make sure that the visitor <em>always sees either only A or only B</em>. Otherwise, your results are tainted if someone ends up seeing more than one variation.</li>
+
+<li><em>Record which variation this visitor saw</em>, so that you can refer to it when checking the results of the A/B test.</li>
+</ol>
+
+<p>That covers the test itself. There's one last thing:</p>
+
+<ul>
+<li><em>Record the end goal that you are interested in</em>. Are you interested in increasing signups with this test? Measure Signups. Are you interested in whether people continue to return to your site? Measure the number of Site Visits.</li>
+</ul>
+
+<a name='i-get-it-how-do-i-get-started-with-running-a-test-'> </a><h2>I get it. How do I get started with running a test?</h2>
+
+<p>The three articles below will help you pick the right solution for you, whether that's using the KISSmetrics JavaScript Library, or using another testing platform, or adding KISSmetrics to your in-house testing code.</p>
+
+<a name='viewing-results'> </a><h2>Viewing Results</h2>
+
+<p>If you've followed the articles below to get your test started, then whichever variation each visitor is assigned to will be saved to a KISSmetrics property. You can then segment any report by that property, perhaps like this funnel:</p>
+
+<p><img src='http://cl.ly/image/440D2p032k2g/B%20Results.png' alt='A/B Results' /></p>
+
+{% for page in site.categories.a-b-testing %}
+
+<ul class="summary" > 
+  <li>
+    <a href="{{page.url}}">
+      <h3>
+      {{ page.title }}
+      </h3>
+      <p>{{page.summary}}</p>
+    </a>
+  </li>
+</ul>
+
+
+{% endfor %}

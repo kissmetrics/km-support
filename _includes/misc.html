@@ -1,0 +1,12 @@
+<li>
+  <a href='/misc'>Miscellaneous</a>
+  <ul>
+  
+  {% for page in site.categories.misc %}
+    <li>
+      <a href="{{page.url}}">{{ page.title }}</a>
+    </li>
+  {% endfor %}
+  
+  </ul>
+</li>

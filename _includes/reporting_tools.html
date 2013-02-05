@@ -1,0 +1,12 @@
+<li>
+  <a href="/tools">Reporting Tools</a>
+  <ul>
+  
+  {% for page in site.categories.tools %}
+    <li>
+      <a href="{{page.url}}">{{ page.title }}</a>
+    </li>
+  {% endfor %}
+  
+  </ul>
+</li>

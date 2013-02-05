@@ -1,0 +1,24 @@
+---
+layout: post
+title: "How To's, Examples, and Best Practices"
+tags: []
+author: Eric Fung
+permalink: /how-tos/
+---
+<p>Want to contribute something how you're using KISSmetrics? Feel free to <a href='/contact-us'>contact us</a>!</p>
+
+{% for page in site.categories.how-tos %}
+
+<ul class="summary" > 
+  <li>
+    <a href="{{page.url}}">
+      <h3>
+      {{ page.title }}
+      </h3>
+      <p>{{page.summary}}</p>
+    </a>
+  </li>
+</ul>
+
+
+{% endfor %}

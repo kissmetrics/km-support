@@ -1,0 +1,26 @@
+---
+layout: post
+title: "External Integrations"
+tags: []
+author: Eric Fung
+permalink: /integrations/
+---
+<p>KISSmetrics offers the ability to add data from other external data sources into KISSmetrics.</p>
+    
+<p>If your platform is not listed, please see if your platform has a data-out API - for example, <a href='https://dev.twitter.com/docs/api'>Twitter</a> and <a href='http://api.shopify.com/'>Shopify</a> provide APIs for retrieving data. If you can get data out of your platform, then you can potentially <a href='/advanced/importing-data'>import it back into KISSmetrics</a>.</p>
+
+{% for page in site.categories.integrations %}
+
+<ul class="summary" > 
+  <li>
+    <a href="{{page.url}}">
+      <h3>
+      {{ page.title }}
+      </h3>
+      <p>{{page.summary}}</p>
+    </a>
+  </li>
+</ul>
+
+
+{% endfor %}

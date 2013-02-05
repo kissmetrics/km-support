@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Tutorials"
+tags: []
+author: Eric Fung
+permalink: /tutorial/
+---
+<p>Here are various video demonstrations of KISSmetrics to help you get familiar with the product.</p>
+
+{% for page in site.categories.tutorial %}
+
+<ul class="summary" > 
+  <li>
+    <a href="{{page.url}}">
+      <h3>
+      {{ page.title }}
+      </h3>
+      <p>{{page.summary}}</p>
+    </a>
+  </li>
+</ul>
+
+
+{% endfor %}

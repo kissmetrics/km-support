@@ -1,0 +1,12 @@
+<li>
+  <a href='/advanced'>Advanced</a>
+  <ul>
+  
+  {% for page in site.categories.advanced %}
+    <li>
+      <a href="{{page.url}}">{{ page.title }}</a>
+    </li>
+  {% endfor %}
+  
+  </ul>
+</li>

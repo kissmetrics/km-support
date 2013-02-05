@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Reporting Tools"
+tags: []
+author: Eric Fung
+permalink: /tools/
+---
+<p>This section contains information explaining how our reporting tools work and their calculation methods.</p>
+
+{% for page in site.categories.tools %}
+
+<ul class="summary" > 
+  <li>
+    <a href="{{page.url}}">
+      <h3>
+      {{ page.title }}
+      </h3>
+      <p>{{page.summary}}</p>
+    </a>
+  </li>
+</ul>
+
+
+{% endfor %}

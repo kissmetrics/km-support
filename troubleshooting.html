@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Troubleshooting"
+tags: []
+author: Eric Fung
+permalink: /troubleshooting/
+---    
+<p>If your issue isn't covered here, please don't hesitate to <a href='/contact-us'>contact us</a>.
+
+{% for page in site.categories.troubleshooting %}
+
+<ul class="summary" > 
+  <li>
+    <a href="{{page.url}}">
+      <h3>
+      {{ page.title }}
+      </h3>
+      <p>{{page.summary}}</p>
+    </a>
+  </li>
+</ul>
+
+
+{% endfor %}

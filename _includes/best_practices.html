@@ -1,0 +1,12 @@
+<li>
+  <a href='/best-practices'>Best Practices</a>
+  <ul>
+  
+  {% for page in site.categories.best-practices %}
+    <li>
+      <a href="{{page.url}}">{{ page.title }}</a>
+    </li>
+  {% endfor %}
+  
+  </ul>
+</li>

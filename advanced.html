@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Advanced"
+tags: []
+author: Eric Fung
+permalink: /advanced/
+---
+<p>After you are familiar with the basics of KISSmetrics, you might want to explore some of KISSmetrics more advanced features. If you have a use case that isn't covered here or in the APIs section, please <a href='/contact-us'>contact us</a>.</p>
+
+{% for page in site.categories.advanced %}
+
+<ul class="summary" > 
+  <li>
+    <a href="{{page.url}}">
+      <h3>
+      {{ page.title }}
+      </h3>
+      <p>{{page.summary}}</p>
+    </a>
+  </li>
+</ul>
+
+
+{% endfor %}

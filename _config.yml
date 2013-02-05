@@ -1,0 +1,4 @@
+auto: true
+permalink: none
+markdown: rdiscount
+exclude: s3_upload.rb

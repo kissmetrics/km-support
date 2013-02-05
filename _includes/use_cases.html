@@ -1,0 +1,12 @@
+<li>
+  <a href='/use-cases'>Use Cases</a>
+  <ul>
+  
+  {% for page in site.categories.use-cases %}
+    <li>
+      <a href="{{page.url}}">{{ page.title }}</a>
+    </li>
+  {% endfor %}
+  
+  </ul>
+</li>
