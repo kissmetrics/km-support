@@ -11,7 +11,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, 
 /* GENERAL: =general
 ------------------------------------------------------------*/
 body {
-  background: #4c4c4c url(../images/background.png) 0 0 repeat;
+  background: #4c4c4c url(/images/background.png) 0 0 repeat;
   font-family: 'Arial','Helvetica',sans-serif;
 }
 #wrapper {
@@ -21,7 +21,7 @@ body {
   width: 960px
 }
 .col {
-  background: transparent url(../images/fade.png) top left repeat-y;
+  background: transparent url(/images/fade.png) top left repeat-y;
   float: left;
   margin: 0 0 15px 0;
   padding: 25px 73px 15px 30px;
@@ -29,14 +29,14 @@ body {
   width: 576px; /*680-73-30*/
 }
 .col.side {
-  /*background: transparent url(../images/fade_top.png) top left no-repeat;*/
+  /*background: transparent url(/images/fade_top.png) top left no-repeat;*/
   border: none;
   /*margin-left: -43px;*/
   padding: 15px 30px 15px 21px;
   width: 230px; /*280-51*/
 }
 #fader {
-  background: transparent url(../images/fade_bottom.png) 0 0 no-repeat;
+  background: transparent url(/images/fade_bottom.png) 0 0 no-repeat;
   bottom: 0;
   height: 43px;
   position: absolute;
@@ -44,7 +44,7 @@ body {
   width: 43px;
 }
 hr {
-  background: transparent url(../images/hr.png) 0 50% repeat-x;
+  background: transparent url(/images/hr.png) 0 50% repeat-x;
   border: none;
   clear: both;
   padding: 10px 0;
@@ -74,7 +74,7 @@ img {
   width: 160px;
 }
 #header h1 a {
-  background: url(../images/km_logo.png) 0 0 no-repeat;
+  background: url(/images/km_logo.png) 0 0 no-repeat;
   display: block;
   float: left;
   height: 22px;
@@ -106,7 +106,7 @@ img {
   padding: 14px 30px;
 }
 #crumbs li {
-  background: transparent url(../images/crumb_tick.png) 0 50% no-repeat;
+  background: transparent url(/images/crumb_tick.png) 0 50% no-repeat;
   color: #a1a1a1;
   float: left;
   font: bold 12px/normal 'Arial','Helvetica',sans-serif;
@@ -245,7 +245,7 @@ img {
   margin: 0;
 }
 .col.side ul li {
-  background: transparent url(../images/hr.png) 0 0 repeat-x;
+  background: transparent url(/images/hr.png) 0 0 repeat-x;
   display: block;
   font: bold 14px/normal 'Helvetica','Arial',sans-serif;
   margin-top: 20px;
@@ -380,7 +380,7 @@ img {
   outline: none;
 }
 #search_form a {
-  background: #d1d1d1 url(../images/search_icon.png) 50% 50% no-repeat;
+  background: #d1d1d1 url(/images/search_icon.png) 50% 50% no-repeat;
   border-top-right-radius: 22px;
   border-bottom-right-radius: 22px;
   -webkit-border-top-right-radius: 22px;
@@ -397,7 +397,7 @@ img {
 /* CTA: =cta
 ------------------------------------------------------------*/
 #cta {
-  background: #79b454 url(../images/cta_bg.png) 0 0 repeat;
+  background: #79b454 url(/images/cta_bg.png) 0 0 repeat;
   border: 6px solid #5a5a5a;
   display: block;
   padding: 17px;
@@ -445,7 +445,7 @@ img {
   padding: 12px 47px 11px 16px;
 }
 .col.side #cta .button .arrow {
-  background: transparent url(../images/button_arrow.png) 0 0 no-repeat;
+  background: transparent url(/images/button_arrow.png) 0 0 no-repeat;
   display: block;
   height: 19px;
   margin-top: -9px;
@@ -465,7 +465,7 @@ img {
   margin: 0;
 }
 .col #search_results li {
-  background: transparent url(../images/hr.png) bottom left repeat-x;
+  background: transparent url(/images/hr.png) bottom left repeat-x;
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
