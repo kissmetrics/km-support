@@ -35,7 +35,7 @@ There are some events, especially Revenue-related events, where it would be very
 1. You have a definitive source of data (your own database) on which to ground your KISSmetrics data.
 2. Our server-side libraries include mechanisms for retrying the sending of data, if for whatever reason our tracking servers did not receive everything on the first attempt.
 
-You can refer to this [article for combining data from our JavaScript Library with our other data libraries][client-server].
+You can refer to this [article for combining data from our JavaScript Library with our other data libraries][jsid].
 
 # Steps For Investigation
 
@@ -93,7 +93,7 @@ If there are any known site-wide issues, we will post a notice to [status.kissme
 [event-count]: https://www.kissmetrics.com/product.event_prop_breakdown
 [whitepapers]: http://www.advanced-web-metrics.com/docs/accuracy-whitepaper.pdf
 
-[client-server]: /advanced/server-client-side-integration
+[jsid]: /apis/javascript/javascript-identities
 
 [ways]: /getting-started/ways-to-send-us-data
 [auto-track]: /apis/javascript#events-automatically-tracked

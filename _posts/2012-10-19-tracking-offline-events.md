@@ -22,5 +22,5 @@ If you have a server that logs when such events occur, you can use one of our se
 We now allow you to upload `.csv` files to let you add event data that any of our other APIs did not capture. Please review the details at our [CSV Import guide][csv].
 
 [mysql]: /integrations/mysql
-[importing]: /advanced/importing_data
+[importing]: /advanced/importing-data
 [csv]: /integrations/csv-import

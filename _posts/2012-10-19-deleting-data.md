@@ -51,5 +51,5 @@ Sorry that there's not an easier way on our side.... we are looking into better 
 [revenue]: https://www.kissmetrics.com/revenue
 [mapping]: https://www.kissmetrics.com/mapping
 [new-site]: https://www.kissmetrics.com/product.new
-[data-export]: http://support.kissmetrics.com/apis/data/data-export-setup
-[import]: /advanced/importing_data
+[data-export]: /apis/data/data-export-setup
+[import]: /advanced/importing-data

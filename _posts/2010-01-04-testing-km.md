@@ -64,7 +64,7 @@ If you suspect that KISSmetrics’ reports disagrees with the data you were expe
 [network-ss]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/testing-km/network.png
 [myactivity-ss]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/testing-km/my-activity.png
 
-[permissions]: /getting-started/team-permissions
+[permissions]: /how-tos/team-permissions
 
 [edit-site]: https://www.kissmetrics.com/product.edit
 

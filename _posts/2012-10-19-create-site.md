@@ -17,4 +17,4 @@ You can generate more than one API key for your KISSmetrics account if you're ma
 *Note: You need to be the [Owner][permissions] of the account to be able to create a new site.*
 
 [screenshot]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/create-site/create-site.png
-[permissions]: /getting-started/team-permissions
+[permissions]: /how-tos/team-permissions

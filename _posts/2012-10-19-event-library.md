@@ -55,7 +55,7 @@ In your [site settings][site-settings], follow the smaller link in the Event Lib
 
 [site-settings]: https://www.kissmetrics.com/settings
 [event-library]: https://www.kissmetrics.com/wizard
-[auto-track]: /apis/javascript/events-automatically-tracked
+[auto-track]: apis/javascript#events-automatically-tracked
 
 [categories]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/event-library/event-categories.png
 

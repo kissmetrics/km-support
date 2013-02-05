@@ -18,7 +18,5 @@ Below are videos that will help you install the JavaScript Library on specific p
 
 [settings]: https://www.kissmetrics.com/settings
 [top-v-bottom]: /troubleshooting/top-vs-bottom
-
-
-[auto]: http://support.kissmetrics.com/apis/javascript/events-automatically-tracked
-[tutorial]: http://support.kissmetrics.com/tutorial
+[auto]: /apis/javascript#events-automatically-tracked
+[tutorial]: /tutorial
