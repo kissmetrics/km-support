@@ -25,7 +25,7 @@ The `record` method is the most commonly used method. When a `record` command is
 
 If you do not pass in a name, calling `record` is identical to calling `set`. See below for examples.
 
-Our [JavaScript Library](/apis/javascript/javascript-specific) has additional methods to let you record events after a certain trigger: when an element gets clicked, or when a form is submitted. 
+Our [JavaScript Library][js] has additional methods to let you record events after a certain trigger: when an element gets clicked, or when a form is submitted. 
 
 ## `set`
 
@@ -48,7 +48,7 @@ Here's an example of an `identify` call in a Ruby app that obtains the current v
 
 `_kmq.push(['identify', '<%=SessionDetails.UserName%>']);`
 
-For more information on how to handle identities, please refer to this [Identity Management guide](/getting-started/identity-management).
+For more information on how to handle identities, please refer to this [Identity Management guide][id].
 
 ## `alias`
 
@@ -125,4 +125,8 @@ Below are some examples for the standard API. Please see APIs for supported lang
 
 Please see [API Tips][tips] for more information.
 
+[js]: /apis/javascript/javascript-specific
+[id]: /getting-started/understanding-identities
 [tips]: /apis/api-tips
+[js-ids]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/understanding-identities/js-ids.pdf
+[integration]: /integrations
