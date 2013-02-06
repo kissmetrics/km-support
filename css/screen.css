@@ -69,16 +69,16 @@ img {
 #header h1 {
   float: left;
   margin-right: 10px;
-  padding: 20px 0;
+  padding: 18px 0;
   text-indent: -9999px;
-  width: 160px;
 }
 #header h1 a {
   background: url(/images/km_logo.png) 0 0 no-repeat;
+  background-size: 198px 26px;
   display: block;
   float: left;
-  height: 22px;
-  width: 160px;
+  height: 26px;
+  width: 198px;
 }
 #header a.km {
   color: #9ecee1;
