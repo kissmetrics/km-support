@@ -125,14 +125,6 @@ For example:
 Now below this, let's add our tracking calls.
 
     <script>
-    /** 
-     * Helper function for loading KM trackable videos.
-     * 
-     * wistia_object - The embedded Wistia object. Useful for
-     *   tracking different videos on the same page.
-     * name - The name of the video. This can be anything and
-        will be appended to the event logged in KM.
-     */
     function loadKMTrackableVideo (wistia_object, name) {
       // Add tracking to 'play', 'pause', and 'end' events.
       wistia_object.bind("play", function() {
@@ -148,5 +140,10 @@ Now below this, let's add our tracking calls.
 
     loadKMTrackableVideo(wistiaEmbed, "Sample Wistia Video");
     </script>
-	
+
+**The last line `loadKMTrackableVideo(wistiaEmbed, "Sample Wistia Video");` is the piece you need to modify:**
+
+* `wistiaEmbed` refers to the `wistiaEmbed` object. This does not have to change unless you are embedding several Wistia videos on the same page.
+* "Sample Wistia Video" refers to the name of the video. This will be appended to the event that is logged in KM.
+
 [wistia-embed]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/tracking-video/wistia-embed.png
