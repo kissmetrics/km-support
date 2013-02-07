@@ -6,8 +6,8 @@ You'll need a version of Ruby (we'll use 1.9.3 for the sake of example) and bund
 
 Let's start by installing GCC and RVM:
 
-* Newer versions of xCode do not provide a compatible Ruby compiler. Install this bundle to get gcc-4.2: https://github.com/kennethreitz/osx-gcc-installer
-* RVM: https://rvm.io/
+* Newer versions of xCode do not provide a compatible Ruby compiler. Install this bundle to get gcc-4.2: [https://github.com/kennethreitz/osx-gcc-installer]()
+* RVM: [https://rvm.io/]()
 
 Now in a terminal:
 
@@ -27,13 +27,13 @@ Repository is at [https://github.com/kissmetrics/km-support]()
 
 `jekyll --server`
 
-Then navigate to http://localhost:4000.
+Then navigate to [http://localhost:4000]().
 
 # 3. Post creation
 
 * Each article is written in [Markdown](http://daringfireball.net/projects/markdown/).
 * No `menu.txt` or `redirects.txt` file to worry about this time.
-* All new files go into the `_post` folder and the filenames need to be formated a specific way (2013-01-01-foo-bar.md).
+* All new files go into the `_post` folder and the filenames need to be formated a specific way (`2013-01-01-foo-bar.md`).
 
 Because of this, we have a Rake task available. Post creation is automated with the command `rake post`, which you use if you're in the project directory. You can also specify options on the command line as follows:
 
@@ -42,17 +42,37 @@ Because of this, we have a Rake task available. Post creation is automated with 
 
 This fills in some attributes each post should have, which we'll discuss below.
 
+## Compress Images
+
+If you're putting up new images, you should compress them to minimize the amount of bandwidth used. We've been using [http://imageoptim.com/]().
+
 ## Uploading Files
 
-For screenshots and attachments, we use S3 for storing images to be served. To upload a file use the `s3_upload.rb` script.
+For screenshots and attachments, we use S3 for storing images to be served. 
 
-You will first need to create a file `~/.amazon_keys` that holds your AWS secret keys (https://portal.aws.amazon.com/gp/aws/securityCredentials). Steve Cox can provide credentials and then you will need to export these variables.
+### Get Amazon Keys
 
-    $ cat ~/.amazon_keys
-    export AMAZON_ACCESS_KEY_ID='abcdefghijklmnop'
-    export AMAZON_SECRET_ACCESS_KEY='1234567891012345'
+You will first need to create a file `~/.amazon_keys` that holds your [AWS secret keys](https://portal.aws.amazon.com/gp/aws/securityCredentials). Steve Cox can provide credentials.
 
-If you're putting up new images, Derek suggests to compress them as much as possible so they take less bandwidth to serve out. We're using http://imageoptim.com/ for that.
+Here's a quick way to add them in:
+
+    echo "export AMAZON_ACCESS_KEY_ID='abcdefghijklmnop'" >> ~/.amazon_keys
+    echo "export AMAZON_SECRET_ACCESS_KEY='1234567891012345'" >> ~/.amazon_keys
+    echo "source ~/.amazon_keys" >> ~/.bashrc
+
+That last line has you source `.amazon_keys` into your bash environment. If you're not using bash, update the appropriate file.
+
+### Using `s3_upload.rb`
+
+Here's how to use the uploader script. Suppose you want the image URL to be:
+
+    https://s3.amazonaws.com/kissmetrics-support-files/assets/infographics/an-infographic.png
+
+Run this command:
+
+    ./s3_upload.rb --type=infographics /location/to/an-infographic.png
+
+To explain, you're passing the folder structure as part of the Type option, so that it'll be organized within `https://s3.amazonaws.com/kissmetrics-support-files/assets/`.
 
 # What makes up a post?
 
@@ -73,7 +93,7 @@ Multiple categories looks like `[getting-started, testing-km]`. This would put t
 
 4. Tags are yet another way to group similar articles. We haven't started using them but it's a good idea to prepare to.
 5. Author: who's writing? The "post" layout is acknowledges who the author is as more and more people contribute articles.
-6. Summary: in each "Category Index" ([support.kissmetrics.com/getting-started.html](support.kissmetrics.com/getting-started.html) for example), the summary appears below each title.
+6. Summary: in each "Category Index" ([support.kissmetrics.com/getting-started.html]() for example), the summary appears below each title.
 
 # 4. Commit Changes
 
@@ -94,7 +114,7 @@ Once you push, Github updates the site almost instantly.
 
 ## The Jekyll Wiki
 
-Here is a link: https://github.com/mojombo/jekyll
+Here is a link: [https://github.com/mojombo/jekyll]()
 
 ## Site Does Not Build
 

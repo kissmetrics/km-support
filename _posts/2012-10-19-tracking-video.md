@@ -5,7 +5,7 @@ categories: how-tos
 author: Eric Fung
 summary: Use our JavaScript Library to record views of videos embedded on your site.
 ---
-Below are examples of using the [YouTube](tracking-video#youtube), [Vimeo](tracking-video#vimeo), and [Wistia](tracking-video#wistia) JavaScript Librarys in conjunction with KISSmetrics to record certain video events:
+Below are examples of using the [YouTube](#youtube), [Vimeo](#vimeo), and [Wistia](#wistia) JavaScript Libraries in conjunction with KISSmetrics to record certain video events:
 
 * Played Video
 * Paused Video
@@ -104,56 +104,49 @@ Below are examples of using the [YouTube](tracking-video#youtube), [Vimeo](track
 
 ## Wistia
 
-If you expand the "Embed Type" box, you can expand the Advanced Options and switch to using the Wistia API rather than the iFrame method. Use this to check your video's ID.
+If you expand the "Embed Type" box, you can expand the Advanced Options and switch to using the Wistia API rather than the iFrame method. Copy/paste this into your page.
 
 ![Wistia Embed][wistia-embed]
 
-    <!--
-	Create an empty div where the video will live.
-	Note the video ID is added at the end to prevent conflicts
-	and allow multiple videos being tracked.
-	-->
-	<div id="wistia_3f023d87a8"></div>
+For example:
 
-	<!-- Include the Wistia JS API -->
-	<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-	</script>
+    <div id="wistia_123456abc" class="wistia_embed" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div>
+    <script charset="ISO-8859-1" src="http://fast.wistia.com/static/concat/E-v1.js"></script>
+    <script>
+    wistiaEmbed = Wistia.embed("123456abc", {
+      version: "v1",
+      videoWidth: 640,
+      videoHeight: 400,
+      volumeControl: true,
+      controlsVisibleOnLoad: true
+    });
+    </script>
 
-	<script>
+Now below this, let's add our tracking calls.
 
-	/** 
-	 * Helper function for loading KM trackable videos.
-	 * 
-	 * id     - The Wistia video ID
-	 * width  - The player width
-	 * height - The player height
-	 * name   - The name of the video. This can be anything and
-	    will be appended to the event logged in KM.
-	 */
+    <script>
+    /** 
+     * Helper function for loading KM trackable videos.
+     * 
+     * wistia_object - The embedded Wistia object. Useful for
+     *   tracking different videos on the same page.
+     * name - The name of the video. This can be anything and
+        will be appended to the event logged in KM.
+     */
+    function loadKMTrackableVideo (wistia_object, name) {
+      // Add tracking to 'play', 'pause', and 'end' events.
+      wistia_object.bind("play", function() {
+        _kmq.push(['record', 'Played video - ' + name]);
+      });
+      wistia_object.bind("pause", function() {
+        _kmq.push(['record', 'Paused video - ' + name]);
+      });
+      wistia_object.bind("end", function() {
+        _kmq.push(['record', 'Finished video - ' + name]);
+      });
+    }
 
-	function loadKMTrackableVideo (id, width, height, name) {
-		wistiaEmbed = Wistia.embed(id, {
-		  videoWidth: width,
-		  videoHeight: height,
-		  controlsVisibleOnLoad: true
-		});
-
-		// Begin binding KISSmetrics tracking
-		wistiaEmbed.bind("play", function() {
-			_kmq.push(['record', 'Played video - ' + name]);
-		});
-
-		wistiaEmbed.bind("pause", function() {
-			_kmq.push(['record', 'Paused video - ' + name]);
-		});
-
-		wistiaEmbed.bind("end", function() {
-			_kmq.push(['record', 'Finished video - ' + name]);
-		});
-
-	}
-
-	loadKMTrackableVideo("3f023d87a8", 640, 400, "My Wistia Video");
-	</script>
+    loadKMTrackableVideo(wistiaEmbed, "Sample Wistia Video");
+    </script>
 	
 [wistia-embed]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/tracking-video/wistia-embed.png
