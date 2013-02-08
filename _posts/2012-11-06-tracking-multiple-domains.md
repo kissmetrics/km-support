@@ -97,4 +97,4 @@ Whenever possible, we recommend that you track different domains separately by [
 [create]: /how-tos/create-site
 [alias]: /apis/common-methods#alias
 [js-settings]: https://www.kissmetrics.com/product.js_settings
-[include-host]: https://s3.amazonaws.com/kissmetrics-support-files/assets/apis/javascript/tracking-multiple-domains/include-host.png
+[include-host]: https://s3.amazonaws.com/kissmetrics-support-files/assets/apis/include-host.png
