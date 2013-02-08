@@ -21,27 +21,18 @@ body {
   width: 960px
 }
 .col {
-  /* background: transparent url(/images/fade.png) top left repeat-y; */
+  border-left: 1px solid #eee;
   float: left;
-  margin: 0 0 15px 0;
-  padding: 25px 73px 15px 30px;
+  margin-left: -1px;
+  padding: 30px;
   position: relative;
-  width: 576px; /*680-73-30*/
+  width: 620px; /*680-60*/
 }
 .col.side {
-  /*background: transparent url(/images/fade_top.png) top left no-repeat;*/
   border: none;
-  /*margin-left: -43px;*/
-  padding: 15px 30px 15px 21px;
-  width: 230px; /*280-51*/
-}
-#fader {
-  /* background: transparent url(/images/fade_bottom.png) 0 0 no-repeat; */
-  bottom: 0;
-  height: 43px;
-  position: absolute;
-  right: 0;
-  width: 43px;
+  border-right: 1px solid #eee;
+  padding: 30px;
+  width: 219px; /*280-60-1*/
 }
 hr {
   background: transparent url(/images/hr.png) 0 50% repeat-x;
