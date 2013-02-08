@@ -12,7 +12,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, 
 ------------------------------------------------------------*/
 body {
   background: #4c4c4c url(/images/background.png) 0 0 repeat;
-  font-family: 'Arial','Helvetica',sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
 }
 #wrapper {
   background: #fff;
@@ -100,7 +100,9 @@ img {
   background: transparent url(/images/crumb_tick.png) 0 50% no-repeat;
   color: #a1a1a1;
   float: left;
-  font: bold 12px/normal 'Arial','Helvetica',sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: normal;
   margin-left: 8px;
   padding-left: 11px;
   text-shadow: 1px 1px 1px #fff;
@@ -122,7 +124,8 @@ img {
 ------------------------------------------------------------*/
 .col h1 {
   color: #454545;
-  font: normal 30px/normal "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
   margin-bottom: 20px;
 }
 .col h1.intro_title {
@@ -130,17 +133,17 @@ img {
 }
 .col h2 {
   color: #000;
-  font: bold 18px/normal "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 18px;
   margin-bottom: 12px;
 }
 .col h3 {
   color: #000;
-  font: bold 15px/normal "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 15px;
   margin-bottom: 12px;
 }
 .col h4 {
   color: #000;
-  font: bold 13px/normal "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 13px;
   margin-bottom: 12px;
 }
 .col p {
@@ -205,12 +208,12 @@ img {
   font: 'Courier', monospace;
 }
 
-.col table {
+table {
   border-collapse: collapse;
   margin-bottom: 20px;
   width: 100%;
 }
-.col table th {
+table th {
   background-color: #eee;
   border: 1px solid #e5e5e5;
   color: #454545;
@@ -218,56 +221,60 @@ img {
   padding: 10px;
   text-align: left;
 }
-.col table td {
+table td {
   border: 1px solid #e5e5e5;
   color: #656565;
   font-size: 13px;
   padding: 10px;
 }
 
-.col blockquote {
+blockquote {
   border-left: 4px solid #e5e5e5;
   margin: 0 0 20px 15px;
   padding: 2px 0 0 8px;
 }
 
-.col.side ul {
+.side ul {
   list-style: none;
   margin: 0;
 }
-.col.side ul li {
-  background: transparent url(/images/hr.png) 0 0 repeat-x;
+.side ul li {
+  border-top: 1px solid #eee;
   display: block;
-  font: bold 14px/normal 'Helvetica','Arial',sans-serif;
-  margin-top: 20px;
-  padding-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 20px -30px 0 -30px;
+  padding: 20px 30px 0 30px;
 }
-.col.side ul li a {
+.side ul li a {
   color: #6a6a6a;
   text-decoration: none;
 }
-.col.side ul li a:hover {
+.side ul li a:hover {
   text-decoration: underline;
 }
-.col.side ul ul {
+.side ul ul {
   margin-top: 10px;
 }
-.col.side ul ul li {
-  background: none;
+.side ul ul li {
+  border: none;
   color: #909191;
-  font: normal 12px/18px 'Helvetica','Arial',sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 18px;
   margin: 0 0 4px 0;
   padding: 0;
 }
-.col.side ul ul li a {
-  
+.side ul ul li a {
   color: #388da6;
-  font: normal 12px/18px 'Helvetica','Arial',sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 18px;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
-.col.side ul ul li a:hover {
+.side ul ul li a:hover {
   text-decoration: underline;
 }
 
@@ -292,7 +299,9 @@ img {
 
 .col .summary a h3 {
   color: #388da6;
-  font: normal 26px/normal "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 26px;
+  font-weight: normal;
+  line-height: normal;
   margin-bottom: 2px;
   text-decoration: none;
 }
@@ -332,7 +341,9 @@ img {
 #search_form label {
   color: #999;
   cursor: text;
-  font: normal 12px/12px 'Helvetica', 'Arial', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 12px;
   height: 11px;
   left: 0;
   padding: 9px 13px 7px 13px;
@@ -383,70 +394,6 @@ img {
   height: 31px;
   text-indent: -9999em;
   width: 33px;
-}
-
-/* CTA: =cta
-------------------------------------------------------------*/
-#cta {
-  background: #79b454 url(/images/cta_bg.png) 0 0 repeat;
-  border: 6px solid #5a5a5a;
-  display: block;
-  padding: 17px;
-  text-align: center;
-  text-decoration: none;
-}
-.col.side #cta h3 {
-  color: #fff;
-  font: bold 18px/24px "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif;
-  font-stretch: condensed;
-  margin-bottom: 8px;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-}
-.col.side #cta p {
-  color: #e1ffb1;
-  font: normal 14px/22px "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif;
-  font-stretch: condensed;
-  margin-bottom: 25px;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-}
-.col.side #cta p.buttons {
-  margin-bottom: 12px;
-}
-.col.side #cta .button {
-  border-bottom: 1px solid rgba(255,255,255,.2);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  display: block;
-  font: bold 16px/19px 'Helvetica','Arial',sans-serif;
-  color: #fff;
-  position: relative;
-  text-decoration: none;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.6);
-}
-.col.side #cta .button .inner {
-  background: #313131;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  box-shadow: 0 1px 2px rgba(0,0,0,.9) inset;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.9) inset;
-  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.9) inset;
-  display: inline-block;
-  padding: 12px 47px 11px 16px;
-}
-.col.side #cta .button .arrow {
-  background: transparent url(/images/button_arrow.png) 0 0 no-repeat;
-  display: block;
-  height: 19px;
-  margin-top: -9px;
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  width: 19px;
-}
-.col.side #cta .button:hover .inner {
-  background: #292929;
 }
 
 /* SEARCH RESULTS: =search_results
