@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Advanced Properties in KISSmetrics
-categories: troubleshooting
+categories: advanced
 author: Eric Fung
 summary: KISSmetrics contains some advanced settings to fine-tune the Properties you see in your funnel reports.
 ---
