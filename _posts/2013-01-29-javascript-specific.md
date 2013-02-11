@@ -11,21 +11,21 @@ permalink: /apis/javascript/javascript-specific/index.html
 
 [Common API Methods][common] | Description
 ---------------------------- | -----------
-`_kmq.push(['record', EVENT_NAME]);` | Records an event.
-`_kmq.push(['record', EVENT_NAME, {PROPERTY_NAME:VALUE}]);` | Records an event with additional properties.
-`_kmq.push(['set', {PROPERTY_NAME:VALUE}]);` | Sets properties to the current user.
-`_kmq.push(['identify', IDENTITY]);` | Identifies the current person with a **unique** ID, and attributes future events from this browser to this provided ID. If the current person is 'anonymous', it also connects their 'anonymous' ID to the provided ID so we recognize both as being the same person (see `alias` below). Calling `identify` does *not* count as an "event".
-`_kmq.push(['alias', ID1, ID2]);` | Connects two identities so we recognize both as being the same person. We need to see events done by both ID's; if you want to save additional identifying information like "First Name" or "Last Name", consider using `set` instead. Calling `alias` does *not* count as an "event".
+`_kmq.push(['record', 'EVENT_NAME']);` | Records an event.
+`_kmq.push(['record', 'EVENT_NAME', {'PROPERTY_NAME':'VALUE'}]);` | Records an event with additional properties.
+`_kmq.push(['set', {'PROPERTY_NAME':'VALUE'}]);` | Sets properties to the current user.
+`_kmq.push(['identify', 'IDENTITY']);` | Identifies the current person with a **unique** ID, and attributes future events from this browser to this provided ID. If the current person is 'anonymous', it also connects their 'anonymous' ID to the provided ID so we recognize both as being the same person (see `alias` below). Calling `identify` does *not* count as an "event".
+`_kmq.push(['alias', 'ID1', 'ID2']);` | Connects two identities so we recognize both as being the same person. We need to see events done by both ID's; if you want to save additional identifying information like "First Name" or "Last Name", consider using `set` instead. Calling `alias` does *not* count as an "event".
 
 JavaScript-Specific Methods | Description
 --------------------------- | -----------
-`_kmq.push(['trackClick', AN_ELEMENT_ID_OR_CLASS, EVENT_NAME]);` | Tags an HTML element to [record an event *when it is clicked*][trackClick].
-`_kmq.push(['trackClickOnOutboundLink', AN_ELEMENT_ID_OR_CLASS, EVENT_NAME]);` | Tags a link that takes someone to another domain. Provides enough time to [record an event *when the link is clicked, before being redirected*][trackOutbound].
-`_kmq.push(['trackSubmit', AN_ELEMENT_ID_OR_CLASS, EVENT_NAME]);` | Tags a form to [record an event *when it is submitted*][trackSubmit].
+`_kmq.push(['trackClick', 'AN_ELEMENT_ID_OR_CLASS', 'EVENT_NAME']);` | Tags an HTML element to [record an event *when it is clicked*][trackClick].
+`_kmq.push(['trackClickOnOutboundLink', 'AN_ELEMENT_ID_OR_CLASS', 'EVENT_NAME']);` | Tags a link that takes someone to another domain. Provides enough time to [record an event *when the link is clicked, before being redirected*][trackOutbound].
+`_kmq.push(['trackSubmit', 'AN_ELEMENT_ID_OR_CLASS', 'EVENT_NAME']);` | Tags a form to [record an event *when it is submitted*][trackSubmit].
 `_kmq.push(['clearIdentity']);` | If the current person is already 'identified', this [clears their identity][clear-id] and generates a new anonymous ID for their browser. Does nothing if the current person is currently 'anonymous'.
 `_kmq.push(function() { } );` | You can push [callback functions][callback] to be executed when our library has fully loaded. Useful when invoking functions of the `KM` object (see examples below).
-`_kmq.push(function() {KM.record(EVENT_NAME);} );` | Equivalent to `_kmq.push(['record', EVENT_NAME]);`
-`KM.ab(PROPERTY_NAME, [ARRAY_OF_VALUES])` | [Initiates an A/B test][a-b-km] and sets the property that indicates which variation was randomly picked.
+`_kmq.push(function() {KM.record('EVENT_NAME');} );` | Equivalent to `_kmq.push(['record', 'EVENT_NAME']);`
+`KM.ab('PROPERTY_NAME', [ARRAY_OF_VALUES])` | [Initiates an A/B test][a-b-km] and sets the property that indicates which variation was randomly picked.
 `KM.i()` | Returns the [current person's ID][kmi], which can be their 'named ID' if they have one, or 'anonymous ID' if they don't.
 `KM.ts()` | Returns the current Unix timestamp in seconds. This is what we use to determine the current time.
 `KM.rf()` | Returns `document.referrer` unless you [override where to look for the referrer][referrer].
@@ -77,7 +77,7 @@ If you are just looking to track every click on your your site we recommend [Cra
 `trackClick` takes two parameters: the HTML ID or CSS class of the element you are tracking, and the name of the event to record when someone clicks said element:
 
     <script>
-      _kmq.push(['trackClick', ELEMENT_ID_OR_CLASS, EVENT_NAME]);
+      _kmq.push(['trackClick', 'ELEMENT_ID_OR_CLASS', 'EVENT_NAME']);
     </script>
 
 To put it another way, refer to this example:
@@ -137,7 +137,7 @@ You can use the `trackSubmit` function to track when a form is submitted. This s
 `trackSubmit` takes two parameters: the HTML ID or CSS class of the `<form>` you are tracking, and the name of the event to record when someone submits said form:
 
     <script>
-      _kmq.push(['trackSubmit', ELEMENT_ID_OR_CLASS, EVENT_NAME]);
+      _kmq.push(['trackSubmit', 'ELEMENT_ID_OR_CLASS', 'EVENT_NAME']);
     </script>
 
 For example, you might have a signup form you want to track: 
