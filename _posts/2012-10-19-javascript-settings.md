@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScript Settings
-categories: javascript
+categories: [apis, javascript]
 author: Eric Fung
 summary: JavaScript settings let you adjust what our JavaScript library can do automatically for you.
 ---
