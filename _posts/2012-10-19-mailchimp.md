@@ -77,15 +77,15 @@ Here's how to do so.
 
 #### Using Mailchimp's Merge Tags with the URL API
 
-Mailchimp provides a [merge tag][merge-tag] `*|EMAIL|*`, which is replaced by each recipient's email address for their particular email. We'll use that in conjunction with our [URL API][url] to send our JavaScript library the person's email.
+Mailchimp provides a [merge tag][merge-tag] `*|URL:EMAIL|*`, which is replaced by each recipient's email address for their particular email. We'll use that in conjunction with our [URL API][url] to send our JavaScript library the person's email.
 
-**Todo**: for any links to your site, if you want to record campaign-specific events or properties, use our [URL Builder][url-builder] to tag the links. Then add the parameter `kmi=*|EMAIL|*`, to use the recipient's email address as their KM identity.
+**Todo**: for any links to your site, if you want to record campaign-specific events or properties, use our [URL Builder][url-builder] to tag the links. Then add the parameter `kmi=*|URL:EMAIL|*`, to use the recipient's email address as their KM identity.
 
 ##### Example
 
 So for example, if your Mailchimp campaign links to `http://www.yoursite.com/landing`, use this link to pass the email address to our JavaScript:
 
-    http://www.yoursite.com/landing?kmi=*|EMAIL|*
+    http://www.yoursite.com/landing?kmi=*|URL:EMAIL|*
 
 [mailchimp]: http://mailchimp.com/
 [external-data]: https://www.kissmetrics.com/external_data
