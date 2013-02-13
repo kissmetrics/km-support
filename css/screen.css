@@ -12,8 +12,9 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, 
 ------------------------------------------------------------*/
 body {
   background: #4c4c4c url(/images/background.png) 0 0 repeat;
-  font-family: "Helvetica Neue", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "Tahoma", "Geneva", sans-serif;
 }
+
 #wrapper {
   background: #fff;
   margin: 0 auto;
@@ -42,8 +43,8 @@ hr {
 }
 img {
   max-width: 100%;
-  border-width: 1px;
-  border-style: solid;
+  padding: 1px;
+  border: 1px solid #ddd;
 }
 
 /* TOP: =top
@@ -133,23 +134,23 @@ img {
 }
 .col h2 {
   color: #000;
-  font-size: 18px;
+  font-size: 22px;
   margin-bottom: 12px;
 }
 .col h3 {
-  color: #000;
-  font-size: 15px;
+  color: #292929;
+  font-size: 18px;
   margin-bottom: 12px;
 }
 .col h4 {
-  color: #000;
-  font-size: 13px;
+  color: #292929;
+  font-size: 16px;
   margin-bottom: 12px;
 }
 .col p {
   color: #656565;
-  font-size: 13px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 26px;
   margin-bottom: 20px;
 }
 .col p.categories {
@@ -163,16 +164,17 @@ img {
 }
 .col li {
   color: #656565;
-  font-size: 13px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 26px;
   margin-bottom: 4px;
 }
 .col p a,
-.col li a {
+.col li a,
+.col td a {
   color: #388da6;
-  font-weight: bold;
   text-decoration: underline;
 }
+
 .col p a:hover {
   text-decoration: none;
 }
@@ -183,11 +185,10 @@ img {
 }
 .col pre {
   background: #eef8ff;
-  border-top: 1px solid #bee6ff;
-  border-bottom: 1px solid #bee6ff;
+  border-left: 4px solid #bee6ff;
   line-height: 20px;
   margin-bottom: 20px;
-  padding: 10px 12px;
+  padding: 12px 15px;
 
   white-space: pre-wrap;       /* css-3 */
   white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
@@ -217,14 +218,20 @@ table th {
   background-color: #eee;
   border: 1px solid #e5e5e5;
   color: #454545;
-  font-size: 13px;
+  font-size: 14px;
   padding: 10px;
   text-align: left;
+}
+
+table th a {
+	color: #454545;
+	text-decoration: underline;	
 }
 table td {
   border: 1px solid #e5e5e5;
   color: #656565;
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 18px;
   padding: 10px;
 }
 
@@ -259,17 +266,17 @@ blockquote {
 .side ul ul li {
   border: none;
   color: #909191;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 20px;
   margin: 0 0 4px 0;
   padding: 0;
 }
 .side ul ul li a {
   color: #388da6;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 20px;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -280,55 +287,68 @@ blockquote {
 
 /* SUMMARY: =summary
 ------------------------------------------------------------*/
-.col .summary {
-  background: #f0f7f9;
-  border: 1px solid #e2eff3;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  float: left;
-  list-style: none;
-  margin: 0 0 12px 0;
-  padding: 23px;
-  width: 571px; /*619-64-2*/
+
+.col ul.summary {
+	float: left;
+	margin: 0 0 10px 0;
+	padding: 0;
+	width: 619px;
 }
-.col .summary a {
-  color: #388da6;
-  text-decoration: none;
+
+.col .summary li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.col .summary li a {
+	background: #f0f7f9;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	padding: 20px;
+	display: block;
+}
+
+.col .summary li a {
+	color: #388da6;
+	text-decoration: none;
+}
+
+.col .summary li a:hover {
+	background: #e0f2f7;
 }
 
 .col .summary a h3 {
-  color: #388da6;
-  font-size: 26px;
+  color: #3a6471;
+  font-size: 22px;
   font-weight: normal;
   line-height: normal;
   margin-bottom: 2px;
   text-decoration: none;
 }
+
 .col .summary a:hover h3 {
-  text-decoration: underline;
+  color: #275360;
 }
-.col .summary p {
-  color: #53666c;
+
+.col .summary li p {
+  color: rgba(58,100,113,0.75);
   font-size: 14px;
   font-weight: normal;
   line-height: 20px;
   margin-bottom: 0;
 }
-.col .summary p a:hover {
-  text-decoration: underline;
-}
-.col .summary ul {
-  margin: 12px 0 0 15px;
+
+.col .summary li a:hover p  {
+	color: rgba(58,100,113,1);
 }
 .col .summary ul li {
-  color: #53666c;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 0;
-}
-.col .summary ul li a:hover {
-  text-decoration: underline;
+	color: #53666c;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0;
+	padding: 0;
 }
 
 /* SEARCH: =search
@@ -421,10 +441,9 @@ blockquote {
 }
 #footer p {
   color: #d7d7d7;
-  font-size: 10px;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+  font-size: 12px;
 }
+
 #footer a {
   color: #9adaea;
   text-decoration: underline;
