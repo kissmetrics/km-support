@@ -36,7 +36,7 @@ Identity | Timestamp  | Event
 6        | 1325974373 | Joined Newsletter
 10       | 1325629592 | Subscribed
 
-#### Importing with optional properties:
+#### Importing events with optional properties:
 
 Identity | Timestamp  | Event             | Prop:Age  | Prop:Gender | Prop:Favorite Food
 -------- | ---------- | ----------------- | --------- | ----------- | ------------------
@@ -46,7 +46,17 @@ Identity | Timestamp  | Event             | Prop:Age  | Prop:Gender | Prop:Favor
 6        | 1325974373 | Joined Newsletter |           |             | Tapas
 10       | 1325629592 | Subscribed        | 23        | Male        | Apple Pie
 
-#### Importing with optional aliases:
+#### Importing only properties:
+
+Identity | Timestamp  | Prop:Email Address
+-------- | ---------- | ------------------
+1        | 1328044149 | bob@bob.com
+3        | 1327871425 | adam@bob.com
+4        | 1326664210 | matt@bob.com
+6        | 1325974373 | joe@bob.com
+10       | 1325629592 | phil@bob.com
+
+#### Importing optional aliases:
 
 Identity     | Alias          | Timestamp 
 ------------ | -------------- | ----------
