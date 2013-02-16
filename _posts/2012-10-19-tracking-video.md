@@ -13,65 +13,7 @@ Below are examples of using the [YouTube](#youtube), [Vimeo](#vimeo), and [Wisti
 * Paused Video - {Name of the Video}
 * Finished Video - {Name of the Video}
 
-## YouTube
-
-    <!--
-    Create an empty div where the video will live.
-    Note the video ID is added at the end to prevent conflicts
-      and allow multiple videos being tracked.
-    -->
-    <div id="player_uU6U-8LP1DY"></div>
-     
-    <!-- Include the YouTube JS API -->
-    <script type='text/javascript'
-      src='http://www.youtube.com/player_api'></script>
-    <script>
-      var players = [];
-       
-      /** 
-       * Helper function for loading KM trackable videos.
-       * 
-       * id     - The YouTube video ID
-       * width  - The player width
-       * height - The player height
-       * name   - The name of the video. This can be anything and
-           will be appended to the event logged in KM.
-       */
-      function loadKMTrackedVideo (id, width, height, name)
-      {
-        players[id] = new YT.Player('player_' + id, {
-          videoId: id,
-          width: width,
-          height: height,
-          events: { onStateChange: function (event)
-          {
-            switch(event.data)
-            {
-              case YT.PlayerState.PLAYING:
-                return _kmq.push(
-	              ['record', 'Played video - ' + name]);
-              case YT.PlayerState.PAUSED:
-                return _kmq.push(
-	              ['record', 'Paused video - ' + name]);
-              case YT.PlayerState.ENDED:
-                return _kmq.push(
-	              ['record', 'Finished video - ' + name]);
-            }
-          }}
-        });
-      }
-       
-      /**
-       * When the Youtube API is ready start loading in our
-         KM trackable videos
-       */
-      function onYouTubePlayerAPIReady ()
-      {
-        loadKMTrackedVideo('uU6U-8LP1DY', 560, 315, 'My YouTube Video');
-      }
-     
-    </script>
-
+<a name="vimeo" ></a>
 ## Vimeo
 
     <!--
@@ -92,11 +34,11 @@ Below are examples of using the [YouTube](#youtube), [Vimeo](#vimeo), and [Wisti
       var player = $f(id);
       player.addEvent('ready', function(){
         player.addEvent('play', function(){
-	      _kmq.push(['record', 'Played video - ' + name]); });
+        _kmq.push(['record', 'Played Video - ' + name]); });
         player.addEvent('pause', function(){
-	      _kmq.push(['record', 'Paused video - ' + name]); });
+        _kmq.push(['record', 'Paused Video - ' + name]); });
         player.addEvent('finish', function(){
-	      _kmq.push(['record', 'Finished video - ' + name]); });
+        _kmq.push(['record', 'Finished Video - ' + name]); });
       });
     }
      
@@ -104,6 +46,7 @@ Below are examples of using the [YouTube](#youtube), [Vimeo](#vimeo), and [Wisti
      
     </script>
 
+<a name="wistia" ></a>
 ## Wistia
 
 If you expand the "Embed Type" box, you can expand the Advanced Options and switch to using the Wistia API rather than the iFrame method. Copy/paste this into your page.
@@ -148,4 +91,39 @@ Now below this, let's add our tracking calls.
 * `wistiaEmbed` refers to the `wistiaEmbed` object. This does not have to change unless you are embedding several Wistia videos on the same page.
 * "Sample Wistia Video" refers to the name of the video. This will be appended to the event that is logged in KM.
 
+<a name="youtube" ></a>
+## YouTube
+
+First, you'll need to embed your YouTube video according to [their documented method via JS and SWF][youtube-embed].
+
+Once that's done, you can add this block below the embed code:
+
+    <script>
+    // Get a reference to the player and listen for state changes
+    function onYouTubePlayerReady(playerId) {
+      ytplayer = document.getElementById("myytplayer");
+      ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
+    }
+
+    // TODO: The only piece of the code to modify is the video name.
+    var videoName = "Sample Video";
+
+    function onytplayerStateChange(newState) {
+      switch(newState) {
+          case 1: // YT.PlayerState.PLAYING
+            _kmq.push(['record', 'Played Video - ' + videoName]);
+            break;
+          case 2: // YT.PlayerState.PAUSED
+            _kmq.push(['record', 'Paused Video - ' + videoName]);
+            break;
+          case 0: // YT.PlayerState.ENDED
+            _kmq.push(['record', 'Finished Video - ' + videoName]);
+            break;
+          default:
+            return;
+      }
+    }
+    </script>
+
 [wistia-embed]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/tracking-video/wistia-embed.png
+[youtube-embed]: https://developers.google.com/youtube/js_api_reference#Embedding
