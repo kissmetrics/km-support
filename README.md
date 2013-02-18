@@ -6,8 +6,8 @@ You'll need a version of Ruby (we'll use 1.9.3 for the sake of example) and bund
 
 Let's start by installing GCC and RVM:
 
-* Newer versions of xCode do not provide a compatible Ruby compiler. Install this bundle to get gcc-4.2: [https://github.com/kennethreitz/osx-gcc-installer]()
-* RVM: [https://rvm.io/]()
+* Newer versions of xCode do not provide a compatible Ruby compiler. Install this bundle to get gcc-4.2: [https://github.com/kennethreitz/osx-gcc-installer](https://github.com/kennethreitz/osx-gcc-installer)
+* RVM: [https://rvm.io/](https://rvm.io/)
 
 Now in a terminal:
 
