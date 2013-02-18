@@ -16,9 +16,7 @@ Not sure if you have an existing AWS account? Contact the developer who initiall
 
 ## 2. Create Bucket from AWS dashboard.
 
-You will be directed to the AWS dashboard after signing in or signing up. Click "Create Bucket" towards the top left of the screen.
-
-![Data Export Step 2][2]
+You will be directed to the AWS dashboard after signing in or signing up. Click the blue "Create Bucket" button.
 
 ## 3. Name your KM data bucket.
 ![Data Export Step 3][3]
@@ -63,7 +61,6 @@ You're all set for Data Export!
 [aws-logging]: http://docs.amazonwebservices.com/AmazonS3/latest/UG/index.html?ManagingBucketLogging.html
 [km-settings]: http://www.kissmetrics.com/settings
 [1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/data-export/01-aws.png
-[2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/apis/data/dataexport2.png
 [3]: https://s3.amazonaws.com/kissmetrics-support-files/assets/apis/data/dataexport3.png
 [4]: https://s3.amazonaws.com/kissmetrics-support-files/assets/data-export/03-add-permissions.png
 [5]: https://s3.amazonaws.com/kissmetrics-support-files/assets/data-export/04-km-user.png
