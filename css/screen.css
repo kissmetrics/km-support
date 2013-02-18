@@ -35,10 +35,10 @@ body {
   padding: 30px;
   width: 219px; /*280-60-1*/
 }
+
 hr {
-  background: transparent url(/images/hr.png) 0 50% repeat-x;
   border: none;
-  clear: both;
+  border-top: 1px solid #eee;
   padding: 10px 0;
 }
 img {
@@ -114,7 +114,7 @@ img {
   padding-left: 0;
 }
 #crumbs li a {
-  color: #388da6;
+  color: #0c8cc4;
   text-decoration: none;
 }
 #crumbs li a:hover {
@@ -171,7 +171,7 @@ img {
 .col p a,
 .col li a,
 .col td a {
-  color: #388da6;
+  color: #0c8cc4;
   text-decoration: underline;
 }
 
@@ -179,9 +179,14 @@ img {
   text-decoration: none;
 }
 .col code {
-  color: #3c7aac;
+  color: #555;
   font: 'Courier', monospace;
   width: 571px;
+  margin: 0 2px;
+  padding: 0px 5px;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;  
 }
 .col pre {
   background: #eef8ff;
@@ -196,6 +201,13 @@ img {
   white-space: -o-pre-wrap;    /* Opera 7 */
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
+
+.col pre code {
+  border: none;
+  background: none;
+  color: #3c7aac; 
+}
+
 .col a code {
   color: #388da6;
   text-decoration: underline;
@@ -273,7 +285,7 @@ blockquote {
   padding: 0;
 }
 .side ul ul li a {
-  color: #388da6;
+  color: #0c8cc4;
   font-size: 13px;
   font-weight: normal;
   line-height: 20px;
