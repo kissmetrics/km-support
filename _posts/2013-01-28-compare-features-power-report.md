@@ -11,7 +11,7 @@ A new customer has just logged into your SaaS product for the first time.
 
 The next few minutes are critical.
 
-You want to demonstrate as mach value as possible. Or you might lose them.
+You want to demonstrate as much value as possible. Or you might lose them.
 
 But which features should you prioritize? Which ones get the most people to sign up? Do you focus on your core feature or get people to try several features?
 
