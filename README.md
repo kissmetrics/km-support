@@ -27,7 +27,7 @@ Repository is at [https://github.com/kissmetrics/km-support]()
 
 `jekyll --server`
 
-Then navigate to [http://localhost:4000]().
+Then navigate to [http://localhost:4000](http://localhost:4000).
 
 # 3. Post creation
 
@@ -53,8 +53,8 @@ For screenshots and attachments, we use S3 for storing images to be served.
 
 ### Get Amazon Keys
 
-You will first need to create a file `~/.amazon_keys` that holds your [AWS secret keys](https://portal.aws.amazon.com/gp/aws/securityCredentials). Steve Cox can provide credentials.
 
+You will first need to create a file `~/.amazon_keys` that holds your [AWS secret keys](https://portal.aws.amazon.com/gp/aws/securityCredentials). These link to an S3 bucket the KISSmetrics team shares, so Steve Cox can provide credentials.
 Here's a quick way to add them in:
 
     echo "export AMAZON_ACCESS_KEY_ID='abcdefghijklmnop'" >> ~/.amazon_keys
@@ -94,7 +94,7 @@ Multiple categories looks like `[getting-started, testing-km]`. This would put t
 
 4. Tags are yet another way to group similar articles. We haven't started using them but it's a good idea to prepare to.
 5. Author: who's writing? The "post" layout is acknowledges who the author is as more and more people contribute articles.
-6. Summary: in each "Category Index" ([support.kissmetrics.com/getting-started.html]() for example), the summary appears below each title.
+6. Summary: in each "Category Index" ([support.kissmetrics.com/getting-started.html](support.kissmetrics.com/getting-started.html) for example), the summary appears below each title.
 
 # 4. Commit Changes
 
@@ -109,13 +109,13 @@ This adds your changes to revision control, commits them locally, pulls any othe
 
 Once you push, Github updates the site almost instantly.
 
-![](https://dl.dropbox.com/u/1181256/gifs/magic.gif)
+![](http://cl.ly/image/321e2n293U1k/magic.gif)
 
 # Nice things to know
 
 ## The Jekyll Wiki
 
-Here is a link: [https://github.com/mojombo/jekyll]()
+Here is a link: [https://github.com/mojombo/jekyll](https://github.com/mojombo/jekyll)
 
 ## Site Does Not Build
 
