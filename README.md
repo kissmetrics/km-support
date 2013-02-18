@@ -34,6 +34,7 @@ Then navigate to [http://localhost:4000]().
 * Each article is written in [Markdown](http://daringfireball.net/projects/markdown/).
 * No `menu.txt` or `redirects.txt` file to worry about this time.
 * All new files go into the `_post` folder and the filenames need to be formated a specific way (`2013-01-01-foo-bar.md`).
+* You can find a [style guide](http://support.kissmetrics.com/misc/styleguide.html) that provides an overview of Markdown formatting syntaxes and best practices.
 
 Because of this, we have a Rake task available. Post creation is automated with the command `rake post`, which you use if you're in the project directory. You can also specify options on the command line as follows:
 
