@@ -33,6 +33,7 @@ If you have been using [Mailchimp][mailchimp] to send out email newsletters, you
 
 ## Setup
 
+<a name="obtain-a-mailchimp-api-key"></a>
 ### 1. Obtain a Mailchimp API Key
 
 1. While logged into your Mailchimp account, select **Account > API Keys & Authorized** Apps (under **Extras**):

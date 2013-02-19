@@ -36,16 +36,18 @@ Then navigate to [http://localhost:4000](http://localhost:4000).
 * All new files go into the `_post` folder and the filenames need to be formated a specific way (`2013-01-01-foo-bar.md`).
 * You can find a [style guide](http://support.kissmetrics.com/misc/styleguide.html) that provides an overview of Markdown formatting syntaxes and best practices.
 
-Because of this, we have a Rake task available. Post creation is automated with the command `rake post`, which you use if you're in the project directory. You can also specify options on the command line as follows:
+We have a Rake task available to automate the creation of a blank post. Use the command `rake post`, which you use if you're in the project directory. You can also specify options on the command line as follows:
 
     $ rake post title="Some API" author="Eric Fung" categories=apis tags="some, tags"
     Creating new post: ./_posts/2013-02-04-some-api.md
 
 This fills in some attributes each post should have, which we'll discuss below.
 
-## Compress Images
+## Adding Images
 
-If you're putting up new images, you should compress them to minimize the amount of bandwidth used. We've been using [http://imageoptim.com/]().
+If you're putting up new images, you should compress them to minimize the amount of bandwidth used. We've been using [http://imageoptim.com/](http://imageoptim.com/).
+
+The KISSmetrics team has an S3 bucket that contains most of the support material. We're mainly using [3Hub](http://www.3hubapp.com/) to communicate with the bucket. Alternatively, you can upload individual images to [CloudApp](http://my.cl.ly/).
 
 # What makes up a post?
 

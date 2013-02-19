@@ -16,6 +16,7 @@ Command    | Description
 `identify` | Sets the identity of the current person, so we know who to attribute future events to.
 `alias`    | Connects two identities together to represent the same person.
 
+<a name="record"></a>
 ## `record`
 
 The `record` method is the most commonly used method. When a `record` command is executed, it records a KISSmetric event. It takes two parameters:
@@ -27,10 +28,12 @@ If you do not pass in a name, calling `record` is identical to calling `set`. Se
 
 Our [JavaScript Library][js] has additional methods to let you record events after a certain trigger: when an element gets clicked, or when a form is submitted. 
 
+<a name="set"></a>
 ## `set`
 
 The `set` method lets you set properties on a person without recording an event. It takes a Hash of properties to set. See below for examples.
 
+<a name="identify"></a>
 ## `identify`
 
 The `identify` method allows you to set the identity of the current person using your site. The Javascript API will set an anonymous identity for you automatically, but for the server-side APIs, you **must** call `identify` on **each** page view.
@@ -50,6 +53,7 @@ Here's an example of an `identify` call in a Ruby app that obtains the current v
 
 For more information on how to handle identities, please refer to this [Identity Management guide][id].
 
+<a name="alias"></a>
 ## `alias`
 
 Alias is used to associate one identity with another, so that both identities represent the same person. In other words, if ID-A has done events and ID-B has also done events, after aliasing ID-A and ID-B together, we'll show that both of these ID's had been the same person doing all of the events all along.

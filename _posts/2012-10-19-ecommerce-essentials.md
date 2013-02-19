@@ -31,7 +31,7 @@ When to trigger the event and any other contextual information
 * `Etc.`
 
 ---
-
+<a name="tracking-marketing-acquisition-behavior"></a>
 ## Tracking Marketing/Acquisition Behavior
 
 **KISSmetrics automatically tracks all of these marketing events and properties for you!**

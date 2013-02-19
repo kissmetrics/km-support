@@ -96,7 +96,7 @@ Now below this, let's add our tracking calls.
 
 First, you'll need to embed your YouTube video according to [their documented method via JS and SWF][youtube-embed].
 
-Once that's done, you can add this block below the embed code:
+Once that's done, you can add this block below the embed code. **Remember to change the `videoName` variable**:
 
     <script>
     // Get a reference to the player and listen for state changes
@@ -110,17 +110,17 @@ Once that's done, you can add this block below the embed code:
 
     function onytplayerStateChange(newState) {
       switch(newState) {
-          case 1: // YT.PlayerState.PLAYING
-            _kmq.push(['record', 'Played Video - ' + videoName]);
-            break;
-          case 2: // YT.PlayerState.PAUSED
-            _kmq.push(['record', 'Paused Video - ' + videoName]);
-            break;
-          case 0: // YT.PlayerState.ENDED
-            _kmq.push(['record', 'Finished Video - ' + videoName]);
-            break;
-          default:
-            return;
+        case 1: // YT.PlayerState.PLAYING
+          _kmq.push(['record', 'Played Video - ' + videoName]);
+          break;
+        case 2: // YT.PlayerState.PAUSED
+          _kmq.push(['record', 'Paused Video - ' + videoName]);
+          break;
+        case 0: // YT.PlayerState.ENDED
+          _kmq.push(['record', 'Finished Video - ' + videoName]);
+          break;
+        default:
+          return;
       }
     }
     </script>
