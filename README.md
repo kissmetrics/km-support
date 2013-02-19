@@ -47,34 +47,6 @@ This fills in some attributes each post should have, which we'll discuss below.
 
 If you're putting up new images, you should compress them to minimize the amount of bandwidth used. We've been using [http://imageoptim.com/]().
 
-## Uploading Files
-
-For screenshots and attachments, we use S3 for storing images to be served. 
-
-### Get Amazon Keys
-
-
-You will first need to create a file `~/.amazon_keys` that holds your [AWS secret keys](https://portal.aws.amazon.com/gp/aws/securityCredentials). These link to an S3 bucket the KISSmetrics team shares, so Steve Cox can provide credentials.
-Here's a quick way to add them in:
-
-    echo "export AMAZON_ACCESS_KEY_ID='abcdefghijklmnop'" >> ~/.amazon_keys
-    echo "export AMAZON_SECRET_ACCESS_KEY='1234567891012345'" >> ~/.amazon_keys
-    echo "source ~/.amazon_keys" >> ~/.bashrc
-
-That last line has you source `.amazon_keys` into your bash environment. If you're not using bash, update the appropriate file.
-
-### Using `s3_upload.rb`
-
-Here's how to use the uploader script. Suppose you want the image URL to be:
-
-    https://s3.amazonaws.com/kissmetrics-support-files/assets/infographics/an-infographic.png
-
-Run this command:
-
-    ./s3_upload.rb --type=infographics /location/to/an-infographic.png
-
-To explain, you're passing the folder structure as part of the Type option, so that it'll be organized within `https://s3.amazonaws.com/kissmetrics-support-files/assets/`.
-
 # What makes up a post?
 
 Here's an example of the [YAML front matter](https://github.com/mojombo/jekyll/wiki/yaml-front-matter) in each post right now:
