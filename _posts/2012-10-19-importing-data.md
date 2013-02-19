@@ -23,7 +23,7 @@ This page will go over the third option, scripting the import using a server-sid
 
 We make use of our [API Specifications][specs] for submitting data to our servers. Particularly, the `_t` and `_d` parameters are used to indicate the time the events originally occurred, in the past. The import can be facilitated by using code written with one of our APIs, or with a [third-party API][other].
 
-In order for this to be effective, you'll want to be consistent in how you are identifying customers. That is, ensure you use the same identities during the import as the identities that the other KISSmetrics data sources (eg. our JavaScript Library) use. Please see [Identity Management][identity] for more details.
+In order for this to be effective, you'll want to be consistent in how you are identifying customers. That is, ensure you use the same identities during the import as the identities that the other KISSmetrics data sources (eg. our JavaScript Library) use. Please see [Understanding Identities][identity] for more details.
 
 ### Examples of Possible Scenarios
 
@@ -134,7 +134,7 @@ Reference: [users-to-kissmetrics.rb][users-to-kissmetrics.rb]
 [csv]: /integrations/csv-import
 [shopify]: http://www.shopify.com/
 [integrations]: /integrations
-[identity]: /getting-started/identity-management
+[identity]: /getting-started/understanding-identities
 
 [sevenscale]: http://sevenscale.com/
 [users-to-kissmetrics.rb]: https://s3.amazonaws.com/kissmetrics-support-files/assets/advanced/saas_importing/users-to-kissmetrics.rb

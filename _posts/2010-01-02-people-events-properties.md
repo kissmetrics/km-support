@@ -30,7 +30,7 @@ Realistically, though, you would write the API call to look at your available co
     // This is just a demonstration
     _kmq.push(['identify', '<%=SessionDetails.UserName%>']);
 
-The details for saving identities can vary, depending on how you're sending us us data. To read more on the topic, please see [Identity Management][id-management].
+The details for saving identities can vary, depending on how you're sending us us data. To read more on the topic, please see [Understanding Identities][id-management].
 
 ---
 
@@ -153,7 +153,7 @@ Then you can segment the people who did these events by different properties:
 
 Additional code examples are available at [Common Methods][common].
 
-[id-management]: /getting-started/identity-management
+[id-management]: /getting-started/understanding-identities
 [identify]: /apis/common-methods#identify
 
 [simple-api]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/simple-api.png

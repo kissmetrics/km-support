@@ -57,13 +57,13 @@ In your [site settings][site-settings], follow the smaller link in the Event Lib
 
 [site-settings]: https://www.kissmetrics.com/settings
 [event-library]: https://www.kissmetrics.com/wizard
-[auto-track]: apis/javascript#events-automatically-tracked
+[auto-track]: /apis/javascript#events-automatically-tracked
 
 [categories]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/event-library/event-categories.png
 
-[create-1]: /tutorial/event-library/events-url
-[create-2]: /tutorial/event-library/events-clicks
-[create-3]: /tutorial/event-library/events-form
+[create-1]: /tutorial/event-library-tutorial/events-url-tutorial
+[create-2]: /tutorial/event-library-tutorial/events-clicks-tutorial
+[create-3]: /tutorial/event-library-tutorial/events-form-tutorial
 
 [display]: https://www.kissmetrics.com/product.edit/#props
 [count]: https://www.kissmetrics.com/product.event_prop_breakdown/
