@@ -18,7 +18,7 @@ Each of these events is described in more detail below. If you can't integrate e
 
 Also, there is no need to track events that do not make sense for your business (such as upgrading and downgrading if you only have one payment plan).
 
-## Signed Up
+## <a id="signed-up"></a>Signed Up
 
 **When:** Record the `Signed Up` event when someone signs up for your service. Do not record each form submit, just record this event once a user has successfully created their account.
 
@@ -32,7 +32,7 @@ When recording this event you can also optionally pass in these additional prope
 * Any other properties that make sense for your application.
 
 
-## Upgraded
+## <a id="upgraded"></a>Upgraded
 
 **When:** Record the `Upgraded` event every time a person successfully switches to a higher value plan.  Do not record each form submit, just record this event once a user has successfully upgraded their account.
 
@@ -46,7 +46,7 @@ When recording this event you can also optionally pass in these additional prope
 
 You'll notice that there is no `From Plan` property. This is because KISSmetrics keeps a whole history for each person so there is no need to pass in which plan a person is upgrading from - KISSmetrics already knows this!
 
-## Downgraded
+## <a id="downgraded"></a>Downgraded
 
 **When:** Record the `Downgraded` event every time a person successfully switches to a lower value plan. 
 
@@ -58,7 +58,7 @@ When recording this event you can also optionally pass in these additional prope
 
 You'll notice that there is no `From Plan` property. This is because KISSmetrics keeps a whole history for each person so there is no need to pass in which plan a person is upgrading from - KISSmetrics already knows this!
 
-## Canceled
+## <a id="canceled"></a>Canceled
 
 **When:** Record the `Canceled` event every time a person successfully cancels their service with you. If you offer a trial for your service and the user's trial ends you should record that as a separate custom event (e.g. `Trial Ended`).
 
@@ -69,7 +69,7 @@ When recording this event you can also optionally pass in these additional prope
 * Reason for cancellation (if you have requested this information from the customer).
 * Any other properties that make sense for your application.
 
-## Billed
+## <a id="billed"></a>Billed
 
 **When:** Record the `Billed` event every time you bill a customer. 
 
@@ -91,7 +91,7 @@ The `Billed` event has the following properties:
 
 This means you will likely have to use one of our server-side APIs such as our [Ruby API][ruby], [PHP API][php], [Python API][python], or [3rd Party APIs][other]. If you need any help with this step please feel free to contact us.
 
-## Visited Site
+## <a id="visited-site"></a>Visited Site
 
 **When:** The `Visited Site` event is automatically recorded every time someone starts a new browsing session with your site. 
 
