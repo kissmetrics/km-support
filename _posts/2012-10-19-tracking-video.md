@@ -16,73 +16,66 @@ Below are examples of using the [YouTube](#youtube), [Vimeo](#vimeo), and [Wisti
 <a name="vimeo" ></a>
 ## Vimeo
 
-    <!--
-    Include the Vimeo embed as normal appending ?api=1.
-    Also set the player_id which is used below.
-    -->
-    <iframe id="player_1" src="http://player.vimeo.com/video/7100569?api=1&player_id=player_1"
-       width="540" height="304" frameborder="0" webkitallowfullscreen></iframe>
+### Vimeo's Embed Code
+
+1. Add the [embed code][vimeo-embed] to add the Vimeo video in an iFrame. Add `api=1` as a query string to the URL of the iframe.
+2. Load their JavaScript mini-library, called [Froogaloop][vimeo-froogaloop].
+
+This is what your full embed code might look like:
+
+    <!-- Load the video with the API enabled -->
+    <iframe id="player1" src="http://player.vimeo.com/video/7100569?player_id=player1&api=1" width="540" height="304" frameborder="0" webkitallowfullscreen></iframe>
      
-    <!-- Load froogaloop, Vimeo's JS API -->
+    <!-- Load Froogaloop, Vimeo's JS API -->
     <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
-    <script>
-     
-    var _kmq = [];
-     
-    function setupKMTrackableVideo (id, name)
-    {
-      var player = $f(id);
-      player.addEvent('ready', function(){
-        player.addEvent('play', function(){
-        _kmq.push(['record', 'Played Video - ' + name]); });
-        player.addEvent('pause', function(){
-        _kmq.push(['record', 'Paused Video - ' + name]); });
-        player.addEvent('finish', function(){
-        _kmq.push(['record', 'Finished Video - ' + name]); });
-      });
-    }
-     
-    setupKMTrackableVideo('player_1', 'My Vimeo Video');
-     
+
+### Add KM Tracking
+Now below this, let's interact with their [JS][vimeo-js] to set up the events:
+
+    <script type='text/javascript'>
+    var iframe = $('#player1')[0],
+        player = $f(iframe),
+
+    // TODO: The only piece of the code to modify is the video name.
+    var videoName = "Sample Video";
+
+    // Add listeners after the player is ready.
+    player.addEvent('ready', function() {
+      player.addEvent('play', function(){
+        _kmq.push(['record', 'Played Video - ' + videoName]); });
+      player.addEvent('pause', function(){
+        _kmq.push(['record', 'Paused Video - ' + videoName]); });
+      player.addEvent('finish', function(){
+        _kmq.push(['record', 'Finished Video - ' + videoName]); });
+    });
     </script>
 
 <a name="wistia" ></a>
 ## Wistia
 
+### Wistia's Embed Code
 If you expand the "Embed Type" box, you can expand the Advanced Options and switch to using the Wistia API rather than the iFrame method. Copy/paste this into your page.
 
 ![Wistia Embed][wistia-embed]
 
-For example:
-
-    <div id="wistia_123456abc" class="wistia_embed" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div>
-    <script charset="ISO-8859-1" src="http://fast.wistia.com/static/concat/E-v1.js"></script>
-    <script>
-    wistiaEmbed = Wistia.embed("123456abc", {
-      version: "v1",
-      videoWidth: 640,
-      videoHeight: 400,
-      volumeControl: true,
-      controlsVisibleOnLoad: true
-    });
-    </script>
-
+### Add KM Tracking
 Now below this, let's add our tracking calls.
 
-    <script>
-    function loadKMTrackableVideo (wistia_object, name) {
+    <script type='text/javascript'>
+    function loadKMTrackableVideo (wistia_object, videoName) {
       // Add tracking to 'play', 'pause', and 'end' events.
       wistia_object.bind("play", function() {
-        _kmq.push(['record', 'Played video - ' + name]);
+        _kmq.push(['record', 'Played video - ' + videoName]);
       });
       wistia_object.bind("pause", function() {
-        _kmq.push(['record', 'Paused video - ' + name]);
+        _kmq.push(['record', 'Paused video - ' + videoName]);
       });
       wistia_object.bind("end", function() {
-        _kmq.push(['record', 'Finished video - ' + name]);
+        _kmq.push(['record', 'Finished video - ' + videoName]);
       });
     }
 
+    // TODO: The only piece of the code to modify is the video name.
     loadKMTrackableVideo(wistiaEmbed, "Sample Wistia Video");
     </script>
 
@@ -94,11 +87,13 @@ Now below this, let's add our tracking calls.
 <a name="youtube" ></a>
 ## YouTube
 
+### YouTube's Embed Code
 First, you'll need to embed your YouTube video according to [their documented method via JS and SWF][youtube-embed].
 
+### Add KM Tracking
 Once that's done, you can add this block below the embed code. **Remember to change the `videoName` variable**:
 
-    <script>
+    <script type='text/javascript'>
     // Get a reference to the player and listen for state changes
     function onYouTubePlayerReady(playerId) {
       ytplayer = document.getElementById("myytplayer");
@@ -124,6 +119,10 @@ Once that's done, you can add this block below the embed code. **Remember to cha
       }
     }
     </script>
+
+[vimeo-embed]: http://developer.vimeo.com/player/embedding
+[vimeo-froogaloop]: https://github.com/vimeo/player-api/tree/master/javascript
+[vimeo-js]: http://developer.vimeo.com/player/js-api
 
 [wistia-embed]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/tracking-video/wistia-embed.png
 [youtube-embed]: https://developers.google.com/youtube/js_api_reference#Embedding
