@@ -26,7 +26,7 @@ You will be directed to the AWS dashboard after signing in or signing up. Click 
 
 You will refer to this bucket name later. You can optionally set up [logging][aws-logging] to get detailed access logs for your bucket at this point. Whether you choose to set up logging is up to you. You can always skip this and turn on logging later if you are not sure right now.
 
-You may already have a bucket configured for our [Data Export](apis/data) tool. It is a good idea to use a separate bucket only for importing CSV files.
+You may already have a bucket configured for our [Data Export][data] tool. It is a good idea to use a separate bucket only for importing CSV files.
 
 Click "Create" to continue.
 
@@ -119,3 +119,4 @@ CSV files that have been processed will be moved to a folder within your bucket:
 [2]: http://www.kissmetric.com/external_data
 [csv-new]: http://www.kissmetrics.com/external_data/csv.new
 
+[data]: /apis/data

@@ -19,5 +19,5 @@ Once you've sifted through the data, you could use our [usual libraries][librari
 
 Wufoo's documentation gives some good pointers towards resources for getting started, if you're relatively new at doing such things. But in the end, it looks like tracking Wufoo forms is not as simple as providing the form ID.
 
-[webhook]: http://help.wufoo.com/app/answers/detail/a_id/6395
+[webhook]: http://help.wufoo.com/articles/en_US/SurveyMonkeyArticleType/Webhooks
 [libraries]: /apis

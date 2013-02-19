@@ -53,7 +53,7 @@ Please refer to this guide for [how to track events that happen offline][offline
 
 [specs]: /apis/specifications
 
-[event-library]: /misc/event-library
+[event-library]: /tools/event-library
 [mysql]: /integrations/mysql
 [csv]: /integrations/csv-import
 [recurly]: /integrations/recurly

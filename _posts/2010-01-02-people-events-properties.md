@@ -161,7 +161,7 @@ Additional code examples are available at [Common Methods][common].
 [data-ways]: /getting-started/ways-to-send-us-data
 [js]: /apis/javascript
 [auto-track]: /apis/javascript#events-automatically-tracked
-[event-library]: /tutorial/event-library
+[event-library]: /tutorial/event-library-tutorial/
 [record]: /apis/common-methods#record
 
 [best-practices]: /best-practices

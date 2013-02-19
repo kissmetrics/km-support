@@ -74,7 +74,7 @@ In the console you can run JavaScript commands. Our [JavaScript Library specific
 [elements-ss]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/testing-km/elements.png
 [console-ss]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/testing-km/console.png
 
-[clickvid]: /tutorial/event-library/events-clicks
-[formvid]: /tutorial/event-library/events-form
+[clickvid]: /tutorial/event-library-tutorial/events-clicks-tutorial
+[formvid]: /tutorial/event-library-tutorial/events-form-tutorial
 
 [specs]: /apis/specifications
