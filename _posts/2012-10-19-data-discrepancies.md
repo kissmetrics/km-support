@@ -100,7 +100,7 @@ If there are any known site-wide issues, we will post a notice to [status.kissme
 [people]: /tools/people-search
 
 [specs]: /apis/specifications
-[event-lib-tutorial]: /tutorial/event-library
+[event-lib-tutorial]: /tutorial/event-library-tutorial
 [live]: /tools/live
 
 [tools]: /tools
