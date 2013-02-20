@@ -109,5 +109,5 @@ Here's what the example configuration above would look like after you run the re
 [relative]: /tools/power-report/relative-to
 
 [ss-columns]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/power-report/report-columns.png
-[ss-segments]: http://cl.ly/image/1s0t052B0a3I/Report%20Segments.png
+[ss-segments]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/power-report/report-segments.png
 [ss-results]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/power-report/results.png
