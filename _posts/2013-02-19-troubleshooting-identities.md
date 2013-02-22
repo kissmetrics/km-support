@@ -40,16 +40,16 @@ Consider this example:
     KM.record("Event 1")
     KM.record("Event 2")
 
-Because I never do events while `identifed` as kissmetrics@example.com, that alias never shows up in that person's details, not even as a historic Customer ID. That means you won't be able to look up the person in People Search by the email address, despite the 'alias' call.
+Because the person never does events while `identifed` as kissmetrics@example.com, that alias never shows up in that person's details, not even as a historic Customer ID. That means you won't be able to look up the person in People Search by the email address, despite the 'alias' call.
 
 Only until I trigger an event as "kissmetrics@example.com" will that show up as a Customer ID.
 
 Often, it's sufficient to just set the additional information as an additional property, like so:
 
-KM.identify("User123456")
-KM.set({"Email Address":"kissmetrics@example.com"})
-KM.record("Event 1")
-KM.record("Event 2")
+    KM.identify("User123456")
+    KM.set({"Email Address":"kissmetrics@example.com"})
+    KM.record("Event 1")
+    KM.record("Event 2")
 
 ### We're reporting that only *one* person is doing an event (Visited Site) when you know many more have done the event.
 
@@ -66,7 +66,7 @@ For unknown people who come to your site, you might think to `identify` them as,
 
 * *Are IDs being `alias`-chained together?*
 
-**How?** You'll notice if individual people have a history of Customer IDs that do not
+**How?** You'll notice when one person has several past Customer IDs representing different unique users.
 
 Consider this sequence:
 
