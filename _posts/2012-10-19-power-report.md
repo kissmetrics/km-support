@@ -36,7 +36,7 @@ However, realize that for each segment and column, you have the option to indivi
 
 ## 2. Report Segments
 
-Report segments are the **rows** of the report. They usually provide the interesting ***comparisions*** you are looking for. "How does X perform differently than Y?" "How did Week 1 compare to Week 2?"
+Report segments are the **rows** of the report. They usually provide the interesting ***comparisons*** you are looking for. "How does X perform differently than Y?" "How did Week 1 compare to Week 2?"
 
 The Power Report is unique because:
 

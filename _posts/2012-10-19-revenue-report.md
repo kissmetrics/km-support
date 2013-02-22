@@ -65,7 +65,7 @@ In addition to revenue, we can show you the number of customers gained and lost 
 * If you are not sending in an event for Cancelations (`Canceled`), then we use our calculation to determine Churn. If a customer has not paid you in *30 days*, we consider them `churned` on the last day that they paid.
 * If you do send us a `Canceled` event, we consider a customer `churned` on the day of their cancelation. (Like Revenue, if Cancelations look strange, [please check your site's event mappings][mapping] to ensure that the `Canceled` event is using the event that corresponds with cancelations.)
 
-We realize that these two options may not sufficiently define churn for every business. For example, you may be an e-commerce business that doesn't track explicit cancelations, but gives customers longer than 30 days until you consider them churned. If so, we're intereseted in hearing how *you* define churn, and how you would use a Revenue Report most effectively. Please send in your feedback using the feedback box at the bottom of the Revenue Report!
+We realize that these two options may not sufficiently define churn for every business. For example, you may be an e-commerce business that doesn't track explicit cancelations, but gives customers longer than 30 days until you consider them churned. If so, we're interested in hearing how *you* define churn, and how you would use a Revenue Report most effectively. Please send in your feedback using the feedback box at the bottom of the Revenue Report!
 
 ## Lifetime Value
 
