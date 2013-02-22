@@ -18,6 +18,8 @@ Not sure if you have an existing AWS account? Contact the developer who initiall
 
 You will be directed to the AWS dashboard after signing in or signing up. Click the blue "Create Bucket" button.
 
+(If you intend to export data from several of your account's sites, then please create a different bucket for each of them.)
+
 ## 3. Name your KM data bucket.
 ![Data Export Step 3][3]
 
