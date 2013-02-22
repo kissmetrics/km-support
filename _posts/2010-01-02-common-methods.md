@@ -58,21 +58,25 @@ For more information on how to handle identities, please refer to this [Identity
 
 Alias is used to associate one identity with another, so that both identities represent the same person. In other words, if ID-A has done events and ID-B has also done events, after aliasing ID-A and ID-B together, we'll show that both of these ID's had been the same person doing all of the events all along.
 
+[![][alias-regular]][alias-regular]
+
 **Calling `alias` is not reversible, and should be used situationally. If you want to add additional information about a person, setting an additional property usually is enough (for example, adding an email address to someone currently identified by their Facebook ID).**
 
-Our JavaScript Library easily handles many common without having to call `alias`. Please refer to [Identities with the JavaScript Library][js-ids] for more details. However, there are some scenarios where it may be appropriate to call `alias` directly:
+[![][alias-vs-set]][alias-vs-set]
+
+Our JavaScript Library easily handles the common scenarios of attributing someone's activity while they are anonymous to their post-signup activity, without you having to make the `alias` API call. Please refer to [Identities with the JavaScript Library][js-ids] for more details. However, there are some scenarios where it may be appropriate to call `alias` directly:
 
 * When you implement KISSmetrics using more than one source of data: combining data from an external KM [integration][integration], server-side libraries, and/or our JavaScript library.
 * When you are identifying people by their email address, and they update their email address within your app.
 
-The most common case for `alias` is for attributing someone's anonymous activity and referral data to the data they generate after becoming a returning customer. You'll see references to *Anonymous Identity* and *Named Identity* throughout our documentation - they refer to the different identities a person can have in their lifetime on your site. Note that our [JavaScript library bundles the 'aliasing' action][js-ids] as part of your `identify` API call so that you don't have to call `alias` directly.
-
 Notes:
 
-* After calling `alias`, the new alias does not appear in a person's list of Customer IDs unless you have triggered an event or set properties to the new alias.
 * It’s fine to call `alias` more than once with the same pair of identities.
 * It’s fine if a person has more than one alias.
 * The order you pass the two arguments does not matter.
+* After calling `alias`, the new alias does not appear in a person's list of Customer IDs unless you have triggered an event or set properties to the new alias.
+
+[![][alias-zero]][alias-zero]
 
 ## Examples
 Below are some examples for the standard API. Please see APIs for supported languages.
@@ -134,3 +138,6 @@ Please see [API Tips][tips] for more information.
 [tips]: /apis/api-tips
 [js-ids]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/understanding-identities/js-ids.pdf
 [integration]: /integrations
+[alias-regular]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/troubleshooting-identities/alias-regular.png
+[alias-vs-set]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/troubleshooting-identities/alias-vs-set.png
+[alias-zero]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/troubleshooting-identities/alias-zero.png

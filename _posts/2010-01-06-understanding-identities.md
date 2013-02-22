@@ -18,6 +18,8 @@ API Call | Action
 `KM.identify('foo')` | Switches tracking to `foo`, so that we attribute any further events or properties to `foo`.
 `KM.alias('foo', 'bar')` | Aliases `foo` and `bar` together so that events done by either ID are associated with the same 'person'.
 
+![][alias-regular]
+
 <a name="identities-with-the-javascript-library"></a>
 # Identities with the JavaScript Library
 
@@ -32,3 +34,5 @@ The JavaScript Library attempts to identify your visitors without you having to 
 [js-specific]: /apis/javascript/javascript-specific
 [multiple-domains]: /apis/javascript/tracking-multiple-domains
 [js-ids-info]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/understanding-identities/js-ids.pdf
+
+[alias-regular]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/troubleshooting-identities/alias-regular.png
