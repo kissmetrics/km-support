@@ -88,6 +88,7 @@ If you'd like some help with the above steps, please contact our support team! W
 
 If there are any known site-wide issues, we will post a notice to [status.kissmetrics.com][status]. This message will also appear at the top of the website when you log into your account.
 
+{% include summaries/data_discrepancies_summary.html %}
 
 [status]: http://status.kissmetrics.com
 [event-count]: https://www.kissmetrics.com/product.event_prop_breakdown
