@@ -88,13 +88,25 @@ Down the line, if the customer ever goes from being anonymous to providing some 
 
 For reference: [Looking Up Your Current KM ID][km-id]
 
-## Final Thoughts
+<a name="tradeoffs"></a>
+# What are the tradeoffs for tracking each domain separately vs. under one API key?
 
-Whenever possible, we recommend that you track different domains separately by [creating individual KISSmetrics sites][create] for each, so that you can have data about each domain and not mix up the traffic. However, we realize that there are many cases where you want to see a person's data when they go to a different domain -- for example, your marketing site vs. app, or a hosted knowledge-base, or your e-Commerce checkout system. 
+* **If you track your different domains separately, as individual sites within your account:**
+
+  1. **(+)** It's easier to see each domain in isolation.
+  2. **(+)** You do not have to worry about making sure each person's identity stays the same across your domains.
+  3. **(-)** However, it's much harder to compare activity across the domains, because of how we keep the data separated.
+
+* **If you track your different domains as one site within your account:**
+
+  1. **(+)** You can see a complete picture of people's activity from your marketing site to your app or checkout cart.
+  2. **(+)** You can still create separate events to differentiate reporting on activity in one domain vs. the other.
+  3. **(-)** However, there is extra setup to ensure that people are being represented with the same ID on all of your tracked domains.
+  4. **(-)** If you end up using the same JS snippet on all of your domains, the [events our JavaScript automatically tracks][auto-track] would lump together activity from each of your domains. *Visited Site* and *Ad Campaign Hit* would include Visits and Ad hits to all of your domains.
 
 [url]: /apis/url
 [km-id]: /apis/javascript/javascript-specific#get-your-current-kissmetrics-id
-[create]: /how-tos/create-site
 [alias]: /apis/common-methods#alias
 [js-settings]: https://www.kissmetrics.com/product.js_settings
 [include-host]: https://s3.amazonaws.com/kissmetrics-support-files/assets/apis/include-host.png
+[auto-track]: /apis/javascript/javascript-settings

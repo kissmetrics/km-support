@@ -84,6 +84,10 @@ Now below this, let's add our tracking calls.
 * `wistiaEmbed` refers to the `wistiaEmbed` object. This does not have to change unless you are embedding several Wistia videos on the same page.
 * "Sample Wistia Video" refers to the name of the video. This will be appended to the event that is logged in KM.
 
+### Wistia Embed Shepherd
+
+Wistia has also provided access to a JavaScript library they call the "[Embed Shepherd][wistia-embed-shepherd]". This helps simplify getting pointers to all embedded Wistia videos, and we will soon be documenting how to use that in conjunction with KISSmetrics.
+
 <a name="youtube" ></a>
 ## YouTube
 
@@ -125,4 +129,5 @@ Once that's done, you can add this block below the embed code. **Remember to cha
 [vimeo-js]: http://developer.vimeo.com/player/js-api
 
 [wistia-embed]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/tracking-video/wistia-embed.png
+[wistia-embed-shepherd]: http://wistia.com/doc/embed-shepherd
 [youtube-embed]: https://developers.google.com/youtube/js_api_reference#Embedding
