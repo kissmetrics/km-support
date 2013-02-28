@@ -12,9 +12,12 @@ In theory, our concept of identities sounds simple.
 2. People can be represented with usually at least 2 different names in their lifetime as a customer. One when they are first anonymous; another when they become known through signing up, logging in, or installing your app.
 3. KISSmetrics has two techniques to connect these different names to represent the same person: `alias` and `identify`.
 
+![Alias Regular][alias-regular]
+
 That said, here are some uses of `alias` and `identify` you'll want to take note of.
 
-### You used our `identify` API call but your customer identities are not showing up.
+<a name="1"></a>
+### 1. You used our `identify` API call but your customer identities are not showing up.
 
 * *Are you calling our API with the identity in quotes?*
 
@@ -29,9 +32,10 @@ Compare:
 
 When you call `identify` with our JS library when a person is anonymous, we automatically alias their anonymous ID with the given ID. This is related to the next section.
 
-### You used our `alias` API call but the aliased ID does not appear when you search for it, or in the history of the person's Customer IDs.
+<a name="2"></a>
+### 2. You used our `alias` API call but the aliased ID does not appear when you search for it, or in the history of the person's Customer IDs.
 
-* We can only show a person's aliases as long as we see an event attributed to that alias.
+* *We can only show a person's aliases as long as we see an event attributed to that alias.*
 
 Consider this example:
 
@@ -42,6 +46,8 @@ Consider this example:
 
 Because the person never does events while `identifed` as kissmetrics@example.com, that alias never shows up in that person's details, not even as a historic Customer ID. That means you won't be able to look up the person in People Search by the email address, despite the 'alias' call.
 
+![Alias Zero][alias-zero]
+
 Only until I trigger an event as "kissmetrics@example.com" will that show up as a Customer ID.
 
 Often, it's sufficient to just set the additional information as an additional property, like so:
@@ -51,7 +57,10 @@ Often, it's sufficient to just set the additional information as an additional p
     KM.record("Event 1")
     KM.record("Event 2")
 
-### We're reporting that only *one* person is doing an event (Visited Site) when you know many more have done the event.
+![Alias vs Set][alias-vs-set]
+
+<a name="3"></a>
+### 3. We're reporting that only *one* person is doing an event (Visited Site) when you know many more have done the event.
 
 * *Are you reusing the same identity for numerous visitors?*
 
@@ -77,3 +86,28 @@ Consider this sequence:
 Although "User-123" and "User-456" represent two different people, and they are not explicitly aliased together in one API call, these two calls will result in both "User-123" and "User-456" representing the same **one** person.
 
 This is why it's useful to just `set` additional properties about who the person is. We recommend using `alias` sparingly and to ensure that each person is represented by a unique ID. In this case, a person's first name is not sufficiently unique enough to use as a person's possible 'identity'.
+
+<a name="4"></a>
+### 4. We're showing that nobody progressed past a certain step in a funnel when you have other data that indicates otherwise.
+
+* *Have you successfully aliased a person's various identities together?*
+
+This happens most frequently if you send data to KISSmetrics through two or more different data sources (eg. our JavaScript library + PHP library, or JS + Mailchimp Integration). Without connecting the two IDs together, they appear to be different people:
+
+![No Alias][no-alias]
+
+In the example of you using both JS and PHP, it doesn't matter in which language to do the aliasing...as long as we recognize the two IDs are connected. Either of these methods would be equivalent:
+
+* In JavaScript:
+
+    `_kmq.push(['identify', 'kissmetrics.example@gmail.com']);`
+    `// Calling 'identify' in JS for an anonymous user also has a side effect of aliasing the anonymous ID to this email address`
+   
+* In PHP:
+
+    `KM::alias('kissmetrics.example@gmail.com', 'User123456')`
+
+[alias-regular]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/troubleshooting-identities/alias-regular.png
+[alias-zero]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/troubleshooting-identities/alias-zero.png
+[alias-vs-set]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/troubleshooting-identities/alias-vs-set.png
+[no-alias]: /images/troubleshooting/troubleshooting-identities/no-alias.png
