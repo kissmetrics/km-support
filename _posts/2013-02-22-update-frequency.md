@@ -5,7 +5,6 @@ title: "How recent is my data?"
 tags: []
 author: Eric Fung
 summary: How soon will I be able to see data?
-published: false
 ---
 We are continually processing the data from activity that is currently happening. We'll show your site's data status in the sidebar of your dashboard:
 
@@ -33,5 +32,5 @@ KISSmetrics Report | How up-to-date is the data?
 [person-details]: /tools/person-details
 [live]: /tools/live
 
-[data-status]: /fill-in/
-[metric-dashboard]: /fill-in/
+[data-status]: /images/tools/data-status/01-data.png
+[metric-dashboard]: /images/tools/data-status/02-dashboard.png

@@ -17,6 +17,7 @@ To access the Site Settings page, click on the site name in the upper-left porti
 
 [Here][settings] is a direct link to your settings.
 
-![](/images/site_settings.png)
+![Site Settings][site-settings]
 
 [settings]: https://www.kissmetrics.com/settings
+[site-settings]: /images/misc/site_settings.png

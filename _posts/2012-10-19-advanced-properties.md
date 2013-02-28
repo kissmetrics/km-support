@@ -6,7 +6,7 @@ author: Eric Fung
 summary: KISSmetrics contains some advanced settings to fine-tune the Properties you see in your funnel reports.
 ---
 
-![](/images/advanced1.png)
+![][advanced1]
 
 KISSmetrics contains some advanced settings to fine-tune the Properties you see in your funnel reports. Here’s an explanation of what these options do and when you may wish to change from our defaults.
 
@@ -29,7 +29,7 @@ KISSmetrics has tracked the discrete number of times each action was performed, 
 <a name='property-options'></a>
 # Property Options
 
-![](/images/advanced2.png)
+![][advanced2]
 
 <a name='first-property-name-ever'></a>
 ## First “property name” ever
@@ -70,7 +70,7 @@ Last referrer before Event 2 means we will show the referrer that drove a person
 <a name='formatting-options'></a>
 # Formatting Options
 
-![](/images/advanced3.png)
+![][advanced3]
 
 <a name='none'></a>
 ## None
@@ -95,3 +95,7 @@ KISSmetrics shows the full URL for referrer, campaign source, and any other URL-
 URL (Domain only) groups together all of the referrer URLs from the same domain, such as individual Facebook or Twitter pages or Google search results.
 
 **Use this for**: consolidating all Facebook/Twitter/search results referrers, or any other sets of referrers that share a common domain.
+
+[advanced1]: /images/advanced/advanced1.png
+[advanced2]: /images/advanced/advanced2.png
+[advanced3]: /images/advanced/advanced3.png

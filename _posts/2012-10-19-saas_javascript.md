@@ -11,11 +11,9 @@ If you are familiar with [what events are important to track for your SaaS busin
 
 Before you can start tracking the events below, you'll need to make sure that you’ve included the KISSmetrics javascript on your site. To do this, visit the “Settings” link in the Site menu for the site you want to use KISSmetrics on:
 
-![](/images/site_settings_link.png)
+![Site Settings][site-settings]
 
 Next, locate the section titled **“Your javascript code”**:
-  
-![](/images/your_javascript_code.jpg)
 
 Copy the code there and paste it into the `<head>` section of every page of your site.
   
@@ -184,3 +182,4 @@ Like all the Javascript SaaS API methods you can pass in additional properties t
     _kmq.push(['billed', 29.99, null, {'Billing Method': 'Credit Card'} ]);
 
 [ids]: /getting-started/understanding-identities
+[site-settings]: /images/misc/site_settings.png
