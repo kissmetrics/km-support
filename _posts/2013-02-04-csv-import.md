@@ -9,7 +9,7 @@ permalink: /integrations/csv-import/index.html
 ---
 You can import .csv files into KISSmetrics to import data into your account. We'll accept both one-time uploads and a recurring import of .csv files from your Amazon S3 Bucket.
 
-We recommend you read [People, Events, and Properties][pep] before getting started here.
+We recommend you read [People, Events, and Properties][pep] and [Common Methods][common-methods] before getting started here.
 
 ## File Format
 
@@ -26,7 +26,7 @@ Then include at least one of these three columns, depending on what type of data
 
 ### Examples
 
-#### Importing only events:
+#### Importing only events (`record` command):
 
 Identity | Timestamp  | Event
 -------- | ---------- | ----------
@@ -36,7 +36,7 @@ Identity | Timestamp  | Event
 6        | 1325974373 | Joined Newsletter
 10       | 1325629592 | Subscribed
 
-#### Importing events with optional properties:
+#### Importing events with optional properties (`record` command with properties):
 
 Identity | Timestamp  | Event             | Prop:Age  | Prop:Gender | Prop:Favorite Food
 -------- | ---------- | ----------------- | --------- | ----------- | ------------------
@@ -46,7 +46,7 @@ Identity | Timestamp  | Event             | Prop:Age  | Prop:Gender | Prop:Favor
 6        | 1325974373 | Joined Newsletter |           |             | Tapas
 10       | 1325629592 | Subscribed        | 23        | Male        | Apple Pie
 
-#### Importing only properties:
+#### Importing only properties (`set` command):
 
 Identity | Timestamp  | Prop:Email Address
 -------- | ---------- | ------------------
@@ -56,7 +56,7 @@ Identity | Timestamp  | Prop:Email Address
 6        | 1325974373 | joe@bob.com
 10       | 1325629592 | phil@bob.com
 
-#### Importing optional aliases:
+#### Importing optional aliases (`alias` command):
 
 Identity     | Alias          | Timestamp 
 ------------ | -------------- | ----------
@@ -69,4 +69,5 @@ mrtaft2      | ht@example.com | 1230768000
 [Attached is a sample .csv file][sample-csv] for reference.
 
 [pep]: /getting-started/people-events-properties
+[common-methods]: /apis/common-methods
 [sample-csv]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/csv-import-sample.csv
