@@ -44,7 +44,7 @@ Last name: <input type="text" name="lastname"> </input> <br />
 
 Notice the `id` in the first line, `<form id="example_form">`. That's the form's ID, and we'll give that to the Event Wizard:
 
-![Event Wizard: Example Form][example-form]
+<img src="/images/tools/event-library/event-form/example-form@2x.png" width="472" height="396" alt="Event Wizard: Example Form" />
 
 When you save changes here, we'll wait to trigger an event for people who submit the form. So for the above example, when someone submits the form, you'll see that...
 
@@ -63,5 +63,4 @@ How do we know to call the new KISSmetrics properties "Firstname" and "Lastname"
 * Currently, the Event Library takes only a *single* HTML ID or a *single* class name. If you'd like to use the full range of nested CSS selectors, please use JavaScript Library calls to set up these types of events.
 
 [trackSubmit]: /apis/javascript/javascript-specific#tracking-forms
-[example-form]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/event-library/events-form/example-form.png
 [dyn]: /how-tos/dynamic-elements
