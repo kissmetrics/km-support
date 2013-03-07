@@ -32,5 +32,5 @@ KISSmetrics Report | How up-to-date is the data?
 [person-details]: /tools/person-details
 [live]: /tools/live
 
-[data-status]: /images/tools/data-status/01-data.png
-[metric-dashboard]: /images/tools/data-status/02-dashboard.png
+[data-status]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/data-status/01-data.png
+[metric-dashboard]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/data-status/02-dashboard.png
