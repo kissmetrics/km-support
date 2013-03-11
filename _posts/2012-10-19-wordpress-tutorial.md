@@ -2,6 +2,7 @@
 layout: post
 title: Installing KM in WordPress
 categories: [tutorial, installation]
+tags: [installation]
 author: Lars Lofgren
 summary: Learn how to install the JavaScript Library for your WordPress site.
 ---

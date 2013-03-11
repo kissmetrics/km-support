@@ -10,13 +10,16 @@ permalink: /tutorial/installation/index.html
 
 2. Once the script has been installed, it may take anywhere from 2 to 6 hours for tracking to start. We will send you an email notification when data starts becoming available.
 
-3. While you wait...learn about what [events you will be tracking][auto] and how to start [creating custom events][tutorial] tailored to your business.
+3. While you wait...learn about what [events you will be tracking][auto] and how to start [creating custom events][tutorial] tailored to your business. Our [Best Practices section][best-practices] can help you get thinking about what events you'll want to keep track of for your business.
 
 ## Installation for Specific Platforms
 
-Below are videos that will help you install the JavaScript Library on specific platforms, like WordPress.
+Below are more resources that will help you install the JavaScript Library on specific platforms, like WordPress.
+
+{% include summaries/installation_summary.html %}
 
 [settings]: https://www.kissmetrics.com/settings
 [top-v-bottom]: /troubleshooting/top-vs-bottom
-[auto]: /apis/javascript#events-automatically-tracked
+[auto]: /apis/javascript/javascript-settings.html
 [tutorial]: /tutorial
+[best-practices]: /best-practices

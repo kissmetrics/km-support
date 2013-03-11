@@ -3,6 +3,7 @@ layout: post
 title: Installing KISSmetrics through Google Tag Manager
 categories: [apis, javascript]
 author: Eric Fung
+tags: [installation]
 summary: Here's how to load the KISSmetrics JavaScript library through Google Tag Manager.
 ---
 [Google Tag Manager][gtm] is a free tag management system. Rather than editing site code every time you want to add HTML/JavaScript snippets, you can install the Tag Manager script *once* and make updates from within Google.
