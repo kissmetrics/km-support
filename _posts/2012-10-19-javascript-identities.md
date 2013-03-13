@@ -3,7 +3,7 @@ layout: post
 title: Reusing the Identities Set by the JavaScript Library
 categories: [apis, javascript]
 author: Eric Fung
-summary: Our JavaScript library generates customer identities. You can obtain these identities to use them with our server-side libraries or [URL API][url].
+summary: Our JavaScript library generates customer identities. You can obtain these identities to use them with our server-side libraries or URL API.
 ---
 Our JavaScript library attempts to reduce your work in keeping track of unique people:
 

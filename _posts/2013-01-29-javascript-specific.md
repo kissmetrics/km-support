@@ -174,12 +174,19 @@ You can also pass in properties via an additional argument:
 
 By default, if you are tracking forms with `trackSubmit`, we will also capture all non-sensitive form fields as KISSmetrics properties. (We won't record [passwords, hidden, textarea fields as well as sensitive fields like credit card numbers and social security numbers][protected].)
 
-You can add CSS classes to the form inputs to modify what is recorded:
+You can toggle whether to automatically capture form fields in your [JavaScript Settings][js-settings], under the *Form Fields* section.
+
+When the JS is set to automatically capture form fields, including these CSS classes to the form `<input>`s will customize what is recorded:
 
 * `.km_ignore`: forces us to ignore a field
 * `.km_include`: forces us to include a field we normally would not capture
 
-You can toggle whether to automatically capture form fields in your [JavaScript Settings][js-settings], under the *Form Fields* section.
+<a name="property-name-and-value-to-expect"></a>
+#### Property Name and Value to Expect
+
+For the Property Name, we use each `<input>`'s `name` attribute. *If there is no name, we cannot capture the information from that `<input>` field.*
+
+The Value for the Property will be whatever the customer enters into the form.
 
 <a name="identifying-a-person-from-a-form-field"></a>
 #### Identifying a Person From a Form Field
