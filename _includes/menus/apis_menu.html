@@ -2,7 +2,7 @@
   <a href='/apis'>APIs</a>
   <ul>
 
-  {% assign menusize = site.categories.getting-started | size %}
+  {% assign menusize = site.categories.apis | size %}
   {% for page in site.categories.apis reversed limit:site.menu_limit %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
@@ -12,7 +12,7 @@
   {% if menusize > site.menu_limit %}
       <div class='more-content'>
         <li>
-            <a href='/apis'>(View all {{ site.menu_limit }} articles)</a>
+            <a href='/apis'>(View all {{ menusize }} articles)</a>
         </li>
       </div>
   {% endif %}

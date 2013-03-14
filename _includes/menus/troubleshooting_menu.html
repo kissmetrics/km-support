@@ -2,11 +2,20 @@
   <a href='/troubleshooting'>Troubleshooting</a>
   <ul>
   
-  {% for page in site.categories.troubleshooting limit:5 %}
+  {% assign menusize = site.categories.troubleshooting | size %}
+  {% for page in site.categories.troubleshooting reversed limit:site.menu_limit %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
     </li>
   {% endfor %}
+
+  {% if menusize > site.menu_limit %}
+      <div class='more-content'>
+        <li>
+            <a href='/troubleshooting'>(View all {{ menusize }} articles)</a>
+        </li>
+      </div>
+  {% endif %}
   
   </ul>
 </li>

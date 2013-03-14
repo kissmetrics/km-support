@@ -2,11 +2,20 @@
   <a href='/misc'>Miscellaneous</a>
   <ul>
   
-  {% for page in site.categories.misc limit:5 %}
+  {% assign menusize = site.categories.misc | size %}
+  {% for page in site.categories.misc reversed limit:site.menu_limit %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
     </li>
   {% endfor %}
+
+  {% if menusize > site.menu_limit %}
+      <div class='more-content'>
+        <li>
+            <a href='/misc'>(View all {{ menusize }} articles)</a>
+        </li>
+      </div>
+  {% endif %}
   
   </ul>
 </li>

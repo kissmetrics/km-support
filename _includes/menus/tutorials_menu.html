@@ -2,11 +2,20 @@
   <a href='/tutorial'>Tutorials</a>
   <ul>
   
-  {% for page in site.categories.tutorial limit:5 %}
+  {% assign menusize = site.categories.tutorial | size %}
+  {% for page in site.categories.tutorial reversed limit:site.menu_limit %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
     </li>
   {% endfor %}
+
+  {% if menusize > site.menu_limit %}
+      <div class='more-content'>
+        <li>
+            <a href='/tutorial'>(View all {{ menusize }} articles)</a>
+        </li>
+      </div>
+  {% endif %}
   
   </ul>
 </li>

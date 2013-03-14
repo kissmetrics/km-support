@@ -1,12 +1,20 @@
 <li>
   <a href='/a-b-testing'>A/B Testing</a>
   <ul>
-  
-  {% for page in site.categories.a-b-testing limit:5 %}
+
+  {% assign menusize = site.categories.a-b-testing | size %}
+  {% for page in site.categories.a-b-testing reversed limit:site.menu_limit %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
     </li>
   {% endfor %}
-  
+
+  {% if menusize > site.menu_limit %}
+      <div class='more-content'>
+        <li>
+            <a href='/a-b-testing'>(View all {{ menusize }} articles)</a>
+        </li>
+      </div>
+  {% endif %}
   </ul>
 </li>

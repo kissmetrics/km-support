@@ -2,11 +2,20 @@
   <a href='/use-cases'>Use Cases</a>
   <ul>
   
-  {% for page in site.categories.use-cases limit:5 %}
+  {% assign menusize = site.categories.use-cases | size %}
+  {% for page in site.categories.use-cases reversed limit:site.menu_limit %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
     </li>
   {% endfor %}
+
+  {% if menusize > site.menu_limit %}
+      <div class='more-content'>
+        <li>
+            <a href='/use-cases'>(View all {{ menusize }} articles)</a>
+        </li>
+      </div>
+  {% endif %}
   
   </ul>
 </li>
