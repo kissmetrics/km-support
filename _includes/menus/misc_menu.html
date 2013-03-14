@@ -2,7 +2,7 @@
   <a href='/misc'>Miscellaneous</a>
   <ul>
   
-  {% for page in site.categories.misc %}
+  {% for page in site.categories.misc limit:5 %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
     </li>

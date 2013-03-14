@@ -2,7 +2,7 @@
   <a href='/tutorial'>Tutorials</a>
   <ul>
   
-  {% for page in site.categories.tutorial %}
+  {% for page in site.categories.tutorial limit:5 %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
     </li>

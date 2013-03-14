@@ -2,7 +2,7 @@
   <a href="/tools">Reporting Tools</a>
   <ul>
   
-  {% for page in site.categories.tools %}
+  {% for page in site.categories.tools limit:5 %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
     </li>

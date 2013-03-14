@@ -2,7 +2,7 @@
   <a href='/how-tos'>How To's, Examples, and Best Practices</a>
   <ul>
   
-  {% for page in site.categories.how-tos %}
+  {% for page in site.categories.how-tos limit:5 %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
     </li>

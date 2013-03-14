@@ -2,7 +2,7 @@
   <a href='/troubleshooting'>Troubleshooting</a>
   <ul>
   
-  {% for page in site.categories.troubleshooting %}
+  {% for page in site.categories.troubleshooting limit:5 %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
     </li>

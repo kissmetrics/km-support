@@ -2,7 +2,7 @@
   <a href='/use-cases'>Use Cases</a>
   <ul>
   
-  {% for page in site.categories.use-cases %}
+  {% for page in site.categories.use-cases limit:5 %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
     </li>

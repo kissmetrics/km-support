@@ -1,47 +1,20 @@
 <li>
   <a href='/apis'>APIs</a>
   <ul>
+
+  {% assign menusize = site.categories.getting-started | size %}
+  {% for page in site.categories.apis reversed limit:site.menu_limit %}
     <li>
-      <a href='/apis/specifications'>API Specifications</a>
+      <a href="{{page.url}}">{{ page.title }}</a>
     </li>
-    <li>
-      <a href='/apis/common-methods'>Common Methods</a>
-    </li>
-    <li>
-      <a href='/apis/api-tips'>API Tips</a>
-    </li>
-    <li>
-      <a href='/apis/javascript'>JavaScript Library</a>
-    </li>
-    <li>
-      <a href='/apis/ruby'>Ruby Library</a>
-    </li>
-    <li>
-      <a href='/apis/php'>PHP Library</a>
-    </li>
-    <li>
-      <a href='/apis/python'>Python Library</a>
-    </li>
-    <li>
-      <a href='/apis/objective-c'>Objective-C Library</a>
-    </li>
-    <li>
-      <a href='/apis/url'>URL API</a>
-    </li>
-    <li>
-      <a href='/apis/beacon'>Beacon API</a>
-    </li>
-    <li>
-      <a href='/apis/other'>Other/3rd-Party Libraries</a>
-    </li>
-    <li>
-      <a href='/apis/data'>Data Export</a>    
-    </li>
-    <li>
-      <a href='/apis/saas_events'>SaaS Events</a>
-    </li>
-    <li>
-      <a href='/apis/cron'>Sending Data via Cron</a>
-    </li>
+  {% endfor %}
+
+  {% if menusize > site.menu_limit %}
+      <div class='more-content'>
+        <li>
+            <a href='/apis'>(View all {{ site.menu_limit }} articles)</a>
+        </li>
+      </div>
+  {% endif %}
   </ul>
 </li>

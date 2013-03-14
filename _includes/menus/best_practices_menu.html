@@ -2,7 +2,7 @@
   <a href='/best-practices'>Best Practices</a>
   <ul>
   
-  {% for page in site.categories.best-practices %}
+  {% for page in site.categories.best-practices limit:5 %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
     </li>

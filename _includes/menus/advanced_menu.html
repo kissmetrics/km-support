@@ -2,7 +2,7 @@
   <a href='/advanced'>Advanced</a>
   <ul>
   
-  {% for page in site.categories.advanced %}
+  {% for page in site.categories.advanced limit:5 %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
     </li>

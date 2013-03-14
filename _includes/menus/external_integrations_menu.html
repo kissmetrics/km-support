@@ -2,7 +2,7 @@
   <a href='/integrations'>External Integrations</a>
   <ul>
   
-  {% for page in site.categories.integrations %}
+  {% for page in site.categories.integrations limit:5 %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
     </li>

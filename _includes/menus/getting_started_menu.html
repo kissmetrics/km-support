@@ -2,11 +2,19 @@
   <a href='/getting-started'>Getting Started</a>
   <ul>
   
-  {% for page in site.categories.getting-started reversed %}
+  {% assign menusize = site.categories.getting-started | size %}
+  {% for page in site.categories.getting-started reversed limit:site.menu_limit %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
     </li>
   {% endfor %}
-  
+
+  {% if menusize > site.menu_limit %}
+      <div class='more-content'>
+        <li>
+            <a href='/getting-started'>(View all {{ site.menu_limit }} articles)</a>
+        </li>
+      </div>
+  {% endif %}
   </ul>
 </li>
