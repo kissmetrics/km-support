@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript Library Specifics
 categories: [apis,javascript]
-tags: [km_include, km_exclude]
+tags: [km_include, km_exclude, tracksubmit, trackclick, record, set]
 author: Eric Fung
 summary: Information on extra capabilities of our JavaScript Library, in addition to the methods common to all APIs.
 permalink: /apis/javascript/javascript-specific/index.html
