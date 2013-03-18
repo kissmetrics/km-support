@@ -38,6 +38,7 @@ Then navigate to [http://localhost:4000](http://localhost:4000).
 * All new files go into the `_post` folder and the filenames need to be formated a specific way (`2013-01-01-foo-bar.md`).
 * You can find a [style guide](http://support.kissmetrics.com/misc/styleguide.html) that provides an overview of Markdown formatting syntaxes and best practices.
 
+
 We have a Rake task available to automate the creation of a blank post. Use the command `rake post`, which you use if you're in the project directory. You can also specify options on the command line as follows:
 
     $ rake post title="Some API" author="Eric Fung" categories=apis tags="some, tags"
