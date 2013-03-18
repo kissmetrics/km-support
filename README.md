@@ -11,6 +11,8 @@ Let's start by installing GCC and RVM:
 
 Now in a terminal:
 
+    rvm install 1.9.3
+    rvm use 1.9.3
     gem install bundler
     bundle install
 
