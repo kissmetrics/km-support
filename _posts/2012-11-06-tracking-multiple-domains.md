@@ -7,6 +7,7 @@ summary: Do your customers land on several domains when interacting with your we
 ---
 The JavaScript library keeps track of each user's ID as a first party cookie. This is usually fine, but if your customers navigate to two or more domains while using your site, that means there will be two or more cookies that represent a person, and you should ensure that both cookies use the same value to represent that person.
 
+<a name="several-subdomains"></a>
 ## Several Subdomains
 
 Let's say you want to track what happens as people browse on different **subdomains** of your site, and you want to see it all in the same KISSmetrics site.
@@ -24,6 +25,7 @@ If you have put the same JavaScript code on all of these subdomains, by default 
 
 ![Include Host and Subdomain][include-host]
 
+<a name="to-track-subdomains-separately"></a>
 ### To Track Subdomains Separately...
 
 If you want to track the subdomains separately in two KISSmetrics sites, you can specify a cookie domain `KM_COOKIE_DOMAIN` before the KISSmetrics Javascript is included. This might look like:
@@ -36,6 +38,7 @@ If you want to track the subdomains separately in two KISSmetrics sites, you can
       ...
     </script>
 
+<a name="several-top-level-domains"></a>
 ## Several Top-Level Domains
 
 However, let's say you are tracking two different domains:
@@ -45,6 +48,7 @@ However, let's say you are tracking two different domains:
 
 This is a little more difficult, because now each domain has its own set of cookies to keep track of each visitor.
 
+<a name="what-do-i-need-to-do"></a>
 ## What do I need to do?
 
 So far, we've seen two methods that work:
@@ -58,12 +62,14 @@ Let's look at an example of #2:
 * There is a link that takes people from `www.yoursite.com` to `yoursite.3rd-party-checkout.com`.
 * Adjust the link, using our [URL API][url] to tag the current KM ID as part of the destination URL.
 
+<a name="example-1-known-users"></a>
 ### Example 1: Known Users
 
 This is what hard-coding a URL would look like, to identify anyone who clicks this as "bob@bob.com":
 
      yoursite.3rd-party-domain.com/?kmi=bob%40bob.com
 
+<a name="example-2-anonymous-users"></a>
 ### Example 2: Anonymous Users
 
 You can use the `KM.i()` function to obtain the visitor's current ID (anonymous or not), and make use of that:
