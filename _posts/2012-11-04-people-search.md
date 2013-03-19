@@ -124,9 +124,9 @@ Saving a People Search will preserve both your conditions and the columns you wa
 
 You can choose to export this group of people, and we'll email you a link to download a CSV of the results. It will include all columns of data that are part of your search results. 
 
-You may notice that any columns that have dates in them will not include a date in the same format. We store the dates in Unix Time Stamp, which looks like a collection of numbers, not a date.
+You may notice that any columns that have dates in them will not include a date in the same format. We store the dates as a UTC Unix epoch (in seconds), which looks like a collection of numbers, not a date.
 
-To convert any such Unix Time Stamp back into a human-readable date in Excel, simply apply this forumula to your CSV export:
+To convert any such Unix timestamp back to a human-readable date in Excel or other spreadsheet software, simply use this forumula:
 
 
     =(UNIX_TIMESTAMP/86400)+DATEVALUE("1/1/1970")
