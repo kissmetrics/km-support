@@ -11,6 +11,7 @@ You may know that our funnel reports allow you to segment a funnel according to 
 
 But let's say I want to see Referrer information _only for people who have signed up for a Free plan._ Here is our additional property filter to let you do that.
 
+<a name="property-filter"></a>
 ## Property Filter
 
 * Click on the gear icon next to the Property drop-down menu.
