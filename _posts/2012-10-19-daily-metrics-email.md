@@ -13,7 +13,7 @@ If you'd like, we can send you daily updates for up to 9 of your metrics:
 
 [**Subscribe here**][subscribe]!
 
-This is a fairly new feature and is a bit limited in scope. Particularly, if you have multiple projects/sites/products under your account, the daily email report will be sent for that project/site/product with the highest number of incoming events.
+This is a fairly new feature and is a bit limited in scope. Particularly, if you have multiple projects/sites/products under your account, the daily email report will be sent for that project/site/product marked as a **"Production" site** with the highest number of incoming events.
 
 ## Example
 
