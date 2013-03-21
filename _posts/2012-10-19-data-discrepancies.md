@@ -11,6 +11,7 @@ Trying to make sense of the amount of data you collect in KISSmetrics can be dau
 * Reasons we might not capture 100% of the data
 * How to determine where the root of the discrepancy may come from
 
+<a name="best-effort-accuracy"></a>
 ## Best Effort Accuracy
 
 KISSmetrics, like all analytics vendors, makes its best effort to achieve 100% accuracy. However, despite all of our best efforts, there are many things that are not within our control. These include:
@@ -28,6 +29,7 @@ KISSmetrics, like all analytics vendors, makes its best effort to achieve 100% a
 
 [Entire whitepapers][whitepapers] are dedicated to these challenges. But in spite of the challenges, we still continue to try to innovate and get closer and closer to the goal of delivering 100% of your data.
 
+<a name="what-can-i-do"></a>
 ### What Can I Do?
 
 There are some events, especially Revenue-related events, where it would be very important to ensure that we capture every instance. For these events, it's effective to use our [server-side libraries or other integrations][ways], if possible. Though this means it can take more time to implement, you get two main benefits:
@@ -37,6 +39,7 @@ There are some events, especially Revenue-related events, where it would be very
 
 You can refer to this [article for combining data from our JavaScript Library with our other data libraries][jsid].
 
+<a name="steps-for-investigation"></a>
 # Steps For Investigation
 
 If you suspect that KISSmetrics' reports disagrees with the data you were expecting, these are the types of investigative questions our support team would use to approach the situation.
@@ -83,7 +86,7 @@ KISSmetrics provides a number of specialized reporting tools, each with their ow
 
 If you'd like some help with the above steps, please contact our support team! We're happy to help.
 
-
+<a name="kissmetrics-status"></a>
 # KISSmetrics Status
 
 If there are any known site-wide issues, we will post a notice to [status.kissmetrics.com][status]. This message will also appear at the top of the website when you log into your account.
