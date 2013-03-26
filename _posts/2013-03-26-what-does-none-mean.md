@@ -1,10 +1,10 @@
 ---
 layout: post
 categories: troubleshooting
-title: "When I segment by a property, what does 'None' mean?"
 tags: []
 author: Eric Fung
-summary: "None" or "Direct" means we did not find a value for this person.
+title: "When I segment by a property, what does 'None' mean?"
+summary: "'None' or 'Direct means we did not find a value for this person."
 ---
 When you segment your reports by a property, you'll notice some people are listed in the "None" segment, or "Direct" for URL-based properties like `Referrer`.
 
