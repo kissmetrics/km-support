@@ -206,6 +206,8 @@ img {
   border: none;
   background: none;
   color: #3c7aac; 
+  margin: 0 0px;
+  padding: 0px 0px;
 }
 
 .col a code {
