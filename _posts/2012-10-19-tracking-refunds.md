@@ -17,3 +17,23 @@ Identity     | Timestamp  | Event    | Prop:Billing Amount
 1234567      | 1305080000 | Refunded | -90
 1234567      | 1307600000 | Billed   | 50
 1234567      | 1309900000 | Billed   | 45
+
+## Refunds for SaaS Businesses
+
+*Note: We are planning development of a Revenue Report specifically for SaaS businesses. We have not yet incorporated Refunds into this report yet, but you can be prepared when we launch the report by recording refund data using this event and these properties. If you are a SaaS business, you can stop recording refunds as a Negative Billing Amount and use this:*
+
+### Subscription Refunded
+
+Triggered when you apply a refund for a customer.
+
+* `Subscription Refund Amount`: Numeric. The refunded amount, as a positive number.
+* `Subscription Refund Length`: Numeric. Indicates from how many previous ***months*** we should deduct this refunded amount.
+* `Subscription Refund Reason`: Text. Describes the reason for the refund.
+
+Example: You refund Joe $100 while he is on a $50/mo Small plan.
+
+    KM.identify( <Joe's Identity> );
+    KM.record('Subscription Refunded', {
+      'Subscription Refund Amount' => 100,
+      'Subscription Refund Reason' => 'Charged incorrect amount'
+    });

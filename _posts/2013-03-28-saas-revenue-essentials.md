@@ -30,7 +30,7 @@ When to trigger the event and any other contextual information
 Triggered when a customer is successfully billed for their payment.
 
 * `Subscription Billing Amount`: Numeric. The amount that the customer paid. You do not need to include the currency symbol.
-* `Subscription Billing Length`: Numeric. Indicates in ***months*** how frequently . Fractional months are accepted too.
+* `Subscription Billing Length`: Numeric. Indicates in ***months*** how frequently the customer is being billed. Fractional months are accepted too.
 * `Subscription Plan Level`: Text. Describes what plan the person is on.
 
 Example 1: Joe pays $50/mo for your Small Plan.
@@ -74,7 +74,7 @@ Example: Joe cancels his account because he doesn't have the budget anymore.
 Triggered when a customer upgrades to start paying you more money.
 
 * `Subscription Billing Amount`: Numeric. The **new** amount that the customer is paying. You do not need to include the currency symbol.
-* `Subscription Billing Length`: Numeric. Indicates in ***months*** how frequently . Fractional months are accepted too.
+* `Subscription Billing Length`: Numeric. Indicates in ***months*** how frequently the customer will be billed. Fractional months are accepted too.
 * `Subscription Plan Level`: Text. Describes the **new** plan the person is on.
 
 Example: Joe upgrades his plan from $50/mo Small plan to a $100/mo Medium plan.
@@ -92,7 +92,7 @@ Example: Joe upgrades his plan from $50/mo Small plan to a $100/mo Medium plan.
 Triggered when a customer downgrades to start paying you less money.
 
 * `Subscription Billing Amount`: Numeric. The **new** amount that the customer is paying. You do not need to include the currency symbol.
-* `Subscription Billing Length`: Numeric. Indicates in ***months*** how frequently . Fractional months are accepted too.
+* `Subscription Billing Length`: Numeric. Indicates in ***months*** how frequently the customer will be billed. Fractional months are accepted too.
 * `Subscription Plan Level`: Text. Describes the **new** plan the person is on.
 
 Example: Joe downgrades his plan from $100/mo Medium plan to a $50/mo Small plan.
@@ -107,10 +107,13 @@ Example: Joe downgrades his plan from $100/mo Medium plan to a $50/mo Small plan
 <!--
 ### Subscription Refunded
 
+*Note: we have not incorporated Refunds into the SaaS Revenue Report yet, but you can be prepared when we update our report by recording refund data using this event and these properties.*
+
 Triggered when you apply a refund for a customer.
 
-* `Subscription Refund Amount`: Numeric. The refunded amount. (Is this supposed to be a positive or negative number?)
-* `Subscription Refund Reason`: Text. Describes the reason for the person is on.
+* `Subscription Refund Amount`: Numeric. The refunded amount, as a positive number.
+* `Subscription Refund Length`: Numeric. Indicates from how many ***months*** we should deduct this refunded amount.
+* `Subscription Refund Reason`: Text. Describes the reason for the refund.
 
 Example: You refund Joe $100 while he is on a $50/mo Small plan.
 
