@@ -53,6 +53,6 @@ You can create an additional Salesforce Page to link to Leads in addition to Con
     </apex:page>
 
 [devforce]: http://developer.force.com/
-[request]: mailto:jevanish@kissmetrics.com
+[request]: mailto:jevanish@kissmetrics.com?subject=%5BSalesforce%5D%20Requesting%20Access
 
 [ssoverview]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/salesforce/overview.png

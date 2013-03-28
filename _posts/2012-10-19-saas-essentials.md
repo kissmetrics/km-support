@@ -27,6 +27,7 @@ This guide will use the following format:
 
 **Example Recommended Event** <br />
 When to trigger the event and any other contextual information
+
 * Recommended property to set at the same time an event triggers
 * Recommended property to set at the same time an event triggers
 * Etc.
@@ -135,21 +136,39 @@ We detect this by checking the URL for `?gclid` or `?utm_` parameters, which ind
 * `Campaign Content`
 * `Campaign Name`
 
-### Upgraded
+### Subscription Upgraded
 
-Triggered when a customer upgrades to a higher priced plan or subscription.
+Triggered when a customer upgrades to start paying you more money.
 
-* `Plan Name` indicates the name of the higher priced plan.
+* `Subscription Billing Amount`: Numeric. The **new** amount that the customer is paying. You do not need to include the currency symbol.
+* `Subscription Billing Length`: Numeric. Indicates in ***months*** how frequently . Fractional months are accepted too.
+* `Subscription Plan Level`: Text. Describes the **new** plan the person is on.
 
-You’ll notice that there is no "From Plan" property. This is because KISSmetrics keeps a whole history for each person so there is no need to pass in which plan a person is upgrading from. KISSmetrics already knows this!
+Example: Joe upgrades his plan from $50/mo Small plan to a $100/mo Medium plan.
 
-### Downgraded
+    KM.identify( <Joe's Identity> );
+    KM.record('Subscription Upgraded', {
+      'Subscription Billing Amount' => 100,
+      'Subscription Billing Length' => 1,
+      'Subscription Plan Level' => 'Medium'
+    });
 
-Triggered when a customer downgrades to a lower priced plan or subscription.
+### Subscription Downgraded
 
-* `Plan Name` indicates the name of the lower priced plan.
+Triggered when a customer downgrades to start paying you less money.
 
-You’ll notice that there is no "From Plan" property. This is because KISSmetrics keeps a whole history for each person so there is no need to pass in which plan a person is upgrading from. KISSmetrics already knows this!
+* `Subscription Billing Amount`: Numeric. The **new** amount that the customer is paying. You do not need to include the currency symbol.
+* `Subscription Billing Length`: Numeric. Indicates in ***months*** how frequently . Fractional months are accepted too.
+* `Subscription Plan Level`: Text. Describes the **new** plan the person is on.
+
+Example: Joe downgrades his plan from $100/mo Medium plan to a $50/mo Small plan.
+
+    KM.identify( <Joe's Identity> );
+    KM.record('Subscription Downgraded', {
+      'Subscription Billing Amount' => 50,
+      'Subscription Billing Length' => 1,
+      'Subscription Plan Level' => 'Small'
+    });
 
 ### Ended Trial (if you have a trial period)
 
@@ -171,18 +190,47 @@ Triggered when a customer refers a friend or invites them to subscribe or sign u
 
 ## Tracking Revenue Behavior
 
-### Billed / Paid
+### Subscription Billed
 
-Triggered when a customer is billed / has paid for their subscription. Record this event only after a successful billed so that it does not record failed charge attempts.
+Triggered when a customer is successfully billed for their payment.
 
-* `Billing Amount` indicates the amount that the customer paid.
-* `Billing Description` indicates the description of what bill was for. This is an optional property to describe things like *Monthly Subscription* or *Annual Subscription* or *Overage Fee*.
+* `Subscription Billing Amount`: Numeric. The amount that the customer paid. You do not need to include the currency symbol.
+* `Subscription Billing Length`: Numeric. Indicates in ***months*** how frequently . Fractional months are accepted too.
+* `Subscription Plan Level`: Text. Describes what plan the person is on.
 
-### Canceled
+Example 1: Joe pays $50/mo for your Small Plan.
 
-Triggered when a customer cancels their subscription with you.
+    # Example 1
+    KM.identify( <Joe's Identity> );
+    KM.record('Subscription Billed', {
+      'Subscription Billing Amount' => 50,
+      'Subscription Billing Length' => 1,
+      'Subscription Plan Level' => 'Small'
+    });
 
-* `Cancellation Reason` indicates the reason why a customer cancelled (if this information is available)
+Example 2: Ted pays $1200/year for your Large Plan.
+
+    # Example 2
+    KM.identify( <Ted's Identity> );
+    KM.record('Subscription Billed', {
+      'Subscription Billing Amount' => 1200,
+      'Subscription Billing Length' => 12,
+      'Subscription Plan Level' => 'Large'
+    });
+
+### Subscription Canceled
+
+Triggered when a customer cancels their plan and stops paying you.
+
+* `Subscription Cancelation Reason`: Text. Describes why the customer canceled.
+
+Example: Joe cancels his account because he doesn't have the budget anymore.
+
+    # Example
+    KM.identify( <Joe's Identity> );
+    KM.record('Subscription Canceled', {
+      'Subscription Cancelation Reason' => 'No Budget'
+    }
 
 ---
 
