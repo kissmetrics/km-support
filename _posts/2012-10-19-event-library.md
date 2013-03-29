@@ -43,7 +43,7 @@ There are three types of events listed here:
 
 * **How often does the Event Library update my JavaScript file?**
 
-Creating new events in the Event Library means you'll be able to start tracking live data within the next **minute**.
+When you save changes to the Event Library, they are set to update within 1 minute. Realistically though, it can take **up to an hour** for our CDN to synchronize the updates across the servers providing your JS library, and for your browser's cached version of the JS Library to expire (without you forcing a refresh). We don't typically see it taking THAT long, but in the worst case scenario, your new Event Library events won't be visible until an hour later.
 
 * **Where can I change the display names of the events?**
 
