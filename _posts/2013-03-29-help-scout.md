@@ -4,7 +4,6 @@ title: Help Scout
 categories: integrations
 author: Nemo Chu
 summary: Import data from Help Scout into KISSmetrics.
-published: false
 ---
 [Help Scout][help-scout] is a help desk application for customer support.
 
