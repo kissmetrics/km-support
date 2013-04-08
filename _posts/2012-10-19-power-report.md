@@ -108,6 +108,6 @@ Here's what the example configuration above would look like after you run the re
 [people-search]: /tools/people-search
 [relative]: /tools/power-report/relative-to
 
-[ss-columns]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/power-report/report-columns.png
-[ss-segments]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/power-report/report-segments.png
-[ss-results]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/power-report/results.png
+[ss-columns]: /tools/power-report/power-report-columns.png
+[ss-segments]: /tools/power-report/power-report-segments.png
+[ss-results]: /tools/power-report/power-report-results.png
