@@ -20,7 +20,7 @@ These are common, useful power reports our customers have set up. Because the Po
 
 As a rule of thumb, this is the mindset to help you create a report:
 
-* **Report Columns**: what's the number you're getting at the end of the day? [Number of people, number of times an event happens, a sum over a property][calcluations]?
+* **Report Columns**: what's the number you're getting at the end of the day? [Number of people, number of times an event happens, a sum over a property][calculations]?
 * **Report Segments**: what criteria are you using to divide your numbers from above into more interesting pieces? Are you looking to compare X this month vs. last month ("Over Time")? Are you looking to compare X based on which Referrer brought people to your site? What is the *comparison* criteria?
 
 <a name="measuring-retention"></a>
