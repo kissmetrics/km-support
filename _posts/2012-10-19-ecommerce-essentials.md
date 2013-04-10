@@ -82,7 +82,7 @@ Triggered when a customer uses your search bar to look for products within your 
 
 Triggered when a customer looks at an individual product or item.
 
-* `SKU/ProductID` indicates the SKU code or Product ID that your inventory or online cataloging system uses.
+* `Product Viewed - SKU/ProductID` indicates the SKU code or Product ID that your inventory or online cataloging system uses.
 * `Product Viewed - Name` indicates the actual Product name such as “Macbook Pro” or “Cinema Display”.
 * `Product Viewed - Price` indicates the price of the product such as “8.95”.
 
