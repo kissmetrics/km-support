@@ -26,9 +26,10 @@ This guide will use the following format:
 
 **Example Recommended Event** <br />
 When to trigger the event and any other contextual information
-* `Recommended property to set at the same time an event triggers`
-* `Recommended property to set at the same time an event triggers`
-* `Etc.`
+
+* Recommended property to set at the same time an event triggers
+* Recommended property to set at the same time an event triggers
+* Etc.
 
 ---
 <a name="tracking-marketing-acquisition-behavior"></a>
