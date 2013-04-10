@@ -83,19 +83,19 @@ Triggered when a customer uses your search bar to look for products within your 
 Triggered when a customer looks at an individual product or item.
 
 * `SKU/ProductID` indicates the SKU code or Product ID that your inventory or online cataloging system uses.
-* `Product Name` indicates the actual Product name such as “Macbook Pro” or “Cinema Display”.
-* `Price` indicates the price of the product such as “8.95”.
+* `Product Viewed - Name` indicates the actual Product name such as “Macbook Pro” or “Cinema Display”.
+* `Product Viewed - Price` indicates the price of the product such as “8.95”.
 
 <a name="add-to-cart"></a>
 ### Add to Cart
 
 Triggered when customers add a product to their cart.
 
-* `SKU/ProductID` indicates the SKU code or Product ID that your inventory or online cataloging system uses.
-* `Product Name` indicates the actual Product Name such as “Macbook Pro” or “Cinema Display”.
-* `Price/Amount` indicates the price of the product such as “8.95”.
-* `Color/Size/Category/Variation` indicates the color, size, or any other branding you need to assign such as “Red” “Medium” and/or “30-inch Thunderbolt Version”. This can be many properties depending on how granular you want your data to be.
-* `Quantity` indicates how many of the products such as “1” “2” or “3”.
+* `Product Added - SKU/ProductID` indicates the SKU code or Product ID that your inventory or online cataloging system uses.
+* `Product Added -  Name` indicates the actual Product Name such as “Macbook Pro” or “Cinema Display”.
+* `Product Added - Price` indicates the price of the product such as “8.95”.
+* `Product Added - Color/Size/Category/Variation` indicates the color, size, or any other branding you need to assign such as “Red” “Medium” and/or “30-inch Thunderbolt Version”. This can be many properties depending on how granular you want your data to be.
+* `Product Added - Quantity` indicates how many of the products such as “1” “2” or “3”.
 
 ---
 
