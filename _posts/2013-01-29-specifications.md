@@ -7,6 +7,14 @@ summary: Here's how our Simple Person-Based REST-like API works, on top of which
 ---
 To be unobtrusive to your end-users, we'll respond with a 200 OK status, even if some of these parameters are "incorrect". The response will be a 1x1 GIF image (to power our "[Beacon API][beacon]").
 
+<hr />
+# Table of Contents
+
+1. [Recording an Event][section1]
+2. [Setting Properties][section2]
+3. [Aliasing Users][section3]
+
+<a name="recording-an-event"></a>
 ## Recording an Event
 
 Method URL:
@@ -33,6 +41,7 @@ This records that the user `bob` did the event `Signed Up` and his `gender` was 
 
 Please be aware of how our processing servers detect [duplicate events][dupes-events].
 
+<a name="setting-properties"></a>
 ## Setting Properties
 
 Method URL:
@@ -58,6 +67,7 @@ This records that the user `bob` got the property `gender` with the value set to
 
 Please be aware of how our processing servers detect [duplicate properties][dupes-props].
 
+<a name="aliasing-users"></a>
 ## Aliasing Users
 
 Method URL:
@@ -99,3 +109,7 @@ Notes:
 [dupes-events]: /troubleshooting/detecting-duplicates#duplicate-events
 [dupes-props]: /troubleshooting/detecting-duplicates#duplicate-properties
 [integration]: /integrations
+
+[section1]: #recording-an-event
+[section2]: #setting-properties
+[section3]: #aliasing-users
