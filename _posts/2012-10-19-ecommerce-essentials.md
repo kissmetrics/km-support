@@ -26,9 +26,10 @@ This guide will use the following format:
 
 **Example Recommended Event** <br />
 When to trigger the event and any other contextual information
-* `Recommended property to set at the same time an event triggers`
-* `Recommended property to set at the same time an event triggers`
-* `Etc.`
+
+* Recommended property to set at the same time an event triggers
+* Recommended property to set at the same time an event triggers
+* Etc.
 
 ---
 <a name="tracking-marketing-acquisition-behavior"></a>
@@ -81,20 +82,20 @@ Triggered when a customer uses your search bar to look for products within your 
 
 Triggered when a customer looks at an individual product or item.
 
-* `SKU/ProductID` indicates the SKU code or Product ID that your inventory or online cataloging system uses.
-* `Product Name` indicates the actual Product name such as “Macbook Pro” or “Cinema Display”.
-* `Price` indicates the price of the product such as “8.95”.
+* `Product Viewed - SKU/ProductID` indicates the SKU code or Product ID that your inventory or online cataloging system uses.
+* `Product Viewed - Name` indicates the actual Product name such as “Macbook Pro” or “Cinema Display”.
+* `Product Viewed - Price` indicates the price of the product such as “8.95”.
 
 <a name="add-to-cart"></a>
 ### Add to Cart
 
 Triggered when customers add a product to their cart.
 
-* `SKU/ProductID` indicates the SKU code or Product ID that your inventory or online cataloging system uses.
-* `Product Name` indicates the actual Product Name such as “Macbook Pro” or “Cinema Display”.
-* `Price/Amount` indicates the price of the product such as “8.95”.
-* `Color/Size/Category/Variation` indicates the color, size, or any other branding you need to assign such as “Red” “Medium” and/or “30-inch Thunderbolt Version”. This can be many properties depending on how granular you want your data to be.
-* `Quantity` indicates how many of the products such as “1” “2” or “3”.
+* `Product Added - SKU/ProductID` indicates the SKU code or Product ID that your inventory or online cataloging system uses.
+* `Product Added -  Name` indicates the actual Product Name such as “Macbook Pro” or “Cinema Display”.
+* `Product Added - Price` indicates the price of the product such as “8.95”.
+* `Product Added - Color/Size/Category/Variation` indicates the color, size, or any other branding you need to assign such as “Red” “Medium” and/or “30-inch Thunderbolt Version”. This can be many properties depending on how granular you want your data to be.
+* `Product Added - Quantity` indicates how many of the products such as “1” “2” or “3”.
 
 ---
 
@@ -159,10 +160,10 @@ Here's example code for a purchase with 4 different items:
 
     <script>
     _kmq.push(['record', 'Purchased', {'Order ID':10001, 'Order Total':499.99}]);
-    _kmq.push(['set', {'SKU':123, '_t':KM.ts(), '_d':1}]);
-    _kmq.push(['set', {'SKU':234, '_t':KM.ts() + 1, '_d':1}]);
-    _kmq.push(['set', {'SKU':345, '_t':KM.ts() + 2, '_d':1}]);
-    _kmq.push(['set', {'SKU':456, '_t':KM.ts() + 3, '_d':1}]);
+    _kmq.push(['set', {'Purchased SKU':'a123', '_t':KM.ts(), '_d':1}]);
+    _kmq.push(['set', {'Purchased SKU':'b234', '_t':KM.ts() + 1, '_d':1}]);
+    _kmq.push(['set', {'Purchased SKU':'c345', '_t':KM.ts() + 2, '_d':1}]);
+    _kmq.push(['set', {'Purchased SKU':'d456', '_t':KM.ts() + 3, '_d':1}]);
     </script>
 
 `KM.ts()` returns the current timestamp. In order to log each item in a single purchase event, KISSmetrics needs to see each item individually. The example code delays each `set` call by 1 second so that KISSmetrics can record all the items. The parameter `_d` is set to 1 to indicate you're using a custom timestamp.
