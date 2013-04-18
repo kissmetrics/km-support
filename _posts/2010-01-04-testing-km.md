@@ -11,6 +11,7 @@ When you are starting out, we highly recommended that you set up a separate Test
 
 Creating a new site provides you an additional API key, which you can reserve only for your testing. Most web applications have a configuration file management system to let you swap in the correct KM API key, depending on whether you're running in Production environment or not.
 
+<a name="create-a-separate-testing-site"></a>
 # Create a Separate Testing Site
 
 * Click the name of your site in the top-left corner. This shows a menu for all the sites you are managing.
@@ -24,6 +25,7 @@ Creating a new site provides you an additional API key, which you can reserve on
 
 **Remember to install your testing API key only when testing, and to use your production API key for real, live/production data.**
 
+<a name="testing-individual-events"></a>
 # Testing Individual Events
 
 There are two main methods to ensure that your KISSmetrics events are set up properly.
@@ -31,6 +33,7 @@ There are two main methods to ensure that your KISSmetrics events are set up pro
 1. You can use our real-time tool [KISSmetrics Live][live] to watch for your own activity.
 2. For more technical users, you can check that there is network activity to our tracking servers.
 
+<a name="using-kissmetrics-live"></a>
 ## Using KISSmetrics Live
 
 All of our users have access to using [Live][live]. This tool scans for events that are immediately happening on your site. In fact, you can even use the "My Activity" filter to load your site in a new tab, and limit Live to just your own browser's activity.
@@ -41,6 +44,7 @@ As you step through your site, you can cross-reference in Live that your activit
 
 Read more about Live at our documentation: [KISSmetrics Live][live-doc]
 
+<a name="examine-network-activity"></a>
 ## Examine Network Activity
 
 For those familiar with using their web browser's developer tools, you can also refer to the browser's Network activity. As you browse during testing, look for requests to `trk.kissmetrics.com`; these tracking URLs will be structured according to our [API specifications][specs].
@@ -56,6 +60,7 @@ Viewing the network requests help you confirm a few key items all at once:
 
 If the response from our server is `Status Code: 200 OK` (third item from the top), then we have received the event just fine, and you can consider this event as successfully triggered. Then it's just a matter of time (about 2-5 hours) to allow our servers to process these recently-fired events for reporting everywhere else in our application.
 
+<a name="testing-data-in-reports"></a>
 # Testing Data in Reports
 
 If you suspect that KISSmetrics’ reports disagrees with the data you were expecting, the investigative process our support team uses is shown in our page for [Steps For Investigation][investigation]. Often, it comes down to the way individual events were implemented, or understanding how our [different tools][tools] calculate your data.
