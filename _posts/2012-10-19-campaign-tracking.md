@@ -52,30 +52,6 @@ Anyone who clicks the above link will land on `http://www.example.com/landing-pa
 
 Whoever clicks on the above link will land on `http://www.example.com/landing-page` and will start the browsing session as `example@example.com`. (The `%40` represents the `@` symbol in URLs.)
 
-## With Adwords Auto-Tagging
-
-One major benefit is that you can use it in conjunction with Google Adwords' auto-tagging for ads. Auto-tagging has largely replaced the use of UTM-variables for Adwords. Because of the propietary format, we can only recognize that these links are Ad Campaign Hits, but we can't tell any additional information about that campaign.
-
-Luckily, you can combine our URL API with an auto-tagged URL. This will have our JavaScript Library trigger the `Ad Campaign Hit`, which you can supplement with the properties you specify.
-
-For example, you can provide Adwords this URL:
-
-    http://www.example.com/landing-page?km_Campaign+Source=Newsletter
-
-Which will get auto-tagged with a generated `gclid` parameter like so:
-
-    http://www.example.com/landing-page?km_Campaign+Source=Newsletter
-      &gclid=foo123456789
-    
-Which ends up recording this data:
-
-    Event triggered: Ad Campaign Hit
-    Campaign Source: Newsletter
-
-* **Pros**: You have the freedom to the name the events what you like. You can also pass along identities if you know them. This method is also compatible with [Google Analytics' auto-tagging][auto-tagging].
-* **Cons**: This tagging is exclusive to us. The parameters you pass along are also visible to your visitors.
-
-
 # III. Custom Solution
 
 The last solution is to do everything custom. You can use JavaScript to get the `document.URL` and parse it for any parameters you're interested in passing to us. At which point, you can record that data using our basic `record` and `set` commands.
