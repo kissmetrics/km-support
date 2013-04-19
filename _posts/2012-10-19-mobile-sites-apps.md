@@ -5,15 +5,37 @@ categories: how-tos
 author: Eric Fung
 summary: Using KISSmetrics to track mobile sites and apps.
 ---
-KISSmetrics can track your mobile site using our typical [JavaScript Library][js]. For a native iOS or Android application, we'll need to do some more work. You have a few options:
+KISSmetrics can track your mobile website using our typical [JavaScript Library][js]. For a native iOS or Android application, you'lll need to do some more work.
 
-## 1. Use Ruby/PHP/Python Library on backend (recommended)
+## 1. Implement events using the library in the app's native language
 
-If possible, we recommend that you record mobile app events when they trigger a corresponding event on your backend servers (Ruby/PHP/Python). Then you can record the server-side event using one of our available server APIs.
+* iOS/Objective-C: an [official library is available][ios-official].
+* Android: an [*unofficial* library is available][android]. We do not test or provide support for it. Please use at your own discretion.
 
-### Mobile Apps
+## 2. PhoneGap and JavaScript Library
 
-The primary benefit of using the backend server API is that it excludes an additional library from affecting user experience or taking up unnecessary memory on your app. This allow allows you to record all data coming in through the backend at the USER level.
+There are frameworks like [PhoneGap][phonegap] that let you write mobile apps using HTML and JavaScript. Some of our customers have found success with using our [JavaScript Library][js], with some modifications:
+
+    <script type="text/javascript">
+      var _kmq = _kmq || [];
+      var _kmk = _kmk || 'foo';
+      function _kms(u){
+        setTimeout(function(){
+          var d = document, f = d.getElementsByTagName('script')[0],
+          s = d.createElement('script');
+          s.type = 'text/javascript'; s.async = true; s.src = u;
+          f.parentNode.insertBefore(s, f);
+        }, 1);
+      }
+
+      // Include "http:" when initializing the external JS files, else it will look for a local JS file://i.kissmetrics.com/i.js
+      _kms('http://i.kissmetrics.com/i.js');
+      _kms('http://doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+    </script>
+
+## 3. Use Ruby/PHP/Python Library on backend
+
+Your mobile app may communicate with your backend servers when key events occur. When the above options do not work, you can record the server-side event using one of our available [Ruby/PHP/Python libraries][apis].
 
 #### Example:
 
@@ -61,38 +83,8 @@ The idea here is that you can designate which feature of your app is the "first 
 
 In addition, you can use KISSmetrics server-side API's to track performance of automated systems such as how many times errors and bugs are being reported/logged.
 
-## 2. iOS Library
-
-An official library is available [from this repository][ios-official].
-
-There is also an unofficial library available at [coffeeshopped.com][ios-unofficial]. We do not test or provide support for it. Please use at your own discretion.
-
-An unofficial Android library is available at our [3rd party APIs page][other].
-
-## 3. PhoneGap and JavaScript Library
-
-There are frameworks like [PhoneGap][phonegap] that let you write mobile apps using HTML and JavaScript. We've found our JavaScript Library can work with this, with some modifications:
-
-    <script type="text/javascript">
-      var _kmq = _kmq || [];
-      var _kmk = _kmk || 'foo';
-      function _kms(u){
-        setTimeout(function(){
-          var d = document, f = d.getElementsByTagName('script')[0],
-          s = d.createElement('script');
-          s.type = 'text/javascript'; s.async = true; s.src = u;
-          f.parentNode.insertBefore(s, f);
-        }, 1);
-      }
-
-      // Include "http:" when initializing the external JS files, else it will look for a local JS file://i.kissmetrics.com/i.js
-      _kms('http://i.kissmetrics.com/i.js');
-      _kms('http://doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
-    </script>
-
-[ios-official]: https://github.com/kissmetrics/KISSmetrics-iOS-Mac-OS-X-Library
-[ios-unofficial]: http://coffeeshopped.com/kissmetrics-for-ios
-[other]: /apis/other#android
-
+[ios-official]: /apis/objective-c.html
+[android]: https://github.com/80steve/KISSmetrics-4-Android
 [phonegap]: http://phonegap.com/
 [js]: /apis/javascript
+[apis]: /apis
