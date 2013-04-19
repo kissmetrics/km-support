@@ -12,7 +12,12 @@ In general, the way to think about structuring your data looks like this:
 * Create **Events** to group people who do similar actions.
 * Record *Properties* for the criteria you are comparing/contrasting similar people.
 
-In practice, there's a lot of variety in the way you might want to set it up, mainly because the reports you're looking for can change as time goes on. I'll walk through three examples:
+## Tradeoffs
+
+* Tracking with events could lead to [too many events][too-many], and it becomes difficult to create aggregate reports without recording at least 2 events for each user action. But it's still the best way to count the number of times Action X happened.
+* Tracking with properties is the best way to compare and contrast sets of people. The downside is that our reports do not make it elegant to list the number of times each Property Y was set -- this is exclusive to the Power Report.
+
+In practice, there's a balance in the way you structure your data, mainly because the reports you're looking for can change as time goes on. Let's walk through three examples:
 
 <a name="example-1"></a>
 ### Example 1: Very generic event names (in bold) with one set of specific properties (name of the property is italicized and the values of the property are underlined).
@@ -52,3 +57,5 @@ If you are running simultaneous tests on two parts of the funnel -- the email AN
 ## Takeaways
 
 In each of these cases, Properties are named to be specific (rather than "A/B Test"), so that you don't mix data in from other tests.
+
+[too-many]: /troubleshooting/too-many-event-names
