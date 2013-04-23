@@ -3,7 +3,7 @@
   <ul>
 
   {% assign menusize = site.categories.apis | size %}
-  {% for page in site.categories.apis reversed limit:site.menu_limit %}
+  {% for page in site.categories.apis limit:site.menu_limit %}
     <li>
       <a href="{{page.url}}">{{ page.title }}</a>
     </li>
