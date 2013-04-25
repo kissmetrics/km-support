@@ -52,6 +52,13 @@ You can place the JavaScript snippet anywhere in the HTML document, but we ask t
 1. To let our script load as soon as possible, to be able to send events before the visitor leaves. Remember that page loadtimes aren't affected.
 2. To let you queue events to be triggered when the library finishes loading. This prevents JavaScript errors from cropping up if you try to call events before the script has loaded:  `ReferenceError: _kmq is not defined`
 
+<a name="anonymous-identities"></a>
+## Anonymous Identities 
+
+If the JavaScript library has never seen a visitor before, it will create a randomized identity for them to attribute all of that person's events to the same browser. This lets you track this particular person's activity across sessions.
+
+The generated ID is Base64 encoded, so the IDs are generated with only these characters: `a-z, A-Z, 0-9, +, /, and =`.
+
 <a name="callback-functions"></a>
 ## Callback Functions
 
