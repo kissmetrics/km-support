@@ -6,6 +6,13 @@ tags: []
 author: Eric Fung
 summary: These are the events and properties you should track to make the most of our SaaS Revenue Report. 
 ---
+<hr />
+# Table of Contents
+
+* [Section 1. Recommended Events and Properties][section1]
+* [Section 2. How do I import previous transactions?][section2]
+* [Section 3. I have already been tracking revenue. How do update my old payments with the recommended structure?][section3]
+
 We are developing a Revenue Report aimed specifically towards SaaS businesses. This is designed to be an improvement over our existing Revenue Report because it better visualizes the revenue gained from your subscribers month over month, also known as **Monthly Recurring Revenue**.
 
 We've also accounted for businesses that don't bill exactly every single month. Even if you are billing your customers, say, annually, you can record that annual revenue amount just *once*, and we'll display each customer's month-by-month revenue by breaking that one annual revenue into 12 pieces.
@@ -24,6 +31,9 @@ When to trigger the event and any other contextual information
 [request]: mailto:jevanish@kissmetrics.com?subject=%5BSaaS%20Revenue%5D%20Requesting%20Access
 
 ---
+
+<a name="section-1"></a>
+## Section 1. Recommended Events and Properties
 
 <a name="subscription-billed"></a>
 ### Subscription Billed
@@ -124,3 +134,16 @@ Example: You refund Joe $100 while he is on a $50/mo Small plan.
       'Subscription Refund Reason' => 'Charged incorrect amount'
     });
 -->
+---
+
+<a name="section-2"></a>
+## Section 2. How do I import previous transactions?
+
+Please refer to our page on [Importing Data][import]. The properties are somewhat unique, so you'll most likely find yourself writing a little code to work with your backend servers or payment platform's API.
+
+<a name="section-3"></a>
+## Section 3. I have already been tracking revenue. How do update my old payments with the recommended structure?
+
+Again, your best bet will be to [Import the Past Data][import]. Chances are you have a way to refer back to *who* was billed *when*...with that information, you can use the appropriate method of importing data to set the new properties you haven't been tracking, like "Subscription Billing Length".
+
+[import]: /advanced/importing-data
