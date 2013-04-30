@@ -12,6 +12,8 @@ What sets it apart from a regular conversion funnel or metric is that you can fu
 
 Every KISSmetrics account has access to a basic Retention Report, which tells you about visitors who repeatedly come back to your site.
 
+*(Note: advanced cohort analysis, and the ability to create multiple cohort reports is generally reserved for paying customers only.)*
+
 ## How do I read this?
 
 The easiest way to show how to read the cohort report is through an example. Let's look at an example Retention Report.
