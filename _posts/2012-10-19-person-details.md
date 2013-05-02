@@ -17,12 +17,11 @@ Here's the list of the metrics, and which mapped events and properties they requ
 * Average Time Between Visits (`Visited Site` event)
 * Total Visits (`Visited Site` event)
 * Customer Since (`Signed Up` event)
-* Signup to Purchase Time (`Signed Up` and `Billed` events)
-* Number of Purchases (`Billed` event)
-* Average Time Between Purchases (`Billed` event)
-* Largest Purchase Amount (`Revenue` or `Billing Amount` property)
-* Total Revenue (`Revenue` or `Billing Amount` property)
-* Average Purchase Amount (`Revenue` or `Billing Amount` property)
+* Average Time Between Purchases (`Purchased` event)
+* Number of Purchases (`Revenue` property - how often it is set)
+* Largest Purchase Amount (`Revenue` property)
+* Total Revenue (`Revenue` property)
+* Average Purchase Amount (`Revenue` property)
 
 
 ## Acquisition Metrics
