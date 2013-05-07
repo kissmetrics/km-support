@@ -27,7 +27,7 @@ Repository is at [https://github.com/kissmetrics/km-support]()
 
 # 2. To run the server:
 
-`jekyll --server`
+`jekyll serve -w`
 
 Then navigate to [http://localhost:4000](http://localhost:4000).
 
