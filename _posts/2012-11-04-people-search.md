@@ -126,7 +126,7 @@ You can choose to export this group of people, and we'll email you a link to dow
 
 You may notice that any columns that have dates in them now export in a human-readable format (i.e. "2009-02-13 23:31:30"), and no longer export as <a href="http://en.wikipedia.org/wiki/Unix_time" target="_blank">Unix timestamps</a>. This timestamp is in <a href="http://en.wikipedia.org/wiki/Coordinated_Universal_Time" target="_blank">UTC</a> and is compatible with Microsoft Excel.
 
-If you have an older People Search export or need to convert a Unix timestamp back to a human-readable date in Excel or other spreadsheet software, simply use this forumula:
+If you have an older People Search export or need to convert a Unix timestamp back to a human-readable date in Excel or other spreadsheet software, simply use this formula:
 
     =(UNIX_TIMESTAMP/86400)+DATEVALUE("1/1/1970")
 
