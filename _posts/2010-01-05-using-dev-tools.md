@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Your Browser's Developer Tools
+title: Using Your Browser's Developer Tools to Test Implementation
 categories: [getting-started, testing-km]
 tags: [developer_portal]
 author: Eric Fung
