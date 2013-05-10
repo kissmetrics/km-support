@@ -2,7 +2,7 @@
 layout: post
 categories: getting-started
 title: "Testing: How to Verify KISSmetrics Is Working"
-tags: [developers]
+tags: [developer_portal]
 author: Eric Fung
 summary: Learn how to test KISSmetrics and keep the test data separate from your "real" data. 
 permalink: /getting-started/testing-km/index.html
