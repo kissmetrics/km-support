@@ -8,8 +8,8 @@
     {% else %}
       <title>KISSmetrics Documentation</title>
     {% endif %}
+    <link href='/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
     <link href='/css/screen.css' media='screen' rel='stylesheet' type='text/css' />
-
         
     <!-- KISSmetrics -->
     <script type="text/javascript">
@@ -99,7 +99,6 @@
             <li>
               <a href='/status'>KISSmetrics Status</a>
             </li>
-
             <li>
               <a href='/contact-us'>Contact Us</a>
             </li>
@@ -108,7 +107,7 @@
       </div>
 
 <div class='col'>
-        {{ content }}
+  {{ content }}
 </div>
 
  </div>
@@ -129,6 +128,18 @@
     <!-- Support Scripts -->
     <script charset='utf-8' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>
     <script charset='utf-8' src='/javascripts/url-api-builder.js' type='text/javascript'></script>
+    <script src="/javascripts/bootstrap.min.js" type='text/javascript'></script>
+
+    <!-- Bootstrap Menu Icons -->
+    <script type='text/javascript'>
+    $(document).ready(function() {
+      $('.collapse').on('show', function(){ 
+        $(this).parent().find(".icon-chevron-right").removeClass("icon-chevron-right").addClass("icon-chevron-down");
+      }).on('hide', function(){
+        $(this).parent().find(".icon-chevron-down").removeClass("icon-chevron-down").addClass("icon-chevron-right");
+      });
+    });
+    </script>
 
 	
     <!-- Olark -->
@@ -150,6 +161,5 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
       })();
     </script>
-   
   </body>
 </html>

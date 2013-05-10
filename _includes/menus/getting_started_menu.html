@@ -1,20 +1,20 @@
 <li>
-  <a href='/getting-started'>Getting Started</a>
-  <ul>
-  
-  {% assign menusize = site.categories.getting-started | size %}
-  {% for page in site.categories.getting-started reversed limit:site.menu_limit %}
-    <li>
-      <a href="{{page.url}}">{{ page.title }}</a>
-    </li>
-  {% endfor %}
-
-  {% if menusize > site.menu_limit %}
+  <div class="collapse-hitbox" data-toggle="collapse" data-target="#getting-started-list">
+    <i class="icon-chevron-down"></i>
+    <a >Getting Started</a>
+  </div>
+  <div id="getting-started-list" class="collapse in">
+    <ul>
+    {% for page in site.categories.getting-started reversed %}
+      <li>
+        <a href="{{page.url}}">{{ page.title }}</a>
+      </li>
+    {% endfor %}
       <div class='more-content'>
         <li>
-            <a href='/getting-started'>(View all {{ menusize }} articles)</a>
+          <a href='/getting-started'>(View all {{ menusize }} articles)</a>
         </li>
       </div>
-  {% endif %}
-  </ul>
+    </ul>
+  </div>
 </li>

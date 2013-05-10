@@ -1,21 +1,20 @@
 <li>
-  <a href='/troubleshooting'>Troubleshooting</a>
-  <ul>
-  
-  {% assign menusize = site.categories.troubleshooting | size %}
-  {% for page in site.categories.troubleshooting reversed limit:site.menu_limit %}
-    <li>
-      <a href="{{page.url}}">{{ page.title }}</a>
-    </li>
-  {% endfor %}
-
-  {% if menusize > site.menu_limit %}
+  <div class="collapse-hitbox" data-toggle="collapse" data-target="#troubleshooting-list">
+    <i class="icon-chevron-right"></i>
+    <a >Troubleshooting</a>
+  </div>
+  <div id="troubleshooting-list" class="collapse">
+    <ul>
+    {% for page in site.categories.troubleshooting %}
+      <li>
+        <a href="{{page.url}}">{{ page.title }}</a>
+      </li>
+    {% endfor %}
       <div class='more-content'>
         <li>
-            <a href='/troubleshooting'>(View all {{ menusize }} articles)</a>
+          <a href='/troubleshooting'>(View all {{ menusize }} articles)</a>
         </li>
       </div>
-  {% endif %}
-  
-  </ul>
+    </ul>
+  </div>
 </li>
