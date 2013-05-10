@@ -1,21 +1,18 @@
 <li>
-  <a href='/integrations'>External Integrations</a>
-  <ul>
-  
-  {% assign menusize = site.categories.integrations | size %}
-  {% for page in site.categories.integrations reversed limit:site.menu_limit %}
-    <li>
-      <a href="{{page.url}}">{{ page.title }}</a>
-    </li>
-  {% endfor %}
-
-  {% if menusize > site.menu_limit %}
+  <i class="icon-chevron-right"></i>
+  <a id="integrations-container" data-toggle="collapse" data-target="#integrations-list">External Integrations</a>
+  <div id="integrations-list" class="collapse">
+    <ul>
+    {% for page in site.categories.integrations reversed %}
+      <li>
+        <a href="{{page.url}}">{{ page.title }}</a>
+      </li>
+    {% endfor %}
       <div class='more-content'>
         <li>
-            <a href='/integrations'>(View all {{ menusize }} articles)</a>
+          <a href='/integrations'>(View all {{ menusize }} articles)</a>
         </li>
       </div>
-  {% endif %}
-  
-  </ul>
+    </ul>
+  </div>
 </li>

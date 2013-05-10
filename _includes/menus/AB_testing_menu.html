@@ -1,20 +1,18 @@
 <li>
-  <a href='/a-b-testing'>A/B Testing</a>
-  <ul>
-
-  {% assign menusize = site.categories.a-b-testing | size %}
-  {% for page in site.categories.a-b-testing reversed limit:site.menu_limit %}
-    <li>
-      <a href="{{page.url}}">{{ page.title }}</a>
-    </li>
-  {% endfor %}
-
-  {% if menusize > site.menu_limit %}
+  <i class="icon-chevron-right"></i>
+  <a id="ab-testing-container" data-toggle="collapse" data-target="#ab-testing-list">A/B Testing</a>
+  <div id="ab-testing-list" class="collapse">
+    <ul>
+    {% for page in site.categories.a-b-testing reversed %}
+      <li>
+        <a href="{{page.url}}">{{ page.title }}</a>
+      </li>
+    {% endfor %}
       <div class='more-content'>
         <li>
-            <a href='/a-b-testing'>(View all {{ menusize }} articles)</a>
+          <a href='/a-b-testing'>(View all {{ menusize }} articles)</a>
         </li>
       </div>
-  {% endif %}
-  </ul>
+    </ul>
+  </div>
 </li>

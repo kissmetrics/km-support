@@ -1,20 +1,18 @@
 <li>
-  <a href='/best-practices'>Best Practices</a>
-  <ul>
-  
-  {% assign menusize = site.categories.best-practices | size %}
-  {% for page in site.categories.best-practices reversed limit:site.menu_limit %}
-    <li>
-      <a href="{{page.url}}">{{ page.title }}</a>
-    </li>
-  {% endfor %}
-
-  {% if menusize > site.menu_limit %}
+  <i class="icon-chevron-right"></i>
+  <a id="best-practices-container" data-toggle="collapse" data-target="#best-practices-list">Best Practices</a>
+  <div id="best-practices-list" class="collapse">
+    <ul>
+    {% for page in site.categories.best-practices reversed %}
+      <li>
+        <a href="{{page.url}}">{{ page.title }}</a>
+      </li>
+    {% endfor %}
       <div class='more-content'>
         <li>
-            <a href='/best-practices'>(View all {{ menusize }} articles)</a>
+          <a href='/best-practices'>(View all {{ menusize }} articles)</a>
         </li>
       </div>
-  {% endif %}  
-  </ul>
+    </ul>
+  </div>
 </li>

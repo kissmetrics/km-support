@@ -1,20 +1,18 @@
 <li>
-  <a href='/how-tos'>How To's, Examples, and Best Practices</a>
-  <ul>
-  
-  {% assign menusize = site.categories.how-tos | size %}
-  {% for page in site.categories.how-tos reversed limit:site.menu_limit %}
-    <li>
-      <a href="{{page.url}}">{{ page.title }}</a>
-    </li>
-  {% endfor %}
-
-  {% if menusize > site.menu_limit %}
+  <i class="icon-chevron-right"></i>
+  <a id="how-tos-container" data-toggle="collapse" data-target="#how-tos-list">How To's, Examples, and Best Practices</a>
+  <div id="how-tos-list" class="collapse">
+    <ul>
+    {% for page in site.categories.how-tos reversed %}
+      <li>
+        <a href="{{page.url}}">{{ page.title }}</a>
+      </li>
+    {% endfor %}
       <div class='more-content'>
         <li>
             <a href='/how-tos'>(View all {{ menusize }} articles)</a>
         </li>
       </div>
-  {% endif %}
-  </ul>
+    </ul>
+  </div>
 </li>
