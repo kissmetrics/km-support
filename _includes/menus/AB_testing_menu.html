@@ -1,6 +1,8 @@
 <li>
-  <i class="icon-chevron-right"></i>
-  <a id="ab-testing-container" data-toggle="collapse" data-target="#ab-testing-list">A/B Testing</a>
+  <div class="collapse-hitbox" data-toggle="collapse" data-target="#ab-testing-list">
+    <i class="icon-chevron-right"></i>
+    <a >A/B Testing</a>
+  </div>
   <div id="ab-testing-list" class="collapse">
     <ul>
     {% for page in site.categories.a-b-testing reversed %}
