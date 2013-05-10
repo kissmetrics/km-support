@@ -2,6 +2,7 @@
 layout: post
 title: Should I Track Per Person or Per Account?
 categories: how-tos
+tags: [developers]
 author: Eric Fung
 summary: What if my site allows for multiple people to be part of one account?
 ---
