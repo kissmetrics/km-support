@@ -2,6 +2,7 @@
 layout: post
 title: Installing the JavaScript Library
 categories: tutorial
+tags: [developer_portal]
 author: Lars Lofgren
 summary: Learn how to install the JavaScript Library for your site.
 permalink: /tutorial/installation/index.html
