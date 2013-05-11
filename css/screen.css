@@ -269,10 +269,11 @@ blockquote {
 }
 .side ul li a {
   color: #6a6a6a;
+  cursor: pointer;
   text-decoration: none;
 }
 .side ul li a:hover {
-  text-decoration: underline;
+  color: #343434;
 }
 .side ul ul {
   margin-top: 10px;
