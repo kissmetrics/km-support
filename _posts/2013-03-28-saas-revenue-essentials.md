@@ -147,3 +147,6 @@ Please refer to our page on [Importing Data][import]. The properties are somewha
 Again, your best bet will be to [Import the Past Data][import]. Chances are you have a way to refer back to *who* was billed *when*...with that information, you can use the appropriate method of importing data to set the new properties you haven't been tracking, like "Subscription Billing Length".
 
 [import]: /advanced/importing-data
+[section1]: #section-1
+[section2]: #section-2
+[section3]: #section-3

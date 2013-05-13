@@ -24,7 +24,7 @@ Just like click events, we’re going to grab the ID or a Class name of the `<fo
 
 Let's look at a very basic form that asks for two things, first name and last name.
 
-    <form id="example_form">
+    <form id="km_form">
       First name: <input type="text" name="firstname"> </input> <br />
       Last name: <input type="text" name="lastname"> </input> <br />
 	  <input type="submit" value="Submit"> </input>
@@ -32,7 +32,7 @@ Let's look at a very basic form that asks for two things, first name and last na
 
 This is what the above code looks like in your browser, below:
 
-<form id="example_form">
+<form id="km_form">
 First name: <input type="text" name="firstname"> </input> <br />
 Last name: <input type="text" name="lastname"> </input> <br />
 <input type="submit" value="Submit" > </input> 
@@ -42,7 +42,7 @@ Last name: <input type="text" name="lastname"> </input> <br />
 
 ### Setting Up Form Tracking
 
-Notice the `id` in the first line, `<form id="example_form">`. That's the form's ID, and we'll give that to the Event Wizard:
+Notice the `id` in the first line, `<form id="km_form">`. That's the form's ID, and we'll give that to the Event Wizard:
 
 ![Event Wizard: Example Form][example-form]
 
