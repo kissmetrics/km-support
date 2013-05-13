@@ -20,20 +20,27 @@ As you can see the system works pretty well automatically under most circumstanc
 
 All you need to do is clear the identity when Bob logs out (or his session expires). If you call `identify` with a `null` value then KISSmetrics will reset the identity on the current computer so that the next user is treated anonymously:
 
-    _kmq.push(['identify', null]);
+{% highlight js %}
+_kmq.push(['identify', null]);
+{% endhighlight %}
   
 You can also call `clearIdentity` directly if you want:
 
-    _kmq.push(['clearIdentity']);
+{% highlight js %}
+_kmq.push(['clearIdentity']);
+{% endhighlight %}
 
 However, in most cases the best thing to do is to set the identity you want from a session variable. This way you don't have to worry about people who didn't actually click a "log out" button. So if I were using Ruby I might have a session variable `username` which I set to the user's username when they login and then do something like:
 
-    _kmq.push(['identify', <%= session[:username].to_json %> ]);
+{% highlight js %}
+_kmq.push(['identify', <%= session[:username].to_json %> ]);
+{% endhighlight %}
 
 Once the session ends (through logout or expiration) then the value of `session[:username]` will be `null` so the *named identity* will be cleared out. It should be noted that calling `identity` with a `null` value or calling `clearIdentity` only clears the *named identity*. Calling either method more than once will have no negative effect. It will not keep regenerating *anonymous identities*, it only clears any *named identity* you happen to have passed in. Many people assign the currently logged in user to a variable in their views. Let's say I assigned the current user to the variable `@current_user`, then my code might look like:
 
-    _kmq.push(['identify', 
-      <%= @current_user ? @current_user.login.to_json : "null" %> ]);
+{% highlight js+ruby %}
+_kmq.push(['identify', <%= @current_user ? @current_user.login.to_json : "null" %> ]);
+{% endhighlight %}
 
 Just using this single line will make everything work automatically. When the `@current_user` variable is set, we'll get the identity. When the user logs out or their session expires then the `@current_user` variable will not exist and the KISSmetrics *named identity* will be cleared. So let's see how this works now:
 

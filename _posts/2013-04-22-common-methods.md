@@ -82,52 +82,61 @@ Notes:
 Below are some examples for the standard API. Please see APIs for supported languages.
 
 ### Javascript
-    // Identifies the current person as "bob@bob.com" for future events
-    _kmq.push(['identify', 'bob@bob.com']);  
+{% highlight js %}
+// Identifies the current person as "bob@bob.com" for future events
+_kmq.push(['identify', 'bob@bob.com']);  
 
-    // Records an event "Viewed Homepage"
-    _kmq.push(['record', 'Viewed Homepage']);  
+// Records an event "Viewed Homepage"
+_kmq.push(['record', 'Viewed Homepage']);  
 
-    // Records an event "Signed Up" with additional properties
-    _kmq.push(['record', 'Signed Up', {'Plan':'Pro', 'Amount':99.95}]);  
+// Records an event "Signed Up" with additional properties
+_kmq.push(['record', 'Signed Up', {'Plan':'Pro', 'Amount':99.95}]);  
 
-	/* Records an event "Signed Up" in the past.
-	 * This demonstrates how to pass the '_t' and '_d' from our 
-	 *  specifications as regular KISSmetrics properties.
-	 * 1234567890 = 13 Feb 2009 23:31:30 GMT
-	 */  
-    _kmq.push(['record', 'Signed Up', {'_d':1, '_t':1234567890}])
+/* Records an event "Signed Up" in the past.
+ * This demonstrates how to pass the '_t' and '_d' from our 
+ *  specifications as regular KISSmetrics properties.
+ * 1234567890 = 13 Feb 2009 23:31:30 GMT
+ */  
+_kmq.push(['record', 'Signed Up', {'_d':1, '_t':1234567890}])
 
-    // Sets the "Gender" property to "Male" for the current person
-    _kmq.push(['set', {'gender':'male'}]);  
+// Sets the "Gender" property to "Male" for the current person
+_kmq.push(['set', {'gender':'male'}]);  
 
-    // Connects "bob" and "bob@bob.com" to represent the same person
-    _kmq.push(['alias', 'bob', 'bob@bob.com']);
+// Connects "bob" and "bob@bob.com" to represent the same person
+_kmq.push(['alias', 'bob', 'bob@bob.com']);
+{% endhighlight %}
 
 ### PHP
-    KM::identify('bob@bob.com');
-    KM::record('Viewed Homepage');
-    KM::record('Signed Up', array('Plan' => 'Pro', 'Amount' => 99.95));
-    KM::record('Signed Up', array('_d' => 1, '_t' => 1234567890));
-    KM::set(array('gender'=>'male'));
-    KM::alias('bob', 'bob@bob.com');
-
+{% highlight php %}
+<?php
+ KM::identify('bob@bob.com');
+ KM::record('Viewed Homepage');
+ KM::record('Signed Up', array('Plan' => 'Pro', 'Amount' => 99.95));
+ KM::record('Signed Up', array('_d' => 1, '_t' => 1234567890));
+ KM::set(array('gender'=>'male'));
+ KM::alias('bob', 'bob@bob.com');
+?>
+{% endhighlight %}
 
 ### Ruby
-    KM.identify('bob@bob.com')
-    KM.record('Viewed Homepage')
-    KM.record('Signed Up', {'Plan' => 'Pro', 'Amount' => 99.95})
-    KM.record('Signed Up', {'_d' => 1, '_t' => 1234567890})
-    KM.set({:gender=>'male', 'Plan Name' => 'Pro'})
-    KM.alias('bob', 'bob@bob.com')
+{% highlight ruby %}
+KM.identify('bob@bob.com')
+KM.record('Viewed Homepage')
+KM.record('Signed Up', {'Plan' => 'Pro', 'Amount' => 99.95})
+KM.record('Signed Up', {'_d' => 1, '_t' => 1234567890})
+KM.set({:gender=>'male', 'Plan Name' => 'Pro'})
+KM.alias('bob', 'bob@bob.com')
+{% endhighlight %}
 
 ### Python
-    KM.identify('bob@bob.com');
-    KM.record('Viewed Homepage');
-    KM.record('Signed Up', {'Plan' : 'Pro', 'Amount' : 99.95});
-    KM.record('Signed Up', {'_d' : 1, '_t' : 1234567890});
-    KM.set({'gender' : 'male'});
-    KM.alias('bob', 'bob@bob.com');
+{% highlight python %}
+KM.identify('bob@bob.com');
+KM.record('Viewed Homepage');
+KM.record('Signed Up', {'Plan' : 'Pro', 'Amount' : 99.95});
+KM.record('Signed Up', {'_d' : 1, '_t' : 1234567890});
+KM.set({'gender' : 'male'});
+KM.alias('bob', 'bob@bob.com');
+{% endhighlight %}
 
 ## More Information
 

@@ -15,7 +15,9 @@ Our WordPress plugin helps make it much easier to install our JavaScript Library
 
 If you are implementing WordPress without the plugin, this PHP snippet could help get the username of the current user.
 
-    _kmq.push(['identify', '<?php $current_user = wp_get_current_user(); if ( ($current_user instanceof WP_User) ) echo $current_user->user_login; ?>']);
+{% highlight js+php %}
+_kmq.push(['identify', '<?php $current_user = wp_get_current_user(); if ( ($current_user instanceof WP_User) ) echo $current_user->user_login; ?>']);
+{% endhighlight %}
 
 References:
 

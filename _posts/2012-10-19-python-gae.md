@@ -12,12 +12,14 @@ Jeff from Optimizely [pointed out][python-issue1] that `km.py` uses the socket p
 
 dsf
 
-    # Assuming port is 80, which it is:
-    if int(port) == 80:
-      url = 'http://' + host + '/' + type + '?' + '&'.join(query)
-      urlfetch.fetch(url)
-    else:
-      raise Exception("Can only connect over port 80.")
+{% highlight python %}
+# Assuming port is 80, which it is:
+if int(port) == 80:
+  url = 'http://' + host + '/' + type + '?' + '&'.join(query)
+  urlfetch.fetch(url)
+else:
+  raise Exception("Can only connect over port 80.")
+{% endhighlight %}
 
 Hope this helps - email jeff+pickhardt@optimizely.com with any questions.
 

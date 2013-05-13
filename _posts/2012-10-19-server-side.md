@@ -23,9 +23,11 @@ Use our `set` command, indicating the name of the experiment and the selected va
 
 For example, suppose you're testing different signup button colors. Let's say you have a server-side variable `@color` that your A/B testing code provides. Here's how you could tell KISSmetrics about that:
 
-    <script>
-      _kmq.push(["set", {"Signup Button Color": "<%= @color %>"}]);
-    </script>
+{% highlight html+ruby %}
+<script type="text/javascript">
+  _kmq.push(["set", {"Signup Button Color": "<%= @color %>"}]);
+</script>
+{% endhighlight %}
 
 Later, when you are reporting on the test's performance, you'll be segmenting the report by the property `Signup Button Color`.
 
@@ -35,16 +37,20 @@ Remember, the point of the test is to see if it influences how your customers re
 
 Just make the standard API calls to KISSmetrics to record your events. For example:
 
-    <script>
-      // Record the button click with KISSmetrics
-      _kmq.push(["record", "Viewed Homepage"])
-    </script>
+{% highlight html %}
+<script>
+  // Record the button click with KISSmetrics
+  _kmq.push(["record", "Viewed Homepage"])
+</script>
+{% endhighlight %}
 
 Then:
 
-    <script>
-      // Record the button click with KISSmetrics
-      _kmq.push(["trackClick", "signup_button", "Clicked Signup"])
-    </script
+{% highlight html %}
+<script>
+  // Record the button click with KISSmetrics
+  _kmq.push(["trackClick", "signup_button", "Clicked Signup"])
+</script>
+{% endhighlight %}
     
 With these events, you could report on the conversion from people who `Viewed Homepage` -> `Clicked Signup`, segmenting by the property `Signup Button Color`.

@@ -44,15 +44,16 @@ For example, if you have the table below:
 
 You could script the import to do the following:
 
-    # ID 1
-    KM.identify("your@user.com")
-    KM.record "Signed Up", :_t=>Time.parse("2009-10-01 00:00:00").to_i, :_d=>1,
-      'Plan Name' => 'Premium'
-    # ID 2
-    KM.identify("test@kissmetrics.com")
-    KM.record "Signed Up", :_t=>Time.parse("2009-10-01 01:00:00").to_i, :_d=>1,
-      'Plan Name' => 'Free'
-    ...
+{% highlight ruby %}
+# ID 1
+KM.identify("your@user.com")
+KM.record "Signed Up", :_t=>Time.parse("2009-10-01 00:00:00").to_i, :_d=>1, 'Plan Name' => 'Premium'
+
+# ID 2
+KM.identify("test@kissmetrics.com")
+KM.record "Signed Up", :_t=>Time.parse("2009-10-01 01:00:00").to_i, :_d=>1, 'Plan Name' => 'Free'
+...
+{% endhighlight %}
 
 #### Billed and Billing Amount
 
@@ -70,12 +71,11 @@ Some companies will only record when a customer was charged, and whether it was 
 
 This would, as you can see, translate almost directly into upgrading data. Each type would be recorded as a separate corresponding event followed by a `Billed` event which would have the amount.
 
-    KM.identify("your@user.com")
-    KM.record "Upgraded", :_t=>Time.parse("2009-10-01 00:00:00").to_i, :_d => 1,
-      'Plan Name' => 'Premium'
-    KM.record "Billed", 'Billing Amount' => '100',
-        'Billing Description' => 'Upgraded',
-        :_t => Time.parse("2009-10-01 00:00:00").to_i, :_d => 1
+{% highlight ruby %}
+KM.identify("your@user.com")
+KM.record "Upgraded", :_t=>Time.parse("2009-10-01 00:00:00").to_i, :_d => 1, 'Plan Name' => 'Premium'
+KM.record "Billed", 'Billing Amount' => '100', 'Billing Description' => 'Upgraded', :_t => Time.parse("2009-10-01 00:00:00").to_i, :_d => 1
+{% endhighlight %}
 
 #### Canceled
 
@@ -89,12 +89,14 @@ Your users table may have information about cancelations, and this should be rec
     |  3 | petenixey@gmail.com      | 2009-10-01 18:54:14 |
     +----+--------------------------+---------------------+
 
-    # iD 1
-    KM.identify("your@user.com")
-    KM.record("Canceled", :_t=>Time.parse("2009-10-01 00:00:00").to_i, :_d=>1)
-    ...
-    # ID 2
-    KM.identify("test@kissmetrics.com")
+{% highlight ruby %}
+# ID 1
+KM.identify("your@user.com")
+KM.record("Canceled", :_t=>Time.parse("2009-10-01 00:00:00").to_i, :_d=>1)
+...
+# ID 2
+KM.identify("test@kissmetrics.com")
+{% endhighlight %}
 
 #### Other Custom Events ("`Viewed Dashboard`")
 
@@ -110,15 +112,15 @@ If you are recording every time a user visits your website, with your own events
     |  5 | 15      | visited dashboard | 1       | 2009-10-01 16:22:12 |
     +----+---------+-------------------+-------------------------------+
 
-    # We used emails as previous KM identities. Derive the email from the user_id.
-    KM.identify("your@user.com") 
-    KM.record "Visited Dashboard", :_t=>Time.parse("2009-10-01 14:29:42").to_i, 
-      :_d=>1, 'URL' => 'http://kissmetrics.com/dashboard', 'Referrer' =>
-      'http://kissmetrics.com'
-    KM.record "Visited Dashboard", :_t=>Time.parse("2009-10-01 16:22:12").to_i,
-      :_d=>1, 'URL' => 'http://kissmetrics.com/dashboard', 'Referrer' => ''
-    ...
-    KM.identify("test@kissmetrics.com")
+{% highlight ruby %}
+# We used emails as previous KM identities. Derive the email from the user_id.
+KM.identify("your@user.com") 
+KM.record "Visited Dashboard", :_t=>Time.parse("2009-10-01 14:29:42").to_i, :_d=>1, 'URL' => 'http://kissmetrics.com/dashboard', 'Referrer' => 'http://kissmetrics.com'
+KM.record "Visited Dashboard", :_t=>Time.parse("2009-10-01 16:22:12").to_i, :_d=>1, 'URL' => 'http://kissmetrics.com/dashboard', 'Referrer' => ''
+...
+KM.identify("test@kissmetrics.com")
+...
+{% endhighlight %}
 
 ### Sample Ruby script
 

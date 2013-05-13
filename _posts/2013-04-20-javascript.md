@@ -20,20 +20,22 @@ Log into your KISSmetrics account and locate your personalized code snippet in y
 
 The JavaScript library looks like this:
 
-    <script type="text/javascript">
-      var _kmq = _kmq || [];
-      var _kmk = _kmk || 'foo';
-      function _kms(u){
-        setTimeout(function(){
-          var d = document, f = d.getElementsByTagName('script')[0],
-          s = d.createElement('script');
-          s.type = 'text/javascript'; s.async = true; s.src = u;
-          f.parentNode.insertBefore(s, f);
-        }, 1);
-      }
-      _kms('//i.kissmetrics.com/i.js');
-      _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+  var _kmq = _kmq || [];
+  var _kmk = _kmk || 'foo';
+  function _kms(u){
+    setTimeout(function(){
+      var d = document, f = d.getElementsByTagName('script')[0],
+      s = d.createElement('script');
+      s.type = 'text/javascript'; s.async = true; s.src = u;
+      f.parentNode.insertBefore(s, f);
+    }, 1);
+  }
+  _kms('//i.kissmetrics.com/i.js');
+  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+</script>
+{% endhighlight %}
 
 ## Usage
 
@@ -89,29 +91,31 @@ You may still find this information useful. If you have that information separat
 
 ## Example Calls
 
-    <script type="text/javascript">
-        // Identifies the current person as "bob@bob.com" for future events
-        _kmq.push(['identify', 'bob@bob.com']);  
+{% highlight html %}
+<script type="text/javascript">
+// Identifies the current person as "bob@bob.com" for future events
+_kmq.push(['identify', 'bob@bob.com']);  
 
-        // Records an event "Viewed Homepage"
-        _kmq.push(['record', 'Viewed Homepage']);  
+// Records an event "Viewed Homepage"
+_kmq.push(['record', 'Viewed Homepage']);  
 
-        // Records an event "Signed Up" with additional properties
-        _kmq.push(['record', 'Signed Up', {'Plan':'Pro', 'Amount':99.95}]);  
+// Records an event "Signed Up" with additional properties
+_kmq.push(['record', 'Signed Up', {'Plan':'Pro', 'Amount':99.95}]);  
 
-        // Sets the "Gender" property to "Male" for the current person
-        _kmq.push(['set', {'gender':'male'}]);  
+// Sets the "Gender" property to "Male" for the current person
+_kmq.push(['set', {'gender':'male'}]);  
 
-        // Connects "bob" and "bob@bob.com" to represent the same person
-        _kmq.push(['alias', 'bob', 'bob@bob.com']);
-    
-        /* Records an event "Signed Up" in the past.
-         * This demonstrates how to pass the '_t' and '_d' from our
-         *  specifications as regular KISSmetrics properties.
-         * 1234567890 = 13 Feb 2009 23:31:30 GMT
-         */  
-        _kmq.push(['record', 'Signed Up', {'_d':1, '_t':1234567890}])
-    </script>
+// Connects "bob" and "bob@bob.com" to represent the same person
+_kmq.push(['alias', 'bob', 'bob@bob.com']);
+
+/* Records an event "Signed Up" in the past.
+ * This demonstrates how to pass the '_t' and '_d' from our
+ *  specifications as regular KISSmetrics properties.
+ * 1234567890 = 13 Feb 2009 23:31:30 GMT
+ */  
+_kmq.push(['record', 'Signed Up', {'_d':1, '_t':1234567890}])
+</script>
+{% endhighlight %}
 
 # Developing in `localhost`
 

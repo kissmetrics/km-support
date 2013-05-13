@@ -16,45 +16,47 @@ The Javascript API provides a function, `KM.ab`, to set up the majority of the A
 
 Below shows an example of a complete A/B test, using `KM.ab`:
 
-    <!-- 
-      Here is our signup button. Notice that it is hidden by
-      setting the style to "display: none". Also notice that
-      it is by default using the "green" image.
-    -->
-    <img src="/images/green.png" id="signup_button" style="display: none"/>
+{% highlight html %}
+<!-- 
+  Here is our signup button. Notice that it is hidden by
+  setting the style to "display: none". Also notice that
+  it is by default using the "green" image.
+-->
+<img src="/images/green.png" id="signup_button" style="display: none"/>
 
-    <script>
-      // If for some reason KISSmetrics doesn't load or there is an
-      // error we'll just show the default green button after 1.5s
-      var abTimeout1 = setTimeout(function(){
-        document.getElementById("signup_button").style.display = '';
-      }, 1500);
-      
-      // Now we need to add some Javascript code to run our A/B test
-      // Using _kmq.push to call our setup function ensures that it 
-      // is only called once KM is loaded
-      _kmq.push(function(){
-        // Set up the experiment (this is the meat and potatoes)
-        var color = KM.ab("Signup Button Color", ["red", "green"]);
+<script type="text/javascript">
+  // If for some reason KISSmetrics doesn't load or there is an error we'll just show the default green button after 1.5s
+  var abTimeout1 = setTimeout(function(){
+    document.getElementById("signup_button").style.display = '';
+  }, 1500);
+  
+  // Now we need to add some Javascript code to run our A/B test.
+  // Using _kmq.push to call our setup function ensures that it is only called once KM is loaded.
+  _kmq.push(function(){
+    // Set up the experiment (this is the meat and potatoes)
+    var color = KM.ab("Signup Button Color", ["red", "green"]);
 
-        // Set the button color
-        var button = document.getElementById("signup_button");
-        button.src = "/images/"+color+".png"; // Set the button color
-        button.style.display = ''; // Show the button
+    // Set the button color
+    var button = document.getElementById("signup_button");
+    button.src = "/images/"+color+".png"; // Set the button color
+    button.style.display = ''; // Show the button
 
-        // Clear the timeout, since this worked fine
-        clearTimeout(abTimeout1);
-      });
+    // Clear the timeout, since this worked fine
+    clearTimeout(abTimeout1);
+  });
 
-      // Record when someone clicks on the button
-      _kmq.push(["trackClick", "signup_button", "Clicked Signup"])
-    </script>
+  // Record when someone clicks on the button
+  _kmq.push(["trackClick", "signup_button", "Clicked Signup"])
+</script>
+{% endhighlight %}
 
 ### Explaining KM.ab
 
 Let's take a closer look at what KM.ab() does:
 
-    var color = KM.ab("Signup Button Color", ["red", "green"]);
+{% highlight js %}
+var color = KM.ab("Signup Button Color", ["red", "green"]);
+{% endhighlight %}
 
 * For each person seeing this A/B test, choose randomly between the available options **"red"** and **"green"**.
 
@@ -62,9 +64,11 @@ Let's take a closer look at what KM.ab() does:
 
 This is equivalent to:
 
-    // Only one of these is "executed":
-    _kmq.push(['set', {'Signup Button Color':'red'}]);   // option 1
-    _kmq.push(['set', {'Signup Button Color':'green'}]); // option 2
+{% highlight js %}
+// Only one of these is "executed":
+_kmq.push(['set', {'Signup Button Color':'red'}]);   // option 1
+_kmq.push(['set', {'Signup Button Color':'green'}]); // option 2
+{% endhighlight %}
 
 * `KM.ab()` returns which variation is picked, to reuse as a JavaScript variable (`color`). *To remember which variation was used, KM sets a cookie. Please look at our page on [Developing Locally][local] if you are testing `KM.ab()` locally.*
 

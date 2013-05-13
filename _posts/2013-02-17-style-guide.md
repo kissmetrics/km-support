@@ -79,7 +79,7 @@ Jekyll supports using [Pygments](http://pygments.org/) to style your code blocks
 
 Our JavaScript code snippet looks like this:
 
-{% highlight js %}
+{% highlight html %}
 <script type="text/javascript">
   var _kmq = _kmq || [];
   var _kmk = _kmk || 'foo';
@@ -96,9 +96,9 @@ Our JavaScript code snippet looks like this:
 </script>
 {% endhighlight %}
 
-This was acheived by wrapping the code block in Pygment tags `{% highlight js %}` and `{% endhighlight %}`. 
+This was acheived by wrapping the code block in Pygment tags `{% highlight html %}` and `{% endhighlight %}`. 
 
-All the languages supported are listed at the [Pygments site](http://pygments.org/docs/lexers/).
+You can pass a number of languages as an argument. You'll find a lot of use out of `html`, `html+ruby`, `js`, and `js+ruby` lexers. All the languages supported are listed at the [Pygments site](http://pygments.org/docs/lexers/).
 	
 * * *		
 

@@ -64,10 +64,12 @@ The generated ID is Base64 encoded, so the IDs are generated with only these cha
 
 You can also pass in function objects, which will be executed once the KISSmetrics API is loaded:
 
-    _kmq.push(function() {
-       KM.record('My Event')
-       // Do something else in JavaScript
-       } );
+{% highlight js %}
+_kmq.push(function() {
+   KM.record('My Event')
+   // Do something else in JavaScript
+ });
+{% endhighlight %}
     
 This can be useful if you want to record a series of events or if you have conditionals that need to be executed first.
 
@@ -76,7 +78,9 @@ This can be useful if you want to record a series of events or if you have condi
 
 If you are just looking to track every page view on your site we recommend [Google Analytics][ga]. With KISSmetrics we recommend tracking only significant pages with specifically named events. You can use the Event Library to do this, or you can add a `record` command to your pages:
 
-    _kmq.push(['record', 'Viewed Signup']);
+{% highlight js %}
+_kmq.push(['record', 'Viewed Signup']);
+{% endhighlight %}
 
 So when the browser executes the line `_kmq.push(['record', 'Viewed Signup']);`, your event is recorded.
 
@@ -87,51 +91,62 @@ If you are just looking to track every click on your your site we recommend [Cra
 
 `trackClick` takes two parameters: the HTML ID or CSS class of the element you are tracking, and the name of the event to record when someone clicks said element:
 
-    <script>
-      _kmq.push(['trackClick', 'ELEMENT_ID_OR_CLASS', 'EVENT_NAME']);
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+  _kmq.push(['trackClick', 'ELEMENT_ID_OR_CLASS', 'EVENT_NAME']);
+</script>
+{% endhighlight %}
 
 To put it another way, refer to this example:
 
-    <script>
-    // This line...
-    _kmq.push(['trackClick', '.classname', 'Some Event Name']);
+{% highlight html %}
+<script type="text/javascript">
+// This line...
+_kmq.push(['trackClick', '.classname', 'Some Event Name']);
 
-    // ...is basically equivalent to this line:
-    $('.classname').click(function() {
-       _kmq.push(['record', 'Some Event Name']);
-    });
-    </script>
+// ...is basically equivalent to this line:
+$('.classname').click(function() {
+   _kmq.push(['record', 'Some Event Name']);
+});
+</script>
+{% endhighlight %}
 
 For example, you might have a invite link you want to track: 
 
-    // EXAMPLE 1
-    <a href="invite.php" id="invite_link">Invite your friends!</a>
-    <script>
-      _kmq.push(['trackClick', 'invite_link', 'Invite Friends Clicked']);
-    </script>
+{% highlight html %}
+<a href="invite.php" id="invite_link">Invite your friends!</a>
+<script type="text/javascript">
+  // EXAMPLE 1
+  _kmq.push(['trackClick', 'invite_link', 'Invite Friends Clicked']);
+</script>
+{% endhighlight %}
 
 Notice that the code uses the `id` attribute from the link (`invite_link`). You can also pass in an `Element` object instead of the `id`. You can also track all the clicks on any element for a given CSS class by prepending a the CSS class with a `.`. For example, if you want to track clicks an any element with the CSS class `play_button` you can do:
 
-    // EXAMPLE 2
-    _kmq.push(['trackClick', '.play_button', 'Play Button Clicked']);
+{% highlight js %}
+// EXAMPLE 2
+_kmq.push(['trackClick', '.play_button', 'Play Button Clicked']);
+{% endhighlight %}
 
 This method will work on buttons, `<div>`s, links, images, or any other HTML element. It will still fire all of your existing `onclick` events. You can also pass in properties via an additional argument:
 
-    _kmq.push(['trackClick', 'invite_link', 'Invite Friends Clicked', {
-      'color':'red'
-    }]);
-    
+{% highlight js %}
+_kmq.push(['trackClick', 'invite_link', 'Invite Friends Clicked', {
+  'color':'red'
+}]);
+{% endhighlight %}
 
 <a name="tracking-outbound-link-clicks-trackclickonoutboundlink"></a>
 ## Tracking Outbound Link Clicks - `trackClickOnOutboundLink`
 
 The default method of tracking clicks by KISSmetrics works well for most cases. However, if you are trying to track a click on an outbound link (a link to a different website), it is possible for the browser to change pages before it has a chance to send the data to KISSmetrics. For these cases, there is an alternative function available: `trackClickOnOutboundLink`:
 
-    <a href="http://othersite.com" id="link1">Visit Other Site</a>
-    <script>
-      _kmq.push(['trackClickOnOutboundLink', 'link1', 'Visited Other Site']);
-    </script>
+{% highlight html %}
+<a href="http://othersite.com" id="link1">Visit Other Site</a>
+<script type="text/javascript">
+  _kmq.push(['trackClickOnOutboundLink', 'link1', 'Visited Other Site']);
+</script>
+{% endhighlight %}
 
 This builds in time to send the event by:
 
@@ -149,30 +164,36 @@ You can use the `trackSubmit` function to track when a form is submitted. This s
 
 `trackSubmit` takes two parameters: the HTML ID or CSS class of the `<form>` you are tracking, and the name of the event to record when someone submits said form:
 
-    <script>
-      _kmq.push(['trackSubmit', 'ELEMENT_ID_OR_CLASS', 'EVENT_NAME']);
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+_kmq.push(['trackSubmit', 'ELEMENT_ID_OR_CLASS', 'EVENT_NAME']);
+</script>
+{% endhighlight %}
 
 For example, you might have a signup form you want to track: 
 
-    // EXAMPLE 3
-    <form id="signup_form">
-    ... </form>
-    <script>
-      _kmq.push(['trackSubmit', 'signup_form', 'Sign Up Form Submitted']);
-    </script>
+{% highlight html %}
+<form id="signup_form">
+... </form>
+<script type="text/javascript">
+  // EXAMPLE 3
+  _kmq.push(['trackSubmit', 'signup_form', 'Sign Up Form Submitted']);
+</script>
+{% endhighlight %}
 
 Notice that the code uses the `id` attribute from the form (`signup_form`). You can also pass in an `Element` object instead of the `id`. You can also track all the form submissions for all forms with a given CSS class by prepending a the CSS class with a `.`. For example, if you want to track form submits an any form with the CSS class `invite_form` you can do:
 
-    _kmq.push(['trackSubmit', '.invite_form', 'Invite Form Submitted']);
+{% highlight js %}
+_kmq.push(['trackSubmit', '.invite_form', 'Invite Form Submitted']);
+{% endhighlight %}
 
 It will still fire all of your existing `onsubmit` events. 
 
 You can also pass in properties via an additional argument:
 
-    _kmq.push(['trackSubmit', 'signup_form', 'Sign Up Form Submitted', {
-      'variation': 'single page'
-    }]);
+{% highlight js%}
+_kmq.push(['trackSubmit', 'signup_form', 'Sign Up Form Submitted', { 'variation': 'single page' }]);
+{% endhighlight %}
 
 *Note: our code does not validate the contents of the form. If a visitor fills out a form incorrectly and submits it, we will* **still** *count that as a submit event. Certain events like Signups could be tracked more accurately by recording the event on the following page, or using a server-side library to record the event when an entry is created in your database.*
 
@@ -217,9 +238,11 @@ If the ID includes `_`, that will also work. So `user_id`, `user_name`, and `e_m
 
 An alternative is to write an API call that uses jQuery's `.submit()` function, like so:
 
-    $('form').submit(function() {
-      _kmq.push(['record', 'Form Submitted']);
-    });
+{% highlight js%}
+$('form').submit(function() {
+  _kmq.push(['record', 'Form Submitted']);
+});
+{% endhighlight %}
 
 If you are unsure whether your forms behave this way, please contact your site's developer. We are investigating ways to improve our form tracking so you don't have to worry about this.
 
@@ -232,11 +255,13 @@ If you anticipate that your site will be hosted in an iFrame (say, within a Face
 
 You can do this by setting the variable `KM_REFERRER` like so:
 
-    <script type="text/javascript">
-      var KM_REFERRER = parent.document.referrer;
-      var _kmq = _kmq || [];
-      ...
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+  var KM_REFERRER = parent.document.referrer;
+  var _kmq = _kmq || [];
+  ...
+</script>
+{% endhighlight %}
 
 Even if your site is not in an iFrame, `parent.document.referrer` should still be the same as `document.referrer` and behave normally anyway.
 
@@ -245,20 +270,24 @@ Even if your site is not in an iFrame, `parent.document.referrer` should still b
 
 By default, if you have put the JavaScript code on several of your subdomains, it uses the same cookies for all of your subdomains (not just `www`):
 
-    <script type="text/javascript">
-      // This is the default behavior, and is redundant:
-      var KM_COOKIE_DOMAIN = ".mysite.com";
-      var _kmq = _kmq || [];
-      ...
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+  // This is the default behavior, and is redundant:
+  var KM_COOKIE_DOMAIN = ".mysite.com";
+  var _kmq = _kmq || [];
+  ...
+</script>
+{% endhighlight %}
 
 If you want to track the subdomains separately in two different accounts, you can specify a cookie domain `KM_COOKIE_DOMAIN` before the KISSmetrics Javascript is included. This might look like:
 
-    <script type="text/javascript">
-      var KM_COOKIE_DOMAIN = "www.mysite.com";
-      var _kmq = _kmq || [];
-      ...
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+  var KM_COOKIE_DOMAIN = "www.mysite.com";
+  var _kmq = _kmq || [];
+  ...
+</script>
+{% endhighlight %}
 
 <a name="get-your-current-kissmetrics-id"></a>
 ## Get Your Current KISSmetrics ID
@@ -267,11 +296,13 @@ The function `KM.i()` will return the visitor's KISSmetrics ID, in case you need
 
 Remember to wrap this in a [callback function][callback] to ensure the JavaScript library has loaded before you try to fetch this information:
 
-    <script type="text/javascript">
-    _kmq.push(function()
-      { alert(KM.i()) } // Display an alert box with your current KM identity
-    );
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+_kmq.push(function()
+  { alert(KM.i()) } // Display an alert box with your current KM identity
+);
+</script>
+{% endhighlight %}
 
 [common]: /apis/common-methods
 [trackclick]: #tracking-clicks-trackclick

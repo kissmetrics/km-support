@@ -17,11 +17,15 @@ You can download a copy of the API from:
 
 * Open your app's `AppDelegate.m` file and import the `KISSMetricsAPI.h` file just below any existing imports. You'll need to import this file into any class where you'll be tracking events or properties. Alternatively, you may choose to import the `KISSMetrics.h` file in your application's `Prefix.pch` file located in the "Supporting Files" group. This will make our API available in all classes of your project. 
 
-    `#import "KISSMetricsAPI.h"`
+{% highlight obj-c %}
+#import "KISSMetricsAPI.h"
+{% endhighlight %}
 
 * Still in the `AppDelegate.m` file, find the `didFinishLaunching` or `didFinishLaunchingWithOptions` method and add the following code as the first line in that method. Be sure to apply your API key.
 
-    `[KISSMetricsAPI sharedAPIWithKey:@"xxxxxxxxxxxxxxxxxxxxxxxxxxxx"];`
+{% highlight obj-c %}
+[KISSMetricsAPI sharedAPIWithKey:@"xxxxxxxxxxxxxxxxxxxxxxxxxxxx"];
+{% endhighlight %}
 
 ## Identifying Users
 
@@ -29,7 +33,9 @@ To get the best results you should identify your known users once they have logg
 
 *Note: This is just an example---make sure you replace `@"name@email.com"` with code that gets the identity of your user.*
 
-    [[KISSMetricsAPI sharedAPI] identify:@"name@email.com"];
+{% highlight obj-c %}
+[[KISSMetricsAPI sharedAPI] identify:@"name@email.com"];
+{% endhighlight %}
 
 ## Recording Events
 
@@ -37,19 +43,23 @@ To get the best results you should identify your known users once they have logg
 
 Recording an event with KISSmetrics is done like this:
 
-    [[KISSMetricsAPI sharedAPI] recordEvent:@"My Event" withProperties:nil];
+{% highlight obj-c %}
+[[KISSMetricsAPI sharedAPI] recordEvent:@"My Event" withProperties:nil];
+{% endhighlight %}
 
 #### Event with Properties
 
 You can also pass in custom properties with your event. Event properties must be defined in an `NSDictionary` or `NSMutableDictionary`. The keys must all be a non-nil, non-empty `NSString`. The values must all be a non-nil, non-empty `NSString` or `NSNumber`.
 
-    NSDictionary *myEventProperties = [[NSDictionary alloc]
-      initWithObjectsAndKeys:@"Value", @"My Property", nil];
+{% highlight obj-c %}
+NSDictionary *myEventProperties = [[NSDictionary alloc]
+  initWithObjectsAndKeys:@"Value", @"My Property", nil];
 
-    [[KISSMetricsAPI sharedAPI] recordEvent:@"My Event With Properties"
-      withProperties:myEventProperties];
- 
-    // Remove if Automatic Reference Counting is used. 
-    [myEventProperties release];
+[[KISSMetricsAPI sharedAPI] recordEvent:@"My Event With Properties"
+  withProperties:myEventProperties];
+
+// Remove if Automatic Reference Counting is used. 
+[myEventProperties release];
+{% endhighlight %}
 
 [api]: https://github.com/kissmetrics/KISSmetrics-iOS-Mac-OS-X-Library

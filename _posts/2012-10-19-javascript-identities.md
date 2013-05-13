@@ -27,21 +27,27 @@ Since the KISSmetrics script loads asynchronously, you'll want to make sure that
 
 To do this, wrap your call to `KM.i()` in a [callback function][callback], and push that function to `_kmq`
 
-    <script type="text/javascript">
-    _kmq.push(function() {
-	  alert(KM.i()) // Display an alert box with your current KM identity
-	});
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+_kmq.push(function() {
+  alert(KM.i()) // Display an alert box with your current KM identity
+});
+</script>
+{% endhighlight %}
 
 ## PHP Example
 
 One of our customers shows how they check for the `km_ai` cookie using PHP and reuse that ID:
 
-    if (isset($_COOKIE['km_ai'])) {
-	  KM::alias($_COOKIE['km_ai'], $email);
-      KM::identify($email);
-      KM::record('Cart Checkout');
-	}
+{% highlight php %}
+<?php
+ if (isset($_COOKIE['km_ai'])) {
+  KM::alias($_COOKIE['km_ai'], $email);
+   KM::identify($email);
+   KM::record('Cart Checkout');
+}
+?>
+{% endhighlight %}
 
 # Generating Your Own Random Identities
 
@@ -49,10 +55,11 @@ You can choose to generate your own identities server-side. However, please *do 
 
 Instead, you can call `identify` with your generated ID. For example:
 
-    _kmq.push(['identify', <?php echo $generated.id ?>])
+{% highlight js %}
+_kmq.push(['identify', <?php echo $generated.id ?>])
+{% endhighlight %}
 
 This treats *your* random ID as a 'named' ID, so you'll have to explicitly call `alias` when they truly become identified, after a **Signup** or **Login** or **Subscription** type of event.
--->
 
 [url]: /apis/url
 [callback]: /apis/javascript/javascript-specific#callback-functions

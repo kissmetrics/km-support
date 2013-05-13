@@ -22,13 +22,17 @@ People are represented by "**identities**". A person can be represented by one o
 
 Set up identities by using the [`identify` command][identify]. An example JavaScript Library call could look like this:
 
-    // This is just a demonstration
-    _kmq.push(['identify', 'mister.roboto']);
+{% highlight js %}
+// This is just a demonstration
+_kmq.push(['identify', 'mister.roboto']);
+{% endhighlight %}
 
 Realistically, though, you would write the API call to look at your available code and substitute in the appropriate value. Something like this:
 
-    // This is just a demonstration
-    _kmq.push(['identify', '<%=SessionDetails.UserName%>']);
+{% highlight js+ruby %}
+// This is just a demonstration
+_kmq.push(['identify', '<%=SessionDetails.UserName%>']);
+{% endhighlight %}
 
 The details for saving identities can vary, depending on how you're sending us us data. To read more on the topic, please see [Understanding Identities][id-management].
 
@@ -60,7 +64,9 @@ To get started quickly, though, we suggest trying our [JavaScript Library][js] b
 
 In general, record events using the [`record` command][record]. An example JavaScript Library call could look like this:
 
-    _kmq.push(['record', 'Viewed Homepage']);
+{% highlight js %}
+_kmq.push(['record', 'Viewed Homepage']);
+{% endhighlight %}
 
 But as mentioned above, there are [a lot of ways to send us data][data-ways], not all of which require writing code. Please refer to the documentation for whichever method you choose, to find out how to record events.
 
@@ -108,14 +114,15 @@ You can still set the [report options][prop-options] to reconnect a property wit
 
 In general, set properties as part of an event by using the [`record` command][record], or set standalone properties with the [`set` command][set]. Example JavaScript Library calls could look like this:
 
+{% highlight js %}
+// This …
+_kmq.push(['record', 'Viewed Homepage',
+   {'Homepage A/B Test':'Original Variation'}]);
 
-    // This …
-    _kmq.push(['record', 'Viewed Homepage',
-       {'Homepage A/B Test':'Original Variation'}]);
-
-    // Is more or less equivalent to this…
-    _kmq.push(['record', 'Viewed Homepage']);
-    _kmq.push(['set', {'Homepage A/B Test':'Original Variation'}]);
+// Is more or less equivalent to this…
+_kmq.push(['record', 'Viewed Homepage']);
+_kmq.push(['set', {'Homepage A/B Test':'Original Variation'}]);
+{% endhighlight %}
 
 But as mentioned above, there are [a lot of ways to send us data][data-ways], not all of which require writing code. Please refer to the appropriate documentation for how to actually go about setting properties.
 

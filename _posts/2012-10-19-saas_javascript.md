@@ -23,7 +23,9 @@ Once the javascript is on your site, then you can start passing events through t
 
 In order to make sure that the events below are associated with a specific customer using your site, you'll want to make sure that you're passing through an identifier to KISSmetrics:
 
-    _kmq.push(['identify', 'your_identifier_here']);
+{% highlight js %}
+_kmq.push(['identify', 'your_identifier_here']);
+{% endhighlight %}
     
 In the above example, 'your_identifier_here' would be replaced with an ID that you would provide us with (e.g. an email address). To learn more about passing through identities to KISSmetrics see our documentation on [Understanding Identities][ids].
 
@@ -53,23 +55,32 @@ Records a [Signed Up](/apis/saas_events#signed-up) event. The `signedUp` method 
 
 The following records a [Signed Up](/apis/saas_events#signed-up) event for the current person:
 
-    _kmq.push(['signedUp']);
+{% highlight js %}
+_kmq.push(['signedUp']);
+{% endhighlight %}
+
 
 #### Example 2 - with a Plan Name
 
 The following example records a [Signed Up](/apis/saas_events#signed-up) event and sets `Plan Name` to "Premium Plan".
 
-    _kmq.push(['signedUp', 'Premium Plan']);
+{% highlight js %}
+_kmq.push(['signedUp', 'Premium Plan']);
+{% endhighlight %}
 
 #### Example 3 - with Additional Properties
 
 Like all the Javascript SaaS API methods you can pass in additional properties that make sense for your application:
 
-    _kmq.push(['signedUp', 'Premium Plan', {'Coupon Code': 'FREE10'} ]);
+{% highlight js %}
+_kmq.push(['signedUp', 'Premium Plan', {'Coupon Code': 'FREE10'} ]);
+{% endhighlight %}
 
 *Note:* If you don’t want to pass through a `Plan Name`, but you still want to pass through a custom property, you can simply use `null` for the `Plan Name` argument:
 
-    _kmq.push(['signedUp', null, {'Affiliate ID': 123} ]);
+{% highlight js %}
+_kmq.push(['signedUp', null, {'Affiliate ID': 123} ]);
+{% endhighlight %}
 
 ## `upgraded`
 
@@ -81,23 +92,31 @@ Records an [Upgraded](/apis/saas_events#upgraded) event. The `upgraded` method o
 
 The following records an [Upgraded](/apis/saas_events#upgraded) event for the current person:
 
-    _kmq.push(['upgraded']);
+{% highlight js %}
+_kmq.push(['upgraded']);
+{% endhighlight %}
 
 #### Example 2 - with a Plan Name
 
 The following example records an [Upgraded](/apis/saas_events#upgraded) event and sets `Plan Name` to "Premium Plan".
 
-    _kmq.push(['upgraded', 'Premium Plan']);
+{% highlight js %}
+_kmq.push(['upgraded', 'Premium Plan']);
+{% endhighlight %}
 
 #### Example 3 - with Additional Properties
 
 Like all the Javascript SaaS API methods you can pass in additional properties that make sense for your application:
 
-    _kmq.push(['upgraded', 'Premium Plan', {'Coupon Code': 'FREE10'} ]);
+{% highlight js %}
+_kmq.push(['upgraded', 'Premium Plan', {'Coupon Code': 'FREE10'} ]);
+{% endhighlight %}
 
 *Note:* If you don’t want to pass through a `Plan Name`, but you still want to pass through a custom property, you can simply use `null` for the `Plan Name` argument:
 
-    _kmq.push(['upgraded', null, {'Upgraded From': 'Dashboard'} ]);
+{% highlight js %}
+_kmq.push(['upgraded', null, {'Upgraded From': 'Dashboard'} ]);
+{% endhighlight %}
 
 ## `downgraded`
 
@@ -109,24 +128,31 @@ Records a [Downgraded](/apis/saas_events#downgraded) event. The `downgraded` met
 
 The following records a [Downgraded](/apis/saas_events#downgraded) event for the current person:
 
-    _kmq.push(['downgraded']);
+{% highlight js %}
+_kmq.push(['downgraded']);
+{% endhighlight %}
 
 #### Example 2 - with a Plan Name
 
 The following example records a [Downgraded](/apis/saas_events#downgraded) event and sets `Plan Name` to "Premium Plan".
 
-    _kmq.push(['downgraded', 'Basic Plan']);
+{% highlight js %}
+_kmq.push(['downgraded', 'Basic Plan']);
+{% endhighlight %}
 
 #### Example 3 - with Additional Properties
 
 Like all the Javascript SaaS API methods you can pass in additional properties that make sense for your application:
 
-    _kmq.push(['downgraded', 'Basic Plan', {'Downgrade Reason': 'Not using premium 
-      features'} ]);
+{% highlight js %}
+_kmq.push(['downgraded', 'Basic Plan', {'Downgrade Reason': 'Not using premium features'} ]);
+{% endhighlight %}
 
 *Note:* If you don’t want to pass through a `Plan Name`, but you still want to pass through a custom property, you can simply use `null` for the `Plan Name` argument:
 
-    _kmq.push(['upgraded', null, {'Downgraded From': 'Dashboard'} ]);
+{% highlight js %}
+_kmq.push(['upgraded', null, {'Downgraded From': 'Dashboard'} ]);
+{% endhighlight %}
 
 ## `canceled`
 
@@ -136,13 +162,17 @@ Records a [Canceled](/apis/saas_events#canceled) event.
 
 The following records a [Canceled](/apis/saas_events#canceled) event for the current person:
 
-    _kmq.push(['canceled']);
+{% highlight js %}
+_kmq.push(['canceled']);
+{% endhighlight %}
 
 #### Example 2 - with Additional Properties
 
 Like all the Javascript SaaS API methods you can pass in additional properties that make sense for your application:
 
-    _kmq.push(['canceled', {'Cancel Reason': 'Too expensive'} ]);
+{% highlight js %}
+_kmq.push(['canceled', {'Cancel Reason': 'Too expensive'} ]);
+{% endhighlight %}
 
 ## `billed`
 
@@ -152,34 +182,43 @@ Unlike the other events, we realize that `billed` is more likely to be called on
 
 *Note:* As we previously mentioned, you must call `billed` when you call either `signedUp` or `upgraded` *if you are charging users immediately*:
 
-    _kmq.push(['upgraded', 'Premium Plan']);
-    _kmq.push(['billed', 149.99, 'Upgraded']);
+{% highlight js %}
+_kmq.push(['upgraded', 'Premium Plan']);
+_kmq.push(['billed', 149.99, 'Upgraded']);
+{% endhighlight %}
 
 #### Example 1
 
 In the following example we record a [Billed](/apis/saas_events#billed) event with a `Billing Amount` of "29.99":
 
-    _kmq.push(['billed', 29.99]);
+{% highlight js %}
+_kmq.push(['billed', 29.99]);
+{% endhighlight %}
 
 #### Example 2 - with a Billing Description
 
 In the following example we record a [Billed](/apis/saas_events#billed) event with a `Billing Description` of "Monthly Bill":
 
-    _kmq.push(['billed', 29.99, 'Monthly Bill' ]);
+{% highlight js %}
+_kmq.push(['billed', 29.99, 'Monthly Bill' ]);
+{% endhighlight %}
 
 #### Example 3 - with Additional Properties
 
 Like all the Javascript SaaS API methods you can pass in additional properties that make sense for your application:
 
-    _kmq.push(['billed', 29.99, 'Monthly Bill', {'Billing Method': 
-      'Credit Card'} ]);
+{% highlight js %}
+_kmq.push(['billed', 29.99, 'Monthly Bill', {'Billing Method': 'Credit Card'} ]);
 
-    // Equivalent to this API call that uses `record`
-	_kmq.push(['record', 'Billed' {'Billing Amount':29.99, 'Billing Description':'Monthly Bill', 'Billing Method':'Credit Card'}]);
+// Equivalent to this API call that uses `record`
+_kmq.push(['record', 'Billed' {'Billing Amount':29.99, 'Billing Description':'Monthly Bill', 'Billing Method':'Credit Card'}]);
+{% endhighlight %}
 
 *Note:* If you don’t want to pass through a `Billing Description`, but you still want to pass through a custom property, you can simply use `null` for the `Billing Description` argument:
 
-    _kmq.push(['billed', 29.99, null, {'Billing Method': 'Credit Card'} ]);
+{% highlight js %}
+_kmq.push(['billed', 29.99, null, {'Billing Method': 'Credit Card'} ]);
+{% endhighlight %}
 
 [ids]: /getting-started/understanding-identities
 [site-settings]: /images/misc/site_settings.png

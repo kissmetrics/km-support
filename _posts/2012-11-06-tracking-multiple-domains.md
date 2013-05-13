@@ -30,13 +30,15 @@ If you have put the same JavaScript code on all of these subdomains, by default 
 
 If you want to track the subdomains separately in two KISSmetrics sites, you can specify a cookie domain `KM_COOKIE_DOMAIN` before the KISSmetrics Javascript is included. This might look like:
 
-    <script type="text/javascript">
-      /* This gives visitors to www.mysite.com a different ID
-       * than on any other subdomain */
-      var KM_COOKIE_DOMAIN = "www.mysite.com";
-      var _kmq = _kmq || [];
-      ...
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+  /* This gives visitors to www.mysite.com a different ID
+   * than on any other subdomain */
+  var KM_COOKIE_DOMAIN = "www.mysite.com";
+  var _kmq = _kmq || [];
+  ...
+</script>
+{% endhighlight %}
 
 <a name="several-top-level-domains"></a>
 ## Several Top-Level Domains
@@ -74,23 +76,27 @@ This is what hard-coding a URL would look like, to identify anyone who clicks th
 
 You can use the `KM.i()` function to obtain the visitor's current ID (anonymous or not), and make use of that:
 
-     <script>
-     _kmq.push(function() {  // we wrap the code in a function to ensure our library has loaded already
+{% highlight html %}
+<script type="text/javascript">
+_kmq.push(function() {  // we wrap the code in a function to ensure our library has loaded already
 
-        var kmid = encodeURIComponent(KM.i());  // get the ID and URL-encode it to preserve any symbols
-        var destination = 'yoursite.3rd-party-domain.com/?&kmi=' + kmid;
+  var kmid = encodeURIComponent(KM.i());  // get the ID and URL-encode it to preserve any symbols
+  var destination = 'yoursite.3rd-party-domain.com/?&kmi=' + kmid;
 
-        // Code here to hook up this string to the button action.
-     });
-     </script>
+  // Code here to hook up this string to the button action.
+});
+</script>
+{% endhighlight %}
 
 Down the line, if the customer ever goes from being anonymous to providing some identifying info, you'll have to [alias][alias] the anonymized and known id's together, rather than rely on `identify` to do the job. (The URL API treats the transferred ID as a "known" ID.)
 
-    <script>
-    // Just a demonstration. "emailaddress" is a placeholder for code that gets the user's id
-    _kmq.push(['alias', KM.i(), emailaddress ]);
-    _kmq.push(['identify', emailaddress ])
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+// Just a demonstration. "emailaddress" is a placeholder for code that gets the user's id
+_kmq.push(['alias', KM.i(), emailaddress ]);
+_kmq.push(['identify', emailaddress ])
+</script>
+{% endhighlight %}
 
 For reference: [Looking Up Your Current KM ID][km-id]
 

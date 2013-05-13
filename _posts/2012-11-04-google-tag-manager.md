@@ -22,10 +22,12 @@ The concept is similar to creating events with our [Event Library][evlib], where
 
 Include this before loading the tag manager script:
 
-    <script>
-    // Prepare for KISSmetrics setup before loading Google Tag Manager
-    var _kmq = _kmq || [];
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+// Prepare for KISSmetrics setup before loading Google Tag Manager
+var _kmq = _kmq || [];
+</script>
+{% endhighlight %}
 
 Here's a screenshot of installing in a Wordpress template:
 
