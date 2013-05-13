@@ -32,7 +32,7 @@ body {
 .col.side {
   border: none;
   border-right: 1px solid #eee;
-  padding: 30px;
+  padding: 20px;
   width: 219px; /*280-60-1*/
 }
 
@@ -265,13 +265,12 @@ blockquote {
   display: block;
   font-size: 14px;
   font-weight: bold;
-  margin: 15px -30px 0 -30px;
-  padding: 15px 30px 0 30px;
+  margin: 15px 0px 0 0px;
+  padding: 15px 0px 0 0px;
   line-height: 20px;
 }
 .side ul li a {
   color: #6a6a6a;
-  cursor: pointer;
   text-decoration: none;
 }
 .side ul li a:hover {
@@ -299,6 +298,11 @@ blockquote {
   text-decoration: none;
 }
 .side ul ul li a:hover {
+  text-decoration: underline;
+}
+
+.side .collapse-hitbox:hover {
+  cursor: pointer;
   text-decoration: underline;
 }
 
