@@ -75,28 +75,30 @@ Here’s an example of correct usage:
 
 Pre-formatted code blocks are used for writing about programming or markup source code. Rather than forming normal paragraphs, the lines of a code block are interpreted literally. Markdown wraps a code block in both `<pre>` and `<code>` tags.
 
-To produce a code block in Markdown, simply indent every line of the block by at least 4 spaces or 1 tab.
-
-Here’s an example of correct usage:
+Jekyll supports using [Pygments](http://pygments.org/) to style your code blocks. Here’s an example.
 
 Our JavaScript code snippet looks like this:
 
-	<script type="text/javascript">
-	  var _kmq = _kmq || [];
-	  var _kmk = _kmk || 'foo';
-	  function _kms(u){
-	    setTimeout(function(){
-	      var d = document, f = d.getElementsByTagName('script')[0],
-	      s = d.createElement('script');
-	      s.type = 'text/javascript'; s.async = true; s.src = u;
-	      f.parentNode.insertBefore(s, f);
-	    }, 1);
-	  }
-	  _kms('//i.kissmetrics.com/i.js');
-	  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
-	</script>
-	
-This was acheived by simply indenting the text by tabbing once.
+{% highlight js %}
+<script type="text/javascript">
+  var _kmq = _kmq || [];
+  var _kmk = _kmk || 'foo';
+  function _kms(u){
+    setTimeout(function(){
+      var d = document, f = d.getElementsByTagName('script')[0],
+      s = d.createElement('script');
+      s.type = 'text/javascript'; s.async = true; s.src = u;
+      f.parentNode.insertBefore(s, f);
+    }, 1);
+  }
+  _kms('//i.kissmetrics.com/i.js');
+  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+</script>
+{% endhighlight %}
+
+This was acheived by wrapping the code block in Pygment tags `{% highlight js %}` and `{% endhighlight %}`. 
+
+All the languages supported are listed at the [Pygments site](http://pygments.org/docs/lexers/).
 	
 * * *		
 
