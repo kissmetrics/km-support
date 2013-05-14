@@ -158,13 +158,15 @@ To track an order with multiple items, set properties for each item in the cart 
 
 Here's example code for a purchase with 4 different items:
 
-    <script>
-    _kmq.push(['record', 'Purchased', {'Order ID':10001, 'Order Total':499.99}]);
-    _kmq.push(['set', {'Purchased SKU':'a123', '_t':KM.ts(), '_d':1}]);
-    _kmq.push(['set', {'Purchased SKU':'b234', '_t':KM.ts() + 1, '_d':1}]);
-    _kmq.push(['set', {'Purchased SKU':'c345', '_t':KM.ts() + 2, '_d':1}]);
-    _kmq.push(['set', {'Purchased SKU':'d456', '_t':KM.ts() + 3, '_d':1}]);
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+_kmq.push(['record', 'Purchased', {'Order ID':10001, 'Order Total':499.99}]);
+_kmq.push(['set', {'Purchased SKU':'a123', '_t':KM.ts(), '_d':1}]);
+_kmq.push(['set', {'Purchased SKU':'b234', '_t':KM.ts() + 1, '_d':1}]);
+_kmq.push(['set', {'Purchased SKU':'c345', '_t':KM.ts() + 2, '_d':1}]);
+_kmq.push(['set', {'Purchased SKU':'d456', '_t':KM.ts() + 3, '_d':1}]);
+</script>
+{% endhighlight %}
 
 `KM.ts()` returns the current timestamp. In order to log each item in a single purchase event, KISSmetrics needs to see each item individually. The example code delays each `set` call by 1 second so that KISSmetrics can record all the items. The parameter `_d` is set to 1 to indicate you're using a custom timestamp.
 

@@ -23,10 +23,12 @@ That said, here are some uses of `alias` and `identify` you'll want to take note
 
 Compare:
 
-    // This works
-    _kmq.push(['identify', 'steve@apple.com' ]);
-    // This will not be recognized
-    _kmq.push(['identify', steve@apple.com ]);
+{% highlight js %}
+// This works
+_kmq.push(['identify', 'steve@apple.com' ]);
+// This will not be recognized
+_kmq.push(['identify', steve@apple.com ]);
+{% endhighlight %}
 
 * *Do people trigger events after you call `identify`?*
 
@@ -39,10 +41,12 @@ When you call `identify` with our JS library when a person is anonymous, we auto
 
 Consider this example:
 
-    KM.identify("User123456")
-    KM.alias("User123456", "kissmetrics@example.com")
-    KM.record("Event 1")
-    KM.record("Event 2")
+{% highlight ruby %}
+KM.identify("User123456")
+KM.alias("User123456", "kissmetrics@example.com")
+KM.record("Event 1")
+KM.record("Event 2")
+{% endhighlight %}
 
 Because the person never does events while `identifed` as kissmetrics@example.com, that alias never shows up in that person's details, not even as a historic Customer ID. That means you won't be able to look up the person in People Search by the email address, despite the 'alias' call.
 
@@ -52,10 +56,12 @@ Only until I trigger an event as "kissmetrics@example.com" will that show up as 
 
 Often, it's sufficient to just set the additional information as an additional property, like so:
 
-    KM.identify("User123456")
-    KM.set({"Email Address":"kissmetrics@example.com"})
-    KM.record("Event 1")
-    KM.record("Event 2")
+{% highlight ruby %}
+KM.identify("User123456")
+KM.set({"Email Address":"kissmetrics@example.com"})
+KM.record("Event 1")
+KM.record("Event 2")
+{% endhighlight %}
 
 ![Alias vs Set][alias-vs-set]
 
@@ -66,12 +72,14 @@ Often, it's sufficient to just set the additional information as an additional p
 
 For unknown people who come to your site, you might think to `identify` them as, literally, an "anonymous user". Keep in mind that our JavaScript distinguishes these people with a randomized hash, so it's counterproductive to call `identify` with the same ID "anonymous" or "guest". Doing so treats everyone as the same **one** person named "anonymous" or "guest".
 
-    // Both of these are counter to how we intend for you to use 'identify'
-    _kmq.push(['identify', 'anonymous' ]);
-    _kmq.push(['identify', 'guest' ]);
+{% highlight js %}
+// Both of these are counter to how we intend for you to use 'identify'
+_kmq.push(['identify', 'anonymous' ]);
+_kmq.push(['identify', 'guest' ]);
 
-    // If you don't know a person's identity, either don't include the API call, or pass us just an empty string.
-    _kmq.push(['identify', '' ]);
+// If you don't know a person's identity, either don't include the API call, or pass us just an empty string.
+_kmq.push(['identify', '' ]);
+{% endhighlight %}
 
 * *Are IDs being `alias`-chained together?*
 
@@ -79,9 +87,11 @@ For unknown people who come to your site, you might think to `identify` them as,
 
 Consider this sequence:
 
-    # "John", "User-456", and "User-123" are used as different Customer Identities
-    KM.alias("John", "User-123")
-    KM.alias("John", "User-456")
+{% highlight ruby %}
+# "John", "User-456", and "User-123" are used as different Customer Identities
+KM.alias("John", "User-123")
+KM.alias("John", "User-456")
+{% endhighlight %}
 
 Although "User-123" and "User-456" represent two different people, and they are not explicitly aliased together in one API call, these two calls will result in both "User-123" and "User-456" representing the same **one** person.
 
@@ -100,12 +110,18 @@ In the example of you using both JS and PHP, it doesn't matter in which language
 
 * In JavaScript:
 
-    `_kmq.push(['identify', 'kissmetrics.example@gmail.com']);`
-    `// Calling 'identify' in JS for an anonymous user also has a side effect of aliasing the anonymous ID to this email address`
+{% highlight js %}
+_kmq.push(['identify', 'kissmetrics.example@gmail.com']);
+// Calling 'identify' in JS for an anonymous user also has a side effect of aliasing the anonymous ID to this email address
+{% endhighlight %}
    
 * In PHP:
 
-    `KM::alias('kissmetrics.example@gmail.com', 'User123456')`
+{% highlight php %}
+<?
+ KM::alias('kissmetrics.example@gmail.com', 'User123456')
+?>
+{% endhighlight %}
 
 [alias-regular]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/troubleshooting-identities/alias-regular.png
 [alias-zero]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/troubleshooting-identities/alias-zero.png

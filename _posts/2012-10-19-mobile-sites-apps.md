@@ -16,22 +16,24 @@ KISSmetrics can track your mobile website using our typical [JavaScript Library]
 
 There are frameworks like [PhoneGap][phonegap] that let you write mobile apps using HTML and JavaScript. Some of our customers have found success with using our [JavaScript Library][js], with some modifications:
 
-    <script type="text/javascript">
-      var _kmq = _kmq || [];
-      var _kmk = _kmk || 'foo';
-      function _kms(u){
-        setTimeout(function(){
-          var d = document, f = d.getElementsByTagName('script')[0],
-          s = d.createElement('script');
-          s.type = 'text/javascript'; s.async = true; s.src = u;
-          f.parentNode.insertBefore(s, f);
-        }, 1);
-      }
+{% highlight html %}
+<script type="text/javascript">
+var _kmq = _kmq || [];
+var _kmk = _kmk || 'foo';
+function _kms(u){
+  setTimeout(function(){
+    var d = document, f = d.getElementsByTagName('script')[0],
+    s = d.createElement('script');
+    s.type = 'text/javascript'; s.async = true; s.src = u;
+    f.parentNode.insertBefore(s, f);
+  }, 1);
+}
 
-      // Include "http:" when initializing the external JS files, else it will look for a local JS file://i.kissmetrics.com/i.js
-      _kms('http://i.kissmetrics.com/i.js');
-      _kms('http://doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
-    </script>
+// Include "http:" when initializing the external JS files, else it will look for a local JS file://i.kissmetrics.com/i.js
+_kms('http://i.kissmetrics.com/i.js');
+_kms('http://doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+</script>
+{% endhighlight %}
 
 ## 3. Use Ruby/PHP/Python Library on backend
 
@@ -50,34 +52,44 @@ Use KISSmetrics' APIs (Ruby/PHP/Python) to record these events seamlessly as the
 
 #### When a user launches the app, you can include an event trigger on your backend (Ruby Example):
 
-    KM.identify(grab_user_identification_data_from_db);
-    KM.record('Launched App', {'Version' => grab_app_version});
+{% highlight ruby %}
+KM.identify(grab_user_identification_data_from_db);
+KM.record('Launched App', {'Version' => grab_app_version});
+{% endhighlight %}
 
 Once you have a script for `grab_app_version` and `grab_user_identification_data_from_db` it will then look like this for every user launching your app:
 
-    KM.identify('user@gmail.com');
-    KM.record('Launched App', {'Version' => 2.3});
+{% highlight ruby %}
+KM.identify('user@gmail.com');
+KM.record('Launched App', {'Version' => 2.3});
+{% endhighlight %}
 
 #### So now when a user does something on your app, you can now record key events for every feature available as it comes into your backend:
 
-    KM.record('Used Core Feature 1');
-    KM.record('Changed Settings');
+{% highlight ruby %}
+KM.record('Used Core Feature 1');
+KM.record('Changed Settings');
+{% endhighlight %}
 
 #### In addition, you can always set custom properties to users at any time without recording an event. Let's say you want to know what the first thing a user does after they launch your app.
 
 So you've identified them and recorded that they launched the app:
 
-    KM.identify(grab_user_identification_data_from_db);
-    KM.record('Launched App', {'Version' => grab_app_version});
+{% highlight ruby %}
+KM.identify(grab_user_identification_data_from_db);
+KM.record('Launched App', {'Version' => grab_app_version});
+{% endhighlight %}
 
 Now you want to find out what they do next.
 
 Write a script to trigger a KISSmetrics API command on the FIRST action after launching the app. It could look like this (please excuse the pseudo-code):
 
-    KM.record('Used Core Feature 1');
-    if action == first feature after launching {
-	  KM.set({ :Entry Event => replace_with_your_feature_name }) ; }
-    else {  do nothing  }
+{% highlight ruby %}
+KM.record('Used Core Feature 1');
+if action == first feature after launching {
+    KM.set({ :Entry Event => replace_with_your_feature_name }) ; }
+end
+{% endhighlight %}
 
 The idea here is that you can designate which feature of your app is the "first feature" or "entry event" for users when they launch your app. Later, you can go into your reports and sort users by their first entry event or most recent entry event.
 

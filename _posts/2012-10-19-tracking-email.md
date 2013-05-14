@@ -23,9 +23,11 @@ We suggest using our server-side API because 1) your own server-side process may
 
 The server-side code for doing this might look like:
 
-    KM.identify('john@smith.com')
-    KM.record('Received Email', {'Email Content Received' => 'Welcome Email'})
-    # Like any other property, "Email Content Received" is optional, so include more properties if you want to use them.
+{% highlight ruby %}
+KM.identify('john@smith.com')
+KM.record('Received Email', {'Email Content Received' => 'Welcome Email'})
+# Like any other property, "Email Content Received" is optional, so include more properties if you want to use them.
+{% endhighlight %}
 
 Notice we're identifying the recipients by their email address. You can use any other unique identifier here, but it's very important to use a consistent ID when tracking Views and Clickthroughs, and activity beyond email interaction.
 

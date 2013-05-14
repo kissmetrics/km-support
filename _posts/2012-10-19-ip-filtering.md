@@ -55,8 +55,9 @@ This assumes that you are able to create a new page on your server where you wou
 
 You will need to create an HTML page and host it on your server in order to set a first-party cookie.  The code for this page would work something like this:
 
-    <a onclick = set a cookie called km_ignore with an expiration
-      of 10 years>Click here to set your cookie</a>
+{% highlight html %}
+<a onclick = set a cookie called km_ignore with an expiration of 10 years>Click here to set your cookie</a>
+{% endhighlight %}
 
 You would upload it to `http://www.mysitename.com/ignore-km.html` (or something like that). Then your employees would need to visit the `http://www.mysitename.com/ignore-km.html` page and click the link to set a cookie for each browser (Chrome, Firefox, IE, Safari, etc.) they regularly use.
 
@@ -64,17 +65,19 @@ You would upload it to `http://www.mysitename.com/ignore-km.html` (or something 
 
 You would need to replace your default KISSmetrics JS code with something like this:
 
-    <script type="text/javascript">
-    var _kmq = _kmq || [];
-    function _kms(u){ setTimeout(function() {
-	  var s = document.createElement('script');
-      var f = document.getElementsByTagName('script')[0];
-      s.type = 'text/javascript'; s.async = true; s.src = u;
-      f.parentNode.insertBefore(s, f); }  , 1); }
-    if(!document.cookie.toString().match(/km_ignore/)) {
-	  _kms('//i.kissmetrics.com/i.js');
-	  _kms('YOUR KISSMETRICS CODE HERE'); }
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+var _kmq = _kmq || [];
+function _kms(u){ setTimeout(function() {
+var s = document.createElement('script');
+  var f = document.getElementsByTagName('script')[0];
+  s.type = 'text/javascript'; s.async = true; s.src = u;
+  f.parentNode.insertBefore(s, f); }  , 1); }
+if(!document.cookie.toString().match(/km_ignore/)) {
+_kms('//i.kissmetrics.com/i.js');
+_kms('YOUR KISSMETRICS CODE HERE'); }
+</script>
+{% endhighlight %}
 
 This basically says, "Check to see if this person has a cookie called km_ignore; if so, do nothing; if not go ahead and load the KISSmetrics script."
 

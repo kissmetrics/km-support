@@ -11,25 +11,27 @@ Duncan's post on the [Distilled blog][distilled] demonstrates how to track form 
 
 # The Code
 
-    <script type='text/javascript'>
-    // Wait for jQuery to finish loading
-    $(document).ready(function() { 
+{% highlight html %}
+<script type='text/javascript'>
+// Wait for jQuery to finish loading
+$(document).ready(function() { 
 
-      // For all inputs, trigger an event after the browser loses focus from a field
-      $(':input').blur(function () {
+  // For all inputs, trigger an event after the browser loses focus from a field
+  $(':input').blur(function () {
 
-        // Check that the visitor entered some information in the field
-        if($(this).val().length > 0) {
-          _kmq.push(['record', 'Filled Out Form Step ' + $(this).attr('name')]);
-          }
-        });
-      
-      // For radio buttons and checkboxes, .change() works better than .blur()
-      $('input:radio, input:checkbox').change(function () {
-        _kmq.push(['record', 'Filled Out Form Step ' + $(this).attr('name')]);
-        });
+    // Check that the visitor entered some information in the field
+    if($(this).val().length > 0) {
+      _kmq.push(['record', 'Filled Out Form Step ' + $(this).attr('name')]);
+      }
     });
-    </script>
+  
+  // For radio buttons and checkboxes, .change() works better than .blur()
+  $('input:radio, input:checkbox').change(function () {
+    _kmq.push(['record', 'Filled Out Form Step ' + $(this).attr('name')]);
+    });
+});
+</script>
+{% endhighlight %}
 
 This is fairly simple, and the relevant comments are in-line. This also assumes `_kmq` has already been initialized earlier.
 

@@ -13,11 +13,13 @@ Thanks to Tristan at [grasshopperherder.com][ghh] for compiling this list.
 
 The Facebook social plugins emit a number of events, most importantly the `edge.create` event. This is triggered when a user clicks a Like button on your page. If you are using the Facebook JavaScript SDK (rather than a plugin that inserts an iFrame),you can use the following snippet:
 
-    <script type="text/javascript">
-        FB.Event.subscribe('edge.create', function(response) {
-          _kmq.push(['record', 'Facebook like']);
-        });
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+  FB.Event.subscribe('edge.create', function(response) {
+    _kmq.push(['record', 'Facebook like']);
+  });
+</script>
+{% endhighlight %}
 
 You should paste this code below wherever you include the button.
 
@@ -32,19 +34,23 @@ Other events are documented here: [http://developers.facebook.com/docs/reference
 ## How do I track Twitter events?
 Tracking Twitter events is very similar to Facebook tracking. Include the following snippet just below any Twitter follow code:
 
-    <script type="text/javascript">
-        twttr.events.bind('follow', function(event) {
-          _kmq.push(['record', 'Twitter follow']);
-        });
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+  twttr.events.bind('follow', function(event) {
+    _kmq.push(['record', 'Twitter follow']);
+  });
+</script>
+{% endhighlight %}
 
 If you want to track tweets, use this:
 
-    <script type="text/javascript">
-        twttr.events.bind('tweet', function(event) {
-          _kmq.push(['record', 'Tweeted']);
-        });
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+  twttr.events.bind('tweet', function(event) {
+    _kmq.push(['record', 'Tweeted']);
+  });
+</script>
+{% endhighlight %}
 
 A full list of events you can track is in the Twitter dev docs: [https://dev.twitter.com/docs/intents/events][twitter]
 
@@ -57,11 +63,13 @@ Click on "Advanced Options" and enter "plusone_vote" into the "JS Callback Funct
 
 Below the +1 code, include the following snippet:
 
-    <script type="text/javascript">
-      function plusone_vote( obj ) {
-        _kmq.push(['record', 'Plus 1 vote']);
-      }
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+  function plusone_vote( obj ) {
+    _kmq.push(['record', 'Plus 1 vote']);
+  }
+</script>
+{% endhighlight %}
 
 [+1]: http://www.google.com/webmasters/+1/button/
 
@@ -70,14 +78,16 @@ This currently requires an undocumented feature, so keep in mind that this might
 
 Start by creating your button on the LinkedIn dev pages [https://developer.linkedin.com/plugins/share-button][linked-in]. Inside the "IN/Share" tag section you need to add the `data-onSuccess` callback function. Here's an example:
 
-    <script src="http://platform.linkedin.com/in.js"
-      type="text/javascript"></script>
-    <script type="IN/Share" data-url="http://www.streamhead.com/"
-      data-counter="right" data-onSuccess="linkedin_share"></script>
-    <script type="text/javascript">
-    function linkedin_share() {
-      _kmq.push(['record', 'Shared on LinkedIn']);
-    }
-    </script>    
+{% highlight html %}
+<script src="http://platform.linkedin.com/in.js"
+  type="text/javascript"></script>
+<script type="IN/Share" data-url="http://www.streamhead.com/"
+  data-counter="right" data-onSuccess="linkedin_share"></script>
+<script type="text/javascript">
+function linkedin_share() {
+  _kmq.push(['record', 'Shared on LinkedIn']);
+}
+</script> 
+{% endhighlight %}   
 
 [linked-in]: https://developer.linkedin.com/plugins/share-button

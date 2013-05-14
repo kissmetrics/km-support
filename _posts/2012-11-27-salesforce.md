@@ -27,14 +27,16 @@ The Salesforce integration brings in a window to see the KISSmetrics Person Deta
 
 *Reminder: Please email [jevanish@kissmetrics.com][request] for your unique KISSmetrics account KEY and SECRET for Salesforce.*
 
-    <apex:page standardController="Contact">
-      <apex:iframe
-        rendered="{!IF((contact.email != ''), true, false)}"
-        src="https://www.kissmetrics.com/people/find/{!contact.email}?mode=embedded&key=__KEY__&secret=__SECRET__"
-        width="100%"
-        scrolling="true"
-      />
-    </apex:page>
+{% highlight html %}
+<apex:page standardController="Contact">
+  <apex:iframe
+    rendered="{!IF((contact.email != ''), true, false)}"
+    src="https://www.kissmetrics.com/people/find/{!contact.email}?mode=embedded&key=__KEY__&secret=__SECRET__"
+    width="100%"
+    scrolling="true"
+  />
+</apex:page>
+{% endhighlight %}
 
 ## Add the KISSmetrics Page to Salesforce Contact View
 
@@ -48,9 +50,11 @@ The Salesforce integration brings in a window to see the KISSmetrics Person Deta
 
 You can create an additional Salesforce Page to link to Leads in addition to Contacts. Here is the code to paste in:
 
-    <apex:page standardController="Lead">
-      <apex:iframe rendered="{!IF((lead.email != ''), true, false)}" src="https://www.kissmetrics.com/people/find/{!lead.email}?mode=embedded&key=__KEY__&secret=__SECRET__" width="100%" scrolling="true" /> 
-    </apex:page>
+{% highlight html %}
+<apex:page standardController="Lead">
+  <apex:iframe rendered="{!IF((lead.email != ''), true, false)}" src="https://www.kissmetrics.com/people/find/{!lead.email}?mode=embedded&key=__KEY__&secret=__SECRET__" width="100%" scrolling="true" /> 
+</apex:page>
+{% endhighlight %}
 
 [devforce]: http://developer.force.com/
 [request]: mailto:jevanish@kissmetrics.com?subject=%5BSalesforce%5D%20Requesting%20Access

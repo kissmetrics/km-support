@@ -16,19 +16,21 @@ To tease apart the different revenue channels, let's create new properties, each
 
 Here is a JavaScript code example:
 
-    // For Person 1 "foo"
-    _kmq.push(['identify', 'foo']);
-    _kmq.push(['record', 'Billed', {
-      'Subscription Billing Amount':90,
-      'Revenue Type':'Recurring',
-      'Recurring Revenue'90}]);   // The key part
-    
-    // For Person 2 "bar"
-    _kmq.push(['identify', 'bar']);
-    _kmq.push(['record', 'Billed', {
-      'Subscription Billing Amount':45,
-      'Revenue Type':'One-Time',
-      'One-Time Revenue':45}]);   // The key part
+{% highlight js%}
+// For Person 1 "foo"
+_kmq.push(['identify', 'foo']);
+_kmq.push(['record', 'Billed', {
+  'Subscription Billing Amount':90,
+  'Revenue Type':'Recurring',
+  'Recurring Revenue'90}]);   // The key part
+
+// For Person 2 "bar"
+_kmq.push(['identify', 'bar']);
+_kmq.push(['record', 'Billed', {
+  'Subscription Billing Amount':45,
+  'Revenue Type':'One-Time',
+  'One-Time Revenue':45}]);   // The key part
+{% endhighlight %}
 
 ## What's different about this structure?
 

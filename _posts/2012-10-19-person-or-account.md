@@ -18,11 +18,13 @@ Our JavaScript Library was not designed to send to two different sites/API keys.
 
 So if you were to look at all the "people" you KISSmetrics account has pooled together, it would actually contain an assortment of both Users and Accounts, with overlap in which users belong to which accounts. Here's how I'm picturing this series of API calls:
 
-    _kmq.push(['identify', 'user1']);
-    _kmq.push(['record', 'Does a User Event']);
-    _kmq.push(['identify', 'account1']);
-    _kmq.push(['record', 'Does an Account Event']);
-    _kmq.push(['identify', 'user1']); // toggle back to track future events as a User.
+{% highlight js%}
+_kmq.push(['identify', 'user1']);
+_kmq.push(['record', 'Does a User Event']);
+_kmq.push(['identify', 'account1']);
+_kmq.push(['record', 'Does an Account Event']);
+_kmq.push(['identify', 'user1']); // toggle back to track future events as a User.
+{% endhighlight %}
 
 Doing it this way gives some separation between people and accounts, because accounts can only do certain events (the ones you're interested in), and people can only do certain events, and they shouldn't cross over.
 

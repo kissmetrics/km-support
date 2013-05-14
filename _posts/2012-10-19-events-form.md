@@ -24,11 +24,13 @@ Just like click events, we’re going to grab the ID or a Class name of the `<fo
 
 Let's look at a very basic form that asks for two things, first name and last name.
 
-    <form id="km_form">
-      First name: <input type="text" name="firstname"> </input> <br />
-      Last name: <input type="text" name="lastname"> </input> <br />
-	  <input type="submit" value="Submit"> </input>
-	</form>
+{% highlight html %}
+<form id="km_form">
+  First name: <input type="text" name="firstname"> </input> <br />
+  Last name: <input type="text" name="lastname"> </input> <br />
+<input type="submit" value="Submit"> </input>
+</form>
+{% endhighlight %}
 
 This is what the above code looks like in your browser, below:
 

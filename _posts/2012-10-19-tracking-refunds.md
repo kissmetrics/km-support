@@ -32,8 +32,9 @@ Triggered when you apply a refund for a customer.
 
 Example: You refund Joe $100 while he is on a $50/mo Small plan.
 
-    KM.identify( <Joe's Identity> );
-    KM.record('Subscription Refunded', {
-      'Subscription Refund Amount' => 100,
-      'Subscription Refund Reason' => 'Charged incorrect amount'
-    });
+{% highlight ruby%}
+KM.identify( <Joe's Identity> );
+KM.record('Subscription Refunded', {
+  'Subscription Refund Amount' => 100,
+  'Subscription Refund Reason' => 'Charged incorrect amount' });
+{% endhighlight %}

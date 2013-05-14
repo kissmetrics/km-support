@@ -41,11 +41,13 @@ KISSmetrics does not have anything in place to automatically capture some types 
 
 However, if you are capturing that information yourself (for example, through Facebook's API or from within your signup form), you can pass that information along to us as properties of that user.
 
-    // Example API call that passes demographic info, assuming you know these.
-    _kmq.push(['set', {'language':'english',
-                       'country':'us',
-                       'gender':'male',
-                       'age':21}]);
+{% highlight js%}
+// Example API call that passes demographic info, assuming you know these.
+_kmq.push(['set', {'language':'english',
+                   'country':'us',
+                   'gender':'male',
+                   'age':21}]);
+{% endhighlight %}
 
 [vanity-km]: http://blog.kissmetrics.com/vainest-metrics/
 [vanity-tc]: http://techcrunch.com/2011/07/30/vanity-metrics/

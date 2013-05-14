@@ -29,10 +29,12 @@ That is, typing in "www.mysite.com" actually redirects you to the "/splash" page
 
 On `http://www.mysite.com/`, there is a small bit of JavaScript that handles the redirect. For example:
 
-    <script>
-    // This is code on http://www.mysite.com/
-    document.location = "http://www.mysite.com/splash.php";
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+// This is code on http://www.mysite.com/
+document.location = "http://www.mysite.com/splash.php";
+</script>
+{% endhighlight %}
 
 Because the browser loads `http://www.mysite.com/` ever so briefly, the browser progresses through pages like this:
 
@@ -46,10 +48,12 @@ Location Header redirects are done via server-side software, like in Ruby or PHP
 
 With this method, the browser reads the headers before rendering the page, so that it knows to go to the next page without counting the visit to `www.mysite.com` as a "hit".
 
-    <?php
-    // This is code on http://www.mysite.com/
-    header("Location: http://www.mysite.com/splash.php");
-    ?>
+{% highlight php%}
+<?php
+// This is code on http://www.mysite.com/
+header("Location: http://www.mysite.com/splash.php");
+?>
+{% endhighlight %}
 
 The progression then looks like this:
 

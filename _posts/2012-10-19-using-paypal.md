@@ -29,10 +29,12 @@ Here's a Javascript API example at the point of sale:
 
 Customer completes purchase (either reaching confirmation page or at the point your servers receive this data) and this triggers:
 
-    _kmq.push(['record', 'Completed Purchase', {
-	  'Total Amount' : get_amount_here,
-	  'Number of Items' : get_number_here,
-	  'Promotion used' : get_promotion_here }]);
+{% highlight js %}
+_kmq.push(['record', 'Completed Purchase', {
+  'Total Amount' : get_amount_here,
+  'Number of Items' : get_number_here,
+  'Promotion used' : get_promotion_here }]);
+{% endhighlight %}
 
 * Records total amount spent
 * Records total number of items bought
@@ -42,9 +44,11 @@ Customer completes purchase (either reaching confirmation page or at the point y
 
 In addition, you should be able to designate each "line item" in the purchase. For each line item, they can attach these JavaScript Library calls for however many items:
 
-    _kmq.push(['set', {'Item ID' : get_item_ID, 'Item Price' : get_price_here}]);
-    _kmq.push(['set', {'Item ID' : get_item_ID, 'Item Price' : get_price_here}]);
-    _kmq.push(['set', {'Item ID' : get_item_ID, 'Item Price' : get_price_here}]);
+{% highlight js %}
+_kmq.push(['set', {'Item ID' : get_item_ID, 'Item Price' : get_price_here}]);
+_kmq.push(['set', {'Item ID' : get_item_ID, 'Item Price' : get_price_here}]);
+_kmq.push(['set', {'Item ID' : get_item_ID, 'Item Price' : get_price_here}]);
+{% endhighlight %}
 
 Once again, `get_item_ID` and `get_price_here` should be replaced by JavaScript code that grabs the appropriate information from your database.
 

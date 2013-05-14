@@ -9,10 +9,12 @@ One of the more popular (yet optional) things to track is the web browser that y
 
 If you choose to use their BrowserDetect plugin, you could then pass along the appropriate values to KISSmetrics as a property, perhaps like this:
 
-    <script>
-    _kmq.push(['set', {'Browser' : BrowserDetect.browser + " " +
-      BrowserDetect.version }]);
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+_kmq.push(['set', {'Browser' : BrowserDetect.browser + " " +
+  BrowserDetect.version }]);
+</script>
+{% endhighlight %}
 
 For me, this would currently set the property "Browser" with the value "Chrome 15".
 
@@ -22,9 +24,11 @@ If you're familiar with this, then you can apply the same principles to filter o
 
 Designers may be interested in knowing the screen resolution in which visitors are viewing their sites. This can inform them to optimize the site for the popular resolutions. The data is available in the JavaScript variables `screen.width` and `screen.height`:
 
-    <script>
-    _kmq.push(['set', {'Screen Resolution' : screen.width + " x " +
-      screen.height }]);
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+_kmq.push(['set', {'Screen Resolution' : screen.width + " x " +
+  screen.height }]);
+</script>
+{% endhighlight %}
 
 [1]: http://www.quirksmode.org/js/detect.html

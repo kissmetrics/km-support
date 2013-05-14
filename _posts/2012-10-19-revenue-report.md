@@ -35,15 +35,19 @@ The Revenue Report looks for a single KISSmetrics Property across all customers.
 
 Typically, you'll only include the net amount, minus tax and shipping:
 
-    # Ruby example. When madeup@person.com is billed for $29.99, execute:
-    KM.identify('madeup@person.com')
-    KM.record('Billed', {'Billing Amount' => 29.99 })
+{% highlight ruby %}
+# Ruby example. When madeup@person.com is billed for $29.99, execute:
+KM.identify('madeup@person.com')
+KM.record('Billed', {'Billing Amount' => 29.99 })
+{% endhighlight %}
 
 Refunds can also inform your total revenue. Pass in the refunded value under the same `Billing Amount` property with a negative value:
 
-    # Ruby example. When madeup@person.com is refunded $29.99, execute:
-    KM.identify('madeup@person.com')
-    KM.record('Refunded', {'Billing Amount' => -29.99 })
+{% highlight ruby %}
+# Ruby example. When madeup@person.com is refunded $29.99, execute:
+KM.identify('madeup@person.com')
+KM.record('Refunded', {'Billing Amount' => -29.99 })
+{% endhighlight %}
 
 Remember, there are [many ways to send us event data][send]. You might find it most accurate to [import data][import] from another data source that's already keeping track of each transaction.
 

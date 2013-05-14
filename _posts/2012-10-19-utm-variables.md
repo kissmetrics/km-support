@@ -54,13 +54,15 @@ There are a few solutions:
 
 1) Delay the redirect action until the KM script has loaded.
 
-    // This script would go on www.mysite.com
-    <script>
-    _kmq.push(function(){
-    
-    // The logic to redirect to /landingpage goes here
-    
-    });
-    </script>
+{% highlight html %}
+<script type="text/javascript">
+// This script would go on www.mysite.com
+_kmq.push(function(){
+
+// The logic to redirect to /landingpage goes here
+
+});
+</script>
+{% endhighlight %}
 
 2) Capture the UTM variables attached to `www.mysite.com`, then append them to `www.mysite.com/landingpage` where the KM script can detect them.

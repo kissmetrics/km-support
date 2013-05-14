@@ -11,13 +11,15 @@ The KISSmetrics snippet is asynchronous, which means it will not delay the loadi
 
 One minor (technical) reason for putting the code in the `<head>` is that the `_kmq` object will be created earlier in the page load. If you plan to pass us JavaScript Library calls elsewhere in the `<body>`, the `_kmq` object will be ready to queue these calls for execution when our script finishes loading. This avoids errors like these:
 
-    // This order causes JavaScript errors: "ReferenceError: _kmq is not defined"
-    <script>
-      _kmq.push(['record', 'My Event']);  //_kmq has not been instantiated yet
-      ...	 
-      var _kmq = _kmq || [];
-      ...
-	</script>
+{% highlight html %}
+<script type="text/javascript">
+// This order causes JavaScript errors: "ReferenceError: _kmq is not defined"
+  _kmq.push(['record', 'My Event']);  //_kmq has not been instantiated yet
+  ...	 
+  var _kmq = _kmq || [];
+  ...
+</script>
+{% endhighlight %}
 
 ## What Do I Need to Do?
 

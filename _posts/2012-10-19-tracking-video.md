@@ -23,32 +23,36 @@ Below are examples of using the [YouTube](#youtube), [Vimeo](#vimeo), and [Wisti
 
 This is what your full embed code might look like:
 
-    <!-- Load the video with the API enabled -->
-    <iframe id="player1" src="http://player.vimeo.com/video/7100569?player_id=player1&api=1" width="540" height="304" frameborder="0" webkitallowfullscreen></iframe>
-     
-    <!-- Load Froogaloop, Vimeo's JS API -->
-    <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+{% highlight html %}
+<!-- Load the video with the API enabled -->
+<iframe id="player1" src="http://player.vimeo.com/video/7100569?player_id=player1&api=1" width="540" height="304" frameborder="0" webkitallowfullscreen></iframe>
+ 
+<!-- Load Froogaloop, Vimeo's JS API -->
+<script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+{% endhighlight %}
 
 ### Add KM Tracking
 Now below this, let's interact with their [JS][vimeo-js] to set up the events:
 
-    <script type='text/javascript'>
-    var iframe = $('#player1')[0],
-        player = $f(iframe),
+{% highlight html %}
+<script type="text/javascript">
+var iframe = $('#player1')[0],
+    player = $f(iframe),
 
-    // TODO: The only piece of the code to modify is the video name.
-    var videoName = "Sample Video";
+// TODO: The only piece of the code to modify is the video name.
+var videoName = "Sample Video";
 
-    // Add listeners after the player is ready.
-    player.addEvent('ready', function() {
-      player.addEvent('play', function(){
-        _kmq.push(['record', 'Played Video - ' + videoName]); });
-      player.addEvent('pause', function(){
-        _kmq.push(['record', 'Paused Video - ' + videoName]); });
-      player.addEvent('finish', function(){
-        _kmq.push(['record', 'Finished Video - ' + videoName]); });
-    });
-    </script>
+// Add listeners after the player is ready.
+player.addEvent('ready', function() {
+  player.addEvent('play', function(){
+    _kmq.push(['record', 'Played Video - ' + videoName]); });
+  player.addEvent('pause', function(){
+    _kmq.push(['record', 'Paused Video - ' + videoName]); });
+  player.addEvent('finish', function(){
+    _kmq.push(['record', 'Finished Video - ' + videoName]); });
+});
+</script>
+{% endhighlight %}
 
 <a name="wistia" ></a>
 ## Wistia
@@ -61,23 +65,25 @@ If you expand the "Embed Type" box, you can expand the Advanced Options and swit
 ### Add KM Tracking
 Now below this, let's add our tracking calls.
 
-    <script type='text/javascript'>
-    function loadKMTrackableVideo (wistia_object, videoName) {
-      // Add tracking to 'play', 'pause', and 'end' events.
-      wistia_object.bind("play", function() {
-        _kmq.push(['record', 'Played video - ' + videoName]);
-      });
-      wistia_object.bind("pause", function() {
-        _kmq.push(['record', 'Paused video - ' + videoName]);
-      });
-      wistia_object.bind("end", function() {
-        _kmq.push(['record', 'Finished video - ' + videoName]);
-      });
-    }
+{% highlight html %}
+<script type="text/javascript">
+function loadKMTrackableVideo (wistia_object, videoName) {
+  // Add tracking to 'play', 'pause', and 'end' events.
+  wistia_object.bind("play", function() {
+    _kmq.push(['record', 'Played video - ' + videoName]);
+  });
+  wistia_object.bind("pause", function() {
+    _kmq.push(['record', 'Paused video - ' + videoName]);
+  });
+  wistia_object.bind("end", function() {
+    _kmq.push(['record', 'Finished video - ' + videoName]);
+  });
+}
 
-    // TODO: The only piece of the code to modify is the video name.
-    loadKMTrackableVideo(wistiaEmbed, "Sample Wistia Video");
-    </script>
+// TODO: The only piece of the code to modify is the video name.
+loadKMTrackableVideo(wistiaEmbed, "Sample Wistia Video");
+</script>
+{% endhighlight %}
 
 **The last line `loadKMTrackableVideo(wistiaEmbed, "Sample Wistia Video");` is the piece you need to modify:**
 
@@ -97,32 +103,34 @@ First, you'll need to embed your YouTube video according to [their documented me
 ### Add KM Tracking
 Once that's done, you can add this block below the embed code. **Remember to change the `videoName` variable**:
 
-    <script type='text/javascript'>
-    // Get a reference to the player and listen for state changes
-    function onYouTubePlayerReady(playerId) {
-      ytplayer = document.getElementById("myytplayer");
-      ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
-    }
+{% highlight html %}
+<script type="text/javascript">
+// Get a reference to the player and listen for state changes
+function onYouTubePlayerReady(playerId) {
+  ytplayer = document.getElementById("myytplayer");
+  ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
+}
 
-    // TODO: The only piece of the code to modify is the video name.
-    var videoName = "Sample Video";
+// TODO: The only piece of the code to modify is the video name.
+var videoName = "Sample Video";
 
-    function onytplayerStateChange(newState) {
-      switch(newState) {
-        case 1: // YT.PlayerState.PLAYING
-          _kmq.push(['record', 'Played Video - ' + videoName]);
-          break;
-        case 2: // YT.PlayerState.PAUSED
-          _kmq.push(['record', 'Paused Video - ' + videoName]);
-          break;
-        case 0: // YT.PlayerState.ENDED
-          _kmq.push(['record', 'Finished Video - ' + videoName]);
-          break;
-        default:
-          return;
-      }
-    }
-    </script>
+function onytplayerStateChange(newState) {
+  switch(newState) {
+    case 1: // YT.PlayerState.PLAYING
+      _kmq.push(['record', 'Played Video - ' + videoName]);
+      break;
+    case 2: // YT.PlayerState.PAUSED
+      _kmq.push(['record', 'Paused Video - ' + videoName]);
+      break;
+    case 0: // YT.PlayerState.ENDED
+      _kmq.push(['record', 'Finished Video - ' + videoName]);
+      break;
+    default:
+      return;
+  }
+}
+</script>
+{% endhighlight %}
 
 [vimeo-embed]: http://developer.vimeo.com/player/embedding
 [vimeo-froogaloop]: https://github.com/vimeo/player-api/tree/master/javascript

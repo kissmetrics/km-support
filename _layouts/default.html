@@ -139,6 +139,11 @@
       }).on('hide', function(){
         $(this).parent().find(".icon-chevron-down").removeClass("icon-chevron-down").addClass("icon-chevron-right");
       });
+
+      // Expand sidebar to the category of the article you're seeing.
+      var path = window.location.pathname;
+      $('.side a[href="'+path+'"]').css("font-weight", "bold");
+      $('.side a[href="'+path+'"]').parents('.collapse').collapse('show');
     });
     </script>
 
