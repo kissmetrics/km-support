@@ -2,7 +2,7 @@
 layout: post
 title: Understanding Identities
 categories: getting-started
-tags: [common_dev_pitfalls]
+tags: [common_dev_pitfalls, identities]
 author: Eric Fung
 summary: Everything you need to know about dealing with KISSmetrics identities.
 ---

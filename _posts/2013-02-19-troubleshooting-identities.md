@@ -2,7 +2,7 @@
 layout: post
 categories: troubleshooting
 title: "Problems with Identifying Users?"
-tags: []
+tags: [identities]
 author: Eric Fung
 summary: These are several pitfalls to avoid when using KISSmetrics identities.
 ---
