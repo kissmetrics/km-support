@@ -90,9 +90,9 @@ Once you push, Github updates the site almost instantly.
 
 # Nice things to know
 
-## The Jekyll Wiki
+## The Jekyll Project Page
 
-Here is a link: [https://github.com/mojombo/jekyll](https://github.com/mojombo/jekyll)
+Here is a link: [http://jekyllrb.com/docs/home/](http://jekyllrb.com/docs/home/)
 
 ## Site Does Not Build
 
@@ -102,3 +102,7 @@ Here is a link: [https://github.com/mojombo/jekyll](https://github.com/mojombo/j
 ## Neat Uses of Liquid
 
 * Reversing a list: `{% for page in site.categories.troubleshooting reversed %}`
+
+## Pygments 
+
+You can tag code examples with Pygments for colored syntax-highlighting. Here's a reference for how to incorporate the language into your example: [http://pygments.org/docs/lexers/](http://pygments.org/docs/lexers/)

@@ -17,7 +17,7 @@ With Help Scout **AND** KISSmetrics, you can connect the dots between customer s
 ## Setup
 
 1. Within your Help Scout dashboard, visit the [Apps page for KISSmetrics][km-helpscout].
-2. Enter your [KISSmetrics API key][api-key].
+2. Enter your [KISSmetrics API key][site-settings].
 3. Select the mailbox(es) you want to connect to KISSmetrics.
 4. Watch Help Scout data appear in KISSmetrics' Live tab and other reports.
 
@@ -62,5 +62,5 @@ For example, if Bob emails your Help Scout inbox, he would register as `bob@bob.
 * **Help ticket history**: secure.helpscout.net/conversation/1234567/1234/
 
 [help-scout]: http://www.helpscout.net
-[api-key]: http://support.kissmetrics.com/apis/api-key.html
+[site-settings]: https://www.kissmetrics.com/settings
 [km-helpscout]: https://secure.helpscout.net/apps/kissmetrics/

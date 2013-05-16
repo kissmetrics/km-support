@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Your Browser's Developer Tools to Test Implementation
+title: "Testing: Using Your Browser's Developer Tools"
 categories: [getting-started, testing-km]
 tags: [developer_portal]
 author: Eric Fung
@@ -71,7 +71,6 @@ Last thing: there's a black circle in the bottommost bar (5th icon from the left
 In the console you can run JavaScript commands. Our [JavaScript Library specifics][js-specific] has a reference on available commands.
 
 [![Console Panel][console-ss]][console-ss]
-
 
 [js-specific]: /apis/javascript/javascript-specific
 

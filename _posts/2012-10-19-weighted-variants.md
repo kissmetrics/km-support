@@ -5,17 +5,17 @@ categories: [a-b-testing, using-km-js]
 author: Eric Fung
 summary: Learn how to use weighted variants to more finely control experiments.
 ---
-By default KISSmetrics tries to distribute your visitors evenly across the different variants you provide. However, there may be instances where you want certain variants seen more than others. For example you might want to test a new design on only a small percentage of users. You can do this by passing in weights for your variants. The following are all valid:
+When you use `KM.ab()` to set up a test, we'll split the variations evenly by default. However, you can give the function an extra argument to indicate the distribution of the test. These are all valid options:
 
 {% highlight js %}
 _kmq.push(function(){
   // Even weights, 50% red, 50% green (default)
   KM.ab("Button Color", ["red", "green"])
 
-  // 70% red, 30% green
+  // 70% red vs. 30% green
   KM.ab("Button Color", {"red":70, "green":30});
 
-  // 70% red, 30% green (using decimals)
+  // 70% red vs. 30% green, using decimals
   KM.ab("Button Color", {"red":0.7, "green":0.3});
 
   // 5:1 red vs. green

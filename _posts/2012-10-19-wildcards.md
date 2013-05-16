@@ -17,8 +17,9 @@ Long Example #   | Pattern                  | Notes
 [#4][ex4] | `/*/view/*`                     | This matches all subpages of `/*/view/`, **including** the page `/*/view` itself
 [#5][ex5] | `/*/view/*/*`                   | This matches all subpages of `/*/view/`, **excluding** the page `/*/view/` itself
 [#6][ex6] | `*/view/*`                      | **This is actually reduced to "`/view/*`" ([see the full explanation][ex6])**
-[#7][ex7] | `/*/?source=*` or `/*?source=*` | This matches a URL that has any value for the "`source`" parameter
-[#8][ex8] | `/*/?source=fb`                 | This matches a URL that has the query parameter `source=fb`. You **don't** need a wildcard to match a URL with additional query parameters.
+[#7][ex7] | `/*/*/view`                     | **Two or more wildcards together do not work ([see the full explanation][ex7])**
+[#8][ex8] | `/*/?source=*` or `/*?source=*` | This matches a URL that has any value for the "`source`" parameter
+[#9][ex9] | `/*/?source=fb`                 | This matches a URL that has the query parameter `source=fb`. You **don't** need a wildcard to match a URL with additional query parameters.
 
 
 ## Detailed Examples
@@ -40,6 +41,7 @@ Let's look at some detailed examples. Suppose your site has URLs that are simila
 
 From these URLs, here's what these wildcard patterns would match:
 
+<a name="wildcard-example-1"></a>
 ### Wildcard Example 1
 
 **Pattern:** `example.com/en/*/view`
@@ -51,6 +53,7 @@ From these URLs, here's what these wildcard patterns would match:
 
 This example demonstrates using one wildcard to match a URL that starts with "`example.com/en/`" and ends with "`/view`".
 
+<a name="wildcard-example-2"></a>
 ### Wildcard Example 2
 
 **Pattern:** `example.com/*/view/contact`
@@ -64,6 +67,7 @@ This example demonstrates using one wildcard to match a URL that starts with "`e
 
 This example demonstrates that a single wildcard can match on more than just one subsection of the URL. This example finds "any URL that ends in `/view/contact`".
 
+<a name="wildcard-example-3"></a>
 ### Wildcard Example 3
 
 **Pattern:** `example.com/*/san-francisco/*/contact`
@@ -74,6 +78,7 @@ This example demonstrates that a single wildcard can match on more than just one
 
 This example demonstrates you can use two (or more) wildcards in a pattern. 
 
+<a name="wildcard-example-4"></a>
 ### Wildcard Example 4
 
 **Pattern:** `example.com/*/view/*`
@@ -95,6 +100,7 @@ This example demonstrates you can use two (or more) wildcards in a pattern.
 
 This example demonstrates using a wildcard at the end of a URL. The last `/` before the wildcard indicates to match on all pages that are sub-pages of "`.../view/`". This pattern also matches on "`.../view/`" itself, since the wildcard matches to "nothing" in that case.
 
+<a name="wildcard-example-5"></a>
 ### Wildcard Example 5
 
 **Pattern:** `example.com/*/view/*/*`
@@ -112,6 +118,7 @@ This example demonstrates using a wildcard at the end of a URL. The last `/` bef
 
 This example contrasts with Example 4. The first `*/` after `.../view/` means that this wildcard has to match on *something* (not just an empty string, like in Example 4), and the final `*` in the pattern looks for any deeper sub-pages of "`.../view/`".
 
+<a name="wildcard-example-6"></a>
 ### Wildcard Example 6 - One to Avoid
 
 To contrast with Example 4, here's a **Pattern That Doesn't Work As Expected:** "`*/view/*`"
@@ -120,6 +127,13 @@ This pattern does not match on any of the sample URLs above, and here's why. Tho
 
 The bottom line is, if you're leaving off the domain name, then please be mindful of including the initial "`/`" in your URLs.
 
+<a name="wildcard-example-7"></a>
+### Wildcard Example 7 - Another to Avoid
+
+Another **Pattern That Doesn't Work As Expected:** "`/*/*/view`"
+
+Including two wildcards adjacent to each other will not work. Unfortunately, you cannot use wildcards to specify the depth in which to find the `/view` portion of the URL. Regular expressions will allow you to do this, and we are investigating how best to incorporate them.
+
 # Wildcards in Query Parameters
 
 Suppose your site recognizes query parameters, additional information at the end of the URL that follows a "`?`" symbol:
@@ -127,7 +141,8 @@ Suppose your site recognizes query parameters, additional information at the end
 * `example.com/en/san-francisco/view/?source=google&location=home`
 * `example.com/en/san-francisco/view/?source=fb&location=away`
 
-### Wildcard Example 7 - Query Example
+<a name="wildcard-example-8"></a>
+### Wildcard Example 8 - Query Example
 
 **Pattern:**
 
@@ -145,7 +160,8 @@ Suppose your site recognizes query parameters, additional information at the end
 
 This example demonstrates how to match for a URL that has any value for the "`source`" parameter. Also, notice you can match for a query parameter in the URL, even if it's not the very first parameter listed ("`?source=fb&location=home`" vs. "`?location=home&source=fb`").
 
-### Wildcard Example 8 - Fixed Query Parameter
+<a name="wildcard-example-9"></a>
+### Wildcard Example 9 - Fixed Query Parameter
 
 **Pattern:**
 
@@ -165,6 +181,7 @@ This example demonstrates how to match for a URL that has the "`source`" paramet
 [ex3]: #wildcard-example-3
 [ex4]: #wildcard-example-4
 [ex5]: #wildcard-example-5
-[ex6]: #wildcard-example-6-one-to-avoid
-[ex7]: #wildcard-example-7-query-example
-[ex8]: #wildcard-example-8-fixed-query-parameter
+[ex6]: #wildcard-example-6
+[ex7]: #wildcard-example-7
+[ex8]: #wildcard-example-8
+[ex9]: #wildcard-example-9

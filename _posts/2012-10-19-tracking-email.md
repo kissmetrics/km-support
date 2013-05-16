@@ -7,11 +7,11 @@ summary: Tracking email performance, from beginning to end.
 ---
 When you email your customers, there are three main actions that these people do:
 
-1. The person receives the email.
-2. The person opens the email.
-3. The person clicks through the email to get to your website. (Arguably, the easiest and most important step to track.)
+1. The person **receives** the email.
+2. The person **opens** the email.
+3. The person **clicks through** the email to get to your website.
 
-If you use [Mailchimp][mailchimp], all three of these are already tracked as part of [our integration][mailchimp]. If you do not use Mailchimp, here are some ways to measure each action.
+If you use [Mailchimp][mailchimp], please familiarize yourself on how we fetch this information from Mailchimp. If you do not use Mailchimp, here are some ways to measure each action.
 
 ## 1. Tracking Email Sends/Receives
 
