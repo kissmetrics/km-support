@@ -5,42 +5,29 @@ categories: getting-started
 author: Eric Fung
 summary: All the data in KISSmetrics comes down to three groups - people, events and properties.
 ---
-All the data in KISSmetrics is in the form of one of three items: **people**, **events** and **properties**. In short, these indicate who your users are, what they do, and additional information about them.
+All the data in KISSmetrics is in the form **people**, **events** and **properties**. In short, these indicate who your users are, what they do, and additional information about them (which lets you group similar people together).
 
 ![Simple API][simple-api]
 
 ## People
 
-The core unit in KISSmetrics is a person, and we really do mean a ***person*** -- a human being, not a unique visit or a session. We strive to make your data intelligible across a lot of people, but in the end, it's possible to see data for each individual person.
+The core unit in KISSmetrics is a person, and we really do mean a ***person*** -- a human being, not a unique visit or a session. You may often be looking at aggregate reports of user behavior, but at the end of the day, it's possible to see data for each individual person.
 
-People are represented by "**identities**". A person can be represented by one or more identities:
+People are represented by "**identities**", usually more than one. There are two types:
 
-* *Anonymous identities* are placeholders to represent a new person you don't know much about. You know that this is a new person who visited your site or installed your application, but they haven't signed up for an account, or subscribed to your newsletter, etc.
-* *Named identities* are IDs that are meaningful to you. Some examples include email addresses, usernames, Facebook IDs, or some other account ID. You choose what type of named identity to represent your customers. When your customer creates an account, logs in, or subscribes to your newsletters, you have a more tangible piece of information to represent that *person*.
+* ***Named Identities***: a *recognizable* word or phrase that represents a person:
+  * `foo@example.com`
+  * `User #12345`
+  * `Facebook ID #67890`
+* ***Anonymous Identities***: a *randomly-generated* string that represents a person before you know who they are:
+  * `y75Fe33597qBqkR4obZZYV+wF3Y=`
+  * `6j1KH1zrwBS6T2iIsixvpfnCnxY=`
 
-### API Example for Identifying People
-
-Set up identities by using the [`identify` command][identify]. An example JavaScript Library call could look like this:
-
-{% highlight js %}
-// This is just a demonstration
-_kmq.push(['identify', 'mister.roboto']);
-{% endhighlight %}
-
-Realistically, though, you would write the API call to look at your available code and substitute in the appropriate value. Something like this:
-
-{% highlight js+ruby %}
-// This is just a demonstration
-_kmq.push(['identify', '<%=SessionDetails.UserName%>']);
-{% endhighlight %}
-
-The details for saving identities can vary, depending on how you're sending us us data. To read more on the topic, please see [Understanding Identities][id-management].
-
----
+When KISSmetrics is appropriately implemented, you can follow a person's lifecycle with your product from when they were just any other visitor to when they finally sign up and repeatedly log in.
 
 ## Events
 
-People perform ***events*** in your site or application. Think of events as *actions* your users do. For example:
+People interact with your site or application. Think of **events** as the *actions* your users do. For example:
 
 * Started a browsing session (`Visited Site`)
 * `Saw homepage`
@@ -52,44 +39,19 @@ People perform ***events*** in your site or application. Think of events as *act
 * `Shared content` (on Twitter or Facebook, for example)
 * `Billed` or `Purchased` (ie. paid you)
 
-Notice that these *actions* aren't limited to just being on a particular URL. The event might happen on one of your servers, or even happen offline (as a result of a phone call, for example). To handle such a variety of actions, KISSmetrics provides a [large number of ways for you to send us this data][data-ways]. Whichever ways you choose to send us data will depend on your setup and on the developer resources available to you.
+These *actions* aren't limited to just visiting a particular URL. The event might happen on one of your servers, or even happen offline (the customer responds to your sales person's phone call, for example). To handle such a variety of actions, KISSmetrics provides a [large number of ways for you to send us this data][data-ways].
 
-To get started quickly, though, we suggest trying our [JavaScript Library][js] because:
-
-1. It can be installed in 5 minutes or less.
-2. It starts tracking [a few important events][auto-track] for you automatically.
-3. Once the JavaScript snippet is installed on your site, a non-developer can get started with creating some events by using our [Event Library][event-library].
-
-### API Example for Events
-
-In general, record events using the [`record` command][record]. An example JavaScript Library call could look like this:
-
-{% highlight js %}
-_kmq.push(['record', 'Viewed Homepage']);
-{% endhighlight %}
-
-But as mentioned above, there are [a lot of ways to send us data][data-ways], not all of which require writing code. Please refer to the documentation for whichever method you choose, to find out how to record events.
-
-### Notes on Events
-
-* If you're not sure where to start, you can refer to our [Best Practices][best-practices] to get some ideas for what to track, and how to name your events. We have guides for SaaS and e-commerce businesses.
-* When naming events, you can use almost any name you like. (There are only a few limitations, listed below.)
-* Please keep event names under 255 characters. Commas (`,`), and colons (`:`) will be changed to spaces, so an event "`foo:bar,baz`" will be saved as "`foo bar baz`".
-* Event names are not case sensitive, so `Signed Up` and `Signed up` will be treated as the same event. That said, events that share the same name will be aggregated. For example, if you have 10 different landing pages on 10 different URLs, you can set up each URL to record the same `Saw landing page` event. That way, everyone who sees **any** landing page is counted as doing that event, regardless of which one they saw.
-* Each account can have up to 65,535 unique event *names*. In other words, you can track 65,535 different *types* of actions. For example, `Viewed Homepage` and `Signed Up` would be 2 of your 65,535 event names. We can still record whether millions of people can do these two events.
-* For each person, we save the last 1000 instances of each event. For example, we'll remember the last 1000 times that I `Viewed Homepage`.
-
----
+Our [Best Practices][best-practices] are a great start to introduce you to important events to record. We have guides for SaaS and e-commerce businesses.
 
 ## Properties
 
-***Properties*** indicate additional information about each person. Primarily, properties let you segment similar people into groups (called "**values**" of a property) based on one criteria (this is the "**property**" itself). Here are some example properties, with their corresponding values:
+***Properties*** indicate additional information about each person. Primarily, properties let you segment similar people into groups (using the "**values**" of a property) based on one criteria (this is the "**property**" itself). Here are some example properties, with their corresponding values:
 
 * Gender (example values could be "`Male`" or "`Female`")
-* Which referral website URL brought the person to your site (an example value is "`http://www.google.com`")
+* Which referral website URL brought the person to your site? (An example value is "`http://www.google.com`")
 * Is this a returning visitor? (eg. "`Yes`" or "`No`")
-* Which A/B test variation did they see (eg. "`Original`", "`June 2 variation`" or "`August variation`")
-* Which plan they signed up for (eg. "`Enterprise`", "`Premium`" or "`Free`")
+* Which A/B test variation did they see? (eg. "`Original`", "`June 2 variation`" or "`August variation`")
+* Which plan did they signed up for? (eg. "`Enterprise`", "`Premium`" or "`Free`")
 
 Properties can be numeric too:
 
@@ -104,38 +66,13 @@ Numeric properties are special, because our reports can do some math in finding 
 
 The best part is that KISSmetrics saves all the values of each property; nothing is ever "overwritten". This lets you toggle the [report options][prop-options] to show the First Value or Last Value set, and soon, we'll provide a way to show Every Value ever set across many people at a time.
 
-## Properties of a Person
+## Properties Are Saved to Each Person
 
-Properties can be recorded on their own, or as part of a generic event to distinguish that event. In both cases, KISSmetrics stores the value as a property *of the person*. This lets you segment your reports on a property that may have been recorded outside of the events in the report you're looking at -- for example, looking at the effects of a past A/B test on the number of upgrades this month.
+Whether you record properties as part of an event or set them individually, KISSmetrics remembers the property ***as being associated with the person***. This lets you use properties to segment reports in ways you may not have expected.
 
-You can still set the [report options][prop-options] to reconnect a property with the event it came from.
+For example, you can look at the correlation between last month's A/B test and the number of upgrades this month. Most other analytics solutions would require you to re-record the A/B test property when the Upgrade occurs.
 
-### API Example for Setting Properties
-
-In general, set properties as part of an event by using the [`record` command][record], or set standalone properties with the [`set` command][set]. Example JavaScript Library calls could look like this:
-
-{% highlight js %}
-// This …
-_kmq.push(['record', 'Viewed Homepage',
-   {'Homepage A/B Test':'Original Variation'}]);
-
-// Is more or less equivalent to this…
-_kmq.push(['record', 'Viewed Homepage']);
-_kmq.push(['set', {'Homepage A/B Test':'Original Variation'}]);
-{% endhighlight %}
-
-But as mentioned above, there are [a lot of ways to send us data][data-ways], not all of which require writing code. Please refer to the appropriate documentation for how to actually go about setting properties.
-
-### Notes on Properties
-
-* If you're not sure where to start, you can refer to our [Best Practices][best-practices] to get some ideas for what to track, and how to name your properties. We have guides for SaaS and e-commerce businesses.
-* When naming properties, you can use almost any name you like. (There are only a few limitations, listed below.)
-* Please keep property names under 255 characters. Commas (`,`), and colons (`:`) will be changed to spaces, so an event "`foo:bar,baz`" will be saved as "`foo bar baz`".
-* Property names are not case sensitive, so `Plan Type` and `Plan type` will be treated as the same property. That said, properties that share the same name will be aggregated. For example, if the `Amount` property is set in three different areas, it will all contribute to the same `Amount` property.
-* However, the values of those properties *are* case sensitive. So for a scenario like: `Plan Type:Gold` and `Plan Type:gold`, we'll see two different plan types - "Gold" and "gold".
-* Each account can have up to 65,535 unique property *names*. In other words, you can track 65,535 different *types* of actions. For example, `Returning` and `URL` would be 2 of your 65,535 event names. We can still record whether millions of people receive these properties.
-* The values of properties can be text or numbers (8 KB of data, in theory). We can't yet support JSON-structured values.
-* You can think of the `Customer ID` or identity as a special property of each person.
+Again, our [Best Practices][best-practices] are a great start to introduce you to important properties to record. We have guides for SaaS and e-commerce businesses.
 
 # Putting It All Together
 
@@ -156,24 +93,6 @@ Then you can segment the people who did these events by different properties:
 * How many hours of sleep the runner got the night before (also a numeric property)
 * Bib number, or name, or email address (aka `Customer ID`, representative of the person)
 
-# Code Examples
-
-Additional code examples are available at [Common Methods][common].
-
-[id-management]: /getting-started/understanding-identities
-[identify]: /apis/common-methods#identify
-
 [simple-api]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/simple-api.png
 
-[data-ways]: /getting-started/ways-to-send-us-data
-[js]: /apis/javascript
-[auto-track]: /apis/javascript#events-automatically-tracked
-[event-library]: /tutorial/event-library-tutorial/
-[record]: /apis/common-methods#record
-
 [best-practices]: /best-practices
-[prop-options]: /advanced/advanced-properties#property-options
-[set]: /apis/common-methods#set
-
-[tips]: /apis/api-tips
-[common]: /apis/common-methods

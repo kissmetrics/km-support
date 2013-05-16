@@ -33,32 +33,24 @@ If your language is not listed here...
 
 ## Integrations with Existing Data
 
-* [CSV][csv] import, one-time or recurring. Import data from your non-MySQL database, or import data you have collected offline (eg. when a customer purchases over the phone)
-* Your [MySQL database][mysql].
-* [Recurly][recurly]
-* [Mailchimp][mailchimp]
+We are continuously developing integrations to make it easier to include data from all the customer-centric platforms you use. Please go to our [Integrations Section][integrations] to find any you're currently using!
 
 ## Tracking Offline Events
 
 Please refer to this guide for [how to track events that happen offline][offline], for example, if part of your sales, upgrade, or purchase process is handled manually.
 
+[event-library]: /tools/event-library
 [js]: /apis/javascript
 [ruby]: /apis/ruby
 [php]: /apis/php
 [python]: /apis/python
 [obj-c]: /apis/objective-c
-
 [url]: /apis/url
 [beacon]: /apis/beacon
 [other]: /apis/other
-
 [specs]: /apis/specifications
 
-[event-library]: /tools/event-library
-[mysql]: /integrations/mysql
-[csv]: /integrations/csv-import
-[recurly]: /integrations/recurly
-[mailchimp]: /integrations/mailchimp
+[integrations]: /integrations
 
 [settings]: https://www.kissmetrics.com/settings
 [offline]: /how-tos/tracking-offline-events
