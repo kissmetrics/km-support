@@ -14,9 +14,11 @@ KISSmetrics does not automatically calculate every single metric you would find 
 * Time on Site/Session Length
 * Demographic (language, country, IP address, age, etc.)
 
-These tend to fall into the category of "Vanity Metrics". Vanity metrics refer to data that can be interesting, but don't help you make decisions to improve your business. Because of this, we decided to leave these metrics out to help you focus on what's important.
+These tend to fall into the category we casually refer to as "Vanity Metrics". Vanity metrics refer to data that can be useful, but ultimately should not be the primary focus when you are making decisions to improve your business.
 
-These blog posts from the [KISSmetrics blog][vanity-km] and [TechCrunch][vanity-tc] explore the concept of vanity metrics in more detail.
+(Granted, there are worthwhile uses for some of these metrics. Avinash Kaushik has several posts that help place them in the right context. Check out [Eight Silly Data Myths Marketing People Believe That Get Them Fired][kaushik].)
+
+Because of this, these metrics are not available, to help you focus on what's important. These blog posts from the [KISSmetrics blog][vanity-km] and [TechCrunch][vanity-tc] explore the concept of vanity metrics in more detail.
 
 ## Bounce Rate and Exits
 
@@ -51,3 +53,4 @@ _kmq.push(['set', {'language':'english',
 
 [vanity-km]: http://blog.kissmetrics.com/vainest-metrics/
 [vanity-tc]: http://techcrunch.com/2011/07/30/vanity-metrics/
+[kaushik]: http://www.kaushik.net/avinash/silly-marketing-data-strategy-metrics-mistakes/
