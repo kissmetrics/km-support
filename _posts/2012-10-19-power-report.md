@@ -108,6 +108,6 @@ Here's what the example configuration above would look like after you run the re
 [people-search]: /tools/people-search
 [relative]: /tools/power-report/relative-to
 
-[ss-columns]: /images/tools/power-report/power-report-columns.png
-[ss-segments]: /images/tools/power-report/power-report-segments.png
-[ss-results]: /images/tools/power-report/power-report-results.png
+[ss-columns]: http://f.cl.ly/items/3s0n1W2F2K433t3P0y0A/power-report-columns.png
+[ss-segments]: http://f.cl.ly/items/0j0j050B1z0n1r1k0p1Q/power-report-segments.png
+[ss-results]: http://f.cl.ly/items/0V2A0n011o0r0q0x1x0c/power-report-results.png

@@ -31,14 +31,6 @@ JavaScript-Specific Methods | Description
 `KM.rf()` | Returns `document.referrer` unless you [override where to look for the referrer][referrer].
 `KM.um("/some-url")` | Returns true or false, depending on whether the page you are currently on will match up with the Event Wizard pattern you've typed in (`"/some-url"`). This helps you test Event Wizard urls much more quickly.
 
-[Recording SaaS Events][saas-events] | Description
------------------------------------- | -----------
-`_kmq.push(['signedUp']);` | Equivalent to `_kmq.push(['record', 'Signed Up']);`
-`_kmq.push(['upgraded']);` | Equivalent to `_kmq.push(['record', 'Upgraded']);`
-`_kmq.push(['downgraded']);` | Equivalent to `_kmq.push(['record', 'Downgraded']);`
-`_kmq.push(['canceled']);` | Equivalent to `_kmq.push(['record', 'Canceled']);`
-`_kmq.push(['billed']);` | Equivalent to `_kmq.push(['record', 'Billed']);`
-
 <a name="asynchronous-api"></a>
 ## Asynchronous API 
 
@@ -310,7 +302,6 @@ _kmq.push(function()
 [tracksubmit]: #tracking-forms-tracksubmit
 [a-b-km]: /a-b-testing/using-km-js
 [kmi]: #get-your-current-kissmetrics-id
-[saas-events]: /apis/saas_javascript
 [clear-id]: /advanced/multiple-people-same-browser
 [callback]: #callback-functions
 [protected]: /apis/javascript/javascript-specific/protected-form-fields

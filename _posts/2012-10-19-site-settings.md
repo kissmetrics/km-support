@@ -20,4 +20,4 @@ To access the Site Settings page, click on the site name in the upper-left porti
 ![Site Settings][site-settings]
 
 [settings]: https://www.kissmetrics.com/settings
-[site-settings]: /images/misc/site_settings.png
+[site-settings]: http://f.cl.ly/items/3u200P1S30250o2Z0a2E/site_settings.png
