@@ -36,11 +36,9 @@ The `set` method lets you set properties on a person without recording an event.
 <a name="identify"></a>
 ## `identify`
 
-The `identify` method allows you to set the identity of the current person using your site. The Javascript API will set an anonymous identity for you automatically, but for the server-side APIs, you **must** call `identify` on **each** page view.
+The `identify` method allows you to set the identity of the current person using your site. Our JavaScript API will detect anonymous visitors and set up appropriate anonymous identities for them automatically.
 
 `identify` only takes a single argument, the identity of the person. This identity can be any string value you want, like a user id, login, e-mail address, or an existing cookie you have already set. Ideally, you want it to be a strong identifier (such as an e-mail address) that will be consistent across sessions, browsers, etc.
-
-Of course before a user signs in you won't know what their identity is. If you need to track this kind of anonymous activity you can create an *anonymous identity* (which you might randomly generate and store in a cookie so you can re-use it for the user). Then once a user does sign in and their identity is accessible it is simple to associate the *anonymous identity* with their *named identity* using `alias` (see below).
 
 We recommend you call `identify` in **two scenarios**:
 
@@ -137,10 +135,6 @@ KM.record('Signed Up', {'_d' : 1, '_t' : 1234567890});
 KM.set({'gender' : 'male'});
 KM.alias('bob', 'bob@bob.com');
 {% endhighlight %}
-
-## More Information
-
-Please see [API Tips][tips] for more information.
 
 [js]: /apis/javascript/javascript-specific
 [id]: /getting-started/understanding-identities
