@@ -7,6 +7,8 @@ summary: Here's how our Simple Person-Based REST-like API works, on top of which
 ---
 To be unobtrusive to your end-users, we'll respond with a 200 OK status, even if some of these parameters are "incorrect". The response will be a 1x1 GIF image (to power our "[Beacon API][beacon]").
 
+*Important*: Since you are hitting a URL, remember that any special symbols like `+` and `@` in your parameters should be [URL-encoded][encoding].
+
 <hr />
 # Table of Contents
 
