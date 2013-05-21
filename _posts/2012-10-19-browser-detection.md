@@ -20,6 +20,23 @@ For me, this would currently set the property "Browser" with the value "Chrome 1
 
 If you're familiar with this, then you can apply the same principles to filter out bot or spider traffic, or even detect the visitor's operating system.
 
+## Mobile vs. Non-mobile
+
+An extension of checking `navigator.userAgent` is to detect whether your visitors are on a mobile device or not. For example:
+
+{% highlight js %}
+var isMobile = function() {
+    return (navigator.userAgent.match(/Android/i) ||
+            navigator.userAgent.match(/BlackBerry/i) ||
+            navigator.userAgent.match(/iPhone|iPod/i) ||
+            navigator.userAgent.match(/iPad/i) ||
+            navigator.userAgent.match(/Opera Mini/i) ||
+            navigator.userAgent.match(/IEMobile/i) );
+};
+
+if (isMobile()) _kmq.push(['set', {'Mobile Session' : 'Yes' }]);
+{% endhighlight %}
+
 ## Screen Resolution
 
 Designers may be interested in knowing the screen resolution in which visitors are viewing their sites. This can inform them to optimize the site for the popular resolutions. The data is available in the JavaScript variables `screen.width` and `screen.height`:
