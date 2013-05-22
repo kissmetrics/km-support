@@ -40,16 +40,16 @@ There are two types of Customer IDs. Here is some terminology we frequently use:
 Here's a visual representation of 3 people within our data model:
 
     KM Person 1
-    └── "Customer ID" (KISSmetrics property)
-        └── 'y75Fe33597qBqkR4obZZYV+wF3Y=' (Anonymous ID)
+    └── [KISSmetrics Property]: "Customer ID"
+        └── [Anonymous ID]: 'y75Fe33597qBqkR4obZZYV+wF3Y='
 
     KM Person 2
-    └── "Customer ID" (KISSmetrics property)
-        └── '6j1KH1zrwBS6T2iIsixvpfnCnxY=' (Anonymous ID)
+    └── [KM Property]: "Customer ID"
+        └── [Anonymous ID]: '6j1KH1zrwBS6T2iIsixvpfnCnxY='
 
     KM Person 3
-    └── "Customer ID" (KISSmetrics property)
-        └── 'User #12345' (Named ID)
+    └── [KM Property]: "Customer ID"
+        └── [Named ID]: 'User #12345'
 
 When your team is logged in to our website, this is an example of using **Customer ID**. This particular example shows how often these 4 customers submitted a support request:
 
@@ -66,11 +66,11 @@ Ideally, each customer is represented by only **one** Named ID. Whatever type of
 If your team wants to run reports like the one above and have the choice to switch between Emails or Account IDs, you can store "secondary" identities as additional KISSmetrics properties:
 
     KM Person
-    ├── "Customer ID" (KISSmetrics property)
+    ├── [KM Property]: "Customer ID"
     |   └── 'User #12345' (Named ID)
-    ├── "Email Address" (KISSmetrics property)
+    ├── [KM Property]: "Email Address"
     |   └── 'foo@example.com' (Secondary Named ID)
-    └── "Full Name" (KISSmetrics property)
+    └── [KM Property]: "Full Name"
         └── 'Pat Jones' (Additional metadata)
 
 Be aware that *First Name/Last Name* and *IP Addressses* are not considered strong enough identifiers to distinguish one person from another. However, you can still save this type of metadata as KISSmetrics Properties.
@@ -80,7 +80,7 @@ Again, the concept of Properties is discussed in [People, Events, and Properties
 <a name="section-2.1"></a>
 ### 2.1 Setting Named ID's: `identify` method
 
-When you use our `identify` method, you indicate to us which Customer ID is doing any page visits, clicking, and signing up from this browser, going forward.
+When you use our `identify` method, you indicate going forward which Customer ID is interacting with your site--the page visits, clicks, form submissions, etc.
 
 When you call `identify` with our JavaScript Library, the Customer ID is saved to a first-party cookie that is used for this and future browsing sessions. The cookie expires after 5 years or when the visitor clears their cookies.
 
@@ -104,7 +104,7 @@ _kmq.push(['identify',
 
 Calling `identify` in these ways is **counterproductive**:
 {% highlight js %}
-// This is a JS Syntax error. The argument should be a string or an int.
+// This results in a JS Syntax error. The argument should be a string or an int.
 _kmq.push(['identify', steve@apple.com ]);
 
 // These treat ALL your visitors as one person, someone named "anonymous" or "guest"
@@ -115,13 +115,13 @@ _kmq.push(['identify', 'guest' ]);
 <a name="section-3"></a>
 ## 3. An ID Should Not Change Often, But When It Does…
 
-Your customers can accumulate several identities over their lifetime of interaction with your application or website. They will initially visit anonymously, possibly from multiple web browsers. On each of those browsers, they will be first represented using Anonymous ID's. Once they sign up or log in or otherwise "Convert", you can continue to track their activity under their Named ID, which is much more meaningful.
+Your customers can accumulate several identities over their lifetime of interaction with your application or website. They will initially visit anonymously, possibly from multiple web browsers. On each of those browsers, they will be first represented using Anonymous ID's. Once they sign up or log in, you can continue to track their activity under their Named ID, which is much more meaningful.
 
     KM Person
-    └── "Customer ID" (KISSmetrics property)
-        ├── 'rAy2wPD+HQeNkxP4eQNAIzMi/7s=' (Anonymous ID #1)
-        ├── '8Kb8K7HSBfImcisqIGI4F1+t3tE=' (Anonymous ID #2)
-        └── 'User #12345' (Named ID)
+    └── [KISSmetrics Property]: "Customer ID"
+        ├── [Anonymous ID #1]: 'rAy2wPD+HQeNkxP4eQNAIzMi/7s='
+        ├── [Anonymous ID #2]: '8Kb8K7HSBfImcisqIGI4F1+t3tE='
+        └── [Named ID]: 'User #12345'
 
 Thus, a person should have no more than one Named ID, but can have several Anonymous IDs. Regardless of how many IDs a person accumulates, let's make sure they all refer back to the same KM Person object.
 
@@ -133,16 +133,16 @@ Our API has a method named `alias`, which merges the data from 2 IDs together. T
 #### Before Calling `alias`
 
     KM Person 1
-    ├── "Customer ID" (KISSmetrics property)
-    |   └── '6j1KH1zrwBS6T2iIsixvpfnCnxY=' (Anonymous ID)
-    └── "Visited Site" (KISSmetrics event)
+    ├── [KM Property]: "Customer ID"
+    |   └── [Anonymous ID]: '6j1KH1zrwBS6T2iIsixvpfnCnxY='
+    └── [KM Event]: "Visited Site"
         └── 1359504000 (Unix timestamp)
 
 
     KM Person 2
-    ├── "Customer ID" (KISSmetrics property)
-    |   └── 'User #12345' (Named ID)
-    └── "Visited Site" (KISSmetrics event)
+    ├── [KM Property]: "Customer ID"
+    |   └── [Named ID]: 'User #12345'
+    └── [KM Event]: "Visited Site"
         └── 1359849600 (Unix timestamp)
 
 #### Calling `alias` and Afterward
@@ -153,12 +153,14 @@ _kmq.push(['alias', '6j1KH1zrwBS6T2iIsixvpfnCnxY=', 'User #12345']);
 {% endhighlight %}
 
     KM Person 1 = KM Person 2
-    ├── "Customer ID" (KISSmetrics property)
-    |   ├── '6j1KH1zrwBS6T2iIsixvpfnCnxY=' (Anonymous ID)
-    |   └── 'User #12345' (Named ID)
-    └── "Visited Site" (KISSmetrics event)
+    ├── [KM Property]: "Customer ID"
+    |   ├── [Anonymous ID]: '6j1KH1zrwBS6T2iIsixvpfnCnxY='
+    |   └── [Named ID]: 'User #12345'
+    └── [KM Event]: "Visited Site"
         ├── 1359504000 (Unix timestamp)
         └── 1359849600 (Unix timestamp)
+
+![][alias-regular]
 
 <a name="section-3.2"></a>
 ### 3.2 Let Our JS Library "Alias" the Two IDs
@@ -177,11 +179,7 @@ The JavaScript Library automatically aliases only when the current visitor is **
 <a name="identities-with-the-javascript-library"></a>
 #### 3.2.1 JS Library Examples
 
-Suppose a visitor arrives and is given the Anonymous ID `1rNfguj/Kk3VsDyuLBXqiOnzYK4=`.
-
-In each of these scenarios, our JS Library would remember that this person is `foo@example.com` for this session and future sessions, ***and*** alias the two IDs together:
-
-`1rNfguj/Kk3VsDyuLBXqiOnzYK4=` --> `foo@example.com`
+Suppose a visitor arrives and is given the Anonymous ID `1rNfguj/Kk3VsDyuLBXqiOnzYK4=`. Consider these three separate scenarios:
 
 * The visitor's browser executes this JS:
 
@@ -197,20 +195,25 @@ _kmq.push(['identify', 'foo@example.com' ]);
   <input name="password" type="password"></input>
 </form>
 <script type="text/javascript">
+  // Allow our JS to track 
   _kmq.push(['trackSubmit', 'login_form', 'Logged In']);
 </script>
 {% endhighlight %}
 
 * Visiting the URL `http://www.example.com/?kmi=foo%40example.com`
 
-[Identity Scenarios with the JavaScript Library][js-ids-info]
+In each of these scenarios, our JS Library would remember that this person is `foo@example.com` for this session and future sessions, ***and*** alias the two IDs together:
+
+`1rNfguj/Kk3VsDyuLBXqiOnzYK4=` == `foo@example.com`
+
+Here is an infographic that goes into further detail with what our JavaScript does: [Scenarios with Identifying in the JavaScript Library][js-ids-info]
 
 <a name="section-3.3"></a>
 ### 3.3 Manually Calling the `alias` Method
 
-You can explicitly call the `alias` method to connect 2 IDs. These are the most common scenarios where our JS Library cannot automatically alias:
+Where our JS Library cannot automatically alias, you can explicitly call the `alias` method to connect 2 IDs. These are the most common scenarios:
 
-* If you implement tracking with not only our JS Library, but also use our server-side libraries or external integrations. More details at [Reusing the Identities Set by the JavaScript Library][js-ids].
+* If you implement tracking with not only our JS Library, but also use our server-side libraries or external integrations. Some further details at [Reusing the Identities Set by the JavaScript Library][js-ids].
 * Using the same API key on more than one root-level domain. More details at [Can I use the JavaScript Library on multiple domains?][mult-domains]
 
 Here are example uses of `alias`:
@@ -224,8 +227,6 @@ _kmq.push(['alias', KM.i(), '<%= @account.id %>' ]);
 {% endhighlight %}
 
 (`KM.i()` is a function of our JS Library that returns the user's [current KM ID][js-ids].)
-
-![][alias-regular]
 
 <a name="section-3.4"></a>
 ### 3.4 Word of Warning
