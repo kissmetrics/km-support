@@ -86,12 +86,12 @@ When you call `identify` with our JavaScript Library, the Customer ID is saved t
 
 Example uses of `identify`:
 {% highlight js+ruby %}
-// JS + Ruby, assuming you have an @account object with a 'username' field.
-_kmq.push(['identify', '<%= @account.username ? @account.username : nil %>']);
+// JS + Ruby. Choosing to use Account ID as the Named ID, assuming @account exists.
+_kmq.push(['identify', '<%= @account.id %>']);
 {% endhighlight %}
 
 {% highlight js+php %}
-// Wordpress
+// WordPress. Choosing to use WordPress username as the Named ID.
 _kmq.push(['identify',
   '<?php $current_user = wp_get_current_user();
    if ( ($current_user instanceof WP_User) )
@@ -220,7 +220,7 @@ Here are example uses of `alias`:
 _kmq.push(['alias', 'y75Fe33597qBqkR4obZZYV+wF3Y=', 'foo@example.com' ]);
 
 // Dynamically filling in the arguments
-_kmq.push(['alias', KM.i(), '<%= @account.username ? @account.username : nil %>' ]);
+_kmq.push(['alias', KM.i(), '<%= @account.id %>' ]);
 {% endhighlight %}
 
 (`KM.i()` is a function of our JS Library that returns the user's [current KM ID][js-ids].)
