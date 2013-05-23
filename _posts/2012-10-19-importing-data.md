@@ -16,7 +16,7 @@ We can receive back-dated data that goes as far back as January 1, 2009.
 3. [CSV import][csv], either a one-time upload or a recurring import.
 4. Script the import by using a server-side library to facilitate the import.
 
-This page will go over the third option, scripting the import using a server-side API.
+This page will go over the last option, scripting the import using a server-side API.
 
 ## Preparation
 
