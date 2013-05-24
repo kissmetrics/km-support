@@ -21,26 +21,27 @@ Several articles explain how to integrate Google Analytics with Magento, and ada
  
 Now let's edit the `gotoSection` function:
 
-<pre>
-    gotoSection: function(section)
-    {
-        try {
-          // Feel free to rename the KM event
-          <strong>_kmq.push(['record', 'Reached Checkout Step '+section]);</strong>
+{% highlight js %}
+gotoSection: function(section)
+{
+    try {
+      // TODO: Feel free to rename the KM event
+      _kmq.push(['record', 'Reached Checkout Step '+section]);
 
-          // If using Google Analytics, uncomment the relevant code:
-          // Old Analytics code
-          //pageTracker._trackPageview('checkout/onepage/'+section);
-          // Newer Asynchronous Analytics code
-          //_gaq.push(['_trackPageview', 'checkout/onepage/'+section]);
-      
-        } catch(err) { }
+      // If using Google Analytics, uncomment the relevant code:
+      // Old Analytics code
+      //pageTracker._trackPageview('checkout/onepage/'+section);
+      // Newer Asynchronous Analytics code
+      //_gaq.push(['_trackPageview', 'checkout/onepage/'+section]);
   
-        section = $('opc-'+section);
-        section.addClassName('allow');
-        this.accordion.openSection(section);
-    },
-</pre>
+    } catch(err) { }
+
+    section = $('opc-'+section);
+    section.addClassName('allow');
+    this.accordion.openSection(section);
+},
+{% endhighlight %}
+
 
 ### Setting Up the Funnel
 

@@ -11,20 +11,13 @@ If you have been using [Mailchimp][mailchimp] to send out email newsletters, you
 
 ## Integration Details
 
-#### Identities
+Event Name | Properties | Identity
+-----------| ---------- | --------
+`Received Campaign E-mail` | `mailchimp_campaign_title`: (campaign title) | Email address, according to Mailchimp
+`Opened Campaign E-mail` | `mailchimp_campaign_title`: (campaign title) | Email address, according to Mailchimp
+`Clicked Campaign E-mail` | `mailchimp_campaign_title`: (campaign title)  | Email address, according to Mailchimp
+                          | `mailchimp_click_url`: (URL clicked)
 
-* Users will be identified by their *email address*
-
-#### Event
-
-* `Received Campaign E-mail`
-* `Opened Campaign E-mail`
-* `Clicked Campaign E-mail`
-
-#### Properties
-
-* `mailchimp_campaign_title`
-* `mailchimp_click_url`
 
 #### Frequency of Import
 

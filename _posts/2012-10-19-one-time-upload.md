@@ -1,6 +1,6 @@
 ---
 layout: post
-title: One-Time Upload
+title: One-Time CSV Upload
 categories: [integrations, csv-import]
 author: Eric Fung
 summary: Import data by uploading a single .csv file.

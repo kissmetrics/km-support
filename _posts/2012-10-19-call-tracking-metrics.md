@@ -25,7 +25,6 @@ With Call Tracking Metrics **AND** KISSmetrics, you can connect the dots between
 <div id="wistia_gik1m2517k" class="wistia_embed" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div>
 
 <script charset="ISO-8859-1" src="http://fast.wistia.com/static/concat/E-v1.js">
-	
 </script>
 
 <script>
@@ -46,29 +45,19 @@ wistiaEmbed = Wistia.embed("gik1m2517k", {
 
 ## Integration Details
 
-#### Identities
-
-* People who call in will be identified by their ***phone number***. Call Tracking Metrics formats the number like so: `+`, the caller's [country calling code][callcode], and phone number, all with no spaces in between.
-
-For example, someone calling from the KISSmetrics phone number `+1 (888) 767-5477` would register as `+18887675477` doing the event `Called In`.
-
-#### Event
-
-* `Called In`
-
-#### Properties
-
-* `Customer phone number`: the phone number of the person dialing in
-* `Call recording`: a URL that links to the recording of the phone call
-* `Call duration`: duration of the call in seconds
-* `Call ring time`: number of seconds the phone rang
-* `Call talk time`: number of seconds the caller is talking to your team
-* `Call tracking number`: your Call Tracking Metrics number that the caller dials
-* `Call tracking number label`
-* `Call receiving number`: the internal number of the person who picks up the call
-* `Call receiving number label`
-* `Call source label`
-* `Call status`
+Event Name | Properties | Identity
+-----------| ---------- | --------
+`Called In` | `Customer phone number`: phone number of person dialing in | Phone number (eg. `+18887675477`)
+    | `Call recording`: a URL that links to the recording of the phone call
+    | `Call duration`: duration of the call in seconds
+    | `Call ring time`: number of seconds the phone rang
+    | `Call talk time`: number of seconds the caller is talking to your team
+    | `Call tracking number`: your Call Tracking Metrics number that the caller dials
+    | `Call tracking number label`
+    | `Call receiving number`: the internal number of the person who picks up the call
+    | `Call receiving number label`
+    | `Call source label`
+    | `Call status`
 
 #### Frequency of Import
 

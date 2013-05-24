@@ -23,11 +23,14 @@ With Help Scout **AND** KISSmetrics, you can connect the dots between customer s
 
 ## Integration Details
 
-#### Identities
-
-* People who email your Help Scout mailbox will be identified by their ***email address***.
-
-For example, if Bob emails your Help Scout inbox, he would register as `bob@bob.com` doing the event `Submitted Help Ticket`.
+Event Name | Properties | Identity
+-----------| ---------- | --------
+`Submitted help ticket` | `Help ticket history`: (URL of the conversation) | Email address, according to Help Scout
+`Received help ticket response` | `Help agent`: the teammate who replied to the customer | Email address, according to Help Scout
+         | `Help ticket history`: (URL of the conversation) 
+`Responds to help ticket` | `Help ticket history`: (URL of the conversation) | Email address, according to Help Scout
+`Help ticket closed` | `Help agent`: the teammate who replied to the customer | Email address, according to Help Scout
+         | `Help ticket history`: (URL of the conversation) 
 
 #### Frequency of Import
 

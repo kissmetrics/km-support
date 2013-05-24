@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Recurring Import
+title: Recurring CSV Import
 categories: [integrations, csv-import]
 author: Eric Fung
 summary: Import data every hour by linking KISSmetrics with an Amazon S3 bucket containing multiple `.csv` files.
