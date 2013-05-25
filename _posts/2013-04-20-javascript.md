@@ -99,7 +99,9 @@ _kmq.push(['identify', 'bob@bob.com']);
 // Records an event "Viewed Homepage"
 _kmq.push(['record', 'Viewed Homepage']);  
 
-// Records an event "Signed Up" with additional properties
+/* Records an event "Signed Up" with additional properties 
+ * (Plan & Amount) plus related values (Pro & 99.95)
+ */
 _kmq.push(['record', 'Signed Up', {'Plan':'Pro', 'Amount':99.95}]);  
 
 // Sets the "Gender" property to "Male" for the current person
@@ -110,7 +112,7 @@ _kmq.push(['alias', 'bob', 'bob@bob.com']);
 
 /* Records an event "Signed Up" in the past.
  * This demonstrates how to pass the '_t' and '_d' from our
- *  specifications as regular KISSmetrics properties.
+ * specifications as regular KISSmetrics properties.
  * 1234567890 = 13 Feb 2009 23:31:30 GMT
  */  
 _kmq.push(['record', 'Signed Up', {'_d':1, '_t':1234567890}])
