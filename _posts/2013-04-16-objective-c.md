@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Objective-C Library
+title: Objective-C (iOS) Library
 categories: apis
 author: Will Rust
 summary: Information about our basic Objective-C/Cocoa library, for iOS and OS X apps.
@@ -61,5 +61,9 @@ NSDictionary *myEventProperties = [[NSDictionary alloc]
 // Remove if Automatic Reference Counting is used. 
 [myEventProperties release];
 {% endhighlight %}
+
+## Events Are Tracked Offline
+
+When you implement tracking with this library, we will send events to our tracking servers as your customers do those events. However, if they take their mobile devices offline, our tracking library still preserves a log of their events, to be sent out the next time they connect to the internet.
 
 [api]: https://github.com/kissmetrics/KISSmetrics-iOS-Mac-OS-X-Library
