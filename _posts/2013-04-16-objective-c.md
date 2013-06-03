@@ -66,4 +66,6 @@ NSDictionary *myEventProperties = [[NSDictionary alloc]
 
 When you implement tracking with this library, we will send events to our tracking servers as your customers do those events. However, if they take their mobile devices offline, our tracking library still preserves a log of their events, to be sent out the next time they connect to the internet.
 
+This data will be backdated to reflect what the customer did at the time they did it, not the time the data was uploaded to us.
+
 [api]: https://github.com/kissmetrics/KISSmetrics-iOS-Mac-OS-X-Library
