@@ -58,3 +58,4 @@ If you'd prefer to, you can toggle whether these events should be tracked or not
 [url]: /apis/url
 [privacy]: http://www.kissmetrics.com/user-privacy
 [fields-not-tracked]: /apis/javascript/javascript-specific/protected-form-fields
+[utm]: /integrations/utm-variables#google-analytics-8217-auto-tagging-vs-manual-tagging
