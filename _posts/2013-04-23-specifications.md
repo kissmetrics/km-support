@@ -7,6 +7,8 @@ summary: Here's how our Simple Person-Based REST-like API works, on top of which
 ---
 To be unobtrusive to your end-users, we'll respond with a 200 OK status, even if some of these parameters are "incorrect". The response will be a 1x1 GIF image (to power our "[Beacon API][beacon]").
 
+***Not to be confused with our [URL API][url], which works with our JavaScript Library to tag links people use to reach your website.***
+
 *Important*: Since you are hitting a URL, remember that any special symbols like `+` and `@` in your parameters should be [URL-encoded][encoding].
 
 <hr />
@@ -106,6 +108,7 @@ Notes:
 * It’s fine if a person has more than one alias.
 * The order you pass the two arguments does not matter.
 
+[url]: /apis/url
 [encoding]: http://www.w3schools.com/tags/ref_urlencode.asp
 [beacon]: /apis/beacon
 [dupes-events]: /troubleshooting/detecting-duplicates#duplicate-events
