@@ -9,7 +9,7 @@ summary: See KISSmetrics data within your Salesforce account.
 
 * Salesforce Developer Edition (Free) at [http://developer.force.com/][devforce]
 * An existing KISSmetrics account
-* KISSmetrics KEY and SECRET from your KISSmetrics account. Please email [jevanish@kissmetrics.com][request] for your unique KISSmetrics account KEY and SECRET for Salesforce.
+* KISSmetrics KEY and SECRET from your KISSmetrics account. Please email [support@kissmetrics.com][request] for your unique KISSmetrics account KEY and SECRET for Salesforce.
 
 The Salesforce-KISSmetrics integration shows you customer activity pulled straight from KISSmetrics into your Salesforce Contacts. See *what* a customer has done, *when* they did it, *where* they came from, and *how* they are experiencing your business. You’ll have a 360 degree view of how to approach leads and opportunities.
 
