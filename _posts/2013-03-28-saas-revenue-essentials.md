@@ -17,7 +17,7 @@ We are developing a Revenue Report aimed specifically towards SaaS businesses. T
 
 We've also accounted for businesses that don't bill exactly every single month. Even if you are billing your customers, say, annually, you can record that annual revenue amount just *once*, and we'll display each customer's month-by-month revenue by breaking that one annual revenue into 12 pieces.
 
-If you are a SaaS business interested in testing out this report, please email [jevanish@kissmetrics.com][request] to request early access.
+If you are a SaaS business interested in testing out this report, please email [stevecox@kissmetrics.com][request] to request early access.
 
 This guide will use the following format:
 
@@ -28,7 +28,7 @@ When to trigger the event and any other contextual information
 * Recommended property to set at the same time an event triggers
 * Etc.
 
-[request]: mailto:jevanish@kissmetrics.com?subject=%5BSaaS%20Revenue%5D%20Requesting%20Access
+[request]: mailto:stevecox@kissmetrics.com?subject=%5BSaaS%20Revenue%5D%20Requesting%20Access
 
 ---
 
