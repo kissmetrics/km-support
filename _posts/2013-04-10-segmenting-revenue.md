@@ -20,14 +20,14 @@ Here is a JavaScript code example:
 // For Person 1 "foo"
 _kmq.push(['identify', 'foo']);
 _kmq.push(['record', 'Billed', {
-  'Subscription Billing Amount':90,
+  'Billing Amount':90,
   'Revenue Type':'Recurring',
-  'Recurring Revenue'90}]);   // The key part
+  'Subscription Billing Amount':90}]);   // The key part
 
 // For Person 2 "bar"
 _kmq.push(['identify', 'bar']);
 _kmq.push(['record', 'Billed', {
-  'Subscription Billing Amount':45,
+  'Billing Amount':45,
   'Revenue Type':'One-Time',
   'One-Time Revenue':45}]);   // The key part
 {% endhighlight %}
@@ -37,12 +37,23 @@ _kmq.push(['record', 'Billed', {
 With the data isolated into predefined buckets, you can narrow in on each bucket in turn to look at your revenue in different ways:
 
 * `Billing Amount`: use our "total over a property" metric to find **Total Revenue**, regardless of where the revenue came from.
-* `Recurring Revenue`: use our "total over a property" metric to find **Total Recurring Revenue**, which excludes revenue from one-time purchases.
+* `Subscription Billing Amount`: use our "total over a property" metric to find **Total Recurring Revenue**, which excludes revenue from one-time purchases.
 * `One-Time Revenue`: use our "total over a property" metric to find **Total Revenue from One-Time Purchases**, which excludes recurring revenue.
 * `Revenue Type`: Segment people based on whether their first or last charge was a Recurring charge or a One-Time charge.
 
 ## Additional Notes
 
-The properties you add can be combined with our other recommendations for [Tracking SaaS Revenue][saas-revenue].
+* If one transaction contains both recurring and one-time charges, you could combine all the properties under one `Billed` Event:
+
+{% highlight js%}
+_kmq.push(['identify', 'baz']);
+_kmq.push(['record', 'Billed', {
+  'Billing Amount':135, // To total up all revenue from this person
+  'Subscription Billing Amount':90, // To total up recurring revenue
+  'One-Time Revenue':45,  // To total up revenue from one-time purchases
+}]);
+{% endhighlight %}
+
+* The properties you add can be combined with our other recommendations for [Tracking SaaS Revenue][saas-revenue].
 
 [saas-revenue]: /best-practices/saas-revenue-essentials
