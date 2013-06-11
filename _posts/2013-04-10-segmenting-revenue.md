@@ -49,6 +49,7 @@ With the data isolated into predefined buckets, you can narrow in on each bucket
 _kmq.push(['identify', 'baz']);
 _kmq.push(['record', 'Billed', {
   'Billing Amount':135, // To total up all revenue from this person
+  'Revenue Type':'Both',
   'Subscription Billing Amount':90, // To total up recurring revenue
   'One-Time Revenue':45,  // To total up revenue from one-time purchases
 }]);
