@@ -11,7 +11,13 @@
     <link href='/assets/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
     <link href='/assets/css/screen.css' media='screen' rel='stylesheet' type='text/css' />
     <link href='/assets/css/pygments.css' media='screen' rel='stylesheet' type='text/css' />
-        
+    
+    <!-- Support Scripts -->
+    <script charset='utf-8' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>
+    <script charset='utf-8' src='/assets/js/url-api-builder.js' type='text/javascript'></script>
+    <script src="/assets/js/bootstrap.min.js" type='text/javascript'></script>
+    <script src="/assets/js/km_track.js" type='text/javascript'></script>
+
     <!-- KISSmetrics -->
     <script type="text/javascript">
     var _kmq = _kmq || [];
@@ -26,6 +32,8 @@
     }
     _kms('//i.kissmetrics.com/i.js');
     _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+    _kmq.push(['record', 'Viewed Support Article', {'Support Article Viewed URL':'{{page.url}}','Support Article Viewed Title':'{{page.title}}'}]);
+    km_track('Viewed Support Article', {'Support Article Viewed URL':'{{page.url}}','Support Article Viewed Title':'{{page.title}}'});
     </script>
 
     <!-- Google Analytics -->
@@ -40,12 +48,6 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-
-    <!-- Support Scripts -->
-    <script charset='utf-8' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>
-    <script charset='utf-8' src='/assets/js/url-api-builder.js' type='text/javascript'></script>
-    <script src="/assets/js/bootstrap.min.js" type='text/javascript'></script>
-    <script src="/assets/js/km_track.js" type='text/javascript'></script>
   </head>
 
   <body class='home'>
