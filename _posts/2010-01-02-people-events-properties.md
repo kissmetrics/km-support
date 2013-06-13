@@ -64,7 +64,7 @@ Numeric properties are special, because our reports can do some math in finding 
 * Find the average transaction size, or the smallest/min, or the largest/max.
 * Find the average net revenue per person (sum up the revenue per person and take the average across all people)
 
-The best part is that KISSmetrics saves all the values of each property; nothing is ever "overwritten". This lets you toggle the [report options][prop-options] to show the First Value or Last Value set, and soon, we'll provide a way to show Every Value ever set across many people at a time.
+The best part is that KISSmetrics saves all the values of each property; nothing is ever "overwritten". This lets you toggle the [report options][prop-options] to show the First Value or Last Value set, and with the [Power Report][power-report], even show Every Value ever set across many people at a time.
 
 ## Properties Are Saved to Each Person
 
@@ -96,3 +96,5 @@ Then you can segment the people who did these events by different properties:
 [simple-api]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/simple-api.png
 
 [best-practices]: /best-practices
+[prop-options]: /advanced/advanced-properties
+[power-report]: /tools/power-report
