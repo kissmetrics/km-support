@@ -5,7 +5,8 @@ categories: tutorial
 author: Lars Lofgren
 summary: A video introduction to our Metrics tab.
 ---
-<div id="wistia_d091892948" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div>
+<div id="wistia_d091892948" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
+<!-- <div id="wistia_d091892948" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div> -->
 <script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
 	
 </script>

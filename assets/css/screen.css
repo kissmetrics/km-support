@@ -525,3 +525,75 @@ p.critical{
 #url-builder-form .error-message {
   color: red;
 }
+
+
+
+/* Media Queries */
+
+
+
+@media only screen and (min-width: 0px) {
+/* 0 (320) to 480 */
+  div.col.side { display: none; }
+  #header { width: 320px;}
+  #wrapper { width: 320px; }
+  #footer { width: 320px; }
+  .col { width: 260px; }
+  div#header a.km { display: none; }
+  .col ul.summary { width: 259px; }
+  #crumbs form#search_form { display: block; }
+  #crumbs ul { padding: 18px 20px; }
+  #crumbs li#dash { display: none; }
+  div#disqus_thread { display: none; } 
+  .wistia-embed { width:259px; height:165px; }  
+}
+@media only screen and (min-width: 480px) {
+/* 480 to 768 */
+  div.col.side { display: none; }
+  #header { width: 480px;}
+  #wrapper { width: 480px; }
+  #footer { width: 480px; }
+  .col { width: 420px; }
+  div#header a.km { display: block; } 
+  .col ul.summary { width: 419px; }
+  #crumbs form#search_form { display: block; }
+  #crumbs ul { padding: 18px 20px; }   
+  #crumbs li#dash { display: none; }
+  div#disqus_thread { display: block; }
+  .wistia-embed { width:419px; height:265px; }
+}
+@media only screen and (min-width: 768px) {
+/* 768 to 1024 */
+  div.col.side { display: none; }
+  #header { width: 768px;}
+  #wrapper { width: 768px; }
+  #footer { width: 768px; }
+  .col { width: 708px; }
+  div#header a.km { display: block; }
+  .col ul.summary { width: 707px; }
+  #crumbs form#search_form { display: block; }
+  #crumbs ul { padding: 18px 20px; }   
+  #crumbs li#dash { display: none; }
+  div#disqus_thread { display: block; }
+  .wistia-embed { width:707px; height:445px; }
+}
+@media only screen and (min-width: 1024px) {
+/* 1024 + */
+  div.col.side { display: block; padding: 0px 20px 20px 20px; }
+  #header { width: 960px;}
+  #wrapper { width: 960px; }
+  #footer { width: 960px; }
+  .col { width: 620px; }
+  div#header a.km { display: block; }
+  .col ul.summary { width: 619px; }
+  //#crumbs form#search_form { display: none; }
+  //#crumbs ul { padding: 14px 30px; }
+  //#crumbs li#dash { display: list-item; }
+  #crumbs form#search_form { display: block; }
+  #crumbs ul { padding: 18px 20px; }   
+  #crumbs li#dash { display: none; }
+  div.col.side input.st-search-input { width: 180px; }
+  div#disqus_thread { display: block; }
+  .wistia-embed { width:619px; height:390px; }
+  .side ul li:first-child { border-top: none; }
+}

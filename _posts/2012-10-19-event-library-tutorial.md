@@ -10,7 +10,8 @@ In KISSmetrics, there are two types of events. Those that can easily be set up f
 
 ## Video Introduction
 
-<div id="wistia_53aa1d1fd5" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div>
+<div id="wistia_53aa1d1fd5" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
+<!-- <div id="wistia_53aa1d1fd5" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div> -->
 <script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
 	
 </script>

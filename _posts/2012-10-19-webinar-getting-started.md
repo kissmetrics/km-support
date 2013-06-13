@@ -5,7 +5,8 @@ categories: tutorial
 author: Charles Liu
 summary: This is a recorded webinar that walks you through the initial setup, creating events to track, and then creating reports to view data from those events.
 ---
-<div id="wistia_9d92cc05c5" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div>
+<div id="wistia_9d92cc05c5" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
+<!--<div id="wistia_9d92cc05c5" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div>-->
 <script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
 	
 </script>

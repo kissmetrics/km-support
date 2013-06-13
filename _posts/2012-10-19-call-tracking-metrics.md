@@ -22,7 +22,8 @@ With Call Tracking Metrics **AND** KISSmetrics, you can connect the dots between
 
 # Demonstration Video
 
-<div id="wistia_gik1m2517k" class="wistia_embed" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div>
+<div id="wistia_gik1m2517k" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
+<!-- <div id="wistia_gik1m2517k" class="wistia_embed" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div> -->
 
 <script charset="ISO-8859-1" src="http://fast.wistia.com/static/concat/E-v1.js">
 </script>

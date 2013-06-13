@@ -5,7 +5,8 @@ categories: [tutorial, event-library-tutorial]
 author: Lars Lofgren
 summary: Trigger events when someone submits a form.
 ---
-<div id="wistia_1b184d5c16" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div>
+<div id="wistia_1b184d5c16" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
+<!-- <div id="wistia_1b184d5c16" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div> -->
 <script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
 	
 </script>
