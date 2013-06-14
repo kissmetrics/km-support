@@ -57,6 +57,13 @@ Here's a screenshot of installing in a Wordpress template:
 
 As always, you can check in [KISSmetrics Live][live] to look for your own activity, and to check that you've installed properly.
 
+To recap, there are 4 steps:
+
+1. Create a *tag* containing the JavaScript snippet and/or API calls.
+2. Create a *rule* that tells on which pages to load those tags.
+3. Create a *version* to save a history of your changes.
+4. *Publish* the version so that it is actively running on your site.
+
 [gtm]: https://www.google.com/tagmanager
 [gtm-order]: http://support.google.com/tagmanager/answer/2772421/?hl=en
 
