@@ -1,4 +1,4 @@
-function km_track(event_name, props, current_account)
+function km_track(event_name, props)
 {
   if (!props)
     props = {};
@@ -9,9 +9,9 @@ function km_track(event_name, props, current_account)
   
   var params = [];
   
-  // Current account
-  if(current_account)
-    params.push("current_account=" + current_account);
+  // Logged-in visitor
+  if(KM.gc("ni"))
+    params.push("km_email=" + KM.gc("ni"));
   
   for(var key in props)
   {
