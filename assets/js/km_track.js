@@ -1,4 +1,4 @@
-function km_track(event_name, props)
+km_track = function(event_name, props)
 {
   if (!props)
     props = {};
@@ -10,8 +10,8 @@ function km_track(event_name, props)
   var params = [];
   
   // Logged-in visitor
-  if(KM.gc("ni"))
-    params.push("km_email=" + KM.gc("ni"));
+  if($.cookie('km_ni'))
+    params.push("km_email=" + $.cookie('km_ni'));
   
   for(var key in props)
   {
