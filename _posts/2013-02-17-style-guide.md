@@ -222,4 +222,16 @@ Reference-style image syntax looks like this:
 
 	![Alt text][id]	
 	
-Where “id” is the name of a defined image reference. Image references are defined using syntax identical to link references:	
+Where “id” is the name of a defined image reference. Image references are defined using syntax identical to link references.
+
+* * *
+
+## Wistia Videos
+
+When embeding Wistia videos, use the inline API method which will look similar to this:
+
+	<div id="wistia_id" class="wistia_embed" style="width:488px;height:275px;" data-video-width="488" data-video-height="275">&nbsp;</div>
+	
+Then, remove any inline styles on the `<div>` tag and add the CSS class "wistia-embed" so that it looks similar to this:
+	
+	<div id="wistia_id" class="wistia_embed wistia-embed" data-video-width="488" data-video-height="275">&nbsp;</div>
