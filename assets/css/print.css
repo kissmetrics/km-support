@@ -1,0 +1,66 @@
+/* 
+  Site: KISSmetrics Support
+  Author: Ian Main, imain@kissmetrics.com
+  Time: 2013-06-26
+*/
+
+/* PRINT-STYLESHEET: =print-stylesheet
+------------------------------------------------------------*/
+
+@media print {
+
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+		line-height: 1.5 !important;
+	}
+
+	body {
+		font-family: "Helvetica Neue", "Helvetica", "Arial", "Tahoma", "Geneva", sans-serif;
+	}
+	
+	a[href^http]::after {
+		content: " [" attr(href)"]";
+		color: blue;
+	}
+	
+	@page {
+		margin: 1.5cm;
+	}
+	
+	h1 {
+		font-size: 20pt;
+	}
+	
+	h2 {
+		font-size: 14pt;
+		margin-top: 25px;
+	}
+	
+	.side,
+	#crumbs,
+	.km,
+	#disqus_thread,
+	.wistia-embed,
+	#footer {
+		display: none;
+	}
+	
+	
+	#header {
+		border-bottom: 2px solid #ccc;
+		margin-bottom: 40px;
+	}
+	
+	#header h1 a {
+		font-size: 20px;
+		text-decoration: none;
+	}
+	
+	img {
+		max-width: 800px;
+		margin: 0.5cm 0;
+	}	
+}
