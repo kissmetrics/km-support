@@ -48,7 +48,7 @@ Example 1: Joe pays $50/mo for your Small Plan.
 
 {% highlight ruby %}
 # Example 1
-KM.identify( <Joe's Identity> );
+KM.identify( <Joe_Identity> );
 KM.record('Subscription Billed', {
   'Subscription Billing Amount' => 50,
   'Subscription Billing Length' => 1,
@@ -59,7 +59,7 @@ Example 2: Ted pays $1200/year for your Large Plan.
 
 {% highlight ruby %}
 # Example 2
-KM.identify( <Ted's Identity> );
+KM.identify( <Ted_Identity> );
 KM.record('Subscription Billed', {
   'Subscription Billing Amount' => 1200,
   'Subscription Billing Length' => 12,
@@ -77,7 +77,7 @@ Example: Joe cancels his account because he doesn't have the budget anymore.
 
 {% highlight ruby %}
 # Example
-KM.identify( <Joe's Identity> );
+KM.identify( <Joe_Identity> );
 KM.record('Subscription Canceled', {
   'Subscription Cancelation Reason' => 'No Budget' });
 {% endhighlight %}
@@ -94,7 +94,7 @@ Triggered when a customer upgrades to start paying you more money.
 Example: Joe upgrades his plan from $50/mo Small plan to a $100/mo Medium plan.
 
 {% highlight ruby %}
-KM.identify( <Joe's Identity> );
+KM.identify( <Joe_Identity> );
 KM.record('Subscription Upgraded', {
   'Subscription Billing Amount' => 100,
   'Subscription Billing Length' => 1,
@@ -113,7 +113,7 @@ Triggered when a customer downgrades to start paying you less money.
 Example: Joe downgrades his plan from $100/mo Medium plan to a $50/mo Small plan.
 
 {% highlight ruby %}
-KM.identify( <Joe's Identity> );
+KM.identify( <Joe_Identity> );
 KM.record('Subscription Downgraded', {
   'Subscription Billing Amount' => 50,
   'Subscription Billing Length' => 1,
@@ -134,7 +134,7 @@ Triggered when you apply a refund for a customer.
 Example: You refund Joe $100 while he is on a $50/mo Small plan.
 
 {% highlight ruby %}
-KM.identify( <Joe's Identity> );
+KM.identify( <Joe_Identity> );
 KM.record('Subscription Refunded', {
   'Subscription Refund Amount' => 100,
   'Subscription Refund Reason' => 'Charged incorrect amount' });

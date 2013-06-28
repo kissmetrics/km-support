@@ -12,8 +12,8 @@ summary: Consider these limitations as you are structuring your data and naming 
 * Please keep event names under 255 characters. Commas (`,`), and colons (`:`) will be changed to spaces, so an event "`foo:bar,baz`" will be saved as "`foo bar baz`".
 * Event names are not case sensitive, so `Signed Up` and `signed up` will be treated as the same event. That said, events that share the same name will be aggregated. For example, if you have 10 different landing pages on 10 different URLs, you can set up each URL to record the same `Saw landing page` event. That way, everyone who sees **any** landing page is counted as doing that event, regardless of which one they saw.
 * Each KM Product has an upper limit of 65,535 unique event *names*, but you will find that our application is most manageable with under around 3,000 event names. Before you dynamically create an event for every single action, consider not creating [too many events][too-many-events].
-* For each person, we save the last 1000 instances of each event. For * example, we'll remember the last 1000 times that I `Viewed Homepage`.
-
+* For each person, we save the last 1000 instances of each event. For example, we'll remember the last 1000 times that I `Viewed Homepage`.
+* We keep data from 2009, going forward. We will not be able to store your imported data from 2008 or before.
 
 ## Notes on Properties
 
@@ -23,6 +23,7 @@ summary: Consider these limitations as you are structuring your data and naming 
 * Each account can have up to 65,535 unique property *names*. In other words, you can track 65,535 different *types* of actions. For example, `Returning` and `URL` would be 2 of your 65,535 event names. We can still record whether millions of people receive these properties.
 * The values of properties can be text or numbers (8 KB of data, in theory). We can't yet support JSON-structured values.
 * You can think of the `Customer ID` or identity as a special property of each person.
+* We keep data from 2009, going forward. We will not be able to store your imported data from 2008 or before.
 
 <a name="property-data-types"></a>
 ### Property Data Types
