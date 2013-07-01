@@ -1,5 +1,9 @@
-Summary: Accurately track the revenue you've earned from marketing campaigns.
-
+---
+layout: post
+title: ROI of Campaigns Use Case
+categories: use-cases
+summary: Accurately track the revenue you've earned from marketing campaigns.
+---
 # ROI of Campaigns Use Case
 
 ## How to Find the ROI of Your Marketing Campaigns

@@ -2,3 +2,4 @@ permalink: none
 markdown: rdiscount
 menu_limit: 5
 pygments: true
+exclude: [Gemfile,Gemfile.lock,Rakefile,CNAME,README.md]
