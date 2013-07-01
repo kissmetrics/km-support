@@ -4,3 +4,4 @@ _site/*
 .ruby-version
 .ruby-gemset
 .amazon_keys
+!_site/sitemap.xml
