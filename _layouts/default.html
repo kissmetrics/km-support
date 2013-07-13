@@ -153,7 +153,8 @@
       $('.side a[href="'+path+'"]').parents('.collapse').collapse('show');
 
       // Server-side tracking
-      km_track('Viewed Support Article', {'Support Article Viewed URL':'{{page.url}}','Support Article Viewed Title':'{{page.title}}'});
+      var tracking_params = {'Support Article Viewed URL':'{{page.url}}','Support Article Viewed Title':'{{page.title}}'};
+      km_track('Viewed Support Article', $.extend({}, tracking_params, utmParams));
     });
     </script>
 

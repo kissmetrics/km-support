@@ -40,3 +40,24 @@ km_track = function(event_name, props)
     }).send();
   }      
 }
+
+// Scan URL for UTM Parameters
+var utmParams;
+(window.onpopstate = function () {
+    var match,
+        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+        query  = window.location.search.substring(1);
+
+    utmParams = {};
+    while (match = search.exec(query)) {
+      var key = decode(match[1]);
+      var val = decode(match[2]);
+      if (key == "utm_source") utmParams["Campaign Source"] = val;
+      if (key == "utm_medium") utmParams["Campaign Medium"] = val;
+      if (key == "utm_campaign") utmParams["Campaign Name"] = val;
+      if (key == "utm_term") utmParams["Campaign Terms"] = val;
+      if (key == "utm_content") utmParams["Campaign Content"] = val;      
+    }
+})();
