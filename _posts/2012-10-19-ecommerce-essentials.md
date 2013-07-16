@@ -1,3 +1,4 @@
+
 ---
 layout: post
 title: E-Commerce Essentials
@@ -161,10 +162,12 @@ Here's example code for a purchase with 4 different items:
 {% highlight html %}
 <script type="text/javascript">
 _kmq.push(['record', 'Purchased', {'Order ID':10001, 'Order Total':499.99}]);
-_kmq.push(function() { KM.set( {'Purchased SKU':'a123', '_t':KM.ts(), '_d':1} )});
-_kmq.push(function() { KM.set( {'Purchased SKU':'b234', '_t':KM.ts(), '_d':1} )});
-_kmq.push(function() { KM.set( {'Purchased SKU':'c345', '_t':KM.ts(), '_d':1} )});
-_kmq.push(function() { KM.set( {'Purchased SKU':'d456', '_t':KM.ts(), '_d':1} )});
+_kmq.push(function() {
+    KM.set( {'Purchased SKU':'a123', '_t':KM.ts(), '_d':1} );
+    KM.set( {'Purchased SKU':'b234', '_t':KM.ts()+1, '_d':1} );
+    KM.set( {'Purchased SKU':'c345', '_t':KM.ts()+2, '_d':1} );
+    KM.set( {'Purchased SKU':'d456', '_t':KM.ts()+3, '_d':1} );
+});
 </script>
 {% endhighlight %}
 
