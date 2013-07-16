@@ -3,3 +3,4 @@ markdown: rdiscount
 menu_limit: 5
 pygments: true
 exclude: [Gemfile,Gemfile.lock,Rakefile,CNAME,README.md]
+github_url: https://github.com/kissmetrics/km-support/blob/gh-pages/

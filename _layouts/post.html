@@ -5,12 +5,15 @@ layout: default
 
 {{ content }}
 
-<hr>
-
 {% if page.author %}
-  <p>Contributed by {{page.author}}</P>
+  <p>Contributed by {{page.author}}</p>
 {% endif %}
 
+<div class="alert">
+  Is anything on this page unclear? <a href="{{site.github_url}}{{ page.path }}">Suggest edits on Github!</a>
+</div>
+
+<!--
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'kmsupport';
@@ -22,3 +25,4 @@ layout: default
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+-->
