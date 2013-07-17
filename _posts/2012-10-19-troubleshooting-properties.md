@@ -2,6 +2,7 @@
 layout: post
 title: "My Properties Don't Look Right"
 categories: troubleshooting
+tags: advanced-properties
 author: Eric Fung
 summary: Investigate more ways to report on properties, and to see why the properties may not match what you're expecting.
 ---

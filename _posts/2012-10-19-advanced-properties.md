@@ -96,6 +96,19 @@ URL (Domain only) groups together all of the referrer URLs from the same domain,
 
 **Use this for**: consolidating all Facebook/Twitter/search results referrers, or any other sets of referrers that share a common domain.
 
+{% for page in site.tags.advanced-properties %}
+<ul class="summary" > 
+  <li>
+    <a href="{{page.url}}">
+      <h3>
+      {{ page.title }}
+      </h3>
+      <p>{{page.summary}}</p>
+    </a>
+  </li>
+</ul>
+{% endfor %}
+
 [advanced1]: http://f.cl.ly/items/0M3R3a183K3D0A3Y2n0I/advanced1.png
 [advanced2]: http://f.cl.ly/items/0v3R3q0E1H440o1I2K2w/advanced2.png
 [advanced3]: http://f.cl.ly/items/0N2S3T2f2y0n0D2J1Q23/advanced3.png
