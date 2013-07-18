@@ -69,11 +69,13 @@
         </div>
         <div class='rightcrumb'>
           <ul id='breadcrumb' class='breadcrumb'>
-            <!--
-            <li><a href="/">Home</a></li>
-            <li><a href="#">Library</a> <span class="divider">/</span></li>
-            <li class="active">Data</li>
-            -->
+            {% if page.categories %}
+              <li><a href="/">Home</a><span class="divider">/</span></li>
+              {% for category in page.categories %}
+                <li><a href="/{{category}}">{{ category | capitalize }}</a> <span class="divider">/</span></li>
+              {% endfor %}
+            {% endif %}
+            <li class="active">{{ page.title }}</li>
           </ul>
         </div>
       </div>
