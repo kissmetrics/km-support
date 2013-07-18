@@ -65,6 +65,26 @@ _kmq.push(function() {
     
 This can be useful if you want to record a series of events or if you have conditionals that need to be executed first.
 
+### Combining Callback Functions with jQuery
+
+[Jon](https://github.com/jonazri) points out that you can combine jQuery's [`trigger()`][jquery-trigger] to abstract out the event of when the KM object is loaded:
+
+{% highlight js %}
+_kmq.push(function() {
+  $.event.trigger("kmLoaded");
+});
+{% endhighlight %}
+
+For stuff that requires the KM object to be ready, listen for *that* custom event:
+
+{% highlight js %}
+$("body").on("kmLoaded", function() {
+  // doStuff;
+});
+{% endhighlight %}
+
+This is most beneficial when you're working with a tag manager, where you might have to separate out the event logic from the initialization of the JS library. See the full discussion [here](https://github.com/kissmetrics/km-support/issues/11).
+
 <a name="tracking-individual-page-views"></a>
 ## Tracking Individual Page Views
 
@@ -308,3 +328,5 @@ _kmq.push(function()
 [referrer]: #override-the-referrer
 [ga]: http://www.google.com/analytics/
 [crazyegg]: http://www.crazyegg.com/
+
+[jquery-trigger]: http://api.jquery.com/trigger/
