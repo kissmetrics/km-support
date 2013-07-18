@@ -88,30 +88,31 @@ img {
 
 /* CRUMBS: =crumbs
 ------------------------------------------------------------*/
-#crumbs ul {
+#crumbs {
   background: #e1eff3;
   box-shadow: 0 -1px 2px rgba(0,0,0,.1) inset;
   -webkit-box-shadow: 0 -1px 2px rgba(0,0,0,.1) inset;
   -moz-box-shadow: 0 -1px 2px rgba(0,0,0,.1) inset;
   list-style: none;
   overflow: hidden;
-  padding: 14px 30px;
+  padding: 15px 20px;
+}
+#crumbs .leftcrumb{
+  padding: 0px 20px 0px 0px;
+  width: 220px; /*260-20-20*/
+  display: inline-block;
+  float: left;
+}
+#crumbs .rightcrumb{
+  padding: 4px 0px 5px 20px;
+  display: inline-block;
+  float: left;
 }
 #crumbs li {
-  background: transparent url(../images/crumb_tick.png) 0 50% no-repeat;
   color: #a1a1a1;
-  float: left;
-  font-size: 12px;
+  //float: left;
   font-weight: bold;
   line-height: normal;
-  margin-left: 8px;
-  padding-left: 11px;
-  text-shadow: 1px 1px 1px #fff;
-}
-#crumbs li#dash {
-  background: none;
-  margin-left: 0;
-  padding-left: 0;
 }
 #crumbs li a {
   color: #0c8cc4;
@@ -538,9 +539,6 @@ p.critical{
   .col { width: 260px; }
   div#header a.km { display: none; }
   .col ul.summary { width: 259px; }
-  #crumbs form#search_form { display: block; }
-  #crumbs ul { padding: 18px 20px; }
-  #crumbs li#dash { display: none; }
   div#disqus_thread { display: none; } 
   .wistia-embed { width:259px; height:165px; }  
 }
@@ -553,9 +551,6 @@ p.critical{
   .col { width: 420px; }
   div#header a.km { display: block; } 
   .col ul.summary { width: 419px; }
-  #crumbs form#search_form { display: block; }
-  #crumbs ul { padding: 18px 20px; }   
-  #crumbs li#dash { display: none; }
   div#disqus_thread { display: block; }
   .wistia-embed { width:419px; height:265px; }
 }
@@ -568,9 +563,6 @@ p.critical{
   .col { width: 708px; }
   div#header a.km { display: block; }
   .col ul.summary { width: 707px; }
-  #crumbs form#search_form { display: block; }
-  #crumbs ul { padding: 18px 20px; }   
-  #crumbs li#dash { display: none; }
   div#disqus_thread { display: block; }
   .wistia-embed { width:707px; height:445px; }
 }
@@ -583,12 +575,6 @@ p.critical{
   .col { width: 620px; }
   div#header a.km { display: block; }
   .col ul.summary { width: 619px; }
-  //#crumbs form#search_form { display: none; }
-  //#crumbs ul { padding: 14px 30px; }
-  //#crumbs li#dash { display: list-item; }
-  #crumbs form#search_form { display: block; }
-  #crumbs ul { padding: 18px 20px; }   
-  #crumbs li#dash { display: none; }
   div.col.side input.st-search-input { width: 180px; }
   div#disqus_thread { display: block; }
   .wistia-embed { width:619px; height:390px; }

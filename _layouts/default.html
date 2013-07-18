@@ -57,24 +57,27 @@
         <h1>
           <a class='href' href='/'>KISSmetrics</a>
         </h1>
-        <a class='km' href='http://www.kissmetrics.com'>Go to KISSmetrics &rarr;</a>
+        <a class='km' href='https://www.kissmetrics.com'>Go to KISSmetrics &rarr;</a>
       </div>
     </div>
     <div id='wrapper'>
       <div data-swiftype-index='false' id='crumbs'>
-        <ul id='breadcrumb' class='breadcrumb'>
+        <div class='leftcrumb'>
           <form id='search_form'>
             <input class='st-search-input' id='st-search-input' placeholder='Search the Documentation' type='text' />
           </form>
-          <li id='dash'>
-            <a href='/'>Documentation</a>
-          </li>
-        </ul>
+        </div>
+        <div class='rightcrumb'>
+          <ul id='breadcrumb' class='breadcrumb'>
+            <!--
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Library</a> <span class="divider">/</span></li>
+            <li class="active">Data</li>
+            -->
+          </ul>
+        </div>
       </div>
       <div class='col side' data-swiftype-index='false'>
-        <!--<form id='search_form'>
-          <input class='st-search-input' id='st-search-input' placeholder='Search the Documentation' type='text' />
-        </form>-->
         <div id='st-results-container'></div>
         <script type='text/javascript'>
           //<![CDATA[
@@ -119,11 +122,12 @@
         </div>
       </div>
 
-<div class='col' data-swiftype-index='true'>
-  {{ content }}
-</div>
+      <div class='col' data-swiftype-index='true'>
+        {{ content }}
+      </div>
 
- </div>
+    </div>
+
     <div data-swiftype-index='false' id='footer'>
       <p>
         &copy;
@@ -157,7 +161,6 @@
       km_track('Viewed Support Article', $.extend({}, tracking_params, utmParams));
     });
     </script>
-
 	
     <!-- Olark 
     <script data-cfasync='false' type='text/javascript'>
