@@ -61,7 +61,8 @@ You're all set for Data Export!
 
 [aws]: https://aws.amazon.com
 [aws-logging]: http://docs.amazonwebservices.com/AmazonS3/latest/UG/index.html?ManagingBucketLogging.html
-[km-settings]: http://www.kissmetrics.com/settings
+[km-settings]: https://www.kissmetrics.com/settings
+
 [1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/data-export/01-aws.png
 [3]: https://s3.amazonaws.com/kissmetrics-support-files/assets/apis/data/dataexport3.png
 [4]: https://s3.amazonaws.com/kissmetrics-support-files/assets/data-export/03-add-permissions.png

@@ -12,14 +12,10 @@ This guide explains how to import data from individual .csv files.
 The [CSV upload area][csv-new] is located under your site's External Data Sources. You can reach it by doing the following:
 
 * Go to [*Settings*][1] (the small gear tab)
-* Click [*External Data Sync*][2]
+* Click [*Data Integrations*][2]
 * Click *Add Data from CSV File*
 
 ![CSV Upload Step 1][screenshot-1]
-
-[1]: http://www.kissmetrics.com/settings
-[2]: http://www.kissmetric.com/external_data
-[csv-new]: http://www.kissmetrics.com/external_data/csv.new
 
 ## 2. Select your CSV file
 
@@ -27,8 +23,6 @@ The [CSV upload area][csv-new] is located under your site's External Data Source
 * Locate the file to upload on your computer.
 
 Please refer to our [reference for details on how to format your CSV file][file-format].
-
-[file-format]: /integrations/csv-import
 
 ## 3. Preview the results
 
@@ -47,6 +41,11 @@ Once everything looks good, confirm the upload. Just as with any other data sour
 Completed uploads will be archived, and you will be able to refer to when they were originally imported.
 
 For the purpose of housekeeping, you can delete completed entries. Note that **this does not delete the events that were brought in from the CSV file.**
+
+[1]: https://www.kissmetrics.com/settings
+[2]: https://www.kissmetric.com/external_data
+[csv-new]: https://www.kissmetrics.com/external_data/csv.new
+[file-format]: /integrations/csv-import
 
 [screenshot-1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/csv-up-1.png
 [screenshot-2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/csv-up-2.png
