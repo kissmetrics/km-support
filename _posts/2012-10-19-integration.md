@@ -14,7 +14,7 @@ We work great with most A/B testing platforms. Generally speaking, you will set 
 * [Unbounce][3] (integration details [here][unbounce])
 * [Visual Website Optimizer][4] (integration details [here][vwo])
 
-[convert]: http://www.convert.com/integrations/kissmetrics/
+[convert]: /integrations/convert
 [optimizely]: /integrations/optimizely
 [unbounce]: http://support.unbounce.com/entries/21111052-how-do-i-add-kissmetrics-event-tracking-to-my-landing-page
 [vwo]: /integrations/vwo
