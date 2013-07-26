@@ -119,6 +119,5 @@ For reference: [Looking Up Your Current KM ID][km-id]
 [url]: /apis/url
 [km-id]: /apis/javascript/javascript-specific#get-your-current-kissmetrics-id
 [alias]: /apis/common-methods#alias
-[js-settings]: https://www.kissmetrics.com/product.js_settings
-[include-host]: https://s3.amazonaws.com/kissmetrics-support-files/assets/apis/include-host.png
+[js-settings]: https://s3.amazonaws.com/kissmetrics-support-files/assets/apis/javascript/tracking-multiple-domains/include-host.png
 [auto-track]: /apis/javascript/javascript-settings

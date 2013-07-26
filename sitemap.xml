@@ -478,7 +478,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/apis/javascript/tracking-multiple-domains.html</loc>
-        <lastmod>2013-07-17T17:58:22-07:00</lastmod>
+        <lastmod>2013-07-26T12:36:18-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/integrations/mysql/arg-out-of-range.html</loc>
@@ -659,6 +659,14 @@
         <lastmod>2013-07-17T17:58:22-07:00</lastmod>
     </url>
     <url>
+        <loc>http://support.kissmetrics.com/integrations/convert.html</loc>
+        <lastmod>2013-07-23T14:51:17-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://support.kissmetrics.com/integrations/marketo.html</loc>
+        <lastmod>2013-07-26T12:23:37-07:00</lastmod>
+    </url>
+    <url>
         <loc>http://support.kissmetrics.com/404.html</loc>
         <lastmod>2013-07-17T17:56:09-07:00</lastmod>
     </url>
@@ -696,7 +704,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/</loc>
-        <lastmod>2013-07-19T15:40:41-07:00</lastmod>
+        <lastmod>2013-07-26T12:36:18-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/integrations/</loc>
