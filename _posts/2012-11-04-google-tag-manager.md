@@ -10,30 +10,36 @@ summary: Here's how to load the KISSmetrics JavaScript library through Google Ta
 
 The concept is similar to creating events with our [Event Library][evlib], where you install our main piece of JavaScript *once* and manage your events within [KISSmetrics][evlib-link].
 
-## Setup
+## Step 1: Get Started
 
-* Set up your account at the [Google Tag Manager website][gtm]. You'll be asked to create a "container", which is a collection of tags for a website. Then you'll get a piece of code:
+Set up your account at the [Google Tag Manager website][gtm]. You'll be asked to create a "container", which is a collection of tags for a website. Then you'll get a piece of code:
 
 ![1 Get Tag][ss1]
 
-* Install the Google Tag Manager code on each page of your site.
+## Step 2: Install the Google Tag Manager Code + KISSmetrics Code
 
-**Note: Google Tag Manager [doesn't let you control the order][gtm-order] in which your tags are loaded.** Let's set up the `_kmq` array outside of the Google-managed tags. That way, any API calls you manage with Google don't cause any JavaScript errors. To read more, please refer to our [JavaScript library documentation][js-async].
-
-Include this before loading the tag manager script:
+On every page of your site, include the code block from below. ***Make sure to replace the Google Tag Manager stub with the snippet you got in the last step.***
 
 {% highlight html %}
 <script type="text/javascript">
 // Prepare for KISSmetrics setup before loading Google Tag Manager
 var _kmq = _kmq || [];
 </script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/..."></script>
+<!-- End Google Tag Manager -->
 {% endhighlight %}
 
 Here's a screenshot of installing in a Wordpress template:
 
 ![2 Install Tag][ss2]
 
-* Now you'll want to create a "Custom HTML Tag":
+*Technical Note: Google Tag Manager [doesn't let you control the order][gtm-order] in which your tags are loaded.* That's why you are creating the `_kmq` array outside of the Google-managed tags. That way, any KM API calls that Google manages doesn't cause any JavaScript errors. To read more, please refer to our [JavaScript library documentation][js-async].
+
+## Step 3: Back in Google Tag Manager, Set Up a Tag for the KISSmetrics JavaScript Snippet
+
+* Back in Google Tag Manager, create a "Custom HTML Tag":
 
 ![3 HTML Tag][ss3]
 
