@@ -4,8 +4,6 @@ title: ROI of Campaigns Use Case
 categories: use-cases
 summary: Accurately track the revenue you've earned from marketing campaigns.
 ---
-# ROI of Campaigns Use Case
-
 ## How to Find the ROI of Your Marketing Campaigns
 
 To accurately track the revenue you've earned from marketing campaigns, you'll need to set up two things:
