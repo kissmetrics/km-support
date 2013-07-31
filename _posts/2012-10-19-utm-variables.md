@@ -35,11 +35,13 @@ Here's how it all works:
 2. KISSmetrics fires the event 'Ad Campaign Hit' for Bob.
 3. KISSmetrics sets the values of each available UTM parameter as values for these five possible corresponding properties:
 
-* Campaign Source
-* Campaign Medium
-* Campaign Term
-* Campaign Content
-* Campaign Name
+<ul>
+    <li>Campaign Source</li>
+    <li>Campaign Medium</li>
+    <li>Campaign Term</li>
+    <li>Campaign Content</li>
+    <li>Campaign Name</li>
+</ul>
 
 If you look up Bob using the People tab and see that Bob has triggered the event 'Ad Campaign Hit' and has one or more of these five properties, you'll know that Bob touched one of your UTM-loaded URLs at some point.
 
