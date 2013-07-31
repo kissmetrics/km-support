@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Tracking UTM Variables
+title: Tracking UTM Parameters
 categories: integrations
 author: Eric Fung
-summary: Some notes to consider when using Google Analytics' UTM variables with KISSmetrics.
+summary: Some notes to consider when using Google Analytics' UTM parameters with KISSmetrics.
 ---
-Many of our customers use KISSmetrics side-by-side with Google Analytics. Similar to Google Analytics, KISSmetrics can track site visits via your UTM-tagged ads, including AdWords traffic. To enable this behavior, please make sure that `Tagged URLs` is `On` in your [JavaScript Settings][].
+Every marketer loses sleep over this question: "How'd that customer find us?" Many of our customers use KISSmetrics side-by-side with Google Analytics. Similar to Google Analytics, KISSmetrics can track site visits via your UTM-tagged ads, including AdWords traffic. To enable this behavior, please make sure that `Tagged URLs` is `On` in your [JavaScript Settings][].
 
 Keep in mind that since Google analytics has no identifiers, it cannot combine one **person**'s web traffic from multiple computers/browsers/mobile devices into one "unique visit". As a result, you may see **2-5x** more views in Google Analytics than in KISSmetrics.
 
