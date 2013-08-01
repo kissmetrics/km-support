@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Measuring Signups and Logins 
+title: Measuring Facebook Logins and Signups
 categories: how-tos
 tags: []
 author: Eric Fung
