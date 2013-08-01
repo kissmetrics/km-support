@@ -407,7 +407,7 @@ p.critical{
 
 /* URL BUILDER FORM: =url-builder-form
 ------------------------------------------------------------*/
-#url-builder-form {
+.url-builder-form {
   background: rgba(0,0,0,.05);
   border: 1px solid rgba(0,0,0,.1);
   -webkit-border-radius: 5px;
@@ -416,49 +416,49 @@ p.critical{
   margin: 0 auto 20px;
   padding: 20px;
 }
-#url-builder-form fieldset {
+.url-builder-form fieldset {
   margin: 0;
   padding: 0;
   border: none;
 }
-#url-builder-form label {
+.url-builder-form label {
   display: block;
   font-weight: bold;
 }
-#url-builder-form p {
+.url-builder-form p {
   font-size: 13px;
   line-height: 24px;
   margin-bottom: 15px;
 }
-#url-builder-form p:before,
-#url-builder-form p:after {
+.url-builder-form p:before,
+.url-builder-form p:after {
   content: "";
   display: table;
 }
-#url-builder-form p:after {
+.url-builder-form p:after {
   clear:both;
 }
-#url-builder-form .note {
+.url-builder-form .note {
   color: #999;
   display: block;
   font-size: 12px;
   font-style: italic;
 }
-#url-builder-form .required {
+.url-builder-form .required {
   color: #999;
 }
-#url-builder-form .optional {
+.url-builder-form .optional {
   color: #999;
 }
-#url-builder-form .form-col {
+.url-builder-form .form-col {
   float: left;
   margin-right: 20px;
   width: 278px;
 }
-#url-builder-form .form-col:nth-child(even) {
+.url-builder-form .form-col:nth-child(even) {
   margin-right: 0;
 }
-#url-builder-form input[type="text"],
+.url-builder-form input[type="text"],
 #final-url input[type="text"] {
   background: #fff;
   border: 1px solid #dadadd;
@@ -480,7 +480,7 @@ p.critical{
        -o-transition: border 0.15s linear, box-shadow 0.15s linear;
           transition: border 0.15s linear, box-shadow 0.15s linear;
 }
-#url-builder-form input[type="text"]:focus,
+.url-builder-form input[type="text"]:focus,
 #final-url input[type="text"]:focus {
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.07), 0 0 5px rgba(82,168,236,0.6);
      -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.07), 0 0 5px rgba(82,168,236,0.6);
@@ -488,13 +488,13 @@ p.critical{
         border-color: rgba(82,168,236,0.7);
         outline:0;
 }
-#url-builder-form .form-col input[type="text"] {
+.url-builder-form .form-col input[type="text"] {
   width: 261px;
 }
 #add-another-property {
   text-decoration: none;
 }
-#url-builder-form .submit-button {
+.url-builder-form .submit-button {
   background: rgba(0,0,0,.05);
   border-top: 1px solid rgba(0,0,0,.05);
   margin: 0 -20px -20px -20px;
@@ -523,7 +523,7 @@ p.critical{
     0% { background-color: #ffff8c; }
     100% { background-color: #fff; }
 }
-#url-builder-form .error-message {
+.url-builder-form .error-message {
   color: red;
 }
 

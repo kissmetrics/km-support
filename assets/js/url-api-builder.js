@@ -8,7 +8,7 @@ $(function(){
     $(this).parent().before(propClone);
   });
   
-  $('#url-builder-form input[type="submit"]').click(function(e){
+  $('.url-builder-form input[type="submit"]').click(function(e){
     e.preventDefault();
     
     var url_parts = [];
@@ -83,7 +83,7 @@ $(function(){
     
     // Create the element
     if(valid) {
-      $('#url-builder-form').after($('<div id="final-url" class="yft"></div>').append($('<input type="text" readonly="readonly" />').val(final_url)));
+      $('.url-builder-form').after($('<div id="final-url" class="yft"></div>').append($('<input type="text" readonly="readonly" />').val(final_url)));
       // Scroll to the URL
       scrollTo('#final-url');
     } else {

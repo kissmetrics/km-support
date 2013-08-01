@@ -15,10 +15,9 @@
     
     <!-- Support Scripts -->
     <script charset='utf-8' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>
-    <script charset='utf-8' src='/assets/js/url-api-builder.js' type='text/javascript'></script>
+    <script src="/assets/js/jquery.cookie.js" type='text/javascript'></script>
     <script src="/assets/js/bootstrap.min.js" type='text/javascript'></script>
     <script src="/assets/js/km_track.js" type='text/javascript'></script>
-    <script src="/assets/js/jquery.cookie.js" type='text/javascript'></script>
 
     <!-- KISSmetrics -->
     <script type="text/javascript">
@@ -33,7 +32,7 @@
       }, 1);
     }
     // Don't load KM locally
-    if !window.location.host.match(/localhost/) {
+    if (!window.location.host.match(/localhost/)) {
       _kms('//i.kissmetrics.com/i.js');
       _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
     }    
