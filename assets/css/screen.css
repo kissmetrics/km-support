@@ -525,6 +525,7 @@ p.critical{
 }
 .url-builder-form .error-message {
   color: red;
+  font-weight: bold;
 }
 
 
