@@ -44,7 +44,7 @@ $(function(){
       }
     });
     
-    // Check to make sure they've enetered a URL
+    // Check to make sure they've entered a URL
     if($('#base-url').val() == '') {
       // It's empty
       valid = false;

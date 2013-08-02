@@ -4,7 +4,7 @@
       <p>
         <label>Enter your URL <em class="required">(required)</em><span class="error-message" style="display: none"> - Please enter a URL</span></label>
         <input type="text" name="base-url" id="base-url" />
-        <span class="note">e.g. http://yoursite.com, http://blog.yoursite.com, http://yoursite.com/?gclid=abc123</span>
+        <span class="note">e.g. http://yoursite.com, http://blog.yoursite.com, http://yoursite.com/?utm_source=abc123</span>
       </p>
     </fieldset>
     <fieldset>
@@ -23,13 +23,14 @@
     <fieldset class="additional-props">
       <p>Enter any additional properties that you want associated with this event <em class="optional">(optional)</em></p>
       <p class="prop-fieldset">
+      <span class="error-message" style="display: none"> Please enter both a name and a value</span>
         <span class="form-col">
           <label>Property name</label>
           <input type="text" />
           <span class="note">e.g. Link, URL, Jan-17 Email Campaign</span>
         </span>
         <span class="form-col">
-          <label>Property value<span class="error-message" style="display: none"> - Please enter a value</span></label>
+          <label>Property value</label>
           <input type="text" />
           <span class="note">e.g. Link 1, Link 2, small button, simple variation</span>
         </span>
