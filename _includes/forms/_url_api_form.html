@@ -3,19 +3,18 @@
     <fieldset>
       <p>
         <label>Enter your URL <em class="required">(required)</em><span class="error-message" style="display: none"> - Please enter a URL</span></label>
-        <input type="text" name="base-url" id="base-url" />
-        <span class="note">e.g. http://yoursite.com, http://blog.yoursite.com, http://yoursite.com/?utm_source=abc123</span>
+        <input type="text" name="base-url" id="base-url" placeholder="http://example.com?utm_source=abc123"/>
       </p>
     </fieldset>
     <fieldset>
       <p>
         <label>Enter a name for an event <em class="optional">(optional)</em></label>
-        <input type="text" name="event-name" id="event-name" />
-        <span class="note">e.g. Clicked E-mail Link, Clicked Link, Clicked URL</span>
+        <input type="text" name="event-name" id="event-name" placeholder="Clicked Email Link"/>
+        <span class="note">e.g. Clicked Email Link, Clicked Link, Clicked URL</span>
       </p>
       <p>
         <label>Enter an identity associated with whoever is clicking this URL <em class="optional">(optional)</em></label>
-        <input type="text" name="event-identity" id="event-identity" />
+        <input type="text" name="event-identity" id="event-identity" placeholder="tim@apple.com"/>
         <span class="note">e.g. bob@bob.com, tim@apple.com, john.adams</span>
         <span class="note">If you are using a mass-mailer like Mailchimp or SendGrid, see the <a href="#identities">Identities section</a> below for adding the variables that represent the recipient's email address.</span>
       </p>
@@ -26,12 +25,12 @@
       <span class="error-message" style="display: none"> Please enter both a name and a value</span>
         <span class="form-col">
           <label>Property name</label>
-          <input type="text" />
+          <input type="text" placeholder="Jan-17 Email Campaign"/>
           <span class="note">e.g. Link, URL, Jan-17 Email Campaign</span>
         </span>
         <span class="form-col">
           <label>Property value</label>
-          <input type="text" />
+          <input type="text" placeholder="Long Email"/>
           <span class="note">e.g. Link 1, Link 2, small button, simple variation</span>
         </span>
       </p>

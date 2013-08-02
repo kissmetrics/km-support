@@ -87,7 +87,8 @@ $(function(){
       // Scroll to the URL
       scrollTo('#final-url');
     } else {
-      // Don't show it
+      // Don't show it, and scroll up to the error messages
+      scrollTo('.url-builder-form')
     }
     
     function scrollTo(element_id) {
