@@ -17,6 +17,7 @@ To be unobtrusive to your end-users, we'll respond with a 200 OK status, even if
 1. [Recording an Event][section1]
 2. [Setting Properties][section2]
 3. [Aliasing Users][section3]
+4. [URL Builder][url-builder]: experiment with creating tracking URLs
 
 <a name="recording-an-event"></a>
 ## Recording an Event
@@ -108,6 +109,7 @@ Notes:
 * It’s fine if a person has more than one alias.
 * The order you pass the two arguments does not matter.
 
+<a name="url-builder"></a>
 # URL Builder
 
 Here is a form to help demonstrate building individual tracking URLs.
@@ -124,3 +126,4 @@ Here is a form to help demonstrate building individual tracking URLs.
 [section1]: #recording-an-event
 [section2]: #setting-properties
 [section3]: #aliasing-users
+[url-builder]: #url-builder
