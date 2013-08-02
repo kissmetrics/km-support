@@ -108,6 +108,12 @@ Notes:
 * It’s fine if a person has more than one alias.
 * The order you pass the two arguments does not matter.
 
+# URL Builder
+
+Here is a form to help demonstrate building individual tracking URLs.
+
+{% include forms/_api_specifications_form.html %}
+
 [url]: /apis/url
 [encoding]: http://www.w3schools.com/tags/ref_urlencode.asp
 [beacon]: /apis/beacon

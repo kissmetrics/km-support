@@ -1,0 +1,71 @@
+<div>
+  <form class="url-builder-form">
+    <fieldset id="method-field">
+      <p>
+        <label>Select an API Method <span class="error-message" style="display: none"> - Please select an API method</span></label>
+        <select name="api-method" id="api-method" />
+          <option value="record">Record</option>
+          <option value="set">Set</option>
+          <option value="alias">Alias</option>
+        </select>
+      </p>
+    </fieldset>
+    <fieldset id="api-key-field">
+      <p>
+        <label>Enter your API key <em class="required">(required)</em><span class="error-message" style="display: none"> - Please enter your API key</span></label>
+        <input type="text" name="api-key" id="api-key" placeholder="foobar"/>
+        <span class="note">The API key is in your <a href="https://www.kissmetrics.com/settings" name="settings">KISSmetrics Settings</a>.</span>
+      </p>
+    </fieldset>
+    <fieldset id="identity-field">
+      <p>
+        <label>Enter an Identity for the person you are tracking <em class="required">(required)</em><span class="error-message" style="display: none"> - Please enter an identity</span></label>
+        <input type="text" name="event-identity" id="event-identity" placeholder="tim@apple.com"/>
+        <span class="note">e.g. tim@apple.com, john.adams, User #56789, 6Mfn1ZbmAWn7n+g/hhKAOIdfuAQ=</span>
+      </p>
+    </fieldset>
+    <fieldset id="event-field" class="event-fields">
+      <p>
+        <label>Enter the name of the Event you are recording <em class="required">(required)</em><span class="error-message" style="display: none"> - Please enter an event name</span></label>
+        <input type="text" name="event-name" id="event-name" placeholder="Signed Up"/>
+        <span class="note">e.g. Signed Up, Subscribed to Newsletter, Purchased</span>
+      </p>
+    </fieldset>
+    <fieldset id="additional-props" class="event-fields set-fields">
+      <p>Enter any Properties that you would like to record:</p>
+      <p class="prop-fieldset">
+      <span class="error-message" style="display: none"> Please enter both a name and a value</span>
+        <span class="form-col">
+          <label>Property name</label>
+          <input type="text" placeholder="A/B Test Homepage"/>
+          <span class="note">e.g. Link, URL, Jan-17 Email Campaign</span>
+        </span>
+        <span class="form-col">
+          <label>Property value</label>
+          <input type="text" placeholder="Homepage with Video"/>
+          <span class="note">e.g. Link 1, Link 2, small button, simple variation</span>
+        </span>
+      </p>
+      <p>
+        <a href="#" id="add-another-property">+ Add another property</a>
+      </p>
+    </fieldset>
+    <fieldset id="timestamp-field" class="event-fields set-fields">
+      <p>
+        <label>Enter the time that this occurred <em class="optional">(optional)</em></label>
+        <span class="error-message" style="display: none">Please enter a time in <em>seconds</em> after the Unix Epoch</span>
+        <input type="text" name="event-timestamp" id="event-timestamp" />
+        <span class="note"><a href="http://www.epochconverter.com">Epoch Converter</a> is a good reference if you are unsure of Unix timestamps.</span>
+      </p>
+    </fieldset>
+    <fieldset id="alias-field" class="alias-fields" style="display: none">
+      <p>
+        <label>Enter an alternate identity for the person above <em class="required">(required)</em><span class="error-message" style="display: none"> - Please enter an alias</span></label>
+        <input type="text" name="alias-identity" id="alias-identity" placeholder="6Mfn1ZbmAWn7n+g/hhKAOIdfuAQ="/>
+        <span class="note">e.g. tim@apple.com, john.adams, User #56789, 6Mfn1ZbmAWn7n+g/hhKAOIdfuAQ=</span>
+      </p>
+    </fieldset>
+    <p class="submit-button"><input type="submit" value="Generate URL" /></p>
+  </form>
+  <script charset='utf-8' src='/assets/js/api-specs-builder.js' type='text/javascript'></script>
+</div>
