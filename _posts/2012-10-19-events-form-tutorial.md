@@ -62,7 +62,7 @@ This works for form and email services like:
 * ConstantContact
 * Any other HTML `<form>`
 
-Just like click events, we’re going to grab the ID or a Class name of the `<form>` we want to track. You’ll go to your site, click view source (or inspect element in Chrome) and look for the id or CSS name in the form code. Copy and Paste it the Event Wizard, name the event so you can keep track of it easily, and you’re done.
+Just like click events, we’re going to grab the ID or a Class name of the `<form>` we want to track. You’ll go to your site, click view source (or inspect element in Chrome) and look for the id or CSS name in the form code. Copy and Paste it in the Event Wizard, name the event so you can keep track of it easily, and you’re done.
 
 More detailed instructions coming soon!
 
