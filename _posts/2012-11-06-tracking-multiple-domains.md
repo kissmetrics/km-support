@@ -56,7 +56,7 @@ This is a little more difficult, because now each domain has its own set of cook
 So far, we've seen two methods that work:
 
 1. Maintain their ID server-side. This is most useful when the user can sign in to both domains, typically if you have a Single Sign-On system. That lets you identify a logged-in customer with the same username/email address/database ID, regardless of which domain they're on.
-2. When someone leaves one domain to go to another, append the destination URL with our [URL API][url], which lets you pass their KM ID from the first domain to the next. This way lets you pass our anonymous IDs from a domain to the next.
+2. When someone leaves one domain to go to another, append the destination URL with our [URL API][url], which lets you pass their KM ID from the first domain to the next. This way lets you pass our anonymous IDs from a domain to the next. Be sure that the same KISSmetrics code block is on both domain's webpages.
 
 Let's look at an example of #2:
 
