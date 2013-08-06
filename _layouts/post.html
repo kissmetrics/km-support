@@ -26,3 +26,9 @@ layout: default
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 -->
+
+<script type="text/javascript">
+// Server-side tracking
+  var tracking_params = {'Support Article Viewed URL':'{{page.url}}','Support Article Viewed Title':'{{page.title}}'};
+  km_track('Viewed Support Article', $.extend({}, tracking_params, utmParams));
+</script>

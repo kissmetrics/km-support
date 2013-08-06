@@ -11,20 +11,42 @@ $(document).ready(function() {
   $('.side a[href="'+path+'"]').css("font-weight", "bold");
   $('.side a[href="'+path+'"]').parents('.collapse').collapse('show');
 
-  // Server-side tracking
-  var tracking_params = {'Support Article Viewed URL':'{{page.url}}','Support Article Viewed Title':'{{page.title}}'};
-  km_track('Viewed Support Article', $.extend({}, tracking_params, utmParams));
-
   // Optimizely
   // https://www.optimizely.com/docs/api
   var exps = window['optimizely'].data.state.activeExperiments;
-  var optimizely_params = {};
-  for (var i=0;i<exps.length;i++) {
-    var exp = exps[i];
-    var exp_name = "Optimizely - " + window['optimizely'].data.experiments[exp].name
-    var var_name = window['optimizely'].data.state.variationNamesMap[exp]
+  if (exps.length > 0) {
+    var optimizely_params = {};
+    for (var i=0;i<exps.length;i++) {
+      var exp = exps[i];
+      var exp_name = "Optimizely - " + window['optimizely'].data.experiments[exp].name
+      var var_name = window['optimizely'].data.state.variationNamesMap[exp]
 
-    optimizely_params[exp_name] = var_name
+      optimizely_params[exp_name] = var_name
+    }
+    km_track('Viewed Optimizely Experiment', optimizely_params);
   }
-  km_track('Viewed Optimizely Experiment', optimizely_params)
+
+  // Scan URL for UTM Parameters
+  var utmParams;
+  (window.onpopstate = function () {
+    var match,
+        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+        query  = window.location.search.substring(1);
+
+    utmParams = {};
+    while (match = search.exec(query)) {
+      var key = decode(match[1]);
+      var val = decode(match[2]);
+      if (key == "utm_source") utmParams["Campaign Source"] = val;
+      if (key == "utm_medium") utmParams["Campaign Medium"] = val;
+      if (key == "utm_campaign") utmParams["Campaign Name"] = val;
+      if (key == "utm_term") utmParams["Campaign Terms"] = val;
+      if (key == "utm_content") utmParams["Campaign Content"] = val;      
+    }
+  })();
+  if (Object.keys(utmParams).length > 0) {
+    km_track('Ad Campaign Hit', utmParams));
+  }
 });
