@@ -28,7 +28,6 @@ layout: default
 -->
 
 <script type="text/javascript">
-// Server-side tracking
-  var tracking_params = {'Support Article Viewed URL':'{{page.url}}','Support Article Viewed Title':'{{page.title}}'};
-  km_track('Viewed Support Article', $.extend({}, tracking_params, utmParams));
+  // Server-side tracking
+  km_track('Viewed Support Article', {'Support Article Viewed URL':'{{page.url}}','Support Article Viewed Title':'{{page.title}}'} );
 </script>

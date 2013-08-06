@@ -47,6 +47,6 @@ $(document).ready(function() {
     }
   })();
   if (Object.keys(utmParams).length > 0) {
-    km_track('Ad Campaign Hit', utmParams));
+    km_track('Ad Campaign Hit', utmParams);
   }
 });
