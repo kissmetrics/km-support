@@ -12,6 +12,7 @@ KISSmetrics primarily allows you to track behaviors on the individual person lev
 
 One option is to stick to using 'identify' on a user-basis, and to pass in the Account name as a property for that user when they sign up.
 
+<!--
 ## Toggle Between ID's in the Same KM Site
 
 Our JavaScript Library was not designed to send to two different sites/API keys. One way of tracking People and tracking Accounts that might work is to actually toggle the person's identity, depending on "whose behalf" you're recording events. 
@@ -27,6 +28,7 @@ _kmq.push(['identify', 'user1']); // toggle back to track future events as a Use
 {% endhighlight %}
 
 Doing it this way gives some separation between people and accounts, because accounts can only do certain events (the ones you're interested in), and people can only do certain events, and they shouldn't cross over.
+-->
 
 ## Track Under Two Accounts 
 
