@@ -53,6 +53,10 @@ In your [site settings][site-settings], follow the smaller link in the Event Lib
 
 In your [site settings][site-settings], follow the smaller link in the Event Library section to "[View Total Counts][count]".
 
+* **I created an event using the Event Library, but I'm not able to see that event when setting up reports. What's wrong?**
+
+One thing to keep in mind is that an event must have data associated with it before it can become available to reports. If there's no data associated with an event, as is often the case with a freshly-created event, you won't be able to use it in reports. To check on the status of an event and see if it has received data, visit the "[View Total Counts][count]" page.
+
 {% include summaries/event_library_summary.html %}
 
 [site-settings]: https://www.kissmetrics.com/settings
