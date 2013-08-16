@@ -16,7 +16,7 @@ We recommend you read [People, Events, and Properties][pep] and [Common Methods]
 Columns will have the bold titles. These are the two required fields:
 
 * **"Identity"** (required): Each entry is a KM identity. We will accept both new identities and identities already in our database.
-* **"Timestamp"** (required, except when importing aliases): Each entry contains a timestamp of when the event/property occurred. The time format is in **seconds as a UTC Unix epoch**.
+* **"Timestamp"** (required, except when importing aliases): Each entry contains a timestamp of when the event/property occurred. The time format is in **seconds as a UTC Unix epoch**. To reformat human-readable time (e.g. 2iofhf9io) into Unix epoch time using Excel, simply apply this formula: `=(A1-25569)*86400` (point A1 to the cell containig the human-readable timestamp). To learn more, check out [this article on MrExcel][mrexcel].
 
 Then include at least one of these three columns, depending on what type of data you're importing:
 
@@ -70,6 +70,7 @@ mrtaft2      | ht@example.com | 1230768000
 
 {% include summaries/csv_import_summary.html %}
 
+[mrexcel]: http://www.mrexcel.com/forum/excel-questions/49217-converting-normal-time-epoch-time-format-using-excel.html
 [pep]: /getting-started/people-events-properties
 [common-methods]: /apis/common-methods
 [sample-csv]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/csv-import-sample.csv
