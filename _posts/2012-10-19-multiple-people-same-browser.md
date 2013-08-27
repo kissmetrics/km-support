@@ -5,7 +5,7 @@ categories: advanced
 author: John Butler
 summary: What happens if multiple people use the same computer? How to reset the KISSmetrics identity tracking when a user logs out.
 ---
-What happens if two people use the same computer and you call `identify` multiple times? KISSmetrics **will not** alias the two named identities together (it will recognize them as separate people). However, it should be noted that any activity before you call `identify` for the second user will be attributed to the first user. Let's see how this works:
+What happens if two people use the same computer and you call `identify` multiple times? KISSmetrics will recognize the different identities as separate people. However, it should be noted that any activity before you call `identify` for the second user will be attributed to the first user. Let's see how this works:
 
 1. Bob comes to your site and is assigned the anonymous identity `qFq2LweZugFNE4o49hLhmRPBW34`
 2. Bob then logs in and you call `identify` telling us that the identity is now `bob@site.com`. The activity from before Bob logs in (when we knew him as `qFq2LweZugFNE4o49hLhmRPBW34`) is automatically tied to `bob@site.com`.

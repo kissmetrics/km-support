@@ -22,11 +22,11 @@ Then include at least one of these three columns, depending on what type of data
 
 * **"Event"** (*optional*): You can add an event name, such as "Signed Up". It does not matter if you currently have data for this event, or if this is a completely new event. **If you are importing events, each row needs an event. To set only properties, set those aside in a separate CSV file.**
 * **"Prop:"Property Name** (*optional*): You can add property columns by giving them the title "Prop:" and then adding the property name. For example, "Prop:Age" or "Prop:Billing Amount". You can include up to 10 property columns.
-* **"Alias"** (*optional*): You can add additional aliases to the KM identity.
+* **"Alias"** (*optional*): in the rare case you are uploading [aliases][alias], you can add additional aliases to the KM identity.
 
 ### Examples
 
-#### Importing only events (`record` command):
+#### Importing only events (`record` command)
 
 Identity | Timestamp  | Event
 -------- | ---------- | ----------
@@ -36,7 +36,7 @@ Identity | Timestamp  | Event
 6        | 1325974373 | Joined Newsletter
 10       | 1325629592 | Subscribed
 
-#### Importing events with optional properties (`record` command with properties):
+#### Importing events with optional properties (`record` command with properties)
 
 Identity | Timestamp  | Event             | Prop:Age  | Prop:Gender | Prop:Favorite Food
 -------- | ---------- | ----------------- | --------- | ----------- | ------------------
@@ -46,7 +46,7 @@ Identity | Timestamp  | Event             | Prop:Age  | Prop:Gender | Prop:Favor
 6        | 1325974373 | Joined Newsletter |           |             | Tapas
 10       | 1325629592 | Subscribed        | 23        | Male        | Apple Pie
 
-#### Importing only properties (`set` command):
+#### Importing only properties (`set` command)
 
 Identity | Timestamp  | Prop:Email Address
 -------- | ---------- | ------------------
@@ -56,7 +56,9 @@ Identity | Timestamp  | Prop:Email Address
 6        | 1325974373 | joe@bob.com
 10       | 1325629592 | phil@bob.com
 
-#### Importing optional aliases (`alias` command):
+#### Importing optional aliases (`alias` command)
+
+It's [uncommon to upload aliases][alias], but this is the format if you absolutely needed to:
 
 Identity     | Alias          | Timestamp 
 ------------ | -------------- | ----------
@@ -74,3 +76,4 @@ mrtaft2      | ht@example.com | 1230768000
 [pep]: /getting-started/people-events-properties
 [common-methods]: /apis/common-methods
 [sample-csv]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/csv-import-sample.csv
+[alias]: /apis/specifications#when-to-alias
