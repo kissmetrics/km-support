@@ -90,23 +90,26 @@ Parameters | Format             | Necessary? | Description
 
 **Example**
 
-    http://trk.kissmetrics.com/a?_k=api-key&_p=bob&_n=bob%40bob.com
+    http://trk.kissmetrics.com/a?_k=api-key&_p=User+12345&_n=bob%40bob.com
 
-This tells us to represent events done by `User 12345` and `bob@bob.com` as having been done by the same person. If you log events or properties to either ID, they all refer back to the same one person. (`bob@bob.com` is passed as `bob%40bob.com` because the `@` needs to be [URL-encoded][encoding].)
+This tells us that events done by `User 12345` and events done by `bob@bob.com` were done by the same person. If you log events or properties to either ID, they all refer back to the same one person.
 
 **Calling `alias` is not reversible, and should be used with some caution.**
 
-There are some scenarios where it may be appropriate to call `alias` directly:
+<a name="when-to-alias"></a>
+### When to Alias
 
-* When you implement KISSmetrics using more than one source of data: combining data from an external KM [integration][integration], server-side libraries, and/or our JavaScript library.
-* When you are identifying people by their email address, and they update their email address within your app.
-* When you are combining someone's anonymous activity and referral data to the data with their usage data after they are a returning customer.
+There are only a handful of scenarios where it is appropriate to directly call `alias`:
+
+* You implement KISSmetrics using more than one source of data: combining data from an external KM [integration][integration], server-side libraries, and/or our JavaScript library.
+* You are identifying people by their email address, and they update their email address within your app.
+* You change your tracking schema to identify people...say, from email address to username.
 
 Notes:
 
-* After calling `alias`, the new alias does not appear in a person's list of Customer IDs unless you have triggered an event or set properties to the new alias.
+* After calling `alias`, the new alias does not appear in a person's list of Customer IDs unless the new alias has triggered an event or has properties set properties.
 * It’s fine to call `alias` more than once with the same pair of identities.
-* It’s fine if a person has more than one alias.
+* It’s natural if a person has more than one alias.
 * The order you pass the two arguments does not matter.
 
 <a name="url-builder"></a>

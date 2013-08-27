@@ -14,7 +14,6 @@ Command    | Description
 `record`   | Tracks that the current person performed an action.
 `set`      | Saves additional properties about the person, which you use to segment groups of people into cohorts.
 `identify` | Sets the identity of the current person, so we know who to attribute future events to.
-`alias`    | Connects two identities together to represent the same person.
 
 <a name="record"></a>
 ## `record`
@@ -51,31 +50,7 @@ Here's an example of an `identify` call in a Ruby app that obtains the current v
 
 For more information on how to handle identities, please refer to this [Identity Management guide][id].
 
-<a name="alias"></a>
-## `alias`
-
-Alias is used to associate one identity with another, so that both identities represent the same person. In other words, if ID-A has done events and ID-B has also done events, after aliasing ID-A and ID-B together, we'll show that both of these ID's had been the same person doing all of the events all along.
-
-[![][alias-regular]][alias-regular]
-
-**Calling `alias` is not reversible, and should be used situationally. If you want to add additional information about a person, setting an additional property usually is enough (for example, adding an email address to someone currently identified by their Facebook ID).**
-
-[![][alias-vs-set]][alias-vs-set]
-
-Our JavaScript Library easily handles the common scenarios of attributing someone's activity while they are anonymous to their post-signup activity, without you having to make the `alias` API call. Please refer to [Identities with the JavaScript Library][js-ids] for more details. However, there are some scenarios where it may be appropriate to call `alias` directly:
-
-* When you implement KISSmetrics using more than one source of data: combining data from an external KM [integration][integration], server-side libraries, and/or our JavaScript library.
-* When you are identifying people by their email address, and they update their email address within your app.
-
-Notes:
-
-* It’s fine to call `alias` more than once with the same pair of identities.
-* It’s fine if a person has more than one alias.
-* The order you pass the two arguments does not matter.
-* After calling `alias`, the new alias does not appear in a person's list of Customer IDs unless you have triggered an event or set properties to the new alias.
-
-[![][alias-zero]][alias-zero]
-
+<a name="examples"></a>
 ## Examples
 Below are some examples for the standard API. Please see APIs for supported languages.
 
@@ -100,8 +75,6 @@ _kmq.push(['record', 'Signed Up', {'_d':1, '_t':1234567890}])
 // Sets the "Gender" property to "Male" for the current person
 _kmq.push(['set', {'gender':'male'}]);  
 
-// Connects "bob" and "bob@bob.com" to represent the same person
-_kmq.push(['alias', 'bob', 'bob@bob.com']);
 {% endhighlight %}
 
 ### PHP
@@ -112,7 +85,6 @@ _kmq.push(['alias', 'bob', 'bob@bob.com']);
  KM::record('Signed Up', array('Plan' => 'Pro', 'Amount' => 99.95));
  KM::record('Signed Up', array('_d' => 1, '_t' => 1234567890));
  KM::set(array('gender'=>'male'));
- KM::alias('bob', 'bob@bob.com');
 ?>
 {% endhighlight %}
 
@@ -123,7 +95,6 @@ KM.record('Viewed Homepage')
 KM.record('Signed Up', {'Plan' => 'Pro', 'Amount' => 99.95})
 KM.record('Signed Up', {'_d' => 1, '_t' => 1234567890})
 KM.set({:gender=>'male', 'Plan Name' => 'Pro'})
-KM.alias('bob', 'bob@bob.com')
 {% endhighlight %}
 
 ### Python
@@ -133,14 +104,7 @@ KM.record('Viewed Homepage');
 KM.record('Signed Up', {'Plan' : 'Pro', 'Amount' : 99.95});
 KM.record('Signed Up', {'_d' : 1, '_t' : 1234567890});
 KM.set({'gender' : 'male'});
-KM.alias('bob', 'bob@bob.com');
 {% endhighlight %}
 
 [js]: /apis/javascript/javascript-specific
 [id]: /getting-started/understanding-identities
-[tips]: /apis/api-tips
-[js-ids]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/understanding-identities/js-ids.pdf
-[integration]: /integrations
-[alias-regular]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/troubleshooting-identities/alias-regular.png
-[alias-vs-set]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/troubleshooting-identities/alias-vs-set.png
-[alias-zero]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/troubleshooting-identities/alias-zero.png

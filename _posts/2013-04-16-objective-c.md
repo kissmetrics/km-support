@@ -5,7 +5,7 @@ categories: apis
 author: Will Rust
 summary: Information about our basic Objective-C/Cocoa library, for iOS and OS X apps.
 ---
-Bring KISSmetrics to your iOS and OS X apps with our Objective-C library. It allows you to record events, set properties and alias users. 
+Bring KISSmetrics to your iOS and OS X apps with our Objective-C library. It allows you to record events and set properties.
 
 ## Setup
 

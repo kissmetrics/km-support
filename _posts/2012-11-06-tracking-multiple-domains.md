@@ -88,7 +88,7 @@ _kmq.push(function() {  // we wrap the code in a function to ensure our library 
 </script>
 {% endhighlight %}
 
-Down the line, if the customer ever goes from being anonymous to providing some identifying info, you'll have to [alias][alias] the anonymized and known id's together, rather than rely on `identify` to do the job. (The URL API treats the transferred ID as a "known" ID.)
+Down the line, if the customer ever goes from being anonymous to providing some identifying info, you'll have to alias the anonymized and known id's together, rather than rely on `identify` to do the job. (The URL API treats the transferred ID as a "known" ID.)
 
 {% highlight html %}
 <script type="text/javascript">
@@ -118,6 +118,5 @@ For reference: [Looking Up Your Current KM ID][km-id]
 
 [url]: /apis/url
 [km-id]: /apis/javascript/javascript-specific#get-your-current-kissmetrics-id
-[alias]: /apis/common-methods#alias
 [js-settings]: https://s3.amazonaws.com/kissmetrics-support-files/assets/apis/javascript/tracking-multiple-domains/include-host.png
 [auto-track]: /apis/javascript/javascript-settings
