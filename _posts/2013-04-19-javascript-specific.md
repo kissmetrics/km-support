@@ -14,8 +14,7 @@ permalink: /apis/javascript/javascript-specific/index.html
 `_kmq.push(['record', 'EVENT_NAME']);` | Records an event.
 `_kmq.push(['record', 'EVENT_NAME', {'PROPERTY_NAME':'VALUE'}]);` | Records an event with additional properties.
 `_kmq.push(['set', {'PROPERTY_NAME':'VALUE'}]);` | Sets properties to the current user.
-`_kmq.push(['identify', 'IDENTITY']);` | Identifies the current person with a **unique** ID, and attributes future events from this browser to this provided ID. If the current person is 'anonymous', it also connects their 'anonymous' ID to the provided ID so we recognize both as being the same person (see `alias` below). Calling `identify` does *not* count as an "event".
-`_kmq.push(['alias', 'ID1', 'ID2']);` | Connects two identities so we recognize both as being the same person. We need to see events done by both ID's; if you want to save additional identifying information like "First Name" or "Last Name", consider using `set` instead. Calling `alias` does *not* count as an "event".
+`_kmq.push(['identify', 'IDENTITY']);` | Identifies the current person with a **unique** ID, and attributes future events from this browser to this provided ID. If the current person is 'anonymous', it also connects their 'anonymous' ID to the provided ID so we recognize both as being the same person (`alias`ing). Calling `identify` does *not* count as an "event".
 
 JavaScript-Specific Methods | Description
 --------------------------- | -----------

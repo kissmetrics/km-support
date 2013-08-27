@@ -37,8 +37,8 @@ The elements panel shows the HTML source of a page in a neat hierarchy. This hel
 As you browse during testing, look for requests to `trk.kissmetrics.com`; these tracking URLs will be structured according to our [API specifications][specs].
 
 * `trk.kissmetrics.com/e` : for `record`ing an event
-* `trk.kissmetrics.com/a` : for `alias`
 * `trk.kissmetrics.com/s` : for `set`ting properties without an event
+* `trk.kissmetrics.com/a` : for `alias`
 
 [![Network Panel][network-ss]][network-ss]
 

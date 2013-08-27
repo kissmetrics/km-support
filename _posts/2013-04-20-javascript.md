@@ -107,9 +107,6 @@ _kmq.push(['record', 'Signed Up', {'Plan':'Pro', 'Amount':99.95}]);
 // Sets the "Gender" property to "Male" for the current person
 _kmq.push(['set', {'gender':'male'}]);  
 
-// Connects "bob" and "bob@bob.com" to represent the same person
-_kmq.push(['alias', 'bob', 'bob@bob.com']);
-
 /* Records an event "Signed Up" in the past.
  * This demonstrates how to pass the '_t' and '_d' from our
  * specifications as regular KISSmetrics properties.
