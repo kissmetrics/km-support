@@ -82,7 +82,7 @@ So for example, if your Mailchimp campaign links to `http://www.yoursite.com/lan
     http://www.yoursite.com/landing?kmi=*|URL:EMAIL|*
 
 [mailchimp]: http://mailchimp.com/
-[external-data]: https://www.kissmetrics.com/external_data
+[external-data]: https://app.kissmetrics.com/external_data
 [merge-tag]: http://kb.mailchimp.com/article/all-the-merge-tags-cheatsheet
 
 [url]: /apis/url

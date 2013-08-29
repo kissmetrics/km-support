@@ -94,7 +94,7 @@ If there are any known site-wide issues, we will post a notice to [status.kissme
 {% include summaries/data_discrepancies_summary.html %}
 
 [status]: http://status.kissmetrics.com
-[event-count]: https://www.kissmetrics.com/product.event_prop_breakdown
+[event-count]: https://app.kissmetrics.com/product.event_prop_breakdown
 [whitepapers]: http://www.advanced-web-metrics.com/docs/accuracy-whitepaper.pdf
 
 [jsid]: /apis/javascript/javascript-identities

@@ -74,8 +74,8 @@ To recap, there are 4 steps:
 [gtm-order]: http://support.google.com/tagmanager/answer/2772421/?hl=en
 
 [evlib]: /tools/event-library
-[evlib-link]: https://www.kissmetrics.com/wizard
-[settings]: https://www.kissmetrics.com/settings
+[evlib-link]: https://app.kissmetrics.com/wizard
+[settings]: https://app.kissmetrics.com/settings
 [js-async]: /apis/javascript/javascript-specific#how-does-it-work-
 
 [live]: /tools/live
