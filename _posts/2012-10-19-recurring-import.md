@@ -115,8 +115,8 @@ CSV files that have been processed will be moved to a folder within your bucket:
 [ss-bucket-5]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/recurring-bucket-5.png
 [ss-bucket-6]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/recurring-bucket-6.png
 
-[1]: https://www.kissmetrics.com/settings
+[1]: https://app.kissmetrics.com/settings
 [2]: https://www.kissmetric.com/external_data
-[csv-new]: https://www.kissmetrics.com/external_data/csv.new
+[csv-new]: https://app.kissmetrics.com/external_data/csv.new
 
 [data]: /apis/data

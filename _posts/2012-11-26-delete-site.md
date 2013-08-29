@@ -32,6 +32,6 @@ We're sorry to see you go, but we would really appreciate hearing about what inf
 [screenshot-1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/delete-site/delete-site-1.jpg
 [screenshot-2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/delete-site/delete-site-2.jpg
 [screenshot-3]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/delete-site/delete-site-3.jpg
-[edit-site]: https://www.kissmetrics.com/product.edit
+[edit-site]: https://app.kissmetrics.com/product.edit
 
-[billing]: https://www.kissmetrics.com/pay
+[billing]: https://app.kissmetrics.com/pay

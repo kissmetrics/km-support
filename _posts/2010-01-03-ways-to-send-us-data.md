@@ -52,5 +52,5 @@ Please refer to this guide for [how to track events that happen offline][offline
 
 [integrations]: /integrations
 
-[settings]: https://www.kissmetrics.com/settings
+[settings]: https://app.kissmetrics.com/settings
 [offline]: /how-tos/tracking-offline-events

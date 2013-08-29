@@ -38,6 +38,6 @@ Similar to the Individual Metrics, we'll list some data about how this person fi
 
 In the main area of Person Details, we provide a calendar of when each particular user was active. Switch between week and month views, and narrow in on what a person did within any particular day. That way, you can "play back" what a person did on that day, as if you were rewatching their activity in [KISSmetrics Live][live].
 
-[mapping]: https://www.kissmetrics.com/mapping
-[metrics]: https://www.kissmetrics.com/metrics
+[mapping]: https://app.kissmetrics.com/mapping
+[metrics]: https://app.kissmetrics.com/metrics
 [live]: /tools/live

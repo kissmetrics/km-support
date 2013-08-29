@@ -133,7 +133,7 @@ If you have an older People Search export or need to convert a Unix timestamp ba
 Just be sure to replace "UNIX_TIMESTAMP" with the appropriate column/row value you want to convert.
 
 [send]: /getting-started/ways-to-send-us-data
-[mapping]: https://www.kissmetrics.com/mapping
+[mapping]: https://app.kissmetrics.com/mapping
 [recurly]: /integrations/recurly
 [import]: /advanced/importing-data
 

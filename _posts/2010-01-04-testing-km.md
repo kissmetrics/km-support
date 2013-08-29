@@ -71,9 +71,9 @@ If you suspect that KISSmetrics’ reports disagrees with the data you were expe
 
 [permissions]: /how-tos/team-permissions
 
-[edit-site]: https://www.kissmetrics.com/product.edit
+[edit-site]: https://app.kissmetrics.com/product.edit
 
-[live]: https://www.kissmetrics.com/live
+[live]: https://app.kissmetrics.com/live
 [live-doc]: /tools/live
 [specs]: /apis/specifications
 [investigation]: /troubleshooting/data-discrepancies#steps-for-investigation

@@ -65,5 +65,5 @@ Event Name | Properties | Identity
 * **Help ticket history**: secure.helpscout.net/conversation/1234567/1234/
 
 [help-scout]: http://www.helpscout.net
-[site-settings]: https://www.kissmetrics.com/settings
+[site-settings]: https://app.kissmetrics.com/settings
 [km-helpscout]: https://secure.helpscout.net/apps/kissmetrics/

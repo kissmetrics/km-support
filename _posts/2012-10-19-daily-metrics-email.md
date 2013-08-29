@@ -15,5 +15,5 @@ You're able to subscribe to a separate email for each of the products you are tr
 
 ![Daily Metrics Email][daily-ss]
 
-[subscribe]: https://www.kissmetrics.com/notifications
+[subscribe]: https://app.kissmetrics.com/notifications
 [daily-ss]: http://f.cl.ly/items/1A0k113r1z2G1U3z1D0T/daily-summary.png

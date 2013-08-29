@@ -27,7 +27,7 @@ If you suspect you have unsubscribed or if the email is not getting delivered fo
 
 * Enter your new password and Save Changes.
 
-[forgot-pw]: https://www.kissmetrics.com/forgot_password
-[edit-account]: https://www.kissmetrics.com/account.edit
+[forgot-pw]: https://app.kissmetrics.com/forgot_password
+[edit-account]: https://app.kissmetrics.com/account.edit
 [change-ss]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/change-password/pwchange.png
 [reset-ss]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/change-password/pwreset.png

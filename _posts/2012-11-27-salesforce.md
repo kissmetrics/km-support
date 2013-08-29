@@ -31,7 +31,7 @@ The Salesforce integration brings in a window to see the KISSmetrics Person Deta
 <apex:page standardController="Contact">
   <apex:iframe
     rendered="{!IF((contact.email != ''), true, false)}"
-    src="https://www.kissmetrics.com/people/find/{!contact.email}?mode=embedded&key=__KEY__&secret=__SECRET__"
+    src="https://app.kissmetrics.com/people/find/{!contact.email}?mode=embedded&key=__KEY__&secret=__SECRET__"
     width="100%"
     scrolling="true"
   />
@@ -51,7 +51,7 @@ You can create an additional Salesforce Page to link to Leads in addition to Con
 
 {% highlight html %}
 <apex:page standardController="Lead">
-  <apex:iframe rendered="{!IF((lead.email != ''), true, false)}" src="https://www.kissmetrics.com/people/find/{!lead.email}?mode=embedded&key=__KEY__&secret=__SECRET__" width="100%" scrolling="true" /> 
+  <apex:iframe rendered="{!IF((lead.email != ''), true, false)}" src="https://app.kissmetrics.com/people/find/{!lead.email}?mode=embedded&key=__KEY__&secret=__SECRET__" width="100%" scrolling="true" /> 
 </apex:page>
 {% endhighlight %}
 

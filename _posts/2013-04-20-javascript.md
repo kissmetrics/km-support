@@ -75,7 +75,7 @@ If you are using the JavaScript library, we automatically track certain events a
   * The Property `Referrer` indicates the page last viewed.
   * Enabling this event can quickly use up your event quota, which is why it is initially disabled.
 
-View all the events here: [https://www.kissmetrics.com/product.js_settings][js-settings]. You can enable/disable these events on this page, too.
+View all the events here: [https://app.kissmetrics.com/product.js_settings][js-settings]. You can enable/disable these events on this page, too.
 
 ## What's Different From Google Analytics
 
@@ -123,8 +123,8 @@ Our JavaScript library depends on cookies to work properly. Browsers do not let 
 {% include summaries/javascript_summary.html %}
 
 [utm]: /integrations/utm-variables#google-analytics-8217-auto-tagging-vs-manual-tagging
-[js-settings]: https://www.kissmetrics.com/product.js_settings
-[settings]:https://www.kissmetrics.com/settings
+[js-settings]: https://app.kissmetrics.com/product.js_settings
+[settings]:https://app.kissmetrics.com/settings
 [local]: /advanced/local-development
 [fields-not-tracked]: /apis/javascript/javascript-specific/protected-form-fields
 

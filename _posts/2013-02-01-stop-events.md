@@ -19,7 +19,7 @@ These are removed by clicking "Delete Event". Unchecking "Show Event" only hides
 
 These events can come from several sources.
 
-* If the events are ones our JavaScript Library is [automatically triggering][js-settings], you can turn them off at [https://www.kissmetrics.com/product.js_settings][settings-link].
+* If the events are ones our JavaScript Library is [automatically triggering][js-settings], you can turn them off at [https://app.kissmetrics.com/product.js_settings][settings-link].
 * If you have API calls on your site, server, or app that generate these events, remove those lines of code.
 * If you have an [integration][integration] sending us these events, refer to the documentation to prevent those from sending to us.
 
@@ -27,4 +27,4 @@ These events can come from several sources.
 [integration]: /integrations
 [js-settings]: /apis/javascript/javascript-settings
 [delete-event]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/stop-events/delete-event.png
-[settings-link]: https://www.kissmetrics.com/product.js_settings
+[settings-link]: https://app.kissmetrics.com/product.js_settings

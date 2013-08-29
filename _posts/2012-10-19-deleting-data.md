@@ -19,9 +19,9 @@ In the [Settings][settings] page, there are two links under the Event Library ar
 
 Following either link brings you to a list of all the events and properties in your site. You can uncheck the box to _hide the data, so that it does not appear in your drop-down list of events and properties to report on._
 
-[settings]: https://www.kissmetrics.com/settings
-[display-names]: https://www.kissmetrics.com/product.edit/#events
-[total-counts]: https://www.kissmetrics.com/product.event_prop_breakdown
+[settings]: https://app.kissmetrics.com/settings
+[display-names]: https://app.kissmetrics.com/product.edit/#events
+[total-counts]: https://app.kissmetrics.com/product.event_prop_breakdown
 
 ### Stop Passing Data
 
@@ -39,17 +39,17 @@ We have a [Raw Data Export][data-export] tool for those on the Small Plan and ab
 3. Rename the events/properties you wish to re-import.
 4. Complete the [re-importing process][import] using either a CSV upload or a server-side API to facilitate the procedure.
 
-Particularly, if you are correcting **Revenue** data, go to your account's Mappings page ([https://www.kissmetrics.com/mapping][mapping]) and set the `Revenue` property to use the renamed property. This will use the new property when calculating the [Revenue Report][revenue].
+Particularly, if you are correcting **Revenue** data, go to your account's Mappings page ([https://app.kissmetrics.com/mapping][mapping]) and set the `Revenue` property to use the renamed property. This will use the new property when calculating the [Revenue Report][revenue].
 
 
-In the most dramatic case, you could use this procedure to transfer data **from this site into a fresh site ([https://www.kissmetrics.com/product.new][new-site])**.
+In the most dramatic case, you could use this procedure to transfer data **from this site into a fresh site ([https://app.kissmetrics.com/product.new][new-site])**.
 
 Note that you should not incur any expenses for importing events over your current monthly limit if it only happens once. 
 
 Sorry that there's not an easier way on our side.... we are looking into better ways to let you clear up data without removing the useful bits.
 
-[revenue]: https://www.kissmetrics.com/revenue
-[mapping]: https://www.kissmetrics.com/mapping
-[new-site]: https://www.kissmetrics.com/product.new
+[revenue]: https://app.kissmetrics.com/revenue
+[mapping]: https://app.kissmetrics.com/mapping
+[new-site]: https://app.kissmetrics.com/product.new
 [data-export]: /apis/data/data-export-setup
 [import]: /advanced/importing-data

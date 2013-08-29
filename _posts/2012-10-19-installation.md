@@ -19,7 +19,7 @@ Below are more resources that will help you install the JavaScript Library on sp
 
 {% include summaries/installation_summary.html %}
 
-[settings]: https://www.kissmetrics.com/settings
+[settings]: https://app.kissmetrics.com/settings
 [top-v-bottom]: /troubleshooting/top-vs-bottom
 [auto]: /apis/javascript/javascript-settings.html
 [tutorial]: /tutorial

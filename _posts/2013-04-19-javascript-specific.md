@@ -241,7 +241,7 @@ We will only use an `<input>` as an identity if its Name attribute is one of the
 
 If the ID includes `_`, that will also work. So `user_id`, `user_name`, and `e_mail` will also be used as identities.
 
-[js-settings]: https://www.kissmetrics.com/product.js_settings
+[js-settings]: https://app.kissmetrics.com/product.js_settings
 
 ### Incompatibility with jQuery .submit()
 
