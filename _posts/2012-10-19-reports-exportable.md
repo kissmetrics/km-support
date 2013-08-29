@@ -39,4 +39,4 @@ KISSmetrics Report | Supports Exporting to CSV?
 [people-search]: /tools/people-search
 [person-details]: /tools/person-details
 [live]: /tools/live
-[breakdown]: https://www.kissmetrics.com/product.event_prop_breakdown
+[breakdown]: https://app.kissmetrics.com/product.event_prop_breakdown

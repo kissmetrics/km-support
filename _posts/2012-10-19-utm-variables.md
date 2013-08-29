@@ -84,7 +84,7 @@ Here's why you'd want to take advantage of Campaign Content: you can use it to t
 
 Double-check that Tagged URLs is ON in [Javascript Settings]. By default, this is turned on.
 
-[Javascript Settings]:https://www.kissmetrics.com/product.js_settings
+[Javascript Settings]:https://app.kissmetrics.com/product.js_settings
 
 ### Why is Google Analytics showing more than KISSmetrics?
 
