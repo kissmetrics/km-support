@@ -72,9 +72,11 @@ img {
   height: 26px;
   width: 198px;
 }
-#header a.km {
-  color: #9ecee1;
+#header .links {
   float: right;
+}
+#header .links a {
+  color: #9ecee1;
   font-size: 13px;
   font-weight: bold;
   line-height: 22px;
@@ -538,7 +540,7 @@ p.critical{
   #wrapper { width: 320px; }
   #footer { width: 320px; }
   .col { width: 260px; }
-  div#header a.km { display: none; }
+  div#header .links a { display: none; }
   .col ul.summary { width: 259px; }
   div#disqus_thread { display: none; } 
   .wistia-embed { width:259px; height:165px; }  
@@ -550,7 +552,7 @@ p.critical{
   #wrapper { width: 480px; }
   #footer { width: 480px; }
   .col { width: 420px; }
-  div#header a.km { display: block; } 
+  div#header .links a { display: inline-block; } 
   .col ul.summary { width: 419px; }
   div#disqus_thread { display: block; }
   .wistia-embed { width:419px; height:265px; }
@@ -562,7 +564,7 @@ p.critical{
   #wrapper { width: 768px; }
   #footer { width: 768px; }
   .col { width: 708px; }
-  div#header a.km { display: block; }
+  div#header .links a { display: inline-block; }
   .col ul.summary { width: 707px; }
   div#disqus_thread { display: block; }
   .wistia-embed { width:707px; height:445px; }
@@ -574,7 +576,7 @@ p.critical{
   #wrapper { width: 960px; }
   #footer { width: 960px; }
   .col { width: 620px; }
-  div#header a.km { display: block; }
+  div#header .links a { display: inline-block; }
   .col ul.summary { width: 619px; }
   div.col.side input.st-search-input { width: 180px; }
   div#disqus_thread { display: block; }
