@@ -107,7 +107,7 @@ There are only a handful of scenarios where it is appropriate to directly call `
 
 Notes:
 
-* After calling `alias`, the new alias does not appear in a person's list of Customer IDs unless the new alias has triggered an event or has properties set properties.
+* After calling `alias`, the new alias does not appear in a person's list of Customer IDs unless the new alias has triggered an event or has properties set on it.
 * It’s fine to call `alias` more than once with the same pair of identities.
 * It’s natural if a person has more than one alias.
 * The order you pass the two arguments does not matter.
