@@ -227,6 +227,10 @@ img {
   font: 'Courier', monospace;
 }
 
+.col .content {
+  display: inline-block;
+}
+
 table {
   border-collapse: collapse;
   margin-bottom: 20px;

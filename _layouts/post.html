@@ -1,31 +1,19 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
+<div class="content">
+  <h1>{{ page.title }}</h1>
 
-{{ content }}
+  {{ content }}
 
-{% if page.author %}
-  <p>Contributed by {{page.author}}</p>
-{% endif %}
-
-<div class="alert">
-  Is anything on this page unclear? <a href="{{site.github_url}}{{ page.path }}">Suggest edits on Github!</a>
+  {% if page.author %}
+    <p>Contributed by {{page.author}}</p>
+  {% endif %}
 </div>
 
-<!--
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'kmsupport';
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
--->
+<div class="alert alert-block">
+  Is anything on this page unclear? <a href="{{site.github_url}}{{ page.path }}">Suggest edits on Github!</a>
+</div>
 
 <script type="text/javascript">
   // Server-side tracking
