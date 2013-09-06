@@ -1,43 +1,8 @@
 ---
 layout: default
 ---
-<div class='col side' data-swiftype-index='false'>
-  <div id='st-results-container'></div>
-  <script type='text/javascript'>
-    //<![CDATA[
-    var Swiftype = window.Swiftype || {};
-    (function() {
-      Swiftype.key = 'S8c68zdgy5Q4EbbTkhDV';
-      Swiftype.inputElement = '#st-search-input';
-      Swiftype.resultContainingElement = '#st-results-container';
-      Swiftype.attachElement = '#st-search-input';
-      Swiftype.renderStyle = "overlay";
-    
-      var script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.async = true;
-      script.src = "//swiftype.com/embed.js";
-      var entry = document.getElementsByTagName('script')[0];
-      entry.parentNode.insertBefore(script, entry);
-    }());
-    //]]>
-  </script>
-  <div class='menu'>
-    {% if page.portal == "developer" %}
-      {% include _sidebar_developer.html %}
-    {% elsif page.portal == "university" %}
-      {% include _sidebar_university.html %}
-    {% else %}
-      {% include _sidebar_full.html %}
-    {% endif %}
-  </div>
-</div>
-
-<div class='col' data-swiftype-index='true'>
-
-  <div class="content">
+<div class="content">
   <h1>{{ page.title }}</h1>
-
   {{ content }}
 
   {% if page.author %}
@@ -53,8 +18,3 @@ layout: default
   // Server-side tracking
   km_track('Viewed Support Article', {'Support Article Viewed URL':'{{page.url}}','Support Article Viewed Title':'{{page.title}}'} );
 </script>
-  
-</div>
-
-
-
