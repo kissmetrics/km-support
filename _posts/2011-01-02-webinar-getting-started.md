@@ -6,13 +6,10 @@ author: Charles Liu
 summary: This is a recorded webinar that walks you through the initial setup, creating events to track, and then creating reports to view data from those events.
 ---
 <div id="wistia_9d92cc05c5" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
-<!--<div id="wistia_9d92cc05c5" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div>-->
 <script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-	
 </script>
 
 <script>
-
 /** 
  * Helper function for loading KM trackable videos.
  * 
@@ -42,7 +39,6 @@ function loadKMTrackableVideo (id, width, height, name) {
 	wistiaEmbed.bind("end", function() {
 		_kmq.push(['record', 'Finished video - ' + name]);
 	});
-
 }
 
 loadKMTrackableVideo("9d92cc05c5", 640, 400, "Getting Started Webinar");

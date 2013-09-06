@@ -1,18 +1,15 @@
 ---
 layout: post
-title: How to Build Reports
-categories: tutorial
-author: Charles Liu
-summary: How to build a sample funnel report.
+title: Events and Properties
+categories: [tutorial, event-library-tutorial]
+author: Lars Lofgren
+summary: Segment your customers with Properties.
 ---
-<div id="wistia_eb204fab1a" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
-<!--<div id="wistia_eb204fab1a" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div>-->
+<div id="wistia_1083756b5d" class="wistia-embed" data-video-width="640" data-video-height="400"></div>
 <script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-	
 </script>
 
 <script>
-
 /** 
  * Helper function for loading KM trackable videos.
  * 
@@ -42,8 +39,7 @@ function loadKMTrackableVideo (id, width, height, name) {
 	wistiaEmbed.bind("end", function() {
 		_kmq.push(['record', 'Finished video - ' + name]);
 	});
-
 }
 
-loadKMTrackableVideo("eb204fab1a", 640, 400, "How to Build Reports");
+loadKMTrackableVideo("1083756b5d", 640, 400, "Events and Properties");
 </script>

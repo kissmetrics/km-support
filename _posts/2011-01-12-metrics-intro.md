@@ -1,19 +1,15 @@
 ---
 layout: post
-title: Installing KM in Individual HTML Files
+title: Introduction to Metrics
 categories: tutorial
 author: Lars Lofgren
-tags: [installation]
-summary: Learn how to install the JavaScript Library for individual HTML files.
+summary: Create a simple metric to view your event data.
 ---
-<div id="wistia_256139b3f9" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
-<!--<div id="wistia_256139b3f9" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div>-->
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-	
+<div id="wistia_4bf05cd105" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
+<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">	
 </script>
 
 <script>
-
 /** 
  * Helper function for loading KM trackable videos.
  * 
@@ -43,8 +39,7 @@ function loadKMTrackableVideo (id, width, height, name) {
 	wistiaEmbed.bind("end", function() {
 		_kmq.push(['record', 'Finished video - ' + name]);
 	});
-
 }
 
-loadKMTrackableVideo("256139b3f9", 640, 400, "Installing KM on Individual HTML Files");
+loadKMTrackableVideo("4bf05cd105", 640, 400, "Introduction to Metrics");
 </script>

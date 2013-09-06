@@ -1,18 +1,16 @@
 ---
 layout: post
-title: Featuring - Reports
+title: Installing KM in Individual HTML Files
 categories: tutorial
 author: Lars Lofgren
-summary: A video introduction to our Reports tab.
+tags: [installation]
+summary: Learn how to install the JavaScript Library for individual HTML files.
 ---
-<div id="wistia_b683f1acd1" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
-<!--<div id="wistia_b683f1acd1" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div>-->
+<div id="wistia_256139b3f9" class="wistia-embed" data-video-width="640" data-video-height="400"></div>
 <script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-	
 </script>
 
 <script>
-
 /** 
  * Helper function for loading KM trackable videos.
  * 
@@ -42,8 +40,7 @@ function loadKMTrackableVideo (id, width, height, name) {
 	wistiaEmbed.bind("end", function() {
 		_kmq.push(['record', 'Finished video - ' + name]);
 	});
-
 }
 
-loadKMTrackableVideo("b683f1acd1", 640, 400, "Blank Slate: Reports");
+loadKMTrackableVideo("256139b3f9", 640, 400, "Installing KM on Individual HTML Files");
 </script>

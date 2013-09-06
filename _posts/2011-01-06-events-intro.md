@@ -6,13 +6,10 @@ author: Lars Lofgren
 summary: An introduction to tracking Events.
 ---
 <div id="wistia_455948e2be" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
-<!--<div id="wistia_455948e2be" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div>-->
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-	
+<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">	
 </script>
 
 <script>
-
 /** 
  * Helper function for loading KM trackable videos.
  * 
@@ -42,7 +39,6 @@ function loadKMTrackableVideo (id, width, height, name) {
 	wistiaEmbed.bind("end", function() {
 		_kmq.push(['record', 'Finished video - ' + name]);
 	});
-
 }
 
 loadKMTrackableVideo("455948e2be", 640, 400, "Introduction to Events");

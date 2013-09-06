@@ -1,18 +1,15 @@
 ---
 layout: post
-title: Events and Properties
-categories: [tutorial, event-library-tutorial]
+title: Featuring - Reports
+categories: tutorial
 author: Lars Lofgren
-summary: Segment your customers with Properties.
+summary: A video introduction to our Reports tab.
 ---
-<div id="wistia_1083756b5d" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
-<!-- <div id="wistia_1083756b5d" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div> -->
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-	
+<div id="wistia_b683f1acd1" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
+<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">	
 </script>
 
 <script>
-
 /** 
  * Helper function for loading KM trackable videos.
  * 
@@ -42,8 +39,7 @@ function loadKMTrackableVideo (id, width, height, name) {
 	wistiaEmbed.bind("end", function() {
 		_kmq.push(['record', 'Finished video - ' + name]);
 	});
-
 }
 
-loadKMTrackableVideo("1083756b5d", 640, 400, "Events and Properties");
+loadKMTrackableVideo("b683f1acd1", 640, 400, "Blank Slate: Reports");
 </script>

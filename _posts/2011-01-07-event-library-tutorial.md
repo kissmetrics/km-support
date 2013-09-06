@@ -1,18 +1,20 @@
 ---
 layout: post
-title: Introduction to Metrics
+title: Event Library
 categories: tutorial
 author: Lars Lofgren
-summary: Create a simple metric to view your event data.
+summary: The Event Library is used to register new events on your website without additional code changes.
+permalink: /tutorial/event-library-tutorial/index.html
 ---
-<div id="wistia_4bf05cd105" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
-<!--<div id="wistia_4bf05cd105" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div>-->
+In KISSmetrics, there are two types of events. Those that can easily be set up from within KISSmetrics and those that need help from a developer or engineer. The [Event Library][event-library] is perfect for the easy ones that you can set up right now without constantly adding code to your site.
+
+## Video Introduction
+
+<div id="wistia_53aa1d1fd5" class="wistia-embed" data-video-width="640" data-video-height="400"></div>
 <script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-	
 </script>
 
 <script>
-
 /** 
  * Helper function for loading KM trackable videos.
  * 
@@ -42,8 +44,11 @@ function loadKMTrackableVideo (id, width, height, name) {
 	wistiaEmbed.bind("end", function() {
 		_kmq.push(['record', 'Finished video - ' + name]);
 	});
-
 }
 
-loadKMTrackableVideo("4bf05cd105", 640, 400, "Introduction to Metrics");
+loadKMTrackableVideo("53aa1d1fd5", 640, 400, "Events Library Introduction");
 </script>
+
+{% include summaries/event_library_tutorial_summary.html %}
+
+[event-library]: https://www.kissmetrics.com/wizard

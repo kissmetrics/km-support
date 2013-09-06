@@ -6,13 +6,10 @@ author: Lars Lofgren
 summary: Trigger events when someone clicks on an element.
 ---
 <div id="wistia_bc913098c2" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
-<!-- <div id="wistia_bc913098c2" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div> -->
 <script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-	
 </script>
 
 <script>
-
 /** 
  * Helper function for loading KM trackable videos.
  * 
@@ -42,12 +39,10 @@ function loadKMTrackableVideo (id, width, height, name) {
 	wistiaEmbed.bind("end", function() {
 		_kmq.push(['record', 'Finished video - ' + name]);
 	});
-
 }
 
 loadKMTrackableVideo("bc913098c2", 640, 400, "Events: Clicks On");
 </script>
-<br />
 
 ## Create the Event
 
