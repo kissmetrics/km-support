@@ -27,14 +27,14 @@ km_track = function(event_name, props) {
   {
     jQuery.ajax({
       type: 'post',
-      url: 'https://www.kissmetrics.com/services/track',
+      url: 'https://app.kissmetrics.com/services/track',
       data: params.join('&')
     });
   }
   else
   {
     var request = new Request.HTML({
-      url: 'https://www.kissmetrics.com/services/track',
+      url: 'https://app.kissmetrics.com/services/track',
       data: params.join("&")
     }).send();
   }

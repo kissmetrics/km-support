@@ -42,9 +42,9 @@ Excited yet? Learn how to [set up events][create-events] so you can get going!
 [4]: https://s3.amazonaws.com/kissmetrics-support-files/assets/overview/5awesome4.png
 [5]: https://s3.amazonaws.com/kissmetrics-support-files/assets/overview/5awesome5.png
 
-[metrics]: http://www.kissmetrics.com/demo/metrics
-[funnels]: http://www.kissmetrics.com/demo/reports/funnel/
-[cohort]: http://www.kissmetrics.com/demo/reports/cohort/
-[people-search]: http://www.kissmetrics.com/demo/people
-[individual]: http://www.kissmetrics.com/demo/people/detail/
+[metrics]: http://app.kissmetrics.com/demo/metrics
+[funnels]: http://app.kissmetrics.com/demo/reports/funnel/
+[cohort]: http://app.kissmetrics.com/demo/reports/cohort/
+[people-search]: http://app.kissmetrics.com/demo/people
+[individual]: http://app.kissmetrics.com/demo/people/detail/
 [create-events]: /getting-started/ways-to-send-us-data
