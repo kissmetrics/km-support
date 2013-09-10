@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events - Clicks On an Item
+title: Clicks On Events
 categories: [tutorial, event-library-tutorial]
 author: Lars Lofgren
 summary: Trigger events when someone clicks on an element.
