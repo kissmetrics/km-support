@@ -19,7 +19,7 @@ From here, you can:
 If you would like to refer to our different pricing plans, please go to [http://www.kissmetrics.com/pricing][pricing].
 
 [perms]: /how-tos/team-permissions#owner
-[account]: https://www.kissmetrics.com/account
-[pay]: https://www.kissmetrics.com/pay
-[history]: https://www.kissmetrics.com/pay.history
+[account]: https://app.kissmetrics.com/account
+[pay]: https://app.kissmetrics.com/pay
+[history]: https://app.kissmetrics.com/pay.history
 [pricing]: http://www.kissmetrics.com/pricing

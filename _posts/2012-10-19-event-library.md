@@ -59,8 +59,8 @@ One thing to keep in mind is that an event must have data associated with it bef
 
 {% include summaries/event_library_summary.html %}
 
-[site-settings]: https://www.kissmetrics.com/settings
-[event-library]: https://www.kissmetrics.com/wizard
+[site-settings]: https://app.kissmetrics.com/settings
+[event-library]: https://app.kissmetrics.com/wizard
 [auto-track]: /apis/javascript#events-automatically-tracked
 
 [categories]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/event-library/event-categories.png
@@ -69,6 +69,6 @@ One thing to keep in mind is that an event must have data associated with it bef
 [create-2]: /tutorial/event-library-tutorial/events-clicks-tutorial
 [create-3]: /tutorial/event-library-tutorial/events-form-tutorial
 
-[display]: https://www.kissmetrics.com/product.edit/#props
-[count]: https://www.kissmetrics.com/product.event_prop_breakdown/
+[display]: https://app.kissmetrics.com/product.edit/#props
+[count]: https://app.kissmetrics.com/product.event_prop_breakdown/
 [dyn-elem]: /how-tos/dynamic-elements

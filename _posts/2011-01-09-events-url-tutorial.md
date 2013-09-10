@@ -115,5 +115,5 @@ To quickly test your URL pattern without creating an event, you can open up your
 
 [visits-the-url]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/event-library/visits-the-url.png
 [page-views]: /apis/javascript#page-views
-[js-settings]: https://www.kissmetrics.com/product.js_settings
+[js-settings]: https://app.kissmetrics.com/product.js_settings
 [wildcards]: /tools/event-library/events-url/wildcards

@@ -108,7 +108,7 @@ As mentioned above, you can segment your revenue and customers using your existi
 [revenue-segments]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/revenue-report/revenue-segments.png
 
 [send]: /getting-started/ways-to-send-us-data
-[mapping]: https://www.kissmetrics.com/mapping
+[mapping]: https://app.kissmetrics.com/mapping
 [recurly]: /integrations/recurly
 [import]: /advanced/importing-data
 
