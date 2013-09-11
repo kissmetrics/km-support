@@ -7,7 +7,7 @@ summary: See KISSmetrics data within your Salesforce account.
 ---
 **This integration requires:**
 
-* Salesforce Developer Edition (Free) at [http://developer.force.com/][devforce]
+* Salesforce Enterprise Edition (the integration requires the ability to create a custom page)
 * An existing KISSmetrics account
 * KISSmetrics KEY and SECRET from your KISSmetrics account. Please email [support@kissmetrics.com][request] for your unique KISSmetrics account KEY and SECRET for Salesforce.
 
