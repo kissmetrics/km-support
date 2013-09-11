@@ -7,7 +7,7 @@ summary: See KISSmetrics data within your Salesforce account.
 ---
 **This integration requires:**
 
-* Salesforce Enterprise Edition (the integration requires the ability to create a custom page)
+* A Salesforce account. The integration requires the ability to [create a Visualforce page][visualforce-page], which should be available in every edition.
 * An existing KISSmetrics account
 * KISSmetrics KEY and SECRET from your KISSmetrics account. Please email [support@kissmetrics.com][request] for your unique KISSmetrics account KEY and SECRET for Salesforce.
 
@@ -55,7 +55,7 @@ You can create an additional Salesforce Page to link to Leads in addition to Con
 </apex:page>
 {% endhighlight %}
 
-[devforce]: http://developer.force.com/
+[visualforce-page]: http://na8.salesforce.com/help/doc/en/pages_creating.htm
 [request]: mailto:support@kissmetrics.com?subject=%5BSalesforce%5D%20Requesting%20Access
 
 [ssoverview]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/salesforce/overview.png
