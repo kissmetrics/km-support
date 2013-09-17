@@ -16,6 +16,45 @@ Avg Customers / {Day/Week/Month} | The average number of **paying** customers pe
 Avg {Daily/Weekly/Monthly} Churn | The average rate that **paying** customers churn per Day/Week/Month
 [Churn][churn] | The number of customers who stop paying. How this is counted depends on whether you are using a `Canceled` event (see your [site mappings][mapping]).
 
+<div id="wistia_3f023d87a8" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
+<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js"> 
+</script>
+
+<script>
+/** 
+ * Helper function for loading KM trackable videos.
+ * 
+ * id     - The Wistia video ID
+ * width  - The player width
+ * height - The player height
+ * name   - The name of the video. This can be anything and
+    will be appended to the event logged in KM.
+ */
+
+function loadKMTrackableVideo (id, width, height, name) {
+  wistiaEmbed = Wistia.embed(id, {
+    videoWidth: width,
+    videoHeight: height,
+    controlsVisibleOnLoad: true
+  });
+
+  // Begin binding KISSmetrics tracking
+  wistiaEmbed.bind("play", function() {
+    _kmq.push(['record', 'Played video - ' + name]);
+  });
+
+  wistiaEmbed.bind("pause", function() {
+    _kmq.push(['record', 'Paused video - ' + name]);
+  });
+
+  wistiaEmbed.bind("end", function() {
+    _kmq.push(['record', 'Finished video - ' + name]);
+  });
+}
+
+loadKMTrackableVideo("3f023d87a8", 640, 400, "Blank Slate: Revenue Report");
+</script>
+
 ## Introduction
 
 Chances are, you are using analytics to increase the number of people using your product, so that they can ultimately increase your revenue. The Revenue Report gives you an overall picture of your revenue. Furthermore, you can segment your paying customers using your existing KISSmetrics properties. For example, you might be interested in…
