@@ -5,7 +5,7 @@ categories: overview
 author: Eric Fung
 summary: 5 awesome things you can do within a week of installing KISSmetrics.
 ---
-With KISSmetrics, you'll get the information you need to make better product and marketing decisions. KISSmetrics works through a combination of getting our Javascript on your site and setting up custom events to measure the most important behaviors that your customers take on your site.  
+With KISSmetrics, you'll get the information you need to make better product and marketing decisions. KISSmetrics works through a combination of getting our Javascript on your site and setting up custom events to measure the most important behaviors that your customers take on your site.
 
 Record a new event for each action you are measuring: for example, when a visitor views a landing page, or signs up, or purchases. These events are the key building blocks that will allow you to...
 
@@ -42,9 +42,9 @@ Excited yet? Learn how to [set up events][create-events] so you can get going!
 [4]: https://s3.amazonaws.com/kissmetrics-support-files/assets/overview/5awesome4.png
 [5]: https://s3.amazonaws.com/kissmetrics-support-files/assets/overview/5awesome5.png
 
-[metrics]: http://app.kissmetrics.com/demo/metrics
-[funnels]: http://app.kissmetrics.com/demo/reports/funnel/
-[cohort]: http://app.kissmetrics.com/demo/reports/cohort/
-[people-search]: http://app.kissmetrics.com/demo/people
-[individual]: http://app.kissmetrics.com/demo/people/detail/
+[metrics]: https://demo.kissmetrics.com/metrics
+[funnels]: https://demo.kissmetrics.com/reports/funnel/
+[cohort]: https://demo.kissmetrics.com/reports/cohort/
+[people-search]: https://demo.kissmetrics.com/people
+[individual]: https://demo.kissmetrics.com/people/detail/
 [create-events]: /getting-started/ways-to-send-us-data

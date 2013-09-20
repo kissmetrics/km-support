@@ -5,7 +5,7 @@ categories: [tutorial, event-library-tutorial]
 author: Lars Lofgren
 summary: Trigger events when someone clicks on an element.
 ---
-<div id="wistia_bc913098c2" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
+<div id="wistia_bc913098c2" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400"></div>
 
 ## Create the Event
 

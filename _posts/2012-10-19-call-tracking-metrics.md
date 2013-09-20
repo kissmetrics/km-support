@@ -22,21 +22,7 @@ With Call Tracking Metrics **AND** KISSmetrics, you can connect the dots between
 
 # Demonstration Video
 
-<div id="wistia_gik1m2517k" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
-<!-- <div id="wistia_gik1m2517k" class="wistia_embed" style="width:640px;height:400px;" data-video-width="640" data-video-height="400">&nbsp;</div> -->
-
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/concat/E-v1.js">
-</script>
-
-<script>
-wistiaEmbed = Wistia.embed("gik1m2517k", {
-  version: "v1",
-  videoWidth: 640,
-  videoHeight: 400,
-  volumeControl: true,
-  controlsVisibleOnLoad: true
-});
-</script>
+<div id="wistia_gik1m2517k" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400"></div>
 
 ## Setup
 
@@ -93,3 +79,9 @@ Entering an email address aliases the email to the caller's phone number, so tha
 [km-settings]: https://calltrackingmetrics.com/accounts/kissmetrics_settings
 
 [ctm-edit]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/calltrackingmetrics/ctm-edit.png
+
+<script charset="ISO-8859-1" src="http://fast.wistia.com/static/concat/E-v1.js">
+</script>
+<script type="text/javascript">
+loadKMTrackableVideo("gik1m2517k", "CallRail Integration");
+</script>
