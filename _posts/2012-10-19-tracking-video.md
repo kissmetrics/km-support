@@ -26,7 +26,7 @@ This is what your full embed code might look like:
 {% highlight html %}
 <!-- Load the video with the API enabled -->
 <iframe id="player1" src="http://player.vimeo.com/video/7100569?player_id=player1&api=1" width="540" height="304" frameborder="0" webkitallowfullscreen></iframe>
- 
+
 <!-- Load Froogaloop, Vimeo's JS API -->
 <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
 {% endhighlight %}

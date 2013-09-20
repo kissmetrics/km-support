@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // Bootstrap menu icons
-  $('.collapse').on('show', function(){ 
+  $('.collapse').on('show', function(){
     $(this).parent().find(".icon-chevron-right").removeClass("icon-chevron-right").addClass("icon-chevron-down");
   }).on('hide', function(){
     $(this).parent().find(".icon-chevron-down").removeClass("icon-chevron-down").addClass("icon-chevron-right");
@@ -26,7 +26,7 @@ $(document).ready(function() {
     km_track('Viewed Optimizely Experiment', optimizely_params);
   }
 
-  // Scan URL for UTM Parameters
+  // Scan URL for UTM Parameters and Record Account-level Ad Hits
   var utmParams;
   (window.onpopstate = function () {
     var match,
@@ -43,10 +43,34 @@ $(document).ready(function() {
       if (key == "utm_medium") utmParams["Campaign Medium"] = val;
       if (key == "utm_campaign") utmParams["Campaign Name"] = val;
       if (key == "utm_term") utmParams["Campaign Terms"] = val;
-      if (key == "utm_content") utmParams["Campaign Content"] = val;      
+      if (key == "utm_content") utmParams["Campaign Content"] = val;
     }
   })();
   if (Object.keys(utmParams).length > 0) {
     km_track('Ad Campaign Hit', utmParams);
   }
 });
+
+/* KM Tracking for Embedded Wistia Videos
+ * id     - The Wistia video ID
+ * width  - The player width
+ * height - The player height
+ * name   - The name of the video. This can be anything and
+ *          will be used in the event name logged in KM.
+ */
+function loadKMTrackableVideo (id, name) {
+  wistiaEmbed = Wistia.embed(id);
+
+  // Begin binding KISSmetrics tracking
+  wistiaEmbed.bind("play", function() {
+    _kmq.push(['record', 'Played video - ' + name]);
+  });
+
+  wistiaEmbed.bind("pause", function() {
+    _kmq.push(['record', 'Paused video - ' + name]);
+  });
+
+  wistiaEmbed.bind("end", function() {
+    _kmq.push(['record', 'Finished video - ' + name]);
+  });
+}

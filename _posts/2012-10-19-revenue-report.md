@@ -17,43 +17,6 @@ Avg {Daily/Weekly/Monthly} Churn | The average rate that **paying** customers ch
 [Churn][churn] | The number of customers who stop paying. How this is counted depends on whether you are using a `Canceled` event (see your [site mappings][mapping]).
 
 <div id="wistia_3f023d87a8" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js"> 
-</script>
-
-<script>
-/** 
- * Helper function for loading KM trackable videos.
- * 
- * id     - The Wistia video ID
- * width  - The player width
- * height - The player height
- * name   - The name of the video. This can be anything and
-    will be appended to the event logged in KM.
- */
-
-function loadKMTrackableVideo (id, width, height, name) {
-  wistiaEmbed = Wistia.embed(id, {
-    videoWidth: width,
-    videoHeight: height,
-    controlsVisibleOnLoad: true
-  });
-
-  // Begin binding KISSmetrics tracking
-  wistiaEmbed.bind("play", function() {
-    _kmq.push(['record', 'Played video - ' + name]);
-  });
-
-  wistiaEmbed.bind("pause", function() {
-    _kmq.push(['record', 'Paused video - ' + name]);
-  });
-
-  wistiaEmbed.bind("end", function() {
-    _kmq.push(['record', 'Finished video - ' + name]);
-  });
-}
-
-loadKMTrackableVideo("3f023d87a8", 640, 400, "Blank Slate: Revenue Report");
-</script>
 
 ## Introduction
 
@@ -122,7 +85,7 @@ We realize that these two options may not sufficiently define churn for every bu
     Lifetime Value = Average Revenue per Customer / Total Churn Rate
 
 To simplify further:
-    
+
     Lifetime Value = (Total Revenue / Total Customers) /
        (Total Number of People who Churned / Total Customers)
     Lifetime Value = Total Revenue / Number of People who Churned
@@ -153,3 +116,9 @@ As mentioned above, you can segment your revenue and customers using your existi
 
 [churn]: #churn-what-about-customers-who-stop-paying-
 [ltv]: #lifetime-value
+
+<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
+</script>
+<script type="text/javascript">
+loadKMTrackableVideo("3f023d87a8", "Blank Slate: Revenue Report");
+</script>
