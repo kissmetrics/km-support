@@ -69,7 +69,7 @@ What's the starting point? Find your current KPIs for your business.
   * <http://blog.kissmetrics.com/conversion-funnel-survival-guide/>
   * <http://blog.kissmetrics.com/saas-activation/>
 
-[demo]: https://app.kissmetrics.com/demo
+[demo]: https://demo.kissmetrics.com/
 [blog]: http://blog.kissmetrics.com
 [avinash]: http://www.kaushik.net/avinash/
 
