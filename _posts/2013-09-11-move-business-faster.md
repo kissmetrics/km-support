@@ -3,63 +3,78 @@ layout: post
 title: Step 0 - How to Use Analytics to Move Your Business Faster
 categories: learn
 portal: university
-published: false
+summary: How does analytics fit into improving my business?
 ---
-It's hard to encapsulate *everything* that KISSmetrics customers can do. It's more effective to show than to tell. Here is the **[KISSmetrics Demo][demo]**, which shows reports that an example business might run regularly. As you'll notice, the types of reports are tailored to whether the business is Subscription-based, E-commerce, or a Mobile App.
+<div id="wistia_i64qus5i5c" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400"></div>
 
-For people new to the world of analytics, pay attention to what is being studied here. We excel at helping reveal **Customer Lifecycle**. What differentiates your loyal customers from the customers on-the-fence?
+We can't show you absolutely *all* the ways our customers use KISSmetrics to be successful, but we can point you in the right direction. Check out:
 
-For people who purchased KISSmetrics to achieve some set objectives, it's still helpful to look through the demo to get familiar with the reports and where everything is laid out.
+**[KISSmetrics Demo Account][demo]**
 
-Our successful customers use KISSmetrics to analyze:
+See how a business might set up its different *reports* (Metrics, Funnels, Cohort Reports, and People Searches). You can switch the demo to look at reports for different business types:
 
-* Revenue
-* A/B test experiments
-* Ad campaigns or other URL-tagged marketing channels
+* Subscription-based
+* E-commerce
+* A Mobile App
+
+The question you should consider is this:
+
+**What Key Performance Indicators (KPIs) are important for you to be tracking right now?**
+
+If you're a total beginner, our successful customers use KISSmetrics to analyze *revenue*, *A/B test experiments*, and *ad campaigns or other URL-tagged marketing channels*. There are also blog links below to help give you some ideas.
 
 # Exercise
 
-Looking at the *metrics* or *funnels*, pick one you are interested in setting up first.
+<div class="alert alert-success alert-block">
+Using the KISSmetrics Demo account's <em>Metrics</em> or <em>Funnels</em> as a guide, list a few of the KPIs you will be using KISSmetrics to measure.
+</div>
 
-* Count the number of people who *{fill in the blank}*
-* On average, it takes this long for people to *{ }* after *{ }*
+# Key Takeaways
+
+* Using the demo, get acquainted with the tools available in KISSmetrics.
+* Have an idea of what KPIs you will be using KISSmetrics for.
+
+# Coming Up Next
+
+* Once you identify your KPIs, we can figure out what *KISSmetrics events* are needed to find that KPI.
 
 # Additional Reading
 
-Imitation takes you only so far. To point you in the right direction, we maintain the KISSmetrics blog. You don't have to read through all of these at once, but remember to come back to these articles from time to time. You'll find it immensely useful to get familiar with common tactics in analytics. The more people on your team who can think analytically, the easier it is to make **smart** decisions for your business.
+The [KISSmetrics blog][blog] and [Occam's Razor][avinash] are both great resources for learning about analytics. You don't have to read through all of these at once, but remember to come back to these articles from time to time. You'll find it immensely useful to get familiar with common tactics in analytics. The more people on your team who can think analytically, the easier it is to make **smart** decisions for your business.
 
 ## Understanding Analytics
 What's the starting point? Find your current KPIs for your business.
 
-* General: http://blog.kissmetrics.com/make-web-analytics-work/
-* Understand the story behind the data: http://blog.kissmetrics.com/you-vs-the-data/
-* Acquisition: http://blog.kissmetrics.com/guide-to-customer-acquisition/
-* Activation: http://blog.kissmetrics.com/saas-activation/
-* Retention: http://blog.kissmetrics.com/improve-churn-rate/
-* Referral: http://blog.kissmetrics.com/the-6-best-growth-hacks/
-* Revenue/LTV: http://blog.kissmetrics.com/how-to-calculate-lifetime-value/
+* General: <http://blog.kissmetrics.com/make-web-analytics-work/>
+* Understand the story behind the data: <http://blog.kissmetrics.com/you-vs-the-data/>
+* Acquisition: <http://blog.kissmetrics.com/guide-to-customer-acquisition/>
+* Activation: <http://blog.kissmetrics.com/saas-activation/>
+* Retention: <http://blog.kissmetrics.com/improve-churn-rate/>
+* Referral: <http://blog.kissmetrics.com/the-6-best-growth-hacks/>
+* Revenue/LTV: <http://blog.kissmetrics.com/how-to-calculate-lifetime-value/>
 
 ## Experiment with Strategies/Tactics
 
 * Landing Pages
-  * http://blog.kissmetrics.com/c-o-n-v-e-r-t-s/
-  * http://blog.kissmetrics.com/landing-page-design-infographic/
-  * http://blog.kissmetrics.com/easy-breezy-sign-ups/
+  * <http://blog.kissmetrics.com/c-o-n-v-e-r-t-s/>
+  * <http://blog.kissmetrics.com/landing-page-design-infographic/>
+  * <http://blog.kissmetrics.com/easy-breezy-sign-ups/>
 
 * Marketing
-  * http://blog.kissmetrics.com/how-to-use-utm-parameters/
-  * http://blog.kissmetrics.com/email-clickthrough-rates-skyrocket/
+  * <http://blog.kissmetrics.com/how-to-use-utm-parameters/>
+  * <http://blog.kissmetrics.com/email-clickthrough-rates-skyrocket/>
 
 * Conversions
-  * http://blog.kissmetrics.com/bounce-rate/
-  * http://blog.kissmetrics.com/conversion-funnel-survival-guide/
-  * http://blog.kissmetrics.com/saas-activation/
-
-# Takeaways
-
-* Get familiar with the KM application
-* Get familiar with analytics
+  * <http://blog.kissmetrics.com/bounce-rate/>
+  * <http://blog.kissmetrics.com/conversion-funnel-survival-guide/>
+  * <http://blog.kissmetrics.com/saas-activation/>
 
 [demo]: https://app.kissmetrics.com/demo
 [blog]: http://blog.kissmetrics.com
 [avinash]: http://www.kaushik.net/avinash/
+
+<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
+</script>
+<script type="text/javascript">
+loadKMTrackableVideo("i64qus5i5c", "Events: Visits the URL");
+</script>

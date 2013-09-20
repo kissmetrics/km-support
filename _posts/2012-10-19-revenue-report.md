@@ -16,7 +16,7 @@ Avg Customers / {Day/Week/Month} | The average number of **paying** customers pe
 Avg {Daily/Weekly/Monthly} Churn | The average rate that **paying** customers churn per Day/Week/Month
 [Churn][churn] | The number of customers who stop paying. How this is counted depends on whether you are using a `Canceled` event (see your [site mappings][mapping]).
 
-<div id="wistia_3f023d87a8" class="wistia-embed" data-video-width="640" data-video-height="400"></div>
+<div id="wistia_3f023d87a8" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400"></div>
 
 ## Introduction
 
