@@ -12,7 +12,7 @@ This style guide will help you create visually consistant articles for the KISSm
 
 ## Header Examples
 
-The primary header for each article is a h1 element. Article headers are reserved for individual page titles only and are only used once per page. 
+The primary header for each article is a h1 element. Article headers are reserved for individual page titles only and are only used once per page.
 
 	# This will style a First-Level Header
 
@@ -43,16 +43,16 @@ Paragraphs are created by simply separating the text by one or more blank lines.
 	// Blank line above paragraph
 
 	This will style a paragraph of text and wrap it in between two `<p>` tags. The paragraph will naturally wrap until a blank line is used.
-	
+
 	// Blank line separating paragraphs
-	
+
 	Here is another paragraph seperated by a blank line.
-	
+
 	// Blank line below paragraph
-	
+
 To achieve a `<br />` instead of a paragraph can be done by ending a line with two or more spaces, then type return.
 
-	This will force a break in the text   
+	This will force a break in the text
 	by converting two spaces and a return into a <br />
 
 * * *
@@ -65,12 +65,12 @@ Here’s an example of correct usage:
 
 > KISSmetrics changed our view on what a company should be tracking. KISSmetrics tracks data that is important to your business and it shows you how to improve those numbers. Jane Park, CEO/Founder of Julep Entrepreneur
 
-	> KISSmetrics changed our view on what a company should be tracking. 
-	> KISSmetrics tracks data that is important to your business and it shows you how to improve those numbers. 
+	> KISSmetrics changed our view on what a company should be tracking.
+	> KISSmetrics tracks data that is important to your business and it shows you how to improve those numbers.
 	> Jane Park, CEO/Founder of Julep Entrepreneur
 
 * * *
-	
+
 ## Code Blocks
 
 Pre-formatted code blocks are used for writing about programming or markup source code. Rather than forming normal paragraphs, the lines of a code block are interpreted literally. Markdown wraps a code block in both `<pre>` and `<code>` tags.
@@ -96,14 +96,14 @@ Our JavaScript code snippet looks like this:
 </script>
 {% endhighlight %}
 
-This was acheived by wrapping the code block in Pygment tags `{% highlight html %}` and `{% endhighlight %}`. 
+This was acheived by wrapping the code block in Pygment tags `{% highlight html %}` and `{% endhighlight %}`.
 
 You can pass a number of languages as an argument. You'll find a lot of use out of `html`, `html+ruby`, `js`, and `js+ruby` lexers. All the languages supported are listed at the [Pygments site](http://pygments.org/docs/lexers/).
-	
-* * *		
+
+* * *
 
 ## Inline Text
- 
+
 Some inline text can be styled to help add emphasis or importance to. These include `em`, `strong`, and `code`.
 
 ### Em
@@ -126,7 +126,7 @@ Double *’s or _’s will be wrapped with an HTML `<strong>` tag.
 
 To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:
 
-`Referrer` indicates the URL the visitor came from 
+`Referrer` indicates the URL the visitor came from
 
 can be written like this:
 
@@ -141,7 +141,7 @@ Markdown supports two styles for creating links: inline and reference. With both
 Inline-style links use parentheses immediately after the link text. For example:
 
 	This is an [example link](http://example.com/).
-	
+
 Reference-style links allow you to refer to your links by names, which you define elsewhere in your document:
 
 	I get 10 times more traffic from [Google][1] than from
@@ -149,7 +149,7 @@ Reference-style links allow you to refer to your links by names, which you defin
 
 	[1]: http://google.com/        "Google"
 	[2]: http://search.yahoo.com/  "Yahoo Search"
-	[3]: http://search.msn.com/    "MSN Search"	
+	[3]: http://search.msn.com/    "MSN Search"
 
 * * *
 
@@ -170,8 +170,8 @@ Unordered lists use asterisks, pluses, and hyphens
 		- This is a list item
 		- This is a list item
 		- This is a list item
-		
-Ordered lists use numbers followed by periods:		
+
+Ordered lists use numbers followed by periods:
 
 **This is an ordered list**
 
@@ -192,9 +192,9 @@ You can produce a horizontal rule tag `<hr />` by placing three or more hyphens,
 * * *
 
 	* * *
-	
-* * *	
-	
+
+* * *
+
 ## Tables
 
 Column 1 Heading|Column 2 Heading
@@ -207,7 +207,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 * * *
-	
+
 ## Images
 
 Markdown uses an image syntax that is intended to resemble the syntax for links, allowing for two styles: inline and reference.
@@ -215,13 +215,13 @@ Markdown uses an image syntax that is intended to resemble the syntax for links,
 Inline image syntax looks like this:
 
 	![Alt text](/path/to/img.jpg)
-	
+
 	![Alt text](/path/to/img.jpg "Optional title")
-	
+
 Reference-style image syntax looks like this:
 
-	![Alt text][id]	
-	
+	![Alt text][id]
+
 Where “id” is the name of a defined image reference. Image references are defined using syntax identical to link references.
 
 * * *
@@ -230,8 +230,8 @@ Where “id” is the name of a defined image reference. Image references are de
 
 When embeding Wistia videos, use the inline API method which will look similar to this:
 
-	<div id="wistia_id" class="wistia_embed" style="width:488px;height:275px;" data-video-width="488" data-video-height="275">&nbsp;</div>
-	
+	<div id="wistia_id" class="wistia_embed" style="width:488px;height:275px;" data-video-width="488" data-video-height="275"></div>
+
 Then, remove any inline styles on the `<div>` tag and add the CSS class "wistia-embed" so that it looks similar to this:
-	
-	<div id="wistia_id" class="wistia_embed wistia-embed" data-video-width="488" data-video-height="275">&nbsp;</div>
+
+	<div id="wistia_id" class="wistia_embed wistia-embed" data-video-width="488" data-video-height="275"></div>

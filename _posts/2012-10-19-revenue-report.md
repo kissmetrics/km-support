@@ -7,8 +7,8 @@ summary: The Revenue Report gives you a wholistic view of your revenue and your 
 ---
 ## Quick Reference
 
-Calculation |Description
-------------|-----------
+Calculation | Description
+----------- | -----------
 Total Revenue | Total value of your Revenue Property, within the date range of the report. Not to be confused with "[Lifetime Value][ltv]". You can verify which property we're using in your [site's mappings][mapping].
 Average {Daily/Weekly/Monthly} Revenue | Total of the Revenue Property / Number of Days in the report. You can verify which property we're using in your [site's mappings][mapping].
 [Lifetime Value][ltv] | A **prediction** of how much revenue a customer will be worth. Calculated as `Average Revenue per Customer / Total Churn Rate`
@@ -16,7 +16,7 @@ Avg Customers / {Day/Week/Month} | The average number of **paying** customers pe
 Avg {Daily/Weekly/Monthly} Churn | The average rate that **paying** customers churn per Day/Week/Month
 [Churn][churn] | The number of customers who stop paying. How this is counted depends on whether you are using a `Canceled` event (see your [site mappings][mapping]).
 
-<div id="wistia_3f023d87a8" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
+<div id="wistia_3f023d87a8" class="wistia-embed" data-video-width="640" data-video-height="400"></div>
 
 ## Introduction
 

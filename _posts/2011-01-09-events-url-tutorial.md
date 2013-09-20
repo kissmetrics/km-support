@@ -5,7 +5,7 @@ categories: [tutorial, event-library-tutorial]
 author: Lars Lofgren
 summary: Trigger events when someone visits a URL.
 ---
-<div id="wistia_700b63755a" class="wistia-embed" data-video-width="640" data-video-height="400">&nbsp;</div>
+<div id="wistia_700b63755a" class="wistia-embed" data-video-width="640" data-video-height="400"></div>
 
 ## Create the Event
 
