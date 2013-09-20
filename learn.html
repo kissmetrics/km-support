@@ -11,7 +11,7 @@ portal: university
 
 <ol>
   <li>Decide on which reports you currently need.</li>
-  <li>Assess what new pieces of data you will need to send to KISSmetrics, as events and properties.</li>
+  <li>Assess what new pieces of data you will need to send to KISSmetrics, in the form of events and properties.</li>
   <li>Choose the method(s) you will be sending data, based on the developer resources available.</li>
   <li>Implement the event/property tracking and test.</li>
   <li>Create and run the reports you planned for.</li>
@@ -26,3 +26,16 @@ portal: university
   <li>Use Cases: #2 and #5</li>
   <li>Tutorials: #4</li>
 </ul>
+
+{% for page in site.categories.learn %}
+<ul class="summary" >
+  <li>
+    <a href="{{page.url}}">
+      <h3>
+      {{ page.title }}
+      </h3>
+      <p>{{page.summary}}</p>
+    </a>
+  </li>
+</ul>
+{% endfor %}
