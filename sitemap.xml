@@ -34,11 +34,11 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tutorial/introduction.html</loc>
-        <lastmod>2013-09-20T11:46:19-07:00</lastmod>
+        <lastmod>2013-09-20T11:53:05-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tutorial/webinar-getting-started.html</loc>
-        <lastmod>2013-09-10T12:19:12-07:00</lastmod>
+        <lastmod>2013-09-20T11:54:31-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tutorial/installation/index.html</loc>
@@ -46,7 +46,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tutorial/html-files.html</loc>
-        <lastmod>2013-09-10T12:19:12-07:00</lastmod>
+        <lastmod>2013-09-20T11:55:00-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tutorial/installation/wordpress-tutorial.html</loc>
@@ -54,43 +54,43 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tutorial/events-intro.html</loc>
-        <lastmod>2013-09-10T12:19:12-07:00</lastmod>
+        <lastmod>2013-09-20T11:55:24-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tutorial/event-library-tutorial/index.html</loc>
-        <lastmod>2013-09-10T12:19:12-07:00</lastmod>
+        <lastmod>2013-09-20T11:56:14-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://support.kissmetrics.com/tutorial/event-library-tutorial/events-and-properties-tutorial.html
         </loc>
-        <lastmod>2013-09-10T12:19:12-07:00</lastmod>
+        <lastmod>2013-09-20T11:56:38-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://support.kissmetrics.com/tutorial/event-library-tutorial/events-url-tutorial.html
         </loc>
-        <lastmod>2013-09-20T11:45:14-07:00</lastmod>
+        <lastmod>2013-09-20T11:59:53-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://support.kissmetrics.com/tutorial/event-library-tutorial/events-clicks-tutorial.html
         </loc>
-        <lastmod>2013-09-10T12:19:12-07:00</lastmod>
+        <lastmod>2013-09-20T11:58:46-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://support.kissmetrics.com/tutorial/event-library-tutorial/events-form-tutorial.html
         </loc>
-        <lastmod>2013-09-10T12:19:12-07:00</lastmod>
+        <lastmod>2013-09-20T12:00:45-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tutorial/metrics-intro.html</loc>
-        <lastmod>2013-09-10T12:19:12-07:00</lastmod>
+        <lastmod>2013-09-20T12:00:14-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tutorial/how-to-build-reports.html</loc>
-        <lastmod>2013-09-10T12:19:12-07:00</lastmod>
+        <lastmod>2013-09-20T11:59:47-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/misc/account-billing.html</loc>
@@ -174,7 +174,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tools/funnels/index.html</loc>
-        <lastmod>2013-09-20T11:51:57-07:00</lastmod>
+        <lastmod>2013-09-20T11:59:28-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tools/funnels-vs-metrics.html</loc>
@@ -242,7 +242,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tools/metrics/index.html</loc>
-        <lastmod>2013-09-20T11:47:56-07:00</lastmod>
+        <lastmod>2013-09-20T11:59:06-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/how-tos/mobile-sites-apps.html</loc>
@@ -312,7 +312,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tools/revenue-report.html</loc>
-        <lastmod>2013-09-20T11:47:36-07:00</lastmod>
+        <lastmod>2013-09-20T12:01:04-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/apis/ruby/ruby-on-rails.html</loc>
@@ -374,7 +374,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/how-tos/tracking-video.html</loc>
-        <lastmod>2013-09-10T12:19:12-07:00</lastmod>
+        <lastmod>2013-09-20T12:01:12-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/how-tos/traffic-sources.html</loc>
@@ -643,6 +643,10 @@
         <lastmod>2013-09-10T12:19:12-07:00</lastmod>
     </url>
     <url>
+        <loc>http://support.kissmetrics.com/integrations/stripe.html</loc>
+        <lastmod>2013-09-20T12:02:15-07:00</lastmod>
+    </url>
+    <url>
         <loc>http://support.kissmetrics.com/integrations/callrail.html</loc>
         <lastmod>2013-09-10T12:19:12-07:00</lastmod>
     </url>
@@ -652,7 +656,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/integrations/marketo.html</loc>
-        <lastmod>2013-09-10T12:19:12-07:00</lastmod>
+        <lastmod>2013-09-20T12:02:15-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/how-tos/facebook-login.html</loc>
@@ -700,7 +704,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/</loc>
-        <lastmod>2013-09-20T11:51:57-07:00</lastmod>
+        <lastmod>2013-09-20T12:02:15-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/integrations/</loc>
