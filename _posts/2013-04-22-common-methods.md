@@ -46,7 +46,7 @@ We recommend you call `identify` in **two scenarios**:
 
 Here's an example of an `identify` call in a Ruby app that obtains the current visitor's username. This may not work for your particular site, but should give you an idea of how to structure the API call.
 
-`_kmq.push(['identify', '<%=SessionDetails.UserName%>']);`
+`_kmq.push(['identify', '<%= @user.email_address %>']);`
 
 For more information on how to handle identities, please refer to this [Identity Management guide][id].
 
