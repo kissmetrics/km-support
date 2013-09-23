@@ -13,7 +13,19 @@ When you set cookies for `localhost`, your browser does not keep them as you nav
 
 ## What should I do?
 
-We need a domain on which to set cookies, which you can do in one of two ways:
+First, really consider creating a new, separate site in your KM account so that you keep your testing data out of live, production data.
+
+We will also need a domain on which to set cookies, which you can do in one of two ways:
 
 * Set up a local development domain. For example, edit `/etc/hosts` to include a line like `127.0.0.1  myproject.dev`.
 * Use `http://myproject.localhacks.com/`, which has a wildcard A record pointing to `127.0.0.1`.
+
+Alternatively, you can replace the last two lines of our JavaScript snippet with the following, to prevent our script from loading locally altogether. However, this prevents any events from occurring, even if you are testing your API calls:
+
+{% highlight js %}
+// Don't load KM locally
+if (!window.location.host.match(/localhost/)) {
+  _kms('//i.kissmetrics.com/i.js');
+  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+}
+{% endhighlight %}
