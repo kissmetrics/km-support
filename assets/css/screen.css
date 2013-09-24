@@ -533,7 +533,9 @@ p.critical{
   color: red;
   font-weight: bold;
 }
-
+div#header .links a:hover {
+text-decoration: underline;
+}
 
 /* Media Queries */
 
@@ -547,7 +549,8 @@ p.critical{
   div#header .links a { display: none; }
   .col ul.summary { width: 259px; }
   div#disqus_thread { display: none; } 
-  .wistia-embed { width:259px; height:165px; }  
+  .wistia-embed { width:259px; height:165px; }
+  div#wrapper div.rightcrumb { display: none; }  
 }
 @media only screen and (min-width: 480px) {
 /* 480 to 768 */
@@ -556,10 +559,11 @@ p.critical{
   #wrapper { width: 480px; }
   #footer { width: 480px; }
   .col { width: 420px; }
-  div#header .links a { display: inline-block; } 
+  div#header .links a { display: none; } 
   .col ul.summary { width: 419px; }
   div#disqus_thread { display: block; }
   .wistia-embed { width:419px; height:265px; }
+  div#wrapper div.rightcrumb { display: none; }  
 }
 @media only screen and (min-width: 768px) {
 /* 768 to 1024 */
@@ -572,6 +576,7 @@ p.critical{
   .col ul.summary { width: 707px; }
   div#disqus_thread { display: block; }
   .wistia-embed { width:707px; height:445px; }
+  div#wrapper div.rightcrumb { display: inherit; }  
 }
 @media only screen and (min-width: 1024px) {
 /* 1024 + */
@@ -586,4 +591,5 @@ p.critical{
   div#disqus_thread { display: block; }
   .wistia-embed { width:619px; height:390px; }
   .side ul li:first-child { border-top: none; }
+  div#wrapper div.rightcrumb { display: inherit; }  
 }
