@@ -534,7 +534,7 @@ p.critical{
   font-weight: bold;
 }
 div#header .links a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Media Queries */
