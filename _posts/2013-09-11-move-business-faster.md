@@ -76,5 +76,5 @@ What's the starting point? Find your current KPIs for your business.
 <script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
 </script>
 <script type="text/javascript">
-loadKMTrackableVideo("i64qus5i5c", "Events: Visits the URL");
+loadKMTrackableVideo("i64qus5i5c", "How to Use Analytics to Move Your Business Faster");
 </script>
