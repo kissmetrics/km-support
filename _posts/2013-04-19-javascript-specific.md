@@ -17,10 +17,11 @@ permalink: /apis/javascript/javascript-specific/index.html
 `_kmq.push(['identify', 'IDENTITY']);` | Identifies the current person with a **unique** ID, and attributes future events from this browser to this provided ID. If the current person is 'anonymous', it also connects their 'anonymous' ID to the provided ID so we recognize both as being the same person (`alias`ing). Calling `identify` does *not* count as an "event".
 
 <a name="js-specific"></a>
+
 JavaScript-Specific Methods | Description
 --------------------------- | -----------
 `_kmq.push(['record', 'EVENT_NAME', {'PROPERTY_NAME':'VALUE'}, callbackFn]);` | Will execute `callbackFn` after event has been successfully tracked.
-`_kmq.push(['set', {'PROPERTY_NAME':'VALUE'}, callbackFn]);` | Will execute `callbackFn` after properties has been successfully tracked.
+`_kmq.push(['set', {'PROPERTY_NAME':'VALUE'}, callbackFn]);` | Will execute `callbackFn` after properties have been successfully tracked.
 `_kmq.push(['trackClick', 'AN_ELEMENT_ID_OR_CLASS', 'EVENT_NAME']);` | Tags an HTML element to [record an event *when it is clicked*][trackClick].
 `_kmq.push(['trackClickOnOutboundLink', 'AN_ELEMENT_ID_OR_CLASS', 'EVENT_NAME']);` | Tags a link that takes someone to another domain. Provides enough time to [record an event *when the link is clicked, before being redirected*][trackOutbound].
 `_kmq.push(['trackSubmit', 'AN_ELEMENT_ID_OR_CLASS', 'EVENT_NAME']);` | Tags a form to [record an event *when it is submitted*][trackSubmit].
