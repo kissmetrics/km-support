@@ -4,7 +4,7 @@ categories: best-practices
 title: "SaaS Revenue Essentials"
 tags: []
 author: Eric Fung
-summary: These are the events and properties you should track to make the most of our SaaS Revenue Report. 
+summary: These are the events and properties you should track to make the most of our SaaS Revenue Report.
 ---
 <hr />
 # Table of Contents
