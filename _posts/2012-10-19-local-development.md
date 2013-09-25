@@ -2,6 +2,7 @@
 layout: post
 title: Developing in localhost
 categories: advanced
+tags: javascript
 author: Eric Fung
 summary: Don't use KISSmetrics with `localhost` as your development environment; provide a custom domain name to set your cookies.
 ---

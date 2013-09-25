@@ -14,6 +14,7 @@ Our Javascript Library is our most full-featured library and is what we recommen
 * Automatically tracking common web events (e.g. search engine traffic)
 * A/B Testing
 
+<a name="setup"></a>
 ## Setup
 
 Log into your KISSmetrics account and locate your personalized code snippet in your [Site Settings][settings]. You'll be able to find your unique embed code and instructions there.
@@ -44,6 +45,7 @@ Please see:
 * [Common Methods][common] for information and examples on recording events, setting properties and identifying users.
 * [JavaScript Library Specifics][js-specific] for information on our asynchronous API, tracking clicks, forms, multiple domains and other issues specific to the Javascript API
 
+<a name="events-automatically-tracked"></a>
 ## Events Automatically Tracked
 
 If you are using the JavaScript library, we automatically track certain events and properties by default:
@@ -77,6 +79,7 @@ If you are using the JavaScript library, we automatically track certain events a
 
 View all the events here: [https://app.kissmetrics.com/product.js_settings][js-settings]. You can enable/disable these events on this page, too.
 
+<a name="different-from-google-analytics"></a>
 ## What's Different From Google Analytics
 
 The above events are familiar to Google Analytics users, but there are two things **we do not automatically track:**
@@ -89,43 +92,39 @@ Our experience has shown that when making business decisions, it is more useful 
 
 You may still find this information useful. If you have that information separately recorded in your databases, you are welcome to pass that information along to us as KISSmetric properties.
 
+<a name="example-calls"></a>
 ## Example Calls
 
 {% highlight html %}
 <script type="text/javascript">
 // Identifies the current person as "bob@bob.com" for future events
-_kmq.push(['identify', 'bob@bob.com']);  
+_kmq.push(['identify', 'bob@bob.com']);
 
 // Records an event "Viewed Homepage"
-_kmq.push(['record', 'Viewed Homepage']);  
+_kmq.push(['record', 'Viewed Homepage']);
 
-/* Records an event "Signed Up" with additional properties 
+/* Records an event "Signed Up" with additional properties
  * (Plan & Amount) plus related values (Pro & 99.95)
  */
-_kmq.push(['record', 'Signed Up', {'Plan':'Pro', 'Amount':99.95}]);  
+_kmq.push(['record', 'Signed Up', {'Plan':'Pro', 'Amount':99.95}]);
 
 // Sets the "Gender" property to "Male" for the current person
-_kmq.push(['set', {'gender':'male'}]);  
+_kmq.push(['set', {'gender':'male'}]);
 
 /* Records an event "Signed Up" in the past.
  * This demonstrates how to pass the '_t' and '_d' from our
  * specifications as regular KISSmetrics properties.
  * 1234567890 = 13 Feb 2009 23:31:30 GMT
- */  
+ */
 _kmq.push(['record', 'Signed Up', {'_d':1, '_t':1234567890}])
 </script>
 {% endhighlight %}
-
-# Developing in `localhost`
-
-Our JavaScript library depends on cookies to work properly. Browsers do not let you set cookies in `localhost`, so please refer to our guide on [developing locally][local].
 
 {% include summaries/javascript_summary.html %}
 
 [utm]: /integrations/utm-variables#google-analytics-8217-auto-tagging-vs-manual-tagging
 [js-settings]: https://app.kissmetrics.com/product.js_settings
 [settings]:https://app.kissmetrics.com/settings
-[local]: /advanced/local-development
 [fields-not-tracked]: /apis/javascript/javascript-specific/protected-form-fields
 
 [common]: /apis/common-methods
