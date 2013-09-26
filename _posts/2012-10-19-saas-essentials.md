@@ -73,7 +73,7 @@ Triggered when a customer reaches your site via a search engine, through organic
 Triggered when a customer signs up for an account.
 
 * `Customer ID` indicates the email address or username the customer entered upon sign up. **Note: Rather than passing `Customer ID` as a property, you should use the `identify` API command before triggering `Signed Up` to indicate the new Customer ID.**
-* `Plan Name` indicates the search terms used by the customer in the product search bar.
+* `Plan Name` indicates the starting plan for the user e.g. 'free', 'trial' etc.
 * `Referral Code` indicates the referral code used by the customer if they were invited by another existing customer.
 
 ### Subscribed to Newsletter/Blog/RSS/Widget/Whitepaper/Webinar
