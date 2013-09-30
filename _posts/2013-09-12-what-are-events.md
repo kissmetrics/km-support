@@ -3,7 +3,7 @@ layout: post
 title: What We Mean By "Events"
 categories: learn
 portal: university
-summary: How 'events' fit into your KISSmetrics account's data structure.
+summary: Events mark when people have done something meaningful.
 ---
 <div id="wistia_ftl871nnps" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400"></div>
 
