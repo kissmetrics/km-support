@@ -9,8 +9,8 @@ summary: With your newly-created custom events, let's start exploring different 
 
 # Exercise
 
-* Create your first funnel report
-* Create your first metric
+* Create your first funnel report.
+* Create your first metric.
 
 # Takeaways
 

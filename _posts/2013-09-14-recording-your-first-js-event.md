@@ -30,7 +30,7 @@ Practice creating events for visits to important pages, like a signup page or a 
 <a name="using-javascript-api"></a>
 # 2. Using the JavaScript API to `record`
 
-<object id="scPlayer" width="640" height="400" type="application/x-shockwave-flash" data="http://content.screencast.com/users/eskfung/folders/Jing/media/7ed12113-ee64-405a-a38f-56f2281d3ed8/jingswfplayer.swf" > <param name="movie" value="http://content.screencast.com/users/eskfung/folders/Jing/media/7ed12113-ee64-405a-a38f-56f2281d3ed8/jingswfplayer.swf" /> <param name="quality" value="high" /> <param name="bgcolor" value="#FFFFFF" /> <param name="flashVars" value="thumb=http://content.screencast.com/users/eskfung/folders/Jing/media/7ed12113-ee64-405a-a38f-56f2281d3ed8/FirstFrame.jpg&containerwidth=1343&containerheight=758&content=http://content.screencast.com/users/eskfung/folders/Jing/media/7ed12113-ee64-405a-a38f-56f2281d3ed8/00000003.swf&blurover=false" /> <param name="allowFullScreen" value="true" /> <param name="scale" value="showall" /> <param name="allowScriptAccess" value="always" /> <param name="base" value="http://content.screencast.com/users/eskfung/folders/Jing/media/7ed12113-ee64-405a-a38f-56f2281d3ed8/" /> Unable to display content. Adobe Flash is required. </object>
+See two examples at <https://gist.github.com/eskfung/6767787>, which is taken from the page source of the page you're currently reading.
 
 ## Exercise (`record` with the API)
 
