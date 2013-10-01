@@ -13,6 +13,7 @@ permalink: /apis/javascript/javascript-specific/index.html
 ---------------------------- | -----------
 `_kmq.push(['record', 'EVENT_NAME']);` | Records an event.
 `_kmq.push(['record', 'EVENT_NAME', {'PROPERTY_NAME':'VALUE'}]);` | Records an event with additional properties.
+`_kmq.push(['record', 'EVENT_NAME', {'PROPERTY_NAME':'VALUE'}, CALLBACK_FUNCTION]);` | Records an event and executes the callback function after it's recorded.
 `_kmq.push(['set', {'PROPERTY_NAME':'VALUE'}]);` | Sets properties to the current user.
 `_kmq.push(['identify', 'IDENTITY']);` | Identifies the current person with a **unique** ID, and attributes future events from this browser to this provided ID. If the current person is 'anonymous', it also connects their 'anonymous' ID to the provided ID so we recognize both as being the same person (`alias`ing). Calling `identify` does *not* count as an "event".
 
@@ -35,7 +36,7 @@ JavaScript-Specific Methods | Description
 `KM.um("/some-url")` | Returns true or false, depending on whether the page you are currently on will match up with the Event Wizard pattern you've typed in (`"/some-url"`). This helps you test Event Wizard urls much more quickly.
 
 <a name="asynchronous-api"></a>
-## Asynchronous API 
+## Asynchronous API
 
 The JavaScript library loads asynchronously, in the background, just like Google Analytics' Asynchronous Tracking. It has two main benefits:
 
@@ -48,7 +49,7 @@ You can place the JavaScript snippet anywhere in the HTML document, but we ask t
 2. To let you queue events to be triggered when the library finishes loading. This prevents JavaScript errors from cropping up if you try to call events before the script has loaded:  `ReferenceError: _kmq is not defined`
 
 <a name="anonymous-identities"></a>
-## Anonymous Identities 
+## Anonymous Identities
 
 If the JavaScript library has never seen a visitor before, it will create a randomized identity for them to attribute all of that person's events to the same browser. This lets you track this particular person's activity across sessions.
 
@@ -57,15 +58,21 @@ The generated ID is Base64 encoded, so the IDs are generated with only these cha
 <a name="callback-functions"></a>
 ## Callback Functions
 
-You can also pass in function objects, which will be executed once the KISSmetrics API is loaded:
+You can also pass in function objects as a third parameter. If you don't have properties to record, you can pass an empty hash like so:
+
+{% highlight js %}
+_kmq.push(['record', 'An Event Happened', {}, (function() {alert("Event Recorded");}) ]);
+{% endhighlight %}
+
+Alternatively:
 
 {% highlight js %}
 _kmq.push(function() {
-   KM.record('My Event')
-   // Do something else in JavaScript
+   KM.record('An Event Happened');
+   alert("Event Recorded");
  });
 {% endhighlight %}
-    
+
 This can be useful if you want to record a series of events or if you have conditionals that need to be executed first.
 
 ### Combining Callback Functions with jQuery
@@ -126,7 +133,7 @@ $('.classname').click(function() {
 </script>
 {% endhighlight %}
 
-For example, you might have a invite link you want to track: 
+For example, you might have a invite link you want to track:
 
 {% highlight html %}
 <a href="invite.php" id="invite_link">Invite your friends!</a>
@@ -185,7 +192,7 @@ _kmq.push(['trackSubmit', 'ELEMENT_ID_OR_CLASS', 'EVENT_NAME']);
 </script>
 {% endhighlight %}
 
-For example, you might have a signup form you want to track: 
+For example, you might have a signup form you want to track:
 
 {% highlight html %}
 <form id="signup_form">
@@ -202,7 +209,7 @@ Notice that the code uses the `id` attribute from the form (`signup_form`). You 
 _kmq.push(['trackSubmit', '.invite_form', 'Invite Form Submitted']);
 {% endhighlight %}
 
-It will still fire all of your existing `onsubmit` events. 
+It will still fire all of your existing `onsubmit` events.
 
 You can also pass in properties via an additional argument:
 
