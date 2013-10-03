@@ -118,7 +118,6 @@ KM.record('Subscription Downgraded', {
   'Subscription Plan Level' => 'Small' });
 {% endhighlight %}
 
-<!--
 ### Subscription Refunded
 
 *Note: we have not incorporated Refunds into the SaaS Revenue Report yet, but you can be prepared when we update our report by recording refund data using this event and these properties.*
@@ -137,7 +136,7 @@ KM.record('Subscription Refunded', {
   'Subscription Refund Amount' => 100,
   'Subscription Refund Reason' => 'Charged incorrect amount' });
 {% endhighlight %}
--->
+
 ---
 
 <a name="section-2"></a>
