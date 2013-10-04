@@ -1,6 +1,5 @@
 {% for page in site.categories.metrics %}
-
-<ul class="summary" > 
+<ul class="summary" >
   <li>
     <a href="{{page.url}}">
       <h3>
@@ -10,6 +9,17 @@
     </a>
   </li>
 </ul>
+{% endfor %}
 
-
+{% for page in site.tags.metrics %}
+<ul class="summary" >
+  <li>
+    <a href="{{page.url}}">
+      <h3>
+      {{ page.title }}
+      </h3>
+      <p>{{page.summary}}</p>
+    </a>
+  </li>
+</ul>
 {% endfor %}
