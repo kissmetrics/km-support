@@ -88,6 +88,31 @@ _kmq.push(function() {  // we wrap the code in a function to ensure our library 
 </script>
 {% endhighlight %}
 
+Here's a JavaScript function that you can use to create tagged URLs to enable cross domain tracking. Pass this function the ID of a URL you want to use to link across domains, and it will automatically append the KISSmetrics ID to the URL.
+
+{% highlight html %}
+<script type="text/javascript">
+// First the function definition
+function crossDomainLink(linkID) {
+	var element = document.getElementById(linkID);
+	var oldURL = element.getAttribute('href')
+	var id = encodeURIComponent(KM.i());
+	if (oldURL.indexOf('?') > -1) {
+		var newURL = oldURL + "&kmi=" + id
+	} else {
+		var newURL = oldURL + "?kmi=" + id
+	}
+	element.setAttribute('href', newURL);
+}
+
+$(document).ready(function(){
+  // call the function inside document.ready, to make sure the link exists in the DOM before we change it
+  crossDomainLink('myLink');
+  // the link with the id myLink will now have the query string parameter of kmi appended, so it will pass the identity to the next domain
+});
+</script>
+{% endhighlight %}
+
 Down the line, if the customer ever goes from being anonymous to providing some identifying info, you'll have to alias the anonymized and known id's together, rather than rely on `identify` to do the job. (The URL API treats the transferred ID as a "known" ID.)
 
 {% highlight html %}
