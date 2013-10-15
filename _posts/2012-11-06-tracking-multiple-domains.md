@@ -74,19 +74,41 @@ This is what hard-coding a URL would look like, to identify anyone who clicks th
 <a name="example-2-anonymous-users"></a>
 ### Example 2: Anonymous Users
 
-You can use the `KM.i()` function to obtain the visitor's current ID (anonymous or not), and make use of that:
+You can use the `KM.i()` function to obtain the visitor's current ID (anonymous or not), and make use of that. Here's a JavaScript function that you can use to create tagged URLs to enable cross domain tracking.
 
 {% highlight html %}
 <script type="text/javascript">
-_kmq.push(function() {  // we wrap the code in a function to ensure our library has loaded already
+/* Appends the current KM identity to a link that leads to another domain you are tracking under the same API key.
+ *
+ * @param linkID [String] the HTML ID of the <a> element that leads off of your domain
+ */
+function crossDomainLink(linkID) {
+  var element = document.getElementById(linkID);
+  var oldURL = element.getAttribute('href')
+  var id = encodeURIComponent(KM.i());
+  if (oldURL.indexOf('?') > -1) {
+    var newURL = oldURL + "&kmi=" + id
+  } else {
+    var newURL = oldURL + "?kmi=" + id
+  }
+  element.setAttribute('href', newURL);
+}
+{% endhighlight %}
 
-  var kmid = encodeURIComponent(KM.i());  // get the ID and URL-encode it to preserve any symbols
-  var destination = 'yoursite.3rd-party-domain.com/?&kmi=' + kmid;
+#### Example Usage
 
-  // Code here to hook up this string to the button action.
+{% highlight html %}
+// Ensure the link exists in the DOM before we change it
+$(document).ready(function(){
+
+  // Ensure the KM library has loaded to get access to KM.i()
+  _kmq.push(crossDomainLink('myLink'));
+
+  // The <a> with the id #myLink will now have the query string parameter of kmi appended, to maintain the customer's identity in the next domain that you are also tracking
 });
 </script>
 {% endhighlight %}
+
 
 Down the line, if the customer ever goes from being anonymous to providing some identifying info, you'll have to alias the anonymized and known id's together, rather than rely on `identify` to do the job. (The URL API treats the transferred ID as a "known" ID.)
 
