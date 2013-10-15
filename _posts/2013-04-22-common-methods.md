@@ -7,7 +7,7 @@ summary: All of our libraries provide the same basic methods - record, set, iden
 ---
 Rather than constantly making HTTP calls, we provide abstraction with dedicated libraries in several languages. You can use choose to use one (or more) of them to send data.
 
-All of our libraries provide the same basic methods: 
+All of our libraries provide the same basic methods:
 
 Command    | Description
 ---------- | ----------------------------
@@ -25,7 +25,7 @@ The `record` method is the most commonly used method. When a `record` command is
 
 If you do not pass in a name, calling `record` is identical to calling `set`. See below for examples.
 
-Our [JavaScript Library][js] has additional methods to let you record events after a certain trigger: when an element gets clicked, or when a form is submitted. 
+Our [JavaScript Library][js] has additional methods to let you record events after a certain trigger: when an element gets clicked, or when a form is submitted.
 
 <a name="set"></a>
 ## `set`
@@ -57,23 +57,23 @@ Below are some examples for the standard API. Please see APIs for supported lang
 ### Javascript
 {% highlight js %}
 // Identifies the current person as "bob@bob.com" for future events
-_kmq.push(['identify', 'bob@bob.com']);  
+_kmq.push(['identify', 'bob@bob.com']);
 
 // Records an event "Viewed Homepage"
-_kmq.push(['record', 'Viewed Homepage']);  
+_kmq.push(['record', 'Viewed Homepage']);
 
 // Records an event "Signed Up" with additional properties
-_kmq.push(['record', 'Signed Up', {'Plan':'Pro', 'Amount':99.95}]);  
+_kmq.push(['record', 'Signed Up', {'Plan':'Pro', 'Amount':99.95}]);
 
 /* Records an event "Signed Up" in the past.
- * This demonstrates how to pass the '_t' and '_d' from our 
+ * This demonstrates how to pass the '_t' and '_d' from our
  *  specifications as regular KISSmetrics properties.
  * 1234567890 = 13 Feb 2009 23:31:30 GMT
- */  
+ */
 _kmq.push(['record', 'Signed Up', {'_d':1, '_t':1234567890}])
 
 // Sets the "Gender" property to "Male" for the current person
-_kmq.push(['set', {'gender':'male'}]);  
+_kmq.push(['set', {'gender':'male'}]);
 
 {% endhighlight %}
 
@@ -90,11 +90,10 @@ _kmq.push(['set', {'gender':'male'}]);
 
 ### Ruby
 {% highlight ruby %}
-KM.identify('bob@bob.com')
-KM.record('Viewed Homepage')
-KM.record('Signed Up', {'Plan' => 'Pro', 'Amount' => 99.95})
-KM.record('Signed Up', {'_d' => 1, '_t' => 1234567890})
-KM.set({:gender=>'male', 'Plan Name' => 'Pro'})
+KMTS.record('bob@bob.com', 'Viewed Homepage')
+KMTS.record('bob@bob.com', 'Signed Up', {'Plan' => 'Pro', 'Amount' => 99.95})
+KMTS.record('bob@bob.com', 'Signed Up', {'_d' => 1, '_t' => 1234567890})
+KMTS.set('bob@bob.com', {:gender=>'male', 'Plan Name' => 'Pro'})
 {% endhighlight %}
 
 ### Python
