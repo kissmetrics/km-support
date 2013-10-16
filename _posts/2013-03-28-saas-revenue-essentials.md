@@ -4,7 +4,7 @@ categories: best-practices
 title: "SaaS Revenue Essentials"
 tags: []
 author: Eric Fung
-summary: These are the events and properties you should track to make the most of our SaaS Revenue Report.
+summary: These are the events and properties you should track to make the most of our upcoming SaaS Revenue Report.
 ---
 <hr />
 # Table of Contents
@@ -13,9 +13,9 @@ summary: These are the events and properties you should track to make the most o
 * [Section 2. How do I import previous transactions?][section2]
 * [Section 3. I have already been tracking revenue. How do update my old payments with the recommended structure?][section3]
 
-We are developing a Revenue Report aimed specifically towards SaaS businesses. This is designed to be an improvement over our existing Revenue Report because it better visualizes the revenue gained from your subscribers month over month, also known as **Monthly Recurring Revenue**.
+We are in the process of developing a Revenue Report aimed specifically towards SaaS businesses. While it is not ready yet, this report will be designed to help you better visualize **Monthly Recurring Revenue**, especially if your customers are billed less frequently than every month.
 
-We've also accounted for businesses that don't bill exactly every single month. Even if you are billing your customers, say, annually, you can record that annual revenue amount just *once*, and we'll display each customer's month-by-month revenue by breaking that one annual revenue into 12 pieces.
+Below lists how you can structure your revenue data to prepare for this report.
 
 This guide will use the following format:
 
