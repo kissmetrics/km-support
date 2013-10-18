@@ -11,7 +11,7 @@ With the JavaScript Library on your website, you're ready to create the custom e
 * [Using API methods][using-api]: needs moderate experience with JavaScript, but gives more control over when to trigger events and what to name them.
 
 <a name="using-event-wizard"></a>
-# 1. Using the Event Wizard
+# Method 1. Using the Event Wizard
 
 <div id="wistia_700b63755a" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400"></div>
 
@@ -28,7 +28,7 @@ Practice creating events for visits to important pages, like a signup page or a 
 * The Event Wizard also lets you create events for [tracking clicks][click-tutorial] and [form submissions][form-tutorial]. You'll need a small amount of knowledge in reading HTML, which we'll demonstrate in the videos linked.
 
 <a name="using-javascript-api"></a>
-# 2. Using the JavaScript API to `record`
+# Method 2. Using the JavaScript API to `record`
 
 See two examples at <https://gist.github.com/eskfung/6767787>, which is taken from the page source of the page you're currently reading.
 
