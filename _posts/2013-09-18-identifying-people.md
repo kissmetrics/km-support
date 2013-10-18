@@ -20,7 +20,7 @@ If your site supports it, write in the `identify` call for the pages where you'l
 # Takeaways
 
 * Identifying your customers by **email address** works best in the majority of cases, although you can use any *unique* string or integer.
-  * Email address is effective because you'll be able to combine data collected by our JavaScript with any KISmetrics integrations you enable. These typically record data to the email addresses available to that service.
+  * Email address is effective because you'll be able to combine data collected by our JavaScript with any KISSmetrics integrations you enable. These typically record data to the email addresses available to that service.
   * Segmenting your reports by Customer ID (email address) becomes much more readable.
 * `identify` designates who a person is, for this browsing session and future sessions.
   * We'll save the value to a first party cookie `km_ai`. This keeps a person identified across pages where you omit the API call, and across browsing sessions.
