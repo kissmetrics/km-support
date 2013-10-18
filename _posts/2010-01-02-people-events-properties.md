@@ -98,3 +98,4 @@ Then you can segment the people who did these events by different properties:
 [best-practices]: /best-practices
 [prop-options]: /advanced/advanced-properties
 [power-report]: /tools/power-report
+[data-ways]: /getting-started/ways-to-send-us-data

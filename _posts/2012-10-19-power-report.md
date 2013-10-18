@@ -100,7 +100,7 @@ Here's what the example configuration above would look like after you run the re
 
 {% include summaries/power_report_summary.html %}
 
-[pricing]: http://www.kissmetrics.com/pricing/advanced
+[pricing]: http://www.kissmetrics.com/pricing/
 [data-sheet]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/power-report/KISSmetrics-Power-Report-Data-Sheet.pdf
 
 [calcs]: /tools/metrics/metric-calculations
