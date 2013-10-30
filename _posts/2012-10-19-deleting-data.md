@@ -13,11 +13,14 @@ There are three options you might consider:
 2. Extracting the data, removing the clutter, and re-importing the data under a new name.
 3. Creating a new site to start fresh.
 
-## Hiding Data
+## Hiding Unwanted Events or Properties
 
 In the [Settings][settings] page, there are two links under the Event Library area you can use: **[Edit Display Names][display-names]** or **[View Total Counts][total-counts]**.
 
-Following either link brings you to a list of all the events and properties in your site. You can uncheck the box to _hide the data, so that it does not appear in your drop-down list of events and properties to report on._
+Following either link brings you to a list of all the events and properties in your site. 
+Uncheck the box next to the event or property name to hide that event or property from relevant drop-down lists in reports.
+
+_Note: Hidden events and properties continue tracking and hidden events continue counting toward total event count_. 
 
 [settings]: https://app.kissmetrics.com/settings
 [display-names]: https://app.kissmetrics.com/product.edit/#events
