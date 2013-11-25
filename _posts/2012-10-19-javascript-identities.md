@@ -16,14 +16,10 @@ So if you plan to use our server-side libraries or [URL API][url], you can tap i
 # JavaScript Functions
 
 * `KM.i()`: returns the current user's identity, whether it's anonymous or not.
-* `KM.gc('ai')`: returns the value of the cookie `km_ai`, which is the current user's generated anonymous identity.
-* `KM.gc('ni')`: returns the value of the cookie `km_ni`, which is the current user's named identity. This was set either from making an `identify` API call or from passing the `kmi` parameter in our [URL API][url].
-
-*Note: You likely need to use only `KM.i()`. The function works by checking `KM.gc('ni')`, then checking `KM.gc('ai')` if it doesn't find a named identity.*
 
 ## Wait For Our JavaScript Library to Load
 
-Since the KISSmetrics script loads asynchronously, you'll want to make sure that the library has loaded before you try to call `KM.i()`. 
+Since the KISSmetrics script loads asynchronously, you'll want to make sure that the library has loaded before you try to call `KM.i()`.
 
 To do this, wrap your call to `KM.i()` in a [callback function][callback], and push that function to `_kmq`
 
