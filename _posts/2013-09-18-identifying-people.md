@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Step 4 - Identifying Customers
+title: Step 7 - Identifying Customers
 categories: learn
 portal: university
 summary: Use our JavaScript API to call out known customers.
@@ -15,7 +15,9 @@ Unless you absolutely want to [track accounts instead of people][person-or-accou
 
 # Exercise
 
+<div class="alert alert-success alert-block">
 If your site supports it, write in the `identify` call for the pages where you'll know who your customer is.
+</div>
 
 # Takeaways
 

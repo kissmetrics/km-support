@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Step 2 - Recording Your First KISSmetrics Event with Our JavaScript
+title: Step 3 - Recording Your First KISSmetrics Event with Our JavaScript
 categories: learn
 portal: university
 summary: How to add the custom events that address <em>your</em> business' conversions.
@@ -32,6 +32,11 @@ Practice creating events for visits to important pages, like a signup page or a 
 
 See two examples at <https://gist.github.com/eskfung/6767787>, which is taken from the page source of the page you're currently reading.
 
+<a name="testing-installation"></a>
+# Testing Your Installation
+
+There are a couple of ways to test that you did this correctly - using the Live tab in our app, or if you're more technical, using your browser's developer tools. See our guide on [Testing: How to Verify KISSmetrics Is Working][testing]
+
 ## Exercise (`record` with the API)
 
 Practice creating events for visits to important pages, like a signup page or a subscribe page.
@@ -54,6 +59,7 @@ _kmq.push(['record', A_STRING_WITH_YOUR_EVENT_NAME]);
 [too-many-events]: /troubleshooting/too-many-event-names
 [click-tutorial]: /tutorial/event-library-tutorial/events-clicks-tutorial
 [form-tutorial]: /tutorial/event-library-tutorial/events-form-tutorial
+[testing]: /getting-started/testing-km
 
 <script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
 </script>

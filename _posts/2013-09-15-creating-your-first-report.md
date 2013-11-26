@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Step 3 - Creating Your First Report
+title: Step 4 - Creating Your First Report
 categories: learn
 portal: university
 summary: With your newly-created custom events, let's start exploring different ways to visualize their data.
@@ -9,7 +9,6 @@ summary: With your newly-created custom events, let's start exploring different 
 
 # Exercise
 
-* Create your first funnel report.
 * Create your first metric.
 
 # Takeaways

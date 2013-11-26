@@ -3,7 +3,7 @@ layout: post
 title: Step 0 - How to Use Analytics to Move Your Business Faster
 categories: learn
 portal: university
-summary: How does analytics fit into improving my business?
+summary: How does analytics fit into improving my business? See the KISSmetrics Demo Account for ideas!
 ---
 <div id="wistia_i64qus5i5c" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400"></div>
 
@@ -11,7 +11,7 @@ We can't show you absolutely *all* the ways our customers use KISSmetrics to be 
 
 **[KISSmetrics Demo Account][demo]**
 
-See how a business might set up its different *reports* (Metrics, Funnels, Cohort Reports, and People Searches). You can switch the demo to look at reports for different business types:
+See how a business might set up its different *reports* (Metrics, Funnels, Cohort Reports, and People Searches). Go ahead and click on each tab to see the different types of reports. You can switch the demo to look at reports for different business types:
 
 * Subscription-based
 * E-commerce
@@ -26,7 +26,7 @@ If you're a total beginner, our successful customers use KISSmetrics to analyze 
 # Exercise
 
 <div class="alert alert-success alert-block">
-Using the KISSmetrics Demo account's <em>Metrics</em> or <em>Funnels</em> as a guide, list a few of the KPIs you will be using KISSmetrics to measure.
+Using the KISSmetrics Demo account's <em>Metrics</em> as a guide, list a few of the KPIs you will be using KISSmetrics to measure.
 </div>
 
 # Key Takeaways
