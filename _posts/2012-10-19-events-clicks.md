@@ -2,22 +2,32 @@
 layout: post
 title: Events - Clicks On
 categories: [tools, event-library]
-author: Eric Fung
+author: Eric Fung & Nemo Chu
 summary: Trigger events when someone clicks on an element.
 ---
-## Create the Event
+## Create The Event
 
 There are probably some key buttons on your site that are critical to the success of your business. They might be:
 
-* Buttons to share your content (social media)
-* Account creation buttons
-* Purchase buttons
+* Buttons to sign up
+* Buttons to buy something
 
 Many clickable elements on your site can be tracked so don’t limit yourself to just buttons. If it’s important and clickable, start tracking it.
 
 It’s easy to tell KISSmetrics what clicks to keep track of. You’re going to go to your site, view the source code, and find the ID or a Class name of the clickable element you want to track. Name your new event, enter in the id or class name, and you’re done.
 
-More detailed instructions coming soon!
+<a name="multiple-classes"></a>
+## Choosing Between Multiple Classes
+
+Sometimes a button will have multiple classes applied to it. In this example below, three classes are being applied to the element and each are separated by a space:
+
+`<a href="/buy class="button button-buy green">Buy</a>`
+
+The classes are .button, .button-buy & .green (the periods are preceding each class because KISSmetrics expects periods when you type a class into the Event Wizard's event creation form).
+
+Make sure to select one class. Do NOT copy/paste all three classes into the event creation form. Out of the three classes, be sure to copy/paste a class that's unique to that element (e.g. .button-buy). If that class is applied to any other element on any other webpage where the KISSmetrics code block lives, KISSmetrics will also fire this event when those other elements are clicked. This will skew your data because the event is firing more times than you're expecting it to fire.
+
+If this is the first time you've encountered classes, please track the element using an ID instead of a class. It's less complicated. If an ID doesn't exist on the element already, either add an ID to the element yourself or ask your web developer to do it.
 
 ## Technical Notes
 
