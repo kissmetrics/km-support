@@ -74,6 +74,10 @@ For example, you can look at the correlation between last month's A/B test and t
 
 Again, our [Best Practices][best-practices] are a great start to introduce you to important properties to record. We have guides for SaaS and e-commerce businesses.
 
+## Naming Properties
+
+Generally, you can name your properties whatever you like, as long as it is meaningful to you. The only restriction is that we'll not accept properties that are an underscore and another letter, like `_a`, `_A`, `_t`, `_d`, etc. These are reserved for our API for special purposes.
+
 # Putting It All Together
 
 Let's put it all together. Pretend you're collecting analytics for a marathon. You might structure the data like this:
