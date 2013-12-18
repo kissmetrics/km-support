@@ -107,5 +107,3 @@ Here is a link: [http://jekyllrb.com/docs/home/](http://jekyllrb.com/docs/home/)
 ## Pygments 
 
 You can tag code examples with Pygments for colored syntax-highlighting. Here's a reference for how to incorporate the language into your example: [http://pygments.org/docs/lexers/](http://pygments.org/docs/lexers/)
-
-Whatever
