@@ -1,0 +1,230 @@
+/* Included by shell.css */
+
+/* BUTTONS: =buttons
+------------------------------------------------------------*/
+.button,
+#sites ul .create .button {
+  background-color: #70ac2e;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(.5, transparent),color-stop(1, rgba(0,0,0,.1)));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0,0,0,.1));
+  border: 1px solid transparent;
+  border-bottom-color: rgba(0,0,0,.3);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  box-shadow: 0 2px 0 rgba(0,0,0,.07), 0 1px 0 rgba(255,255,255,.2) inset;
+  color: #fff;
+  display: inline-block;
+  font: bold 10px/normal 'Verdana','Helvetica', 'Arial', sans-serif;
+  padding: 7px 10px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+.button.small {
+  padding: 7px 10px;
+}
+.button.xsmall {
+  font-size: 9px;
+  padding: 4px 6px;
+}
+.button:hover,
+#sites ul .create .button:hover {
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(.1, transparent),color-stop(1, rgba(0,0,0,.2)));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0,0,0,.2));
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:active,
+#sites ul .create .button:active {
+  box-shadow: 0 1px 0 rgba(255,255,255,.07), 0 1px 2px rgba(0,0,0,.2) inset;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(.1, transparent),color-stop(1, rgba(0,0,0,.25)));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0,0,0,.25));
+}
+.button.has_arrow {
+  padding-right: 38px; /* (padding*2)+circle_total_width (10*2)+14 */
+  position: relative;
+}
+.button .circle {
+  background-color: rgba(255,255,255,.1);
+  border: 2px solid rgba(255,255,255,.2);
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  display: block;
+  height: 14px;
+  margin-top: -9px; /* total_height/2 */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 14px;
+}
+.button .arrow {
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid #fff;
+  border-left: 3px solid rgba(255,255,255,.8);
+  height: 0;
+  left: 6px;
+  position: absolute;
+  top: 4px;
+  width: 0;
+}
+.button .plus {
+  font: bold 16px/8px 'Helvetica', 'Arial', sans-serif;
+  margin-right: 6px;
+}
+.button.green,
+.button.green.disabled:hover,
+.button.green:disabled:hover { background-color: #70ac2e; }
+.button.blue,
+.button.primary,
+.button.blue.disabled:hover,
+.button.blue:disabled:hover { background-color: #0c8bc3; }
+.button.dark_blue { background-color: #4f7c90; }
+.button.red { background-color: #961515; }
+.button.orange { background-color: #f07f0f; }
+.button.black { background-color: #6a6a6a; }
+.button.grey { background-color: #9e9e9e; }
+.button.secondary {
+  background-color: #f2f2f2;
+  background-image: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-right-color: rgba(0,0,0,.15);
+  border-bottom-color: rgba(0,0,0,.2);
+  border-left-color: rgba(0,0,0,.15);
+  box-shadow: 0 2px 0 rgba(0,0,0,.04), 0 1px 0 rgba(255,255,255,.6) inset;
+  -webkit-box-shadow: 0 2px 0 rgba(0,0,0,.04), 0 1px 0 rgba(255,255,255,.6) inset;
+  -moz-box-shadow: 0 2px 0 rgba(0,0,0,.04), 0 1px 0 rgba(255,255,255,.6) inset;
+  color: #333;
+  text-shadow: 0 1px 1px #fff;
+}
+
+.button.secondary:hover {
+  background: rgba(0,0,0,0.02);
+}
+
+.button.tiny {
+  padding: 3px 5px;
+  font-size: 9px;
+}
+
+.button.support {
+  position: relative;
+  padding-left: 28px;
+  text-transform: none;
+}
+.button.support:before {
+  content: "";
+  background: url(../images/support-button-icon.png); no-repeat;
+  background-size: 13px 9px;
+  display: block;
+  height: 9px;
+  left: 10px;
+  position: absolute;
+  top: 9px;
+  width: 13px;
+}
+
+.button.disabled,
+.button:disabled {
+  opacity: .5;
+}
+.button.disabled:hover,
+.button:disabled:hover {
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(.5, transparent),color-stop(1, rgba(0,0,0,.1)));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0,0,0,.1));
+  cursor: default;
+}
+
+.button.waiting {
+  padding-right: 32px;
+  position: relative;
+}
+.button.waiting:after {
+  display: block;
+  height: 16px;
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  width: 16px;
+}
+.button.green.waiting:after {
+  content: url(/images/app/green_button_loader.gif);
+}
+.button.blue.waiting:after {
+  content: url(/images/app/blue_button_loader.gif);
+}
+.button.black.waiting:after {
+  content: url(/images/app/black_button_loader.gif);
+}
+
+/* INSET: =inset
+------------------------------*/
+.button.inset {
+  background-image: none;
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 1px 0 rgba(255,255,255,.2) inset;
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 1px 0 rgba(255,255,255,.2) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 1px 0 rgba(255,255,255,.2) inset;
+  font: bold 10px/normal 'Helvetica', 'Arial', sans-serif;
+  text-transform: uppercase;
+  transition: background-color 100ms ease-in;
+  -webkit-transition: background-color 100ms ease-in;
+  -moz-transition: background-color 100ms ease-in;
+  -o-transition: background-color 100ms ease-in;
+}
+
+/* UTILITY: =utility
+------------------------------------------------------------*/
+.button.utility {
+  background-color: #fafafa;
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,.0001), rgba(0,0,0,.07));
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.0001), rgba(0,0,0,.07));
+  border: 1px solid #cacaca;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #606060;
+  font: bold 12px/normal 'Arial',sans-serif;
+  padding: 8px 10px 6px;
+  position: relative;
+  text-shadow: 0 1px 1px #fff;
+}
+.button.utility:hover {
+  background-color: #f5f5f5;
+}
+.utility.edit {
+  padding-left: 28px;
+}
+.utility.edit:before {
+  color: #919191;
+  content: 'W';
+  font-size: 17px;
+  font-family: 'Pictos';
+  font-weight: normal;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+.utility.export_button {
+  padding-left: 29px;
+}
+.utility.export_button:before {
+  color: #919191;
+  content: 'R';
+  font-size: 19px;
+  font-family: 'Pictos';
+  font-weight: normal;
+  position: absolute;
+  top: 6px;
+  left: 8px;
+}
+.button.utility.disabled {
+  opacity: .5;
+}
+.button.utility.disabled:hover {
+  background-color: #fafafa;
+  cursor: default;
+}
