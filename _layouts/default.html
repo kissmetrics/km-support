@@ -12,16 +12,16 @@
           <a href='/developers/'>Developer Documentation</a>
           <a href='/learn'>Learning Center</a>
           <a class='km' href='https://www.kissmetrics.com'>Go to KISSmetrics &rarr;</a>
-        </div>
-      </div>
-    </div>
+        </div><!-- /.links -->
+      </div><!-- /#header -->
+    </div><!-- /#top -->
     <div id='wrapper'>
       <div data-swiftype-index='false' id='crumbs'>
         <div class='leftcrumb'>
           <form id='search_form'>
             <input class='st-search-input' id='st-search-input' placeholder='Search the Documentation' type='text' />
           </form>
-        </div>
+        </div><!-- /.leftcrumb -->
         <div class='rightcrumb'>
           <ul id='breadcrumb' class='breadcrumb'>
             {% if page.categories %}
@@ -32,8 +32,8 @@
             {% endif %}
             <li class="active">{{ page.title }}</li>
           </ul>
-        </div>
-      </div>
+        </div><!-- /.rightcrumb -->
+      </div><!-- /#crumbs -->
       <div class='col side' data-swiftype-index='false'>
         <div id='st-results-container'></div>
         <script type='text/javascript'>
@@ -63,12 +63,12 @@
           {% else %}
             {% include _sidebar_full.html %}
           {% endif %}
-        </div>
-      </div>
+        </div><!-- /.menu -->
+      </div><!-- /.col.side -->
       <div class='col' data-swiftype-index='true'>
         {{ content }}
-      </div>
-    </div>
+      </div><!-- /.col -->
+    </div><!-- /.wrapper -->
 
     <div data-swiftype-index='false' id='footer'>
       <p>
@@ -77,7 +77,7 @@
         KISSmetrics. All rights reserved.
         <img src="http://ad.retargeter.com/seg?add=528457&t=2" width="1" height="1" style="border:0; outline:none;" />
       </p>
-    </div>
+    </div><!-- /.footer -->
 
-  </body>
+  </body><!-- /.home -->
 </html>
