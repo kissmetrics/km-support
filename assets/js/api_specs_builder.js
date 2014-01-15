@@ -24,7 +24,7 @@ $(function(){
         break;
     }
   });
-  
+
   $('#add-another-property').click(function(e){
     e.preventDefault();
     propClone = $('.prop-fieldset:first').clone();
@@ -32,16 +32,16 @@ $(function(){
     propClone.find('.note').remove();
     $(this).parent().before(propClone);
   });
-  
+
   $('.url-builder-form input[type="submit"]').click(function(e){
     e.preventDefault();
-    
+
     var url_parts = [];
     var valid = true;
-    
+
     // Get the base URL
     var final_url = "http://trk.kissmetrics.com/";
-    
+
     // Get the API key
     var api_key = $('#api-key').val();
     if( api_key == '') {
@@ -50,8 +50,8 @@ $(function(){
     } else {
       $('#api-key-field').find('.error-message').hide();
       url_parts.push('_k=' + encodeURIComponent(api_key));
-    } 
-    
+    }
+
     // Get the Identity
     var identity = $('#event-identity').val();
     if( identity == '') {
@@ -65,7 +65,7 @@ $(function(){
 
     // Based on the Method, see what other fields to include
     var api_method = $('#api-method').val();
-    
+
     switch (api_method) {
       case "record":
         final_url += "e";
@@ -79,7 +79,7 @@ $(function(){
           $('#event-field').find('.error-message').hide();
           url_parts.push('_n=' + encodeURIComponent(event_name));
         }
-        
+
         // Get all the additional properties
         $('.prop-fieldset').each(function(){
           var name = $(this).find('input:eq(0)').val();
@@ -102,12 +102,12 @@ $(function(){
           }
           else
             valid = false;
-            $('#timestamp-field').find('.error-message').show();          
+            $('#timestamp-field').find('.error-message').show();
         }
         break;
       case "set":
         final_url += "s";
-        
+
         // Get all the additional properties
         $('.prop-fieldset').each(function(){
           var name = $(this).find('input:eq(0)').val();
@@ -130,7 +130,7 @@ $(function(){
           }
           else
             valid = false;
-            $('#timestamp-field').find('.error-message').show();          
+            $('#timestamp-field').find('.error-message').show();
         }
         break;
       case "alias":
@@ -150,7 +150,7 @@ $(function(){
 
     // Build the final URL
     final_url += '?' + url_parts.join('&');
-    
+
     // Insert the final URL onto the page
     // First check to see if it already exists
     if($('#final-url').length) {
@@ -159,7 +159,7 @@ $(function(){
     } else {
       // It does not, so do nothing
     }
-    
+
     // Create the element
     if(valid) {
       $('.url-builder-form').after($('<div id="final-url" class="yft"></div>').append($('<input type="text" readonly="readonly" />').val(final_url)));
@@ -169,7 +169,7 @@ $(function(){
       // Don't show it, and scroll up to the error messages
       scrollTo('.url-builder-form')
     }
-    
+
     function scrollTo(element_id) {
       $('html, body').animate({scrollTop: $(element_id).offset().top - 40}, 1000); // Scroll to it
       $(element_id + ' input[type="text"]').focus().select(); // Focus it
