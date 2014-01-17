@@ -54,13 +54,21 @@
           <form id='search_form'>
             <input class='st-search-input' id='st-search-input' placeholder='Search the Documentation' type='text' />
           </form>
-          {% if page.portal == "developer" %}
-            {% include _sidebar_developer.html %}
-          {% elsif page.portal == "university" %}
-            {% include _sidebar_university.html %}
-          {% else %}
-            {% include _sidebar_full.html %}
-          {% endif %}
+          <ul>
+            {% if page.portal == "developer" %}
+              {% include _sidebar_developer.html %}
+            {% elsif page.portal == "university" %}
+              {% include _sidebar_university.html %}
+            {% else %}
+              {% include _sidebar_full.html %}
+            {% endif %}
+            <li>
+              <a href='http://status.kissmetrics.com'>KISSmetrics Status</a>
+            </li>
+            <li>
+              <a href='/contact-us'>Contact Us</a>
+            </li>
+          </ul>
         </div><!-- /.menu -->
       </div><!-- /.col.side -->
       <div class='col' data-swiftype-index='true'>
