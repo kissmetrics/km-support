@@ -3,8 +3,7 @@
   <head>
   <meta content='text/html; charset=utf-8' http-equiv='content-type' />
   
-    <title>404 - KISSmetrics Documentation</title>
-    <meta name="st:title" content="Home">
+    <title>KISSmetrics Documentation</title>
   
   <link href='/assets/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
   <link href='/assets/css/screen.css' media='screen' rel='stylesheet' type='text/css' />
@@ -36,6 +35,7 @@ if (!window.location.host.match(/localhost/)) {
   _kms('//i.kissmetrics.com/i.js');
   _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 }
+_kmq.push(['record', 'Viewed Support Article', {'Support Article Viewed URL':'/404.html','Support Article Viewed Title':''}]);
 </script>
 
 <!-- Google Analytics -->
@@ -78,21 +78,18 @@ if (!window.location.host.match(/localhost/)) {
           <a href='/developers/'>Developer Documentation</a>
           <a href='/learn'>Learning Center</a>
           <a class='km' href='https://www.kissmetrics.com'>Go to KISSmetrics &rarr;</a>
-        </div>
-      </div>
-    </div>
+        </div><!-- /.links -->
+      </div><!-- /#header -->
+    </div><!-- /#top -->
     <div id='wrapper'>
       <div data-swiftype-index='false' id='crumbs'>
-        <div class='leftcrumb'>
-          <form id='search_form'>
-            <input class='st-search-input' id='st-search-input' placeholder='Search the Documentation' type='text' />
-          </form>
-        </div>
         <div class='rightcrumb'>
           <ul id='breadcrumb' class='breadcrumb'>
+            
+            <li class="active"></li>
           </ul>
-        </div>
-      </div>
+        </div><!-- /.rightcrumb -->
+      </div><!-- /#crumbs -->
       <div class='col side' data-swiftype-index='false'>
         <div id='st-results-container'></div>
         <script type='text/javascript'>
@@ -115,11 +112,14 @@ if (!window.location.host.match(/localhost/)) {
           //]]>
         </script>
         <div class='menu'>
+          <form id='search_form'>
+            <input class='st-search-input' id='st-search-input' placeholder='Search the Documentation' type='text' />
+          </form>
           
             <ul>
   <li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#getting-started-list">
-    <i class="icon-chevron-right"></i>
+    <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#getting-started-list">Getting Started</a>
   </div>
   <div id="getting-started-list" class="collapse">
@@ -171,11 +171,15 @@ if (!window.location.host.match(/localhost/)) {
 </li>
   <li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#apis-list">
-    <i class="icon-chevron-right"></i>
+    <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#apis-list">APIs</a>
   </div>
   <div id="apis-list" class="collapse">
     <ul>
+    
+      <li>
+        <a href="/apis/data-out.html">Data Out API</a>
+      </li>
     
       <li>
         <a href="/apis/specifications.html">API Specifications</a>
@@ -275,7 +279,7 @@ if (!window.location.host.match(/localhost/)) {
     
       <div class='more-content'>
         <li>
-          <a href='/apis/'>(View all 24 articles)</a>
+          <a href='/apis/'>(View all 25 articles)</a>
         </li>
       </div>
     </ul>
@@ -283,7 +287,7 @@ if (!window.location.host.match(/localhost/)) {
 </li>
   <li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#best-practices-list">
-    <i class="icon-chevron-right"></i>
+    <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#best-practices-list">Best Practices</a>
   </div>
   <div id="best-practices-list" class="collapse">
@@ -315,7 +319,7 @@ if (!window.location.host.match(/localhost/)) {
 </li>
   <li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#use-cases-list">
-    <i class="icon-chevron-right"></i>
+    <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#use-cases-list">Use Cases</a>
   </div>
   <div id="use-cases-list" class="collapse">
@@ -371,7 +375,7 @@ if (!window.location.host.match(/localhost/)) {
 </li>
   <li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#tutorials-list">
-    <i class="icon-chevron-right"></i>
+    <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#tutorials-list">Tutorials</a>
   </div>
   <div id="tutorials-list" class="collapse">
@@ -439,7 +443,7 @@ if (!window.location.host.match(/localhost/)) {
 </li>
   <li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#tools-list">
-    <i class="icon-chevron-right"></i>
+    <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#tools-list">Reporting Tools</a>
   </div>
   <div id="tools-list" class="collapse">
@@ -543,11 +547,15 @@ if (!window.location.host.match(/localhost/)) {
 </li>
   <li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#integrations-list">
-    <i class="icon-chevron-right"></i>
+    <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#integrations-list">External Integrations</a>
   </div>
   <div id="integrations-list" class="collapse">
     <ul>
+    
+      <li>
+        <a href="/integrations/tapstream.html">Tapstream Integration</a>
+      </li>
     
       <li>
         <a href="/integrations/marketo.html">Marketo</a>
@@ -562,15 +570,11 @@ if (!window.location.host.match(/localhost/)) {
       </li>
     
       <li>
-        <a href="/integrations/stripe.html">Stripe</a>
-      </li>
-    
-      <li>
         <a href="/integrations/help-scout.html">Help Scout</a>
       </li>
     
       <li>
-        <a href="/integrations/mysql/index.html">MySQL as an External Data Source</a>
+        <a href="/integrations/mysql/index.html">MySQL and Postgres as an External Data Source</a>
       </li>
     
       <li>
@@ -655,7 +659,7 @@ if (!window.location.host.match(/localhost/)) {
 </li>
   <li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#how-tos-list">
-    <i class="icon-chevron-right"></i>
+    <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#how-tos-list">How To's, Examples, and Best Practices</a>
   </div>
   <div id="how-tos-list" class="collapse">
@@ -745,9 +749,13 @@ if (!window.location.host.match(/localhost/)) {
         <a href="/how-tos/facebook-login.html">Measuring Facebook Logins and Signups</a>
       </li>
     
+      <li>
+        <a href="/how-tos/push-notifications.html">How to Track Push Notifications</a>
+      </li>
+    
       <div class='more-content'>
         <li>
-            <a href='/how-tos/'>(View all 21  articles)</a>
+            <a href='/how-tos/'>(View all 22  articles)</a>
         </li>
       </div>
     </ul>
@@ -755,7 +763,7 @@ if (!window.location.host.match(/localhost/)) {
 </li>
   <li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#ab-testing-list">
-    <i class="icon-chevron-right"></i>
+    <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#ab-testing-list">A/B Testing</a>
   </div>
   <div id="ab-testing-list" class="collapse">
@@ -791,7 +799,7 @@ if (!window.location.host.match(/localhost/)) {
 </li>
   <li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#advanced-list">
-    <i class="icon-chevron-right"></i>
+    <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#advanced-list">Advanced</a>
   </div>
   <div id="advanced-list" class="collapse">
@@ -827,7 +835,7 @@ if (!window.location.host.match(/localhost/)) {
 </li>
   <li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#troubleshooting-list">
-    <i class="icon-chevron-right"></i>
+    <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#troubleshooting-list">Troubleshooting</a>
   </div>
   <div id="troubleshooting-list" class="collapse">
@@ -907,7 +915,7 @@ if (!window.location.host.match(/localhost/)) {
 </li>
   <li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#misc-list">
-    <i class="icon-chevron-right"></i>
+    <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#misc-list">Miscellaneous</a>
   </div>
   <div id="misc-list" class="collapse">
@@ -945,24 +953,24 @@ if (!window.location.host.match(/localhost/)) {
   </li>
 </ul>
           
-        </div>
-      </div>
+        </div><!-- /.menu -->
+      </div><!-- /.col.side -->
       <div class='col' data-swiftype-index='true'>
         <h1>Well, that's embarassing.</h1>
 
 <p>We didn't find the page you were looking for, but please try using the search bar on the left. Sorry about that!</p>
 
-      </div>
-    </div>
+      </div><!-- /.col -->
+    </div><!-- /.wrapper -->
 
     <div data-swiftype-index='false' id='footer'>
       <p>
         &copy;
-        2013
+        2014
         KISSmetrics. All rights reserved.
         <img src="http://ad.retargeter.com/seg?add=528457&t=2" width="1" height="1" style="border:0; outline:none;" />
       </p>
-    </div>
+    </div><!-- /.footer -->
 
-  </body>
+  </body><!-- /.home -->
 </html>

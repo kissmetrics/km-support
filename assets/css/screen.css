@@ -1,4 +1,4 @@
-/* 
+/*
   Site: KISSmetrics Support
   Author: Derek P. Collins, dcollins@kissmetrics.com
   Time: 2010-09-14 15:48:20
@@ -97,7 +97,7 @@ img {
   -moz-box-shadow: 0 -1px 2px rgba(0,0,0,.1) inset;
   list-style: none;
   overflow: hidden;
-  padding: 15px 20px;
+  padding: 15px 20px 0px 20px;
 }
 #crumbs .leftcrumb{
   padding: 0px 20px 0px 0px;
@@ -106,7 +106,7 @@ img {
   float: left;
 }
 #crumbs .rightcrumb{
-  padding: 4px 0px 5px 20px;
+  /*padding: 4px 0px 5px 20px;*/
   display: inline-block;
   float: left;
 }
@@ -122,6 +122,18 @@ img {
 }
 #crumbs li a:hover {
   text-decoration: underline;
+}
+.breadcrumb {
+  background-color: inherit !important;
+}
+
+/* SWIFTYPE: =search_form
+------------------------------------------------------------*/
+#search_form {
+  padding: 20px 0px 0px 0px;
+}
+body form input.st-search-input {
+  height: 30px;
 }
 
 /* CONTENT: =content
@@ -168,7 +180,7 @@ img {
 .col li {
   color: #656565;
   font-size: 14px;
-  
+
   margin-bottom: 4px;
   line-height: 25px;
 }
@@ -190,7 +202,7 @@ img {
   padding: 0px 5px;
   border: 1px solid #eaeaea;
   background-color: #f8f8f8;
-  border-radius: 3px;  
+  border-radius: 3px;
 }
 .col pre {
   background: #eef8ff;
@@ -209,7 +221,7 @@ img {
 .col pre code {
   border: none;
   background: none;
-  color: #3c7aac; 
+  color: #3c7aac;
   margin: 0 0px;
   padding: 0px 0px;
 }
@@ -247,7 +259,7 @@ table th {
 
 table th a {
 	color: #454545;
-	text-decoration: underline;	
+	text-decoration: underline;
 }
 table td {
   border: 1px solid #e5e5e5;
@@ -312,6 +324,13 @@ blockquote {
   cursor: pointer;
   text-decoration: underline;
 }
+.side .leftcrumb {
+  padding: 0px 20px 0px 0px;
+  width: 220px; /*260-20-20*/
+  display: inline-block;
+  float: left;
+}
+
 
 #disqus_thread {
 margin-left:25px;
@@ -479,7 +498,7 @@ p.critical{
   font-size: 13px;
   padding: 8px;
   width: 559px;
-  
+
   -webkit-transition: border 0.15s linear, box-shadow 0.15s linear;
      -moz-transition: border 0.15s linear, box-shadow 0.15s linear;
       -ms-transition: border 0.15s linear, box-shadow 0.15s linear;
@@ -513,7 +532,7 @@ p.critical{
           border-radius: 5px;
   margin: 0 auto 20px;
   padding: 20px;
-  
+
   -webkit-animation: target-fade 3s 1;
      -moz-animation: target-fade 3s 1;
 }
@@ -548,9 +567,9 @@ div#header .links a:hover {
   .col { width: 260px; }
   div#header .links a { display: none; }
   .col ul.summary { width: 259px; }
-  div#disqus_thread { display: none; } 
+  div#disqus_thread { display: none; }
   .wistia-embed { width:259px; height:165px; }
-  div#wrapper div.rightcrumb { display: none; }  
+  div#wrapper div.rightcrumb { display: none; }
 }
 @media only screen and (min-width: 480px) {
 /* 480 to 768 */
@@ -559,11 +578,11 @@ div#header .links a:hover {
   #wrapper { width: 480px; }
   #footer { width: 480px; }
   .col { width: 420px; }
-  div#header .links a { display: none; } 
+  div#header .links a { display: none; }
   .col ul.summary { width: 419px; }
   div#disqus_thread { display: block; }
   .wistia-embed { width:419px; height:265px; }
-  div#wrapper div.rightcrumb { display: none; }  
+  div#wrapper div.rightcrumb { display: none; }
 }
 @media only screen and (min-width: 768px) {
 /* 768 to 1024 */
@@ -576,7 +595,7 @@ div#header .links a:hover {
   .col ul.summary { width: 707px; }
   div#disqus_thread { display: block; }
   .wistia-embed { width:707px; height:445px; }
-  div#wrapper div.rightcrumb { display: inherit; }  
+  div#wrapper div.rightcrumb { display: inherit; }
 }
 @media only screen and (min-width: 1024px) {
 /* 1024 + */
@@ -591,5 +610,5 @@ div#header .links a:hover {
   div#disqus_thread { display: block; }
   .wistia-embed { width:619px; height:390px; }
   .side ul li:first-child { border-top: none; }
-  div#wrapper div.rightcrumb { display: inherit; }  
+  div#wrapper div.rightcrumb { display: inherit; }
 }

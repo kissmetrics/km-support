@@ -17,17 +17,12 @@
     </div><!-- /#top -->
     <div id='wrapper'>
       <div data-swiftype-index='false' id='crumbs'>
-        <div class='leftcrumb'>
-          <form id='search_form'>
-            <input class='st-search-input' id='st-search-input' placeholder='Search the Documentation' type='text' />
-          </form>
-        </div><!-- /.leftcrumb -->
         <div class='rightcrumb'>
           <ul id='breadcrumb' class='breadcrumb'>
             {% if page.categories %}
-              <li><a href="/">Home</a><span class="divider">/</span></li>
+              <li><a href="/">Home</a></li>
               {% for category in page.categories %}
-                <li><a href="/{{category}}">{{ category | capitalize }}</a> <span class="divider">/</span></li>
+                <li><a href="/{{category}}">{{ category | capitalize }}</a></li>
               {% endfor %}
             {% endif %}
             <li class="active">{{ page.title }}</li>
@@ -56,6 +51,9 @@
           //]]>
         </script>
         <div class='menu'>
+          <form id='search_form'>
+            <input class='st-search-input' id='st-search-input' placeholder='Search the Documentation' type='text' />
+          </form>
           {% if page.portal == "developer" %}
             {% include _sidebar_developer.html %}
           {% elsif page.portal == "university" %}
