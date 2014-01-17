@@ -27,13 +27,14 @@ body {
   margin-left: -1px;
   padding: 30px;
   position: relative;
-  width: 620px; /*680-60*/
+  /*width: 620px; /*680-60*/
 }
 .col.side {
   border: none;
   border-right: 1px solid #eee;
   padding: 20px;
-  width: 219px; /*280-60-1*/
+  /*width: 219px; /*280-60-1*/
+  width: 25%;
 }
 
 hr {
@@ -591,7 +592,7 @@ div#header .links a:hover {
   #header { width: 768px;}
   #wrapper { width: 768px; }
   #footer { width: 768px; }
-  .col { width: 708px; }
+  .col { width: 768px; }
   div#header .links a { display: inline-block; }
   .col ul.summary { width: 707px; }
   div#disqus_thread { display: block; }
@@ -604,7 +605,7 @@ div#header .links a:hover {
   #header { width: 960px;}
   #wrapper { width: 960px; }
   #footer { width: 960px; }
-  .col { width: 620px; }
+  .col { width: 720px; }
   div#header .links a { display: inline-block; }
   .col ul.summary { width: 619px; }
   div.col.side input.st-search-input { width: 180px; }
