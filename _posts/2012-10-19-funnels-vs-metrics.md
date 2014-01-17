@@ -31,8 +31,8 @@ This would be a conversion between two events, `Visited Site` and `Signed Up`.
 * If you use a funnel report, visits from both members and anonymous/non-members are counted, potentially inflating the Visited Site number and lowering the conversion rate.
 * If you use a metric, the people who have already signed up are not counted. It is calculated as:
 
-(All the people who Visited Site in the time period AND whose first Signed Up event occurred after this Visited Site) 
+(All the people who Visited Site in the time period AND whose first Signed Up event occurred after this Visited Site)
 
 divided by
 
-(The people who Visited Site in the time period, EXCLUDING people who have already "converted" before the metric's range)
+(The people who Visited Site in the time period, EXCLUDING people whose first ever 'Signed Up' event occurred prior to the first Visited Site inside the date range.)

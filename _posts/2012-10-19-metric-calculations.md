@@ -51,7 +51,7 @@ Takes the number of times an event was done and divides by the number of people 
 ### Conversion Rate
 Calculates the conversion rate between two events. For someone to be counted, they need to have done **both events in order**.
 
-* **This conversion happens once.** We look for all the people who have done Event #1 in the date range of the metric. Then we calculate, of those people, how many of them performed Event #2 *for the first time ever* after doing Event #1.
+* **This conversion happens once.** We look for all the people who have done Event #1 in the date range of the metric. Then we calculate, of those people, how many of them performed Event #2 *for the first time ever* after doing Event #1. (If a person first does Event #2 before #1, then they are excluded completely.)
 
 *Example:* **At what rate** *did people Sign Up after Visiting the Site during the past week?*
 
