@@ -203,6 +203,7 @@ body form input.st-search-input {
   border: 1px solid #eaeaea;
   background-color: #f8f8f8;
   border-radius: 3px;
+  white-space: pre-wrap;
 }
 .col pre {
   background: #eef8ff;
