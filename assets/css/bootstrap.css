@@ -4909,7 +4909,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding: 8px 15px;
   margin-bottom: 20px;
   list-style: none;
-  /*background-color: #f5f5f5;  -efung*/
+  background-color: #f5f5f5;
   border-radius: 4px;
 }
 
