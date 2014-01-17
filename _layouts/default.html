@@ -17,7 +17,7 @@
     </div><!-- /#top -->
     <div id='wrapper'>
       <div data-swiftype-index='false' id='crumbs'>
-        <div class='rightcrumb'>
+        <div class='leftcrumb'>
           <ul id='breadcrumb' class='breadcrumb'>
             {% if page.categories %}
               <li><a href="/">Home</a></li>
@@ -27,6 +27,8 @@
             {% endif %}
             <li class="active">{{ page.title }}</li>
           </ul>
+        </div><!-- /.leftcrumb -->
+        <div class='rightcrumb'>
           <a href="mailto:support@kissmetrics.com" onclick="try{ Representative.create(); return false; } catch (e){}" class="orange support button">Need help?</a>
         </div><!-- /.rightcrumb -->
       </div><!-- /#crumbs -->

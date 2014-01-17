@@ -102,14 +102,13 @@ img {
 }
 #crumbs .leftcrumb{
   padding: 0px 20px 0px 0px;
-  width: 220px; /*260-20-20*/
   display: inline-block;
   float: left;
 }
 #crumbs .rightcrumb{
-  /*padding: 4px 0px 5px 20px;*/
+  padding: 4px 0px 5px 20px;
   display: inline-block;
-  float: left;
+  float: right;
 }
 #crumbs li {
   color: #a1a1a1;
