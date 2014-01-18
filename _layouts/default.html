@@ -29,7 +29,7 @@
           </ul>
         </div><!-- /.leftcrumb -->
         <div class='rightcrumb'>
-          <a href="mailto:support@kissmetrics.com" onclick="try{ Representative.create(); return false; } catch (e){}" class="orange support button">Need help?</a>
+          <button data-toggle="modal" data-target="#feedbackModal" class="orange support button">Need help?</a>
         </div><!-- /.rightcrumb -->
       </div><!-- /#crumbs -->
       <div class='col side' data-swiftype-index='false'>
@@ -80,9 +80,23 @@
     </div><!-- /.wrapper -->
 
     <div data-swiftype-index='false' id='footer'>
-      <div id="feedback">
-
-      </div><!-- /#feedback -->
+      <div class="modal fade" id="feedbackModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">How can we make this page better for you?</h4>
+            </div>
+            <div class="modal-body">
+              <p>Your suggestions, ideas, complaints will greatly help us.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit Feedback</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal #feedbackModal -->
       <p>
         &copy;
         2014
