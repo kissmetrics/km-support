@@ -3,7 +3,8 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">How can we help you? Can we improve this page?</h4>
+        <h4 class="modal-title" id="modalTitle">How can we help you? Can we improve this page?</h4>
+        <h4 class="modal-title" style="display:none" id="modalSuccessTitle">Thanks! We've received your note.</h4>
       </div><!-- /.modal-header -->
       <div class="modal-body">
         <form id="feedbackForm">
@@ -18,8 +19,7 @@
           </div>
         </form><!-- /#feedbackForm -->
         <div id="modalSuccess" style="display:none">
-          <p>Thank you!</p>
-          <p><span class="glyphicon glyphicon-ok"></span></p>
+          <img src="https://app.kissmetrics.com/images/app/support-request-thanks.png" alt="Thanks!"/>
         </div><!-- /#modalSuccess -->
       </div><!-- /.modal-body -->
       <div class="modal-footer">

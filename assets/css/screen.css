@@ -559,6 +559,12 @@ p.critical{
 #feedbackModal #modalSuccess p {
   text-align: center;
 }
+#feedbackModal img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;
+}
 
 /* Media Queries */
 

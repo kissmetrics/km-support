@@ -9,31 +9,25 @@ $(document).ready(function() {
 
     $.ajax({
       type: "post",
-      url: "https://middleman.kissmetrics.com/helpscout.create_conversation",
+      url: "https://middleman.kissmetrics.com/helpscout.create_feedback",
       data: {
         url: document.location.href,
         message: $("#feedbackText").val(),
         email: $("#feedbackEmail").val(),
-        identity: (function(){try{KM.gc('ni');}catch(e){return "unidentified";}})()
+        identity: (function(){try{KM.gc("ni");}catch(e){return "";}})() // Has the visitor already been identified?
       },
       success: function() {
         // Hide irrelevant components
         $('#feedbackForm').hide();
         $('#modalSend').hide();
-        $('.modal-header').hide();
+        $('#modalTitle').hide();
 
-        // Show success message
+        // Show success components
         $('#modalSuccess').show();
+        $('#modalSuccessTitle').show();
 
-        // Automatically dismiss modal after 2 seconds of inactivity
-      },
-      complete: function() {
-        // REMOVE WHEN DONE DEBUGGING
-        $('#feedbackForm').hide();
-        $('#modalSend').hide();
-        $('.modal-header').hide();
-
-        $('#modalSuccess').show();
+        // Automatically dismiss modal after 3 seconds
+        setTimeout("$('#feedbackModal').modal('hide')", 3000);
       },
       dataType: "json"
     });
