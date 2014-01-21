@@ -85,7 +85,7 @@ img {
   text-decoration: none;
   text-shadow: #000 1px 1px 1px;
 }
-#header a.km:hover {
+#header .links a:hover {
   text-decoration: underline;
 }
 
@@ -552,9 +552,6 @@ p.critical{
 .url-builder-form .error-message {
   color: red;
   font-weight: bold;
-}
-div#header .links a:hover {
-  text-decoration: underline;
 }
 
 /* Media Queries */

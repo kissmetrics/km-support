@@ -3,14 +3,24 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">How can we make this page better for you?</h4>
+        <h4 class="modal-title">How can we help you? Can we improve this page?</h4>
       </div><!-- /.modal-header -->
       <div class="modal-body">
-        <textarea id="feedback_text" name="feedback_text" class="blur">Your suggestions, ideas, complaints will greatly help us.</textarea>
+        <form id="feedbackForm">
+          <div class="form-group">
+            <label for="feedbackText">We'll read your suggestions, ideas, questions, complaints, and compliments.</label>
+            <textarea id="feedbackText" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="feedbackEmail">Email Address</label>
+            <input type="email" id="feedbackEmail" placeholder="Enter email (optional)" class="form-control"></input>
+            <p class="help-block">We won't use your email address for anything except to respond, if necessary.</p>
+          </div>
+        </form><!-- /#feedbackForm -->
       </div><!-- /.modal-body -->
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Submit Feedback</button>
+        <button type="submit" class="btn btn-primary">Send</button>
       </div><!-- /.modal-footer -->
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
