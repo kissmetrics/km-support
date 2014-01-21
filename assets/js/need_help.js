@@ -1,12 +1,11 @@
 $(document).ready(function() {
-  $('#feedbackModal button[type=submit]').click(function(e) {
+  $('#modalSend').click(function(e) {
     e.preventDefault();
     $("#feedbackForm").submit();
   });
 
   $("#feedbackForm").submit(function(e) {
     e.preventDefault();
-    // Validate form fields?
 
     $.ajax({
       type: "post",
@@ -18,11 +17,25 @@ $(document).ready(function() {
         identity: (function(){try{KM.gc('ni');}catch(e){return "unidentified";}})()
       },
       success: function() {
-        alert("BOOSH");
+        // Hide irrelevant components
+        $('#feedbackForm').hide();
+        $('#modalSend').hide();
+        $('.modal-header').hide();
+
+        // Show success message
+        $('#modalSuccess').show();
+
+        // Automatically dismiss modal after 2 seconds of inactivity
+      },
+      complete: function() {
+        // REMOVE WHEN DONE DEBUGGING
+        $('#feedbackForm').hide();
+        $('#modalSend').hide();
+        $('.modal-header').hide();
+
+        $('#modalSuccess').show();
       },
       dataType: "json"
     });
-
-    // Replace modal body with success message
   });
 });
