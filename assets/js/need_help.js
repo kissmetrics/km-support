@@ -14,7 +14,7 @@ $(document).ready(function() {
         url: document.location.href,
         message: $("#feedbackText").val(),
         email: $("#feedbackEmail").val(),
-        identity: (function(){try{KM.gc("ni");}catch(e){return "";}})() // Has the visitor already been identified?
+        identity: (function(){try{return KM.gc("ni")||"";}catch(e){return "";}})() // Has the visitor already been identified?
       },
       success: function() {
         // Hide irrelevant components
@@ -28,6 +28,10 @@ $(document).ready(function() {
 
         // Automatically dismiss modal after 3 seconds
         setTimeout("$('#feedbackModal').modal('hide')", 3000);
+      },
+      error: function() {
+        // Show error components
+        $('#modalError').show();
       },
       dataType: "json"
     });
