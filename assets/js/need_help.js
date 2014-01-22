@@ -16,6 +16,8 @@ $(document).ready(function() {
         email: $("#feedbackEmail").val(),
         identity: (function(){try{return KM.gc("ni")||"";}catch(e){return "";}})() // Has the visitor already been identified?
       },
+      crossDomain: true,
+      traditional: true,
       success: function() {
         // Hide irrelevant components
         $('#feedbackForm').hide();
@@ -30,7 +32,7 @@ $(document).ready(function() {
         // Automatically dismiss modal after 3 seconds
         setTimeout("$('#feedbackModal').modal('hide')", 3000);
       },
-      error: function() {
+      error: function(jqXHR, textStatus, errorThrown) {
         // Show error components
         $('#modalError').show();
       }
