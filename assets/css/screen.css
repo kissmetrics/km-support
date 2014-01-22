@@ -85,7 +85,7 @@ img {
   text-decoration: none;
   text-shadow: #000 1px 1px 1px;
 }
-#header a.km:hover {
+#header .links a:hover {
   text-decoration: underline;
 }
 
@@ -102,14 +102,13 @@ img {
 }
 #crumbs .leftcrumb{
   padding: 0px 20px 0px 0px;
-  width: 220px; /*260-20-20*/
   display: inline-block;
   float: left;
 }
 #crumbs .rightcrumb{
-  /*padding: 4px 0px 5px 20px;*/
+  padding: 4px 0px 5px 20px;
   display: inline-block;
-  float: left;
+  float: right;
 }
 #crumbs li {
   color: #a1a1a1;
@@ -554,8 +553,17 @@ p.critical{
   color: red;
   font-weight: bold;
 }
-div#header .links a:hover {
-  text-decoration: underline;
+
+/* FEEDBACK MODAL: =feedbackModal
+------------------------------------------------------------*/
+#feedbackModal #modalSuccess p {
+  text-align: center;
+}
+#feedbackModal img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;
 }
 
 /* Media Queries */

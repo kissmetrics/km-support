@@ -17,7 +17,7 @@
     </div><!-- /#top -->
     <div id='wrapper'>
       <div data-swiftype-index='false' id='crumbs'>
-        <div class='rightcrumb'>
+        <div class='leftcrumb'>
           <ul id='breadcrumb' class='breadcrumb'>
             {% if page.categories %}
               <li><a href="/">Home</a></li>
@@ -26,7 +26,10 @@
               {% endfor %}
             {% endif %}
             <li class="active">{{ page.title }}</li>
-          </ul>
+          </ul><!-- /.breadcrumb #breadcrumb -->
+        </div><!-- /.leftcrumb -->
+        <div class='rightcrumb'>
+          <button data-toggle="modal" data-target="#feedbackModal" class="orange support button">Need help?</a>
         </div><!-- /.rightcrumb -->
       </div><!-- /#crumbs -->
       <div class='col side' data-swiftype-index='false'>
@@ -65,25 +68,15 @@
             <li>
               <a href='http://status.kissmetrics.com'>KISSmetrics Status</a>
             </li>
-            <li>
-              <a href='/contact-us'>Contact Us</a>
-            </li>
           </ul>
         </div><!-- /.menu -->
       </div><!-- /.col.side -->
       <div class='col' data-swiftype-index='true'>
         {{ content }}
       </div><!-- /.col -->
-    </div><!-- /.wrapper -->
+    </div><!-- /#wrapper -->
 
-    <div data-swiftype-index='false' id='footer'>
-      <p>
-        &copy;
-        2014
-        KISSmetrics. All rights reserved.
-        <img src="http://ad.retargeter.com/seg?add=528457&t=2" width="1" height="1" style="border:0; outline:none;" />
-      </p>
-    </div><!-- /.footer -->
-
+    {% include _contact_us_modal.html %}
+    {% include _footer.html %}
   </body><!-- /.home -->
 </html>
