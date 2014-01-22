@@ -21,6 +21,7 @@ $(document).ready(function() {
         $('#feedbackForm').hide();
         $('#modalSend').hide();
         $('#modalTitle').hide();
+        $('#modalError').hide();
 
         // Show success components
         $('#modalSuccess').show();
@@ -32,8 +33,7 @@ $(document).ready(function() {
       error: function() {
         // Show error components
         $('#modalError').show();
-      },
-      dataType: "json"
+      }
     });
   });
 });
