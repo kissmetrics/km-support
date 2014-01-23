@@ -242,6 +242,7 @@ body form input.st-search-input {
 
 .col .content {
   display: inline-block;
+  max-width: 100%;
 }
 
 table {
