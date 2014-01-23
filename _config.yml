@@ -1,6 +1,14 @@
+# Jekyll Config
 permalink: none
 markdown: rdiscount
-menu_limit: 5
 pygments: true
 exclude: [Gemfile,Gemfile.lock,Rakefile,CNAME,README.md]
+
+# Site Variables
 github_url: https://github.com/kissmetrics/km-support/blob/gh-pages/
+
+# Styling
+sass:
+  style: compressed
+  deploy_style: compressed
+  compile_in_place: true

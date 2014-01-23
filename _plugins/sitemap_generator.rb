@@ -1,37 +1,37 @@
-# Sitemap.xml Generator is a Jekyll plugin that generates a sitemap.xml file by 
+# Sitemap.xml Generator is a Jekyll plugin that generates a sitemap.xml file by
 # traversing all of the available posts and pages.
 # pke: modified to use site.config['sitemap']['url'] instead of MY_URL
 #
-# How To Use: 
+# How To Use:
 #   1.) Copy source file into your _plugins folder within your Jekyll project.
 #   2.) Set url or sitemap: url to reflect your domain name.
 #   3.) Set sitemap: filename if you want your sitemap to be called something
 #       other than sitemap.xml.
-#   4.) Change the PAGES_INCLUDE_POSTS list to include any pages that are looping 
-#       through your posts (e.g. "index.html", "archive.html", etc.). This will 
-#       ensure that right after you make a new post, the last modified date will 
+#   4.) Change the PAGES_INCLUDE_POSTS list to include any pages that are looping
+#       through your posts (e.g. "index.html", "archive.html", etc.). This will
+#       ensure that right after you make a new post, the last modified date will
 #       be updated to reflect the new post.
 #   5.) Run Jekyll: jekyll --server to re-generate your site.
 #   6.) A sitemap.xml should be included in your _site folder.
 #
 # Customizations:
-#   1.) If there are any files you don't want included in the sitemap, add them 
-#       to the EXCLUDED_FILES list. The name should match the name of the source 
+#   1.) If there are any files you don't want included in the sitemap, add them
+#       to the EXCLUDED_FILES list. The name should match the name of the source
 #       file.
 #   2.) If you want to include the optional changefreq and priority attributes,
 #       simply include custom variables in the YAML Front Matter of that file.
 #       The names of these custom variables are defined below in the
 #       CHANGE_FREQUENCY_CUSTOM_VARIABLE_NAME and PRIORITY_CUSTOM_VARIABLE_NAME
 #       constants.
-# 
+#
 # Notes:
 #   1.) The last modified date is determined by the latest from the following:
 #       system modified date of the page or post, system modified date of
 #       included layout, system modified date of included layout within that
-#       layout, ... 
+#       layout, ...
 #
 # Author: Michael Levin
-# Site: http://www.kinnetica.com
+# Site: http://www.kinnetica.com | https://github.com/kinnetica/jekyll-plugins
 # Distributed Under A Creative Commons License
 #   - http://creativecommons.org/licenses/by/3.0/
 
@@ -106,7 +106,7 @@ module Jekyll
 
     # Valid values allowed by sitemap.xml spec for change frequencies
     VALID_CHANGE_FREQUENCY_VALUES = ["always", "hourly", "daily", "weekly",
-      "monthly", "yearly", "never"] 
+      "monthly", "yearly", "never"]
 
     # Goes through pages and posts and generates sitemap.xml file
     #
@@ -115,7 +115,7 @@ module Jekyll
       sitemap = REXML::Document.new << REXML::XMLDecl.new("1.0", "UTF-8")
 
       urlset = REXML::Element.new "urlset"
-      urlset.add_attribute("xmlns", 
+      urlset.add_attribute("xmlns",
         "http://www.sitemaps.org/schemas/sitemap/0.9")
 
       @last_modified_post_date = fill_posts(site, urlset)
@@ -174,7 +174,7 @@ module Jekyll
       end
     end
 
-    # Fill data of each URL element: location, last modified, 
+    # Fill data of each URL element: location, last modified,
     # change frequency (optional), and priority.
     #
     # Returns url REXML::Element
@@ -188,7 +188,7 @@ module Jekyll
       url.add_element(lastmod) if lastmod
 
       if (page_or_post.data[CHANGE_FREQUENCY_CUSTOM_VARIABLE_NAME])
-        change_frequency = 
+        change_frequency =
           page_or_post.data[CHANGE_FREQUENCY_CUSTOM_VARIABLE_NAME].downcase
 
         if (valid_change_frequency?(change_frequency))
@@ -214,7 +214,7 @@ module Jekyll
       url
     end
 
-    # Get URL location of page or post 
+    # Get URL location of page or post
     #
     # Returns the location of the page or post
     def fill_location(site, page_or_post)
@@ -275,10 +275,10 @@ module Jekyll
     #
     # Returns latest of two dates
     def greater_date(date1, date2)
-      if (date1 >= date2) 
+      if (date1 >= date2)
         date1
-      else 
-        date2 
+      else
+        date2
       end
     end
 

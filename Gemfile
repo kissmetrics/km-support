@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
+gem 'github-pages'
 gem 'rdiscount'
-gem 'aws-s3'
-gem 'csscss'
+gem 'jekyll-sass'
+gem 'bourbon'
