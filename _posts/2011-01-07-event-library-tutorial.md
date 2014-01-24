@@ -14,9 +14,3 @@ In KISSmetrics, there are two types of events. Those that can easily be set up f
 {% include summaries/event_library_tutorial_summary.html %}
 
 [event-library]: https://app.kissmetrics.com/wizard
-
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-</script>
-<script type="text/javascript">
-loadKMTrackableVideo("53aa1d1fd5", "Events Library Introduction");
-</script>s

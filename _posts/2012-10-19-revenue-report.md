@@ -121,9 +121,3 @@ As mentioned above, you can segment your revenue and customers using your existi
 
 [churn]: #churn__what_about_customers_who_stop_paying
 [ltv]: #lifetime_value
-
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-</script>
-<script type="text/javascript">
-loadKMTrackableVideo("3f023d87a8", "Blank Slate: Revenue Report");
-</script>

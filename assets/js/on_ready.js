@@ -49,28 +49,51 @@ $(document).ready(function() {
   if (Object.keys(utmParams).length > 0) {
     km_track('Ad Campaign Hit', utmParams);
   }
+
+  /* KM Tracking for Embedded Wistia Videos
+  * id     - The Wistia video ID
+  * width  - The player width
+  * height - The player height
+  * name   - The name of the video. This can be anything and
+  *          will be used in the event name logged in KM.
+  */
+  function loadKMTrackableVideo (id, name) {
+    try {
+      wistiaEmbed = Wistia.embed(id);
+
+      // Begin binding KISSmetrics tracking
+      wistiaEmbed.bind("play", function() {
+        _kmq.push(['record', 'Played video - ' + name]);
+      });
+
+      wistiaEmbed.bind("pause", function() {
+        _kmq.push(['record', 'Paused video - ' + name]);
+      });
+
+      wistiaEmbed.bind("end", function() {
+        _kmq.push(['record', 'Finished video - ' + name]);
+      });
+    }
+    catch(e) {
+      // Fail quietly if Wistia can't find a div for the video to load in
+    }
+  }
+  loadKMTrackableVideo("9d92cc05c5", "Getting Started Webinar");
+  loadKMTrackableVideo("eb204fab1a", "How to Build Reports");
+  loadKMTrackableVideo("i64qus5i5c", "How to Use Analytics to Move Your Business Faster");
+  loadKMTrackableVideo("ftl871nnps", "What We Mean By 'Events'");
+  loadKMTrackableVideo("c024843e11", "Introduction to KISSmetrics");
+  loadKMTrackableVideo("256139b3f9", "Installing KM on Individual HTML Files");
+  loadKMTrackableVideo("455948e2be", "Introduction to Events");
+  loadKMTrackableVideo("53aa1d1fd5", "Events Library Introduction");
+  loadKMTrackableVideo("bc913098c2", "Events: Clicks On");
+  loadKMTrackableVideo("1b184d5c16", "Events: Submits a Form");
+  loadKMTrackableVideo("700b63755a", "Events: Visits the URL");
+  loadKMTrackableVideo("1083756b5d", "Events and Properties");
+  loadKMTrackableVideo("gik1m2517k", "CallRail Integration");
+  loadKMTrackableVideo("4bf05cd105", "Introduction to Metrics");
+  loadKMTrackableVideo("nbbk71q98e", "Wistia Integration");
+  loadKMTrackableVideo("b683f1acd1", "Blank Slate: Reports");
+  loadKMTrackableVideo("d091892948", "Blank Slate: Metrics");
+  loadKMTrackableVideo("3f023d87a8", "Blank Slate: Revenue Report");
 });
-
-/* KM Tracking for Embedded Wistia Videos
- * id     - The Wistia video ID
- * width  - The player width
- * height - The player height
- * name   - The name of the video. This can be anything and
- *          will be used in the event name logged in KM.
- */
-function loadKMTrackableVideo (id, name) {
-  wistiaEmbed = Wistia.embed(id);
-
-  // Begin binding KISSmetrics tracking
-  wistiaEmbed.bind("play", function() {
-    _kmq.push(['record', 'Played video - ' + name]);
-  });
-
-  wistiaEmbed.bind("pause", function() {
-    _kmq.push(['record', 'Paused video - ' + name]);
-  });
-
-  wistiaEmbed.bind("end", function() {
-    _kmq.push(['record', 'Finished video - ' + name]);
-  });
-}

@@ -15,9 +15,3 @@ summary: With your newly-created custom events, let's start exploring different 
 # Takeaways
 
 * You can make use of any of your events in any of your reports.
-
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-</script>
-<script type="text/javascript">
-loadKMTrackableVideo("4bf05cd105", "Introduction to Metrics");
-</script>

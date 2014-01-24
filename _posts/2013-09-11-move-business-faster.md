@@ -73,9 +73,3 @@ What's the starting point? Find your current KPIs for your business.
 [demo]: https://demo.kissmetrics.com/
 [blog]: http://blog.kissmetrics.com
 [avinash]: http://www.kaushik.net/avinash/
-
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-</script>
-<script type="text/javascript">
-loadKMTrackableVideo("i64qus5i5c", "How to Use Analytics to Move Your Business Faster");
-</script>

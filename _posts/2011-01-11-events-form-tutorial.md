@@ -34,9 +34,3 @@ More detailed instructions coming soon!
 * Currently, the Event Library takes only a *single* HTML ID or a *single* class name. If you'd like to use the full range of nested CSS selectors, please try using JavaScript Library calls for these types of events. If that does not work for you, please let us know if you are interested in seeing this functionality within the Event Library.
 
 [trackSubmit]: /apis/javascript/javascript-specific#tracking-forms
-
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-</script>
-<script type="text/javascript">
-loadKMTrackableVideo("1b184d5c16", "Events: Submits a Form");
-</script>

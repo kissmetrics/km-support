@@ -17,9 +17,3 @@ summary: This is a recorded webinar that walks you through the initial setup, cr
 * Building Reports **(25:33)**
 * People Search and Customer Lifecycle Analysis **(31:06)**
 * When Is Data Actionable? **(41:19)**
-
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-</script>
-<script type="text/javascript">
-loadKMTrackableVideo("9d92cc05c5", "Getting Started Webinar");
-</script>

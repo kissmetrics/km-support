@@ -31,9 +31,3 @@ Determine which event(s) you need for the metric you picked in the last exercise
 [ga-conversions]: https://support.google.com/analytics/answer/2665457?hl=en&ref_topic=2665176&rd=1
 [best-practices]: /best-practices
 [ways-to-send-data]: /getting-started/ways-to-send-us-data
-
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-</script>
-<script type="text/javascript">
-loadKMTrackableVideo("ftl871nnps", "What We Mean By 'Events'");
-</script>

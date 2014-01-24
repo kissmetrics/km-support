@@ -80,9 +80,3 @@ Entering an email address aliases the email to the caller's phone number, so tha
 [km-settings]: https://calltrackingmetrics.com/accounts/kissmetrics_settings
 
 [ctm-edit]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/calltrackingmetrics/ctm-edit.png
-
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/concat/E-v1.js">
-</script>
-<script type="text/javascript">
-loadKMTrackableVideo("gik1m2517k", "CallRail Integration");
-</script>

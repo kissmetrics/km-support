@@ -18,7 +18,6 @@ With the JavaScript Library on your website, you're ready to create the custom e
 # Method 1. Using the Event Wizard
 
 <div id="wistia_700b63755a" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
-
 </div>
 
 ## Exercise (Event Wizard)
@@ -66,9 +65,3 @@ _kmq.push(['record', A_STRING_WITH_YOUR_EVENT_NAME]);
 [click-tutorial]: /tutorial/event-library-tutorial/events-clicks-tutorial
 [form-tutorial]: /tutorial/event-library-tutorial/events-form-tutorial
 [testing]: /getting-started/testing-km
-
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-</script>
-<script type="text/javascript">
-loadKMTrackableVideo("700b63755a", "Events: Visits the URL");
-</script>

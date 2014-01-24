@@ -81,9 +81,3 @@ To quickly test your URL pattern without creating an event, you can open up your
 [page-views]: /apis/javascript#page-views
 [js-settings]: https://app.kissmetrics.com/product.js_settings
 [wildcards]: /tools/event-library/events-url/wildcards
-
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-</script>
-<script type="text/javascript">
-loadKMTrackableVideo("700b63755a", "Events: Visits the URL");
-</script>

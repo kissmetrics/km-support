@@ -53,9 +53,3 @@ Install the JS snippet on your website or a testing/staging website.
 [create-product]: /how-tos/create-site
 [local]: /advanced/local-development
 [wp-plugin]: /integrations/wordpress
-
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-</script>
-<script type="text/javascript">
-loadKMTrackableVideo("256139b3f9", "Installing KM on Individual HTML Files");
-</script>
