@@ -180,12 +180,12 @@ This example demonstrates how to match for a URL that has the "`source`" paramet
 
 [partial]: /tools/event-library/events-url#partial-urls
 
-[ex1]: #wildcard-example-1
-[ex2]: #wildcard-example-2
-[ex3]: #wildcard-example-3
-[ex4]: #wildcard-example-4
-[ex5]: #wildcard-example-5
-[ex6]: #wildcard-example-6
-[ex7]: #wildcard-example-7
-[ex8]: #wildcard-example-8
-[ex9]: #wildcard-example-9
+[ex1]: #wildcard_example_1
+[ex2]: #wildcard_example_2
+[ex3]: #wildcard_example_3
+[ex4]: #wildcard_example_4
+[ex5]: #wildcard_example_5
+[ex6]: #wildcard_example_6
+[ex7]: #wildcard_example_7
+[ex8]: #wildcard_example_8
+[ex9]: #wildcard_example_9

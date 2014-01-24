@@ -118,8 +118,8 @@ As mentioned above, you can segment your revenue and customers using your existi
 [recurly]: /integrations/recurly
 [import]: /advanced/importing-data
 
-[churn]: #churn-what-about-customers-who-stop-paying-
-[ltv]: #lifetime-value
+[churn]: #churn__what_about_customers_who_stop_paying
+[ltv]: #lifetime_value
 
 <script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
 </script>

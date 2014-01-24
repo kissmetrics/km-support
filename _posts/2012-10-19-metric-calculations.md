@@ -23,13 +23,13 @@ Metric Calculations|Description
 [Total Value for Property][total]|Total value of a numeric property across all people you specify.
 [Average Value for Property][average-prop]| Total value of a numeric property / Either number of times property was set, or number of people with this property.
 
-[people]: #number-of-people-who-did-event
-[times]: #number-of-times-event-happened
-[average]: #average-number-of-times-event-happened-per-person
-[conversion]: #conversion-rate
-[time]: #average-time-between-events
-[total]: #total-value-for-property
-[average-prop]: #average-value-for-property
+[people]: #number_of_people_who_did_event
+[times]: #number_of_times_event_happened
+[average]: #average_number_of_times_event_happened_per_person
+[conversion]: #conversion_rate
+[time]: #average_time_between_events
+[total]: #total_value_for_property
+[average-prop]: #average_value_for_property
 
 ## Examples
 
@@ -111,4 +111,4 @@ Calculates total value of a numeric property, and then divides by an amount dict
 
 *Example: "What is the* **Average** *Revenue* **of each person (including non-paying visitors)** *from the last 90 days?"*
 
-[fvm]: /tools//funnels-vs-metrics
+[fvm]: /tools/funnels-vs-metrics

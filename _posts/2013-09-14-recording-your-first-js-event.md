@@ -58,8 +58,8 @@ _kmq.push(['record', A_STRING_WITH_YOUR_EVENT_NAME]);
 * Within the JS library, there are [specialized JS functions][js-specific] to help record events upon actions like clicking a page element, submitting a form, or clicking a link that leads off of your domain. Once you are comfortable with using `record` read more about the functions specific to our JavaScript library.
 * You can dynamically name events with string interpolation, but remember that events ***should reflect a conversion important to you***. We will encounter performance problems if you record [too many event names][too-many-events] (say, if you record an event with a unique event name for every page visited).
 
-[using-ew]: #using-event-wizard
-[using-api]: #using-javascript-api
+[using-ew]: #using_event_wizard
+[using-api]: #using_javascript_api
 [video-api]: /how-tos/tracking-video
 [js-specific]: /apis/javascript/javascript-specific
 [too-many-events]: /troubleshooting/too-many-event-names
