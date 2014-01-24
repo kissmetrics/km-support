@@ -5,7 +5,8 @@ categories: learn
 portal: university
 summary: With your newly-created custom events, let's start exploring different ways to visualize their data.
 ---
-<div id="wistia_4bf05cd105" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400"></div>
+<div id="wistia_4bf05cd105" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
+</div>
 
 # Exercise
 

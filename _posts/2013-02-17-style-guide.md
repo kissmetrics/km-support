@@ -228,8 +228,12 @@ Where “id” is the name of a defined image reference. Image references are de
 
 When embeding Wistia videos, use the inline API method which will look similar to this:
 
-	<div id="wistia_id" class="wistia_embed" style="width:488px;height:275px;" data-video-width="488" data-video-height="275"></div>
+    <div id="wistia_id" class="wistia_embed" style="width:488px;height:275px;" data-video-width="488" data-video-height="275">
+    </div>
 
 Then, remove any inline styles on the `<div>` tag and add the CSS class "wistia-embed" so that it looks similar to this:
 
-	<div id="wistia_id" class="wistia_embed wistia-embed" data-video-width="488" data-video-height="275"></div>
+    <div id="wistia_id" class="wistia_embed wistia-embed" data-video-width="488" data-video-height="275">
+    </div>
+
+The line break before the closing `</div>` is important for certain Markdown interpreters from adding the content below the video into the Wistia div.

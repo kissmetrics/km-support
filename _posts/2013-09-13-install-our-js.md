@@ -5,7 +5,8 @@ categories: learn
 portal: university
 summary: Once you know what KPIs to begin focusing on, let's start creating events, starting with installing our JavaScript Library.
 ---
-<div id="wistia_256139b3f9" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400"></div>
+<div id="wistia_256139b3f9" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
+</div>
 
 # Takeaways
 

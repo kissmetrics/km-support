@@ -5,7 +5,8 @@ categories: learn
 portal: university
 summary: How does analytics fit into improving my business? See the KISSmetrics Demo Account for ideas!
 ---
-<div id="wistia_i64qus5i5c" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400"></div>
+<div id="wistia_i64qus5i5c" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
+</div>
 
 We can't show you absolutely *all* the ways our customers use KISSmetrics to be successful, but we can point you in the right direction. Check out:
 
