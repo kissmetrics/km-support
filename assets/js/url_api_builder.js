@@ -8,7 +8,7 @@ $(function(){
     $(this).parent().before(propClone);
   });
 
-  $('.url-builder-form input[type="submit"]').click(function(e){
+  $('.url-builder-form button.btn-primary').click(function(e){
     e.preventDefault();
 
     var url_parts = [];
