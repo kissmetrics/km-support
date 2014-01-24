@@ -96,8 +96,6 @@ Our JavaScript code snippet looks like this:
 </script>
 {% endhighlight %}
 
-This was acheived by wrapping the code block in Pygment tags `{% highlight html %}` and `{% endhighlight %}`.
-
 You can pass a number of languages as an argument. You'll find a lot of use out of `html`, `html+ruby`, `js`, and `js+ruby` lexers. All the languages supported are listed at the [Pygments site](http://pygments.org/docs/lexers/).
 
 * * *
@@ -116,7 +114,7 @@ Markdown treats asterisks (*) and underscores (_) as indicators of emphasis. Tex
 
 ### Strong
 
-Double *’s or _’s will be wrapped with an HTML `<strong>` tag.
+Double `*`’s or `_`’s will be wrapped with an HTML `<strong>` tag.
 
 **This is an example of emphasized text**
 
@@ -124,7 +122,7 @@ Double *’s or _’s will be wrapped with an HTML `<strong>` tag.
 
 ### Code
 
-To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:
+To indicate a span of code, wrap it with backtick quotes (\`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:
 
 `Referrer` indicates the URL the visitor came from
 

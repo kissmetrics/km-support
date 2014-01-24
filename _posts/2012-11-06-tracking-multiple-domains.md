@@ -21,9 +21,9 @@ Notice that all of these are part of `.mysite.com`.
 
 If you have put the same JavaScript code on all of these subdomains, by default we will be able to remember it is the same visitor as they browse from one subdomain to the next. That way you can set up to record events from each subdomain, and we can show whether it's the same person going through these subdomains.
 
-*Note: if you are using the Event Wizard to set up events, please make sure this [JavaScript setting][js-settings] is enabled. This was enabled by default for all accounts created after October 2012:*
+*Note: if you are using the Event Wizard to set up events, please make sure this [JavaScript setting][auto-track] is enabled. This was enabled by default for all accounts created after October 2012:*
 
-![Include Host and Subdomain][include-host]
+![Include Host and Subdomain][js-settings]
 
 <a name="to-track-subdomains-separately"></a>
 ### To Track Subdomains Separately...

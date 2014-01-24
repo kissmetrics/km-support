@@ -8,7 +8,7 @@ summary: Some notes to consider when using Google Analytics' UTM parameters with
 It's a top-five question for every marketer: "How'd that customer find us?" Here's how UTM parameters come into play. Smart marketers often use UTM parameters to track customers. They're often used for paid ads, but many marketers are also using them for social media marketing, content marketing, email marketing, and much more.
 
 Here's a snapshot of some popular campaigns that can be tracked with UTM parameters:
-    
+
 * Joint webinars
 * App stores
 * Partner websites
@@ -31,17 +31,15 @@ See those UTM parameters? Such URLs are loaded with them to help the marketer kn
 
 Here's how it all works:
 
-1. When Bob lands on your webpage via a UTM-loaded URL, the KISSmetrics code block in the webpage's <head> section automagically detects all available UTM parameter.
+1. When Bob lands on your webpage via a UTM-loaded URL, the KISSmetrics code block in the webpage's `<head>` section automagically detects all available UTM parameter.
 2. KISSmetrics fires the event 'Ad Campaign Hit' for Bob.
 3. KISSmetrics sets the values of each available UTM parameter as values for these five possible corresponding properties:
 
-<ul>
-    <li>Campaign Source</li>
-    <li>Campaign Medium</li>
-    <li>Campaign Term</li>
-    <li>Campaign Content</li>
-    <li>Campaign Name</li>
-</ul>
+* Campaign Source
+* Campaign Medium
+* Campaign Term
+* Campaign Content
+* Campaign Name
 
 If you look up Bob using the People tab and see that Bob has triggered the event 'Ad Campaign Hit' and has one or more of these five properties, you'll know that Bob touched one of your UTM-loaded URLs at some point.
 
@@ -58,7 +56,7 @@ Download PDF: [Step-by-Step Guide to Tracking Paid Ads][info-paid-ads-pdf]
 
 ## Another example of using UTM parameters to track popular marketing campaigns
 
-Let's say you're marketing accounting software and you're testing two versions of the same offer on Twitter: 
+Let's say you're marketing accounting software and you're testing two versions of the same offer on Twitter:
 
 **Tweet A**: Free buyer's guide for accounting software. Check it out: http://bit.ly/13nnYIs<br>
 **Tweet B**: Don't buy accounting software before checking out this free guide: http://bit.ly/167xgHc
@@ -146,4 +144,4 @@ _kmq.push(function(){
 
 #### Scenario 2: The KISSmetrics code block isn't on the landing page
 
-Think of the KISSmetrics code block as KISSmetrics' eyes. If the code block isn't on a webpage, then KISSmetrics can't see or track people on that page. That's why we always recommend installing the code block on every webpage of your site. Without the code block, KISSmetrics won't see that people are arriving on that page via a UTM-loaded URL, which means KISSmetrics will never pick up UTM-related events & properties. 
+Think of the KISSmetrics code block as KISSmetrics' eyes. If the code block isn't on a webpage, then KISSmetrics can't see or track people on that page. That's why we always recommend installing the code block on every webpage of your site. Without the code block, KISSmetrics won't see that people are arriving on that page via a UTM-loaded URL, which means KISSmetrics will never pick up UTM-related events & properties.

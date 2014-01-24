@@ -40,7 +40,7 @@ The Salesforce integration brings in a window to see the KISSmetrics Person Deta
 
 ## Part 2: Add the KISSmetrics Page to Salesforce Contact View
 
-1. Still in the <username> -> "Setup" area, on the left hand side of the page go to "Customize", "Contacts", then "Page Layouts"
+1. Still in the `<username>` -> "Setup" area, on the left hand side of the page go to "Customize", "Contacts", then "Page Layouts"
 2. Locate the page layout you are currently using (should be just one) and click "Edit"
 3. In the objects box at the top of the page choose "Visualforce Pages" and drag the page you created above to anywhere you want on the layout.
 4. Click "Save"
@@ -51,7 +51,7 @@ You can create an additional Salesforce Page to link to Leads in addition to Con
 
 {% highlight html %}
 <apex:page standardController="Lead">
-  <apex:iframe rendered="{!IF((lead.email != ''), true, false)}" src="https://app.kissmetrics.com/people/find/{!lead.email}?mode=embedded&key=__KEY__&secret=__SECRET__" width="100%" scrolling="true" /> 
+  <apex:iframe rendered="{!IF((lead.email != ''), true, false)}" src="https://app.kissmetrics.com/people/find/{!lead.email}?mode=embedded&key=__KEY__&secret=__SECRET__" width="100%" scrolling="true" />
 </apex:page>
 {% endhighlight %}
 
