@@ -6,7 +6,7 @@ author: Eric Fung
 tags: [power-report]
 summary: Common power reports and how to set them up.
 ---
-<hr />
+* * *
 # Table of Contents
 
 * [Example 1: Measuring Retention][section1]

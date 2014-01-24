@@ -6,7 +6,7 @@ tags: []
 author: Eric Fung
 summary: These are the events and properties you should track to make the most of our upcoming SaaS Revenue Report.
 ---
-<hr />
+* * *
 # Table of Contents
 
 * [Section 1. Recommended Events and Properties][section1]

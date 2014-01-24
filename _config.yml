@@ -1,6 +1,6 @@
 # Jekyll Config
 permalink: none
-markdown: rdiscount
+markdown: maruku
 pygments: true
 exclude: [Gemfile,Gemfile.lock,Rakefile,CNAME,README.md]
 

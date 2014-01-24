@@ -6,7 +6,7 @@ tags: [identities]
 author: Eric Fung
 summary: Key concepts about person-based analytics you should know before using KISSmetrics.
 ---
-<hr />
+* * *
 # Table of Contents
 
 * [Section 1. People Are Represented by Two Types of "Identities"][section1]
@@ -14,7 +14,7 @@ summary: Key concepts about person-based analytics you should know before using 
     * [Section 2.1 Setting Named ID's: `identify` method][section2.1]
     * [Section 2.2 Gotcha! Example Uses of `identify` to Avoid][section2.2]
 * [Section 3. An ID Should Not Change Often, But When It Does...][section3]
-    * [Section 3.1 Introduction to "Aliasing"][section3.1]    
+    * [Section 3.1 Introduction to "Aliasing"][section3.1]
     * [Section 3.2 Let Our JS Library "Alias" the Two IDs][section3.2]
         * [Section 3.2.1 JS Library Examples][section3.2.1]
     * [Section 3.3 Manually Calling the `alias` Method][section3.3]
@@ -148,7 +148,7 @@ Our API has a method named `alias`, which merges the data from 2 IDs together. T
 #### Calling `alias` and Afterward
 
 {% highlight js %}
-// Call our API 
+// Call our API
 _kmq.push(['alias', '6j1KH1zrwBS6T2iIsixvpfnCnxY=', 'User #12345']);
 {% endhighlight %}
 
@@ -195,7 +195,7 @@ _kmq.push(['identify', 'foo@example.com' ]);
   <input name="password" type="password"></input>
 </form>
 <script type="text/javascript">
-  // Allow our JS to track 
+  // Allow our JS to track
   _kmq.push(['trackSubmit', 'login_form', 'Logged In']);
 </script>
 {% endhighlight %}

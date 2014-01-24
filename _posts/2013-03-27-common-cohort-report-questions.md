@@ -6,7 +6,7 @@ tags: []
 author: Eric Fung
 summary: Answers to common Cohort Report questions.
 ---
-<hr />
+* * *
 # Table of Contents
 
 * [Section 1. Report Configuration (Events/Date Range)][section1]
