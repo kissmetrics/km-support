@@ -6,13 +6,10 @@ tags: []
 author: Eric Fung
 summary: Answers to common Cohort Report questions.
 ---
-* * *
-# Table of Contents
+* Table of Contents
+{:toc}
 
-* [Section 1. Report Configuration (Events/Date Range)][section1]
-* [Section 2. Advanced Options][section2]
-* [Section 3. How do I understand the results of my report?][section3]
-* [Section 4. Comparing cohort results to other KISSmetrics reports][section4]
+* * *
 
 <a name="section-1"></a>
 ## Section 1. Report Configuration (Events/Date Range)
@@ -69,8 +66,3 @@ Thus, the bucket for "Within 1-2 weeks of 'the week of Jan 4, 2013'" can potenti
 
 [explanation]: http://f.cl.ly/items/2l18292C1k1y240B112C/cohort-explanation.png
 [power]: /tools/power-report
-
-[section1]: #section-1
-[section2]: #section-2
-[section3]: #section-3
-[section4]: #section-4

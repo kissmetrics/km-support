@@ -6,15 +6,10 @@ author: Eric Fung
 tags: [power-report]
 summary: Common power reports and how to set them up.
 ---
+* Table of Contents
+{:toc}
+
 * * *
-# Table of Contents
-
-* [Example 1: Measuring Retention][section1]
-* [Example 2: List Every Property Recorded][section2]
-* [Example 3: Segmenting Revenue][section3]
-* [Example 4: Revenue from Old Customers vs. New][section4]
-
-## Power Reports are Hard to Create
 
 These are common, useful power reports our customers have set up. Because the Power Report provides so many options to configure, you can refer to these examples after which to model your own reports. Obviously the event and property names here may not match what you have been using, but the examples demonstrate occasions for using the different ranges.
 
@@ -55,10 +50,5 @@ Look up Total Revenue (the sum of "Order Total"), segmented based on which Produ
 [case-2a]: http://cl.ly/image/2Z46083V0M2b/02a-use-case.png
 [case-2b]: http://cl.ly/image/2M0E0n07013E/02b-use-case.png
 [case-3]: http://cl.ly/image/3q3Q0V1X2O2B/03-use-case.png
-
-[section1]: #measuring-retention
-[section2]: #list-every-property-recorded
-[section3]: #segmenting-revenue
-[section4]: #revenue-from-old-customers-vs-new
 
 [calculations]: /tools/metrics/metric-calculations

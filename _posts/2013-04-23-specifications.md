@@ -8,13 +8,13 @@ summary: Here's how our Simple Person-Based REST-like API works, on top of which
 * Table of Contents
 {:toc}
 
+* * *
+
 To be unobtrusive to your end-users, we'll respond with a 200 OK status, even if some of these parameters are "incorrect". The response will be a 1x1 GIF image (to power our "[Beacon API][beacon]").
 
 ***Not to be confused with our [URL API][url], which works with our JavaScript Library to tag links people use to reach your website.***
 
 *Important*: Since you are hitting a URL, remember that any special symbols like `+` and `@` in your parameters should be [URL-encoded][encoding].
-
-* * *
 
 <a name="recording-an-event"></a>
 ## Recording an Event
@@ -122,8 +122,3 @@ Here is a form to help demonstrate building individual tracking URLs.
 [dupes-events]: /troubleshooting/detecting-duplicates#duplicate-events
 [dupes-props]: /troubleshooting/detecting-duplicates#duplicate-properties
 [integration]: /integrations
-
-[section1]: #recording-an-event
-[section2]: #setting-properties
-[section3]: #aliasing-users
-[url-builder]: #url-builder

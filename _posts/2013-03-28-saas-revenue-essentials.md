@@ -6,12 +6,10 @@ tags: []
 author: Eric Fung
 summary: These are the events and properties you should track to make the most of our upcoming SaaS Revenue Report.
 ---
-* * *
-# Table of Contents
+* Table of Contents
+{:toc}
 
-* [Section 1. Recommended Events and Properties][section1]
-* [Section 2. How do I import previous transactions?][section2]
-* [Section 3. I have already been tracking revenue. How do update my old payments with the recommended structure?][section3]
+* * *
 
 We are in the process of developing a Revenue Report aimed specifically towards SaaS businesses. While it is not ready yet, this report will be designed to help you better visualize **Monthly Recurring Revenue**, especially if your customers are billed less frequently than every month.
 
@@ -152,6 +150,3 @@ Please refer to our page on [Importing Data][import]. The properties are somewha
 Again, your best bet will be to [Import the Past Data][import]. Chances are you have a way to refer back to *who* was billed *when*...with that information, you can use the appropriate method of importing data to set the new properties you haven't been tracking, like "Subscription Billing Length".
 
 [import]: /advanced/importing-data
-[section1]: #section-1
-[section2]: #section-2
-[section3]: #section-3

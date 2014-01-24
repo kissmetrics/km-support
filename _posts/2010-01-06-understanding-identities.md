@@ -6,19 +6,10 @@ tags: [identities]
 author: Eric Fung
 summary: Key concepts about person-based analytics you should know before using KISSmetrics.
 ---
-* * *
-# Table of Contents
+* Table of Contents
+{:toc}
 
-* [Section 1. People Are Represented by Two Types of "Identities"][section1]
-* [Section 2. Use the Named ID You Have Access To][section2]
-    * [Section 2.1 Setting Named ID's: `identify` method][section2.1]
-    * [Section 2.2 Gotcha! Example Uses of `identify` to Avoid][section2.2]
-* [Section 3. An ID Should Not Change Often, But When It Does...][section3]
-    * [Section 3.1 Introduction to "Aliasing"][section3.1]
-    * [Section 3.2 Let Our JS Library "Alias" the Two IDs][section3.2]
-        * [Section 3.2.1 JS Library Examples][section3.2.1]
-    * [Section 3.3 Manually Calling the `alias` Method][section3.3]
-    * [Section 3.4 Word of Warning][section3.4]
+* * *
 
 In KISSmetrics, every unit of recorded data is associated with the person who interacted with your website or application. This is a seemingly simple idea but it has powerful consequences.
 
@@ -238,17 +229,6 @@ Aliasing is powerful, but can be troublesome because it is currently **not rever
 
 KISSmetrics lets you incorporate data from several data sources from integrations with multiple platforms and from libraries in several languages. They may not all use the same Customer ID, so you may need to find the common links between these sources. That way, you could script a way to alias all the relevant IDs together, ensuring your customer data is not fragmented.
 -->
-
-[section1]: #section-1
-[section2]: #section-2
-[section2.1]: #section-2.1
-[section2.2]: #section-2.2
-[section3]: #section-3
-[section3.1]: #section-3.1
-[section3.2]: #section-3.2
-[section3.2.1]: #section-3.2.1
-[section3.3]: #section-3.3
-[section3.4]: #section-3.4
 
 [pep]: /getting-started/people-events-properties
 [common-methods]: /apis/common-methods
