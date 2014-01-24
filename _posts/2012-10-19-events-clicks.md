@@ -5,6 +5,10 @@ categories: [tools, event-library]
 author: Eric Fung & Nemo Chu
 summary: Trigger events when someone clicks on an element.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## Create The Event
 
 There are probably some key buttons on your site that are critical to the success of your business. They might be:
@@ -16,7 +20,7 @@ Many clickable elements on your site can be tracked so don’t limit yourself to
 
 It’s easy to tell KISSmetrics what clicks to keep track of. You’re going to go to your site, view the source code, and find the ID or a Class name of the clickable element you want to track. Name your new event, enter in the id or class name, and you’re done.
 
-<a name="multiple-classes"></a>
+
 ## Choosing Between Multiple Classes
 
 Sometimes a button will have multiple classes applied to it. In this example below, three classes are being applied to the element and each are separated by a space:

@@ -5,13 +5,17 @@ categories: [tools, funnels]
 author: Eric Fung
 summary: Segment a funnel by one property and by a known value of another property.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 You may know that our funnel reports allow you to segment a funnel according to one property. We also allow you to further segment such a funnel by an additional property, if you happen to know what value to search for. Let's take a look at this example. We're examining a Signup/Upgrade funnel, segmented by the Referrers that brought these visitors to the home page:
 
 ![1-funnel][ss1]
 
 But let's say I want to see Referrer information _only for people who have signed up for a Free plan._ Here is our additional property filter to let you do that.
 
-<a name="property-filter"></a>
+
 ## Property Filter
 
 * Click on the gear icon next to the Property drop-down menu.

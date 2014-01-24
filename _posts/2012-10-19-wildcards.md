@@ -5,6 +5,10 @@ categories: [tools, event-library, events-url]
 author: Eric Fung
 summary: Use `*` to indicate wildcards. Here are many examples of what's possible.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 You can also record visits to similar URLs under one event name. Use `*` to indicate wildcards.
 
 ## Quick Reference
@@ -41,7 +45,7 @@ Let's look at some detailed examples. Suppose your site has URLs that are simila
 
 From these URLs, here's what these wildcard patterns would match:
 
-<a name="wildcard-example-1"></a>
+
 ### Wildcard Example 1
 
 **Pattern:** `example.com/en/*/view`
@@ -53,7 +57,7 @@ From these URLs, here's what these wildcard patterns would match:
 
 This example demonstrates using one wildcard to match a URL that starts with "`example.com/en/`" and ends with "`/view`".
 
-<a name="wildcard-example-2"></a>
+
 ### Wildcard Example 2
 
 **Pattern:** `example.com/*/view/contact`
@@ -67,7 +71,7 @@ This example demonstrates using one wildcard to match a URL that starts with "`e
 
 This example demonstrates that a single wildcard can match on more than just one subsection of the URL. This example finds "any URL that ends in `/view/contact`".
 
-<a name="wildcard-example-3"></a>
+
 ### Wildcard Example 3
 
 **Pattern:** `example.com/*/san-francisco/*/contact`
@@ -76,9 +80,9 @@ This example demonstrates that a single wildcard can match on more than just one
 
 * `example.com/en/san-francisco/view/contact`
 
-This example demonstrates you can use two (or more) wildcards in a pattern. 
+This example demonstrates you can use two (or more) wildcards in a pattern.
 
-<a name="wildcard-example-4"></a>
+
 ### Wildcard Example 4
 
 **Pattern:** `example.com/*/view/*`
@@ -100,7 +104,7 @@ This example demonstrates you can use two (or more) wildcards in a pattern.
 
 This example demonstrates using a wildcard at the end of a URL. The last `/` before the wildcard indicates to match on all pages that are sub-pages of "`.../view/`". This pattern also matches on "`.../view/`" itself, since the wildcard matches to "nothing" in that case.
 
-<a name="wildcard-example-5"></a>
+
 ### Wildcard Example 5
 
 **Pattern:** `example.com/*/view/*/*`
@@ -118,7 +122,7 @@ This example demonstrates using a wildcard at the end of a URL. The last `/` bef
 
 This example contrasts with Example 4. The first `*/` after `.../view/` means that this wildcard has to match on *something* (not just an empty string, like in Example 4), and the final `*` in the pattern looks for any deeper sub-pages of "`.../view/`".
 
-<a name="wildcard-example-6"></a>
+
 ### Wildcard Example 6 - One to Avoid
 
 To contrast with Example 4, here's a **Pattern That Doesn't Work As Expected:** "`*/view/*`"
@@ -127,7 +131,7 @@ This pattern does not match on any of the sample URLs above, and here's why. Tho
 
 The bottom line is, if you're leaving off the domain name, then please be mindful of including the initial "`/`" in your URLs.
 
-<a name="wildcard-example-7"></a>
+
 ### Wildcard Example 7 - Another to Avoid
 
 Another **Pattern That Doesn't Work As Expected:** "`/*/*/view`"
@@ -141,7 +145,7 @@ Suppose your site recognizes query parameters, additional information at the end
 * `example.com/en/san-francisco/view/?source=google&location=home`
 * `example.com/en/san-francisco/view/?source=fb&location=away`
 
-<a name="wildcard-example-8"></a>
+
 ### Wildcard Example 8 - Query Example
 
 **Pattern:**
@@ -160,7 +164,7 @@ Suppose your site recognizes query parameters, additional information at the end
 
 This example demonstrates how to match for a URL that has any value for the "`source`" parameter. Also, notice you can match for a query parameter in the URL, even if it's not the very first parameter listed ("`?source=fb&location=home`" vs. "`?location=home&source=fb`").
 
-<a name="wildcard-example-9"></a>
+
 ### Wildcard Example 9 - Fixed Query Parameter
 
 **Pattern:**

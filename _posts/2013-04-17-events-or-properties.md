@@ -6,6 +6,9 @@ tags: [common_dev_pitfalls]
 author: Eric Fung
 summary: If you're not sure whether to use events or properties to store your data, consider this rule.
 ---
+* Table of Contents
+{:toc}
+* * *
 
 In general, the way to think about structuring your data looks like this:
 
@@ -19,7 +22,7 @@ In general, the way to think about structuring your data looks like this:
 
 In practice, there's a balance in the way you structure your data, mainly because the reports you're looking for can change as time goes on. Let's walk through three examples:
 
-<a name="example-1"></a>
+
 ### Example 1: Very generic event names (in bold) with one set of specific properties (name of the property is italicized and the values of the property are underlined).
 
 If you're only running tests on a few Landing Pages, you'll likely get less confused by a generic event name.
@@ -30,7 +33,7 @@ If you're only running tests on a few Landing Pages, you'll likely get less conf
 LP-Variation1 | 50 | 25
 LP-Original-01-01-2013 | 50 | 10
 
-<a name="example-2"></a>
+
 ### Example 2: Specific event names with one set of specific properties.
 
 If you run simultaneous tests on several Landing Pages, you might want to report on the results of this particular test in isolation.)
@@ -40,7 +43,7 @@ If you run simultaneous tests on several Landing Pages, you might want to report
 LP-Variation1 | 50 | 25
 LP-Original-01-01-2013 | 50 | 10
 
-<a name="example-3"></a>
+
 ### Example 3: Specific event names combined with two sets of specific properties.
 
 If you are running simultaneous tests on two parts of the funnel -- the email AND the landing page, each of those two should be their own Property.

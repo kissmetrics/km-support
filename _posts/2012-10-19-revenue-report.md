@@ -5,6 +5,10 @@ categories: tools
 author: Eric Fung
 summary: The Revenue Report gives you a wholistic view of your revenue and your paying customers.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## Quick Reference
 
 Calculation | Description
@@ -30,7 +34,7 @@ Chances are, you are using analytics to increase the number of people using your
 
 ![Revenue graph][revenue-graph]
 
-<a name="how-do-i-pass-in-revenue-data-"></a>
+
 # How do I pass in revenue data?
 
 The Revenue Report looks for a single KISSmetrics Property across all customers. In our examples, we call this property `Billing Amount`. But you can use any other property name, as long as you are consistent across all customers.
@@ -53,12 +57,12 @@ KM.record('Refunded', {'Billing Amount' => -29.99 })
 
 Remember, there are [many ways to send us event data][send]. You might find it most accurate to [import data][import] from another data source that's already keeping track of each transaction.
 
-<a name="revenue-mapping"></a>
+
 ### Revenue Mapping
 
 Once you have `Billing Amount` data recorded with KISSmetrics, we do our best to find and use the property name where the data is located. If the information in the report looks really strange, [please check your site's property mappings][mapping] to ensure that your `Revenue` property is actually using the correct property under which you provided revenue data.
 
-<a name="total-customers"></a>
+
 # Total Customers
 
 The revenue report can also look into your data to see how many paying customers you still have.
@@ -67,7 +71,7 @@ The revenue report can also look into your data to see how many paying customers
 * **Paying Customers Gained**: - the number of people whose first recorded Revenue happened in the time frame you're looking at.
 * **Paying Customers Lost**: - the number of people who have churned, which is explained in the next section.
 
-<a name="churn-what-about-customers-who-stop-paying-"></a>
+
 ## Churn - What about customers who stop paying?
 
 In addition to revenue, we can show you the number of customers gained and lost over the date range you're reporting on. **Churn** describes customers who are no longer active and are no longer contributing revenue. *Each business type tends to calculate churn differently. By default, KISSmetrics uses a SaaS 30-day subscription model to determine churn.*
@@ -77,7 +81,7 @@ In addition to revenue, we can show you the number of customers gained and lost 
 
 We realize that these two options may not sufficiently define churn for every business. For example, you may be an e-commerce business that doesn't track explicit cancelations, but gives customers longer than 30 days until you consider them churned. If so, we're interested in hearing how *you* define churn, and how you would use a Revenue Report most effectively. Please send in your feedback using the feedback box at the bottom of the Revenue Report!
 
-<a name="lifetime-value"></a>
+
 ## Lifetime Value
 
 **Lifetime Value** (LTV) is a *prediction* of how much a single customer will provide you in their time as a paying customer. There are many mathematical models for calculating LTV. Our report uses this one:
@@ -92,7 +96,7 @@ To simplify further:
 
 This means that if no one has churned, we can't make a prediction of your customers' LTV (we can't divide by 0).
 
-<a name="segmenting-revenue"></a>
+
 # Segmenting Revenue
 
 As mentioned above, you can segment your revenue and customers using your existing KISSmetrics properties. Some example questions you might answer:

@@ -6,6 +6,10 @@ tags: [identities]
 author: Eric Fung
 summary: These are several pitfalls to avoid when using KISSmetrics identities.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 In theory, our concept of identities sounds simple.
 
 1. KISSmetrics tracks people.
@@ -16,7 +20,7 @@ In theory, our concept of identities sounds simple.
 
 That said, here are some uses of `alias` and `identify` you'll want to take note of.
 
-<a name="1"></a>
+
 ### 1. You used our `identify` API call but your customer identities are not showing up.
 
 * *Are you calling our API with the identity in quotes?*
@@ -34,7 +38,7 @@ _kmq.push(['identify', steve@apple.com ]);
 
 When you call `identify` with our JS library when a person is anonymous, we automatically alias their anonymous ID with the given ID. This is related to the next section.
 
-<a name="2"></a>
+
 ### 2. You used our `alias` API call but the aliased ID does not appear when you search for it, or in the history of the person's Customer IDs.
 
 * *We can only show a person's aliases as long as we see an event attributed to that alias.*
@@ -65,7 +69,7 @@ KM.record("Event 2")
 
 ![Alias vs Set][alias-vs-set]
 
-<a name="3"></a>
+
 ### 3. We're reporting that only *one* person is doing an event (Visited Site) when you know many more have done the event.
 
 * *Are you reusing the same identity for numerous visitors?*
@@ -97,7 +101,7 @@ Although "User-123" and "User-456" represent two different people, and they are 
 
 This is why it's useful to just `set` additional properties about who the person is. We recommend using `alias` sparingly and to ensure that each person is represented by a unique ID. In this case, a person's first name is not sufficiently unique enough to use as a person's possible 'identity'.
 
-<a name="4"></a>
+
 ### 4. We're showing that nobody progressed past a certain step in a funnel when you have other data that indicates otherwise.
 
 * *Have you successfully aliased a person's various identities together?*
@@ -114,7 +118,7 @@ In the example of you using both JS and PHP, it doesn't matter in which language
 _kmq.push(['identify', 'kissmetrics.example@gmail.com']);
 // Calling 'identify' in JS for an anonymous user also has a side effect of aliasing the anonymous ID to this email address
 {% endhighlight %}
-   
+
 * In PHP:
 
 {% highlight php %}

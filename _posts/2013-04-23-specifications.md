@@ -16,7 +16,6 @@ To be unobtrusive to your end-users, we'll respond with a 200 OK status, even if
 
 *Important*: Since you are hitting a URL, remember that any special symbols like `+` and `@` in your parameters should be [URL-encoded][encoding].
 
-<a name="recording-an-event"></a>
 ## Recording an Event
 
 Method URL:
@@ -43,7 +42,6 @@ This records that the user `bob` did the event `Signed Up` and his `gender` was 
 
 Please be aware of how our processing servers detect [duplicate events][dupes-events].
 
-<a name="setting-properties"></a>
 ## Setting Properties
 
 Method URL:
@@ -69,7 +67,6 @@ This records that the user `bob` got the property `gender` with the value set to
 
 Please be aware of how our processing servers detect [duplicate properties][dupes-props].
 
-<a name="aliasing-users"></a>
 ## Aliasing Users
 
 Method URL:
@@ -93,7 +90,6 @@ This tells us that events done by `User 12345` and events done by `bob@bob.com` 
 
 **Calling `alias` is not reversible, and should be used with some caution.**
 
-<a name="when-to-alias"></a>
 ### When to Alias
 
 There are only a handful of scenarios where it is appropriate to directly call `alias`:
@@ -109,7 +105,6 @@ Notes:
 * It’s natural if a person has more than one alias.
 * The order you pass the two arguments does not matter.
 
-<a name="url-builder"></a>
 # URL Builder
 
 Here is a form to help demonstrate building individual tracking URLs.

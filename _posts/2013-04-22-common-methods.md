@@ -5,6 +5,10 @@ categories: apis
 author: Eric Fung
 summary: All of our libraries provide the same basic methods - record, set, identify and alias, which are described in more detail here.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Rather than constantly making HTTP calls, we provide abstraction with dedicated libraries in several languages. You can use choose to use one (or more) of them to send data.
 
 All of our libraries provide the same basic methods:
@@ -15,7 +19,7 @@ Command    | Description
 `set`      | Saves additional properties about the person, which you use to segment groups of people into cohorts.
 `identify` | Sets the identity of the current person, so we know who to attribute future events to.
 
-<a name="record"></a>
+
 ## `record`
 
 The `record` method is the most commonly used method. When a `record` command is executed, it records a KISSmetric event. It takes two parameters:
@@ -27,12 +31,12 @@ If you do not pass in a name, calling `record` is identical to calling `set`. Se
 
 Our [JavaScript Library][js] has additional methods to let you record events after a certain trigger: when an element gets clicked, or when a form is submitted.
 
-<a name="set"></a>
+
 ## `set`
 
 The `set` method lets you set properties on a person without recording an event. It takes a Hash of properties to set. See below for examples.
 
-<a name="identify"></a>
+
 ## `identify`
 
 The `identify` method allows you to set the identity of the current person using your site. Our JavaScript API will detect anonymous visitors and set up appropriate anonymous identities for them automatically.
@@ -50,7 +54,7 @@ Here's an example of an `identify` call in a Ruby app that obtains the current v
 
 For more information on how to handle identities, please refer to this [Identity Management guide][id].
 
-<a name="examples"></a>
+
 ## Examples
 Below are some examples for the standard API. Please see APIs for supported languages.
 

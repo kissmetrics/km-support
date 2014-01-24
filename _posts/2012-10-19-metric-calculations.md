@@ -5,6 +5,10 @@ categories: [tools, metrics]
 author: Eric Fung
 summary: You can create metrics based on one of these calculations.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 You can create different metrics based on your existing events and properties.
 
 ## Quick Reference
@@ -29,25 +33,25 @@ Metric Calculations|Description
 
 ## Examples
 
-<a name="number-of-people-who-did-event"></a>
+
 ### Number of People Who Did Event
 Count each person a maximum of 1 time, even if they completed this event multiple times.
 
 *Example: "How many* **people** *Visited Site in the last 7 days?"*
 
-<a name="number-of-times-event-happened"></a>
+
 ### Number of Times Event Happened
 Counts each time the event was completed, regardless of the number of people involved.
 
 *Example: "How many* **times** *did people click through an Ad Campaign Hit in the last month?"*
 
-<a name="average-number-of-times-event-happened-per-person"></a>
+
 ### Average Number of Times Event Happened Per Person
 Takes the number of times an event was done and divides by the number of people who completed the event.
 
 *Example:* **On average, how many times** *did each person Purchase in the last 90 days?*
 
-<a name="conversion-rate"></a>
+
 ### Conversion Rate
 Calculates the conversion rate between two events. For someone to be counted, they need to have done **both events in order**.
 
@@ -61,7 +65,7 @@ Calculates the conversion rate between two events. For someone to be counted, th
 
 _The conversion rate's calculation method excludes the people who have already converted. You can refer to our calculation method on the [Funnels vs. Metrics][fvm] page._
 
-<a name="average-time-between-events"></a>
+
 ### Average Time Between Events
 Adds up the time elapsed between the completion of two different events, divided by the number of people who completed both events. For someone to be counted, they need to have done **both events in order**.
 
@@ -73,13 +77,13 @@ Adds up the time elapsed between the completion of two different events, divided
 
 *Example:* **On average, how much time passes** *between a person Viewing a Potential Purchase to finally Purchasing* (**focusing only on this week's data**)*?*
 
-<a name="total-value-for-property"></a>
+
 ### Total Value for Property
 Calculates total value of a numeric property across all people who meet a specific property criteria.
 
 *Example: "What is my* **Total** *Revenue from the last month?"*
 
-<a name="average-value-for-property"></a>
+
 ### Average Value for Property
 Calculates total value of a numeric property, and then divides by an amount dictated by the other options:
 

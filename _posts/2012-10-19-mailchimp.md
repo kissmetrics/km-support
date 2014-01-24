@@ -5,6 +5,10 @@ categories: integrations
 author: Eric Fung
 summary: Import your existing Mailchimp data into KISSmetrics.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 If you have been using [Mailchimp][mailchimp] to send out email newsletters, you can now import event data about the people who saw, opened, and clicked through your emails.
 
 *Disclaimer: This integration works best if you're already using visitors' email addresses to `identify` them.*
@@ -26,7 +30,7 @@ Event Name | Properties | Identity
 
 ## Setup
 
-<a name="obtain-a-mailchimp-api-key"></a>
+
 ### 1. Obtain a Mailchimp API Key
 
 1. While logged into your Mailchimp account, select **Account > API Keys & Authorized** Apps (under **Extras**):

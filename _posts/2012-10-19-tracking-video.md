@@ -5,6 +5,10 @@ categories: how-tos
 author: Eric Fung
 summary: Use our JavaScript Library to record views of videos embedded on your site.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Below are examples of using the [YouTube](#youtube), [Vimeo](#vimeo), and [Wistia](#wistia) JavaScript Libraries in conjunction with KISSmetrics to record certain video events.
 
 # Events Recorded
@@ -13,7 +17,7 @@ Below are examples of using the [YouTube](#youtube), [Vimeo](#vimeo), and [Wisti
 * Paused Video - {Name of the Video}
 * Finished Video - {Name of the Video}
 
-<a name="vimeo" ></a>
+
 ## Vimeo
 
 ### Vimeo's Embed Code
@@ -54,7 +58,7 @@ player.addEvent('ready', function() {
 </script>
 {% endhighlight %}
 
-<a name="wistia" ></a>
+
 ## Wistia
 
 ### Wistia's Embed Code
@@ -94,7 +98,7 @@ loadKMTrackableVideo(wistiaEmbed, "Sample Wistia Video");
 
 Wistia has also provided access to a JavaScript library they call the "[Embed Shepherd][wistia-embed-shepherd]". This helps simplify getting pointers to all embedded Wistia videos, and we will soon be documenting how to use that in conjunction with KISSmetrics.
 
-<a name="youtube" ></a>
+
 ## YouTube
 
 ### YouTube's Embed Code

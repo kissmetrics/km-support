@@ -8,15 +8,14 @@ summary: Answers to common Cohort Report questions.
 ---
 * Table of Contents
 {:toc}
-
 * * *
 
-<a name="section-1"></a>
+
 ## Section 1. Report Configuration (Events/Date Range)
 
 (To be filled out later!)
 
-<a name="section-2"></a>
+
 ## Section 2. Advanced Options
 
 #### 1. Can I segment people based on time ***and*** a property?
@@ -32,14 +31,14 @@ Let's refer to our [sample cohort report screenshot][explanation], that looks at
 
 The difference is most dramatic if you switch the cohort report's display options to display Cumulative People or Cumulative Percentage - it could potentially exceed 100% of people because people are being counted more than once.
 
-<a name="section-3"></a>
+
 ## Section 3. How do I understand the results of my report?
 
 To step through how to read a sample report, here is an annotated screenshot. Please click on the image to see it in full-size:
 
 [![Explanation][explanation]][explanation]
 
-<a name="section-4"></a>
+
 ## Section 4. Comparing cohort results to other KISSmetrics reports
 
 #### 1. The people column in the Cohort Report does not match up with a People Search for the same week or month.

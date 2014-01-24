@@ -5,11 +5,15 @@ categories: integrations
 author: Eric Fung
 summary: Plugins for installing KISSmetrics on WordPress are available.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 The official KISSmetrics WordPress plugin is now available ([download link][wp-plugin]). The source is also on [Github][github].
 
 When you use this plugin, you *do not need to follow our usual instructions for installing the JavaScript snippet.* The plugin takes care of that for you, and more.
 
-<a name="setup"></a>
+
 # Setup Instructions
 
 1. [Download the plugin][wp-plugin] and extract the contents.
@@ -20,7 +24,7 @@ When you use this plugin, you *do not need to follow our usual instructions for 
 
 ![Screenshot][wp-settings]
 
-<a name="integration-details"></a>
+
 # Integration Details
 
 ## Registration

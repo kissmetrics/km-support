@@ -5,15 +5,21 @@ categories: learn
 portal: university
 summary: How to add the custom events that address <em>your</em> business' conversions.
 ---
+* Table of Contents
+{:toc}
+
+* * *
 With the JavaScript Library on your website, you're ready to create the custom events you need. This can be done in one of two ways:
 
 * [Using the Event Wizard][using-ew]: no experience with code required.
 * [Using API methods][using-api]: needs moderate experience with JavaScript, but gives more control over when to trigger events and what to name them.
 
-<a name="using-event-wizard"></a>
+
 # Method 1. Using the Event Wizard
 
-<div id="wistia_700b63755a" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400"></div>
+<div id="wistia_700b63755a" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
+
+</div>
 
 ## Exercise (Event Wizard)
 
@@ -27,12 +33,12 @@ Practice creating events for visits to important pages, like a signup page or a 
 * When you add a new rule, it may take up to an hour for your browser's cache to retrieve the updated rules.
 * The Event Wizard also lets you create events for [tracking clicks][click-tutorial] and [form submissions][form-tutorial]. You'll need a small amount of knowledge in reading HTML, which we'll demonstrate in the videos linked.
 
-<a name="using-javascript-api"></a>
+
 # Method 2. Using the JavaScript API to `record`
 
 See two examples at <https://gist.github.com/eskfung/6767787>, which is taken from the page source of the page you're currently reading.
 
-<a name="testing-installation"></a>
+
 # Testing Your Installation
 
 There are a couple of ways to test that you did this correctly - using the Live tab in our app, or if you're more technical, using your browser's developer tools. See our guide on [Testing: How to Verify KISSmetrics Is Working][testing]

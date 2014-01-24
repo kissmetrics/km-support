@@ -7,6 +7,10 @@ author: Eric Fung
 summary: Our JavaScript Library is our most full-featured library and is what we recommend for most users.
 permalink: /apis/javascript/index.html
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Our Javascript Library is our most full-featured library and is what we recommend for most users. It has extra provisions for:
 
 * Automatically tracking identities using a variety of technologies
@@ -14,7 +18,7 @@ Our Javascript Library is our most full-featured library and is what we recommen
 * Automatically tracking common web events (e.g. search engine traffic)
 * A/B Testing
 
-<a name="setup"></a>
+
 ## Setup
 
 Log into your KISSmetrics account and locate your personalized code snippet in your [Site Settings][settings]. You'll be able to find your unique embed code and instructions there.
@@ -45,7 +49,7 @@ Please see:
 * [Common Methods][common] for information and examples on recording events, setting properties and identifying users.
 * [JavaScript Library Specifics][js-specific] for information on our asynchronous API, tracking clicks, forms, multiple domains and other issues specific to the Javascript API
 
-<a name="events-automatically-tracked"></a>
+
 ## Events Automatically Tracked
 
 If you are using the JavaScript library, we automatically track certain events and properties by default:
@@ -79,7 +83,7 @@ If you are using the JavaScript library, we automatically track certain events a
 
 View all the events here: [https://app.kissmetrics.com/product.js_settings][js-settings]. You can enable/disable these events on this page, too.
 
-<a name="different-from-google-analytics"></a>
+
 ## What's Different From Google Analytics
 
 The above events are familiar to Google Analytics users, but there are two things **we do not automatically track:**
@@ -92,7 +96,7 @@ Our experience has shown that when making business decisions, it is more useful 
 
 You may still find this information useful. If you have that information separately recorded in your databases, you are welcome to pass that information along to us as KISSmetric properties.
 
-<a name="example-calls"></a>
+
 ## Example Calls
 
 {% highlight html %}
