@@ -11,7 +11,7 @@ permalink: /apis/javascript/javascript-specific/index.html
 {:toc}
 * * *
 
-## Quick Reference
+# Quick Reference
 
 [Common API Methods][common] | Description
 ---------------------------- | -----------
@@ -20,8 +20,6 @@ permalink: /apis/javascript/javascript-specific/index.html
 `_kmq.push(['record', 'EVENT_NAME', {'PROPERTY_NAME':'VALUE'}, CALLBACK_FUNCTION]);` | Records an event and executes the callback function after it's recorded.
 `_kmq.push(['set', {'PROPERTY_NAME':'VALUE'}]);` | Sets properties to the current user.
 `_kmq.push(['identify', 'IDENTITY']);` | Identifies the current person with a **unique** ID, and attributes future events from this browser to this provided ID. If the current person is 'anonymous', it also connects their 'anonymous' ID to the provided ID so we recognize both as being the same person (`alias`ing). Calling `identify` does *not* count as an "event".
-
-
 
 JavaScript-Specific Methods | Description
 --------------------------- | -----------
@@ -39,7 +37,6 @@ JavaScript-Specific Methods | Description
 `KM.rf()` | Returns `document.referrer` unless you [override where to look for the referrer][referrer].
 `KM.um("/some-url")` | Returns true or false, depending on whether the page you are currently on will match up with the Event Wizard pattern you've typed in (`"/some-url"`). This helps you test Event Wizard urls much more quickly.
 
-
 ## Asynchronous API
 
 The JavaScript library loads asynchronously, in the background, just like Google Analytics' Asynchronous Tracking. It has two main benefits:
@@ -52,6 +49,35 @@ You can place the JavaScript snippet anywhere in the HTML document, but we ask t
 1. To let our script load as soon as possible, to be able to send events before the visitor leaves. Remember that page loadtimes aren't affected.
 2. To let you queue events to be triggered when the library finishes loading. This prevents JavaScript errors from cropping up if you try to call events before the script has loaded:  `ReferenceError: _kmq is not defined`
 
+## Override the Referrer
+
+If you anticipate that your site will be hosted in an iFrame (say, within a Facebook Canvas app), then you'll want to make sure to save the true Referrer, the site that brought a person to your page, rather than the site hosting the iFrame itself.
+
+You can do this by setting the variable `KM_REFERRER` like so:
+
+{% highlight html %}
+<script type="text/javascript">
+  var KM_REFERRER = parent.document.referrer;
+  var _kmq = _kmq || [];
+  ...
+</script>
+{% endhighlight %}
+
+Even if your site is not in an iFrame, `parent.document.referrer` should still be the same as `document.referrer` and behave normally anyway.
+
+# KISSmetrics Identities
+
+The function `KM.i()` will return the visitor's KISSmetrics ID, in case you need to pass that along to another function.
+
+Remember to wrap this in a [callback function][callback] to ensure the JavaScript library has loaded before you try to fetch this information:
+
+{% highlight html %}
+<script type="text/javascript">
+_kmq.push(function()
+  { alert(KM.i()) } // Display an alert box with your current KM identity
+);
+</script>
+{% endhighlight %}
 
 ## Anonymous Identities
 
@@ -59,6 +85,7 @@ If the JavaScript library has never seen a visitor before, it will create a rand
 
 The generated ID is Base64 encoded, so the IDs are generated with only these characters: `a-z, A-Z, 0-9, +, /, and =`.
 
+# API Functions
 
 ## Callback Functions
 
@@ -98,7 +125,6 @@ $("body").on("kmLoaded", function() {
 {% endhighlight %}
 
 This is most beneficial when you're working with a tag manager, where you might have to separate out the event logic from the initialization of the JS library. See the full discussion [here](https://github.com/kissmetrics/km-support/issues/11).
-
 
 ## Tracking Individual Page Views
 
@@ -274,23 +300,18 @@ If you are unsure whether your forms behave this way, please contact your site's
 
 [jquery-submit]: http://stackoverflow.com/questions/645555/should-jquerys-form-submit-not-trigger-onsubmit-within-the-form-tag
 
+# Cookies
 
-## Override the Referrer
+KISSmetrics uses these *first party* cookies on your domain. They expire after 5 years unless otherwise specified.
 
-If you anticipate that your site will be hosted in an iFrame (say, within a Facebook Canvas app), then you'll want to make sure to save the true Referrer, the site that brought a person to your page, rather than the site hosting the iFrame itself.
-
-You can do this by setting the variable `KM_REFERRER` like so:
-
-{% highlight html %}
-<script type="text/javascript">
-  var KM_REFERRER = parent.document.referrer;
-  var _kmq = _kmq || [];
-  ...
-</script>
-{% endhighlight %}
-
-Even if your site is not in an iFrame, `parent.document.referrer` should still be the same as `document.referrer` and behave normally anyway.
-
+Cookie Name | Description
+----------- | -----------
+`km_abi` |  A unique string that is used to remember which [KM A/B test][a-b-km] variation was seen.
+`km_ai` | A person's Anonymous ID.
+`km_ni` | A person's Named ID.
+`km_lv` | Time of the last visit, to determine whether they are a returning visitor or not. Has a value of `x` if they're already designated as a returning visitor.
+`km_vs` | Set to 1 if the visitor is in an active browsing session. It expires after 30 minutes.
+`km_uq` | A URL queue that preserves unsent tracking URLs from page to page. It empties out if our tracking servers are online.
 
 ## Cookie Domain
 
@@ -315,20 +336,6 @@ If you want to track the subdomains separately in two different accounts, you ca
 </script>
 {% endhighlight %}
 
-
-## Get Your Current KISSmetrics ID
-
-The function `KM.i()` will return the visitor's KISSmetrics ID, in case you need to pass that along to another function.
-
-Remember to wrap this in a [callback function][callback] to ensure the JavaScript library has loaded before you try to fetch this information:
-
-{% highlight html %}
-<script type="text/javascript">
-_kmq.push(function()
-  { alert(KM.i()) } // Display an alert box with your current KM identity
-);
-</script>
-{% endhighlight %}
 
 [common]: /apis/common-methods
 [trackclick]: #tracking_clicks_trackclick
