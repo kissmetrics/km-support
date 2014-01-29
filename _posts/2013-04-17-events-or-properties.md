@@ -3,7 +3,6 @@ layout: post
 categories: how-tos
 title: "Should I set up my data as Events or Properties?"
 tags: [common_dev_pitfalls]
-author: Eric Fung
 summary: If you're not sure whether to use events or properties to store your data, consider this rule.
 ---
 * Table of Contents

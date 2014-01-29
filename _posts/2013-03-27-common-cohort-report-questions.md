@@ -3,18 +3,15 @@ layout: post
 categories: troubleshooting
 title: "Common Cohort Report Questions"
 tags: []
-author: Eric Fung
 summary: Answers to common Cohort Report questions.
 ---
 * Table of Contents
 {:toc}
 * * *
 
-
 ## Section 1. Report Configuration (Events/Date Range)
 
 (To be filled out later!)
-
 
 ## Section 2. Advanced Options
 

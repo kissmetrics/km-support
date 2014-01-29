@@ -2,9 +2,12 @@
 layout: post
 title: What You Learn with KISSmetrics
 categories: overview
-author: Eric Fung
 summary: Read examples about the kinds of things you can learn with KISSmetrics.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## KISSmetrics will show you:
 
 * How people are coming to your site

@@ -2,16 +2,19 @@
 layout: post
 title: Deleting Your Site
 categories: how-tos
-author: Eric Fung
 summary: How to delete a KISSmetrics site and remove all the associated data.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 These are the steps to delete a KISSmetrics site to **permanently remove all the associated data.**
 
 ***This is a permanent decision, and absolutely, positively make sure you select the site you want gone.***
 
 * Please remove the KISSmetrics code from your website and codebase.
 
-* Click "Settings" next to the Product name in the dropdown from the top left corner: 
+* Click "Settings" next to the Product name in the dropdown from the top left corner:
 
 ![Deletion 1][screenshot-1]
 

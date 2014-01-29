@@ -2,9 +2,12 @@
 layout: post
 title: Multiple People on the Same Browser
 categories: advanced
-author: John Butler
 summary: What happens if multiple people use the same computer? How to reset the KISSmetrics identity tracking when a user logs out.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 What happens if two people use the same computer and you call `identify` multiple times? KISSmetrics will recognize the different identities as separate people. However, it should be noted that any activity before you call `identify` for the second user will be attributed to the first user. Let's see how this works:
 
 1. Bob comes to your site and is assigned the anonymous identity `qFq2LweZugFNE4o49hLhmRPBW34`
@@ -14,7 +17,7 @@ What happens if two people use the same computer and you call `identify` multipl
 5. Bill logs in and you call `identify` telling us that the identity is now `bill@site.com`. KISSmetrics **does not** alias `bill@site.com` and `bob@site.com` - it treats these as two separate people.
 6. All activity from this point on is attributed to `bill@site.com` (until you call `identify` again)
 
-As you can see the system works pretty well automatically under most circumstances. However, what if we wanted to prevent some of Bill's anonymous activity (pre-login) activity from being attributed to Bob? 
+As you can see the system works pretty well automatically under most circumstances. However, what if we wanted to prevent some of Bill's anonymous activity (pre-login) activity from being attributed to Bob?
 
 # clearIdentity
 
@@ -23,7 +26,7 @@ All you need to do is clear the identity when Bob logs out (or his session expir
 {% highlight js %}
 _kmq.push(['identify', null]);
 {% endhighlight %}
-  
+
 You can also call `clearIdentity` directly if you want:
 
 {% highlight js %}
@@ -47,7 +50,7 @@ Just using this single line will make everything work automatically. When the `@
 1. Bob comes to your site and is assigned the anonymous identity `qFq2LweZugFNE4o49hLhmRPBW34`
 2. Bob then logs in and you call `identify` telling us that the identity is now `bob@site.com`. The activity from before Bob logs in (when we knew him as `qFq2LweZugFNE4o49hLhmRPBW34`) is automatically tied to `bob@site.com`.
 3. All activity continues to be attributed to `bob@site.com`. Bob logs out and you call `clearIdentity` (or if you are using the session method you end up calling `identify` with `null`).
-4. Now Bob's brother Bill comes in to use the computer and visits your site. However, since identity was cleared a new anonymous identity is generated: `7asdafn3128anansdfa32`. All activity will be attributed to `7asdafn3128anansdfa32`. 
+4. Now Bob's brother Bill comes in to use the computer and visits your site. However, since identity was cleared a new anonymous identity is generated: `7asdafn3128anansdfa32`. All activity will be attributed to `7asdafn3128anansdfa32`.
 5. Bill logs in and you call `identify` telling us that the identity is now `bill@site.com`. KISSmetrics aliases `bill@site.com` and `7asdafn3128anansdfa32` automatically - tying together Bill's activity from before he logged in to after he logged in.
 6. All activity from this point on is attributed to `bill@site.com` (until you call `identify` again)
 

@@ -2,9 +2,12 @@
 layout: post
 title: ROI of Social Media Use Case
 categories: use-cases
-author: Lars Lofgren
 summary: Accurately track the revenue you've earned from social media.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## How to Find the ROI of Your Social Media Marketing
 
 To accurately track the revenue you've earned from social media, the main thing you need to setup in KISSmetrics is your revenue data. As long as we know what revenue you're earning, we'll handle the rest. For more information how how to get this set up, check out our [documentation on the Revenue Report][revenue-report].
@@ -13,7 +16,7 @@ First, click on the Revenue tab at the top of your KISSmetrics account:
 
 ![KM-Revenue-Tab][ss1]
 
-Right away, you get a nice breakdown for the total revenue that you're pulling in. 
+Right away, you get a nice breakdown for the total revenue that you're pulling in.
 
 ![KM-Revenue-Report-With-Segment][ss2]
 
@@ -48,7 +51,7 @@ To determine whether or not social media is worth the trouble, there's two thing
 
 ### 1. Which social media sites are generating significant revenue?
 
-* Find the social referrers that have contributed the most revenue so far. Since the table is sorted by total revenue by default, a quick scan through the results will give you all the info you need. 
+* Find the social referrers that have contributed the most revenue so far. Since the table is sorted by total revenue by default, a quick scan through the results will give you all the info you need.
 
 What if a specific social media site isn't on this list?
 

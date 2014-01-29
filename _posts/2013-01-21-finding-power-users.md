@@ -2,9 +2,12 @@
 layout: post
 title: SaaS Power Users Use Case
 categories: use-cases
-author: Lars Lofgren
 summary: How to find the users that use your product the most.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## How to Find Your Power Users
 
 Why Should We Find Our Power Users? Why not just look at a typical user?
@@ -36,7 +39,7 @@ Here's what the group search looks like:
 
 ![KM-People-Search-Blank][ss2]
 
-Now let's add a condition that will find your power users. For this example, we're going to define a power user as someone who's logging in once a day on average, a daily active user. To keep things simple, let's look at the last 30 days. This means you want a list of people that have logged in at least 30 times in the last 30 days. 
+Now let's add a condition that will find your power users. For this example, we're going to define a power user as someone who's logging in once a day on average, a daily active user. To keep things simple, let's look at the last 30 days. This means you want a list of people that have logged in at least 30 times in the last 30 days.
 
 Build a condition that uses your login event, it'll look something like this:
 

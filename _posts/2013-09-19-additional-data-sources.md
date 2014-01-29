@@ -5,6 +5,10 @@ categories: learn
 portal: university
 summary: Try sending data to KISSmetrics through one of our integrations or other API libraries. We will match the data according to which people are doing the events.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Try sending data to KISSmetrics through one of our integrations or other API libraries.
 
 # Exercise

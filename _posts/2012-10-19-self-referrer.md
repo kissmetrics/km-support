@@ -2,9 +2,12 @@
 layout: post
 title: Why is my own site listed as a referrer?
 categories: troubleshooting
-author: Eric Fung
 summary: Why is my own site listed as a referrer?
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Here are two reasons why our JavaScript may pick up your own site as a Referrer.
 
 ## 1. Is the KISSmetrics JavaScript on all of your pages?

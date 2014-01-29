@@ -2,7 +2,6 @@
 layout: post
 title: Metric Calculations
 categories: [tools, metrics]
-author: Eric Fung
 summary: You can create metrics based on one of these calculations.
 ---
 * Table of Contents

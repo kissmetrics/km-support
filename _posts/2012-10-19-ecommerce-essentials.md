@@ -2,7 +2,6 @@
 layout: post
 title: E-Commerce Essentials
 categories: best-practices
-author: Charles Liu
 summary: Here's a list to get you started with picking the right events to track for your e-commerce business.
 ---
 * Table of Contents

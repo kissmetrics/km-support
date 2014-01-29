@@ -2,9 +2,12 @@
 layout: post
 title: Events - Visits the URL
 categories: [tutorial, event-library-tutorial]
-author: Lars Lofgren
 summary: Trigger events when someone visits a URL.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 <div id="wistia_700b63755a" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
 </div>
 

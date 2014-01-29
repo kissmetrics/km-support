@@ -2,9 +2,12 @@
 layout: post
 title: How to Track Campaign URLs
 categories: how-tos
-author: Eric Fung
 summary: Different methods for tracking links to take people to your website.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 You'll likely be interested in tracking external links that point inbound to your website. By "External", I am referring to links that are not within your site itself, but are outside your site pointing people to it. This can include:
 
 * Email campaigns
@@ -28,7 +31,7 @@ Anyone who clicks the above link will land on `http://www.example.com/landing-pa
     Campaign Source: google
     Campaign Medium: email
     Campaign Name: march2012
-  
+
 * **Pros**: It's easy to set up, especially if your ads are already tagged this way.
 * **Cons**: Every UTM-tagged URL is treated as an `Ad Campaign Hit`, which may not make sense if you want to easily separate UTM-tagged email newsletters or Feedburner RSS articles from your paid ads.
 

@@ -2,9 +2,12 @@
 layout: post
 title: People Search
 categories: tools
-author: Charles Liu
 summary: Our People Search helps you find people who share something in common, whether that's an event they all do or a property they all share.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Our Person Search helps you find people who share something in common, whether that's an event they all do or a property they all share.
 
 ![Person Search 01][ss01]
@@ -122,7 +125,7 @@ Saving a People Search will preserve both your conditions and the columns you wa
 
 # Export
 
-You can choose to export this group of people, and we'll email you a link to download a CSV of the results. It will include all columns of data that are part of your search results. 
+You can choose to export this group of people, and we'll email you a link to download a CSV of the results. It will include all columns of data that are part of your search results.
 
 You may notice that any columns that have dates in them now export in a human-readable format (i.e. "2009-02-13 23:31:30"), and no longer export as <a href="http://en.wikipedia.org/wiki/Unix_time" target="_blank">Unix timestamps</a>. This timestamp is in <a href="http://en.wikipedia.org/wiki/Coordinated_Universal_Time" target="_blank">UTC</a> and is compatible with Microsoft Excel.
 

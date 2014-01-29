@@ -5,6 +5,10 @@ categories: learn
 portal: university
 summary: How does analytics fit into improving my business? See the KISSmetrics Demo Account for ideas!
 ---
+* Table of Contents
+{:toc}
+* * *
+
 <div id="wistia_i64qus5i5c" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
 </div>
 

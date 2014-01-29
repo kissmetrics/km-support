@@ -4,6 +4,10 @@ title: ROI of Campaigns Use Case
 categories: use-cases
 summary: Accurately track the revenue you've earned from marketing campaigns.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## How to Find the ROI of Your Marketing Campaigns
 
 To accurately track the revenue you've earned from marketing campaigns, you'll need to set up two things:
@@ -32,7 +36,7 @@ You'd record this info for everyone that clicks it:
 
 	Event triggered: Followed LP Link
 	Email type: march2012
-	
+
 Check out our [documentation on the URL API][url-api] for all the details on how this works.
 
 ### What about AdWords?
@@ -49,7 +53,7 @@ First, click on the Revenue tab at the top of your KISSmetrics account:
 
 ![KM-Revenue-Tab][ss1]
 
-Right away, you get a nice breakdown for the total revenue that you're pulling in. 
+Right away, you get a nice breakdown for the total revenue that you're pulling in.
 
 ![KM-Revenue-Report-With-Segment][ss2]
 
@@ -99,7 +103,7 @@ To determine whether or not you should keep investing in your campaigns, there's
 
 ### 1. Which campaigns are generating significant revenue?
 
-Since the data is sorted by total revenue by default, the campaigns that move the most revenue will be right at the top. These are your heavy hitters. 
+Since the data is sorted by total revenue by default, the campaigns that move the most revenue will be right at the top. These are your heavy hitters.
 
 What if your campaign isn't on this list?
 
@@ -126,7 +130,7 @@ Use this formula: `(Total Revenue from the Campaign - Cost of Campaign) / (Cost 
 
 This will give you a ratio for your ROI. To turn it into a percentage, multiply by 100. The higher the percentage the better you're doing. At 0%, you broke even and covered the cost of your marketing. You didn't lose money but you didn't earn anything either. With a 100% ROI, you doubled your money and a 200% ROI means you tripled it. If you end up with a negative number, you're losing money.
 
-But how do we calculate the cost of our campaigns? Figure out how much time your team spends on the campaign and use their salaries as a rough estimate. Also include any other expenses like design work, ad spend, etc. It's pretty difficult to calculate your costs perfectly. Start with what you have and refine your calculations over time as your expense tracking becomes more precise. 
+But how do we calculate the cost of our campaigns? Figure out how much time your team spends on the campaign and use their salaries as a rough estimate. Also include any other expenses like design work, ad spend, etc. It's pretty difficult to calculate your costs perfectly. Start with what you have and refine your calculations over time as your expense tracking becomes more precise.
 
 
 [revenue-report]: /tools/revenue-report

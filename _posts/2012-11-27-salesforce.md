@@ -2,9 +2,12 @@
 layout: post
 title: Salesforce
 categories: integrations
-author: Eric Fung
 summary: See KISSmetrics data within your Salesforce account.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 **This integration requires:**
 
 * A Salesforce account. The integration requires the ability to [create a Visualforce page][visualforce-page], which should be available in every edition.

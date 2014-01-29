@@ -2,9 +2,12 @@
 layout: post
 title: SaaS Essentials
 categories: best-practices
-author: Charles Liu
 summary: Here's a list to get you started with picking the right events to track for your SaaS business.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## Introduction
 
 Welcome to KISSmetrics! This handy guide will help you get started by showing you what we think are the best practice essentials for tracking SaaS data.

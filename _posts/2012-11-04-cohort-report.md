@@ -2,10 +2,13 @@
 layout: post
 title: Cohort Report
 categories: tools
-author: Eric Fung
 summary: The Cohort report provides a breakdown of the time it took people to do one event to doing another event.
 permalink: /tools/cohort-report/index.html
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Our cohort report shows you the people who progress from doing one event to doing another event. It also shows you if people are repeatedly doing a single event.
 
 What sets it apart from a regular conversion funnel or metric is that you can further segment these people by *when* they did the first event, or segment them using your typical KISSmetrics properties (the method for segmenting any other report). These different segments are called ***cohorts***, hence the name of the report. Then you can see how your cohorts perform the second event over a long period of time.

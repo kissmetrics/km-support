@@ -2,9 +2,12 @@
 layout: post
 title: Data Export Setup
 categories: [apis, data]
-author: Eric Fung
 summary: Set up your KISSmetrics account to receive data from our Data Export feature.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 KISSmetrics will now allow you to export data as JSON files. To get started, you'll need to configure your current KISSmetrics account.
 
 ## 1. Sign in to (or sign up for) Amazon Web Services
@@ -44,12 +47,12 @@ The grantee ID (without quotes) will be:
 This is the KISSmetrics user.
 
 Please include all permissions (List, Upload/Delete, View Permissions) for this user.
- 
+
 ## 6. Go back to KISSmetrics dashboard and enable data export.
 ![Data Export Step 6][6]
 
 Go back to [KISSmetrics settings][km-settings]. If you are already logged in, click the gear icon to get to your account's settings, then navigate to Data Export.
- 
+
 ## 7. Enter your bucket name from step 3 and click verify to connect your KM account with your AWS bucket.
 ![Data Export Step 7][7]
 

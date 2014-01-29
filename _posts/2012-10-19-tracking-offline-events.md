@@ -2,9 +2,12 @@
 layout: post
 title: Tracking Offline Events
 categories: how-tos
-author: Eric Fung
 summary: Track important customer interaction events that happen "offline".
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Some of your business's key interactions with customers may happen offline. Sample "offline events" can include...
 
 * Customer is called by the sales team

@@ -2,9 +2,12 @@
 layout: post
 title: Import Existing Data Into KISSmetrics
 categories: advanced
-author: Eric Fung
 summary: Import your existing data into KISSmetrics.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Events are informative, but only starting from the day you set up the event. You may have access to past data that would be useful for KISSmetrics to know about, including past Signups, Purchases, Upgrades and Downgrades. This data can be either in your own databases or in another platform like [Shopify][shopify].
 
 We can receive back-dated data that goes as far back as January 1, 2009.
@@ -114,7 +117,7 @@ If you are recording every time a user visits your website, with your own events
 
 {% highlight ruby %}
 # We used emails as previous KM identities. Derive the email from the user_id.
-KM.identify("your@user.com") 
+KM.identify("your@user.com")
 KM.record "Visited Dashboard", :_t=>Time.parse("2009-10-01 14:29:42").to_i, :_d=>1, 'URL' => 'http://kissmetrics.com/dashboard', 'Referrer' => 'http://kissmetrics.com'
 KM.record "Visited Dashboard", :_t=>Time.parse("2009-10-01 16:22:12").to_i, :_d=>1, 'URL' => 'http://kissmetrics.com/dashboard', 'Referrer' => ''
 ...

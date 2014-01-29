@@ -2,9 +2,12 @@
 layout: post
 title: What can KISSmetrics do for me?
 categories: overview
-author: Eric Fung
 summary: What can KISSmetrics do for you?
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Whether you're a SaaS business, E-Commerce site, blog, or mobile app, KISSmetrics can help you.
 
 KISSmetrics is a person-based analytics product that helps you identify, understand, and improve the metrics that drive your online business. We answer many important questions that people are asking. Here are just a few... 

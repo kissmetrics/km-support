@@ -2,9 +2,12 @@
 layout: post
 title: User Privacy
 categories: misc
-author: Eric Fung
 summary: Learn how KISSmetrics works in regards to your users' privacy and what you can do to make sure your KISSmetrics installation is in compliance with your privacy policy.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## Aligning KISSmetrics with Your Privacy Policy
 
 To align your KISSmetrics installation with your own privacy policy KISSmetrics offers a variety of options:
@@ -25,7 +28,7 @@ It should go without saying that if you choose to enable some of these features 
 Because this is still a developing concept there is no standard. Some supporters, such as the [Electronic Frontier Foundation][eff], a staunch supporter of online privacy, argue that first-party analytics companies, such as KISSmetrics should be exempt from the Do Not Track Header. However, in order to give our customers the ability to make their own decisions we have implemented the most aggressive possible implementation - if you turn this feature on and a user has Do Not Track enabled we will make our best effort to not track any data about them.
 
 Each browser currently has its [own implementation][implementation] of this feature. Because some implementors chose to use an HTTP header KISSmetrics can not always detect if a user has Do Not Track enabled (we do our best, but sometimes users will hit a cache which will not accurately detect their current Do Not Track setting). This means there is a chance that you could enable this feature, a user could have Do Not Track enabled, and we would still track their data. If you are interested in honoring the Do Not Track header to not track any data at all we recommend modifying your server-side code to not include the KISSmetrics Javascript if you detect the HTTP header.
-  
+
 [eff]: http://www.eff.org/issues/do-not-track
 [implementation]: http://ie.microsoft.com/testdrive/Browser/DoNotTrack/Default.html
 [protected]: /apis/javascript/javascript-specific/protected-form-fields

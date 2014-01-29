@@ -2,9 +2,12 @@
 layout: post
 title: Infographic - Finding ROI of Email Marketing
 categories: use-cases
-author: Nemo Chu and Jason Caldwell
 summary: How to find the ROI of your email marketing.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 [![ROI of Email Marketing][info-email-png]][info-email-png]
 
 ## Downloadable Version

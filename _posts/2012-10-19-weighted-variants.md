@@ -2,9 +2,12 @@
 layout: post
 title: Using Weighted Variants
 categories: [a-b-testing, using-km-js]
-author: Eric Fung
 summary: Learn how to use weighted variants to more finely control experiments.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 When you use `KM.ab()` to set up a test, we'll split the variations evenly by default. However, you can give the function an extra argument to indicate the distribution of the test. These are all valid options:
 
 {% highlight js %}

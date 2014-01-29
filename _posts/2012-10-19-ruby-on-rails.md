@@ -2,9 +2,12 @@
 layout: post
 title: Ruby on Rails
 categories: [apis, ruby]
-author: Eric Fung
 summary: Here are two different methods of setting up KISSmetrics in your Ruby on Rails application.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## I. Using the `Analytical` Gem
 
 If you are installing KISSmetrics in your Rails app, the JavaScript Library may actually be more appropriate for your frontend tracking. Consider using the `Analytical` RubyGem to help ease integration of multiple analytics products into your Rails app.
@@ -36,7 +39,7 @@ before_filter :km_init
 
 def km_init
   KM.init(
-    '__YOUR_API_KEY__', 
+    '__YOUR_API_KEY__',
     :log_dir => File.join(RAILS_ROOT, 'log', 'km')
   )
 end
@@ -50,11 +53,11 @@ There are two types of users to track here. You can track identified users, or u
 before_filter :km_init
 
 def generate_identifier
-  now = Time.now.to_i  
+  now = Time.now.to_i
   Digest::MD5.hexdigest(
-    (request.referrer || '') + 
-    rand(now).to_s + 
-    now.to_s + 
+    (request.referrer || '') +
+    rand(now).to_s +
+    now.to_s +
     (request.user_agent || '')
   )
 end
@@ -74,7 +77,7 @@ def km_init
   # This example assumes you have a current_user, with a
   # property "email". Use whatever makes sense for your
   # app.
-  
+
   if current_user
     if not cookies[:km_aliased]
       KM.alias(identity, current_user.email)

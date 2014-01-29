@@ -2,9 +2,12 @@
 layout: post
 title: Help Scout
 categories: integrations
-author: Nemo Chu
 summary: Import data from Help Scout into KISSmetrics.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 [Help Scout][help-scout] is a help desk application for customer support.
 
 With Help Scout **AND** KISSmetrics, you can connect the dots between customer support and revenue. KISSmetrics reports will help you answer:
@@ -27,10 +30,10 @@ Event Name | Properties | Identity
 -----------| ---------- | --------
 `Submitted help ticket` | `Help ticket history`: (URL of the conversation) | Email address, according to Help Scout
 `Received help ticket response` | `Help agent`: the teammate who replied to the customer | Email address, according to Help Scout
-         | `Help ticket history`: (URL of the conversation) 
+         | `Help ticket history`: (URL of the conversation)
 `Responds to help ticket` | `Help ticket history`: (URL of the conversation) | Email address, according to Help Scout
 `Help ticket closed` | `Help agent`: the teammate who replied to the customer | Email address, according to Help Scout
-         | `Help ticket history`: (URL of the conversation) 
+         | `Help ticket history`: (URL of the conversation)
 
 #### Frequency of Import
 

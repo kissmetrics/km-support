@@ -3,9 +3,12 @@ layout: post
 categories: best-practices
 title: "Segmenting Types of Revenue"
 tags: []
-author: Eric Fung
 summary: Properties are designed to help you segment people. If you want to segment your *revenue*, consider adding additional properties to structure the data for reports you want.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 KISSmetrics properties are designed to help you segment **people**. It's great for looking at the first-touch *attribution data* that brought visitors to your site, but when you want to report on the different ways **revenue** is generated, you'll find it useful to add more properties to provide the data structure you're looking for.
 
 One example of segmenting revenue instead of segmenting people is if you are comparing *one-time* purchases vs. *recurring* revenue. In these cases, an indvidual customer may pay you through a mix of one-time purchases and recurring billing.

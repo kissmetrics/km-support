@@ -2,9 +2,12 @@
 layout: post
 title: Conversion Calculation in Funnels vs. Metrics
 categories: tools
-author: Eric Fung
 summary: Explains how the method we use to calculate conversions in a metric is different from the one we use to calculate conversions in a funnel.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 The way conversions are calculated in funnels and in metrics differ subtly.
 
 ## Funnels:

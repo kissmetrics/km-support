@@ -24,7 +24,7 @@ If you've used Github before, it's pretty straightforward to get started.
 * You can fork the repository if you're making only one or two changes.
 * You can ask to be added as a contributor to the repository, and clone it that way.
 
-Repository is at [https://github.com/kissmetrics/km-support]() 
+Repository is at [https://github.com/kissmetrics/km-support]()
 
 # 2. To run the server:
 
@@ -42,7 +42,7 @@ Then navigate to [http://localhost:4000](http://localhost:4000).
 
 We have a Rake task available to automate the creation of a blank post. Use the command `rake post`, which you use if you're in the project directory. You can also specify options on the command line as follows:
 
-    $ rake post title="Some API" author="Eric Fung" categories=apis tags="some, tags"
+    $ rake post title="Some API" categories=apis tags="some, tags"
     Creating new post: ./_posts/2013-02-04-some-api.md
 
 This fills in some attributes each post should have, which we'll discuss below.
@@ -60,7 +60,6 @@ Here's an example of the [YAML front matter](https://github.com/mojombo/jekyll/w
     layout: post
     title: Overview
     categories: getting-started
-    author: Eric Fung
     tags: []
     summary: What is KISSmetrics? What can I learn from using KISSmetrics? How are we different from other analytics solutions? What should I track to make the most of KISSmetrics?
 
@@ -99,11 +98,11 @@ Here is a link: [http://jekyllrb.com/docs/home/](http://jekyllrb.com/docs/home/)
 
 * If `_site` does not build, set `auto: false` in `_config.yml` and watch for the Ruby errors locally
 * The `_site` folder is automatically generated, so make sure you're not editing the files in there!
- 
+
 ## Neat Uses of Liquid
 
 * Reversing a list: `{% for page in site.categories.troubleshooting reversed %}`
 
-## Pygments 
+## Pygments
 
 You can tag code examples with Pygments for colored syntax-highlighting. Here's a reference for how to incorporate the language into your example: [http://pygments.org/docs/lexers/](http://pygments.org/docs/lexers/)

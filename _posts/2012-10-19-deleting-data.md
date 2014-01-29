@@ -2,9 +2,12 @@
 layout: post
 title: Deleting Data From Your Site
 categories: troubleshooting
-author: Eric Fung
 summary: Can I delete data from my site? What do I do with events and properties I no longer need?
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Unfortunately, because of the complex way events and properties are tied to people, there is not actually a way currently to simply edit, delete or purge data for specific events or properties.
 
 There are three options you might consider:
@@ -17,10 +20,10 @@ There are three options you might consider:
 
 In the [Settings][settings] page, there are two links under the Event Library area you can use: **[Edit Display Names][display-names]** or **[View Total Counts][total-counts]**.
 
-Following either link brings you to a list of all the events and properties in your site. 
+Following either link brings you to a list of all the events and properties in your site.
 Uncheck the box next to the event or property name to hide that event or property from relevant drop-down lists in reports.
 
-_Note: Hidden events and properties continue tracking and hidden events continue counting toward total event count_. 
+_Note: Hidden events and properties continue tracking and hidden events continue counting toward total event count_.
 
 [settings]: https://app.kissmetrics.com/settings
 [display-names]: https://app.kissmetrics.com/product.edit/#events
@@ -30,7 +33,7 @@ _Note: Hidden events and properties continue tracking and hidden events continue
 
 To finish cleaning up, remember to stop passing us the event data. Hiding the events and properties only makes them invisible for reporting purposes, but it's still possible to continue sending data for those events unless you stop it.
 
-1. For Events Created via API: remove from your site the API calls or code that is generating 
+1. For Events Created via API: remove from your site the API calls or code that is generating
 2. For Events Created by You (in the Event Wizard): select the rule that is generating the event, and then click on the "Delete event" link at the bottom of that box.
 
 ## Correcting Data and Reimporting It
@@ -47,7 +50,7 @@ Particularly, if you are correcting **Revenue** data, go to your account's Mappi
 
 In the most dramatic case, you could use this procedure to transfer data **from this site into a fresh site ([https://app.kissmetrics.com/product.new][new-site])**.
 
-Note that you should not incur any expenses for importing events over your current monthly limit if it only happens once. 
+Note that you should not incur any expenses for importing events over your current monthly limit if it only happens once.
 
 Sorry that there's not an easier way on our side.... we are looking into better ways to let you clear up data without removing the useful bits.
 

@@ -3,9 +3,12 @@ layout: post
 title: "Installing: How to Send Us Data"
 categories: getting-started
 tags: [developer_portal]
-author: Eric Fung
 summary: There are many different ways of sending data to KISSmetrics. Review your options here.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 KISSmetrics provides a huge variety of ways of bringing in event data into your account. Pick the method(s) that fit your needs!
 
 Each method works independently; you don't necessarily need to set up two methods for the same event. For example, if you've already written PHP Library commands to record an event, you don't need to create a corresponding entry in the Event Library. Or if you're already connected your database to log all of your signups, you don't need to hook up the Ruby Library to also record your signups.

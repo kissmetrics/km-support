@@ -2,10 +2,13 @@
 layout: post
 title: Event Library
 categories: tutorial
-author: Lars Lofgren
 summary: The Event Library is used to register new events on your website without additional code changes.
 permalink: /tutorial/event-library-tutorial/index.html
 ---
+* Table of Contents
+{:toc}
+* * *
+
 <div id="wistia_53aa1d1fd5" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
 </div>
 

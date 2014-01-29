@@ -3,7 +3,6 @@ layout: post
 categories: troubleshooting
 title: "Problems with Identifying Users?"
 tags: [identities]
-author: Eric Fung
 summary: These are several pitfalls to avoid when using KISSmetrics identities.
 ---
 * Table of Contents
@@ -19,7 +18,6 @@ In theory, our concept of identities sounds simple.
 ![Alias Regular][alias-regular]
 
 That said, here are some uses of `alias` and `identify` you'll want to take note of.
-
 
 ### 1. You used our `identify` API call but your customer identities are not showing up.
 

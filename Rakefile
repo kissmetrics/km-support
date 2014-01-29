@@ -27,8 +27,10 @@ task :post do
     post.puts "categories: #{categories}"
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
     post.puts "tags: [#{tags}]"
-    post.puts "author: #{author}"
     post.puts "summary: "
     post.puts "---"
+    post.puts "* Table of Contents"
+    post.puts "{:toc}"
+    post.puts "* * *"
   end
 end # task :post

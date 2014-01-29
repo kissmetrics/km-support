@@ -2,9 +2,12 @@
 layout: post
 title: Site Settings
 categories: misc
-author: Eric Fung
 summary: Site settings provides resources to help manage your site.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Site Settings includes a collection of tools that help you and your developers manage your sites. It includes:
 
 * Your API key

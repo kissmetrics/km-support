@@ -3,9 +3,12 @@ layout: post
 title: Daily Metrics Email
 categories: tools
 tags: [metrics]
-author: Eric Fung
 summary: Get a daily email update of your top metrics with our Daily Metrics Email.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 If you'd like, we can send you daily updates for up to 5 of the Metrics you have created.
 
 [**Subscribe here**][subscribe]!

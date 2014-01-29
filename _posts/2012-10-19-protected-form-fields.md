@@ -2,9 +2,12 @@
 layout: post
 title: Form Fields We Do Not Track
 categories: [apis, javascript, javascript-specific]
-author: Eric Fung
 summary: We won't record passwords, hidden, textarea fields as well as sensitive fields, like credit card numbers and social security numbers.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Our JavaScript can capture form fields as properties, but there are some we do not track:
 
 * Passwords

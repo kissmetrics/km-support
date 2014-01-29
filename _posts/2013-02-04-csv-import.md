@@ -3,10 +3,13 @@ layout: post
 categories: integrations
 title: "CSV Files as an External Data Source"
 tags: []
-author: Eric Fung
 summary: Import data to KISSmetrics using .csv files.
 permalink: /integrations/csv-import/index.html
 ---
+* Table of Contents
+{:toc}
+* * *
+
 You can import .csv files into KISSmetrics to import data into your account. We'll accept both one-time uploads and a recurring import of .csv files from your Amazon S3 Bucket.
 
 We recommend you read [People, Events, and Properties][pep] and [Common Methods][common-methods] before getting started here.
@@ -42,7 +45,7 @@ Identity | Timestamp  | Event             | Prop:Age  | Prop:Gender | Prop:Favor
 -------- | ---------- | ----------------- | --------- | ----------- | ------------------
 1        | 1328044149 | Subscribed        | 21        | Male        | Pizza
 3        | 1327871425 | Subscribed        | 34        | Female      | Sushi
-4        | 1326664210 | Joined Newsletter |           |             |                   
+4        | 1326664210 | Joined Newsletter |           |             |
 6        | 1325974373 | Joined Newsletter |           |             | Tapas
 10       | 1325629592 | Subscribed        | 23        | Male        | Apple Pie
 
@@ -60,7 +63,7 @@ Identity | Timestamp  | Prop:Email Address
 
 It's [uncommon to upload aliases][alias], but this is the format if you absolutely needed to:
 
-Identity     | Alias          | Timestamp 
+Identity     | Alias          | Timestamp
 ------------ | -------------- | ----------
 gwashdog     | gw@example.com | 1230768000
 abelincoln11 | al@example.com | 1230768000

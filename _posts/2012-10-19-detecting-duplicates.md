@@ -2,9 +2,12 @@
 layout: post
 title: Detecting Duplicates
 categories: troubleshooting
-author: Eric Fung
 summary: KISSmetrics detects and ignores duplicate events and properties.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## Duplicate Events
 
 We ignore a KISSmetrics event if the two requests match along three parameters (according to our [API specifications][specs]):
@@ -35,7 +38,7 @@ However, ***when it's up to our tracking servers to determine the time, we may i
 
 As an example, suppose you have a Beacon in a marketing email, to trigger an event for "Viewed Email".
 
-* I open the email, initially triggering the "Viewed Email" event. 
+* I open the email, initially triggering the "Viewed Email" event.
 * I close the email right away, but open it again in 3 minutes. I don't trigger any events because I did the same event twice within 5 minutes.
 * I close the email again, but check it again an hour later. I trigger "Viewed Email" for the second time.
 

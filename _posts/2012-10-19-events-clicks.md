@@ -2,7 +2,6 @@
 layout: post
 title: Events - Clicks On
 categories: [tools, event-library]
-author: Eric Fung & Nemo Chu
 summary: Trigger events when someone clicks on an element.
 ---
 * Table of Contents

@@ -2,9 +2,12 @@
 layout: post
 title: MySQL Argument Out of Range
 categories: [integrations, mysql]
-author: Eric Fung
 summary: Why do I get a MySQL error ArgumentError - argument out of range?
 ---
+* Table of Contents
+{:toc}
+* * *
+
 When creating queries to import events into KISSmetrics, you may run into this error message:
 
     ArgumentError: argument out of range

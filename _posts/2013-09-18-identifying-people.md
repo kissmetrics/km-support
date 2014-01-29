@@ -5,6 +5,10 @@ categories: learn
 portal: university
 summary: Use our JavaScript API to call out known customers.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 <div class="alert alert-block">
 We'll need a JavaScript developer to implement this properly!
 </div>

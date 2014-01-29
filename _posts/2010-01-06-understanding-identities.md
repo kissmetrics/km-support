@@ -3,7 +3,6 @@ layout: post
 title: Understanding Identities
 categories: getting-started
 tags: [identities]
-author: Eric Fung
 summary: Key concepts about person-based analytics you should know before using KISSmetrics.
 ---
 * Table of Contents

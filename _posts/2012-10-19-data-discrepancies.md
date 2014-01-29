@@ -2,7 +2,6 @@
 layout: post
 title: Data Discrepancies
 categories: troubleshooting
-author: Eric Fung
 summary: How do I verify the accuracy of my reports?
 permalink: /troubleshooting/data-discrepancies/index.html
 ---

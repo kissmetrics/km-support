@@ -2,10 +2,13 @@
 layout: post
 title: Installing KISSmetrics through Google Tag Manager
 categories: [apis, javascript]
-author: Eric Fung
 tags: [installation]
 summary: Here's how to load the KISSmetrics JavaScript library through Google Tag Manager.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 [Google Tag Manager][gtm] is a free tag management system. Rather than editing site code every time you want to add HTML/JavaScript snippets, you can install the Tag Manager script *once* and make updates from within Google.
 
 The concept is similar to creating events with our [Event Library][evlib], where you install our main piece of JavaScript *once* and manage your events within [KISSmetrics][evlib-link].
@@ -44,7 +47,7 @@ Here's a screenshot of installing in a Wordpress template:
 ![3 HTML Tag][ss3]
 
 * Please refer to your site's [Settings page][settings] to obtain your KISSmetrics JavaScript snippet, which you'll place in the "HTML" field:
- 
+
 ![4 Add KM][ss4]
 
 * Click the button to `+ Add Rule to Fire Tag`, so that you can tell Google to load our snippet on ***All Pages***:

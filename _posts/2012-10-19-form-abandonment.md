@@ -2,9 +2,12 @@
 layout: post
 title: Tracking Form Abandonment
 categories: how-tos
-author: Eric Fung
 summary: A suggestion for tracking each form field as an event.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 **Note: This method requires jQuery**.
 
 Duncan's post on the [Distilled blog][distilled] demonstrates how to track form abandonment in Google Analytics. You can adapt the same JavaScript and jQuery code to track each form input as individual KISSmetrics events.
@@ -14,7 +17,7 @@ Duncan's post on the [Distilled blog][distilled] demonstrates how to track form 
 {% highlight html %}
 <script type='text/javascript'>
 // Wait for jQuery to finish loading
-$(document).ready(function() { 
+$(document).ready(function() {
 
   // For all inputs, trigger an event after the browser loses focus from a field
   $(':input').blur(function () {
@@ -24,7 +27,7 @@ $(document).ready(function() {
       _kmq.push(['record', 'Filled Out Form Step ' + $(this).attr('name')]);
       }
     });
-  
+
   // For radio buttons and checkboxes, .change() works better than .blur()
   $('input:radio, input:checkbox').change(function () {
     _kmq.push(['record', 'Filled Out Form Step ' + $(this).attr('name')]);

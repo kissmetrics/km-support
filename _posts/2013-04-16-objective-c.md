@@ -2,9 +2,12 @@
 layout: post
 title: Objective-C (iOS) Library
 categories: apis
-author: Will Rust
 summary: Information about our basic Objective-C/Cocoa library, for iOS and OS X apps.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Bring KISSmetrics to your iOS and OS X apps with our Objective-C library. It allows you to record events and set properties.
 
 ## Setup
@@ -15,7 +18,7 @@ You can download a copy of the API from:
 
 * Add `KISSMetricsAPI.h` and `.m` files to your project. Be sure to check the "Copy items into destination group's folder (if needed)" checkbox. If your application uses Automatic Reference Counting, select your application target, click the Build Phases tab, then the Compile Sources dropdown. Double click `KISSMetricsAPI.m` and apply the the following Compiler Flag: `-fno-objc-arc`
 
-* Open your app's `AppDelegate.m` file and import the `KISSMetricsAPI.h` file just below any existing imports. You'll need to import this file into any class where you'll be tracking events or properties. Alternatively, you may choose to import the `KISSMetrics.h` file in your application's `Prefix.pch` file located in the "Supporting Files" group. This will make our API available in all classes of your project. 
+* Open your app's `AppDelegate.m` file and import the `KISSMetricsAPI.h` file just below any existing imports. You'll need to import this file into any class where you'll be tracking events or properties. Alternatively, you may choose to import the `KISSMetrics.h` file in your application's `Prefix.pch` file located in the "Supporting Files" group. This will make our API available in all classes of your project.
 
 {% highlight obj-c %}
 #import "KISSMetricsAPI.h"
@@ -58,7 +61,7 @@ NSDictionary *myEventProperties = [[NSDictionary alloc]
 [[KISSMetricsAPI sharedAPI] recordEvent:@"My Event With Properties"
   withProperties:myEventProperties];
 
-// Remove if Automatic Reference Counting is used. 
+// Remove if Automatic Reference Counting is used.
 [myEventProperties release];
 {% endhighlight %}
 

@@ -2,7 +2,6 @@
 layout: post
 title: Can I use the JavaScript Library on multiple domains?
 categories: [apis, javascript]
-author: Eric Fung
 summary: Do your customers land on several domains when interacting with your website? Here's what you need to know.
 ---
 * Table of Contents
@@ -10,7 +9,6 @@ summary: Do your customers land on several domains when interacting with your we
 * * *
 
 The JavaScript library keeps track of each user's ID as a first party cookie. This is usually fine, but if your customers navigate to two or more domains while using your site, that means there will be two or more cookies that represent a person, and you should ensure that both cookies use the same value to represent that person.
-
 
 ## Several Subdomains
 

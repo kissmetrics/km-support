@@ -2,7 +2,6 @@
 layout: post
 title: Revenue Report
 categories: tools
-author: Eric Fung
 summary: The Revenue Report gives you a wholistic view of your revenue and your paying customers.
 ---
 * Table of Contents

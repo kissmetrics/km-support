@@ -2,7 +2,6 @@
 layout: post
 categories: troubleshooting
 tags: []
-author: Eric Fung
 title: "When I segment by a property, what does 'None' mean?"
 summary: "'None' or 'Direct means we did not find a value for this person."
 ---

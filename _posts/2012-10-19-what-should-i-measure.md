@@ -2,9 +2,12 @@
 layout: post
 title: What should I measure?
 categories: overview
-author: Eric Fung
 summary: What should you measure with KISSmetrics?
 ---
+* Table of Contents
+{:toc}
+* * *
+
 While KISSmetrics' JavaScript library automatically records a ton of information about where your customers came from -- referrer, search terms, campaigns -- you will need to tell us how to recognize the important behaviors that customers do on your site.
 
 The simplest way to think about it is: **what are the** ***most critical steps*** **that your prospective customer takes between landing on your site and you making money?**

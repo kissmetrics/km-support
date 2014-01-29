@@ -2,18 +2,21 @@
 layout: post
 title: IP Blocking and Filtering
 categories: troubleshooting
-author: Eric Fung
 summary: Here are options for filtering certain people from generating KISSmetrics events.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## How can I exclude internal traffic?
 
-For most customers, internal traffic is such a small volume compared to their overall traffic that it does not have an impact on their conversion rates.  Customers who do heavy internal QA testing usually prefer to set up a separate KISSmetrics site for their staging/development environment so that their testing activity is recorded under a separate KISSmetrics API key. 
+For most customers, internal traffic is such a small volume compared to their overall traffic that it does not have an impact on their conversion rates.  Customers who do heavy internal QA testing usually prefer to set up a separate KISSmetrics site for their staging/development environment so that their testing activity is recorded under a separate KISSmetrics API key.
 
 However, if there is a specific reason why your internal traffic needs to be ignored, we'd like to hear it.  We're always interested in hearing customer feedback that may tip us off to use cases we hadn't anticipated.
  
 ### Notes on the Alternatives
 
-* There is no way to exclude certain data after the fact. 
+* There is no way to exclude certain data after the fact.
 * The proposed alternatives prevent KISSmetrics from loading when the user is internal, thus their data never gets into our system.
 * These are not 100% foolproof.
 * The proposed alternatives assume use of the JavaScript Library only; there is no global way to block events that you call via a server-side API unless you preface each call with some sort of exclusion that you would need to write.
@@ -39,7 +42,7 @@ Note that this only prevents the JavaScript from loading. If you are sending us 
 This assumes that you have a stable, known block of IP addresses that your employees consistently use.  It requires you to write some code.
 This psuedo-code would explain the general idea:
  
-    get IPaddress 
+    get IPaddress
     if IPaddress == one of the known internal IP addresses {  do nothing;  }
     else {  load the KISSmetrics Javascript  }
 

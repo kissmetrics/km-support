@@ -2,9 +2,12 @@
 layout: post
 title: Tracking Whole Page A/B Tests
 categories: [a-b-testing, using-km-js]
-author: Eric Fung
 summary: Learn how to track two completely different page designs not just changes in individual elements.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 What if you want to track two completely different page designs not just changes in individual elements? For example you may want to test the effectiveness of two (or more) different landing page designs. There are several ways you can accomplish this:
 
 ## 1. Create a single landing page and then redirect
@@ -14,15 +17,15 @@ In this case you would have each landing page as a different URL. You would then
 {% highlight html %}
 <script type="text/javascript">
   // Set a timeout to go to our default landing page, just in case
-  
+
   var abTimeout1 = setTimeout(function(){
     window.location.replace("http://mysite.com/page1.html");
   }, 1500)
-  
+
   _kmq.push(function(){
     KM.ab(
-      "Landing Page", 
-      ["page1.html", "page2.html", "page3.html"], 
+      "Landing Page",
+      ["page1.html", "page2.html", "page3.html"],
       function(page){ // We create a callback that redirects to the page returned
         // Clear the timeout
         clearTimeout(abTimeout1);

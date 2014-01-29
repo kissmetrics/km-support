@@ -3,10 +3,12 @@ layout: post
 categories: misc
 title: "KISSmetrics Support Style Guide"
 tags: []
-author: Ian Main
 summary: A guide to help style KISSmetrics Support Articles.
 permalink: /misc/styleguide.html
 ---
+* Table of Contents
+{:toc}
+* * *
 
 This style guide will help you create visually consistant articles for the KISSmetrics Support site. Articles are written in Markdown and automatically converted to HTML. More information including a complete list of [Markdown syntax formatting can be found at Daring Fireball](http://daringfireball.net/projects/markdown/basics).
 

@@ -3,7 +3,6 @@ layout: post
 title: "Testing: Using Your Browser's Developer Tools"
 categories: [getting-started, testing-km]
 tags: [developer_portal]
-author: Eric Fung
 summary: If you are familiar with your web browser's developer tools, you can quickly examine the HTML and JavaScript of the page to debug the KISSmetrics JavaScript API.
 ---
 * Table of Contents

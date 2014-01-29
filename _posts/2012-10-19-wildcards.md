@@ -2,7 +2,6 @@
 layout: post
 title: Wildcards
 categories: [tools, event-library, events-url]
-author: Eric Fung
 summary: Use `*` to indicate wildcards. Here are many examples of what's possible.
 ---
 * Table of Contents

@@ -2,9 +2,12 @@
 layout: post
 title: Your Data Is All People, Events and Properties
 categories: getting-started
-author: Eric Fung
 summary: All the data in KISSmetrics comes down to three groups - people, events and properties.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 All the data in KISSmetrics is in the form **people**, **events** and **properties**. In short, these indicate who your users are, what they do, and additional information about them (which lets you group similar people together).
 
 ![Simple API][simple-api]

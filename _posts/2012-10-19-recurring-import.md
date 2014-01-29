@@ -2,9 +2,12 @@
 layout: post
 title: Recurring CSV Import
 categories: [integrations, csv-import]
-author: Eric Fung
 summary: Import data every hour by linking KISSmetrics with an Amazon S3 bucket containing multiple `.csv` files.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 This guide explains how to create an Amazon Web Services S3 bucket, name your CSV files, and point your KISSmetrics account to the appropriate bucket.
 
 ## Creating an S3 Bucket

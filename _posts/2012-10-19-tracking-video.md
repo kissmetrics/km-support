@@ -2,7 +2,6 @@
 layout: post
 title: Tracking Videos
 categories: how-tos
-author: Eric Fung
 summary: Use our JavaScript Library to record views of videos embedded on your site.
 ---
 * Table of Contents
@@ -16,7 +15,6 @@ Below are examples of using the [YouTube](#youtube), [Vimeo](#vimeo), and [Wisti
 * Played Video - {Name of the Video}
 * Paused Video - {Name of the Video}
 * Finished Video - {Name of the Video}
-
 
 ## Vimeo
 

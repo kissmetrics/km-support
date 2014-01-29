@@ -5,6 +5,10 @@ categories: learn
 portal: university
 summary: (<em>KISSmetrics Concept</em>) Events and properties are associated with each <strong>person</strong>, which lets you visualize the entire lifecycle of individual people.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 # Exercise
 <div class="alert alert-success alert-block">
 Try segmenting your reports by `Customer ID`. Each row of data now represents an individual person.

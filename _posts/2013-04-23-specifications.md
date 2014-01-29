@@ -2,12 +2,10 @@
 layout: post
 title: API Specifications
 categories: apis
-author: Eric Fung
 summary: Here's how our Simple Person-Based REST-like API works, on top of which all of our language libraries are built.
 ---
 * Table of Contents
 {:toc}
-
 * * *
 
 To be unobtrusive to your end-users, we'll respond with a 200 OK status, even if some of these parameters are "incorrect". The response will be a 1x1 GIF image (to power our "[Beacon API][beacon]").

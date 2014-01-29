@@ -2,9 +2,12 @@
 layout: post
 title: Webinar - Getting Started
 categories: tutorial
-author: Charles Liu
 summary: This is a recorded webinar that walks you through the initial setup, creating events to track, and then creating reports to view data from those events.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 <div id="wistia_9d92cc05c5" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
 </div>
 

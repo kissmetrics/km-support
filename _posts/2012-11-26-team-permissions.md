@@ -2,9 +2,12 @@
 layout: post
 title: Team Permissions
 categories: how-tos
-author: Eric Fung
 summary: Bring in more team members to access your site's KISSmetrics account.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 You may have created the KISSmetrics account initially, but you can provide your team access to KISSmetrics data. Suppose you are the front-end designer responsible for implementing KISSmetrics, but you would like to provide access to reports for the Product Managers, Back-end Designer, CEO, CTO, and so on. Start by inviting them to see your site's data via [https://app.kissmetrics.com/sharing#all][sharing].
 
 This article will explain the different levels of permissions you can give your team.

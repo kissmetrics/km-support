@@ -2,7 +2,6 @@
 layout: post
 title: Mailchimp
 categories: integrations
-author: Eric Fung
 summary: Import your existing Mailchimp data into KISSmetrics.
 ---
 * Table of Contents

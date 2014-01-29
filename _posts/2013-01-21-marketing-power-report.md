@@ -2,9 +2,12 @@
 layout: post
 title: SaaS Marketing Power Report Use Case
 categories: use-cases
-author: Lars Lofgren
 summary: How to track multiple marketing metrics using the Power Report
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## How to track multiple marketing metrics using the Power Report
 
 What if we wanted to go beyond revenue metrics for our marketing campaigns and see how many signups we received or what our engagement was like? How would we get that data?

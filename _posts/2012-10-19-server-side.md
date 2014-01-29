@@ -2,9 +2,12 @@
 layout: post
 title: Using Your Own Server-Side Code
 categories: a-b-testing
-author: Eric Fung
 summary: If you already have existing server-side code that drives your A/B tests, here is how to pass your results into KISSmetrics.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 What if you are already running A/B tests with code that you've written? It's just a simple matter of adding KISSmetrics tracking to these pages.
 
 Let's quickly go over again what's important in an A/B test:
@@ -52,5 +55,5 @@ Then:
   _kmq.push(["trackClick", "signup_button", "Clicked Signup"])
 </script>
 {% endhighlight %}
-    
+
 With these events, you could report on the conversion from people who `Viewed Homepage` -> `Clicked Signup`, segmenting by the property `Signup Button Color`.

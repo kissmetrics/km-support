@@ -2,10 +2,13 @@
 layout: post
 title: Power Report
 categories: tools
-author: Eric Fung
 summary: The Power Report lets you manipulate all of your events and properties in different ways, like a pivot table.
 permalink: /tools/power-report/index.html
 ---
+* Table of Contents
+{:toc}
+* * *
+
 **The Power Report is available to our customers on our [Professional Plans][pricing].**
 
 The Power Report lets you manipulate all of your events and properties in nearly any way you can imagine, like an easy-to-use pivot table on all of your customer data. You have a lot of flexibility in how to report on your data. Here are three tasks unique to the Power Report:

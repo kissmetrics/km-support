@@ -3,9 +3,12 @@ layout: post
 title: Measuring Facebook Logins and Signups
 categories: how-tos
 tags: []
-author: Eric Fung
 summary: Tap into Facebook's JS API to differentiate Logins and Signups via Facebook Connect.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Letting your users sign up and login with their Facebook accounts is extremely convenient. On the other hand, tracking these signups and logins accurately will require combining the [Facebook JavaScript SDK][fb-js-sdk] with KISSmetrics API calls.
 
 ## Check Login Status

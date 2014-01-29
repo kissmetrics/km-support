@@ -2,9 +2,12 @@
 layout: post
 title: PHP Example with Cookies
 categories: [apis, php]
-author: Eric Fung
 summary: Here is an example of using the PHP Library to set cookies to remember logged-in users.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Below is an example where we're using the PHP Library to set cookies and identifiers to keep track of logged in and anonymous users. The `KM::alias` function then ties the anonymous user to the logged in user once they log in.
 
 {% highlight php %}
@@ -13,9 +16,9 @@ require 'km.php';
 function generate_identifier()
 {
   return md5(
-    $_SERVER['HTTP_REFERER'] . 
-    rand(0, date('U')) . 
-    date('U') . 
+    $_SERVER['HTTP_REFERER'] .
+    rand(0, date('U')) .
+    date('U') .
     $_SERVER['HTTP_USER_AGENT']);
 }
 

@@ -2,9 +2,12 @@
 layout: post
 title: Main SaaS Funnel Use Case
 categories: use-cases
-author: Eric Fung
 summary: How to track the steps of your customer acquisition.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## How to Track the Steps of Your Customer Acquisition
 
 Acquiring a customer takes time. People need to move through multiple stages before they fully trust your business.
@@ -53,7 +56,7 @@ Your main funnel will look pretty similar to this (don't worry about picking a p
 
 Remember, you probably won't have an event called "Activated". Instead, use the event that means someone has started to use the core feature of your product. This might be "Received First Survey Response" or "Sent an Invoice".
 
-At this point, we can pick a date range and run the report which will give us the performance of our funnel: 
+At this point, we can pick a date range and run the report which will give us the performance of our funnel:
 
 ![KM-Main-SaaS-Funnel][ss5]
 

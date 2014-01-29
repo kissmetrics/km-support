@@ -2,7 +2,6 @@
 layout: post
 title: Power Report Examples
 categories: [tools, power-report]
-author: Eric Fung
 tags: [power-report]
 summary: Common power reports and how to set them up.
 ---

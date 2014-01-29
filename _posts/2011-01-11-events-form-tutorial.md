@@ -2,9 +2,12 @@
 layout: post
 title: Events - Submits a Form
 categories: [tutorial, event-library-tutorial]
-author: Lars Lofgren
 summary: Trigger events when someone submits a form.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 <div id="wistia_1b184d5c16" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
 </div>
 

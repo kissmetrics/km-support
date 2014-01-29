@@ -2,9 +2,12 @@
 layout: post
 title: Events - Submits a Form
 categories: [tools, event-library]
-author: Eric Fung
 summary: Trigger events when someone submits a form.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## Create the Event
 
 You can track whether people are filling out your lead gen forms, newsletter signups, and contact forms. Not only will you know that they filled out a form, but you can refer to the information they entered into these forms. (The form inputs can be saved as KISSmetrics properties.)
@@ -37,7 +40,7 @@ This is what the above code looks like in your browser, below:
 <form id="km_form">
 First name: <input type="text" name="firstname"> </input> <br />
 Last name: <input type="text" name="lastname"> </input> <br />
-<input type="submit" value="Submit" > </input> 
+<input type="submit" value="Submit" > </input>
 </form>
 <br />
 <br />
@@ -52,7 +55,7 @@ When you save changes here, we'll wait to trigger an event for people who submit
 
 	Person X did event "Submitted Example Form" and got properties:
        "Firstname" = (whatever they entered in the *Firstname* field)
-       "Lastname" = (whatever they entered in the *Lastname* field)	
+       "Lastname" = (whatever they entered in the *Lastname* field)
 
 How do we know to call the new KISSmetrics properties "Firstname" and "Lastname"? We use the `name` attributes of the form's `<input>`'s. See if you can identify them in the code example above.
 

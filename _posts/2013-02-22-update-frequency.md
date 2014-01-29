@@ -3,9 +3,12 @@ layout: post
 categories: tools
 title: "How recent is my data?"
 tags: []
-author: Eric Fung
 summary: How soon will I be able to see data?
 ---
+* Table of Contents
+{:toc}
+* * *
+
 We are continually processing the data from activity that is currently happening. We'll show your site's data status in the sidebar of your dashboard:
 
 ![Data Status][data-status]

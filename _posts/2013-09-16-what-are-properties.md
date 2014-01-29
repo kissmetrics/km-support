@@ -5,6 +5,10 @@ categories: learn
 portal: university
 summary: (<em>KISSmetrics Concept</em>) Properties help you group customers into buckets to effectively compare them.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 # Exercise
 <div class="alert alert-success alert-block">
 Try segmenting your reports with properties that we have already collected for you, like `URL` or `Referrer`. We will also go into `Customer ID` in the next section.

@@ -2,9 +2,12 @@
 layout: post
 title: Person Details
 categories: tools
-author: Charles Liu
 summary: KISSmetrics is unique because it tracks activity down to the person level. Our Person Details pages help summarize each person's activity.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 KISSmetrics is unique because it tracks activity down to the person level. Our Person Details pages help summarize each person's activity.
 
 ## Individual Metrics

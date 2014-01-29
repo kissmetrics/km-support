@@ -2,9 +2,12 @@
 layout: post
 title: Tracking UTM Parameters
 categories: integrations
-author: Eric Fung & Nemo Chu
 summary: Some notes to consider when using Google Analytics' UTM parameters with KISSmetrics.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 It's a top-five question for every marketer: "How'd that customer find us?" Here's how UTM parameters come into play. Smart marketers often use UTM parameters to track customers. They're often used for paid ads, but many marketers are also using them for social media marketing, content marketing, email marketing, and much more.
 
 Here's a snapshot of some popular campaigns that can be tracked with UTM parameters:

@@ -3,7 +3,6 @@ layout: post
 title: Technical Limitations
 categories: getting-started
 tags: [common_dev_pitfalls]
-author: Eric Fung
 summary: Consider these limitations as you are structuring your data and naming events and properties.
 ---
 * Table of Contents

@@ -2,10 +2,13 @@
 layout: post
 title: JavaScript Settings
 categories: [apis, javascript]
-author: Eric Fung
 summary: JavaScript settings let you adjust what our JavaScript library can do automatically for you.
 ---
-Our JavaScript Library tracks several events for you automatically. 
+* Table of Contents
+{:toc}
+* * *
+
+Our JavaScript Library tracks several events for you automatically.
 
 # Events Automatically Tracked
 

@@ -2,9 +2,12 @@
 layout: post
 title: Call Tracking Metrics
 categories: integrations
-author: Eric Fung and Nemo Chu
 summary: Import data from Call Tracking Metrics into KISSmetrics.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 [Call Tracking Metrics][ctm] provides trackable phone numbers for your marketing campaigns. Imagine this scenario:
 
 *You place multiple ads in the Wall Street Journal, and you list a unique phone number for each ad, all of which forward to your sales team.*

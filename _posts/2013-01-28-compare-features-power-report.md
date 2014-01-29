@@ -2,9 +2,12 @@
 layout: post
 title: Comparing Features with the Power Report
 categories: use-cases
-author: Lars Lofgren
 summary: How to compare the impact of different features on signups.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## How to Tell Which Features Increase Signup Rates the Most
 
 A new customer has just logged into your SaaS product for the first time.
@@ -59,7 +62,7 @@ For the first column, you want to include people that have used two features of 
 
 ![KM-Feature-Power-Report-Funnel-Cohort][ss5]
 
-Now we want to build two more columns. One for people that only looked at the Funnel Report: 
+Now we want to build two more columns. One for people that only looked at the Funnel Report:
 
 ![KM-Feature-Power-Report-Funnel-Only][ss6]
 
@@ -101,4 +104,4 @@ But you'll still want to test your hypothesis before you commit to it. This can 
 [ss7]: https://s3.amazonaws.com/kissmetrics-support-files/assets/use-cases/compare-features-power-report/07-KM-Feature-Power-Report-Cohort-Only.png
 [ss8]: https://s3.amazonaws.com/kissmetrics-support-files/assets/use-cases/compare-features-power-report/08-KM-Feature-Power-Report-Results.png
 
- 
+

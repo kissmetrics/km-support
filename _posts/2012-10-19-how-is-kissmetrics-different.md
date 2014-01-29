@@ -2,9 +2,12 @@
 layout: post
 title: KISSmetrics Is Different
 categories: overview
-author: Eric Fung
 summary: KISSmetrics is different than any other analytics system because it is the only analytics platform that measures at the person level.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## KISSmetrics is the only analytics platform that measures at the person level.
 
 Other analytics packages measure based on pageviews, or isolated events. That means they’ll tell you how many times a page was accessed, or how many times an event was performed. But they won’t tell you who your customer is, or how they’re using your site.

@@ -2,10 +2,13 @@
 layout: post
 title: Event Library
 categories: tools
-author: Eric Fung
 summary: The Event Library lists all of your events. It also contains the Event Wizard, which lets you create new rules to record events without additional code changes.
 permalink: /tools/event-library/index.html
 ---
+* Table of Contents
+{:toc}
+* * *
+
 The [Event Library][event-library] lists all of your site's events. These are grouped into two categories:
 
 * **Events Created By You** - events created through our Event Wizard, which lets you create new rules to record events without additional code changes.
@@ -39,7 +42,7 @@ There are three types of events listed here:
 2. Events you pass in from another data source: a server-side API, our Database Sync tool, CSV import, or one from of our other integrations.
 3. Events collected from old Event Wizard entries that have historic data, but are no longer actively tracking current user behavior.
 
-# Event Library FAQs 
+# Event Library FAQs
 
 * **How often does the Event Library update my JavaScript file?**
 
