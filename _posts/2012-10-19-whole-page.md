@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Tracking Whole Page A/B Tests
-categories: [a-b-testing, using-km-js]
+title: JavaScript Library - Creating Whole Page A/B Tests
+categories: apis
 summary: Learn how to track two completely different page designs not just changes in individual elements.
+permalink: /a-b-testing/using-km-js/whole-page
 ---
 * Table of Contents
 {:toc}

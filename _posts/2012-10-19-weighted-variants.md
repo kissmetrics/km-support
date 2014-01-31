@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Using Weighted Variants
-categories: [a-b-testing, using-km-js]
+title: JavaScript Library - Using Weighted Variants
+categories: apis
 summary: Learn how to use weighted variants to more finely control experiments.
+permalink: /a-b-testing/using-km-js/weighted-variants
 ---
 * Table of Contents
 {:toc}

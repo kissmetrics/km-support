@@ -98,7 +98,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/advanced/advanced-properties</loc>
-        <lastmod>2014-01-31T11:32:27-08:00</lastmod>
+        <lastmod>2014-01-31T11:43:11-08:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/how-tos/browser-detection.html</loc>
@@ -194,11 +194,11 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/advanced/importing-data</loc>
-        <lastmod>2014-01-31T11:32:30-08:00</lastmod>
+        <lastmod>2014-01-31T11:43:11-08:00</lastmod>
     </url>
     <url>
-        <loc>http://support.kissmetrics.com/a-b-testing/integration.html</loc>
-        <lastmod>2014-01-30T17:10:04-08:00</lastmod>
+        <loc>http://support.kissmetrics.com/a-b-testing/integration</loc>
+        <lastmod>2014-01-31T14:31:27-08:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/troubleshooting/internet-explorer.html</loc>
@@ -226,7 +226,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/advanced/local-development</loc>
-        <lastmod>2014-01-31T11:32:24-08:00</lastmod>
+        <lastmod>2014-01-31T11:43:11-08:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/integrations/magento-km.html</loc>
@@ -250,7 +250,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/advanced/multiple-people-same-browser</loc>
-        <lastmod>2014-01-31T11:32:35-08:00</lastmod>
+        <lastmod>2014-01-31T11:43:11-08:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/integrations/csv-import/one-time-upload.html</loc>
@@ -333,8 +333,8 @@
         <lastmod>2014-01-30T17:10:04-08:00</lastmod>
     </url>
     <url>
-        <loc>http://support.kissmetrics.com/a-b-testing/server-side.html</loc>
-        <lastmod>2014-01-30T17:10:04-08:00</lastmod>
+        <loc>http://support.kissmetrics.com/a-b-testing/server-side</loc>
+        <lastmod>2014-01-31T14:31:27-08:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/misc/site-settings.html</loc>
@@ -398,15 +398,15 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/advanced/virality</loc>
-        <lastmod>2014-01-31T11:32:38-08:00</lastmod>
+        <lastmod>2014-01-31T11:43:11-08:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/integrations/vwo.html</loc>
         <lastmod>2014-01-30T17:10:04-08:00</lastmod>
     </url>
     <url>
-        <loc>http://support.kissmetrics.com/a-b-testing/using-km-js/weighted-variants.html</loc>
-        <lastmod>2014-01-30T17:10:04-08:00</lastmod>
+        <loc>http://support.kissmetrics.com/a-b-testing/using-km-js/weighted-variants</loc>
+        <lastmod>2014-01-31T14:33:21-08:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/overview/what-can-km-do-for-me.html</loc>
@@ -421,8 +421,8 @@
         <lastmod>2014-01-30T17:10:04-08:00</lastmod>
     </url>
     <url>
-        <loc>http://support.kissmetrics.com/a-b-testing/using-km-js/whole-page.html</loc>
-        <lastmod>2014-01-30T17:10:04-08:00</lastmod>
+        <loc>http://support.kissmetrics.com/a-b-testing/using-km-js/whole-page</loc>
+        <lastmod>2014-01-31T14:32:54-08:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tools/event-library/events-url/wildcards.html</loc>
@@ -542,7 +542,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/a-b-testing/using-km-js/index.html</loc>
-        <lastmod>2014-01-30T17:10:04-08:00</lastmod>
+        <lastmod>2014-01-31T14:49:24-08:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/misc/styleguide.html</loc>
@@ -596,7 +596,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/apis/other.html</loc>
-        <lastmod>2014-01-30T17:10:04-08:00</lastmod>
+        <lastmod>2014-01-31T14:30:47-08:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/apis/url.html</loc>
@@ -628,7 +628,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/apis/javascript/index.html</loc>
-        <lastmod>2014-01-30T17:10:04-08:00</lastmod>
+        <lastmod>2014-01-31T14:42:16-08:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/apis/common-methods.html</loc>
@@ -712,11 +712,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/a-b-testing/</loc>
-        <lastmod>2014-01-30T17:10:04-08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://support.kissmetrics.com/advanced/</loc>
-        <lastmod>2014-01-30T17:10:04-08:00</lastmod>
+        <lastmod>2014-01-31T14:54:06-08:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/apis/</loc>
@@ -728,7 +724,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/developers/</loc>
-        <lastmod>2014-01-31T11:02:44-08:00</lastmod>
+        <lastmod>2014-01-31T14:30:47-08:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/getting-started/</loc>
@@ -740,7 +736,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/</loc>
-        <lastmod>2014-01-31T11:32:38-08:00</lastmod>
+        <lastmod>2014-01-31T14:49:24-08:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/integrations/</loc>

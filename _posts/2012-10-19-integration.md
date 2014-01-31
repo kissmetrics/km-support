@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Using an A/B Testing Platform
-categories: a-b-testing
+categories: integrations
 summary: If you don't want to write any code, you can try a platform like Convert, Optimizely, Unbounce, or Visual Website Optimizer to set up the A/B test.
+permalink: /a-b-testing/integration
 ---
 * Table of Contents
 {:toc}

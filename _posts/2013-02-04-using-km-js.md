@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Using the JavaScript Library to Run an A/B Test
-categories: a-b-testing
+title: JavaScript Library - Running an A/B Test with KM.ab
+categories: apis
 summary: The KISSmetrics JavaScript Library provides a JS function to help you set up the A/B test. It does the three things every A/B test needs, all in one fell swoop. However, it requires you to edit some JavaScript on your site, though. Read here for some examples.
 permalink: /a-b-testing/using-km-js/index.html
 ---
