@@ -425,12 +425,6 @@ margin-top:75px;
   text-decoration: none;
 }
 
-p.critical{
-  background: #fab6b5;
-  padding: 10px;
-  border: 1px dotted red;
-}
-
 /* URL BUILDER FORM: =url-builder-form
 ------------------------------------------------------------*/
 .url-builder-form {
