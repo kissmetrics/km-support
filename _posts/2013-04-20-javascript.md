@@ -336,7 +336,7 @@ We determine this by looking at the `name` attributes of each `<input>`. After i
 
     /pass|billing|creditcard|cardnum|^cc|ccnum|exp|seccode|securitycode|securitynum|cvc|cvv|ssn|socialsec|socsec|csc/i
 
-### Incompatibility with jQuery .submit()
+### Incompatibility with jQuery `.submit()`
 
 `trackSubmit` works with regular HTML forms. If you trigger the submission of forms via code, like `$('form').submit()`, then this will bypass the tracking that `trackSubmit` sets up. Please refer to this [Stack Overflow][jquery-submit] discussion.
 
@@ -367,6 +367,146 @@ You can do this by setting the variable `KM_REFERRER` like so:
 {% endhighlight %}
 
 Even if your site is not in an iFrame, `parent.document.referrer` should still be the same as `document.referrer` and behave normally anyway.
+
+## Running A/B Tests - `KM.ab()`
+
+The JavaScript library provides a function, `KM.ab`, to set up the majority of the A/B test. Specifically, it does three things:
+
+1. Randomly assigns the current visitor to one of the variations passed in. (`KM.ab` returns the variation that was assigned, so you can save it as a JS variable.)
+2. Ensures that subsequent calls to `KM.ab` returns the same variation for the visitor.
+3. Sets a KISSmetrics property with the name of your experiment, and the value is the selected variant. In our example below, the A/B test will set the property "**Signup Button Color**" to either "**red**" or "**green**". You will be able to segment any report using this property.
+
+### Full Example
+
+Below shows an example of a complete A/B test, using `KM.ab`:
+
+{% highlight html %}
+<!--
+  Here is our signup button. Notice that it is hidden by
+  setting the style to "display: none". Also notice that
+  it is by default using the "green" image.
+-->
+<img src="/images/green.png" id="signup_button" style="display: none"/>
+
+  <script type="text/javascript">
+    // If for some reason KISSmetrics doesn't load or there is an error we'll just show the default green button after 1.5s
+    var abTimeout1 = setTimeout(function(){
+      document.getElementById("signup_button").style.display = '';
+    }, 1500);
+
+    // Now we need to add some Javascript code to run our A/B test.
+    // Using _kmq.push to call our setup function ensures that it is only called once KM is loaded.
+    _kmq.push(function(){
+      // Set up the experiment (this is the meat and potatoes)
+      var color = KM.ab("Signup Button Color", ["red", "green"]);
+
+      // Set the button color
+      var button = document.getElementById("signup_button");
+      button.src = "/images/"+color+".png"; // Set the button color
+      button.style.display = ''; // Show the button
+
+      // Clear the timeout, since this worked fine
+      clearTimeout(abTimeout1);
+    });
+
+    // Record when someone clicks on the button
+    _kmq.push(["trackClick", "signup_button", "Clicked Signup"])
+  </script>
+{% endhighlight %}
+
+#### Explaining KM.ab
+
+Let's take a closer look at what KM.ab() does:
+
+{% highlight js %}
+var color = KM.ab("Signup Button Color", ["red", "green"]);
+{% endhighlight %}
+
+* For each person seeing this A/B test, choose randomly between the available options **"red"** and **"green"**.
+
+* Sets a property "Signup Button Color" with the value "red" or "green", depending on what was randomly chosen.
+
+This is equivalent to:
+
+{% highlight js %}
+// Only one of these is "executed":
+_kmq.push(['set', {'Signup Button Color':'red'}]);   // option 1
+_kmq.push(['set', {'Signup Button Color':'green'}]); // option 2
+{% endhighlight %}
+
+* `KM.ab()` returns which variation is picked, to reuse as a JavaScript variable (`color`). *To remember which variation was used, KM sets a cookie. Please look at our page on [Developing Locally][local] if you are testing `KM.ab()` locally.*
+
+### Notes
+
+* Wrap the call to `KM.ab()` in a function that is pushed to `_kmq`, or you may encounter JS errors if our library has not completely loaded before this executes.
+* Our JavaScript library depends on cookies to work properly. Browsers do not preseve cookies from page to page in `localhost`, so please refer to our guide on [developing locally][local].
+
+[local]: /advanced/local-development
+
+### Weighted Variants
+
+When you use `KM.ab()` to set up a test, we'll split the variations evenly by default. However, you can give the function an extra argument to indicate the distribution of the test. These are all valid options:
+
+{% highlight js %}
+_kmq.push(function(){
+  // Even weights, 50% red, 50% green (default)
+  KM.ab("Button Color", ["red", "green"])
+
+  // 70% red vs. 30% green
+  KM.ab("Button Color", {"red":70, "green":30});
+
+  // 70% red vs. 30% green, using decimals
+  KM.ab("Button Color", {"red":0.7, "green":0.3});
+
+  // 5:1 red vs. green
+  KM.ab("Button Color", {"red":5, "green":1});
+
+
+  // KM.ab works with more than just two alternatives
+  // 33% red, 33% green, 33% blue
+  KM.ab("Button Color", ["red", "green", "blue"])
+
+  // 5:1:1 red vs. green vs. blue
+  KM.ab("Button Color", {"red":5, "green":1, "blue":1})
+})
+{% endhighlight %}
+
+### Running Whole Page A/B Tests
+
+What if you want to track two completely different page designs not just changes in individual elements? For example you may want to test the effectiveness of two (or more) different landing page designs. There are several ways you can accomplish this:
+
+#### 1. Create a single landing page and then redirect
+
+In this case you would have each landing page as a different URL. You would then create a single landing page that you direct all traffic to. This page then redirects to one of your variants. The following is what the code on your landing page might look like (this code assumes you are including the standard KISSmetrics Javascript already):
+
+{% highlight html %}
+<script type="text/javascript">
+  // Set a timeout to go to our default landing page, just in case
+
+  var abTimeout1 = setTimeout(function(){
+    window.location.replace("http://mysite.com/page1.html");
+  }, 1500)
+
+  _kmq.push(function(){
+    KM.ab(
+      "Landing Page",
+      ["page1.html", "page2.html", "page3.html"],
+      function(page){ // We create a callback that redirects to the page returned
+        // Clear the timeout
+        clearTimeout(abTimeout1);
+        // Go to the page decided by the A/B test result
+        window.location.replace("http://mysite.com/"+page);
+      }
+    );
+  })
+</script>
+{% endhighlight %}
+
+The advantage of this setup is you can use the KISSmetrics A/B testing logic to assign and remember which variant a user sees. The disadvantage is that different users will see different URLs. Additionally there will be small delay where a user will see a blank page and then your landing page.
+
+#### 2. Use an iframe, divs, or AJAX to load in your page
+
+In this case you have a single landing page. This landing page then uses an iframe, a hidden div, or AJAX to load in the content for your selected landing page variant. The code to do this would look very similar to the code in the previous example, except instead of setting the `document.location` you'll set an iframe's `src` attribute or use AJAX to load in the content. The advantage of this approach is that you'll have a single URL for all your different landing page variants, but can still use the KISSmetrics A/B testing logic. However, there will still be a small delay before a user sees the final content.
 
 ## Callback Functions
 
