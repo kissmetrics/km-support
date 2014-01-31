@@ -324,6 +324,18 @@ If the ID includes `_`, that will also work. So `user_id`, `user_name`, and `e_m
 
 [js-settings]: https://app.kissmetrics.com/product.js_settings
 
+#### Form Fields Not Tracked
+
+There are form fields we do not track:
+
+* Passwords
+* Hidden textarea fields
+* Sensitive fields
+
+We determine this by looking at the `name` attributes of each `<input>`. After ignoring certain connecting symbols like `_`, `\`, and `-` (for example, `user[name]` is converted to `user_name` and then finally `username`), we use this regular expression to figure out which fields are ignored:
+
+    /pass|billing|creditcard|cardnum|^cc|ccnum|exp|seccode|securitycode|securitynum|cvc|cvv|ssn|socialsec|socsec|csc/i
+
 ### Incompatibility with jQuery .submit()
 
 `trackSubmit` works with regular HTML forms. If you trigger the submission of forms via code, like `$('form').submit()`, then this will bypass the tracking that `trackSubmit` sets up. Please refer to this [Stack Overflow][jquery-submit] discussion.
