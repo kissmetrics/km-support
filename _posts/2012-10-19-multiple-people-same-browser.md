@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Multiple People on the Same Browser
-categories: advanced
+categories: how-tos
 summary: What happens if multiple people use the same computer? How to reset the KISSmetrics identity tracking when a user logs out.
+permalink: /advanced/multiple-people-same-browser
 ---
 * Table of Contents
 {:toc}

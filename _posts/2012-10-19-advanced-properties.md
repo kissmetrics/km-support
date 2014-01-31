@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Advanced Properties in KISSmetrics
-categories: advanced
+categories: tools
 summary: KISSmetrics contains some advanced settings to fine-tune the Properties you see in your funnel reports.
+permalink: /advanced/advanced-properties
 ---
 * Table of Contents
 {:toc}

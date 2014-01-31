@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Import Existing Data Into KISSmetrics
-categories: advanced
+categories: integrations
 summary: Import your existing data into KISSmetrics.
+permalink: /advanced/importing-data
 ---
 * Table of Contents
 {:toc}
