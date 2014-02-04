@@ -2,21 +2,24 @@
 <html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
   <head>
   <meta content='text/html; charset=utf-8' http-equiv='content-type' />
-
+  
     <title>KISSmetrics Documentation</title>
-
-  <link href='/assets/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+  
+  <link href='//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
   <link href='/assets/css/screen.css' media='screen' rel='stylesheet' type='text/css' />
   <link href='/assets/css/pygments.css' media='screen' rel='stylesheet' type='text/css' />
   <link href='/assets/css/print.css' media='print' rel='stylesheet' type='text/css' />
+  <link href='/assets/css/buttons.css' media='screen' rel='stylesheet' type='text/css' />
 
   <!-- Support Scripts -->
   <script charset='utf-8' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" type='text/javascript'></script>
+  <script src="//cdn.optimizely.com/js/418001.js"></script>
+  <script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js"></script>
   <script src="/assets/js/jquery.cookie.js" type='text/javascript'></script>
-  <script src="/assets/js/bootstrap.min.js" type='text/javascript'></script>
   <script src="/assets/js/km_track.js" type='text/javascript'></script>
   <script src="/assets/js/on_ready.js" type='text/javascript'></script>
-  <script src="//cdn.optimizely.com/js/418001.js"></script>
+  <script src="/assets/js/need_help.js" type='text/javascript'></script>
 
   <!-- KISSmetrics -->
 <script type="text/javascript">
@@ -35,7 +38,7 @@ if (!window.location.host.match(/localhost/)) {
   _kms('//i.kissmetrics.com/i.js');
   _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 }
-_kmq.push(['record', 'Viewed Support Article', {'Support Article Viewed URL':'/404.html','Support Article Viewed Title':''}]);
+_kmq.push(['record', "Viewed Support Article", {"Support Article Viewed URL":"/404.html", "Support Article Viewed Title": ""}]);
 </script>
 
 <!-- Google Analytics -->
@@ -72,22 +75,25 @@ _kmq.push(['record', 'Viewed Support Article', {'Support Article Viewed URL':'/4
     <div data-swiftype-index='false' id='top'>
       <div id='header'>
         <h1>
-          <a class='href' href='/'>KISSmetrics</a>
+          <a class='href' href='https://www.kissmetrics.com'>KISSmetrics</a>
         </h1>
         <div class='links'>
           <a href='/developers/'>Developer Documentation</a>
           <a href='/learn'>Learning Center</a>
-          <a class='km' href='https://www.kissmetrics.com'>Go to KISSmetrics &rarr;</a>
+          <a href='http://status.kissmetrics.com'>KISSmetrics Status</a>
         </div><!-- /.links -->
       </div><!-- /#header -->
     </div><!-- /#top -->
     <div id='wrapper'>
       <div data-swiftype-index='false' id='crumbs'>
-        <div class='rightcrumb'>
+        <div class='leftcrumb'>
           <ul id='breadcrumb' class='breadcrumb'>
-
+            
             <li class="active"></li>
-          </ul>
+          </ul><!-- /.breadcrumb #breadcrumb -->
+        </div><!-- /.leftcrumb -->
+        <div class='rightcrumb'>
+          <button data-toggle="modal" data-target="#feedbackModal" class="orange support button">Need help?</a>
         </div><!-- /.rightcrumb -->
       </div><!-- /#crumbs -->
       <div class='col side' data-swiftype-index='false'>
@@ -115,52 +121,52 @@ _kmq.push(['record', 'Viewed Support Article', {'Support Article Viewed URL':'/4
           <form id='search_form'>
             <input class='st-search-input' id='st-search-input' placeholder='Search the Documentation' type='text' />
           </form>
-
-            <ul>
-  <li>
+          <ul>
+            
+              <li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#getting-started-list">
     <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#getting-started-list">Getting Started</a>
   </div>
   <div id="getting-started-list" class="collapse">
     <ul>
-
+    
       <li>
         <a href="/getting-started/overview.html">Overview</a>
       </li>
-
+    
       <li>
         <a href="/getting-started/people-events-properties.html">Your Data Is All People, Events and Properties</a>
       </li>
-
+    
       <li>
         <a href="/getting-started/ways-to-send-us-data.html">Installing: How to Send Us Data</a>
       </li>
-
+    
       <li>
         <a href="/getting-started/testing-km/index.html">Testing: How to Verify KISSmetrics Is Working</a>
       </li>
-
+    
       <li>
         <a href="/getting-started/testing-km/using-dev-tools.html">Testing: Using Your Browser's Developer Tools</a>
       </li>
-
+    
       <li>
         <a href="/getting-started/understanding-identities.html">Understanding Identities</a>
       </li>
-
+    
       <li>
         <a href="/getting-started/faq.html">FAQ</a>
       </li>
-
+    
       <li>
         <a href="/getting-started/security.html">Security</a>
       </li>
-
+    
       <li>
         <a href="/getting-started/technical-limitations.html">Technical Limitations</a>
       </li>
-
+    
       <div class='more-content'>
         <li>
           <a href='/getting-started/'>(View all 9 articles)</a>
@@ -169,146 +175,162 @@ _kmq.push(['record', 'Viewed Support Article', {'Support Article Viewed URL':'/4
     </ul>
   </div>
 </li>
-  <li>
+<li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#apis-list">
     <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#apis-list">APIs</a>
   </div>
   <div id="apis-list" class="collapse">
     <ul>
-
+    
       <li>
         <a href="/apis/data-out.html">Data Out API</a>
       </li>
-
+    
       <li>
         <a href="/apis/specifications.html">API Specifications</a>
       </li>
-
+    
       <li>
         <a href="/apis/common-methods.html">Common Methods</a>
       </li>
-
+    
       <li>
         <a href="/apis/javascript/index.html">JavaScript Library</a>
       </li>
-
+    
       <li>
         <a href="/apis/javascript/javascript-specific/index.html">JavaScript Library Specifics</a>
       </li>
-
+    
       <li>
         <a href="/apis/ruby/index.html">Ruby Library</a>
       </li>
-
+    
       <li>
         <a href="/apis/php/index.html">PHP Library</a>
       </li>
-
+    
       <li>
         <a href="/apis/python/index.html">Python Library</a>
       </li>
-
+    
       <li>
         <a href="/apis/objective-c.html">Objective-C (iOS) Library</a>
       </li>
-
+    
       <li>
         <a href="/apis/url.html">URL API</a>
       </li>
-
+    
       <li>
         <a href="/apis/other.html">Other 3rd-Party Libraries</a>
       </li>
-
+    
       <li>
         <a href="/apis/beacon.html">Beacon API</a>
       </li>
-
+    
       <li>
         <a href="/apis/data/index.html">Data Export</a>
       </li>
-
+    
       <li>
         <a href="/apis/cron.html">Sending Data with Cron</a>
       </li>
-
+    
+      <li>
+        <a href="/a-b-testing/using-km-js/index.html">JavaScript Library - Running an A/B Test with KM.ab</a>
+      </li>
+    
       <li>
         <a href="/apis/javascript/tracking-multiple-domains.html">Can I use the JavaScript Library on multiple domains?</a>
       </li>
-
+    
       <li>
         <a href="/apis/javascript/google-tag-manager.html">Installing KISSmetrics through Google Tag Manager</a>
       </li>
-
+    
+      <li>
+        <a href="/a-b-testing/using-km-js/whole-page">JavaScript Library - Creating Whole Page A/B Tests</a>
+      </li>
+    
+      <li>
+        <a href="/a-b-testing/using-km-js/weighted-variants">JavaScript Library - Using Weighted Variants</a>
+      </li>
+    
       <li>
         <a href="/apis/ruby/ruby-on-rails.html">Ruby on Rails</a>
       </li>
-
+    
       <li>
         <a href="/apis/python/python-gae.html">Using the Python Library with Google App Engine</a>
       </li>
-
+    
       <li>
         <a href="/apis/javascript/javascript-specific/protected-form-fields.html">Form Fields We Do Not Track</a>
       </li>
-
+    
       <li>
         <a href="/apis/php/php-specific.html">PHP Example with Cookies</a>
       </li>
-
+    
+      <li>
+        <a href="/advanced/local-development">Developing in localhost</a>
+      </li>
+    
       <li>
         <a href="/apis/javascript/javascript-settings.html">JavaScript Settings</a>
       </li>
-
+    
       <li>
         <a href="/apis/javascript/javascript-identities.html">Reusing the Identities Set by the JavaScript Library</a>
       </li>
-
+    
       <li>
         <a href="/apis/javascript/hosting-js-yourself.html">Hosting the JavaScript Library Yourself</a>
       </li>
-
+    
       <li>
         <a href="/apis/ruby/heroku.html">Heroku</a>
       </li>
-
+    
       <li>
         <a href="/apis/data/data-export-setup.html">Data Export Setup</a>
       </li>
-
+    
       <div class='more-content'>
         <li>
-          <a href='/apis/'>(View all 25 articles)</a>
+          <a href='/apis/'>(View all 29 articles)</a>
         </li>
       </div>
     </ul>
   </div>
 </li>
-  <li>
+<li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#best-practices-list">
     <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#best-practices-list">Best Practices</a>
   </div>
   <div id="best-practices-list" class="collapse">
     <ul>
-
+    
       <li>
         <a href="/best-practices/ecommerce-essentials.html">E-Commerce Essentials</a>
       </li>
-
+    
       <li>
         <a href="/best-practices/saas-essentials.html">SaaS Essentials</a>
       </li>
-
+    
       <li>
         <a href="/best-practices/saas-revenue-essentials.html">SaaS Revenue Essentials</a>
       </li>
-
+    
       <li>
         <a href="/best-practices/segmenting-revenue.html">Segmenting Types of Revenue</a>
       </li>
-
+    
       <div class='more-content'>
         <li>
           <a href='/best-practices/'>(View all 4 articles)</a>
@@ -317,54 +339,54 @@ _kmq.push(['record', 'Viewed Support Article', {'Support Article Viewed URL':'/4
     </ul>
   </div>
 </li>
-  <li>
+<li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#use-cases-list">
     <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#use-cases-list">Use Cases</a>
   </div>
   <div id="use-cases-list" class="collapse">
     <ul>
-
+    
       <li>
         <a href="/use-cases/roi-campaigns.html">ROI of Campaigns Use Case</a>
       </li>
-
+    
       <li>
         <a href="/use-cases/compare-features-power-report.html">Comparing Features with the Power Report</a>
       </li>
-
+    
       <li>
         <a href="/use-cases/marketing-power-report.html">SaaS Marketing Power Report Use Case</a>
       </li>
-
+    
       <li>
         <a href="/use-cases/finding-power-users.html">SaaS Power Users Use Case</a>
       </li>
-
+    
       <li>
         <a href="/use-cases/social-media.html">Infographic - Tracking Social Media, Step-by-Step</a>
       </li>
-
+    
       <li>
         <a href="/use-cases/roi-social-media.html">ROI of Social Media Use Case</a>
       </li>
-
+    
       <li>
         <a href="/use-cases/roi-of-seo.html">Infographic - Finding ROI of Organic Search, Step-by-Step</a>
       </li>
-
+    
       <li>
         <a href="/use-cases/roi-email-marketing.html">Infographic - Finding ROI of Email Marketing</a>
       </li>
-
+    
       <li>
         <a href="/use-cases/paid-ads.html">Infographic - Tracking Paid Ads, Step-by-Step</a>
       </li>
-
+    
       <li>
         <a href="/use-cases/main-saas-funnel.html">Main SaaS Funnel Use Case</a>
       </li>
-
+    
       <div class='more-content'>
         <li>
           <a href='/use-cases/'>(View all 10 articles)</a>
@@ -373,66 +395,66 @@ _kmq.push(['record', 'Viewed Support Article', {'Support Article Viewed URL':'/4
     </ul>
   </div>
 </li>
-  <li>
+<li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#tutorials-list">
     <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#tutorials-list">Tutorials</a>
   </div>
   <div id="tutorials-list" class="collapse">
     <ul>
-
+    
       <li>
         <a href="/tutorial/introduction.html">Introduction to KISSmetrics</a>
       </li>
-
+    
       <li>
         <a href="/tutorial/webinar-getting-started.html">Webinar - Getting Started</a>
       </li>
-
+    
       <li>
         <a href="/tutorial/installation/index.html">Installing the JavaScript Library</a>
       </li>
-
+    
       <li>
         <a href="/tutorial/html-files.html">Installing KM in Individual HTML Files</a>
       </li>
-
+    
       <li>
         <a href="/tutorial/installation/wordpress-tutorial.html">Installing KM in WordPress</a>
       </li>
-
+    
       <li>
         <a href="/tutorial/events-intro.html">Introduction to Events</a>
       </li>
-
+    
       <li>
         <a href="/tutorial/event-library-tutorial/index.html">Event Library</a>
       </li>
-
+    
       <li>
         <a href="/tutorial/event-library-tutorial/events-and-properties-tutorial.html">Events and Properties</a>
       </li>
-
+    
       <li>
         <a href="/tutorial/event-library-tutorial/events-url-tutorial.html">Events - Visits the URL</a>
       </li>
-
+    
       <li>
         <a href="/tutorial/event-library-tutorial/events-clicks-tutorial.html">Clicks On Events</a>
       </li>
-
+    
       <li>
         <a href="/tutorial/event-library-tutorial/events-form-tutorial.html">Events - Submits a Form</a>
       </li>
-
+    
       <li>
         <a href="/tutorial/metrics-intro.html">Introduction to Metrics</a>
       </li>
-
+    
       <li>
         <a href="/tutorial/how-to-build-reports.html">How to Build Reports</a>
       </li>
-
+    
       <div class='more-content'>
         <li>
           <a href='/tutorial/'>(View all 13 articles)</a>
@@ -441,470 +463,422 @@ _kmq.push(['record', 'Viewed Support Article', {'Support Article Viewed URL':'/4
     </ul>
   </div>
 </li>
-  <li>
+<li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#tools-list">
     <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#tools-list">Reporting Tools</a>
   </div>
   <div id="tools-list" class="collapse">
     <ul>
-
+    
+      <li>
+        <a href="/advanced/advanced-properties">Advanced Properties in KISSmetrics</a>
+      </li>
+    
       <li>
         <a href="/tools/cohort-report/cohort-report-options.html">Cohort Report Options</a>
       </li>
-
+    
       <li>
         <a href="/tools/daily-metrics-email.html">Daily Metrics Email</a>
       </li>
-
+    
       <li>
         <a href="/tools/event-library/index.html">Event Library</a>
       </li>
-
+    
       <li>
         <a href="/tools/event-library/events-clicks.html">Events - Clicks On</a>
       </li>
-
+    
       <li>
         <a href="/tools/event-library/events-form.html">Events - Submits a Form</a>
       </li>
-
+    
       <li>
         <a href="/tools/event-library/events-url/index.html">Events - Visits the URL</a>
       </li>
-
+    
       <li>
         <a href="/tools/funnels/index.html">Funnels</a>
       </li>
-
+    
       <li>
         <a href="/tools/funnels-vs-metrics.html">Conversion Calculation in Funnels vs. Metrics</a>
       </li>
-
+    
       <li>
         <a href="/tools/live.html">Live</a>
       </li>
-
+    
       <li>
         <a href="/tools/metrics/metric-calculations.html">Metric Calculations</a>
       </li>
-
+    
       <li>
         <a href="/tools/metrics/index.html">Metrics</a>
       </li>
-
+    
       <li>
         <a href="/tools/person-details.html">Person Details</a>
       </li>
-
+    
       <li>
         <a href="/tools/power-report/index.html">Power Report</a>
       </li>
-
+    
       <li>
         <a href="/tools/power-report/relative-to.html">Relative To</a>
       </li>
-
+    
       <li>
         <a href="/tools/reports-exportable.html">What Can Be Exported to CSV?</a>
       </li>
-
+    
       <li>
         <a href="/tools/revenue-report.html">Revenue Report</a>
       </li>
-
+    
       <li>
         <a href="/tools/funnels/segment-funnels-two-properties.html">Segment Funnels on Two Properties</a>
       </li>
-
+    
       <li>
         <a href="/tools/event-library/events-url/wildcards.html">Wildcards</a>
       </li>
-
+    
       <li>
         <a href="/tools/cohort-report/index.html">Cohort Report</a>
       </li>
-
+    
       <li>
         <a href="/tools/people-search.html">People Search</a>
       </li>
-
+    
       <li>
         <a href="/tools/update-frequency.html">How recent is my data?</a>
       </li>
-
+    
       <li>
         <a href="/tools/power-report/power-report-examples.html">Power Report Examples</a>
       </li>
-
+    
       <div class='more-content'>
         <li>
-          <a href='/tools/'>(View all 22  articles)</a>
+          <a href='/tools/'>(View all 23  articles)</a>
         </li>
       </div>
     </ul>
   </div>
 </li>
-  <li>
+<li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#integrations-list">
     <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#integrations-list">External Integrations</a>
   </div>
   <div id="integrations-list" class="collapse">
     <ul>
-
+    
       <li>
         <a href="/integrations/tapstream.html">Tapstream Integration</a>
       </li>
-
+    
       <li>
         <a href="/integrations/marketo.html">Marketo</a>
       </li>
-
+    
       <li>
         <a href="/integrations/convert.html">Convert Integration</a>
       </li>
-
+    
       <li>
         <a href="/integrations/callrail.html">CallRail</a>
       </li>
-
+    
       <li>
         <a href="/integrations/help-scout.html">Help Scout</a>
       </li>
-
+    
       <li>
         <a href="/integrations/mysql/index.html">MySQL and Postgres as an External Data Source</a>
       </li>
-
+    
       <li>
         <a href="/integrations/csv-import/index.html">CSV Files as an External Data Source</a>
       </li>
-
+    
       <li>
         <a href="/integrations/salesforce.html">Salesforce</a>
       </li>
-
+    
       <li>
         <a href="/integrations/mysql/arg-out-of-range.html">MySQL Argument Out of Range</a>
       </li>
-
+    
       <li>
         <a href="/integrations/ultracart.html">UltraCart</a>
       </li>
-
+    
       <li>
         <a href="/integrations/wordpress.html">WordPress Plugin</a>
       </li>
-
+    
       <li>
         <a href="/integrations/woocommerce.html">WooCommerce Plugin (WordPress)</a>
       </li>
-
+    
       <li>
         <a href="/integrations/vwo.html">Visual Website Optimizer (VWO) Integration</a>
       </li>
-
+    
       <li>
         <a href="/integrations/utm-variables.html">Tracking UTM Parameters</a>
       </li>
-
+    
       <li>
         <a href="/integrations/csv-import/recurring-import.html">Recurring CSV Import</a>
       </li>
-
+    
       <li>
         <a href="/integrations/recurly.html">Recurly</a>
       </li>
-
+    
       <li>
         <a href="/integrations/qualaroo.html">Qualaroo</a>
       </li>
-
+    
       <li>
         <a href="/integrations/payplans.html">PayPlans Membership Software Integration</a>
       </li>
-
+    
       <li>
         <a href="/integrations/optimizely.html">Optimizely Integration</a>
       </li>
-
+    
       <li>
         <a href="/integrations/csv-import/one-time-upload.html">One-Time CSV Upload</a>
       </li>
-
+    
       <li>
         <a href="/integrations/mailchimp.html">Mailchimp</a>
       </li>
-
+    
       <li>
         <a href="/integrations/magento-km.html">Magento and KISSmetrics</a>
       </li>
-
+    
+      <li>
+        <a href="/a-b-testing/integration">Using an A/B Testing Platform</a>
+      </li>
+    
+      <li>
+        <a href="/advanced/importing-data">Import Existing Data Into KISSmetrics</a>
+      </li>
+    
       <li>
         <a href="/integrations/chargify.html">Chargify</a>
       </li>
-
+    
       <li>
         <a href="/integrations/call-tracking-metrics.html">Call Tracking Metrics</a>
       </li>
-
+    
       <div class='more-content'>
         <li>
-          <a href='/integrations/'>(View all 24 articles)</a>
+          <a href='/integrations/'>(View all 26 articles)</a>
         </li>
       </div>
     </ul>
   </div>
 </li>
-  <li>
+<li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#how-tos-list">
     <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#how-tos-list">How To's, Examples, and Best Practices</a>
   </div>
   <div id="how-tos-list" class="collapse">
     <ul>
-
+    
       <li>
         <a href="/how-tos/browser-detection.html">Browser Detection</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/campaign-tracking.html">How to Track Campaign URLs</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/create-site.html">Create a New Site</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/dynamic-elements.html">Tracking Dynamically-Loaded Elements</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/form-abandonment.html">Tracking Form Abandonment</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/mobile-sites-apps.html">Tracking Mobile/iPhone/Android Apps</a>
       </li>
-
+    
+      <li>
+        <a href="/advanced/multiple-people-same-browser">Multiple People on the Same Browser</a>
+      </li>
+    
       <li>
         <a href="/how-tos/person-or-account.html">Should I Track Per Person or Per Account?</a>
       </li>
-
+    
+      <li>
+        <a href="/a-b-testing/server-side">Tracking an A/B Test Created with Your Own Server-Side Code</a>
+      </li>
+    
       <li>
         <a href="/how-tos/social-events.html">Tracking Social Events</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/time-on-site.html">Does KISSmetrics Track Bounce Rate, Average Time on Site, or Exits?</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/tracking-email.html">Tracking Email</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/tracking-offline-events.html">Tracking Offline Events</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/tracking-refunds.html">Tracking Refunds</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/tracking-video.html">Tracking Videos</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/traffic-sources.html">How do I see where my traffic is coming from?</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/using-paypal.html">Using Paypal</a>
       </li>
-
+    
+      <li>
+        <a href="/advanced/virality">Tracking Virality</a>
+      </li>
+    
       <li>
         <a href="/how-tos/wufoo-forms.html">Wufoo Forms</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/delete-site.html">Deleting Your Site</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/team-permissions.html">Team Permissions</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/stop-events.html">How To Stop Sending Events</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/events-or-properties.html">Should I set up my data as Events or Properties?</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/facebook-login.html">Measuring Facebook Logins and Signups</a>
       </li>
-
+    
       <li>
         <a href="/how-tos/push-notifications.html">How to Track Push Notifications</a>
       </li>
-
+    
       <div class='more-content'>
         <li>
-            <a href='/how-tos/'>(View all 22  articles)</a>
+            <a href='/how-tos/'>(View all 25  articles)</a>
         </li>
       </div>
     </ul>
   </div>
 </li>
-  <li>
-  <div class="collapse-hitbox" data-toggle="collapse" data-target="#ab-testing-list">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <a href="#ab-testing-list">A/B Testing</a>
-  </div>
-  <div id="ab-testing-list" class="collapse">
-    <ul>
-
-      <li>
-        <a href="/a-b-testing/integration.html">Using an A/B Testing Platform</a>
-      </li>
-
-      <li>
-        <a href="/a-b-testing/server-side.html">Using Your Own Server-Side Code</a>
-      </li>
-
-      <li>
-        <a href="/a-b-testing/using-km-js/weighted-variants.html">Using Weighted Variants</a>
-      </li>
-
-      <li>
-        <a href="/a-b-testing/using-km-js/whole-page.html">Tracking Whole Page A/B Tests</a>
-      </li>
-
-      <li>
-        <a href="/a-b-testing/using-km-js/index.html">Using the JavaScript Library to Run an A/B Test</a>
-      </li>
-
-      <div class='more-content'>
-        <li>
-          <a href='/a-b-testing/'>(View all 5 articles)</a>
-        </li>
-      </div>
-    </ul>
-  </div>
-</li>
-  <li>
-  <div class="collapse-hitbox" data-toggle="collapse" data-target="#advanced-list">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <a href="#advanced-list">Advanced</a>
-  </div>
-  <div id="advanced-list" class="collapse">
-    <ul>
-
-      <li>
-        <a href="/advanced/advanced-properties.html">Advanced Properties in KISSmetrics</a>
-      </li>
-
-      <li>
-        <a href="/advanced/importing-data.html">Import Existing Data Into KISSmetrics</a>
-      </li>
-
-      <li>
-        <a href="/advanced/local-development.html">Developing in localhost</a>
-      </li>
-
-      <li>
-        <a href="/advanced/multiple-people-same-browser.html">Multiple People on the Same Browser</a>
-      </li>
-
-      <li>
-        <a href="/advanced/virality.html">Tracking Virality</a>
-      </li>
-
-      <div class='more-content'>
-        <li>
-          <a href='/advanced/'>(View all 5 articles)</a>
-        </li>
-      </div>
-    </ul>
-  </div>
-</li>
-  <li>
+<li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#troubleshooting-list">
     <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#troubleshooting-list">Troubleshooting</a>
   </div>
   <div id="troubleshooting-list" class="collapse">
     <ul>
-
+    
       <li>
         <a href="/troubleshooting/common-cohort-report-questions.html">Common Cohort Report Questions</a>
       </li>
-
+    
       <li>
         <a href="/troubleshooting/what-does-none-mean.html">When I segment by a property, what does 'None' mean?</a>
       </li>
-
+    
       <li>
         <a href="/troubleshooting/troubleshooting-identities.html">Problems with Identifying Users?</a>
       </li>
-
+    
       <li>
         <a href="/troubleshooting/change-password.html">Change Your Password</a>
       </li>
-
+    
       <li>
         <a href="/troubleshooting/km-live.html">Troubleshooting KISSmetrics Live</a>
       </li>
-
+    
       <li>
         <a href="/troubleshooting/troubleshooting-properties.html">My Properties Don't Look Right</a>
       </li>
-
+    
       <li>
         <a href="/troubleshooting/top-vs-bottom.html">Installing KM Code on Top vs. Bottom of the Page</a>
       </li>
-
+    
       <li>
         <a href="/troubleshooting/too-many-event-names.html">Too Many Unique Event Names or Property Names</a>
       </li>
-
+    
       <li>
         <a href="/troubleshooting/time-zones.html">Time Zones</a>
       </li>
-
+    
       <li>
         <a href="/troubleshooting/self-referrer.html">Why is my own site listed as a referrer?</a>
       </li>
-
+    
       <li>
         <a href="/troubleshooting/data-discrepancies/km-ga.html">Unique Visitors in Google Analytics vs. KISSmetrics</a>
       </li>
-
+    
       <li>
         <a href="/troubleshooting/ip-filtering.html">IP Blocking and Filtering</a>
       </li>
-
+    
       <li>
         <a href="/troubleshooting/internet-explorer.html">Using KISSmetrics with Internet Explorer</a>
       </li>
-
+    
       <li>
         <a href="/troubleshooting/detecting-duplicates.html">Detecting Duplicates</a>
       </li>
-
+    
       <li>
         <a href="/troubleshooting/deleting-data.html">Deleting Data From Your Site</a>
       </li>
-
+    
       <li>
         <a href="/troubleshooting/data-discrepancies/index.html">Data Discrepancies</a>
       </li>
-
+    
       <div class='more-content'>
         <li>
           <a href='/troubleshooting/'>(View all 16  articles)</a>
@@ -913,30 +887,30 @@ _kmq.push(['record', 'Viewed Support Article', {'Support Article Viewed URL':'/4
     </ul>
   </div>
 </li>
-  <li>
+<li>
   <div class="collapse-hitbox" data-toggle="collapse" data-target="#misc-list">
     <span class="glyphicon glyphicon-chevron-right"></span>
     <a href="#misc-list">Miscellaneous</a>
   </div>
   <div id="misc-list" class="collapse">
     <ul>
-
+    
       <li>
         <a href="/misc/account-billing.html">Your KISSmetrics Account's Billing</a>
       </li>
-
+    
       <li>
         <a href="/misc/site-settings.html">Site Settings</a>
       </li>
-
+    
       <li>
         <a href="/misc/user-privacy.html">User Privacy</a>
       </li>
-
+    
       <li>
         <a href="/misc/styleguide.html">KISSmetrics Support Style Guide</a>
       </li>
-
+    
       <div class='more-content'>
         <li>
           <a href='/misc/'>(View all 4  articles)</a>
@@ -945,29 +919,60 @@ _kmq.push(['record', 'Viewed Support Article', {'Support Article Viewed URL':'/4
     </ul>
   </div>
 </li>
-  <li>
-    <a href='http://status.kissmetrics.com'>KISSmetrics Status</a>
-  </li>
-</ul>
-
+            
+          </ul>
         </div><!-- /.menu -->
       </div><!-- /.col.side -->
       <div class='col' data-swiftype-index='true'>
-        <h1>Well, that's embarassing.</h1>
+        <h1 id="well_thats_embarassing">Well, that’s embarassing.</h1>
 
-<p>We didn't find the page you were looking for, but please try using the search bar on the left. Sorry about that!</p>
-
+<p>We didn’t find the page you were looking for, but please try using the search bar on the left. Sorry about that!</p>
       </div><!-- /.col -->
-    </div><!-- /.wrapper -->
+    </div><!-- /#wrapper -->
 
-    <div data-swiftype-index='false' id='footer'>
-      <p>
-        &copy;
-        2014
-        KISSmetrics. All rights reserved.
-        <img src="http://ad.retargeter.com/seg?add=528457&t=2" width="1" height="1" style="border:0; outline:none;" />
-      </p>
-    </div><!-- /.footer -->
-
+    <div class="modal fade" id="feedbackModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="modalTitle">How can we help you? Can we improve this page?</h4>
+        <h4 class="modal-title" style="display:none" id="modalSuccessTitle">Thanks! We've received your note.</h4>
+      </div><!-- /.modal-header -->
+      <div class="modal-body">
+        <form id="feedbackForm">
+          <div class="form-group">
+            <label for="feedbackText">We'll read your suggestions, ideas, questions, complaints, and compliments.</label>
+            <textarea id="feedbackText" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="feedbackEmail">Email Address</label>
+            <input type="email" id="feedbackEmail" placeholder="Enter email (optional)" class="form-control"></input>
+            <p class="help-block">We won't use your email address for anything except to respond, if necessary.</p>
+          </div>
+        </form><!-- /#feedbackForm -->
+        <div id="modalSuccess" style="display:none">
+          <img src="https://s3.amazonaws.com/kissmetrics-support-files/assets/images/support-request-thanks.png" alt="Thanks!"/>
+        </div><!-- /#modalSuccess -->
+        <div id="modalError" class="alert alert-danger" style="display:none">
+          <p>Something went wrong. Please try again in a few minutes.</p>
+        </div><!-- /#modalError -->
+      </div><!-- /.modal-body -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" id="modalSend">Send</button>
+      </div><!-- /.modal-footer -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal.fade #feedbackModal -->
+    <footer>
+  <div data-swiftype-index='false' id='footer'>
+    <p>
+      &copy;
+      2014
+      KISSmetrics. All rights reserved.
+      <img src="http://ad.retargeter.com/seg?add=528457&t=2" width="1" height="1" style="border:0; outline:none;" />
+    </p>
+  </div><!-- /#footer -->
+</footer>
   </body><!-- /.home -->
 </html>
