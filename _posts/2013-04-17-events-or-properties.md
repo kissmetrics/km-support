@@ -22,7 +22,7 @@ In general, the way to think about structuring your data looks like this:
 In practice, there's a balance in the way you structure your data, mainly because the reports you're looking for can change as time goes on. Let's walk through three examples:
 
 
-### Example 1: Very generic event names (in bold) with one set of specific properties (name of the property is italicized and the values of the property are underlined).
+### Example 1: Very generic event names (the 2nd/3rd columns) with one set of specific properties (name of the property is italicized and the values of the property are at the beginning of each row).
 
 If you're only running tests on a few Landing Pages, you'll likely get less confused by a generic event name.
 
@@ -47,14 +47,14 @@ LP-Original-01-01-2013 | 50 | 10
 
 If you are running simultaneous tests on two parts of the funnel -- the email AND the landing page, each of those two should be their own Property.
 
-<font color="blue">*04-06-2013 Introduction Email Test*</font> & <font color="purple">*04-06-2013 Landing Page Test*</font> | **Received Email** | **Participated in “04-06-2013 Landing Page Test”**
+*04-06-2013 Introduction Email Test* & *04-06-2013 Landing Page Test* | **Received Email** | **Participated in “04-06-2013 Landing Page Test”**
 -- | -- | --
-<font color="blue">Email Variation1</font> | 50 | 25
-  &nbsp; &nbsp; <font color="purple">LP-Variation1</font> | &nbsp; &nbsp; 25 | &nbsp; &nbsp; 15
-  &nbsp; &nbsp; <font color="purple">LP-Original-01-01-2013</font> | &nbsp; &nbsp; 25 | &nbsp; &nbsp; 10
-<font color="blue">Email Control</font> | 50 | 10
-  &nbsp; &nbsp; <font color="purple">LP-Variation1</font> | &nbsp; &nbsp; 25 | &nbsp; &nbsp; 6
-  &nbsp; &nbsp; <font color="purple">LP-Original-01-01-2013</font> | &nbsp; &nbsp; 25 | &nbsp; &nbsp; 4
+Email Variation1 | 50 | 25
+&nbsp; &nbsp; LP-Variation1 | &nbsp; &nbsp; 25 | &nbsp; &nbsp; 15
+&nbsp; &nbsp; LP-Original-01-01-2013 | &nbsp; &nbsp; 25 | &nbsp; &nbsp; 10
+Email Control | 50 | 10
+&nbsp; &nbsp; LP-Variation1 | &nbsp; &nbsp; 25 | &nbsp; &nbsp; 6
+&nbsp; &nbsp; LP-Original-01-01-2013 | &nbsp; &nbsp; 25 | &nbsp; &nbsp; 4
 
 ## Takeaways
 
