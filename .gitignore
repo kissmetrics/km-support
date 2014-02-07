@@ -3,4 +3,4 @@ _site/*
 .rvmrc
 .ruby-version
 .ruby-gemset
-.amazon_keys
+.sass-cache/*
