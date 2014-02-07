@@ -96,4 +96,7 @@ $(document).ready(function() {
   loadKMTrackableVideo("b683f1acd1", "Blank Slate: Reports");
   loadKMTrackableVideo("d091892948", "Blank Slate: Metrics");
   loadKMTrackableVideo("3f023d87a8", "Blank Slate: Revenue Report");
+  loadKMTrackableVideo("7lmaiffmf4", "Translating a Business Question Into a Power Report");
+  loadKMTrackableVideo("a3pfna7kb4", "How ‘Every Value’ Affects a Power Report");
+  loadKMTrackableVideo("36h8v5kqfw", "How 'Relative To' Affects a Power Report");
 });
