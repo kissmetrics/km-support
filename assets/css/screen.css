@@ -560,6 +560,13 @@ margin-top:75px;
   border-style: none;
 }
 
+/* WISTIA VIDEOS: =wistia-embed
+------------------------------------------------------------*/
+.wistia_embed,
+.wistia-embed {
+  padding: 10px;
+}
+
 /* Media Queries */
 
 @media only screen and (min-width: 0px) {
