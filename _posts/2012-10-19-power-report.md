@@ -112,14 +112,14 @@ In this video, we explore an example business question:
 
 > Of the people who canceled, 1) which cancelation page was seen? 2) What plan were these customers last on? 3) Exactly who canceled?
 
-## How 'Every Value' Affects a Power Report
-
-<div id="wistia_a3pfna7kb4" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
-</div>
-
 ## How 'Relative To' Affects a Power Report
 
 <div id="wistia_36h8v5kqfw" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
+</div>
+
+## How 'Every Value' Affects a Power Report
+
+<div id="wistia_a3pfna7kb4" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
 </div>
 
 {% include summaries/power_report_summary.html %}
