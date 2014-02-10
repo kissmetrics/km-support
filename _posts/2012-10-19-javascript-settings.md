@@ -18,6 +18,7 @@ If you are using the JavaScript library, we automatically track certain events a
   * The Property `referrer` indicates the URL the visitor came from
   * The Property `URL` indicates the URL of the page they started browsing your site
   * We record **Visited Site** once for each visitor's browsing session. After 30 minutes of inactivity, the next time the visitor comes back will trigger a new **Visited Site** event, and they will also have the `Returning` Property set to 1.
+  * `Returning` is also set if your customer has already had the Google Analytics `__utma` cookie set.
 * ## Form Fields
   * If you set up an event to log a form submission (either through the API call `trackSubmit` or the Event Library's 'Submits a Form'), then we also capture the data from the form's fields.
   * Each `<input>` field will be saved as Property; we use the `name` attribute of the `<input>`'s to name each Property.
