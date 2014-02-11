@@ -28,6 +28,8 @@ You will be directed to the AWS dashboard after signing in or signing up. Click 
 
 You will refer to this bucket name later in step 7. You can optionally set up [logging][aws-logging] to get detailed access logs for your bucket at this point. Whether you choose to set up logging is up to you. You can always skip this and turn on logging later if you are not sure right now.
 
+Make sure to create the bucket in the "US Standard" region.
+
 Click "Create" to continue.
 
 ## 4. Give KISSmetrics permission to access the bucket.
