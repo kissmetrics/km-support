@@ -98,11 +98,12 @@ $(function(){
         if( timestamp != '') {
           if (isFinite(timestamp) && timestamp < 100000000000) { // check for milliseconds
             $('#timestamp-field').find('.error-message').hide();
-            url_parts.push('_t=' + encodeURIComponent(timestamp) + '_d=1');
+            url_parts.push('_t=' + encodeURIComponent(timestamp) + '&_d=1');
           }
-          else
+          else {
             valid = false;
             $('#timestamp-field').find('.error-message').show();
+          }
         }
         break;
       case "set":
