@@ -215,17 +215,8 @@ body form input.st-search-input {
       display: block; }
       .col .summary li a:hover {
         background: #e0f2f7; }
-        .col .summary li a:hover h3 {
-          color: #275360; }
         .col .summary li a:hover p {
           color: #3a6471; }
-      .col .summary li a h3 {
-        color: #3a6471;
-        font-size: 22px;
-        font-weight: normal;
-        line-height: normal;
-        margin-bottom: 2px;
-        text-decoration: none; }
     .col .summary li p {
       color: rgba(58, 100, 113, 0.75);
       font-size: 14px;
@@ -238,6 +229,15 @@ body form input.st-search-input {
     line-height: 20px;
     margin: 0;
     padding: 0; }
+  .col .summary a h3 {
+    color: #3a6471;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: normal;
+    margin-bottom: 2px;
+    text-decoration: none; }
+  .col .summary a:hover h3 {
+    color: #275360; }
 
 table {
   border-collapse: collapse;
@@ -253,12 +253,12 @@ table {
     table th a {
       color: #454545;
       text-decoration: underline; }
-    table th td {
-      border: 1px solid #e5e5e5;
-      color: #656565;
-      font-size: 14px;
-      line-height: 18px;
-      padding: 10px; }
+  table td {
+    border: 1px solid #e5e5e5;
+    color: #656565;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px; }
 
 blockquote {
   border-left: 4px solid #e5e5e5;
@@ -438,6 +438,12 @@ blockquote {
   margin-left: auto;
   margin-right: auto;
   border-style: none; }
+
+/* WISTIA VIDEOS: =wistia-embed
+------------------------------------------------------------*/
+.wistia_embed,
+.wistia-embed {
+  padding: 10px; }
 
 /* Media Queries:
 ------------------------------------------------------------*/

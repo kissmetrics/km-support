@@ -249,20 +249,9 @@ body form input.st-search-input {
         display: block;
         &:hover {
           background: #e0f2f7;
-          h3 {
-            color: #275360;
-          }
           p  {
             color: rgba(58,100,113,1);
           }
-        }
-        h3 {
-          color: #3a6471;
-          font-size: 22px;
-          font-weight: normal;
-          line-height: normal;
-          margin-bottom: 2px;
-          text-decoration: none;
         }
       }
       p {
@@ -280,6 +269,21 @@ body form input.st-search-input {
         line-height: 20px;
         margin: 0;
         padding: 0;
+      }
+    }
+    a {
+      h3 {
+        color: #3a6471;
+        font-size: 22px;
+        font-weight: normal;
+        line-height: normal;
+        margin-bottom: 2px;
+        text-decoration: none;
+      }
+      &:hover {
+        h3 {
+          color: #275360;
+        }
       }
     }
   }
@@ -302,13 +306,13 @@ table {
       color: #454545;
       text-decoration: underline;
     }
-    td {
-      border: 1px solid #e5e5e5;
-      color: #656565;
-      font-size: 14px;
-      line-height: 18px;
-      padding: 10px;
-    }
+  }
+  td {
+    border: 1px solid #e5e5e5;
+    color: #656565;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px;
   }
 }
 
@@ -520,6 +524,13 @@ blockquote {
     margin-right: auto;
     border-style: none;
   }
+}
+
+/* WISTIA VIDEOS: =wistia-embed
+------------------------------------------------------------*/
+.wistia_embed,
+.wistia-embed {
+  padding: 10px;
 }
 
 /* Media Queries:
