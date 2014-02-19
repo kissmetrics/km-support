@@ -32,30 +32,31 @@ Event Name | Properties | Identity
 
 ### 1. Obtain a Mailchimp API Key
 
-1. While logged into your Mailchimp account, select **Account > API Keys & Authorized** Apps (under **Extras**):
+* While logged into your Mailchimp account, open your Account Settings and navigate to **API Keys** (under **Extras**):
 
 ![API Key 1][sskey1]
 
-2. Click "Add A Key"
+* Click "Create A Key"
 
 ![API Key 2][sskey2]
 
-3. Now let's add this API key to your KISSmetrics account in the next step.
+* Now let's add this API key to your KISSmetrics account in the next step.
 
 ### 2. Register the API Key with KISSmetrics
 
-1. Navigate to the [External Data sync][external-data] area under Settings.
-2. Click **Add Data from Mailchimp**
+* Navigate to the [Data Integrations][external-data] area under Settings.
 
 ![Mailchimp 1][ssmc1]
 
-3. Enter your Mailchimp API Key from above.
+* Click **Add Data from Mailchimp**
 
 ![Mailchimp 2][ssmc2]
 
-4. One more step to go! You can come back to this page and check the status of the import.
+* Enter your Mailchimp API Key from above.
 
-![Mailchimp 3][ssmc3]
+![Mailchimp 2][ssmc3]
+
+* One more step to go! You can come back to this page and check the status of the import.
 
 ### 3. Unifying Mailchimp Data to the JavaScript Library
 
@@ -91,8 +92,8 @@ So for example, if your Mailchimp campaign links to `http://www.yoursite.com/lan
 [url]: /apis/url
 [url-builder]: /apis/url#url-builder
 
-[sskey1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/mailchimp/api-key-1.png
-[sskey2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/mailchimp/api-key-2.png
-[ssmc1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/mailchimp/mailchimp-1.png
-[ssmc2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/mailchimp/mailchimp-2.png
-[ssmc3]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/mailchimp/mailchimp-3.png
+[sskey1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/mailchimp/01-api-key.png
+[sskey2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/mailchimp/02-api-key.png
+[ssmc1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/mailchimp/01-mailchimp.png
+[ssmc2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/mailchimp/02-mailchimp.png
+[ssmc3]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/mailchimp/03-mailchimp.png
