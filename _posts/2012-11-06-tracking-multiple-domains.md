@@ -82,18 +82,24 @@ You can use the `KM.i()` function to obtain the visitor's current ID (anonymous 
 <script type="text/javascript">
 /* This code is on Domain #1. It appends the current KM identity to a link that leads to another domain you are tracking under the same API key.
  *
- * @param linkID [String] the HTML ID of the <a> element that leads off of your domain to Domain #2.
+ * @param linkID [String] the HTML class of the <a> elements that lead off of your domain to Domain #2.
  */
-function crossDomainLink(linkID) {
-  var element = document.getElementById(linkID);
-  var oldURL = element.getAttribute('href')
-  var id = encodeURIComponent(KM.i());    // This is key to preserving any symbols in the customers' identities.
-  if (oldURL.indexOf('?') > -1) {
-    var newURL = oldURL + "&kmi=" + id
-  } else {
-    var newURL = oldURL + "?kmi=" + id
+function crossDomainLink(linkClass) {
+  var elements = document.getElementsByClassName(linkClass),
+      id = encodeURIComponent(KM.i());
+
+  for (var i=0; elements[i]; i++) {
+    var element = elements[i],
+        oldURL = element.getAttribute('href'),
+        newURL;
+    if (oldURL.indexOf('?') > -1) {
+      newURL = oldURL + "&kmi=" + id
+    } else {
+      newURL = oldURL + "?kmi=" + id
+    }
+
+    elements[i].setAttribute('href', newURL);
   }
-  element.setAttribute('href', newURL);
 }
 
 /* EXAMPLE USAGE BEGINS HERE */
@@ -102,9 +108,9 @@ function crossDomainLink(linkID) {
 $(document).ready(function(){
 
   // Ensure the KM library has loaded to get access to KM.i()
-  _kmq.push(crossDomainLink('myLink'));
+  _kmq.push(crossDomainLink('outbound-links'));
 
-  // The <a> with the id #myLink will now have the query string parameter of kmi appended, to maintain the customer's identity in the next domain that you are also tracking
+  // The <a> elements with the class #outbound-links will now have the query string parameter of kmi appended, to maintain the customer's identity in the next domain that you are also tracking
 });
 
 /* EXAMPLE USAGE ENDS */
