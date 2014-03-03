@@ -80,14 +80,14 @@ You can use the `KM.i()` function to obtain the visitor's current ID (anonymous 
 
 {% highlight html %}
 <script type="text/javascript">
-/* Appends the current KM identity to a link that leads to another domain you are tracking under the same API key.
+/* This code is on Domain #1. It appends the current KM identity to a link that leads to another domain you are tracking under the same API key.
  *
- * @param linkID [String] the HTML ID of the <a> element that leads off of your domain
+ * @param linkID [String] the HTML ID of the <a> element that leads off of your domain to Domain #2.
  */
 function crossDomainLink(linkID) {
   var element = document.getElementById(linkID);
   var oldURL = element.getAttribute('href')
-  var id = encodeURIComponent(KM.i());
+  var id = encodeURIComponent(KM.i());    // This is key to preserving any symbols in the customers' identities.
   if (oldURL.indexOf('?') > -1) {
     var newURL = oldURL + "&kmi=" + id
   } else {
@@ -95,11 +95,9 @@ function crossDomainLink(linkID) {
   }
   element.setAttribute('href', newURL);
 }
-{% endhighlight %}
 
-#### Example Usage
+/* EXAMPLE USAGE BEGINS HERE */
 
-{% highlight html %}
 // Ensure the link exists in the DOM before we change it
 $(document).ready(function(){
 
@@ -108,6 +106,8 @@ $(document).ready(function(){
 
   // The <a> with the id #myLink will now have the query string parameter of kmi appended, to maintain the customer's identity in the next domain that you are also tracking
 });
+
+/* EXAMPLE USAGE ENDS */
 </script>
 {% endhighlight %}
 
