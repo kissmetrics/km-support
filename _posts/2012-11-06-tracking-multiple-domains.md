@@ -108,7 +108,7 @@ function crossDomainLink(linkClass) {
 $(document).ready(function(){
 
   // Ensure the KM library has loaded to get access to KM.i()
-  _kmq.push(crossDomainLink('outbound-links'));
+  _kmq.push(function() { crossDomainLink('outbound-links') });
 
   // The <a> elements with the class #outbound-links will now have the query string parameter of kmi appended, to maintain the customer's identity in the next domain that you are also tracking
 });
