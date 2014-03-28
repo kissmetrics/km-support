@@ -23,9 +23,11 @@ Columns will have the bold titles. These are the two required fields:
 
 Then include at least one of these three columns, depending on what type of data you're importing:
 
-* **"Event"** (*optional*): You can add an event name, such as "Signed Up". It does not matter if you currently have data for this event, or if this is a completely new event. **If you are importing events, each row needs an event. To set only properties, set those aside in a separate CSV file.**
-* **"Prop:"Property Name** (*optional*): You can add property columns by giving them the title "Prop:" and then adding the property name. For example, "Prop:Age" or "Prop:Billing Amount". You can include up to 10 property columns.
+* **"Event"** (*optional*): You can add an event name, such as `Signed Up`. It does not matter if you currently have data for this event, or if this is a completely new event. **If you are importing events, each row needs an event. To set only properties, set those aside in a separate CSV file.**
+* **"Prop:"Property Name** (*optional*): You can add property columns by giving them the title `Prop:` and then adding the property name. For example, `Prop:Age` or `Prop:Billing Amount`. You can include up to 10 property columns.
 * **"Alias"** (*optional*): in the rare case you are uploading [aliases][alias], you can add additional aliases to the KM identity.
+
+Our CSV import is unable to accept double quotation marks (") so please use single quotations (') if possible.
 
 ### Examples
 
