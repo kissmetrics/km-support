@@ -131,6 +131,59 @@ body form input.st-search-input {
   height: 30px;
 }
 
+
+/* Customizing Google CSE
+------------------------------------------------------------*/
+
+/* Input Customization */
+
+td.gsc-search-button {
+  display: none;
+}
+table.gsc-search-box td {
+  border: 0px solid #E5E5E5;
+}
+td.gsc-input {
+  padding: 20px 0 0 0;
+}
+
+/* Search Results Customizations */
+
+div.content {
+
+  .cse .gsc-control-cse, .gsc-control-cse {
+    padding: 0em;
+  }
+  .gsc-table-result, .gsc-thumbnail-inside, .gsc-url-top {
+    padding-left: 0px;
+  }
+  .gsc-selected-option-container {
+    min-width: 80px;
+  }
+  table.gsc-table-result td {
+    border: 0px solid #E5E5E5;
+    padding: 0px;
+  }
+  table.gsc-table-result {
+    margin-bottom: 0;
+  }
+  .gsc-control-cse {
+    padding: 0 0 25px 0;
+  }
+  .gsc-above-wrapper-area {
+    display: none;
+  }
+  .gsc-resultsHeader {
+    display: none;
+  }
+  .gsc-webResult .gsc-result {
+    padding: 10px 0 15px 0;
+  }
+}
+
+
+
+
 /* CONTENT: =content
 ------------------------------------------------------------*/
 .col{
