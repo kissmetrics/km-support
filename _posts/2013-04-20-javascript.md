@@ -587,15 +587,15 @@ If you want to track the subdomains separately in two different accounts, you ca
 {% include summaries/javascript_summary.html %}
 
 [common]: /apis/common-methods
-[trackclick]: #tracking_clicks_trackclick
-[trackoutbound]: #tracking_outbound_link_clicks_trackclickonoutboundlink
-[tracksubmit]: #tracking_forms_tracksubmit
+[trackclick]: #tracking-clicks---trackclick
+[trackoutbound]: #tracking-outbound-link-clicks---trackclickonoutboundlink
+[tracksubmit]: #tracking-forms---tracksubmit
 [a-b-km]: /a-b-testing/using-km-js
-[kmi]: #get_your_current_kissmetrics_id
+[kmi]: #kissmetrics-identities
 [clear-id]: /advanced/multiple-people-same-browser
-[callback]: #callback_functions
+[callback]: #callback-functions
 [protected]: /apis/javascript/javascript-specific/protected-form-fields
-[referrer]: #override_the_referrer
+[referrer]: #override-the-referrer
 [ga]: http://www.google.com/analytics/
 [crazyegg]: http://www.crazyegg.com/
 
