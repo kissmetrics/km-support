@@ -295,7 +295,7 @@ _kmq.push(['trackSubmit', 'signup_form', 'Sign Up Form Submitted', { 'variation'
 
 ### Auto-Tracking Form Fields
 
-By default, if you are tracking forms with `trackSubmit`, we will also capture all non-sensitive form fields as KISSmetrics properties. (We won't record [passwords, hidden, textarea fields as well as sensitive fields like credit card numbers and social security numbers][protected].)
+By default, if you are tracking forms with `trackSubmit`, we will also capture all non-sensitive form fields as KISSmetrics properties. (We won't record [passwords, hidden fields, textarea fields, or sensitive fields like credit card numbers and social security numbers][protected].)
 
 You can toggle whether to automatically capture form fields in your [JavaScript Settings][js-settings], under the *Form Fields* section.
 
