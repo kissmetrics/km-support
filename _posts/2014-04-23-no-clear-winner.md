@@ -3,7 +3,7 @@ layout: post
 title: What other A/B testing experts do when there is no clear winner
 categories: [tools, a-b-test-report]
 summary: When there is no clear winner (results are very close, significance reached), what do you do?
-published: false
+
 ---
 * Table of Contents
 {:toc}
