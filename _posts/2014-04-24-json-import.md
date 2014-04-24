@@ -11,27 +11,27 @@ published: false
 {:toc}
 * * *
 
-You can import .json files into KISSmetrics to import data into your account. We'll accept both one-time uploads and a recurring import of .json files from your Amazon S3 Bucket.
+You can import `.json` files into KISSmetrics to import data into your account. We'll accept both one-time uploads and a recurring import of `.json` files from your Amazon S3 Bucket.
 
 We recommend you read [People, Events, and Properties][pep] and [Common Methods][common-methods] before getting started here.
 
 ## File Format
 
-We accept files with the .json extension with this caveat: each line of the file must be a valid JSON object. For example:
+We accept files with the `.json` extension with this caveat: each line of the file must be a valid JSON object. For example:
 
 
 ### Valid
 
-```
+{% highlight json %}
 {"_n":"visited site","_p":"person@mail.com","_t":1393344604}
 {"url":"www.example.com/","_n":"visited","_p":"person@mail.com","_t":1393344607}
 {"url":"www.example.com/","_n":"visited site","_p":"person@mail.com","_t":1393344609}
 {"_p":"new_customer@mail.com","_p2":"chuck@mail.com","_t":1393344614}
-```
+{% endhighlight %}
 
 ### Invalid
 
-```
+{% highlight json %}
 {"links":
   [
     {"_n":"visited site","_p":"person@mail.com","_t":1393344604},
@@ -39,7 +39,7 @@ We accept files with the .json extension with this caveat: each line of the file
     {"_p":"new_customer@mail.com","_p2":"chuck@mail.com","_t":1393344614},
   ]
 }
-```
+{% endhighlight %}
 
 
 ## JSON object requirements
@@ -59,29 +59,29 @@ Then include at least one of these three names, depending on what type of data y
 
 #### Importing only events (`record` command)
 
-```
+{% highlight json %}
 {"_p":"1", "_t":1328044149, "_n":"Subscribed"}
-```
+{% endhighlight %}
 
 #### Importing events with optional properties (`record` command with properties)
 
-```
+{% highlight json %}
 {"_p":"1", "_t":1328044149, "_n":"Subscribed", "Age":32, "Gender":"Male"}
-```
+{% endhighlight %}
 
 #### Importing only properties (`set` command)
 
-```
+{% highlight json %}
 {"_p":"1", "_t":1328044149, "Email Address":"bob@bob.com"}
-```
+{% endhighlight %}
 
 #### Importing optional aliases (`alias` command)
 
 It's [uncommon to upload aliases][alias], but this is the format if you absolutely needed to:
 
-```
+{% highlight json %}
 {"_p":"1", "_t":1328044149, "_p2":"bob"}
-```
+{% endhighlight %}
 
 #### Sample .json file
 
