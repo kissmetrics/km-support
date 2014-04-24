@@ -3,7 +3,7 @@ layout: post
 title: What is Certainty of Improvement?
 categories: [tools, a-b-test-report]
 summary: How does KISSmetrics know that the improvement we see in a variant is real and not just due to luck?
-published: false
+
 ---
 * Table of Contents
 {:toc}
