@@ -720,9 +720,15 @@
     </url>
     <url>
         <loc>
+            http://support.kissmetrics.com/integrations/json-import/one-time-json-upload.html
+        </loc>
+        <lastmod>2014-04-24T12:51:38-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
             http://support.kissmetrics.com/integrations/json-import/recurring-json-import.html
         </loc>
-        <lastmod>2014-04-24T12:18:51-07:00</lastmod>
+        <lastmod>2014-04-24T12:49:33-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/404.html</loc>
@@ -754,7 +760,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/</loc>
-        <lastmod>2014-04-24T12:18:51-07:00</lastmod>
+        <lastmod>2014-04-24T12:51:38-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/integrations/</loc>
