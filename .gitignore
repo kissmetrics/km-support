@@ -4,3 +4,4 @@ _site/*
 .ruby-version
 .ruby-gemset
 .sass-cache/*
+.bundle/
