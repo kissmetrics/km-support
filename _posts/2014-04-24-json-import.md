@@ -5,6 +5,7 @@ title: "JSON Files as an External Data Source"
 tags: []
 summary: Import data to KISSmetrics using .json files.
 permalink: /integrations/json-import/index.html
+published: false
 ---
 * Table of Contents
 {:toc}

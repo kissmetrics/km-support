@@ -3,6 +3,7 @@ layout: post
 title: Recurring JSON Import
 categories: [integrations, json-import]
 summary: Import data every hour by linking KISSmetrics with an Amazon S3 bucket containing multiple `.csv` files.
+published: false
 ---
 * Table of Contents
 {:toc}
