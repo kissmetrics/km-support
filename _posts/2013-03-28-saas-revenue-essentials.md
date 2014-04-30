@@ -9,10 +9,6 @@ summary: These are the events and properties you should track to make the most o
 {:toc}
 * * *
 
-We are in the process of developing a Revenue Report aimed specifically towards SaaS businesses. While it is not ready yet, this report will be designed to help you better visualize **Monthly Recurring Revenue**, especially if your customers are billed less frequently than every month.
-
-Below lists how you can structure your revenue data to prepare for this report.
-
 This guide will use the following format:
 
 **Example Recommended Event** <br />
