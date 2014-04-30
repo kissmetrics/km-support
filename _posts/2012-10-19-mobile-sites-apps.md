@@ -13,7 +13,7 @@ KISSmetrics can track your mobile website using our typical [JavaScript Library]
 ## 1. Implement events using the library in the app's native language
 
 * iOS/Objective-C: an [official library is available][ios-official].
-* Android: an [*unofficial* library is available][android]. We do not test or provide support for it. Please use at your own discretion.
+* Android: an [official library is available][android]. We do not test or provide support for it. Please use at your own discretion.
 
 ## 2. PhoneGap and JavaScript Library
 
@@ -101,8 +101,8 @@ The idea here is that you can designate which feature of your app is the "first 
 
 In addition, you can use KISSmetrics server-side API's to track performance of automated systems such as how many times errors and bugs are being reported/logged.
 
-[ios-official]: /apis/objective-c.html
-[android]: https://github.com/80steve/KISSmetrics-4-Android
+[ios-official]: /apis/ios-v2
+[android]: /apis/android
 [phonegap]: http://phonegap.com/
 [js]: /apis/javascript
 [apis]: /apis
