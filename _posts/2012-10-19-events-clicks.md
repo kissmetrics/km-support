@@ -24,7 +24,7 @@ It’s easy to tell KISSmetrics what clicks to keep track of. You’re going to 
 
 Sometimes a button will have multiple classes applied to it. In this example below, three classes are being applied to the element and each are separated by a space:
 
-`<a href="/buy class="button button-buy green">Buy</a>`
+`<a href="/buy" class="button button-buy green">Buy</a>`
 
 The classes are .button, .button-buy & .green (the periods are preceding each class because KISSmetrics expects periods when you type a class into the Event Wizard's event creation form).
 
