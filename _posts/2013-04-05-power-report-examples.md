@@ -44,9 +44,9 @@ Look up Total Revenue (the sum of "Order Total"), segmented based on which Produ
 
 [![Use Case 3][case-3]][case-3]
 
-[case-1]: http://cl.ly/image/0I3L2z1Y3Z2R/01-use-case.png
-[case-2a]: http://cl.ly/image/2Z46083V0M2b/02a-use-case.png
-[case-2b]: http://cl.ly/image/2M0E0n07013E/02b-use-case.png
-[case-3]: http://cl.ly/image/3q3Q0V1X2O2B/03-use-case.png
+[case-1]: http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/power-report/01-use-case.png
+[case-2a]: http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/power-report/02a-use-case.png
+[case-2b]: http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/power-report/02b-use-case.png
+[case-3]: http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/power-report/03-use-case.png
 
 [calculations]: /tools/metrics/metric-calculations
