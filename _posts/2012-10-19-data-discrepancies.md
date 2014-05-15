@@ -91,23 +91,21 @@ If you'd like some help with the above steps, please contact our support team! W
 
 ## What Other Analytics Professionals Say About Data Discrepancies
 
-### Avinash Kaushik, Author of Web Analytics 2.0, Web Analytics: An Hour A Day, and Digital Marketing Evangelist for Google Analytics
-
 > Ensure your analytics strategy is to reduce data inaccuracy as much as possible. Don't focus on getting 100% accuracy.
 > That does not exist.
-> 
+>
 > I believe that.
-
-> There are no "right numbers". I am a part of a generation that believed that and we always tried to reach that goal (I 
-> grew up in the world of data warehouses and business intelligence and ERP and CRM systems). But painfully I have learned 
-> that you can either focus on that, or you can use the data you got. Analytics data gives you 900% more information than 
-> you have through traditional channels. It is only 90% "right", but the missing 10% is outweighed by the fact that you can > now make decisions that are so much better informed.
-> 
+>
+> There are no "right numbers". I am a part of a generation that believed that and we always tried to reach that goal (I
+> grew up in the world of data warehouses and business intelligence and ERP and CRM systems). But painfully I have learned
+> that you can either focus on that, or you can use the data you got. Analytics data gives you 900% more information than
+> you have through traditional channels. It is only 90% "right", but the missing 10% is outweighed by the fact that you can now make decisions that are so much better informed.
+>
 > It will take a while for the current crop of business leaders to "get it" – and sadly many many web analytics
-> practitioners / consultants / vendors to get it. We need to realize there is more money to be made not peddling our 
-> services that make things "accurate" but rather peddling our ability to find raw awesome insights (whatever the tool the > company has).
+> practitioners / consultants / vendors to get it. We need to realize there is more money to be made not peddling our
+> services that make things "accurate" but rather peddling our ability to find raw awesome insights (whatever the tool the company has).
 
- -excerpt taken from [Avinash Kaushik's blog post on data reconciliation][avinash-data-checklist]
+ --<cite>excerpt taken from Avinash Kaushik's (Author of Web Analytics 2.0, Web Analytics: An Hour A Day, and Digital Marketing Evangelist for Google Analytics) [blog post on data reconciliation][avinash-data-checklist]</cite>
 
 
 # KISSmetrics Status
