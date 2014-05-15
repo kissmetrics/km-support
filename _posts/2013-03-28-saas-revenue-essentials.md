@@ -1,9 +1,10 @@
 ---
 layout: post
-categories: best-practices
+categories:
 title: "SaaS Revenue Essentials"
 tags: []
 summary: These are the events and properties you should track to make the most of our upcoming SaaS Revenue Report.
+permalink: /best-practices/saas-revenue-essentials
 ---
 * Table of Contents
 {:toc}
