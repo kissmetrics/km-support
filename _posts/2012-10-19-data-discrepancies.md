@@ -89,7 +89,7 @@ KISSmetrics provides a number of specialized reporting tools, each with their ow
 
 If you'd like some help with the above steps, please contact our support team! We're happy to help.
 
-## What Other Analytics Professionals Say About Data Discrepancies
+# What Other Analytics Professionals Say About Data Discrepancies
 
 > Ensure your analytics strategy is to reduce data inaccuracy as much as possible. Don't focus on getting 100% accuracy.
 > That does not exist.
