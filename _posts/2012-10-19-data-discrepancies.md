@@ -89,6 +89,24 @@ KISSmetrics provides a number of specialized reporting tools, each with their ow
 
 If you'd like some help with the above steps, please contact our support team! We're happy to help.
 
+## What Other Analytics Professionals Say About Data Discrepancies
+
+> Ensure your analytics strategy is to reduce data inaccuracy as much as possible. Don't focus on getting 100% accuracy.
+> That does not exist.
+>
+> I believe that.
+>
+> There are no "right numbers". I am a part of a generation that believed that and we always tried to reach that goal (I
+> grew up in the world of data warehouses and business intelligence and ERP and CRM systems). But painfully I have learned
+> that you can either focus on that, or you can use the data you got. Analytics data gives you 900% more information than
+> you have through traditional channels. It is only 90% "right", but the missing 10% is outweighed by the fact that you can now make decisions that are so much better informed.
+>
+> It will take a while for the current crop of business leaders to "get it" – and sadly many many web analytics
+> practitioners / consultants / vendors to get it. We need to realize there is more money to be made not peddling our
+> services that make things "accurate" but rather peddling our ability to find raw awesome insights (whatever the tool the company has).
+
+ --<cite>excerpt taken from Avinash Kaushik's (Author of Web Analytics 2.0, Web Analytics: An Hour A Day, and Digital Marketing Evangelist for Google Analytics) [blog post on data reconciliation][avinash-data-checklist]</cite>
+
 
 # KISSmetrics Status
 
@@ -112,3 +130,4 @@ If there are any known site-wide issues, we will post a notice to [status.kissme
 
 [tools]: /tools
 [ap]: /advanced/advanced-properties
+[avinash-data-checklist]: http://www.kaushik.net/avinash/ultimate-web-analytics-data-reconciliation-checklist/
