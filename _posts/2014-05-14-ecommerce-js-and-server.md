@@ -59,8 +59,10 @@ _kmq.push(['record', 'Start Checkout', {'Checkout SKU':'<<Value>>', 'Checkout Na
 Alternatively:
 
 {% highlight php %}
-KM::identify($_COOKIE['km_ai']);
-KM::record('Start Checkout', array('Checkout SKU' => '<<Value>>', 'Checkout Name' => '<<Value>>','Checkout Price' => '<<99.95>>'));
+<?
+  KM::identify($_COOKIE['km_ai']);
+  KM::record('Start Checkout', array('Checkout SKU' => '<<Value>>', 'Checkout Name' => '<<Value>>','Checkout Price' => '<<99.95>>'));
+?>
 {% endhighlight %}
 
 
@@ -73,8 +75,10 @@ _kmq.push(['record', 'Checkout Complete', {'Purchased SKU':'<<Value>>', 'Purchas
 Alternatively:
 
 {% highlight php %}
-KM::identify($_COOKIE['km_ai']);
-KM::record('Checkout Complete', array('Purchased SKU' => '<<Value>>', 'Purchased Name' => '<<Value>>','Purchased Price' => '<<99.95>>'));
+<?
+  KM::identify($_COOKIE['km_ai']);
+  KM::record('Checkout Complete', array('Purchased SKU' => '<<Value>>', 'Purchased Name' => '<<Value>>','Purchased Price' => '<<99.95>>'));
+?>
 {% endhighlight %}
 
 ## Sign Ups/ Logs In / Newsletter Sign Up
