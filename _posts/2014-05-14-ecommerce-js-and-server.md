@@ -100,6 +100,14 @@ Finally, if you were not able to identify your user when they signed up with our
 _kmq.push(['identify', '<<bob@bob.com>>']);
 {% endhighlight %}
 
+# Integrations
+
+Be sure to look at our [integration page][integration] to see if you can easily pass us in information from your other tools. [Mailchimp][mailchimp], [Optimizely][optimizely] and [VWO][vwo] are the most popular tools we integrate with.
+
+# Troubleshooting
+
+You will need to use our [Live Stream][testing-with-live] or your [browser’s developer tools][testing-with-browser] to make sure the events and properties are coming in correctly. You do not need to wait the 2 hours to see if the information is correct. This will speed up your implementation tremendously.
+
 [ecommerce-essentials]: /best-practices/ecommerce-essentials
 [js-identities]: /apis/javascript/javascript-identities
 [js-lib]: /apis/javascript
