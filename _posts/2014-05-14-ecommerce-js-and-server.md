@@ -10,31 +10,31 @@ permalink: /best-practices/ecommerce-essentials/js-and-server-side-examples
 {:toc}
 * * *
 
-Everything in `<<double brackets>>` needs to be replaced with variables or an ID. Also, for more information, you can use our [E-commerce Essentials Guide][ecommerce-essentials] and [JavaScript Library][js-lib].
+# Introduction
+
+Below is some basic information for you to get started with KISSmetrics. Please let your account manager know if you need information outside of our JavaScript API. Everything in `<<double brackets>>` needs to be replaced with an element ID or a variable. Also, for more information, you can use our [E-commerce Essentials Guide][ecommerce-essentials] and [JavaScript Library][js-lib].
 
 **IMPORTANT** - When using both JavaScript and server-side libraries, you must [reuse the JavaScript ID][js-identities] so that your customer's historical information stays consistent. If you switch to server-side tracking and use a new customer ID, this will create a new user and you will have a disconnect between JS and server-side. Refer to [this support page][js-identities] for more details.
 
-The **First step** is to implement the [JavaScript code block][js-code-block] in the header of all of your pages. This will activate KISSmetrics and start tracking our automated events and properties.
+# Getting Started
 
-Next will be to start tracking your custom events and properties. Here are some things you should start tracking:
+First step is to implement your [JavaScript code block][js-code-block] in the header of all of your pages. This will track all of our [automatic events and properties][auto-tracked-events] like Visited Site and Ad Campaign Hit. Be sure to use [UTM parameters][utm] with any ads in order to track the details of the ads.
 
-## Product Search
+We will now start tracking your custom events and properties. Here are some things you should track for your E-commerce site:
 
-Use [trackSubmit][trackSubmit] to track your search form. All you need is the ID of your search form and we will track the event and answers:
+# Track Custom Info
+
+We will first want to track when someone searches a product within your website. Use [trackSubmit][trackSubmit] to track your search form. All you need is the ID of your search form and we will track the event and answers submitted:
 
 {% highlight js %}
 _kmq.push(['trackSubmit', '<<ELEMENT_ID_OR_CLASS>>', 'Product Search']);
 {% endhighlight %}
 
-## Viewed Product
-
-Track when someone views a product. You should implement our most basic call:
+Now you should track when someone views a product. You can use our most record call. This is our most fundamental call which tracks events and properties of your users:
 
 {% highlight js %}
 _kmq.push(['record', 'Viewed Product', {'Product Viewed SKU':'<<Value>>', 'Product Viewed Name':'<<Value>>', 'Product Viewed Price':'<<99.95>>'}]);
 {% endhighlight %}
-
-## Add to Cart
 
 When someone adds an item to the cart, we should track this with our record call:
 
@@ -42,15 +42,13 @@ When someone adds an item to the cart, we should track this with our record call
 _kmq.push(['record', 'Add to Cart', {'Add to Cart SKU':'<<Value>>', 'Add to Cart Name':'<<Value>>', 'Add to Cart Price':'<<99.95>>'}]);
 {% endhighlight %}
 
-## Viewed Cart
-
-When someone views the cart:
+Then when they view the cart:
 
 {% highlight js %}
 _kmq.push(['record', 'Viewed Cart', {'Viewed Cart SKU':'<<Value>>', 'Viewed Cart Name':'<<Value>>', 'Viewed Cart Price':'<<99.95>>'}]);
 {% endhighlight %}
 
-## Start Checkout
+Tracking the checkout process is one of the most important parts of KISSmetrics. Once again you can use our record call to track this:
 
 {% highlight js %}
 _kmq.push(['record', 'Start Checkout', {'Checkout SKU':'<<Value>>', 'Checkout Name':'<<Value>>', 'Checkout Price':'<<99.95>>'}]);
@@ -65,8 +63,7 @@ Alternatively:
 ?>
 {% endhighlight %}
 
-
-## Complete Checkout / Purchase - This should fire at the end when the user has confirmed the purchase.
+Finally, track the complete checkout / purchase. This should fire at the end when the user has confirmed the purchase.
 
 {% highlight js %}
 _kmq.push(['record', 'Checkout Complete', {'Purchased SKU':'<<Value>>', 'Purchase Name':'<<Value>>', 'Purchase Price':'<<99.95>>'}]);
@@ -81,9 +78,7 @@ Alternatively:
 ?>
 {% endhighlight %}
 
-## Sign Ups/ Logs In / Newsletter Sign Up
-
-You should track when someone signs up or logins to your website or signs up for a newsletter. This can be done with [`trackSubmit`][trackSubmit]:
+Most E-commerce stores have sign ups, logs in and newsletter sign ups. These form submissions can be tracked with [`trackSubmit`][trackSubmit]:
 
 {% highlight js %}
 _kmq.push(['trackSubmit', '<<ELEMENT_ID_OR_CLASS>>', 'Signed Up']);
@@ -97,9 +92,9 @@ _kmq.push(['trackSubmit', '<<ELEMENT_ID_OR_CLASS>>', 'Login']);
 _kmq.push(['trackSubmit', '<<ELEMENT_ID_OR_CLASS>>', 'Newsletter']);
 {% endhighlight %}
 
-## Identifying
+## Identifying Your Users
 
-Finally, if someone provides information outside of signing up or logging in, you can identify the person manually. Our [trackSubmit][trackSubmit] call will do this automatically for you if you don't want to use our identify call:
+Finally, if you were not able to identify your user when they signed up with our `trackSubmit` call (example above), you can use our `identify` call and manually ID the customer:
 
 {% highlight js %}
 _kmq.push(['identify', '<<bob@bob.com>>']);
@@ -110,3 +105,12 @@ _kmq.push(['identify', '<<bob@bob.com>>']);
 [js-lib]: /apis/javascript
 [js-code-block]: /apis/javascript/#setup
 [trackSubmit]: /apis/javascript/#tracking-forms---tracksubmit
+[utm]: /integrations/utm-variables
+[auto-tracked-events]: /apis/javascript/#events-automatically-tracked
+[integration]: /integrations
+[mailchimp]: /integrations/mailchimp
+[optimizely]: /integrations/optimizely
+[vwo]: /integrations/vwo
+[testing-with-live]: /getting-started/testing-km/#using-kissmetrics-live
+[testing-with-browser]: /getting-started/testing-km/#examine-network-activity
+
