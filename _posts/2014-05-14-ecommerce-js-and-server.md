@@ -12,7 +12,7 @@ permalink: /best-practices/ecommerce-essentials/js-and-server-side-examples
 
 # Introduction
 
-Below is some basic information for you to get started with KISSmetrics. Please let your account manager know if you need information outside of our JavaScript API. Everything in `<<double brackets>>` needs to be replaced with an element ID or a variable. Also, for more information, you can use our [E-commerce Essentials Guide][ecommerce-essentials] and [JavaScript Library][js-lib].
+Below is some basic information for you to get started with KISSmetrics. Please let your account manager know if you need information outside of our JavaScript and server side APIs. Everything in `<<double brackets>>` needs to be replaced with an element ID or a variable. Also, for more information, you can use our [E-commerce Essentials Guide][ecommerce-essentials] and [JavaScript Library][js-lib].
 
 **IMPORTANT** - When using both JavaScript and server-side libraries, you must [reuse the JavaScript ID][js-identities] so that your customer's historical information stays consistent. If you switch to server-side tracking and use a new customer ID, this will create a new user and you will have a disconnect between JS and server-side. Refer to [this support page][js-identities] for more details.
 
