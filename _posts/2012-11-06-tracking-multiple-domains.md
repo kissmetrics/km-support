@@ -147,6 +147,6 @@ For reference: [Looking Up Your Current KM ID][km-id]
   4. **(-)** If you end up using the same JS snippet on all of your domains, the [events our JavaScript automatically tracks][auto-track] would lump together activity from each of your domains. *Visited Site* and *Ad Campaign Hit* would include Visits and Ad hits to all of your domains.
 
 [url]: /apis/url
-[km-id]: /apis/javascript/javascript-specific#get-your-current-kissmetrics-id
+[km-id]: /apis/javascript/#kissmetrics-identities
 [js-settings]: https://s3.amazonaws.com/kissmetrics-support-files/assets/apis/javascript/tracking-multiple-domains/include-host.png
 [auto-track]: /apis/javascript/javascript-settings
