@@ -38,23 +38,20 @@ To finish cleaning up, remember to stop passing us the event data. Hiding the ev
 
 ## Correcting Data and Reimporting It
 
-We have a [Raw Data Export][data-export] tool for those on the Small Plan and above. It lets you export every event and property you pass us. You can use this to:
+We have a [Raw Data Export][data-export] tool that lets you export every event and property you pass us. You can use this to:
 
 1. Export the data.
 2. Remove the entries you no longer want.
 3. Rename the events/properties you wish to re-import.
-4. Complete the [re-importing process][import] using either a CSV upload or a server-side API to facilitate the procedure.
+4. Complete the re-importing process with our [JSON import integration][json-import].
 
 Particularly, if you are correcting **Revenue** data, go to your account's Mappings page ([https://app.kissmetrics.com/mapping][mapping]) and set the `Revenue` property to use the renamed property. This will use the new property when calculating the [Revenue Report][revenue].
-
 
 In the most dramatic case, you could use this procedure to transfer data **from this site into a fresh site**.
 
 Note that you should not incur any expenses for importing events over your current monthly limit if it only happens once.
 
-Sorry that there's not an easier way on our side.... we are looking into better ways to let you clear up data without removing the useful bits.
-
 [revenue]: https://app.kissmetrics.com/revenue
 [mapping]: https://app.kissmetrics.com/mapping
 [data-export]: /apis/data/data-export-setup
-[import]: /advanced/importing-data
+[json-import]: /integrations/json-import/
