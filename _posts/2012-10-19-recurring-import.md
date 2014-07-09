@@ -10,7 +10,7 @@ summary: Import data every hour by linking KISSmetrics with an Amazon S3 bucket 
 
 This guide explains how to create an Amazon Web Services S3 bucket, name your CSV files, and point your KISSmetrics account to the appropriate bucket.
 
-## Creating an S3 Bucket
+# Creating an S3 Bucket
 
 ## 1. Sign in to (or sign up for) Amazon Web Services
 ![AWS Homepage][1]
@@ -46,7 +46,7 @@ The grantee ID of the KISSmetrics user is:
 
 Please include all permissions (List, Upload/Delete, View Permissions) for this user.
 
-### 4. Give KISSmetrics permissions to edit the files
+## 4. Give KISSmetrics permissions to edit the files
 ![Give KM Permission to Files][5]
 
 You've provided KISSmetrics access to the bucket, but we also need permission to read and modify the files. Select the .csv file, Click "Properties", and add permissions for the user
@@ -57,9 +57,9 @@ You've provided KISSmetrics access to the bucket, but we also need permission to
 
 Your bucket is now configured!
 
-## Linking Your KM Site to the Bucket
+# Linking Your KM Site to the Bucket
 
-### 1. Navigate to the Upload Area
+## 1. Navigate to the Upload Area
 
 The [CSV upload area][csv-new] is located under your site's External Data Sources. You can reach it by doing the following:
 
@@ -68,13 +68,13 @@ The [CSV upload area][csv-new] is located under your site's External Data Source
 
 ![CSV Upload Step 1][screenshot-1]
 
-### 2. Tell Us About Your Bucket
+## 2. Tell Us About Your Bucket
 
 * Select "Recurring import from S3 bucket" as the Import Option.
 * Enter in the name of the bucket, from Step 3 above.
 * Enter in the base name of your csv files, explained below.
 
-#### Naming Your CSV Files
+### Naming Your CSV Files
 
 KISSmetrics will use a *base filename* to create a search pattern, finding and processing all files that match that pattern. We will process them in alphanumeric order.
 
@@ -89,13 +89,13 @@ Currently, the import processes a single file every hour, so it makes sense to g
 
 *Note: At setup time, at least one valid file must be located in your bucket.*
 
-### 3. Preview and Confirm
+## 3. Preview and Confirm
 
 If all goes well, we'll show you a preview of the events and properties to be imported. Review the results and confirm the import when you are ready.
 
 ![CSV Recurring Step 2][screenshot-2]
 
-## Processing Files
+# Processing Schedule
 
 Currently, we scan for unprocessed files every hour. If we find any available files, we will process them 1 file at a time per hour. If your file is large, and it takes our servers longer than 5 minutes to process a single file, we will resume processing on that file during the next hour.
 

@@ -14,7 +14,7 @@ You can import .csv files into KISSmetrics to import data into your account. We'
 
 We recommend you read [People, Events, and Properties][pep] and [Common Methods][common-methods] before getting started here.
 
-## File Format
+# File Format
 
 Columns will have the bold titles. These are the two required fields:
 
@@ -29,9 +29,9 @@ Then include at least one of these three columns, depending on what type of data
 
 Our CSV import is unable to accept double quotation marks (") so please use single quotations (') if possible.
 
-### Examples
+# Examples
 
-#### Importing only events (`record` command)
+## Importing only events (`record` command)
 
 Identity | Timestamp  | Event
 -------- | ---------- | ----------
@@ -41,7 +41,7 @@ Identity | Timestamp  | Event
 6        | 1325974373 | Joined Newsletter
 10       | 1325629592 | Subscribed
 
-#### Importing events with optional properties (`record` command with properties)
+## Importing events with optional properties (`record` command with properties)
 
 Identity | Timestamp  | Event             | Prop:Age  | Prop:Gender | Prop:Favorite Food
 -------- | ---------- | ----------------- | --------- | ----------- | ------------------
@@ -51,7 +51,7 @@ Identity | Timestamp  | Event             | Prop:Age  | Prop:Gender | Prop:Favor
 6        | 1325974373 | Joined Newsletter |           |             | Tapas
 10       | 1325629592 | Subscribed        | 23        | Male        | Apple Pie
 
-#### Importing only properties (`set` command)
+## Importing only properties (`set` command)
 
 Identity | Timestamp  | Prop:Email Address
 -------- | ---------- | ------------------
@@ -61,7 +61,7 @@ Identity | Timestamp  | Prop:Email Address
 6        | 1325974373 | joe@bob.com
 10       | 1325629592 | phil@bob.com
 
-#### Importing optional aliases (`alias` command)
+## Importing optional aliases (`alias` command)
 
 It's [uncommon to upload aliases][alias], but this is the format if you absolutely needed to:
 
@@ -71,7 +71,7 @@ gwashdog     | gw@example.com | 1230768000
 abelincoln11 | al@example.com | 1230768000
 mrtaft2      | ht@example.com | 1230768000
 
-#### Sample .csv file
+## Sample .csv file
 
 [Attached is a sample .csv file][sample-csv] for reference.
 
