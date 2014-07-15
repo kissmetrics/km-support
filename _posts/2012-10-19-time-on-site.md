@@ -54,6 +54,12 @@ _kmq.push(['set', {'language':'english',
                    'age':21}]);
 {% endhighlight %}
 
+## Location Information
+
+If you are comfortable with writing additional code, Shopify has a great guide for ways to [look up a visitor's location][shopify-location]. You can apply the same methods to setting KISSmetrics properties.
+
 [vanity-km]: http://blog.kissmetrics.com/vainest-metrics/
 [vanity-tc]: http://techcrunch.com/2011/07/30/vanity-metrics/
 [kaushik]: http://www.kaushik.net/avinash/silly-marketing-data-strategy-metrics-mistakes/
+[shopify-location]: http://docs.shopify.com/manual/configuration/store-customization/page-specific/store-wide/get-a-visitors-location
+[freegeoip]: https://github.com/fiorix/freegeoip
