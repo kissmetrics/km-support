@@ -16,9 +16,9 @@ Below are examples of using the [YouTube](#youtube), [Vimeo](#vimeo), and [Wisti
 * Paused Video - {Name of the Video}
 * Finished Video - {Name of the Video}
 
-## Vimeo
+# Vimeo
 
-### Vimeo's Embed Code
+## Vimeo's Embed Code
 
 1. Add the [embed code][vimeo-embed] to add the Vimeo video in an iFrame. Add `api=1` as a query string to the URL of the iframe.
 2. Load their JavaScript mini-library, called [Froogaloop][vimeo-froogaloop].
@@ -33,7 +33,7 @@ This is what your full embed code might look like:
 <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
 {% endhighlight %}
 
-### Add KM Tracking
+## Add KM Tracking
 Now below this, let's interact with their [JS][vimeo-js] to set up the events:
 
 {% highlight html %}
@@ -56,15 +56,14 @@ player.addEvent('ready', function() {
 </script>
 {% endhighlight %}
 
+# Wistia
 
-## Wistia
-
-### Wistia's Embed Code
+## Wistia's Embed Code
 If you expand the "Embed Type" box, you can expand the Advanced Options and switch to using the Wistia API rather than the iFrame method. Copy/paste this into your page.
 
 ![Wistia Embed][wistia-embed]
 
-### Add KM Tracking
+## Add KM Tracking
 Now below this, let's add our tracking calls.
 
 {% highlight html %}
@@ -92,40 +91,62 @@ loadKMTrackableVideo(wistiaEmbed, "Sample Wistia Video");
 * `wistiaEmbed` refers to the `wistiaEmbed` object. This does not have to change unless you are embedding several Wistia videos on the same page.
 * "Sample Wistia Video" refers to the name of the video. This will be appended to the event that is logged in KM.
 
-### Wistia Embed Shepherd
+## Wistia Embed Shepherd
 
-Wistia has also provided access to a JavaScript library they call the "[Embed Shepherd][wistia-embed-shepherd]". This helps simplify getting pointers to all embedded Wistia videos, and we will soon be documenting how to use that in conjunction with KISSmetrics.
+Wistia has also provided access to a JavaScript library they call the "[Embed Shepherd][wistia-embed-shepherd]". This helps simplify getting pointers to all embedded Wistia videos.
 
+# YouTube
 
-## YouTube
+## YouTube's Embed Code
+First, you'll need to embed your YouTube video using [their iFrame API][youtube-embed] (which has the best compatibility with mobile devices). The code looks like this (remember to change out the `videoId` with the video you want to embed:
 
-### YouTube's Embed Code
-First, you'll need to embed your YouTube video according to [their documented method via JS and SWF][youtube-embed].
+{% highlight html %}
+<!-- The <iframe> (and video player) will replace this <div> tag. -->
+<div id="player"></div>
 
-### Add KM Tracking
-Once that's done, you can add this block below the embed code. **Remember to change the `videoName` variable**:
+<script type="text/javascript">
+// This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// This function creates an <iframe> (and YouTube player)
+// after the API code downloads.
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '390',
+    width: '640',
+    videoId: 'M7lc1UVf-VE',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+function onPlayerReady(event) {
+  // Add hooks for what you want to happen when the player has loaded
+}
+</script>
+{% endhighlight %}
+
+## Add KM Tracking
+Once that's done, you can add this block below the embed code.
 
 {% highlight html %}
 <script type="text/javascript">
-// Get a reference to the player and listen for state changes
-function onYouTubePlayerReady(playerId) {
-  ytplayer = document.getElementById("myytplayer");
-  ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
-}
-
-// TODO: The only piece of the code to modify is the video name.
-var videoName = "Sample Video";
-
-function onytplayerStateChange(newState) {
-  switch(newState) {
-    case 1: // YT.PlayerState.PLAYING
-      _kmq.push(['record', 'Played Video - ' + videoName]);
+function onytplayerStateChange(event) {
+  switch(event.data) {
+    case YT.PlayerState.PLAYING:
+      _kmq.push(['record', 'Played Video - ' + player.getVideoData().title]);
       break;
-    case 2: // YT.PlayerState.PAUSED
-      _kmq.push(['record', 'Paused Video - ' + videoName]);
+    case YT.PlayerState.PAUSED:
+      _kmq.push(['record', 'Paused Video - ' + player.getVideoData().title]);
       break;
-    case 0: // YT.PlayerState.ENDED
-      _kmq.push(['record', 'Finished Video - ' + videoName]);
+    case YT.PlayerState.ENDED:
+      _kmq.push(['record', 'Finished Video - ' + player.getVideoData().title]);
       break;
     default:
       return;
@@ -140,4 +161,4 @@ function onytplayerStateChange(newState) {
 
 [wistia-embed]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/tracking-video/wistia-embed.png
 [wistia-embed-shepherd]: http://wistia.com/doc/embed-shepherd
-[youtube-embed]: https://developers.google.com/youtube/js_api_reference#Embedding
+[youtube-embed]: https://developers.google.com/youtube/iframe_api_reference#Loading_a_Video_Player
