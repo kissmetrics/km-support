@@ -137,7 +137,8 @@ Once that's done, you can add this block below the embed code.
 
 {% highlight html %}
 <script type="text/javascript">
-function onytplayerStateChange(event) {
+var _kmq = _kmq || [];
+function onPlayerStateChange(event) {
   switch(event.data) {
     case YT.PlayerState.PLAYING:
       _kmq.push(['record', 'Played Video - ' + player.getVideoData().title]);
