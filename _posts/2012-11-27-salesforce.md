@@ -11,7 +11,7 @@ summary: See KISSmetrics data within your Salesforce account.
 **This integration requires:**
 
 * A Salesforce account. The integration requires the ability to [create a Visualforce page][visualforce-page], which should be available in every edition.
-* An existing KISSmetrics account
+* An existing KISSmetrics account in which people are identified by email address. Read more about [Understanding Identities][identities].
 * KISSmetrics API KEY and SECRET from your KISSmetrics account. Please email [support@kissmetrics.com][request] for your unique KISSmetrics account API KEY and SECRET for Salesforce.
 
 The Salesforce-KISSmetrics integration shows you customer activity pulled straight from KISSmetrics into your Salesforce Contacts. See *what* a customer has done, *when* they did it, *where* they came from, and *how* they are experiencing your business. You’ll have a 360 degree view of how to approach leads and opportunities.
@@ -62,3 +62,4 @@ You can create an additional Salesforce Page to link to Leads in addition to Con
 [request]: mailto:support@kissmetrics.com?subject=%5BSalesforce%5D%20Requesting%20Access
 
 [ssoverview]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/salesforce/overview.png
+[identities]: http://support.kissmetrics.com/getting-started/understanding-identities
