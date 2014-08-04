@@ -74,14 +74,16 @@ By default, the Revenue Report will use a churn time period with 30 days as the 
 
 If your business defines churn as a period of time (common for E-Commerce businesses), then you'll be able to choose from common definitions of churn as well as defining your own custom time period to fit your use case.
 
-![Revenue custom event churn][revenue-customtimechurn]
+Note: There is a limit of 750 days for a custom churn period, which is over 2 years. Of the businesses we interviewed, none defined churned longer than that duration. If you have concerns about defining churn as more than 2 years of no payment received, please write to feedback@kissmetrics.com with your use cases.
+
+![Revenue custom time churn][revenue-customtimechurn]
 
 
 ## Choosing a custom churn event
 
 If your business defines churn as an event such as cancelation (common for SaaS businesses), then you'll be able to choose any event that you've tracked with KISSmetrics to use as the churn event.
 
-![Revenue custom time churn][revenue-customeventchurn]
+![Revenue custom event churn][revenue-customeventchurn]
 
 
 # Total Customers
