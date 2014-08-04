@@ -13,9 +13,9 @@ Some of our report data can be exported to CSV files. We email you a link to dow
 KISSmetrics Report | Supports Exporting to CSV?
 --------------------------- | -----------
 [Metrics - Dashboard][dashboard] | No
-[Metric Detail - Comparison Over Time][over-time] | No
-[Metric Detail - Histogram][histogram] | No
-[Metric Detail - Breakdown by Property][metric-segment] | No (can be copy/pasted)
+[Metric Detail - Comparison Over Time][over-time] | Yes
+[Metric Detail - Histogram][histogram] | Yes
+[Metric Detail - Breakdown by Property][metric-segment] | Yes
 [Revenue Report - Revenue Overview][rev-intro] | No
 [Revenue Report - Paying Customers][rev-cust] | No
 [Revenue Report - By Segment][rev-seg] | No (can be copy/pasted)
