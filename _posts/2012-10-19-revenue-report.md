@@ -17,7 +17,7 @@ Average {Daily/Weekly/Monthly} Revenue | Total of the Revenue Property / Number 
 [Lifetime Value][ltv] | A **prediction** of how much revenue a customer will be worth. Calculated as `Average Revenue per Customer / Total Churn Rate`
 Avg Customers / {Day/Week/Month} | The average number of **paying** customers per Day/Week/Month
 Avg {Daily/Weekly/Monthly} Churn | The average rate that **paying** customers churn per Day/Week/Month
-[Churn][churn] | The number of customers who stop paying. How this is counted depends on whether you are using a `Canceled` event (see your [site mappings][mapping]).
+[Churn][churn] | The number of customers who stop paying. How this is counted depends on whether you are using your report configurations.
 
 <div id="wistia_3f023d87a8" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
 </div>
@@ -58,9 +58,30 @@ KM.record('Refunded', {'Billing Amount' => -29.99 })
 Remember, there are [many ways to send us event data][send]. You might find it most accurate to [import data][import] from another data source that's already keeping track of each transaction.
 
 
-### Revenue Mapping
+# Creating your Revenue Report(s)
 
-Once you have `Billing Amount` data recorded with KISSmetrics, we do our best to find and use the property name where the data is located. If the information in the report looks really strange, [please check your site's property mappings][mapping] to ensure that your `Revenue` property is actually using the correct property under which you provided revenue data.
+The revenue report lets you choose how you want to calculate your revenue for your specific business model. You can create as many Revenue Reports as you'd like to measure different sources of revenue and/or different payment periods.
+
+![Revenue configuration][revenue-newconfig]
+
+* **Calculate revenue from**:  the property which you want to calculate revenue from for this report.
+* **Show revenue in X buckets**:  how you want to display your revenue graph in terms of days/weeks/months (graph is limited to 60 data points)
+* **Calculate churn by**:  choose how your business defines churn by a time period (no purchase activity), an event that happens (such as cancelation), or both.
+
+By default, the Revenue Report will use a churn time period with 30 days as the definition of churn. Customize this to your needs when building your own Revenue Report.
+
+## Choosing a custom churn time period
+
+If your business defines churn as a period of time (common for E-Commerce businesses), then you'll be able to choose from common definitions of churn as well as defining your own custom time period to fit your use case.
+
+![Revenue custom event churn][revenue-customtimechurn]
+
+
+## Choosing a custom churn event
+
+If your business defines churn as an event such as cancelation (common for SaaS businesses), then you'll be able to choose any event that you've tracked with KISSmetrics to use as the churn event.
+
+![Revenue custom time churn][revenue-customeventchurn]
 
 
 # Total Customers
@@ -109,6 +130,10 @@ As mentioned above, you can segment your revenue and customers using your existi
 ![Revenue segments][revenue-segments]
 
 *Note: remember that we track a person's lifecycle on your site, which includes every referral source they took to reach your site. Choosing `First ever` or `Last ever` lets you attribute a person to either the first property they received (usually for `Referrer` or `Campaign Name`), or to the most recent property.*
+
+[revenue-newconfig]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/revenue-report/setup.png
+[revenue-customtimechurn]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/revenue-report/custom-time-churn.png
+[revenue-customeventchurn]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/revenue-report/event-churn.png
 
 [revenue-graph]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/revenue-report/revenue-graphs.png
 [revenue-segments]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/revenue-report/revenue-segments.png
