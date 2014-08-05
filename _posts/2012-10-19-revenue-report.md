@@ -94,17 +94,6 @@ The revenue report can also look into your data to see how many paying customers
 * **Paying Customers Gained**: - the number of people whose first recorded Revenue happened in the time frame you're looking at.
 * **Paying Customers Lost**: - the number of people who have churned, which is explained in the next section.
 
-
-## Churn - What about customers who stop paying?
-
-In addition to revenue, we can show you the number of customers gained and lost over the date range you're reporting on. **Churn** describes customers who are no longer active and are no longer contributing revenue. *Each business type tends to calculate churn differently. By default, KISSmetrics uses a SaaS 30-day subscription model to determine churn.*
-
-* If you are not sending in an event for Cancelations (`Canceled`), then we use our calculation to determine Churn. If a customer has not paid you in *30 days*, we consider them `churned` on the last day that they paid.
-* If you do send us a `Canceled` event, we consider a customer `churned` on the day of their cancelation. (Like Revenue, if Cancelations look strange, [please check your site's event mappings][mapping] to ensure that the `Canceled` event is using the event that corresponds with cancelations.)
-
-We realize that these two options may not sufficiently define churn for every business. For example, you may be an e-commerce business that doesn't track explicit cancelations, but gives customers longer than 30 days until you consider them churned. If so, we're interested in hearing how *you* define churn, and how you would use a Revenue Report most effectively. Please send in your feedback using the feedback box at the bottom of the Revenue Report!
-
-
 ## Lifetime Value
 
 **Lifetime Value** (LTV) is a *prediction* of how much a single customer will provide you in their time as a paying customer. There are many mathematical models for calculating LTV. Our report uses this one:
