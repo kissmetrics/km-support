@@ -15,7 +15,7 @@ The Javascript API provides a function, `KM.ab`, to set up the majority of the A
 2. Ensures that subsequent calls to `KM.ab` returns the same variation for the visitor.
 3. Sets a KISSmetrics property with the name of your experiment, and the value is the selected variant. In our example below, the A/B test will set the property "**Signup Button Color**" to either "**red**" or "**green**". You will be able to segment any report using this property.
 
-## Full Example
+# Full Example
 
 Below shows an example of a complete A/B test, using `KM.ab`:
 
@@ -79,5 +79,33 @@ _kmq.push(['set', {'Signup Button Color':'green'}]); // option 2
 
 * Wrap the call to `KM.ab()` in a function that is pushed to `_kmq`, or you may encounter JS errors if our library has not completely loaded before this executes.
 * Our JavaScript library depends on cookies to work properly. Browsers do not preseve cookies from page to page in `localhost`, so please refer to our guide on [developing locally][local].
+
+# Weighted Variants
+
+When you use `KM.ab()` to set up a test, we'll split the variations evenly by default. However, you can give the function an extra argument to indicate the distribution of the test. These are all valid options:
+
+{% highlight js %}
+_kmq.push(function(){
+  // Even weights, 50% red, 50% green (default)
+  KM.ab("Button Color", ["red", "green"])
+
+  // 70% red vs. 30% green
+  KM.ab("Button Color", {"red":70, "green":30});
+
+  // 70% red vs. 30% green, using decimals
+  KM.ab("Button Color", {"red":0.7, "green":0.3});
+
+  // 5:1 red vs. green
+  KM.ab("Button Color", {"red":5, "green":1});
+
+
+  // KM.ab works with more than just two alternatives
+  // 33% red, 33% green, 33% blue
+  KM.ab("Button Color", ["red", "green", "blue"])
+
+  // 5:1:1 red vs. green vs. blue
+  KM.ab("Button Color", {"red":5, "green":1, "blue":1})
+})
+{% endhighlight %}
 
 [local]: /advanced/local-development

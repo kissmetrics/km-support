@@ -12,7 +12,7 @@ All the data in KISSmetrics is in the form **people**, **events** and **properti
 
 ![Simple API][simple-api]
 
-## People
+# People
 
 The core unit in KISSmetrics is a person, and we really do mean a ***person*** -- a human being, not a unique visit or a session. You may often be looking at aggregate reports of user behavior, but at the end of the day, it's possible to see data for each individual person.
 
@@ -28,7 +28,7 @@ People are represented by "**identities**", usually more than one. There are two
 
 When KISSmetrics is appropriately implemented, you can follow a person's lifecycle with your product from when they were just any other visitor to when they finally sign up and repeatedly log in.
 
-## Events
+# Events
 
 People interact with your site or application. Think of **events** as the *actions* your users do. For example:
 
@@ -46,7 +46,7 @@ These *actions* aren't limited to just visiting a particular URL. The event migh
 
 Our [Best Practices][best-practices] are a great start to introduce you to important events to record. We have guides for SaaS and e-commerce businesses.
 
-## Properties
+# Properties
 
 ***Properties*** indicate additional information about each person. Primarily, properties let you segment similar people into groups (using the "**values**" of a property) based on one criteria (this is the "**property**" itself). Here are some example properties, with their corresponding values:
 
@@ -80,25 +80,6 @@ Again, our [Best Practices][best-practices] are a great start to introduce you t
 ## Naming Properties
 
 Generally, you can name your properties whatever you like, as long as it is meaningful to you. The only restriction is that we'll not accept properties that are an underscore and another letter, like `_a`, `_A`, `_t`, `_d`, etc. These are reserved for our API for special purposes.
-
-# Putting It All Together
-
-Let's put it all together. Pretend you're collecting analytics for a marathon. You might structure the data like this:
-
-Show me the people who…
-
-1. Signed Up for the Race (event)
-2. Started the Race (event)
-3. Finished the Race (event)
-
-Then you can segment the people who did these events by different properties:
-
-* What brand of shoe the runner wore
-* Gender
-* A runner's sponsors
-* How many miles the runner ran for each training session (you'd be able to look at total, average, minimum, and maximum)
-* How many hours of sleep the runner got the night before (also a numeric property)
-* Bib number, or name, or email address (aka `Customer ID`, representative of the person)
 
 [simple-api]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/simple-api.png
 

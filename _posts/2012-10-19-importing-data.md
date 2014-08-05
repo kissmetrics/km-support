@@ -43,7 +43,6 @@ For example, if you have the table below:
     +----+--------------------------+---------------------+
     |  1 | your@user.com            | 2009-10-01 00:00:00 |
     |  2 | test@kissmetrics.com     | 2009-10-01 01:00:00 |
-    |  3 | petenixey@gmail.com      | 2009-10-01 18:54:14 |
     +----+--------------------------+---------------------+
 
 You could script the import to do the following:
@@ -90,7 +89,6 @@ Your users table may have information about cancelations, and this should be rec
     +----+--------------------------+---------------------+
     |  1 | your@user.com            | 2009-10-01 00:00:00 |
     |  2 | test@kissmetrics.com     | 2009-10-01 00:00:00 |
-    |  3 | petenixey@gmail.com      | 2009-10-01 18:54:14 |
     +----+--------------------------+---------------------+
 
 {% highlight ruby %}

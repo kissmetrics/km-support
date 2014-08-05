@@ -40,10 +40,7 @@ Here's a visual representation of 3 people within our data model:
     └── [KM Property]: "Customer ID"
         └── [Named ID]: 'User #12345'
 
-When your team is logged in to our website, this is an example of using **Customer ID**. This particular example shows how often these 4 customers submitted a support request:
-
-![Segmentation Example][segmentation-example]
-
+When your team is logged in to our website, this is an example of using **Customer ID**.
 
 ## 2. Use the Named ID You Have Access To
 
@@ -237,5 +234,3 @@ KISSmetrics lets you incorporate data from several data sources from integration
 
 [js-ids-info]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/understanding-identities/js-ids.pdf
 [alias-regular]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/troubleshooting-identities/alias-regular.png
-
-[segmentation-example]: http://f.cl.ly/items/0r3i2Q2D2F0U1f1i0l2J/segmentation.png
