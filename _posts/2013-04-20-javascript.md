@@ -584,6 +584,23 @@ If you want to track the subdomains separately in two different accounts, you ca
 </script>
 {% endhighlight %}
 
+## Testing Locally
+
+The JavaScript Library depends on using cookies to keep your identity consistent from page to page. If you test with `localhost`, you'll need a domain on which to set cookies, which you can set up in one of two ways:
+
+* Set up a local development domain. For example, edit `/etc/hosts` to include a line like `127.0.0.1  myproject.dev`.
+* Use an existing address like `http://myproject.localhacks.com/`, which has a wildcard A record pointing to `127.0.0.1`.
+
+Alternatively, you can replace the last two lines of our JavaScript snippet with the following, to prevent our script from loading locally altogether. However, this prevents any events from occurring, even if you are testing your API calls:
+
+{% highlight js %}
+// Don't load KM locally
+if (!window.location.host.match(/localhost/)) {
+  _kms('//i.kissmetrics.com/i.js');
+  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+}
+{% endhighlight %}
+
 {% include summaries/javascript_summary.html %}
 
 [common]: /apis/common-methods
