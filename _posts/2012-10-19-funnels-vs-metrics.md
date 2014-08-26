@@ -35,4 +35,4 @@ This would be a conversion between two events, `Visited Site` and `Signed Up`.
 
 divided by
 
-(The people who Visited Site in the time period, EXCLUDING people who have already "converted" before the metric's range)
+(The people who Visited Site in the time period, EXCLUDING people whose first ever Signed Up event occurred prior to the first Visited Site inside the date range.)

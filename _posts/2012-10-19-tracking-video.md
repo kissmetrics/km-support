@@ -36,8 +36,8 @@ Now below this, let's interact with their [JS][vimeo-js] to set up the events:
 
 {% highlight html %}
 <script type="text/javascript">
-var iframe = $('#player1')[0],
-    player = $f(iframe),
+var iframe = $('#player1')[0];
+    player = $f(iframe);
 
 // TODO: The only piece of the code to modify is the video name.
 var videoName = "Sample Video";
