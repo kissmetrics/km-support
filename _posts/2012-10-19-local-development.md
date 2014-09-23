@@ -9,9 +9,39 @@ permalink: /advanced/local-development
 * Table of Contents
 {:toc}
 * * *
+<script type="text/javascript">  _kmq.push(['record', 'Your Event Name']);</script>
+<script type="text/javascript">var _kmq = _kmq || [];
+var _kmk = _kmk || '178892fbaa0106b32c5fb51ffe0d17724d694d22';
+function _kms(u){
+  setTimeout(function(){
+    var d = document, f = d.getElementsByTagName('script')[0],
+    s = d.createElement('script');
+    s.type = 'text/javascript'; s.async = true; s.src = u;
+    f.parentNode.insertBefore(s, f);
+  }, 1);
+}
+_kms('//i.kissmetrics.com/i.js');
+_kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+</script>
+<!-- KISSmetrics tracking snippet -->
+<script type="text/javascript">var _kmq = _kmq || [];
+var _kmk = _kmk || '178892fbaa0106b32c5fb51ffe0d17724d694d22';
+function _kms(u){
+  setTimeout(function(){
+    var d = document, f = d.getElementsByTagName('script')[0],
+    s = d.createElement('script');
+    s.type = 'text/javascript'; s.async = true; s.src = u;
+    f.parentNode.insertBefore(s, f);
+  }, 1);
+}
+_kms('//i.kissmetrics.com/i.js');
+_kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+</script>
+http://trk.kissmetrics.com/e?_k=api-key&_p=bob&_n=Signed+Up&gender=male&_t=1262304000&_d=1
 
+_posts/2012-10-19-local-development.md
 When you set cookies for `localhost`, the Chrome web browser does not keep them as you navigate around. So, the parts of our JavaScript library that use cookies will behave differently than what you would normally see in production on a live site. Namely:
-
+<script type="text/javascript">  _kmq.push(['record', 'Your Event Name', {'Your Property Name':'Value'}]);</script>
 * Your KM identity changes around when browsing from page to page.
 * The `Visited Site` event is triggered on each page load.
 * If you use `KM.ab` to start an a/b test, it appears we "forget" which variation is seen.
