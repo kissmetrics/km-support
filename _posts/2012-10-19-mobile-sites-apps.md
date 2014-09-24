@@ -13,7 +13,7 @@ KISSmetrics can track your mobile website using our typical [JavaScript Library]
 ## 1. Implement events using the library in the app's native language
 
 * iOS/Objective-C: an [official library is available][ios-official].
-* Android: an [official library is available][android]. We do not test or provide support for it. Please use at your own discretion.
+* Android: an [official library is available][android].
 
 ## 2. PhoneGap and JavaScript Library
 
