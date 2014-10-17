@@ -76,9 +76,11 @@ The Path Report will show you up to 50 paths that people have done given your re
   * The conversion rate across all paths
   * How long it took people to convert from starting event to conversion event (using a weighted average)
 
+### Sorting the Path Report
+
 ![Path Sorting][path-sort]
 
-Clicking a tab in this summary area lets you sort the Path Report. Use these tabs to sort your results based on what fits your marketing strategy. Some businesses care about number of conversions more than conversion rates. Some businesses optimize for shorter conversion times if they are meeting goals or quotas.
+Clicking a tab in the summary area lets you sort the Path Report by people, number of conversions, conversion rate, or time to convert. Use these tabs to sort your results based on what fits your marketing strategy. Some businesses care about number of conversions more than conversion rates. Some businesses optimize for shorter conversion times if they are meeting goals or quotas.
 
 ### Individual Path Performance
 
@@ -86,7 +88,11 @@ Clicking a tab in this summary area lets you sort the Path Report. Use these tab
 
 Each path will contain a series of numbers followed by an event name or property value. These numbers tell you the order or sequence that the event or property value happened.
 
+### Repeat/Consecutive Events
+
 If an event/property value happens consecutive times before another unique event, we will show this by adding a 2X, 3X, 4X to the event to show you many times the event happened consecutively.
+
+![Path Repeat][path-repeat]
 
 If two or more events/property values happen at the same exact time, the Path Report will show the event that occurs more frequently (thus showing the most common paths that people take towards conversion).
 
@@ -119,3 +125,4 @@ If you are doing a last 5 event/property report, a person can captured for more 
 [path-individual]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportIndividualPath.png
 [path-length]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportPlusMore.png
 [path-sort]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportSortTabs.png
+[path-repeat]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportRepeat.png
