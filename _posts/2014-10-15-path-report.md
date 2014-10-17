@@ -22,12 +22,18 @@ This report is best used for:
 
 ## Report Configuration
 
+![Path Config Default][path-config1]
+
 The Path Report lets you analyze:
 
   * The first 5 events that occur in order that lead to a conversion event
   * The last 5 events that occur in order that lead to a conversion event
   * The first 5 values of a property in order that lead to a conversion event
   * The last 5 values of a property in order that lead to a conversion event
+
+![Path Config First or Last][path-config2]
+![Path Config Event or Property][path-config3]
+![Path Config Property Value][path-config4]
 
 
 The Path Report lets you define:
@@ -60,6 +66,8 @@ Sample configurations for analyzing e-commerce purchase behaviors could be:
 
 ### Path Summary
 
+![Path Summary][path-summary]
+
 The Path Report will show you up to 50 paths that people have done given your report configuration. A summary area will show you high-level information about:
 
 
@@ -68,10 +76,13 @@ The Path Report will show you up to 50 paths that people have done given your re
   * The conversion rate across all paths
   * How long it took people to convert from starting event to conversion event (using a weighted average)
 
+![Path Sorting][path-sort]
 
 Clicking a tab in this summary area lets you sort the Path Report. Use these tabs to sort your results based on what fits your marketing strategy. Some businesses care about number of conversions more than conversion rates. Some businesses optimize for shorter conversion times if they are meeting goals or quotas.
 
 ### Individual Path Performance
+
+![Path Individual Performance][path-individual]
 
 Each path will contain a series of numbers followed by an event name or property value. These numbers tell you the order or sequence that the event or property value happened.
 
@@ -80,6 +91,8 @@ If an event/property value happens consecutive times before another unique event
 If two or more events/property values happen at the same exact time, the Path Report will show the event that occurs more frequently (thus showing the most common paths that people take towards conversion).
 
 ### Path Length
+
+![Path Length][path-length]
 
 If a path is more than 5 events/properties long, the Path Report will show a  "+ X more events”  item which will represent the median number of events/properties happening after the first 5 events/properties or preceding the last 5 events/properties. This gives you an idea of how many actions people take before they convert. This median number is rounded down to the nearest whole number in the event that a median has a 0.5 value. Note: In an export of the Path Report, you will still see 0.5 values in the raw data.
 
@@ -98,3 +111,11 @@ When multiple conversions (such as Purchases) happen within the date range you s
 
 If you are doing a last 5 event/property report, a person can captured for more than one path because it is likely that people can have common ways of converting (i.e. people all have to go through the same checkout flow in E-Commerce or the same way to enter in your payment information for SaaS). In the first 5 event/property, people can be part of likely one path because people usually do a unique sequence of events when they first arrive on your site or app. Because of the differences of people’s behaviors, you’ll see different numbers for each configuration.
 
+[path-summary][https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportSummary.png]
+[path-config1][https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportConfiguration1.png]
+[path-config2][https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportConfiguration2.png]
+[path-config3][https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportConfiguration3.png]
+[path-config4][https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportConfiguration4.png]
+[path-individual][https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportIndividualPath.png]
+[path-length][https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportPlusMore.png]
+[path-sort][https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportSortTabs.png]
