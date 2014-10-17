@@ -3,9 +3,7 @@ layout: post
 categories: tools
 title: "Path Report"
 tags: []
-summary: The Path Report can analyze and optimize any part of the customer journey you want. Simply pick the conversion point you care about and we'll tell you which paths lead up to it. 
- 
-permalink: /tools/channel-definition
+summary: The Path Report can analyze and optimize any part of the customer journey you want. Simply pick the conversion point you care about and we'll tell you which paths lead up to it.
 ---
 * Table of Contents
 {:toc}
@@ -47,7 +45,7 @@ Sample configurations for analyzing lead generation and marketing channel effect
 
 Sample configurations for analyzing opportunities to closing customers could be:
 
-  * Show me the first 5 events starting with Signed Up that lead to Subscription Billed. 
+  * Show me the first 5 events starting with Signed Up that lead to Subscription Billed.
   * Show me the last 5 events starting with Signed Up that lead to Subscription Billed.
 
 
