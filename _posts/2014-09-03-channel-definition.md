@@ -4,7 +4,6 @@ categories: tools
 title: "Channel Definitions"
 tags: []
 summary: Channels is a KISSmetrics property that combines acquisition data from many sources.
-permalink: /tools/channel-definition
 ---
 * Table of Contents
 {:toc}

@@ -186,7 +186,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/apis/javascript/hosting-js-yourself.html</loc>
-        <lastmod>2014-10-13T11:23:17-07:00</lastmod>
+        <lastmod>2014-10-17T10:59:58-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/overview/how-is-kissmetrics-different.html</loc>
@@ -246,7 +246,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/how-tos/mobile-sites-apps.html</loc>
-        <lastmod>2014-10-02T10:34:37-07:00</lastmod>
+        <lastmod>2014-10-17T10:59:58-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/advanced/multiple-people-same-browser</loc>
@@ -262,7 +262,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/integrations/payplans.html</loc>
-        <lastmod>2014-10-02T10:34:37-07:00</lastmod>
+        <lastmod>2014-10-17T10:59:58-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tools/person-details.html</loc>
@@ -756,7 +756,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/integrations/shopify.html</loc>
-        <lastmod>2014-10-02T10:34:37-07:00</lastmod>
+        <lastmod>2014-10-17T10:59:58-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tools/event-library/events-url-regex.html</loc>
@@ -764,11 +764,15 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/apis/core-api.html</loc>
-        <lastmod>2014-10-13T11:50:52-07:00</lastmod>
+        <lastmod>2014-10-17T10:59:58-07:00</lastmod>
     </url>
     <url>
-        <loc>http://support.kissmetrics.com/tools/channel-definition</loc>
-        <lastmod>2014-10-02T10:34:37-07:00</lastmod>
+        <loc>http://support.kissmetrics.com/tools/channel-definition.html</loc>
+        <lastmod>2014-10-17T10:59:58-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://support.kissmetrics.com/tools/path-report.html</loc>
+        <lastmod>2014-10-17T10:59:58-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/404.html</loc>
@@ -800,7 +804,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/</loc>
-        <lastmod>2014-10-13T11:50:52-07:00</lastmod>
+        <lastmod>2014-10-17T10:59:58-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/integrations/</loc>
