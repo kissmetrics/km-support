@@ -111,11 +111,11 @@ When multiple conversions (such as Purchases) happen within the date range you s
 
 If you are doing a last 5 event/property report, a person can captured for more than one path because it is likely that people can have common ways of converting (i.e. people all have to go through the same checkout flow in E-Commerce or the same way to enter in your payment information for SaaS). In the first 5 event/property, people can be part of likely one path because people usually do a unique sequence of events when they first arrive on your site or app. Because of the differences of people’s behaviors, you’ll see different numbers for each configuration.
 
-[path-summary][https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportSummary.png]
-[path-config1][https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportConfiguration1.png]
-[path-config2][https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportConfiguration2.png]
-[path-config3][https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportConfiguration3.png]
-[path-config4][https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportConfiguration4.png]
-[path-individual][https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportIndividualPath.png]
-[path-length][https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportPlusMore.png]
-[path-sort][https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportSortTabs.png]
+[path-summary]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportSummary.png
+[path-config1]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportConfiguration1.png
+[path-config2]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportConfiguration2.png
+[path-config3]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportConfiguration3.png
+[path-config4]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportConfiguration4.png
+[path-individual]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportIndividualPath.png
+[path-length]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportPlusMore.png
+[path-sort]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/path-report/PathReportSortTabs.png
