@@ -17,7 +17,7 @@ Average {Daily/Weekly/Monthly} Revenue | Total of the Revenue Property / Number 
 [Lifetime Value][ltv] | A **prediction** of how much revenue a customer will be worth. Calculated as `Average Revenue per Customer / Total Churn Rate`
 Avg Customers / {Day/Week/Month} | The average number of **paying** customers per Day/Week/Month
 Avg {Daily/Weekly/Monthly} Churn | The average rate that **paying** customers churn per Day/Week/Month
-[Churn][churn] | The number of customers who stop paying. How this is counted depends on whether you are using your report configurations.
+Churn | The number of customers who stop paying. You can configure this to count people based on whether they've done a cancelation event or have not paid in X days.
 
 <div id="wistia_3f023d87a8" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
 </div>
@@ -129,10 +129,9 @@ As mentioned above, you can segment your revenue and customers using your existi
 [revenue-graph]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/revenue-report/revenue-graphs.png
 [revenue-segments]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/revenue-report/revenue-segments.png
 
-[send]: /getting-started/ways-to-send-us-data
+[send]: http://support.kissmetrics.com/getting-started/ways-to-send-us-data
 [mapping]: https://app.kissmetrics.com/mapping
-[recurly]: /integrations/recurly
-[import]: /advanced/importing-data
+[recurly]: http://support.kissmetrics.com/integrations/recurly
+[import]: http://support.kissmetrics.com/advanced/importing-data
 
-[churn]: #churn__what_about_customers_who_stop_paying
 [ltv]: #lifetime_value
