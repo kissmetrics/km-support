@@ -46,6 +46,8 @@ After you pick an event, you can pick a frequency. The available choices are:
 * at most
 * exactly
 
+![People Search Property Conditions][ss17]
+
 After you pick a property, you can pick logic on how to limit the condition what property you are looking for. The available choices are:
 
 * contains (property value must contain what is submitted i.e. SPRING would work for SPRING2014 and SPRINGCOUPON)
@@ -164,3 +166,4 @@ Just be sure to replace "UNIX_TIMESTAMP" with the appropriate column/row value y
 [ss14]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/people-search/peoplesearch14.png
 [ss15]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/people-search/peoplesearch15.png
 [ss16]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/people-search/peoplesearch16.png
+[ss17]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/people-search/people_search_conditions.png
