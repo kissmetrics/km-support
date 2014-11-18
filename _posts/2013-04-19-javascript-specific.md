@@ -272,7 +272,7 @@ The Value for the Property will be whatever the customer enters into the form.
 
 If an anonymous person submits a tracked form, we also check for any fields that could be used as an identity, such as a username or email address. This is especially useful on forms where people subscribe to newsletters.
 
-We will only use an `<input>` as an identity if its Name attribute is one of the following:
+We will only use an `<input>` as an identity if its Name attribute contains one of the following:
 
 * `userid`
 * `login`
