@@ -70,6 +70,9 @@ The revenue report lets you choose how you want to calculate your revenue for yo
 
 By default, the Revenue Report will use a churn time period with 30 days as the definition of churn. Customize this to your needs when building your own Revenue Report.
 
+Only positive revenue properties are used for calculating churn rates i.e. with a default 30-day churn calculation a customer who had a revenue property amount of $10 in April 1st and no revenue property in May 1st would be considered churned.
+The same customer who had a negative amount (-$25) in May 1st or an amount of $0 in May 1st would also be condiered churned.
+
 ## Choosing a custom churn time period
 
 If your business defines churn as a period of time (common for E-Commerce businesses), then you'll be able to choose from common definitions of churn as well as defining your own custom time period to fit your use case.
