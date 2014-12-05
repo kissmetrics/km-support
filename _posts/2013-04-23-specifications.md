@@ -28,7 +28,7 @@ Parameters | Format             | Necessary? | Description
 `_k`       | string             | Yes        | Your API key
 `_p`       | 255 char string    | Yes        | Person doing the event
 `_n`       | URL-encoded string | Yes        | Name of the event
-`_t`       | integer            | *optional* | Timestamp in ***seconds*** after UTC Unix epoch
+`_t`       | integer            | *optional* | Timestamp in ***seconds*** after UTC Unix epoch. Note: You will also need to include the `_d` option listed below for the timestamp to be applied.
 `_d`       | 0 or 1             | *optional* | Set to 1 if you're manually passing us the timestamp. It's used when logging events that occurred in the past.
 (Anything) | URL-encoded string | *optional* | Set an arbitrary value to an arbitrary user property
 
