@@ -35,7 +35,7 @@ The Salesforce integration brings in a window to see the KISSmetrics Person Deta
 <apex:page standardController="Contact">
   <apex:iframe
     rendered="{!IF((contact.email != ''), true, false)}"
-    src="https://app.kissmetrics.com/people/salesforce/find/{!contact.email}?mode=embedded&key=__API_KEY__&secret=__SECRET__"
+    src="https://app.kissmetrics.com/salesforce/people/find/{!contact.email}?mode=embedded&key=__API_KEY__&secret=__SECRET__"
     width="100%"
     scrolling="true"
   />
