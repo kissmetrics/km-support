@@ -54,10 +54,13 @@ var videoName = "Sample Video";
 player.addEvent('ready', function() {
   player.addEvent('play', function(){
     _kmq.push(['record', 'Played Video', {'Played Video Name':videoName}]);
+  });
   player.addEvent('pause', function(){
     _kmq.push(['record', 'Paused Video', {'Paused Video Name':videoName}]);
+  });
   player.addEvent('finish', function(){
     _kmq.push(['record', 'Finished Video', {'Finished Video Name':videoName}]);
+  });
 });
 </script>
 {% endhighlight %}
