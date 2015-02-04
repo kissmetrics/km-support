@@ -37,7 +37,7 @@ Before categorizing on any other criteria, the first thing KISSmetrics looks for
 
 Any other values will be under their own channel.
 
-When you drill down into Channel:Origin for these visitors, people will be also categorized under the Campaign Name UTM that was also defined at the same time. For example, a utm_medium of "email" with utm_name of "spring_promo" would read as a "Channel:Origin" property of "Email: Spring Promo.""
+When you drill down into Channel:Origin for these visitors, people will be also categorized under the Campaign Name UTM that was also defined at the same time. For example, a utm_medium of "email" with utm_campaign of "spring_promo" would read as a "Channel:Origin" property of "Email: Spring Promo.""
 
 If the Campaign Name UTM is missing (usually shouldn't be as it's required along with Campaign Source and Campaign Medium), they will be labeled be as “Campaign Name Unknown”.
 
