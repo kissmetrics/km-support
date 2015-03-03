@@ -58,7 +58,4 @@ The Funnel Report will look like this. Of course, from our Event Library, you co
 6. Reached Checkout Step payment
 7. Reached Checkout Step review
 
-Reference: [Google Analytics Goal Funnel For Magento One Page Checkout][checkout]
-
 [m-go]: http://www.magentocommerce.com/knowledge-base/entry/how-to-add-custom-javascript
-[checkout]: http://blueclawecommerce.co.uk/google-analytics-goal-funnel-for-magento-one-page-checkout
