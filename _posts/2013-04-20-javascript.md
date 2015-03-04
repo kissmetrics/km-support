@@ -24,19 +24,14 @@ Log into your KISSmetrics account and locate your personalized code snippet in y
 The JavaScript library looks like this:
 
 {% highlight html %}
-<script type="text/javascript">
-  var _kmq = _kmq || [];
-  var _kmk = _kmk || 'foo';
-  function _kms(u){
-    setTimeout(function(){
-      var d = document, f = d.getElementsByTagName('script')[0],
-      s = d.createElement('script');
-      s.type = 'text/javascript'; s.async = true; s.src = u;
-      f.parentNode.insertBefore(s, f);
-    }, 1);
-  }
-  _kms('//i.kissmetrics.com/i.js');
-  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+<script>
+var _kmq = _kmq || [];
+var _kmk = _kmk || 'd602db7593cf33fd3201ba120fa04c6ed061f0c4';
+(function(d) { 
+  var f = d.getElementsByTagName('script')[0], s = d.createElement('script');
+  s.async = true; s.src = '//scripts.kissmetrics.com/' + _kmk + '.2.js';
+  f.parentNode.insertBefore(s, f);
+})(document);
 </script>
 {% endhighlight %}
 
@@ -596,8 +591,7 @@ Alternatively, you can replace the last two lines of our JavaScript snippet with
 {% highlight js %}
 // Don't load KM locally
 if (!window.location.host.match(/localhost/)) {
-  _kms('//i.kissmetrics.com/i.js');
-  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+  _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
 }
 {% endhighlight %}
 

@@ -30,7 +30,6 @@ Alternatively, you can replace the last two lines of our JavaScript snippet with
 {% highlight js %}
 // Don't load KM locally
 if (!window.location.host.match(/localhost/)) {
-  _kms('//i.kissmetrics.com/i.js');
-  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+  _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
 }
 {% endhighlight %}

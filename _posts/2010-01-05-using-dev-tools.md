@@ -30,7 +30,7 @@ You can use your web browser's developer tools to quickly poke at the HTML and J
 The elements panel shows the HTML source of a page in a neat hierarchy. This helps with two tasks:
 
 * Look up the ID or Class of an element, to [track clicks][clickvid] or [form submissions][formvid]. The previous links are tutorial videos for tracking clicks and forms in the Event Wizard.
-* On the right, you can look at a selected element's "Event Listeners", to see if our JavaScript library is hooked in and "listening" for when someone clicks (`onmousedown`) or submits (`submit`) the selected form or button. In the screenshot, the signup form is selected, and one of the `submit` event listeners includes `doug1izaerwt3.cloudfront.net….` which represents our JS library. That means our Event Wizard or an API call has found this form and is listening for the form's `submit` event to fire off a KISSmetrics event of its own.
+* On the right, you can look at a selected element's "Event Listeners", to see if our JavaScript library is hooked in and "listening" for when someone clicks (`onmousedown`) or submits (`submit`) the selected form or button. In the screenshot, the signup form is selected, and one of the `submit` event listeners includes `scripts.kissmetrics.com….` which represents our JS library. That means our Event Wizard or an API call has found this form and is listening for the form's `submit` event to fire off a KISSmetrics event of its own.
 
 [![Elements Panel][elements-ss]][elements-ss]
 
