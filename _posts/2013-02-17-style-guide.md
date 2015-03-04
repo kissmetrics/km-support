@@ -82,19 +82,14 @@ Jekyll supports using [Pygments](http://pygments.org/) to style your code blocks
 Our JavaScript code snippet looks like this:
 
 {% highlight html %}
-<script type="text/javascript">
-  var _kmq = _kmq || [];
-  var _kmk = _kmk || 'foo';
-  function _kms(u){
-    setTimeout(function(){
-      var d = document, f = d.getElementsByTagName('script')[0],
-      s = d.createElement('script');
-      s.type = 'text/javascript'; s.async = true; s.src = u;
-      f.parentNode.insertBefore(s, f);
-    }, 1);
-  }
-  _kms('//i.kissmetrics.com/i.js');
-  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+<script>
+var _kmq = _kmq || [];
+var _kmk = _kmk || 'd602db7593cf33fd3201ba120fa04c6ed061f0c4';
+(function(d) { 
+  var f = d.getElementsByTagName('script')[0], s = d.createElement('script');
+  s.async = true; s.src = '//scripts.kissmetrics.com/' + _kmk + '.2.js';
+  f.parentNode.insertBefore(s, f);
+})(document);
 </script>
 {% endhighlight %}
 

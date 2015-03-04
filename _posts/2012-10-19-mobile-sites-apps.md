@@ -20,22 +20,14 @@ KISSmetrics can track your mobile website using our typical [JavaScript Library]
 There are frameworks like [PhoneGap][phonegap] that let you write mobile apps using HTML and JavaScript. Some of our customers have found success with using our [JavaScript Library][js], with some modifications.
 
 {% highlight html %}
-<script type="text/javascript">
+<script>
 var _kmq = _kmq || [];
-var _kmk = _kmk || 'foo';
-function _kms(u){
-  setTimeout(function(){
-    var d = document, f = d.getElementsByTagName('script')[0],
-    s = d.createElement('script');
-    s.type = 'text/javascript'; s.async = true; s.src = u;
-    f.parentNode.insertBefore(s, f);
-  }, 1);
-}
-
-// These are the two different lines from our provided JavaScript snippet.
-// Include "http:" when initializing the external JS files, else it will look for a local JS file://i.kissmetrics.com/i.js
-_kms('http://i.kissmetrics.com/i.js');
-_kms('http://doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+var _kmk = _kmk || 'd602db7593cf33fd3201ba120fa04c6ed061f0c4';
+(function(d) { 
+  var f = d.getElementsByTagName('script')[0], s = d.createElement('script');
+  s.async = true; s.src = '//scripts.kissmetrics.com/' + _kmk + '.2.js';
+  f.parentNode.insertBefore(s, f);
+})(document);
 </script>
 {% endhighlight %}
 
