@@ -80,7 +80,7 @@ When you use multiple nests, you can create advanced Groups. This particular Gro
 
 # Add additional data to your People Search
 
-You can get more than just a list of people with KISSmetrics People Search. Customize your search results to see even more data by adding additional data columns (up to 3 additional columns.)
+You can get more than just a list of people with KISSmetrics People Search. Customize your search results to see even more data by adding additional data columns (up to 10 additional columns.)
 
 Example: Of all the people who `Signed Up`...
 
@@ -115,7 +115,7 @@ When you add a property column to your search results, you can choose to see:
 * The *First-touch attribution* (first-recorded value)
 * The *Last-touch attribution* (last-recorded value)
 
-You can add up to a total of three columns for your People Search.
+You can add up to a total of ten columns for your People Search.
 
 # Saving Your People Search
 
