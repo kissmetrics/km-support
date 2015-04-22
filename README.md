@@ -4,11 +4,11 @@
 
 You'll need a version of Ruby (we'll use 1.9.3 for the sake of example) and bundler.
 
-Let's start by installing GCC, Homebrew, and RVM:
+Let's start by installing Xcode, Homebrew, and RVM. Follow the instructions on each site:
 
-* Install this bundle to get gcc-4.2: [https://github.com/kennethreitz/osx-gcc-installer](https://github.com/kennethreitz/osx-gcc-installer) Previously, xCode did not provide a compatible Ruby compiler, but this may be fixed now. You should be okay with installing the latest xCode and its Command Line Tools.
-* [Homebrew](http://brew.sh/): `ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"`
-* [RVM](https://rvm.io/): `\curl -L https://get.rvm.io | bash -s stable`
+* [Xcode](https://itunes.apple.com/us/app/xcode/id497799835)
+* [Homebrew](http://brew.sh/)
+* [RVM](https://rvm.io/)
 
 Now in a terminal:
 
