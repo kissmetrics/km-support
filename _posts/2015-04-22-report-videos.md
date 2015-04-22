@@ -1,7 +1,8 @@
+---
 layout: post
-title: "Report videos"
-categories: [tutorial]
-tags: 
+title: "Report Videos"
+categories: tutorial
+tags: []
 summary: Here are a few quick videos on each report to help you get started with KISSmetrics.
 ---
 * Table of Contents
