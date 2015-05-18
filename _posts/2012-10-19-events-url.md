@@ -70,7 +70,6 @@ The Event Library can differentiate between two *query strings*, (the ends of so
 ## Technical Notes
 
 * Our Event Library URL detection has difficulty with *hash symbols* `#` in the URL. Considering placing `record` calls from our JavaScript Library on the pages you wish to track, especially if you are using *backbone.js*.
-* We do not support regular expressions. Please try using JavaScript Library calls for these types of events. If that does not work for you, please let us know if you are interested in seeing this functionality within the Event Library.
 
 ### Testing
 
