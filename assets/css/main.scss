@@ -52,17 +52,17 @@ img {
   margin: 0 auto;
   height: 60px;
   width: 960px;
+  position: relative;
   h1 {
     float: left;
-    margin-right: 10px;
-    padding: 18px 0;
     text-indent: -9999px;
+    top: 50%;
+    position: absolute;
+    transform: translate(0, -50%);
     a {
       background: url(../images/km-logo-white.svg) 0 0 no-repeat;
-      background-size: 198px 26px;
       display: block;
       float: left;
-      height: 26px;
       width: 198px;
     }
   }
