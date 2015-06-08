@@ -2,13 +2,13 @@
 layout: post
 title: Recurring JSON Import
 categories: [integrations, json-import]
-summary: Import data every hour by linking KISSmetrics with an Amazon S3 bucket containing multiple `.json` files.
+summary: Import data every hour by linking Kissmetrics with an Amazon S3 bucket containing multiple `.json` files.
 ---
 * Table of Contents
 {:toc}
 * * *
 
-This guide explains how to create an Amazon Web Services S3 bucket, name your JSON files, and point your KISSmetrics account to the appropriate bucket.
+This guide explains how to create an Amazon Web Services S3 bucket, name your JSON files, and point your Kissmetrics account to the appropriate bucket.
 
 # Creating an S3 Bucket
 
@@ -17,7 +17,7 @@ This guide explains how to create an Amazon Web Services S3 bucket, name your JS
 
 If you already have an existing Amazon Web Services account, navigate to [aws.amazon.com][aws] and sign in. If this is your first time going to AWS, you can go through a quick process of signing up for an account. It's free to get started.
 
-Not sure if you have an existing AWS account? Contact the developer who initially setup KISSmetrics for you and ask if there is an existing AWS account. If no one has ever heard of an AWS account, you can most likely go ahead and create one.
+Not sure if you have an existing AWS account? Contact the developer who initially setup Kissmetrics for you and ask if there is an existing AWS account. If no one has ever heard of an AWS account, you can most likely go ahead and create one.
 
 ## 2. Create an S3 Bucket
 
@@ -33,23 +33,23 @@ You will refer to this bucket name later.
 
 Click "Create" to continue.
 
-## 3. Give KISSmetrics permission to access the bucket.
+## 3. Give Kissmetrics permission to access the bucket.
 ![Give KM Permission to Bucket][4]
 
-Now that you've created the bucket, you need to give KISSmetrics permissions to access it.
+Now that you've created the bucket, you need to give Kissmetrics permissions to access it.
 
 Click "Properties" towards the top right of the screen to expand the Properties of your bucket. You'll notice it will list who has permissions on the bottom of the screen.
 
-The grantee ID of the KISSmetrics user is:
+The grantee ID of the Kissmetrics user is:
 
 `6acb81d7742ac437833f51ecb2a40c74cd831ce26909e5f72354fa6af42cfb1f`
 
 Please include all permissions (List, Upload/Delete, View Permissions) for this user.
 
-## 4. Give KISSmetrics permissions to edit the files
+## 4. Give Kissmetrics permissions to edit the files
 ![Give KM Permission to Files][5]
 
-You've provided KISSmetrics access to the bucket, but we also need permission to read and modify the files. Select the .json file, Click "Properties", and add permissions for the user
+You've provided Kissmetrics access to the bucket, but we also need permission to read and modify the files. Select the .json file, Click "Properties", and add permissions for the user
 
 `6acb81d7742ac437833f51ecb2a40c74cd831ce26909e5f72354fa6af42cfb1f`
 
@@ -76,7 +76,7 @@ The [JSON upload area][json-new] is located under your site's External Data Sour
 
 ### Naming Your JSON Files
 
-KISSmetrics will use a *base filename* to create a search pattern, finding and processing all files that match that pattern. We will process them in alphanumeric order.
+Kissmetrics will use a *base filename* to create a search pattern, finding and processing all files that match that pattern. We will process them in alphanumeric order.
 
 For example, if you use the base filename `accounts.json`, KISSMetrics will look for files that match `accounts*.json`. Sample naming conventions include:
 

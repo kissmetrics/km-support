@@ -2,7 +2,7 @@
 layout: post
 title: Help Scout
 categories: integrations
-summary: Import data from Help Scout into KISSmetrics.
+summary: Import data from Help Scout into Kissmetrics.
 ---
 * Table of Contents
 {:toc}
@@ -10,7 +10,7 @@ summary: Import data from Help Scout into KISSmetrics.
 
 [Help Scout][help-scout] is a help desk application for customer support.
 
-With Help Scout **AND** KISSmetrics, you can connect the dots between customer support and revenue. KISSmetrics reports will help you answer:
+With Help Scout **AND** Kissmetrics, you can connect the dots between customer support and revenue. Kissmetrics reports will help you answer:
 
 * Which marketing campaigns pull in unprofitable customers that overwhelm your support team?
 * Why did customers cancel?
@@ -19,10 +19,10 @@ With Help Scout **AND** KISSmetrics, you can connect the dots between customer s
 
 ## Setup
 
-1. Within your Help Scout dashboard, visit the [Apps page for KISSmetrics][km-helpscout].
-2. Enter your [KISSmetrics API key][site-settings].
-3. Select the mailbox(es) you want to connect to KISSmetrics.
-4. Watch Help Scout data appear in KISSmetrics' Live tab and other reports.
+1. Within your Help Scout dashboard, visit the [Apps page for Kissmetrics][km-helpscout].
+2. Enter your [Kissmetrics API key][site-settings].
+3. Select the mailbox(es) you want to connect to Kissmetrics.
+4. Watch Help Scout data appear in Kissmetrics' Live tab and other reports.
 
 ## Integration Details
 
@@ -37,30 +37,30 @@ Event Name | Properties | Identity
 
 #### Frequency of Import
 
-* Help Scout data is immediately sent to KISSmetrics whenever support emails arrive, whenever your support team writes back, and whenever tickets close.
+* Help Scout data is immediately sent to Kissmetrics whenever support emails arrive, whenever your support team writes back, and whenever tickets close.
 
 ## Four Examples
 
-*#1 - When Acme Software, a Help Scout customer, receives a new support email from bob@bob.com, Help Scout sends KISSmetrics this data:*
+*#1 - When Acme Software, a Help Scout customer, receives a new support email from bob@bob.com, Help Scout sends Kissmetrics this data:*
 
 **bob@bob.com** did an event: **Submitted help ticket** which has properties:
 
 * **Help ticket history**: secure.helpscout.net/conversation/1234567/1234/
 
-*#2 - When Pat Jones, Acme's star help agent, writes back to bob@bob.com (and every time Pat writes back), Help Scout sends KISSmetrics this data:*
+*#2 - When Pat Jones, Acme's star help agent, writes back to bob@bob.com (and every time Pat writes back), Help Scout sends Kissmetrics this data:*
 
 **bob@bob.com** did an event: **Received help ticket response** which has properties:
 
 * **Help agent**: Pat Jones
 * **Help ticket history**: secure.helpscout.net/conversation/1234567/1234/
 
-*#3 - When bob@bob.com responds to Pat (and every time bob@bob.com responds to Pat), Help Scout sends KISSmetrics this data:*
+*#3 - When bob@bob.com responds to Pat (and every time bob@bob.com responds to Pat), Help Scout sends Kissmetrics this data:*
 
 **bob@bob.com** did an event: **Responds to help ticket** which has properties:
 
 * **Help ticket history**: secure.helpscout.net/conversation/1234567/1234/
 
-*#4 - When Pat closes the ticket, Help Scout sends KISSmetrics this data:*
+*#4 - When Pat closes the ticket, Help Scout sends Kissmetrics this data:*
 
 **bob@bob.com** did an event: **Help ticket closed** which has properties:
 

@@ -3,13 +3,13 @@ layout: post
 title: Step 8 - Your First Event without the JavaScript Library
 categories: learn
 portal: university
-summary: Try sending data to KISSmetrics through one of our integrations or other API libraries. We will match the data according to which people are doing the events.
+summary: Try sending data to Kissmetrics through one of our integrations or other API libraries. We will match the data according to which people are doing the events.
 ---
 * Table of Contents
 {:toc}
 * * *
 
-Try sending data to KISSmetrics through one of our integrations or other API libraries.
+Try sending data to Kissmetrics through one of our integrations or other API libraries.
 
 # Exercise
 

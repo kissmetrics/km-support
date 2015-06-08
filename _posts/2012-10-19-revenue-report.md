@@ -24,7 +24,7 @@ Churn | The number of customers who stop paying. You can configure this to count
 
 ## Introduction
 
-Chances are, you are using analytics to increase the number of people using your product, so that they can ultimately increase your revenue. The Revenue Report gives you an overall picture of your revenue. Furthermore, you can segment your paying customers using your existing KISSmetrics properties. For example, you might be interested in…
+Chances are, you are using analytics to increase the number of people using your product, so that they can ultimately increase your revenue. The Revenue Report gives you an overall picture of your revenue. Furthermore, you can segment your paying customers using your existing Kissmetrics properties. For example, you might be interested in…
 
 * How much revenue did I make this month compared to last month?
 * Which of my *pricing plans* is contributing the most revenue?
@@ -37,7 +37,7 @@ Chances are, you are using analytics to increase the number of people using your
 
 # How do I pass in revenue data?
 
-The Revenue Report looks for a single KISSmetrics Property across all customers. In our examples, we call this property `Billing Amount`. But you can use any other property name, as long as you are consistent across all customers.
+The Revenue Report looks for a single Kissmetrics Property across all customers. In our examples, we call this property `Billing Amount`. But you can use any other property name, as long as you are consistent across all customers.
 
 Typically, you'll only include the net amount, minus tax and shipping:
 
@@ -84,7 +84,7 @@ Note: There is a limit of 750 days for a custom churn period, which is over 2 ye
 
 ## Choosing a custom churn event
 
-If your business defines churn as an event such as cancelation (common for SaaS businesses), then you'll be able to choose any event that you've tracked with KISSmetrics to use as the churn event.
+If your business defines churn as an event such as cancelation (common for SaaS businesses), then you'll be able to choose any event that you've tracked with Kissmetrics to use as the churn event.
 
 ![Revenue custom event churn][revenue-customeventchurn]
 
@@ -114,7 +114,7 @@ This means that if no one has churned, we can't make a prediction of your custom
 
 # Segmenting Revenue
 
-As mentioned above, you can segment your revenue and customers using your existing KISSmetrics properties. Some example questions you might answer:
+As mentioned above, you can segment your revenue and customers using your existing Kissmetrics properties. Some example questions you might answer:
 
 * Which of my *pricing plans* is contributing the most revenue?
 * Which *ads* have brought in the most paying customers?

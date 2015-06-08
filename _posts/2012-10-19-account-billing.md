@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Your KISSmetrics Account's Billing
+title: Your Kissmetrics Account's Billing
 categories: misc
 summary: Log in as an Account Owner to update your billing information, review and print invoices, or close your account.
 ---

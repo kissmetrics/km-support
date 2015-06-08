@@ -2,7 +2,7 @@
 layout: post
 title: Ruby on Rails
 categories: [apis, ruby]
-summary: Here are two different methods of setting up KISSmetrics in your Ruby on Rails application.
+summary: Here are two different methods of setting up Kissmetrics in your Ruby on Rails application.
 ---
 * Table of Contents
 {:toc}
@@ -10,14 +10,14 @@ summary: Here are two different methods of setting up KISSmetrics in your Ruby o
 
 ## I. Using the `Analytical` Gem
 
-If you are installing KISSmetrics in your Rails app, the JavaScript Library may actually be more appropriate for your frontend tracking. Consider using the `Analytical` RubyGem to help ease integration of multiple analytics products into your Rails app.
+If you are installing Kissmetrics in your Rails app, the JavaScript Library may actually be more appropriate for your frontend tracking. Consider using the `Analytical` RubyGem to help ease integration of multiple analytics products into your Rails app.
 
 * RubyGem link: [http://rubygems.org/gems/analytical][analytical]
 * GitHub link: [https://github.com/jkrall/analytical][git-analytical]
 
 ## II. Another Rails Integration
 
-This is an example on how to integrate KISSmetrics into a Ruby on Rails application using the basic Ruby Library.
+This is an example on how to integrate Kissmetrics into a Ruby on Rails application using the basic Ruby Library.
 
 1. Begin by placing the Ruby Library script in your `lib/` directoy.
 2. In the controller you wish to use, create a `before_filter`
@@ -28,11 +28,11 @@ That's it!  Let's look at each individual step in more detail.
 
 ### Step 1 - Install the library
 
-Simply place the `km.rb` file you downloaded in to your `lib/` directory. Copying the script in your `lib/` directory allows Rails to source the KISSmetrics code. There is no need to `require` anything.
+Simply place the `km.rb` file you downloaded in to your `lib/` directory. Copying the script in your `lib/` directory allows Rails to source the Kissmetrics code. There is no need to `require` anything.
 
 ### Step 2 - Create the before_filter
 
-Initialize KISSmetrics before making any requests by calling `KM.init`.  You can include this in a Rails initializer, or create a `before_filter`:
+Initialize Kissmetrics before making any requests by calling `KM.init`.  You can include this in a Rails initializer, or create a `before_filter`:
 
 {% highlight ruby %}
 before_filter :km_init

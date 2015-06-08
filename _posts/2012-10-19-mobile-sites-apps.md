@@ -2,13 +2,13 @@
 layout: post
 title: Tracking Mobile/iPhone/Android Apps
 categories: how-tos
-summary: Using KISSmetrics to track mobile sites and apps.
+summary: Using Kissmetrics to track mobile sites and apps.
 ---
 * Table of Contents
 {:toc}
 * * *
 
-KISSmetrics can track your mobile website using our typical [JavaScript Library][js]. For a native iOS or Android application, you'lll need to do some more work.
+Kissmetrics can track your mobile website using our typical [JavaScript Library][js]. For a native iOS or Android application, you'lll need to do some more work.
 
 ## 1. Implement events using the library in the app's native language
 
@@ -39,7 +39,7 @@ _kms('http://doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 </script>
 {% endhighlight %}
 
-The KISSmetrics team has not personally tested how effective it is to use our JavaScript library in this way.
+The Kissmetrics team has not personally tested how effective it is to use our JavaScript library in this way.
 
 ## 3. Use Ruby/PHP/Python Library on backend
 
@@ -47,14 +47,14 @@ Your mobile app may communicate with your backend servers when key events occur.
 
 #### Example:
 
-Data is sent when someone initializes the app. KISSmetrics can capture and record key events as they come in such as:
+Data is sent when someone initializes the app. Kissmetrics can capture and record key events as they come in such as:
 
 * Launched App
 * Used Core Feature 1
 * Used Core Feature 2
 * Changed Settings
 
-Use KISSmetrics' APIs (Ruby/PHP/Python) to record these events seamlessly as they come in so that you can visualize the data you're already getting. You're cataloguing and organizing data with KISSmetrics by putting event triggers as data flows in from your customers.
+Use Kissmetrics' APIs (Ruby/PHP/Python) to record these events seamlessly as they come in so that you can visualize the data you're already getting. You're cataloguing and organizing data with Kissmetrics by putting event triggers as data flows in from your customers.
 
 #### When a user launches the app, you can include an event trigger on your backend (Ruby Example):
 
@@ -88,7 +88,7 @@ KM.record('Launched App', {'Version' => grab_app_version});
 
 Now you want to find out what they do next.
 
-Write a script to trigger a KISSmetrics API command on the FIRST action after launching the app. It could look like this (please excuse the pseudo-code):
+Write a script to trigger a Kissmetrics API command on the FIRST action after launching the app. It could look like this (please excuse the pseudo-code):
 
 {% highlight ruby %}
 KM.record('Used Core Feature 1');
@@ -99,7 +99,7 @@ end
 
 The idea here is that you can designate which feature of your app is the "first feature" or "entry event" for users when they launch your app. Later, you can go into your reports and sort users by their first entry event or most recent entry event.
 
-In addition, you can use KISSmetrics server-side API's to track performance of automated systems such as how many times errors and bugs are being reported/logged.
+In addition, you can use Kissmetrics server-side API's to track performance of automated systems such as how many times errors and bugs are being reported/logged.
 
 [ios-official]: /apis/ios-v2
 [android]: /apis/android

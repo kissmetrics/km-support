@@ -2,7 +2,7 @@
 layout: post
 title: Campaign Monitor
 categories: integrations
-summary: Import historical subscriber information from Campaign Monitor into KISSmetrics.
+summary: Import historical subscriber information from Campaign Monitor into Kissmetrics.
 published: false
 ---
 * Table of Contents

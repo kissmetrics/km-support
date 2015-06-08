@@ -3,14 +3,14 @@ layout: post
 categories: integrations
 title: "CSV Files as an External Data Source"
 tags: []
-summary: Import data to KISSmetrics using .csv files.
+summary: Import data to Kissmetrics using .csv files.
 permalink: /integrations/csv-import/index.html
 ---
 * Table of Contents
 {:toc}
 * * *
 
-You can import .csv files into KISSmetrics to import data into your account. We'll accept both one-time uploads and a recurring import of .csv files from your Amazon S3 Bucket.
+You can import .csv files into Kissmetrics to import data into your account. We'll accept both one-time uploads and a recurring import of .csv files from your Amazon S3 Bucket.
 
 We recommend you read [People, Events, and Properties][pep] and [Common Methods][common-methods] before getting started here.
 

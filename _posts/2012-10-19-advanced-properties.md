@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Advanced Properties in KISSmetrics
+title: Advanced Properties in Kissmetrics
 categories: tools
-summary: KISSmetrics contains some advanced settings to fine-tune the Properties you see in your funnel reports.
+summary: Kissmetrics contains some advanced settings to fine-tune the Properties you see in your funnel reports.
 permalink: /advanced/advanced-properties
 ---
 * Table of Contents
@@ -11,21 +11,21 @@ permalink: /advanced/advanced-properties
 
 ![][advanced1]
 
-KISSmetrics contains some advanced settings to fine-tune the Properties you see in your funnel reports. Here’s an explanation of what these options do and when you may wish to change from our defaults.
+Kissmetrics contains some advanced settings to fine-tune the Properties you see in your funnel reports. Here’s an explanation of what these options do and when you may wish to change from our defaults.
 
 
 ## Total People _(Default)_
 
 Total people is the default setting.
 
-It means KISSmetrics will show the total number of people who performed each action. Even if one single person performed an action 1,000 times, they would be represented by a 1 in the report.
+It means Kissmetrics will show the total number of people who performed each action. Even if one single person performed an action 1,000 times, they would be represented by a 1 in the report.
 
 **Use this for**: You probably want to stick with this default for signup flows, upgrade flows, downgrade flows.
 
 
 ## Total Times
 
-KISSmetrics has tracked the discrete number of times each action was performed, regardless of whether it was performed by one or many people. If one single person performed an action 1,000 times, they would be represented by 1,000 in the report.
+Kissmetrics has tracked the discrete number of times each action was performed, regardless of whether it was performed by one or many people. If one single person performed an action 1,000 times, they would be represented by 1,000 in the report.
 
 **Use this for**: You may want to switch to this option when you’re looking at usage, referrals, repeat purchases.
 
@@ -51,7 +51,7 @@ Last “referrer” ever means we will show the referrer that drove a person to 
 
 ## First “property name” starting “starting date of report”
 
-It means KISSmetrics will show the first referrer that drove a person to your site within the selected funnel dates.
+It means Kissmetrics will show the first referrer that drove a person to your site within the selected funnel dates.
 
 **Use this for**: seeing if a specific campaign initially drove people to your site within a known timeframe.
 
@@ -78,17 +78,17 @@ Last referrer before Event 2 means we will show the referrer that drove a person
 
 ## None
 
-None is the data exactly as KISSmetrics receives it; no cleanup or changing of capitalization.
+None is the data exactly as Kissmetrics receives it; no cleanup or changing of capitalization.
 
 
 ## Lowercase
 
-KISSmetrics converts everything to lower-case text.
+Kissmetrics converts everything to lower-case text.
 
 
 ## URL
 
-KISSmetrics shows the full URL for referrer, campaign source, and any other URL-based properties. If that property doesn't exist, the value `Direct` appears, as if someone was referred directly to your site.
+Kissmetrics shows the full URL for referrer, campaign source, and any other URL-based properties. If that property doesn't exist, the value `Direct` appears, as if someone was referred directly to your site.
 
 **Use this for**: preserving exact data and being able to click directly on links to see the source page.
 

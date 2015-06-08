@@ -11,7 +11,7 @@ summary: Different methods for tracking push notifications with your iOS applica
 # 1. Tracking users who have enabled push notifications and accept alerts
 
 Within your application delegate's application: `didFinishLaunchingWithOptions:`
-Below the initialization of the KISSmetricsAPI…
+Below the initialization of the KissmetricsAPI…
 
 {% highlight obj-c %}
     // Check push notification alerts enabled/disabled

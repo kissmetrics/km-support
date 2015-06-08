@@ -12,7 +12,7 @@ permalink: /best-practices/saas-essentials/js-examples
 
 # Introduction
 
-Below is some basic information for you to get started with KISSmetrics. Please let your account manager know if you need information outside of our JavaScript API. Everything in `<<double brackets>>` needs to be replaced with an element ID or a variable.
+Below is some basic information for you to get started with Kissmetrics. Please let your account manager know if you need information outside of our JavaScript API. Everything in `<<double brackets>>` needs to be replaced with an element ID or a variable.
 
 # Getting Started
 

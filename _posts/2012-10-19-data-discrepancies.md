@@ -9,7 +9,7 @@ permalink: /troubleshooting/data-discrepancies/index.html
 {:toc}
 * * *
 
-Trying to make sense of the amount of data you collect in KISSmetrics can be daunting, especially if you notice a difference between our data and data from your databases or another analytics platform. This page discusses the following:
+Trying to make sense of the amount of data you collect in Kissmetrics can be daunting, especially if you notice a difference between our data and data from your databases or another analytics platform. This page discusses the following:
 
 * Reasons we might not capture 100% of the data
 * How to determine where the root of the discrepancy may come from
@@ -17,7 +17,7 @@ Trying to make sense of the amount of data you collect in KISSmetrics can be dau
 
 ## Best Effort Accuracy
 
-KISSmetrics, like all analytics vendors, makes its best effort to achieve 100% accuracy. However, despite all of our best efforts, there are many things that are not within our control. These include:
+Kissmetrics, like all analytics vendors, makes its best effort to achieve 100% accuracy. However, despite all of our best efforts, there are many things that are not within our control. These include:
 
 * Slow connections
 * Browser software that is outdated or has limited features (mobile browsers)
@@ -37,7 +37,7 @@ KISSmetrics, like all analytics vendors, makes its best effort to achieve 100% a
 
 There are some events, especially Revenue-related events, where it would be very important to ensure that we capture every instance. For these events, it's effective to use our [server-side libraries or other integrations][ways], if possible. Though this means it can take more time to implement, you get two main benefits:
 
-1. You have a definitive source of data (your own database) on which to ground your KISSmetrics data.
+1. You have a definitive source of data (your own database) on which to ground your Kissmetrics data.
 2. Our server-side libraries include mechanisms for retrying the sending of data, if for whatever reason our tracking servers did not receive everything on the first attempt.
 
 You can refer to this [article for combining data from our JavaScript Library with our other data libraries][jsid].
@@ -45,7 +45,7 @@ You can refer to this [article for combining data from our JavaScript Library wi
 
 # Steps For Investigation
 
-If you suspect that KISSmetrics' reports disagrees with the data you were expecting, these are the types of investigative questions our support team would use to approach the situation.
+If you suspect that Kissmetrics' reports disagrees with the data you were expecting, these are the types of investigative questions our support team would use to approach the situation.
 
 ## 1. Let's look at the people affected.
 
@@ -78,7 +78,7 @@ When you step through the expected flow, does your activity trigger the events?
 
 ## 4. Which reporting tool is being used?
 
-KISSmetrics provides a number of specialized reporting tools, each with their own options to present the data in their own way.
+Kissmetrics provides a number of specialized reporting tools, each with their own options to present the data in their own way.
 
 * If in doubt, we try to explain how our tools work in our [tools section][tools].
 * One other page to note is our [property options][ap] page, which addresses the different ways you can group people into segments using the properties we've recorded.
@@ -108,7 +108,7 @@ If you'd like some help with the above steps, please contact our support team! W
  --<cite>excerpt taken from Avinash Kaushik's (Author of Web Analytics 2.0, Web Analytics: An Hour A Day, and Digital Marketing Evangelist for Google Analytics) [blog post on data reconciliation][avinash-data-checklist]</cite>
 
 
-# KISSmetrics Status
+# Kissmetrics Status
 
 If there are any known site-wide issues, we will post a notice to [status.kissmetrics.com][status]. This message will also appear at the top of the website when you log into your account.
 

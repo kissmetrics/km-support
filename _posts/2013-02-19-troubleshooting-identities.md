@@ -3,7 +3,7 @@ layout: post
 categories: troubleshooting
 title: "Problems with Identifying Users?"
 tags: [identities]
-summary: These are several pitfalls to avoid when using KISSmetrics identities.
+summary: These are several pitfalls to avoid when using Kissmetrics identities.
 ---
 * Table of Contents
 {:toc}
@@ -11,9 +11,9 @@ summary: These are several pitfalls to avoid when using KISSmetrics identities.
 
 In theory, our concept of identities sounds simple.
 
-1. KISSmetrics tracks people.
+1. Kissmetrics tracks people.
 2. People can be represented with usually at least 2 different names in their lifetime as a customer. One when they are first anonymous; another when they become known through signing up, logging in, or installing your app.
-3. KISSmetrics has two techniques to connect these different names to represent the same person: `alias` and `identify`.
+3. Kissmetrics has two techniques to connect these different names to represent the same person: `alias` and `identify`.
 
 ![Alias Regular][alias-regular]
 
@@ -104,7 +104,7 @@ This is why it's useful to just `set` additional properties about who the person
 
 * *Have you successfully aliased a person's various identities together?*
 
-This happens most frequently if you send data to KISSmetrics through two or more different data sources (eg. our JavaScript library + PHP library, or JS + Mailchimp Integration). Without connecting the two IDs together, they appear to be different people:
+This happens most frequently if you send data to Kissmetrics through two or more different data sources (eg. our JavaScript library + PHP library, or JS + Mailchimp Integration). Without connecting the two IDs together, they appear to be different people:
 
 ![No Alias][no-alias]
 

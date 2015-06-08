@@ -2,19 +2,19 @@
 layout: post
 title: Your Data Is All People, Events and Properties
 categories: getting-started
-summary: All the data in KISSmetrics comes down to three groups - people, events and properties.
+summary: All the data in Kissmetrics comes down to three groups - people, events and properties.
 ---
 * Table of Contents
 {:toc}
 * * *
 
-All the data in KISSmetrics is in the form **people**, **events** and **properties**. In short, these indicate who your users are, what they do, and additional information about them (which lets you group similar people together).
+All the data in Kissmetrics is in the form **people**, **events** and **properties**. In short, these indicate who your users are, what they do, and additional information about them (which lets you group similar people together).
 
 ![Simple API][simple-api]
 
 # People
 
-The core unit in KISSmetrics is a person, and we really do mean a ***person*** -- a human being, not a unique visit or a session. You may often be looking at aggregate reports of user behavior, but at the end of the day, it's possible to see data for each individual person.
+The core unit in Kissmetrics is a person, and we really do mean a ***person*** -- a human being, not a unique visit or a session. You may often be looking at aggregate reports of user behavior, but at the end of the day, it's possible to see data for each individual person.
 
 People are represented by "**identities**", usually more than one. There are two types:
 
@@ -26,7 +26,7 @@ People are represented by "**identities**", usually more than one. There are two
   * `y75Fe33597qBqkR4obZZYV+wF3Y=`
   * `6j1KH1zrwBS6T2iIsixvpfnCnxY=`
 
-When KISSmetrics is appropriately implemented, you can follow a person's lifecycle with your product from when they were just any other visitor to when they finally sign up and repeatedly log in.
+When Kissmetrics is appropriately implemented, you can follow a person's lifecycle with your product from when they were just any other visitor to when they finally sign up and repeatedly log in.
 
 # Events
 
@@ -42,7 +42,7 @@ People interact with your site or application. Think of **events** as the *actio
 * `Shared content` (on Twitter or Facebook, for example)
 * `Billed` or `Purchased` (ie. paid you)
 
-These *actions* aren't limited to just visiting a particular URL. The event might happen on one of your servers, or even happen offline (the customer responds to your sales person's phone call, for example). To handle such a variety of actions, KISSmetrics provides a [large number of ways for you to send us this data][data-ways].
+These *actions* aren't limited to just visiting a particular URL. The event might happen on one of your servers, or even happen offline (the customer responds to your sales person's phone call, for example). To handle such a variety of actions, Kissmetrics provides a [large number of ways for you to send us this data][data-ways].
 
 Our [Best Practices][best-practices] are a great start to introduce you to important events to record. We have guides for SaaS and e-commerce businesses.
 
@@ -67,11 +67,11 @@ Numeric properties are special, because our reports can do some math in finding 
 * Find the average transaction size, or the smallest/min, or the largest/max.
 * Find the average net revenue per person (sum up the revenue per person and take the average across all people)
 
-The best part is that KISSmetrics saves all the values of each property; nothing is ever "overwritten". This lets you toggle the [report options][prop-options] to show the First Value or Last Value set, and with the [Power Report][power-report], even show Every Value ever set across many people at a time.
+The best part is that Kissmetrics saves all the values of each property; nothing is ever "overwritten". This lets you toggle the [report options][prop-options] to show the First Value or Last Value set, and with the [Power Report][power-report], even show Every Value ever set across many people at a time.
 
 ## Properties Are Saved to Each Person
 
-Whether you record properties as part of an event or set them individually, KISSmetrics remembers the property ***as being associated with the person***. This lets you use properties to segment reports in ways you may not have expected.
+Whether you record properties as part of an event or set them individually, Kissmetrics remembers the property ***as being associated with the person***. This lets you use properties to segment reports in ways you may not have expected.
 
 For example, you can look at the correlation between last month's A/B test and the number of upgrades this month. Most other analytics solutions would require you to re-record the A/B test property when the Upgrade occurs.
 

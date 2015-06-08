@@ -53,7 +53,7 @@ This fills in some attributes each post should have, which we'll discuss below.
 
 If you're putting up new images, you should compress them to minimize the amount of bandwidth used. We've been using [http://imageoptim.com/](http://imageoptim.com/).
 
-The KISSmetrics team has an S3 bucket that contains most of the support material. We're mainly using [3Hub](http://www.3hubapp.com/) to communicate with the bucket. Alternatively, you can upload individual images to [CloudApp](http://my.cl.ly/).
+The Kissmetrics team has an S3 bucket that contains most of the support material. We're mainly using [3Hub](http://www.3hubapp.com/) to communicate with the bucket. Alternatively, you can upload individual images to [CloudApp](http://my.cl.ly/).
 
 # What makes up a post?
 
@@ -63,7 +63,7 @@ Here's an example of the [YAML front matter](https://github.com/mojombo/jekyll/w
     title: Overview
     categories: getting-started
     tags: []
-    summary: What is KISSmetrics? What can I learn from using KISSmetrics? How are we different from other analytics solutions? What should I track to make the most of KISSmetrics?
+    summary: What is Kissmetrics? What can I learn from using Kissmetrics? How are we different from other analytics solutions? What should I track to make the most of Kissmetrics?
 
 1. Layout is defaulted to "post". This is the template to use for displaying our content. We haven't made any other templates...yet.
 2. Title: What is shown at the top of the article. If using the rake task, this also initially influences the URL it'll be on, but the title and the URL don't have to be exactly the same thing.

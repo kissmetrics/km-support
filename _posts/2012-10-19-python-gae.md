@@ -26,4 +26,4 @@ else:
 
 Hope this helps - email jeff+pickhardt@optimizely.com with any questions.
 
-[python-issue1]: https://github.com/kissmetrics/KISSmetrics/issues/1
+[python-issue1]: https://github.com/kissmetrics/Kissmetrics/issues/1

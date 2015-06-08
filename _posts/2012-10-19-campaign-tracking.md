@@ -37,7 +37,7 @@ Anyone who clicks the above link will land on `http://www.example.com/landing-pa
 
 # II. URL API
 
-Our [URL API][url] lets you tag a link, so that anyone following that link triggers a KISSmetrics event. Just like with UTM variables, you do this by adding query strings to the destination URL. Unlike with UTM variables, you can do three main actions specific to KISSmetrics: record events, set properties, and identify people.
+Our [URL API][url] lets you tag a link, so that anyone following that link triggers a Kissmetrics event. Just like with UTM variables, you do this by adding query strings to the destination URL. Unlike with UTM variables, you can do three main actions specific to Kissmetrics: record events, set properties, and identify people.
 
 ## Example with Events and Properties
 

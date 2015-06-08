@@ -8,7 +8,7 @@ summary: Use our JavaScript Library to record views of videos embedded on your s
 {:toc}
 * * *
 
-Below are examples of using the [YouTube](#youtube), [Vimeo](#vimeo), and [Wistia](#wistia) JavaScript Libraries in conjunction with KISSmetrics to record certain video events.
+Below are examples of using the [YouTube](#youtube), [Vimeo](#vimeo), and [Wistia](#wistia) JavaScript Libraries in conjunction with Kissmetrics to record certain video events.
 
 # Events Recorded
 

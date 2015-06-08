@@ -11,7 +11,7 @@ summary: "'None' or 'Direct means we did not find a value for this person."
 
 When you segment your reports by a property, you'll notice some people are listed in the "None" segment, or "Direct" for URL-based properties like `Referrer`.
 
-Generally speaking, this means we did not find a value for the KISSmetrics Property for this set of people. Three things may explain this:
+Generally speaking, this means we did not find a value for the Kissmetrics Property for this set of people. Three things may explain this:
 
 1. They did not yet do the event which sets the properties for these people.
 2. In our funnels, we provide [many more flexible options][adv] for showing which properties to look up. You might find it more meaningful to use 'First Ever', 'Last Ever', or 'First/Last within Date Range'.

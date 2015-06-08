@@ -2,7 +2,7 @@
 layout: post
 title: Tracking UTM Parameters
 categories: integrations
-summary: Some notes to consider when using Google Analytics' UTM parameters with KISSmetrics.
+summary: Some notes to consider when using Google Analytics' UTM parameters with Kissmetrics.
 ---
 * Table of Contents
 {:toc}
@@ -24,7 +24,7 @@ Here's a snapshot of some popular campaigns that can be tracked with UTM paramet
 
 So many possibilities! Read on to see how marketers use UTM parameters to track more than just paid ads. And don't forget to read the FAQs down below.
 
-## How UTM parameters work with KISSmetrics
+## How UTM parameters work with Kissmetrics
 
 This will probably look familiar. Ever see a URL like this one appear in your browser when you're clicking through an ad?
 
@@ -34,9 +34,9 @@ See those UTM parameters? Such URLs are loaded with them to help the marketer kn
 
 Here's how it all works:
 
-1. When Bob lands on your webpage via a UTM-loaded URL, the KISSmetrics code block in the webpage's `<head>` section automagically detects all available UTM parameter.
-2. KISSmetrics fires the event 'Ad Campaign Hit' for Bob.
-3. KISSmetrics sets the values of each available UTM parameter as values for these five possible corresponding properties:
+1. When Bob lands on your webpage via a UTM-loaded URL, the Kissmetrics code block in the webpage's `<head>` section automagically detects all available UTM parameter.
+2. Kissmetrics fires the event 'Ad Campaign Hit' for Bob.
+3. Kissmetrics sets the values of each available UTM parameter as values for these five possible corresponding properties:
 
 * Campaign Source
 * Campaign Medium
@@ -46,9 +46,9 @@ Here's how it all works:
 
 If you look up Bob using the People tab and see that Bob has triggered the event 'Ad Campaign Hit' and has one or more of these five properties, you'll know that Bob touched one of your UTM-loaded URLs at some point.
 
-## A step-by-step example of using UTM parameters to track paid ads with KISSmetrics
+## A step-by-step example of using UTM parameters to track paid ads with Kissmetrics
 
-This infographic is worth your five minutes, even if you're not running ads. It is everything you need to know about setting up UTM parameters and using related properties in your KISSmetrics reports.
+This infographic is worth your five minutes, even if you're not running ads. It is everything you need to know about setting up UTM parameters and using related properties in your Kissmetrics reports.
 
 [![Tracking Paid Ads][info-paid-ads-png]][info-paid-ads-png]
 
@@ -87,9 +87,9 @@ Double-check that Tagged URLs is ON in [Javascript Settings]. By default, this i
 
 [Javascript Settings]:https://app.kissmetrics.com/product.js_settings
 
-### Why is Google Analytics showing more than KISSmetrics?
+### Why is Google Analytics showing more than Kissmetrics?
 
-Because Google Analytics doesn't track people and KISSmetrics does, GA cannot combine one person's visits from multiple computers/browsers/mobile devices into one "unique visit." As a result, you may see 2-5x more views in Google Analytics than in KISSmetrics because Google Analytics is double/triple/quadruple/quintuple-counting.
+Because Google Analytics doesn't track people and Kissmetrics does, GA cannot combine one person's visits from multiple computers/browsers/mobile devices into one "unique visit." As a result, you may see 2-5x more views in Google Analytics than in Kissmetrics because Google Analytics is double/triple/quadruple/quintuple-counting.
 
 ### What if I'm using auto-tagging for Google AdWords/Analytics?
 
@@ -97,7 +97,7 @@ Google Analytics has a method of tagging your URLs called ["Destination URL Auto
 
 However, if your URLs include [UTM variables][url-builder] like `utm_source=`, we'll log the event `Ad Campaign Hit` and also store as Properties the campaign information embedded in the URL.
 
-For example, if someone clicks on the link `www.mysite.com/?utm_source=google&utm_medium=email&utm_campaign=20off`, this information is passed to KISSmetrics:
+For example, if someone clicks on the link `www.mysite.com/?utm_source=google&utm_medium=email&utm_campaign=20off`, this information is passed to Kissmetrics:
 
     Event triggered: Ad Campaign Hit
     URL: www.mysite.com/?utm_source=google&utm_medium=email&utm_campaign=20off
@@ -108,11 +108,11 @@ For example, if someone clicks on the link `www.mysite.com/?utm_source=google&ut
 [auto-tagging]:http://support.google.com/analytics/bin/answer.py?hl=en&answer=1033981
 [url-builder]:http://support.google.com/analytics/bin/answer.py?hl=en&answer=1033867
 
-### What if UTM parameters aren't appearing in KISSmetrics?
+### What if UTM parameters aren't appearing in Kissmetrics?
 
-Suppose you notice that your links are properly tagged with UTM variables, but they are still not being recorded in KISSmetrics. Here's what may be happening: (1) Are visitors being redirected to a different page on your site or (2) is the KISSmetrics code block on the landing page?
+Suppose you notice that your links are properly tagged with UTM variables, but they are still not being recorded in Kissmetrics. Here's what may be happening: (1) Are visitors being redirected to a different page on your site or (2) is the Kissmetrics code block on the landing page?
 
-#### Scenario 1: Redirects stop KISSmetrics from seeing UTM parameters
+#### Scenario 1: Redirects stop Kissmetrics from seeing UTM parameters
 
 Let's say your links are set up to track one thing: that the Campaign Source is "affiliates".
 
@@ -126,7 +126,7 @@ You notice that the `Ad Campaign Hit` did not register, though it should have.
 
 ##### What happened?
 
-Your site redirected from the tagged URL to another page before the KISSmetrics script could even load and detect that a Campaign Hit event occurred. The redirect stripped away the UTM variables that brought the visitor here. By the time the KM script loads on `/landingpage`, the UTM variables have been dropped.
+Your site redirected from the tagged URL to another page before the Kissmetrics script could even load and detect that a Campaign Hit event occurred. The redirect stripped away the UTM variables that brought the visitor here. By the time the KM script loads on `/landingpage`, the UTM variables have been dropped.
 
 There are a few solutions:
 
@@ -145,6 +145,6 @@ _kmq.push(function(){
 
 2) Capture the UTM variables attached to `www.mysite.com`, then append them to `www.mysite.com/landingpage` where the KM script can detect them.
 
-#### Scenario 2: The KISSmetrics code block isn't on the landing page
+#### Scenario 2: The Kissmetrics code block isn't on the landing page
 
-Think of the KISSmetrics code block as KISSmetrics' eyes. If the code block isn't on a webpage, then KISSmetrics can't see or track people on that page. That's why we always recommend installing the code block on every webpage of your site. Without the code block, KISSmetrics won't see that people are arriving on that page via a UTM-loaded URL, which means KISSmetrics will never pick up UTM-related events & properties.
+Think of the Kissmetrics code block as Kissmetrics' eyes. If the code block isn't on a webpage, then Kissmetrics can't see or track people on that page. That's why we always recommend installing the code block on every webpage of your site. Without the code block, Kissmetrics won't see that people are arriving on that page via a UTM-loaded URL, which means Kissmetrics will never pick up UTM-related events & properties.

@@ -55,7 +55,7 @@ There are three additional settings that are not tied to specific events:
 
 # Toggling Automatic Behavior
 
-If you'd prefer to, you can toggle whether these events should be tracked or not. Please go to [https://app.kissmetrics.com/product.js_settings][js-settings] to do so, which is reached from your [site settings][settings]. Also, please keep in mind that the JavaScript settings in KISSmetrics only apply to the JavaScript library hosted by KISSmetrics. They *do not* apply to other official or unofficial libraries (PHP, Ruby, etc.) unless otherwise noted.
+If you'd prefer to, you can toggle whether these events should be tracked or not. Please go to [https://app.kissmetrics.com/product.js_settings][js-settings] to do so, which is reached from your [site settings][settings]. Also, please keep in mind that the JavaScript settings in Kissmetrics only apply to the JavaScript library hosted by Kissmetrics. They *do not* apply to other official or unofficial libraries (PHP, Ruby, etc.) unless otherwise noted.
 
 [settings]: https://app.kissmetrics.com/settings
 [js-settings]: https://app.kissmetrics.com/product.js_settings

@@ -21,7 +21,7 @@ There are probably some key buttons on your site that are critical to the succes
 
 Many clickable elements on your site can be tracked so don’t limit yourself to just buttons. If it’s important and clickable, start tracking it.
 
-It’s easy to tell KISSmetrics what clicks to keep track of. You’re going to go to your site, view the source code, and find the ID or a Class name of the clickable element you want to track. Name your new event, enter in the id or class name, and you’re done.
+It’s easy to tell Kissmetrics what clicks to keep track of. You’re going to go to your site, view the source code, and find the ID or a Class name of the clickable element you want to track. Name your new event, enter in the id or class name, and you’re done.
 
 More detailed instructions coming soon!
 

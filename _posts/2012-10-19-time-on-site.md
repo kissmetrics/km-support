@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Does KISSmetrics Track Bounce Rate, Average Time on Site, or Exits?
+title: Does Kissmetrics Track Bounce Rate, Average Time on Site, or Exits?
 categories: how-tos
-summary: KISSmetrics is not best suited for metrics like bounce rate or average time on site.
+summary: Kissmetrics is not best suited for metrics like bounce rate or average time on site.
 ---
 * Table of Contents
 {:toc}
 * * *
 
-KISSmetrics does not automatically calculate every single metric you would find in Google Analytics. The common ones that you may notice absent:
+Kissmetrics does not automatically calculate every single metric you would find in Google Analytics. The common ones that you may notice absent:
 
 * Bounce Rate
 * Bounces
@@ -21,7 +21,7 @@ These tend to fall into the category we casually refer to as "Vanity Metrics". V
 
 (Granted, there are worthwhile uses for some of these metrics. Avinash Kaushik has several posts that help place them in the right context. Check out [Eight Silly Data Myths Marketing People Believe That Get Them Fired][kaushik].)
 
-Because of this, these metrics are not available, to help you focus on what's important. These blog posts from the [KISSmetrics blog][vanity-km] and [TechCrunch][vanity-tc] explore the concept of vanity metrics in more detail.
+Because of this, these metrics are not available, to help you focus on what's important. These blog posts from the [Kissmetrics blog][vanity-km] and [TechCrunch][vanity-tc] explore the concept of vanity metrics in more detail.
 
 ## Bounce Rate and Exits
 
@@ -42,7 +42,7 @@ Time on site alone only provides a vague picture of what's going on - what if so
 
 ## Demographic Information
 
-KISSmetrics does not have anything in place to automatically capture some types of demographic information from your users. That can include your visitors' language, country, IP address, gender, and age.
+Kissmetrics does not have anything in place to automatically capture some types of demographic information from your users. That can include your visitors' language, country, IP address, gender, and age.
 
 However, if you are capturing that information yourself (for example, through Facebook's API or from within your signup form), you can pass that information along to us as properties of that user.
 
@@ -56,7 +56,7 @@ _kmq.push(['set', {'language':'english',
 
 ## Location Information
 
-If you are comfortable with writing additional code, Shopify has a great guide for ways to [look up a visitor's location][shopify-location]. You can apply the same methods to setting KISSmetrics properties.
+If you are comfortable with writing additional code, Shopify has a great guide for ways to [look up a visitor's location][shopify-location]. You can apply the same methods to setting Kissmetrics properties.
 
 [vanity-km]: http://blog.kissmetrics.com/vainest-metrics/
 [vanity-tc]: http://techcrunch.com/2011/07/30/vanity-metrics/

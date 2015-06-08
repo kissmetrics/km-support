@@ -19,7 +19,7 @@ For an inconclusive test, oftentimes we'll stick to the control if it's a change
 
 * * *
 
-## Will Kurt, Data Scientist at KISSmetrics
+## Will Kurt, Data Scientist at Kissmetrics
 
 The big thing to keep in mind with A/B testing is you'll get better results in the long run if you stick with only decision that are clear wins. I would recommend sticking with the original since the uncertainty in the results means you always risk that the other variant is worse. It's a much better use of your time to wait until you've found a really great variant, and not risk too much on variants that are likely to bring you little if any gain.
 

@@ -2,7 +2,7 @@
 layout: post
 title: Tapstream Integration
 categories: integrations
-summary: KISSmetrics and Tapstream have integrated. See how to use both products with each other.
+summary: Kissmetrics and Tapstream have integrated. See how to use both products with each other.
 ---
 * Table of Contents
 {:toc}

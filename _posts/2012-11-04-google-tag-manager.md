@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Installing KISSmetrics through Google Tag Manager
+title: Installing Kissmetrics through Google Tag Manager
 categories: [apis, javascript]
 tags: [installation]
-summary: Here's how to load the KISSmetrics JavaScript library through Google Tag Manager.
+summary: Here's how to load the Kissmetrics JavaScript library through Google Tag Manager.
 ---
 * Table of Contents
 {:toc}
@@ -11,7 +11,7 @@ summary: Here's how to load the KISSmetrics JavaScript library through Google Ta
 
 [Google Tag Manager][gtm] is a free tag management system. Rather than editing site code every time you want to add HTML/JavaScript snippets, you can install the Tag Manager script *once* and make updates from within Google.
 
-The concept is similar to creating events with our [Event Library][evlib], where you install our main piece of JavaScript *once* and manage your events within [KISSmetrics][evlib-link].
+The concept is similar to creating events with our [Event Library][evlib], where you install our main piece of JavaScript *once* and manage your events within [Kissmetrics][evlib-link].
 
 ## Step 1: Get Started
 
@@ -19,7 +19,7 @@ Set up your account at the [Google Tag Manager website][gtm]. You'll be asked to
 
 ![1 Get Script for Container][ss1]
 
-## Step 2: Install the Google Tag Manager Code + KISSmetrics Code
+## Step 2: Install the Google Tag Manager Code + Kissmetrics Code
 
 Make sure the provided Google Tag Manager script is placed on ***every page of your site.***
 
@@ -27,10 +27,10 @@ For example, here's a screenshot of installing in a Wordpress template (by going
 
 ![2 Install Tag - WordPress example][ss2]
 
-## Step 3: Back in Google Tag Manager, Set Up a Tag for the KISSmetrics JavaScript Snippet
+## Step 3: Back in Google Tag Manager, Set Up a Tag for the Kissmetrics JavaScript Snippet
 
 * Back in Google Tag Manager, create a "Custom HTML Tag".
-* Please refer to your site's [Settings page][settings] to obtain your KISSmetrics JavaScript snippet, which you'll place in the "HTML" field:
+* Please refer to your site's [Settings page][settings] to obtain your Kissmetrics JavaScript snippet, which you'll place in the "HTML" field:
 
 ![3 Add a Tag for KM Library][ss3]
 
@@ -42,7 +42,7 @@ For example, here's a screenshot of installing in a Wordpress template (by going
 
 ## Step 4: (Optional) Add Additional JavaScript for Custom Events
 
-If you'd like, you can define custom KISSmetrics events by adding more tags to the container. In the next example, we'll create a rule to record the "Viewed Homepage" event when people go to the URL path `/`.
+If you'd like, you can define custom Kissmetrics events by adding more tags to the container. In the next example, we'll create a rule to record the "Viewed Homepage" event when people go to the URL path `/`.
 
 ![5 Homepage Rule][ss5]
 
@@ -58,7 +58,7 @@ Notice the presence of `var _kmq = _kmq || [];`. This is necessary because Googl
 
 ## That's It!
 
-As always, you can check in [KISSmetrics Live][live] to look for your own activity, and to check that you've installed properly.
+As always, you can check in [Kissmetrics Live][live] to look for your own activity, and to check that you've installed properly.
 
 To recap, there are 4 steps:
 

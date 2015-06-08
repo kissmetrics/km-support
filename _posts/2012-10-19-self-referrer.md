@@ -10,7 +10,7 @@ summary: Why is my own site listed as a referrer?
 
 Here are two reasons why our JavaScript may pick up your own site as a Referrer.
 
-## 1. Is the KISSmetrics JavaScript on all of your pages?
+## 1. Is the Kissmetrics JavaScript on all of your pages?
 
 Let's say you have a setup that looks like this:
 
@@ -43,7 +43,7 @@ Because the browser loads `http://www.mysite.com/` ever so briefly, the browser 
 
     [internet] -> http://www.mysite.com -> http://www.mysite.com/splash.php
 
-The KISSmetrics script is located on the `/splash.php` page. When we check for the Referrer, we see that the last page visited was `http://www.mysite.com`; the info about the `[internet page]` is lost during the redirect.
+The Kissmetrics script is located on the `/splash.php` page. When we check for the Referrer, we see that the last page visited was `http://www.mysite.com`; the info about the `[internet page]` is lost during the redirect.
 
 ### II. Location Header (non-JavaScript)
 
@@ -62,4 +62,4 @@ The progression then looks like this:
 
     [internet] -> (www.mysite.com) -> http://www.mysite.com/splash.php
 
-Again, the KISSmetrics script is located on the `/splash.php` page. So when we check for the Referrer, we see that the last page visited was `[internet page]`, ignoring the fact we got redirected from `www.mysite.com`.
+Again, the Kissmetrics script is located on the `/splash.php` page. So when we check for the Referrer, we see that the last page visited was `[internet page]`, ignoring the fact we got redirected from `www.mysite.com`.

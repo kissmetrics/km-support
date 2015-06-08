@@ -2,7 +2,7 @@
 layout: post
 title: WooCommerce Plugin (WordPress)
 categories: integrations
-summary: Add KISSmetrics tracking to WooCommerce.
+summary: Add Kissmetrics tracking to WooCommerce.
 ---
 * Table of Contents
 {:toc}

@@ -9,7 +9,7 @@ summary: The Path Report can analyze and optimize any part of the customer journ
 {:toc}
 * * *
 
-The KISSmetrics Path Report allows you to analyze the most common sequence of events or property values that eventually lead to a conversion. This lets you uncover what your customers do so that you can see exactly what series of events lead to more conversions, higher conversion rates, or shorter time to convert.
+The Kissmetrics Path Report allows you to analyze the most common sequence of events or property values that eventually lead to a conversion. This lets you uncover what your customers do so that you can see exactly what series of events lead to more conversions, higher conversion rates, or shorter time to convert.
 
 
 This report is best used for:

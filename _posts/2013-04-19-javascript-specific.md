@@ -64,9 +64,9 @@ You can do this by setting the variable `KM_REFERRER` like so:
 
 Even if your site is not in an iFrame, `parent.document.referrer` should still be the same as `document.referrer` and behave normally anyway.
 
-# KISSmetrics Identities
+# Kissmetrics Identities
 
-The function `KM.i()` will return the visitor's KISSmetrics ID, in case you need to pass that along to another function.
+The function `KM.i()` will return the visitor's Kissmetrics ID, in case you need to pass that along to another function.
 
 Remember to wrap this in a [callback function][callback] to ensure the JavaScript library has loaded before you try to fetch this information:
 
@@ -127,7 +127,7 @@ This is most beneficial when you're working with a tag manager, where you might 
 
 ## Tracking Individual Page Views
 
-If you are just looking to track every page view on your site we recommend [Google Analytics][ga]. With KISSmetrics we recommend tracking only significant pages with specifically named events. You can use the Event Library to do this, or you can add a `record` command to your pages:
+If you are just looking to track every page view on your site we recommend [Google Analytics][ga]. With Kissmetrics we recommend tracking only significant pages with specifically named events. You can use the Event Library to do this, or you can add a `record` command to your pages:
 
 {% highlight js %}
 _kmq.push(['record', 'Viewed Signup']);
@@ -138,7 +138,7 @@ So when the browser executes the line `_kmq.push(['record', 'Viewed Signup']);`,
 
 ## Tracking Clicks - `trackClick`
 
-If you are just looking to track every click on your your site we recommend [Crazy Egg][crazyegg]. With KISSmetrics we recommend tracking only significant elements. To accomplish this, you can use `trackClick`. This sets up an element to record an event _only_ when the visitor has clicked on the element.
+If you are just looking to track every click on your your site we recommend [Crazy Egg][crazyegg]. With Kissmetrics we recommend tracking only significant elements. To accomplish this, you can use `trackClick`. This sets up an element to record an event _only_ when the visitor has clicked on the element.
 
 `trackClick` takes two parameters: the HTML ID or CSS class of the element you are tracking, and the name of the event to record when someone clicks said element:
 
@@ -190,7 +190,7 @@ _kmq.push(['trackClick', 'invite_link', 'Invite Friends Clicked', {
 
 ## Tracking Outbound Link Clicks - `trackClickOnOutboundLink`
 
-The default method of tracking clicks by KISSmetrics works well for most cases. However, if you are trying to track a click on an outbound link (a link to a different website), it is possible for the browser to change pages before it has a chance to send the data to KISSmetrics. For these cases, there is an alternative function available: `trackClickOnOutboundLink`:
+The default method of tracking clicks by Kissmetrics works well for most cases. However, if you are trying to track a click on an outbound link (a link to a different website), it is possible for the browser to change pages before it has a chance to send the data to Kissmetrics. For these cases, there is an alternative function available: `trackClickOnOutboundLink`:
 
 {% highlight html %}
 <a href="http://othersite.com" id="link1">Visit Other Site</a>
@@ -202,7 +202,7 @@ The default method of tracking clicks by KISSmetrics works well for most cases. 
 This builds in time to send the event by:
 
 * Canceling the original click event's default behavior
-* Sending the data to KISSmetrics
+* Sending the data to Kissmetrics
 * Waiting 250ms
 * Redirecting the browser by setting `document.location`
 
@@ -251,7 +251,7 @@ _kmq.push(['trackSubmit', 'signup_form', 'Sign Up Form Submitted', { 'variation'
 
 ### Auto-Tracking Form Fields
 
-By default, if you are tracking forms with `trackSubmit`, we will also capture all non-sensitive form fields as KISSmetrics properties. (We won't record [passwords, hidden, textarea fields as well as sensitive fields like credit card numbers and social security numbers][protected].)
+By default, if you are tracking forms with `trackSubmit`, we will also capture all non-sensitive form fields as Kissmetrics properties. (We won't record [passwords, hidden, textarea fields as well as sensitive fields like credit card numbers and social security numbers][protected].)
 
 You can toggle whether to automatically capture form fields in your [JavaScript Settings][js-settings], under the *Form Fields* section.
 
@@ -301,7 +301,7 @@ If you are unsure whether your forms behave this way, please contact your site's
 
 # Cookies
 
-KISSmetrics uses these *first party* cookies on your domain. They expire after 5 years unless otherwise specified.
+Kissmetrics uses these *first party* cookies on your domain. They expire after 5 years unless otherwise specified.
 
 Cookie Name | Description
 ----------- | -----------
@@ -325,7 +325,7 @@ By default, if you have put the JavaScript code on several of your subdomains, i
 </script>
 {% endhighlight %}
 
-If you want to track the subdomains separately in two different accounts, you can specify a cookie domain `KM_COOKIE_DOMAIN` before the KISSmetrics Javascript is included. This might look like:
+If you want to track the subdomains separately in two different accounts, you can specify a cookie domain `KM_COOKIE_DOMAIN` before the Kissmetrics Javascript is included. This might look like:
 
 {% highlight html %}
 <script type="text/javascript">

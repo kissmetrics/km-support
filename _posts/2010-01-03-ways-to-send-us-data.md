@@ -3,23 +3,23 @@ layout: post
 title: "Installing: How to Send Us Data"
 categories: getting-started
 tags: [developer_portal]
-summary: There are many different ways of sending data to KISSmetrics. Review your options here.
+summary: There are many different ways of sending data to Kissmetrics. Review your options here.
 ---
 * Table of Contents
 {:toc}
 * * *
 
-KISSmetrics provides a huge variety of ways of bringing in event data into your account. Pick the method(s) that fit your needs!
+Kissmetrics provides a huge variety of ways of bringing in event data into your account. Pick the method(s) that fit your needs!
 
 Each method works independently; you don't necessarily need to set up two methods for the same event. For example, if you've already written PHP Library commands to record an event, you don't need to create a corresponding entry in the Event Library. Or if you're already connected your database to log all of your signups, you don't need to hook up the Ruby Library to also record your signups.
 
 ## Language-specific APIs
 
-* [JavaScript Library][js]: write API calls in JavaScript, when you need the flexibility of JavaScript to record events that our Event Library cannot record. Requires that your site contains the KISSmetrics JS code block from your [site settings][settings].
+* [JavaScript Library][js]: write API calls in JavaScript, when you need the flexibility of JavaScript to record events that our Event Library cannot record. Requires that your site contains the Kissmetrics JS code block from your [site settings][settings].
 
-  [Event Library][event-library]. Once the main KISSmetrics code is on your site, sign into [kissmetrics.com][settings] to create events without additional code changes. Requires that your site contains the KISSmetrics JS code block from your [site settings][settings].
+  [Event Library][event-library]. Once the main Kissmetrics code is on your site, sign into [kissmetrics.com][settings] to create events without additional code changes. Requires that your site contains the Kissmetrics JS code block from your [site settings][settings].
 
-  [URL API][url]. When visitors click on a tagged URL that leads to your site, an event gets recorded. Requires that your site contains the KISSmetrics JS code block from your [site settings][settings].
+  [URL API][url]. When visitors click on a tagged URL that leads to your site, an event gets recorded. Requires that your site contains the Kissmetrics JS code block from your [site settings][settings].
 * [Ruby Library][ruby]
 * [PHP Library][php]
 * [Python Library][python]

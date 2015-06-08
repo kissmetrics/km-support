@@ -18,7 +18,7 @@ You can save this search to use later or export this list of people to your emai
 
 Before you can search for customers, you’ll need to describe the type of people you’re looking for with conditions.
 
-KISSmetrics lets you create a People Search based on:
+Kissmetrics lets you create a People Search based on:
 
 * An **event** people have or have not done, within the report's time frame.
 * A **property** people have or don’t have, within the report's time frame.
@@ -28,7 +28,7 @@ KISSmetrics lets you create a People Search based on:
 
 ![Person Search 02][ss02]
 
-On the KISSmetrics People tab, click on the “Add a condition” button to start creating your Group.
+On the Kissmetrics People tab, click on the “Add a condition” button to start creating your Group.
 
 ![Person Search 03][ss03]
 
@@ -36,7 +36,7 @@ Pick a condition based on an event or property.
 
 ![Person Search 04][ss04]
 
-You can use the drop-down menu to browse through existing events and properties. You can also start typing directly into the field, and KISSmetrics will search for matching events/properties.
+You can use the drop-down menu to browse through existing events and properties. You can also start typing directly into the field, and Kissmetrics will search for matching events/properties.
 
 ![Person Search 05][ss05]
 
@@ -64,7 +64,7 @@ You can add more conditions to create a more specific group of people. Add as ma
 
 ### Nesting conditions for advanced searches
 
-If you have very specific customer segments or criteria you want to meet, KISSmetrics People Search lets you nest conditions to build complex searches.
+If you have very specific customer segments or criteria you want to meet, Kissmetrics People Search lets you nest conditions to build complex searches.
 
 ![Person Search 07][ss07]
 
@@ -80,7 +80,7 @@ When you use multiple nests, you can create advanced Groups. This particular Gro
 
 # Add additional data to your People Search
 
-You can get more than just a list of people with KISSmetrics People Search. Customize your search results to see even more data by adding additional data columns (up to 10 additional columns.)
+You can get more than just a list of people with Kissmetrics People Search. Customize your search results to see even more data by adding additional data columns (up to 10 additional columns.)
 
 Example: Of all the people who `Signed Up`...
 
@@ -94,7 +94,7 @@ Example: Of all the people who `Signed Up`...
 
 ![Person Search 10][ss10]
 
-By default, KISSmetrics will list the people that satisfy your search conditions. But you can make your search results much more useful by adding in event activity or property information.
+By default, Kissmetrics will list the people that satisfy your search conditions. But you can make your search results much more useful by adding in event activity or property information.
 
 ![Person Search 11][ss11]
 
@@ -127,7 +127,7 @@ To save a People Search, click the "Save this search" button.
 
 ![Person Search 15][ss15]
 
-You can access Saved People Searches from the Reports section of KISSmetrics.
+You can access Saved People Searches from the Reports section of Kissmetrics.
 
 ![Person Search 16][ss16]
 

@@ -18,7 +18,7 @@ The [Event Library][event-library] lists all of your site's events. These are gr
 
 # Events Created By You - The Event Wizard
 
-We recommend installing on every page of your site the basic KISSmetrics JavaScript code (the one located in [site settings][site-settings]). Once you have done this, you can make use of the **Event Wizard**, which allows you to create, edit and delete simple events without involving your developer to add additional code.
+We recommend installing on every page of your site the basic Kissmetrics JavaScript code (the one located in [site settings][site-settings]). Once you have done this, you can make use of the **Event Wizard**, which allows you to create, edit and delete simple events without involving your developer to add additional code.
 
 You can add rules for three types of events:
 
@@ -38,7 +38,7 @@ Our Event Wizard works for many scenarios, but may not be best to record every e
 
 There are three types of events listed here:
 
-1. [Events that are automatically tracked][auto-track] from having the basic KISSmetrics JavaScript code on your site.
+1. [Events that are automatically tracked][auto-track] from having the basic Kissmetrics JavaScript code on your site.
 2. Events you pass in from another data source: a server-side API, our Database Sync tool, CSV import, or one from of our other integrations.
 3. Events collected from old Event Wizard entries that have historic data, but are no longer actively tracking current user behavior.
 

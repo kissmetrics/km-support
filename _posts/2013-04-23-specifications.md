@@ -92,7 +92,7 @@ This tells us that events done by `User 12345` and events done by `bob@bob.com` 
 
 There are only a handful of scenarios where it is appropriate to directly call `alias`:
 
-* You implement KISSmetrics using more than one source of data: combining data from an external KM [integration][integration], server-side libraries, and/or our JavaScript library.
+* You implement Kissmetrics using more than one source of data: combining data from an external KM [integration][integration], server-side libraries, and/or our JavaScript library.
 * You are identifying people by their email address, and they update their email address within your app.
 * You change your tracking schema to identify people...say, from email address to username.
 

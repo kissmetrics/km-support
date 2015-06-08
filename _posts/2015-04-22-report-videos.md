@@ -3,7 +3,7 @@ layout: post
 title: "Report Videos"
 categories: tutorial
 tags: []
-summary: Here are a few quick videos on each report to help you get started with KISSmetrics.
+summary: Here are a few quick videos on each report to help you get started with Kissmetrics.
 ---
 * Table of Contents
 {:toc}
