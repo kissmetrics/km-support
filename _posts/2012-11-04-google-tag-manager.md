@@ -40,7 +40,7 @@ For example, here's a screenshot of installing in a Wordpress template (by going
 
 * Save this tag.
 
-## Step 4: (Optional) Add Additional JavaScript for Custom Events
+## Step 4: Add Additional JavaScript for Custom Events
 
 If you'd like, you can define custom KISSmetrics events by adding more tags to the container. In the next example, we'll create a rule to record the "Viewed Homepage" event when people go to the URL path `/`.
 
