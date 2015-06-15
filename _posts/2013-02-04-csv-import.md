@@ -33,33 +33,33 @@ Our CSV import is unable to accept double quotation marks (") so please use sing
 
 ## Importing only events (`record` command)
 
-Identity | Timestamp  | Event
--------- | ---------- | ----------
-1        | 1328044149 | Subscribed
-3        | 1327871425 | Subscribed
-4        | 1326664210 | Joined Newsletter
-6        | 1325974373 | Joined Newsletter
-10       | 1325629592 | Subscribed
+Identity      | Timestamp  | Event
+------------- | ---------- | ----------
+bob@bob.com   | 1328044149 | Subscribed
+admin@bob.com | 1327871425 | Subscribed
+matt@bob.com  | 1326664210 | Joined Newsletter
+joe@bob.com   | 1325974373 | Joined Newsletter
+phil@bob.com  | 1325629592 | Subscribed
 
 ## Importing events with optional properties (`record` command with properties)
 
-Identity | Timestamp  | Event             | Prop:Age  | Prop:Gender | Prop:Favorite Food
--------- | ---------- | ----------------- | --------- | ----------- | ------------------
-1        | 1328044149 | Subscribed        | 21        | Male        | Pizza
-3        | 1327871425 | Subscribed        | 34        | Female      | Sushi
-4        | 1326664210 | Joined Newsletter |           |             |
-6        | 1325974373 | Joined Newsletter |           |             | Tapas
-10       | 1325629592 | Subscribed        | 23        | Male        | Apple Pie
+Identity      | Timestamp  | Event             | Prop:Age  | Prop:Gender | Prop:Favorite Food
+------------- | ---------- | ----------------- | --------- | ----------- | ------------------
+bob@bob.com   | 1328044149 | Subscribed        | 21        | Male        | Pizza
+admin@bob.com | 1327871425 | Subscribed        | 34        | Female      | Sushi
+matt@bob.com  | 1326664210 | Joined Newsletter |           |             |
+joe@bob.com   | 1325974373 | Joined Newsletter |           |             | Tapas
+phil@bob.com  | 1325629592 | Subscribed        | 23        | Male        | Apple Pie
 
 ## Importing only properties (`set` command)
 
-Identity | Timestamp  | Prop:Email Address
--------- | ---------- | ------------------
-1        | 1328044149 | bob@bob.com
-3        | 1327871425 | adam@bob.com
-4        | 1326664210 | matt@bob.com
-6        | 1325974373 | joe@bob.com
-10       | 1325629592 | phil@bob.com
+Identity      | Timestamp  | Prop:Email Address
+------------- | ---------- | ------------------
+bob@bob.com   | 1328044149 | bob@bob.com
+admin@bob.com | 1327871425 | admin@bob.com
+matt@bob.com  | 1326664210 | matt@bob.com
+joe@bob.com   | 1325974373 | joe@bob.com
+phil@bob.com  | 1325629592 | phil@bob.com
 
 ## Importing optional aliases (`alias` command)
 
