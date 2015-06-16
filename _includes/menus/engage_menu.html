@@ -1,0 +1,20 @@
+<li>
+  <div class="collapse-hitbox" data-toggle="collapse" data-target="#engage-list">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <a href="#engage-list">Engage/a>
+  </div>
+  <div id="engage-list" class="collapse">
+    <ul>
+    {% for page in site.categories.engage reversed %}
+      <li>
+        <a href="{{page.url}}">{{ page.title }}</a>
+      </li>
+    {% endfor %}
+      <div class='more-content'>
+        <li>
+          <a href='/engage/'>(View all {{ site.categories.engage | size }} articles)</a>
+        </li>
+      </div>
+    </ul>
+  </div>
+</li>
