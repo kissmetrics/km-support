@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Engage-Frequently Asked Questions
+title: Engage - Frequently Asked Questions
 categories: engage
 summary: The most frequently asked questions about Engage. 
 ---
@@ -32,7 +32,7 @@ Engage uses the following logic hierarchy to determine who is shown your campaig
 
 Engagements should appear on your site within seconds of launching. The system we use delivers your Engagement to your site as close to real time as possible.
 
-# Can I target Engage users using Kissmetrics events/properties?
+# Can I trigger an Engagement to show based off of a visitor firing a Kissmetrics event or property?
 
 Not yet. But, we are definitely planning on exploring this functionality in a future iteration of Engage so you can target engagements to trigger based on what visitors do and don’t do.
 
