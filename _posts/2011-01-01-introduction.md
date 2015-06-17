@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Introduction to KISSmetrics
+title: Introduction to Kissmetrics
 categories: tutorial
-summary: A brief introduction to KISSmetrics
+summary: A brief introduction to Kissmetrics
 ---
 * Table of Contents
 {:toc}

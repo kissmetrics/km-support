@@ -3,13 +3,13 @@ layout: post
 categories: tools
 title: "Channel Definitions"
 tags: []
-summary: Channels is a KISSmetrics property that combines acquisition data from many sources.
+summary: Channels is a Kissmetrics property that combines acquisition data from many sources.
 ---
 * Table of Contents
 {:toc}
 * * *
 
-Channels are your sources of traffic. The Channels property in KISSmetrics automatically reads incoming traffic data and organizes it into three different KISSmetrics Channel properties so you can analyze your acquisition data without any extra work. The three Channel properties are:
+Channels are your sources of traffic. The Channels property in Kissmetrics automatically reads incoming traffic data and organizes it into three different Kissmetrics Channel properties so you can analyze your acquisition data without any extra work. The three Channel properties are:
 
 * `Channel` - what traffic source out of Direct/Organic/Referral/Email/Paid/Social
 * `Channel: Origin` - traffic source + original referring URL/domain or Campaign Name
@@ -28,7 +28,7 @@ Channels are your sources of traffic. The Channels property in KISSmetrics autom
 
 ### 1. Google Campaign Medium UTMs
 
-Before categorizing on any other criteria, the first thing KISSmetrics looks for is a [Google Campaign Medium UTM variable][Google UTM] on the referral URL (utm_medium). Here’s how we group different values into channels:
+Before categorizing on any other criteria, the first thing Kissmetrics looks for is a [Google Campaign Medium UTM variable][Google UTM] on the referral URL (utm_medium). Here’s how we group different values into channels:
 
 * `Paid` = utm_medium of "cpc", "cpm", "display", "cpv", "cpa", "cpp", or "ppc"
 * `Email` = utm_medium of "email" or "e-mail"
@@ -44,11 +44,11 @@ If the Campaign Name UTM is missing (usually shouldn't be as it's required along
 
 ### 2. AdWords gclid parameter
 
-If a campaign medium UTM parameter isn’t detected, the next thing KISSmetrics looks for is a [Google Adwords gclid parameter][Google gclid] on the referral URL.
+If a campaign medium UTM parameter isn’t detected, the next thing Kissmetrics looks for is a [Google Adwords gclid parameter][Google gclid] on the referral URL.
 
 Traffic with a gclid parameter is placed in the Paid channel and under AdWords in the Origin drilldown.
 
-Google AdWords uses a gclid parameter when you set up auto-tagging in your Google AdWords account. The auto-tagging feature of Google AdWords is for the Google Analytics integration, but KISSmetrics and other analytics providers cannot read that parameter. Google restricts access to read the gclid parameter. We won't know which AdWords campaign/keyword was used but we do know that the traffic is from Google AdWords at least. Basically, any traffic with a gclid parameter will be added to an AdWords Origin within the Paid channel.
+Google AdWords uses a gclid parameter when you set up auto-tagging in your Google AdWords account. The auto-tagging feature of Google AdWords is for the Google Analytics integration, but Kissmetrics and other analytics providers cannot read that parameter. Google restricts access to read the gclid parameter. We won't know which AdWords campaign/keyword was used but we do know that the traffic is from Google AdWords at least. Basically, any traffic with a gclid parameter will be added to an AdWords Origin within the Paid channel.
 
 By putting AdWords after Campaign Medium UTM, the UTM acts as an override. Since we can’t get AdWords campaign values because Google blocks access to information like Campaign Name, Campaign Source, etc, we recommend that you add UTM variables to AdWords links even if you have Google AdWords auto-tagging/gclid enabled. So if you've added UTM parameters, we’ll use that data. If not, we’ll group them under the Paid channel as a generic AdWords Origin.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: What You Learn with KISSmetrics
+title: What You Learn with Kissmetrics
 categories: overview
-summary: Read examples about the kinds of things you can learn with KISSmetrics.
+summary: Read examples about the kinds of things you can learn with Kissmetrics.
 ---
 * Table of Contents
 {:toc}
 * * *
 
-## KISSmetrics will show you:
+## Kissmetrics will show you:
 
 * How people are coming to your site
 * Which channels are bringing you the most people who convert to customers
@@ -21,7 +21,7 @@ summary: Read examples about the kinds of things you can learn with KISSmetrics.
 
 ### For example…
 
-KISSmetrics automatically tracks search terms, so you can see which terms are bringing the most visitors to your site as well as the highest percentage of visitors who convert into customers. You may learn that customers are finding you through an unexpected search, or that the paid search terms you’re using are not performing well.
+Kissmetrics automatically tracks search terms, so you can see which terms are bringing the most visitors to your site as well as the highest percentage of visitors who convert into customers. You may learn that customers are finding you through an unexpected search, or that the paid search terms you’re using are not performing well.
 
 ### For example…
 

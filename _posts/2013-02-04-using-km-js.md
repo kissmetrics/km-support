@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript Library - Running an A/B Test with KM.ab
 categories: apis
-summary: The KISSmetrics JavaScript Library provides a JS function to help you set up the A/B test. It does the three things every A/B test needs, all in one fell swoop. However, it requires you to edit some JavaScript on your site, though. Read here for some examples.
+summary: The Kissmetrics JavaScript Library provides a JS function to help you set up the A/B test. It does the three things every A/B test needs, all in one fell swoop. However, it requires you to edit some JavaScript on your site, though. Read here for some examples.
 permalink: /a-b-testing/using-km-js/index.html
 ---
 * Table of Contents
@@ -13,7 +13,7 @@ The Javascript API provides a function, `KM.ab`, to set up the majority of the A
 
 1. Randomly assigns the current visitor to one of the variations passed in. (`KM.ab` returns the variation that was assigned, so you can save it as a JS variable.)
 2. Ensures that subsequent calls to `KM.ab` returns the same variation for the visitor.
-3. Sets a KISSmetrics property with the name of your experiment, and the value is the selected variant. In our example below, the A/B test will set the property "**Signup Button Color**" to either "**red**" or "**green**". You will be able to segment any report using this property.
+3. Sets a Kissmetrics property with the name of your experiment, and the value is the selected variant. In our example below, the A/B test will set the property "**Signup Button Color**" to either "**red**" or "**green**". You will be able to segment any report using this property.
 
 # Full Example
 
@@ -28,7 +28,7 @@ Below shows an example of a complete A/B test, using `KM.ab`:
 <img src="/images/green.png" id="signup_button" style="display: none"/>
 
 <script type="text/javascript">
-  // If for some reason KISSmetrics doesn't load or there is an error we'll just show the default green button after 1.5s
+  // If for some reason Kissmetrics doesn't load or there is an error we'll just show the default green button after 1.5s
   var abTimeout1 = setTimeout(function(){
     document.getElementById("signup_button").style.display = '';
   }, 1500);

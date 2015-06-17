@@ -2,13 +2,13 @@
 layout: post
 title: Person Details
 categories: tools
-summary: KISSmetrics is unique because it tracks activity down to the person level. Our Person Details pages help summarize each person's activity.
+summary: Kissmetrics is unique because it tracks activity down to the person level. Our Person Details pages help summarize each person's activity.
 ---
 * Table of Contents
 {:toc}
 * * *
 
-KISSmetrics is unique because it tracks activity down to the person level. Our Person Details pages help summarize each person's activity.
+Kissmetrics is unique because it tracks activity down to the person level. Our Person Details pages help summarize each person's activity.
 
 ## Individual Metrics
 
@@ -39,7 +39,7 @@ Similar to the Individual Metrics, we'll list some data about how this person fi
 
 ## Activity Calendar
 
-In the main area of Person Details, we provide a calendar of when each particular user was active. Switch between week and month views, and narrow in on what a person did within any particular day. That way, you can "play back" what a person did on that day, as if you were rewatching their activity in [KISSmetrics Live][live].
+In the main area of Person Details, we provide a calendar of when each particular user was active. Switch between week and month views, and narrow in on what a person did within any particular day. That way, you can "play back" what a person did on that day, as if you were rewatching their activity in [Kissmetrics Live][live].
 
 [mapping]: https://app.kissmetrics.com/mapping
 [metrics]: https://app.kissmetrics.com/metrics

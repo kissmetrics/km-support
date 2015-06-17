@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Step 3 - Recording Your First KISSmetrics Event with Our JavaScript
+title: Step 3 - Recording Your First Kissmetrics Event with Our JavaScript
 categories: learn
 portal: university
 summary: How to add the custom events that address <em>your</em> business' conversions.
@@ -40,7 +40,7 @@ See two examples at <https://gist.github.com/eskfung/6767787>, which is taken fr
 
 # Testing Your Installation
 
-There are a couple of ways to test that you did this correctly - using the Live tab in our app, or if you're more technical, using your browser's developer tools. See our guide on [Testing: How to Verify KISSmetrics Is Working][testing]
+There are a couple of ways to test that you did this correctly - using the Live tab in our app, or if you're more technical, using your browser's developer tools. See our guide on [Testing: How to Verify Kissmetrics Is Working][testing]
 
 ## Exercise (`record` with the API)
 

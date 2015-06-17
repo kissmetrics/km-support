@@ -20,7 +20,7 @@ But which features should you prioritize? Which ones get the most people to sign
 
 And this goes WAY beyond just trying to figure out which features get the most attention in your UI. You have limited engineering time and can't improve every part of your product. You need to know exactly where your team needs to spend their time.
 
-The KISSmetrics Power Report helps you make these decisions with confidence.
+The Kissmetrics Power Report helps you make these decisions with confidence.
 
 You'll be able to compare the conversion rates between customers that use certain features and those that don't. This tells you which features should get the most priority and which ones can be left for later.
 
@@ -58,7 +58,7 @@ In this case, we've already built a metric that tracks the conversion rate from 
 
 Whenever you build a new column, you can select a certain group of people to be included or excluded in the data.
 
-For the first column, you want to include people that have used two features of your product. Let's use KISSmetrics as an example and compare the impact that Funnel Reports and Cohort Reports have on signup rates. So we'll build a column that gives us the signup rates for people that have used the Funnel Report AND the Cohort Report. Here's what the settings look like:
+For the first column, you want to include people that have used two features of your product. Let's use Kissmetrics as an example and compare the impact that Funnel Reports and Cohort Reports have on signup rates. So we'll build a column that gives us the signup rates for people that have used the Funnel Report AND the Cohort Report. Here's what the settings look like:
 
 ![KM-Feature-Power-Report-Funnel-Cohort][ss5]
 

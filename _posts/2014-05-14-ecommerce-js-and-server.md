@@ -12,7 +12,7 @@ permalink: /best-practices/ecommerce-essentials/js-and-server-side-examples
 
 # Introduction
 
-Below is some basic information for you to get started with KISSmetrics. Please let your account manager know if you need information outside of our JavaScript and server side APIs. Everything in `<<double brackets>>` needs to be replaced with an element ID or a variable. Also, for more information, you can use our [E-commerce Essentials Guide][ecommerce-essentials] and [JavaScript Library][js-lib].
+Below is some basic information for you to get started with Kissmetrics. Please let your account manager know if you need information outside of our JavaScript and server side APIs. Everything in `<<double brackets>>` needs to be replaced with an element ID or a variable. Also, for more information, you can use our [E-commerce Essentials Guide][ecommerce-essentials] and [JavaScript Library][js-lib].
 
 **IMPORTANT** - When using both JavaScript and server-side libraries, you must [reuse the JavaScript ID][js-identities] so that your customer's historical information stays consistent. If you switch to server-side tracking and use a new customer ID, this will create a new user and you will have a disconnect between JS and server-side. Refer to [this support page][js-identities] for more details.
 
@@ -48,7 +48,7 @@ Then when they view the cart:
 _kmq.push(['record', 'Viewed Cart', {'Viewed Cart SKU':'<<Value>>', 'Viewed Cart Name':'<<Value>>', 'Viewed Cart Price':'<<99.95>>'}]);
 {% endhighlight %}
 
-Tracking the checkout process is one of the most important parts of KISSmetrics. Once again you can use our record call to track this:
+Tracking the checkout process is one of the most important parts of Kissmetrics. Once again you can use our record call to track this:
 
 {% highlight js %}
 _kmq.push(['record', 'Start Checkout', {'Checkout SKU':'<<Value>>', 'Checkout Name':'<<Value>>', 'Checkout Price':'<<99.95>>'}]);

@@ -12,7 +12,7 @@ The JavaScript library keeps track of each user's ID as a first party cookie. Th
 
 ## Several Subdomains
 
-Let's say you want to track what happens as people browse on different **subdomains** of your site, and you want to see it all in the same KISSmetrics site.
+Let's say you want to track what happens as people browse on different **subdomains** of your site, and you want to see it all in the same Kissmetrics site.
 
 * http://www.mysite.com
 * http://blog.mysite.com
@@ -30,7 +30,7 @@ If you have put the same JavaScript code on all of these subdomains, by default 
 
 ### To Track Subdomains Separately...
 
-If you want to track the subdomains separately in two KISSmetrics sites, you can specify a cookie domain `KM_COOKIE_DOMAIN` before the KISSmetrics Javascript is included. This might look like:
+If you want to track the subdomains separately in two Kissmetrics sites, you can specify a cookie domain `KM_COOKIE_DOMAIN` before the Kissmetrics Javascript is included. This might look like:
 
 {% highlight html %}
 <script type="text/javascript">
@@ -58,7 +58,7 @@ This is a little more difficult, because now each domain has its own set of cook
 So far, we've seen two methods that work:
 
 1. Maintain their ID server-side. This is most useful when the user can sign in to both domains, typically if you have a Single Sign-On system. That lets you identify a logged-in customer with the same username/email address/database ID, regardless of which domain they're on.
-2. When someone leaves one domain to go to another, append the destination URL with our [URL API][url], which lets you pass their KM ID from the first domain to the next. This way lets you pass our anonymous IDs from a domain to the next. Be sure that the same KISSmetrics code block is on both domain's webpages.
+2. When someone leaves one domain to go to another, append the destination URL with our [URL API][url], which lets you pass their KM ID from the first domain to the next. This way lets you pass our anonymous IDs from a domain to the next. Be sure that the same Kissmetrics code block is on both domain's webpages.
 
 Let's look at an example of #2:
 

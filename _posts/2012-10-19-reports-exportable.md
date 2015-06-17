@@ -10,7 +10,7 @@ summary: Some of our report data can be exported to CSV files. Here is a quick r
 
 Some of our report data can be exported to CSV files. We email you a link to download the generated file. Here is a quick reference for which of our reports support exporting.
 
-KISSmetrics Report | Supports Exporting to CSV?
+Kissmetrics Report | Supports Exporting to CSV?
 --------------------------- | -----------
 [Metrics - Dashboard][dashboard] | No
 [Metric Detail - Comparison Over Time][over-time] | Yes

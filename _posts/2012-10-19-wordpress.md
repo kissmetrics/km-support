@@ -2,13 +2,13 @@
 layout: post
 title: WordPress Plugin
 categories: integrations
-summary: Plugins for installing KISSmetrics on WordPress are available.
+summary: Plugins for installing Kissmetrics on WordPress are available.
 ---
 * Table of Contents
 {:toc}
 * * *
 
-The official KISSmetrics WordPress plugin is now available ([download link][wp-plugin]). The source is also on [Github][github].
+The official Kissmetrics WordPress plugin is now available ([download link][wp-plugin]). The source is also on [Github][github].
 
 When you use this plugin, you *do not need to follow our usual instructions for installing the JavaScript snippet.* The plugin takes care of that for you, and more.
 
@@ -18,7 +18,7 @@ When you use this plugin, you *do not need to follow our usual instructions for 
 1. [Download the plugin][wp-plugin] and extract the contents.
 2. Upload the entire `kissmetrics` folder to your `/wp-content/plugins/` directory.
 3. In the WordPress admin dashboard, go to the `Plugins` menu and activate the plugin.
-4. Go to `Settings` menu, then to the KISSmetrics settings.
+4. Go to `Settings` menu, then to the Kissmetrics settings.
 5. Add your API key here and select which events you would like to have automatically tracked.
 
 ![Screenshot][wp-settings]

@@ -2,7 +2,7 @@
 layout: post
 title: Detecting Duplicates
 categories: troubleshooting
-summary: KISSmetrics detects and ignores duplicate events and properties.
+summary: Kissmetrics detects and ignores duplicate events and properties.
 ---
 * Table of Contents
 {:toc}
@@ -10,7 +10,7 @@ summary: KISSmetrics detects and ignores duplicate events and properties.
 
 ## Duplicate Events
 
-We ignore a KISSmetrics event if the two requests match along three parameters (according to our [API specifications][specs]):
+We ignore a Kissmetrics event if the two requests match along three parameters (according to our [API specifications][specs]):
 
 1. Identity (`_p` parameter)
 2. Name of the event (`_n` parameter)
@@ -20,7 +20,7 @@ In other words, if we see the *same* person doing the *same* event at the exact 
 
 ## Duplicate Properties
 
-We handle KISSmetrics properties similarly, if the two (or more) requests match along three parameters (according to our [API specifications][specs]):
+We handle Kissmetrics properties similarly, if the two (or more) requests match along three parameters (according to our [API specifications][specs]):
 
 1. Identity (`_p` parameter)
 2. Name of the property (`[property name]` parameter)

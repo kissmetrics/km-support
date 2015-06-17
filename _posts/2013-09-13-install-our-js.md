@@ -38,9 +38,9 @@ Customers have successfully installed our JavaScript library through their tag m
 
 Content-management systems often allow plugins to help you extend your site's functionality. We provide an official [WordPress plugin][wp-plugin] - the plugin already does the job of adding the JavaScript library to every page of your WordPress installation. If you use the plugin, you won't have to go digging in the WordPress templates to manually add our JS.
 
-See if your own CMS has a KISSmetrics plugin; chances are it will also try to add the JavaScript to each page. Please check the plugin's documentation!
+See if your own CMS has a Kissmetrics plugin; chances are it will also try to add the JavaScript to each page. Please check the plugin's documentation!
 
-## If you plan to test KISSmetrics locally (`localhost`)...
+## If you plan to test Kissmetrics locally (`localhost`)...
 
 We highly recommend [creating a new API key][create-product] to separate your testing data from your actual live, production data. Additionally, read about [developing locally][local] with our JavaScript library, because its functionality depends on the existence of browser cookies.
 

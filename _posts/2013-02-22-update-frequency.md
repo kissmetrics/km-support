@@ -13,7 +13,7 @@ We are continually processing the data from activity that is currently happening
 
 ![Data Status][data-status]
 
-KISSmetrics Report | How up-to-date is the data?
+Kissmetrics Report | How up-to-date is the data?
 --------------------------- | -----------
 [Metrics - Dashboard][dashboard] | Updated around every 24 hours. Hover over an individual metric's info icon for more details. ![Metric Dashboard][metric-dashboard]
 [Metric Detail][over-time] | As up-to-date as the last time we've processed data (about 2-5 hours).

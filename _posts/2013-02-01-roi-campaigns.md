@@ -20,13 +20,13 @@ You'll need to be tracking your revenue. If you haven't set this up already, che
 
 There are several ways to track your marketing campaigns. The most popular method is to use UTM parameters. By adding some extra data to a link, we can track each person that goes through that link.
 
-These work exactly like they do in Google Analytics. Use [Google's URL Builder][url-builder] to name your campaign. Then whenever someone clicks on your link, KISSmetrics will record an "Ad Campaign Hit" event and track your campaign info as properties.
+These work exactly like they do in Google Analytics. Use [Google's URL Builder][url-builder] to name your campaign. Then whenever someone clicks on your link, Kissmetrics will record an "Ad Campaign Hit" event and track your campaign info as properties.
 
 In other words, you can keep tracking all your campaigns in the same way you've been tracking them for Google Analytics. This is the easiest way to get started.
 
 But what if you want more control on how you tag your campaigns and events?
 
-With KISSmetrics, you can also trigger any event you want just by modifying the URL.
+With Kissmetrics, you can also trigger any event you want just by modifying the URL.
 
 For example, if you used this link:
 
@@ -41,7 +41,7 @@ Check out our [documentation on the URL API][url-api] for all the details on how
 
 ### What about AdWords?
 
-When auto-tagging links in AdWords, Google uses a special parameter called "gclid." This gets added to all your AdWords links automatically. When KISSmetrics sees it, we record an "Ad Campaign Hit" event but we can't see any other info about your campaign.
+When auto-tagging links in AdWords, Google uses a special parameter called "gclid." This gets added to all your AdWords links automatically. When Kissmetrics sees it, we record an "Ad Campaign Hit" event but we can't see any other info about your campaign.
 
 So if you're using the AdWords auto-tagging but want more info about your campaigns, you'll need to manually edit the links in your ads using one of the methods above. This won't interrupt the auto-tagging at all.
 
@@ -49,7 +49,7 @@ So if you're using the AdWords auto-tagging but want more info about your campai
 
 Now that you're recording revenue data and have been tracking your campaigns, let's pull some data.
 
-First, click on the Revenue tab at the top of your KISSmetrics account:
+First, click on the Revenue tab at the top of your Kissmetrics account:
 
 ![KM-Revenue-Tab][ss1]
 
@@ -73,16 +73,16 @@ Remember, the standard UTM parameters include at least three items:
 
 Campaign content and campaign terms are also used on occasion.
 
-Google Analytics encourages you to use the source, medium, and name every time. While KISSmetrics will record whatever you have even if you only use one of them, using all three is a good habit to get into.
+Google Analytics encourages you to use the source, medium, and name every time. While Kissmetrics will record whatever you have even if you only use one of them, using all three is a good habit to get into.
 
 And when you segment your report, you can choose whichever campaign property that you want to look at. You can also segment your data with any other property that you've been tracking.
 
-If you're using the KISSmetrics URL API to track your links and campaigns, select the property that you're actively using.
+If you're using the Kissmetrics URL API to track your links and campaigns, select the property that you're actively using.
 
 
 ### "First Ever" vs "Last Ever"
 
-Remember how we picked "First Ever"? That means the table is showing us the first touch point our campaigns. Since KISSmetrics is a customer analytics tool, we know where our customers originally came from to connect revenue back to those first touch points.
+Remember how we picked "First Ever"? That means the table is showing us the first touch point our campaigns. Since Kissmetrics is a customer analytics tool, we know where our customers originally came from to connect revenue back to those first touch points.
 
 This will tell you which campaigns originally brought customers to you.
 
@@ -107,7 +107,7 @@ Since the data is sorted by total revenue by default, the campaigns that move th
 
 What if your campaign isn't on this list?
 
-Then KISSmetrics hasn't recorded any revenue from that campaign.
+Then Kissmetrics hasn't recorded any revenue from that campaign.
 
 ### 2. Which campaigns have a relatively high lifetime value?
 

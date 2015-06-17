@@ -21,7 +21,7 @@ The Power Report lets you manipulate all of your events and properties in nearly
 
 This data sheet provides some sample use cases for which the Power Report can be used, and how to create one to answer these cases.
 
-Link: [KISSmetrics Power Report Data Sheet][data-sheet]
+Link: [Kissmetrics Power Report Data Sheet][data-sheet]
 
 # Creating a Report
 
@@ -75,7 +75,7 @@ Report columns are the **columns** of the report. They provide the **initial dat
 
 The Power Report is unique because you can:
 
-* Look at *Every Person* KISSmetrics has recorded.
+* Look at *Every Person* Kissmetrics has recorded.
 * Look at *Every Time* an event was done or a property was set.
 
 ![Report Columns][ss-columns]
@@ -84,7 +84,7 @@ The Power Report is unique because you can:
 
 * **Existing Metrics**: Reuse any existing Metric that is currently in your metrics dashboard.
 * **On-the-fly Metrics**: Use any of the [Metric Calculations][calcs] just for this power report.
-* **Total People**: Look at *Every Person* KISSmetrics has recorded.
+* **Total People**: Look at *Every Person* Kissmetrics has recorded.
 * **Total Times**: Look at *Every Time* an event was done or a property was set.
 
 #### Populations
@@ -125,7 +125,7 @@ In this video, we explore an example business question:
 {% include summaries/power_report_summary.html %}
 
 [pricing]: http://www.kissmetrics.com/pricing/
-[data-sheet]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/power-report/KISSmetrics-Power-Report-Data-Sheet.pdf
+[data-sheet]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/power-report/Kissmetrics-Power-Report-Data-Sheet.pdf
 
 [calcs]: /tools/metrics/metric-calculations
 [populations]: /tools/people-search#how-do-i-create-groups-in-kissmetrics-

@@ -10,7 +10,7 @@ summary: A suggestion for tracking each form field as an event.
 
 **Note: This method requires jQuery**.
 
-Duncan's post on the [Distilled blog][distilled] demonstrates how to track form abandonment in Google Analytics. You can adapt the same JavaScript and jQuery code to track each form input as individual KISSmetrics events.
+Duncan's post on the [Distilled blog][distilled] demonstrates how to track form abandonment in Google Analytics. You can adapt the same JavaScript and jQuery code to track each form input as individual Kissmetrics events.
 
 # The Code
 

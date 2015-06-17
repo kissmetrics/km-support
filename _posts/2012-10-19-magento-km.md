@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Magento and KISSmetrics
+title: Magento and Kissmetrics
 categories: integrations
-summary: Set up KISSmetrics to track each step of a Magento-driven checkout process.
+summary: Set up Kissmetrics to track each step of a Magento-driven checkout process.
 ---
 * Table of Contents
 {:toc}
@@ -16,11 +16,11 @@ Reference: [How to Add Custom JavaScript][m-go]
 
 ## Magento One Page Checkout
 
-Magento's One Page Checkout system handles the entire checkout process in one URL. If you'd like to see exactly where customers are dropping off during checkout, you can add some KISSmetrics JavaScript Library calls to record events for each checkout step.
+Magento's One Page Checkout system handles the entire checkout process in one URL. If you'd like to see exactly where customers are dropping off during checkout, you can add some Kissmetrics JavaScript Library calls to record events for each checkout step.
 
 ### Including the API Calls
 
-Several articles explain how to integrate Google Analytics with Magento, and adapting them to KISSmetrics is straightforward. We're going to edit `opcheckout.js` in ``\skin\frontend\default\YOURTHEME\js`` - if that file is not there, copy it from `\skin\frontend\base\default\js`.
+Several articles explain how to integrate Google Analytics with Magento, and adapting them to Kissmetrics is straightforward. We're going to edit `opcheckout.js` in ``\skin\frontend\default\YOURTHEME\js`` - if that file is not there, copy it from `\skin\frontend\base\default\js`.
 
 Now let's edit the `gotoSection` function:
 

@@ -3,7 +3,7 @@ layout: post
 title: Step 1 - What We Mean By "Events"
 categories: learn
 portal: university
-summary: (<em>KISSmetrics Concept</em>) Events mark when people have done something meaningful.
+summary: (<em>Kissmetrics Concept</em>) Events mark when people have done something meaningful.
 ---
 * Table of Contents
 {:toc}
@@ -16,7 +16,7 @@ summary: (<em>KISSmetrics Concept</em>) Events mark when people have done someth
 
 1. Events represent actions that your customers do.
 2. Events can represent *major* actions in the customer's lifetime (`Signed Up`), or more *minor* ones (`Opened an Email`). Google Analytics [refers to these as "macro-conversions" and "micro-conversions"][ga-conversions].
-3. Our [Best Practices][best-practices] section has tips on the events you would want to track. Feel free to use it like a checklist, but keep in mind nothing is "required" - you should use KISSmetrics to achieve *your* goals.
+3. Our [Best Practices][best-practices] section has tips on the events you would want to track. Feel free to use it like a checklist, but keep in mind nothing is "required" - you should use Kissmetrics to achieve *your* goals.
 4. There are [several ways to set up your events][ways-to-send-data]. We will go over the specifics in additional videos.
 
 Common terminology we use for events:

@@ -8,7 +8,7 @@ summary: Information about our basic Objective-C/Cocoa library, for iOS and OS X
 {:toc}
 * * *
 
-Bring KISSmetrics to your iOS and OS X apps with our Objective-C library. It allows you to record events and set properties.
+Bring Kissmetrics to your iOS and OS X apps with our Objective-C library. It allows you to record events and set properties.
 
 ## Setup
 
@@ -44,7 +44,7 @@ To get the best results you should identify your known users once they have logg
 
 ### Event
 
-Recording an event with KISSmetrics is done like this:
+Recording an event with Kissmetrics is done like this:
 
 {% highlight obj-c %}
 [[KISSMetricsAPI sharedAPI] recordEvent:@"My Event" withProperties:nil];
@@ -71,4 +71,4 @@ When you implement tracking with this library, we will send events to our tracki
 
 This data will be backdated to reflect what the customer did at the time they did it, not the time the data was uploaded to us.
 
-[api]: https://github.com/kissmetrics/KISSmetrics-iOS-Mac-OS-X-Library
+[api]: https://github.com/kissmetrics/Kissmetrics-iOS-Mac-OS-X-Library

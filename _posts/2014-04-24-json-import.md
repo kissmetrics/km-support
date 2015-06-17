@@ -3,14 +3,14 @@ layout: post
 categories: integrations
 title: "JSON Files as an External Data Source"
 tags: []
-summary: Import data to KISSmetrics using .json files.
+summary: Import data to Kissmetrics using .json files.
 permalink: /integrations/json-import/index.html
 ---
 * Table of Contents
 {:toc}
 * * *
 
-You can import `.json` files into KISSmetrics to import data into your account. We'll accept both one-time uploads and a recurring import of `.json` files from your Amazon S3 Bucket.
+You can import `.json` files into Kissmetrics to import data into your account. We'll accept both one-time uploads and a recurring import of `.json` files from your Amazon S3 Bucket.
 
 We recommend you read [People, Events, and Properties][pep] and [Common Methods][common-methods] before getting started here.
 

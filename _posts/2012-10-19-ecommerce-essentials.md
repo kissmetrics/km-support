@@ -10,9 +10,9 @@ summary: Here's a list to get you started with picking the right events to track
 
 ## Introduction
 
-Welcome to KISSmetrics! This handy guide will help you get started by showing you what we think are the best practice essentials for tracking E-Commerce data.
+Welcome to Kissmetrics! This handy guide will help you get started by showing you what we think are the best practice essentials for tracking E-Commerce data.
 
-KISSmetrics has helped many e-commerce businesses become successful by using customer analytics, and you too can join in on the fun! Before you start tracking customer data with KISSmetrics, it’s important to think about what you need to know about your customers so that you can provide a better experience for them.
+Kissmetrics has helped many e-commerce businesses become successful by using customer analytics, and you too can join in on the fun! Before you start tracking customer data with Kissmetrics, it’s important to think about what you need to know about your customers so that you can provide a better experience for them.
 
 An e-commerce business wants to move customers through four major stages in their lifecycle:
 
@@ -38,7 +38,7 @@ When to trigger the event and any other contextual information
 
 ## Tracking Marketing/Acquisition Behavior
 
-**KISSmetrics automatically tracks all of these marketing events and properties for you!**
+**Kissmetrics automatically tracks all of these marketing events and properties for you!**
 
 
 ### Visited Site
@@ -118,11 +118,11 @@ Consider tracking the Checkout Steps as [form submissions][form-fields], which c
 
 *Notes:*
 
-* *KISSmetrics automatically skips all password, hidden and text area fields as well as sensitive fields (like credit card info).*
+* *Kissmetrics automatically skips all password, hidden and text area fields as well as sensitive fields (like credit card info).*
 * *If you use jQuery or Ajax to dynamically load a form into the page after the page has loaded, you’ll need to use the JavaScript API command `trackSubmit` to track your checkout process correctly.*
 * *Our code does not validate the contents of the form as some parts can be considered optional on your site or app. If a visitor fills out a form incorrectly and submits it, we will still count that as a submit event.*
 
-Use one of these carts? Learn more about integrating KISSmetrics with your cart:
+Use one of these carts? Learn more about integrating Kissmetrics with your cart:
 
 * [UltraCart][ultracart]
 * [Magento Go or Magento One-Page Checkout][magento]
@@ -157,7 +157,7 @@ Triggered when a customer has finished the checkout process and purchased. This 
 * `Order Total` indicates the Order Total after possible tax and shipping.
 * `Order Subtotal` indicates the Order Subtotal from all items before tax and shipping.
 
-To track an order with multiple items, set properties for each item in the cart such as it’s SKU #, Product Name, and any other information you want. *KISSmetrics needs to see each item as a separate timestamp to log correctly to the customer, because we [deduplicate properties][dedupe] if the same person receives the same property at the same time.*
+To track an order with multiple items, set properties for each item in the cart such as it’s SKU #, Product Name, and any other information you want. *Kissmetrics needs to see each item as a separate timestamp to log correctly to the customer, because we [deduplicate properties][dedupe] if the same person receives the same property at the same time.*
 
 Here's example code for a purchase with 4 different items:
 
@@ -173,7 +173,7 @@ _kmq.push(function() {
 </script>
 {% endhighlight %}
 
-`KM.ts()` returns the current timestamp. In order to log each item in a single purchase event, KISSmetrics needs to see each item individually. The example code delays each `set` call by 1 second so that KISSmetrics can record all the items. The parameter `_d` is set to 1 to indicate you're using a custom timestamp.
+`KM.ts()` returns the current timestamp. In order to log each item in a single purchase event, Kissmetrics needs to see each item individually. The example code delays each `set` call by 1 second so that Kissmetrics can record all the items. The parameter `_d` is set to 1 to indicate you're using a custom timestamp.
 
 The following are some suggested properties to track when a customer completes an order:
 

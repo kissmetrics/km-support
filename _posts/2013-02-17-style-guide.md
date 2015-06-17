@@ -1,16 +1,16 @@
 ---
 layout: post
 categories: misc
-title: "KISSmetrics Support Style Guide"
+title: "Kissmetrics Support Style Guide"
 tags: []
-summary: A guide to help style KISSmetrics Support Articles.
+summary: A guide to help style Kissmetrics Support Articles.
 permalink: /misc/styleguide.html
 ---
 * Table of Contents
 {:toc}
 * * *
 
-This style guide will help you create visually consistant articles for the KISSmetrics Support site. Articles are written in Markdown and automatically converted to HTML. More information including a complete list of [Markdown syntax formatting can be found at Daring Fireball](http://daringfireball.net/projects/markdown/basics).
+This style guide will help you create visually consistant articles for the Kissmetrics Support site. Articles are written in Markdown and automatically converted to HTML. More information including a complete list of [Markdown syntax formatting can be found at Daring Fireball](http://daringfireball.net/projects/markdown/basics).
 
 ## Header Examples
 
@@ -65,10 +65,10 @@ The blockquote element represents a section that is being quoted from another so
 
 Here’s an example of correct usage:
 
-> KISSmetrics changed our view on what a company should be tracking. KISSmetrics tracks data that is important to your business and it shows you how to improve those numbers. Jane Park, CEO/Founder of Julep Entrepreneur
+> Kissmetrics changed our view on what a company should be tracking. Kissmetrics tracks data that is important to your business and it shows you how to improve those numbers. Jane Park, CEO/Founder of Julep Entrepreneur
 
-	> KISSmetrics changed our view on what a company should be tracking.
-	> KISSmetrics tracks data that is important to your business and it shows you how to improve those numbers.
+	> Kissmetrics changed our view on what a company should be tracking.
+	> Kissmetrics tracks data that is important to your business and it shows you how to improve those numbers.
 	> Jane Park, CEO/Founder of Julep Entrepreneur
 
 * * *

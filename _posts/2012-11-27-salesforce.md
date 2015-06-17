@@ -2,7 +2,7 @@
 layout: post
 title: Salesforce
 categories: integrations
-summary: See KISSmetrics data within your Salesforce account.
+summary: See Kissmetrics data within your Salesforce account.
 published: true
 ---
 * Table of Contents
@@ -12,24 +12,24 @@ published: true
 **This integration requires:**
 
 * A Salesforce account. The integration requires the ability to [create a Visualforce page][visualforce-page], which should be available in every edition.
-* An existing KISSmetrics account in which people are identified by email address. Read more about [Understanding Identities][identities].
-* KISSmetrics API KEY and SECRET from your KISSmetrics account. Please email [support@kissmetrics.com][request] for your unique KISSmetrics account API KEY and SECRET for Salesforce.
+* An existing Kissmetrics account in which people are identified by email address. Read more about [Understanding Identities][identities].
+* Kissmetrics API KEY and SECRET from your Kissmetrics account. Please email [support@kissmetrics.com][request] for your unique Kissmetrics account API KEY and SECRET for Salesforce.
 
-The Salesforce-KISSmetrics integration shows you customer activity pulled straight from KISSmetrics into your Salesforce Contacts. See *what* a customer has done, *when* they did it, *where* they came from, and *how* they are experiencing your business. You’ll have a 360 degree view of how to approach leads and opportunities.
+The Salesforce-Kissmetrics integration shows you customer activity pulled straight from Kissmetrics into your Salesforce Contacts. See *what* a customer has done, *when* they did it, *where* they came from, and *how* they are experiencing your business. You’ll have a 360 degree view of how to approach leads and opportunities.
 
-The Salesforce integration brings in a window to see the KISSmetrics Person Detail page just as if you were looking at KISSmetrics. See customer activity, purchases, revenue, acquisition methods, and a complete timeline of their actions.
+The Salesforce integration brings in a window to see the Kissmetrics Person Detail page just as if you were looking at Kissmetrics. See customer activity, purchases, revenue, acquisition methods, and a complete timeline of their actions.
 
 ![Overview][ssoverview]
 
-## Part 1: Create the Visualforce Page for KISSmetrics Person Details
+## Part 1: Create the Visualforce Page for Kissmetrics Person Details
 
 1. Log in to Salesforce
 2. Click your username in the top right and choose "Setup"
 3. On the left hand side, click "Develop" and then "Pages"
-4. Name your new page whatever you’d like: "KISSmetrics Person Details" or “KISSmetrics” works
-5. Paste the code below into the "Visualforce Markup" section replacing the __API_KEY__ and __SECRET__ with that your KISSmetrics account’s KEY and SECRET.
+4. Name your new page whatever you’d like: "Kissmetrics Person Details" or “Kissmetrics” works
+5. Paste the code below into the "Visualforce Markup" section replacing the __API_KEY__ and __SECRET__ with that your Kissmetrics account’s KEY and SECRET.
 
-*Reminder: Please email [support@kissmetrics.com][request] for your unique KISSmetrics account API KEY and SECRET for Salesforce.*
+*Reminder: Please email [support@kissmetrics.com][request] for your unique Kissmetrics account API KEY and SECRET for Salesforce.*
 
 {% highlight html %}
 <apex:page standardController="Contact">
@@ -42,7 +42,7 @@ The Salesforce integration brings in a window to see the KISSmetrics Person Deta
 </apex:page>
 {% endhighlight %}
 
-## Part 2: Add the KISSmetrics Page to Salesforce Contact View
+## Part 2: Add the Kissmetrics Page to Salesforce Contact View
 
 1. Still in the `<username>` -> "Setup" area, on the left hand side of the page go to "Customize", "Contacts", then "Page Layouts"
 2. Locate the page layout you are currently using (should be just one) and click "Edit"

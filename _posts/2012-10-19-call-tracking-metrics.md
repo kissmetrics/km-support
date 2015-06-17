@@ -2,7 +2,7 @@
 layout: post
 title: Call Tracking Metrics
 categories: integrations
-summary: Import data from Call Tracking Metrics into KISSmetrics.
+summary: Import data from Call Tracking Metrics into Kissmetrics.
 ---
 * Table of Contents
 {:toc}
@@ -17,7 +17,7 @@ With Call Tracking Metrics, you can find out:
 * Which phone conversation came from which ad?
 * Who on your team picked up the phone, and did the caller buy during that conversation?
 
-With Call Tracking Metrics **AND** KISSmetrics, you can connect the dots between phones calls, website activity, and email opens/clicks. KISSmetrics reports will let you answer:
+With Call Tracking Metrics **AND** Kissmetrics, you can connect the dots between phones calls, website activity, and email opens/clicks. Kissmetrics reports will let you answer:
 
 * How do your callers interact with your website after the call?
 * If deals are not closed over a call, does the person eventually buy through your website, without contacting your sales team?
@@ -30,9 +30,9 @@ With Call Tracking Metrics **AND** KISSmetrics, you can connect the dots between
 
 ## Setup
 
-1. Within your Call Tracking Metrics account, visit the [integration page for KISSmetrics][km-settings].
-2. Enter your KISSmetrics API key.
-3. Watch as information from phone calls is recorded in KISSmetrics.
+1. Within your Call Tracking Metrics account, visit the [integration page for Kissmetrics][km-settings].
+2. Enter your Kissmetrics API key.
+3. Watch as information from phone calls is recorded in Kissmetrics.
 
 ## Integration Details
 
@@ -52,7 +52,7 @@ Event Name | Properties | Identity
 
 #### Frequency of Import
 
-* Once each call has been logged in Call Tracking Metrics, data for it is immediately sent to KISSmetrics.
+* Once each call has been logged in Call Tracking Metrics, data for it is immediately sent to Kissmetrics.
 
 ## An Example
 
@@ -76,7 +76,7 @@ Call Tracking Metrics provides an area to add notes about the caller. They provi
 
 [![ctm-edit][ctm-edit]][ctm-edit]
 
-Entering an email address aliases the email to the caller's phone number, so that events registered under either ID will represent the same person in KISSmetrics. This is key in tying together the call information you receive from this integration to the existing data you already collect online in KISSmetrics.
+Entering an email address aliases the email to the caller's phone number, so that events registered under either ID will represent the same person in Kissmetrics. This is key in tying together the call information you receive from this integration to the existing data you already collect online in Kissmetrics.
 
 [ctm]: https://calltrackingmetrics.com/
 [callcode]: http://en.wikipedia.org/wiki/List_of_country_calling_codes

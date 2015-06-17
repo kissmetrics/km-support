@@ -36,7 +36,7 @@ To step through how to read a sample report, here is an annotated screenshot. Pl
 [![Explanation][explanation]][explanation]
 
 
-## Section 4. Comparing cohort results to other KISSmetrics reports
+## Section 4. Comparing cohort results to other Kissmetrics reports
 
 #### 1. The people column in the Cohort Report does not match up with a People Search for the same week or month.
 

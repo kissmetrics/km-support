@@ -10,9 +10,9 @@ summary: Here's a list to get you started with picking the right events to track
 
 ## Introduction
 
-Welcome to KISSmetrics! This handy guide will help you get started by showing you what we think are the best practice essentials for tracking SaaS data.
+Welcome to Kissmetrics! This handy guide will help you get started by showing you what we think are the best practice essentials for tracking SaaS data.
 
-We are a SaaS business, and we want to help other SaaS businesses become successful by using customer analytics. Before you start tracking customer data with KISSmetrics, it’s important to think about what you need to know about your customers so that you can provide a better experience for them.
+We are a SaaS business, and we want to help other SaaS businesses become successful by using customer analytics. Before you start tracking customer data with Kissmetrics, it’s important to think about what you need to know about your customers so that you can provide a better experience for them.
 
 A SaaS business wants to move customers through five major stages in their lifecycle:
 
@@ -39,7 +39,7 @@ When to trigger the event and any other contextual information
 
 ## Tracking Acquisition Behavior
 
-**KISSmetrics automatically tracks all of these marketing events and properties for you!**
+**Kissmetrics automatically tracks all of these marketing events and properties for you!**
 
 ### Visited Site
 

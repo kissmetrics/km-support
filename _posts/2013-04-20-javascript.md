@@ -19,7 +19,7 @@ Our Javascript Library is our most full-featured library and is what we recommen
 
 # Setup
 
-Log into your KISSmetrics account and locate your personalized code snippet in your [Site Settings][settings]. You'll be able to find your unique embed code and instructions there.
+Log into your Kissmetrics account and locate your personalized code snippet in your [Site Settings][settings]. You'll be able to find your unique embed code and instructions there.
 
 The JavaScript library looks like this:
 
@@ -98,7 +98,7 @@ _kmq.push(['set', {'gender':'male'}]);
 
 /* Records an event "Signed Up" in the past.
  * This demonstrates how to pass the '_t' and '_d' from our
- * specifications as regular KISSmetrics properties.
+ * specifications as regular Kissmetrics properties.
  * 1234567890 = 13 Feb 2009 23:31:30 GMT
  */
 _kmq.push(['record', 'Signed Up', {'_d':1, '_t':1234567890}])
@@ -151,9 +151,9 @@ Our experience has shown that when making business decisions, it is more useful 
 
 You may still find this information useful. If you have that information separately recorded in your databases, you are welcome to pass that information along to us as KISSmetric properties.
 
-# KISSmetrics Identities
+# Kissmetrics Identities
 
-The function `KM.i()` will return the visitor's KISSmetrics ID, in case you need to pass that along to another function.
+The function `KM.i()` will return the visitor's Kissmetrics ID, in case you need to pass that along to another function.
 
 Remember to wrap this in a [callback function][callback] to ensure the JavaScript library has loaded before you try to fetch this information:
 
@@ -175,7 +175,7 @@ The generated ID is Base64 encoded, so the IDs are generated with only these cha
 
 ## Tracking Individual Page Views
 
-If you are just looking to track every page view on your site we recommend [Google Analytics][ga]. With KISSmetrics we recommend tracking only significant pages with specifically named events. You can use the Event Library to do this, or you can add a `record` command to your pages:
+If you are just looking to track every page view on your site we recommend [Google Analytics][ga]. With Kissmetrics we recommend tracking only significant pages with specifically named events. You can use the Event Library to do this, or you can add a `record` command to your pages:
 
 {% highlight js %}
 _kmq.push(['record', 'Viewed Signup']);
@@ -185,7 +185,7 @@ So when the browser executes the line `_kmq.push(['record', 'Viewed Signup']);`,
 
 ## Tracking Clicks - `trackClick`
 
-If you are just looking to track every click on your your site we recommend [Crazy Egg][crazyegg]. With KISSmetrics we recommend tracking only significant elements. To accomplish this, you can use `trackClick`. This sets up an element to record an event _only_ when the visitor has clicked on the element.
+If you are just looking to track every click on your your site we recommend [Crazy Egg][crazyegg]. With Kissmetrics we recommend tracking only significant elements. To accomplish this, you can use `trackClick`. This sets up an element to record an event _only_ when the visitor has clicked on the element.
 
 `trackClick` takes two parameters: the HTML ID or CSS class of the element you are tracking, and the name of the event to record when someone clicks said element:
 
@@ -236,7 +236,7 @@ _kmq.push(['trackClick', 'invite_link', 'Invite Friends Clicked', {
 
 ## Tracking Outbound Link Clicks - `trackClickOnOutboundLink`
 
-The default method of tracking clicks by KISSmetrics works well for most cases. However, if you are trying to track a click on an outbound link (a link to a different website), it is possible for the browser to change pages before it has a chance to send the data to KISSmetrics. For these cases, there is an alternative function available: `trackClickOnOutboundLink`:
+The default method of tracking clicks by Kissmetrics works well for most cases. However, if you are trying to track a click on an outbound link (a link to a different website), it is possible for the browser to change pages before it has a chance to send the data to Kissmetrics. For these cases, there is an alternative function available: `trackClickOnOutboundLink`:
 
 {% highlight html %}
 <a href="http://othersite.com" id="link1">Visit Other Site</a>
@@ -248,7 +248,7 @@ The default method of tracking clicks by KISSmetrics works well for most cases. 
 This builds in time to send the event by:
 
 * Canceling the original click event's default behavior
-* Sending the data to KISSmetrics
+* Sending the data to Kissmetrics
 * Waiting 250ms
 * Redirecting the browser by setting `document.location`
 
@@ -295,7 +295,7 @@ _kmq.push(['trackSubmit', 'signup_form', 'Sign Up Form Submitted', { 'variation'
 
 ### Auto-Tracking Form Fields
 
-By default, if you are tracking forms with `trackSubmit`, we will also capture all non-sensitive form fields as KISSmetrics properties. (We won't record [passwords, hidden fields, textarea fields, or sensitive fields like credit card numbers and social security numbers][protected].)
+By default, if you are tracking forms with `trackSubmit`, we will also capture all non-sensitive form fields as Kissmetrics properties. (We won't record [passwords, hidden fields, textarea fields, or sensitive fields like credit card numbers and social security numbers][protected].)
 
 You can toggle whether to automatically capture form fields in your [JavaScript Settings][js-settings], under the *Form Fields* section.
 
@@ -375,7 +375,7 @@ The JavaScript library provides a function, `KM.ab`, to set up the majority of t
 
 1. Randomly assigns the current visitor to one of the variations passed in. (`KM.ab` returns the variation that was assigned, so you can save it as a JS variable.)
 2. Ensures that subsequent calls to `KM.ab` returns the same variation for the visitor.
-3. Sets a KISSmetrics property with the name of your experiment, and the value is the selected variant. In our example below, the A/B test will set the property "**Signup Button Color**" to either "**red**" or "**green**". You will be able to segment any report using this property.
+3. Sets a Kissmetrics property with the name of your experiment, and the value is the selected variant. In our example below, the A/B test will set the property "**Signup Button Color**" to either "**red**" or "**green**". You will be able to segment any report using this property.
 
 ### Full Example
 
@@ -390,7 +390,7 @@ Below shows an example of a complete A/B test, using `KM.ab`:
 <img src="/images/green.png" id="signup_button" style="display: none"/>
 
   <script type="text/javascript">
-    // If for some reason KISSmetrics doesn't load or there is an error we'll just show the default green button after 1.5s
+    // If for some reason Kissmetrics doesn't load or there is an error we'll just show the default green button after 1.5s
     var abTimeout1 = setTimeout(function(){
       document.getElementById("signup_button").style.display = '';
     }, 1500);
@@ -478,7 +478,7 @@ What if you want to track two completely different page designs not just changes
 
 #### 1. Create a single landing page and then redirect
 
-In this case you would have each landing page as a different URL. You would then create a single landing page that you direct all traffic to. This page then redirects to one of your variants. The following is what the code on your landing page might look like (this code assumes you are including the standard KISSmetrics Javascript already):
+In this case you would have each landing page as a different URL. You would then create a single landing page that you direct all traffic to. This page then redirects to one of your variants. The following is what the code on your landing page might look like (this code assumes you are including the standard Kissmetrics Javascript already):
 
 {% highlight html %}
 <script type="text/javascript">
@@ -503,11 +503,11 @@ In this case you would have each landing page as a different URL. You would then
 </script>
 {% endhighlight %}
 
-The advantage of this setup is you can use the KISSmetrics A/B testing logic to assign and remember which variant a user sees. The disadvantage is that different users will see different URLs. Additionally there will be small delay where a user will see a blank page and then your landing page.
+The advantage of this setup is you can use the Kissmetrics A/B testing logic to assign and remember which variant a user sees. The disadvantage is that different users will see different URLs. Additionally there will be small delay where a user will see a blank page and then your landing page.
 
 #### 2. Use an iframe, divs, or AJAX to load in your page
 
-In this case you have a single landing page. This landing page then uses an iframe, a hidden div, or AJAX to load in the content for your selected landing page variant. The code to do this would look very similar to the code in the previous example, except instead of setting the `document.location` you'll set an iframe's `src` attribute or use AJAX to load in the content. The advantage of this approach is that you'll have a single URL for all your different landing page variants, but can still use the KISSmetrics A/B testing logic. However, there will still be a small delay before a user sees the final content.
+In this case you have a single landing page. This landing page then uses an iframe, a hidden div, or AJAX to load in the content for your selected landing page variant. The code to do this would look very similar to the code in the previous example, except instead of setting the `document.location` you'll set an iframe's `src` attribute or use AJAX to load in the content. The advantage of this approach is that you'll have a single URL for all your different landing page variants, but can still use the Kissmetrics A/B testing logic. However, there will still be a small delay before a user sees the final content.
 
 ## Callback Functions
 
@@ -550,7 +550,7 @@ This is most beneficial when you're working with a tag manager, where you might 
 
 # Cookies
 
-KISSmetrics uses these *first party* cookies on your domain. They expire after 5 years unless otherwise specified.
+Kissmetrics uses these *first party* cookies on your domain. They expire after 5 years unless otherwise specified.
 
 Cookie Name | Description
 ----------- | -----------
@@ -574,7 +574,7 @@ By default, if you have put the JavaScript code on several of your subdomains, i
 </script>
 {% endhighlight %}
 
-If you want to track the subdomains separately in two different accounts, you can specify a cookie domain `KM_COOKIE_DOMAIN` before the KISSmetrics Javascript is included. This might look like:
+If you want to track the subdomains separately in two different accounts, you can specify a cookie domain `KM_COOKIE_DOMAIN` before the Kissmetrics Javascript is included. This might look like:
 
 {% highlight html %}
 <script type="text/javascript">

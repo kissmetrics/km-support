@@ -30,9 +30,9 @@ summary: Consider these limitations as you are structuring your data and naming 
 
 ### Property Data Types
 
-KISSmetrics determines the type of property based on the value, not on the data type. So if you pass in a string `"123"`, KISSmetrics will treat that as the integer `123`.
+Kissmetrics determines the type of property based on the value, not on the data type. So if you pass in a string `"123"`, Kissmetrics will treat that as the integer `123`.
 
-We recommend not to include currency symbols or other non-numeric characters for data you want to take totals or averages of. KISSmetrics will treat `"$100"` as the string `"$100"`, not the integer `100`. Likewise with `"100 USD"`. Most likely you'll want KISSmetrics to treat such a value as a number so you'll want to pass in just the numeric values (so just `100` or `"100"`).
+We recommend not to include currency symbols or other non-numeric characters for data you want to take totals or averages of. Kissmetrics will treat `"$100"` as the string `"$100"`, not the integer `100`. Likewise with `"100 USD"`. Most likely you'll want Kissmetrics to treat such a value as a number so you'll want to pass in just the numeric values (so just `100` or `"100"`).
 
 To force a property to be numeric, toggle it from the [Property Names page][data-type].
 
@@ -40,7 +40,7 @@ To force a property to be numeric, toggle it from the [Property Names page][data
 
 ## Display Names vs. Original Names
 
-No matter what the display name is it is **very important** that you use the same name within your code consistently. So if for example you later decide you want to call the property `T-Shirt Color` in your reports you should change this name from within the KISSmetrics website (by clicking the **Edit Site** button in the sidebar under your [site settings][site-settings] and clicking on the "Events" tab). However, in your code you would still use `shirt_color`. If you change your code to `tshirt_color`, KISSmetrics will think it is a new property, which is probably not what you want.
+No matter what the display name is it is **very important** that you use the same name within your code consistently. So if for example you later decide you want to call the property `T-Shirt Color` in your reports you should change this name from within the Kissmetrics website (by clicking the **Edit Site** button in the sidebar under your [site settings][site-settings] and clicking on the "Events" tab). However, in your code you would still use `shirt_color`. If you change your code to `tshirt_color`, Kissmetrics will think it is a new property, which is probably not what you want.
 
 [too-many-events]: /troubleshooting/too-many-event-names
 [data-type]: https://app.kissmetrics.com/product.edit

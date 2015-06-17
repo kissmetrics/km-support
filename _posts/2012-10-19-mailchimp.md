@@ -2,7 +2,7 @@
 layout: post
 title: Mailchimp
 categories: integrations
-summary: Import your existing Mailchimp data into KISSmetrics.
+summary: Import your existing Mailchimp data into Kissmetrics.
 ---
 * Table of Contents
 {:toc}
@@ -40,9 +40,9 @@ Event Name | Properties | Identity
 
 ![API Key 2][sskey2]
 
-* Now let's add this API key to your KISSmetrics account in the next step.
+* Now let's add this API key to your Kissmetrics account in the next step.
 
-### 2. Register the API Key with KISSmetrics
+### 2. Register the API Key with Kissmetrics
 
 * Navigate to the [Data Integrations][external-data] area under Settings.
 
@@ -60,7 +60,7 @@ Event Name | Properties | Identity
 
 ### 3. Unifying Mailchimp Data to the JavaScript Library
 
-In connecting Mailchimp to KISSmetrics, you'll see events attributed directly to the user's email address.
+In connecting Mailchimp to Kissmetrics, you'll see events attributed directly to the user's email address.
 
     1. `example@domain.com` has Received Campaign E-mail.
     2. `example@domain.com` has Viewed Campaign E-mail.
