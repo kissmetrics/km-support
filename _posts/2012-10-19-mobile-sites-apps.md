@@ -8,7 +8,7 @@ summary: Using Kissmetrics to track mobile sites and apps.
 {:toc}
 * * *
 
-Kissmetrics can track your mobile website using our typical [JavaScript Library][js]. For a native iOS or Android application, you'lll need to do some more work.
+Kissmetrics can track your mobile website using our typical [JavaScript Library][js]. For a native iOS or Android application, you'll need to do some more work.
 
 ## 1. Implement events using the library in the app's native language
 
