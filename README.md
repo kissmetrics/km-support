@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-You'll need a version of Ruby (we'll use 1.9.3 for the sake of example) and bundler.
+You'll need Ruby and bundler.
 
 Let's start by installing Xcode, Homebrew, and RVM. Follow the instructions on each site:
 
@@ -13,8 +13,8 @@ Let's start by installing Xcode, Homebrew, and RVM. Follow the instructions on e
 Now in a terminal:
 
 ```
-rvm install 1.9.3
-rvm use 1.9.3
+cp .ruby-version.example .ruby-version
+cd .
 gem install bundler
 bundle install
 ```
