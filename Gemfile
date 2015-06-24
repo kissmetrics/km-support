@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'github-pages',		'~>15'
+gem 'github-pages'
 gem 'jekyll-sass'
 gem 'rake'
 
