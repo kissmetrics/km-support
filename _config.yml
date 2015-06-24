@@ -12,3 +12,6 @@ sass:
   style: compressed
   deploy_style: compressed
   compile_in_place: true
+
+gems:
+  - jekyll-redirect-from
