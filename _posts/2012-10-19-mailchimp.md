@@ -16,9 +16,9 @@ If you have been using [Mailchimp][mailchimp] to send out email newsletters, you
 
 Event Name | Properties | Identity
 -----------| ---------- | --------
-`Received Campaign E-mail` | `mailchimp_campaign_title`: (campaign title) | Email address, according to Mailchimp
-`Opened Campaign E-mail` | `mailchimp_campaign_title`: (campaign title) | Email address, according to Mailchimp
-`Clicked Campaign E-mail` | `mailchimp_campaign_title`: (campaign title)  | Email address, according to Mailchimp
+`Received Campaign E-mail` | `mailchimp receive campaign title`: (campaign title) | Email address, according to Mailchimp
+`Opened Campaign E-mail` | `mailchimp open campaign title`: (campaign title) | Email address, according to Mailchimp
+`Clicked Campaign E-mail` | `mailchimp click campaign title`: (campaign title)  | Email address, according to Mailchimp
                           | `mailchimp_click_url`: (URL clicked)
 
 
