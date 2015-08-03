@@ -25,10 +25,11 @@ However, if there is a specific reason why your internal traffic needs to be ign
 
 [AdBlock Plus][abp] is an extension for Firefox and Chrome that was first created to prevent known ad traffic from loading. You can create custom rules to prevent your Kissmetrics script from loading, which in turn prevents your Firefox/Chrome browser from generating JavaScript events. ABP makes it easy to toggle these rules on and off, so you can turn the filter off to test your events.
 
-Open the AdBlock Plus preferences and add these two filter rules:
+Open the AdBlock Plus preferences and add these three filter rules:
 
     i.kissmetrics.com/i.js
     doug1izaerwt3.cloudfront.net/INSERT_YOUR_API_KEY.1.js
+    scripts.kissmetrics.com/INSERT_YOUR_API_KEY.2.js
 
 __Remember to insert your API key into the second rule.__
 
