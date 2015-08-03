@@ -32,14 +32,14 @@ _kmq.push(['identify', 'steve@apple.com' ]);
 _kmq.push(['identify', steve@apple.com ]);
 {% endhighlight %}
 
-* *Do people trigger events after you call `identify`?*
+* *Do people record events or properties after you call `identify`?*
 
 When you call `identify` with our JS library when a person is anonymous, we automatically alias their anonymous ID with the given ID. This is related to the next section.
 
 
 ### 2. You used our `alias` API call but the aliased ID does not appear when you search for it, or in the history of the person's Customer IDs.
 
-* *We can only show a person's aliases as long as we see an event attributed to that alias.*
+* *We can only show a person's aliases as long as we see an event or property attributed to that alias.*
 
 Consider this example:
 
@@ -50,11 +50,11 @@ KM.record("Event 1")
 KM.record("Event 2")
 {% endhighlight %}
 
-Because the person never does events while `identifed` as kissmetrics@example.com, that alias never shows up in that person's details, not even as a historic Customer ID. That means you won't be able to look up the person in People Search by the email address, despite the 'alias' call.
+Because the person never records data while `identifed` as kissmetrics@example.com, that alias never shows up in that person's details, not even as a historic Customer ID. That means you won't be able to look up the person in People Search by the email address, despite the 'alias' call.
 
 ![Alias Zero][alias-zero]
 
-Only until I trigger an event as "kissmetrics@example.com" will that show up as a Customer ID.
+Only after I record an event or property as "kissmetrics@example.com" will that show up as a Customer ID.
 
 Often, it's sufficient to just set the additional information as an additional property, like so:
 
