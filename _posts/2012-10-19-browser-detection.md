@@ -2,12 +2,15 @@
 layout: post
 title: Browser Detection
 categories: how-tos
-author: Eric Fung
-summary: Record information about your visitors' web browsers as KISSmetrics properties.
+summary: Record information about your visitors' web browsers as Kissmetrics properties.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 One of the more popular (yet optional) things to track is the web browser that your visitors are using when visiting your site. This information is readily available through a little use of JavaScript; you can parse `navigator.userAgent` and `navigator.appVersion`, among other variables. This [QuirksMode.org][1] article is a great reference and resource that you can use to fetch users' browser information.
 
-If you choose to use their BrowserDetect plugin, you could then pass along the appropriate values to KISSmetrics as a property, perhaps like this:
+If you choose to use their BrowserDetect plugin, you could then pass along the appropriate values to Kissmetrics as a property, perhaps like this:
 
 {% highlight html %}
 <script type="text/javascript">

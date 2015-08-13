@@ -2,24 +2,18 @@
 layout: post
 title: API Specifications
 categories: apis
-author: Eric Fung
 summary: Here's how our Simple Person-Based REST-like API works, on top of which all of our language libraries are built.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 To be unobtrusive to your end-users, we'll respond with a 200 OK status, even if some of these parameters are "incorrect". The response will be a 1x1 GIF image (to power our "[Beacon API][beacon]").
 
 ***Not to be confused with our [URL API][url], which works with our JavaScript Library to tag links people use to reach your website.***
 
 *Important*: Since you are hitting a URL, remember that any special symbols like `+` and `@` in your parameters should be [URL-encoded][encoding].
 
-<hr />
-# Table of Contents
-
-1. [Recording an Event][section1]
-2. [Setting Properties][section2]
-3. [Aliasing Users][section3]
-4. [URL Builder][url-builder]: experiment with creating tracking URLs
-
-<a name="recording-an-event"></a>
 ## Recording an Event
 
 Method URL:
@@ -34,7 +28,7 @@ Parameters | Format             | Necessary? | Description
 `_k`       | string             | Yes        | Your API key
 `_p`       | 255 char string    | Yes        | Person doing the event
 `_n`       | URL-encoded string | Yes        | Name of the event
-`_t`       | integer            | *optional* | Timestamp in ***seconds*** after UTC Unix epoch
+`_t`       | integer            | *optional* | Timestamp in ***seconds*** after UTC Unix epoch. Note: You will also need to include the `_d` option listed below for the timestamp to be applied.
 `_d`       | 0 or 1             | *optional* | Set to 1 if you're manually passing us the timestamp. It's used when logging events that occurred in the past.
 (Anything) | URL-encoded string | *optional* | Set an arbitrary value to an arbitrary user property
 
@@ -46,7 +40,6 @@ This records that the user `bob` did the event `Signed Up` and his `gender` was 
 
 Please be aware of how our processing servers detect [duplicate events][dupes-events].
 
-<a name="setting-properties"></a>
 ## Setting Properties
 
 Method URL:
@@ -72,7 +65,6 @@ This records that the user `bob` got the property `gender` with the value set to
 
 Please be aware of how our processing servers detect [duplicate properties][dupes-props].
 
-<a name="aliasing-users"></a>
 ## Aliasing Users
 
 Method URL:
@@ -96,12 +88,11 @@ This tells us that events done by `User 12345` and events done by `bob@bob.com` 
 
 **Calling `alias` is not reversible, and should be used with some caution.**
 
-<a name="when-to-alias"></a>
 ### When to Alias
 
 There are only a handful of scenarios where it is appropriate to directly call `alias`:
 
-* You implement KISSmetrics using more than one source of data: combining data from an external KM [integration][integration], server-side libraries, and/or our JavaScript library.
+* You implement Kissmetrics using more than one source of data: combining data from an external KM [integration][integration], server-side libraries, and/or our JavaScript library.
 * You are identifying people by their email address, and they update their email address within your app.
 * You change your tracking schema to identify people...say, from email address to username.
 
@@ -112,7 +103,6 @@ Notes:
 * It’s natural if a person has more than one alias.
 * The order you pass the two arguments does not matter.
 
-<a name="url-builder"></a>
 # URL Builder
 
 Here is a form to help demonstrate building individual tracking URLs.
@@ -125,8 +115,3 @@ Here is a form to help demonstrate building individual tracking URLs.
 [dupes-events]: /troubleshooting/detecting-duplicates#duplicate-events
 [dupes-props]: /troubleshooting/detecting-duplicates#duplicate-properties
 [integration]: /integrations
-
-[section1]: #recording-an-event
-[section2]: #setting-properties
-[section3]: #aliasing-users
-[url-builder]: #url-builder

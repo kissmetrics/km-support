@@ -2,10 +2,13 @@
 layout: post
 title: JavaScript Settings
 categories: [apis, javascript]
-author: Eric Fung
 summary: JavaScript settings let you adjust what our JavaScript library can do automatically for you.
 ---
-Our JavaScript Library tracks several events for you automatically. 
+* Table of Contents
+{:toc}
+* * *
+
+Our JavaScript Library tracks several events for you automatically.
 
 # Events Automatically Tracked
 
@@ -15,6 +18,7 @@ If you are using the JavaScript library, we automatically track certain events a
   * The Property `referrer` indicates the URL the visitor came from
   * The Property `URL` indicates the URL of the page they started browsing your site
   * We record **Visited Site** once for each visitor's browsing session. After 30 minutes of inactivity, the next time the visitor comes back will trigger a new **Visited Site** event, and they will also have the `Returning` Property set to 1.
+  * `Returning` is also set if your customer has already had the Google Analytics `__utma` cookie set.
 * ## Form Fields
   * If you set up an event to log a form submission (either through the API call `trackSubmit` or the Event Library's 'Submits a Form'), then we also capture the data from the form's fields.
   * Each `<input>` field will be saved as Property; we use the `name` attribute of the `<input>`'s to name each Property.
@@ -51,7 +55,7 @@ There are three additional settings that are not tied to specific events:
 
 # Toggling Automatic Behavior
 
-If you'd prefer to, you can toggle whether these events should be tracked or not. Please go to [https://app.kissmetrics.com/product.js_settings][js-settings] to do so, which is reached from your [site settings][settings]. Also, please keep in mind that the JavaScript settings in KISSmetrics only apply to the JavaScript library hosted by KISSmetrics. They *do not* apply to other official or unofficial libraries (PHP, Ruby, etc.) unless otherwise noted.
+If you'd prefer to, you can toggle whether these events should be tracked or not. Please go to [https://app.kissmetrics.com/product.js_settings][js-settings] to do so, which is reached from your [site settings][settings]. Also, please keep in mind that the JavaScript settings in Kissmetrics only apply to the JavaScript library hosted by Kissmetrics. They *do not* apply to other official or unofficial libraries (PHP, Ruby, etc.) unless otherwise noted.
 
 [settings]: https://app.kissmetrics.com/settings
 [js-settings]: https://app.kissmetrics.com/product.js_settings

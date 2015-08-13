@@ -2,10 +2,14 @@
 layout: post
 title: Events - Submits a Form
 categories: [tutorial, event-library-tutorial]
-author: Lars Lofgren
 summary: Trigger events when someone submits a form.
 ---
-<div id="wistia_1b184d5c16" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400"></div>
+* Table of Contents
+{:toc}
+* * *
+
+<div id="wistia_1b184d5c16" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
+</div>
 
 ## Create the Event
 
@@ -33,9 +37,3 @@ More detailed instructions coming soon!
 * Currently, the Event Library takes only a *single* HTML ID or a *single* class name. If you'd like to use the full range of nested CSS selectors, please try using JavaScript Library calls for these types of events. If that does not work for you, please let us know if you are interested in seeing this functionality within the Event Library.
 
 [trackSubmit]: /apis/javascript/javascript-specific#tracking-forms
-
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-</script>
-<script type="text/javascript">
-loadKMTrackableVideo("1b184d5c16", "Events: Submits a Form");
-</script>

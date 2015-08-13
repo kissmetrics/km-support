@@ -2,10 +2,13 @@
 layout: post
 title: Using Paypal
 categories: how-tos
-author: Eric Fung
-summary: Using KISSmetrics with a Paypal checkout system.
+summary: Using Kissmetrics with a Paypal checkout system.
 ---
-Since KISSmetrics can't insert tracking scripts on Paypal sites, you'll have to work around PayPal.
+* Table of Contents
+{:toc}
+* * *
+
+Since Kissmetrics can't insert tracking scripts on Paypal sites, you'll have to work around PayPal.
 
 ## Basic Paypal Tracking
 

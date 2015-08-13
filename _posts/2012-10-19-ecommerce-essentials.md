@@ -2,14 +2,17 @@
 layout: post
 title: E-Commerce Essentials
 categories: best-practices
-author: Charles Liu
 summary: Here's a list to get you started with picking the right events to track for your e-commerce business.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## Introduction
 
-Welcome to KISSmetrics! This handy guide will help you get started by showing you what we think are the best practice essentials for tracking E-Commerce data.
+Welcome to Kissmetrics! This handy guide will help you get started by showing you what we think are the best practice essentials for tracking E-Commerce data.
 
-KISSmetrics has helped many e-commerce businesses become successful by using customer analytics, and you too can join in on the fun! Before you start tracking customer data with KISSmetrics, it’s important to think about what you need to know about your customers so that you can provide a better experience for them.
+Kissmetrics has helped many e-commerce businesses become successful by using customer analytics, and you too can join in on the fun! Before you start tracking customer data with Kissmetrics, it’s important to think about what you need to know about your customers so that you can provide a better experience for them.
 
 An e-commerce business wants to move customers through four major stages in their lifecycle:
 
@@ -32,12 +35,12 @@ When to trigger the event and any other contextual information
 * Etc.
 
 ---
-<a name="tracking-marketing-acquisition-behavior"></a>
+
 ## Tracking Marketing/Acquisition Behavior
 
-**KISSmetrics automatically tracks all of these marketing events and properties for you!**
+**Kissmetrics automatically tracks all of these marketing events and properties for you!**
 
-<a name="visited-site"></a>
+
 ### Visited Site
 
 Triggered when a customer visits your site. We record **Visited Site** once for each visitor’s browsing session. After 30 minutes of inactivity, the next time the visitor comes back will trigger a new **Visited Site** event, and they will also have the `Returning` Property set to 1.
@@ -45,7 +48,7 @@ Triggered when a customer visits your site. We record **Visited Site** once for 
 * `Referrer` indicates the URL the visitor came from.
 * `URL` indicates the landing URL when a customer arrived on your website.
 
-<a name="ad-campaign-hit"></a>
+
 ### Ad Campaign Hit
 
 Triggered when a customer reaches your site via a Google Ad Campaign (eg. paid search). We detect this by checking the URL for `?gclid` or `?utm_` parameters, which indicate a URL tagged for ad purposes. All the `utm` variables will be captured as Properties, if they are present in the URL. Please refer to our [article regarding Google Analytics][ga-utm] to determine whether the `utm` variables are available or not:
@@ -58,7 +61,7 @@ Triggered when a customer reaches your site via a Google Ad Campaign (eg. paid s
 
 [ga-utm]: /integrations/utm-variables#google-analytics-8217-auto-tagging-vs-manual-tagging
 
-<a name="search-engine-hit"></a>
+
 ### Search Engine Hit
 
 Triggered when a customer reaches your site via a search engine, through organic search.
@@ -67,17 +70,17 @@ Triggered when a customer reaches your site via a search engine, through organic
 * `Search Terms` indicates the search terms used.
 
 ---
-<a name="tracking-pre-purchase-behavior"></a>
+
 ## Tracking Pre-Purchase Behavior
 
-<a name="product-search"></a>
+
 ### Product Search
 
 Triggered when a customer uses your search bar to look for products within your site. Applicable only if your site has a search option.
 
 * `Product Search Terms` indicates the search terms used by the customer in the product search bar.
 
-<a name="viewed-product-item"></a>
+
 ### Viewed Product/Item
 
 Triggered when a customer looks at an individual product or item.
@@ -86,7 +89,7 @@ Triggered when a customer looks at an individual product or item.
 * `Product Viewed - Name` indicates the actual Product name such as “Macbook Pro” or “Cinema Display”.
 * `Product Viewed - Price` indicates the price of the product such as “8.95”.
 
-<a name="add-to-cart"></a>
+
 ### Add to Cart
 
 Triggered when customers add a product to their cart.
@@ -99,10 +102,10 @@ Triggered when customers add a product to their cart.
 
 ---
 
-<a name="tracking-purchase-process-behavior"></a>
+
 ## Tracking Purchase Process Behavior
 
-<a name="checkout-step-1-2-3-etc"></a>
+
 ### Checkout Step 1/2/3/etc.
 
 Triggered when a customer starts the checkout process. Repeat for however many checkout steps you have in your purchase process.
@@ -115,11 +118,11 @@ Consider tracking the Checkout Steps as [form submissions][form-fields], which c
 
 *Notes:*
 
-* *KISSmetrics automatically skips all password, hidden and text area fields as well as sensitive fields (like credit card info).*
+* *Kissmetrics automatically skips all password, hidden and text area fields as well as sensitive fields (like credit card info).*
 * *If you use jQuery or Ajax to dynamically load a form into the page after the page has loaded, you’ll need to use the JavaScript API command `trackSubmit` to track your checkout process correctly.*
 * *Our code does not validate the contents of the form as some parts can be considered optional on your site or app. If a visitor fills out a form incorrectly and submits it, we will still count that as a submit event.*
 
-Use one of these carts? Learn more about integrating KISSmetrics with your cart:
+Use one of these carts? Learn more about integrating Kissmetrics with your cart:
 
 * [UltraCart][ultracart]
 * [Magento Go or Magento One-Page Checkout][magento]
@@ -128,14 +131,14 @@ Use one of these carts? Learn more about integrating KISSmetrics with your cart:
 [ultracart]: /integrations/ultracart
 [magento]: /integrations/magento-km
 
-<a name="entered-promo-code"></a>
+
 ### Entered Promo Code
 
 Triggered when a customer uses a promo or coupon code when checking out. Applicable only if you are using promo codes.
 
 * `Promo Code` indicates the promo or coupon used by the customer such as “SUMMER2012”.
 
-<a name="registered-sign-up"></a>
+
 ### Registered / Sign Up
 
 Triggered when a customer registers or signs up an account before purchasing. If customers can checkout as a guest, an email address should be captured as a minimum to identify the customer. This should be possible due to your business sending a confirmation receipt of the order once a customer comples an order. Additional demographic information such as gender, city, country is up to your discretion.
@@ -145,7 +148,7 @@ Triggered when a customer registers or signs up an account before purchasing. If
 * `Country` indicates the country the customer provides on the account (if applicable).
 * `Phone Number/Gender/Demographic Info` indicate any other demographic information you would like to include as a property.
 
-<a name="purchased-completed-order"></a>
+
 ### Purchased / Completed Order
 
 Triggered when a customer has finished the checkout process and purchased. This event confirms when a customer purchases.
@@ -154,7 +157,7 @@ Triggered when a customer has finished the checkout process and purchased. This 
 * `Order Total` indicates the Order Total after possible tax and shipping.
 * `Order Subtotal` indicates the Order Subtotal from all items before tax and shipping.
 
-To track an order with multiple items, set properties for each item in the cart such as it’s SKU #, Product Name, and any other information you want. *KISSmetrics needs to see each item as a separate timestamp to log correctly to the customer, because we [deduplicate properties][dedupe] if the same person receives the same property at the same time.*
+To track an order with multiple items, set properties for each item in the cart such as it’s SKU #, Product Name, and any other information you want. *Kissmetrics needs to see each item as a separate timestamp to log correctly to the customer, because we [deduplicate properties][dedupe] if the same person receives the same property at the same time.*
 
 Here's example code for a purchase with 4 different items:
 
@@ -170,7 +173,7 @@ _kmq.push(function() {
 </script>
 {% endhighlight %}
 
-`KM.ts()` returns the current timestamp. In order to log each item in a single purchase event, KISSmetrics needs to see each item individually. The example code delays each `set` call by 1 second so that KISSmetrics can record all the items. The parameter `_d` is set to 1 to indicate you're using a custom timestamp.
+`KM.ts()` returns the current timestamp. In order to log each item in a single purchase event, Kissmetrics needs to see each item individually. The example code delays each `set` call by 1 second so that Kissmetrics can record all the items. The parameter `_d` is set to 1 to indicate you're using a custom timestamp.
 
 The following are some suggested properties to track when a customer completes an order:
 
@@ -181,10 +184,10 @@ The following are some suggested properties to track when a customer completes a
 * `Quantity` indicates how many of the products such as “1” “2” or “3”.
 
 ---
-<a name="tracking-post-purchase-behavior"></a>
+
 ## Tracking Post Purchase Behavior
 
-<a name="canceled-order"></a>
+
 ### Canceled Order
 
 Triggered when a customer cancels an order before the order ships.
@@ -203,7 +206,7 @@ For an order with multiple items, set properties for each item in the cart.
 * `Price` indicates the price of the product such as “8.95”. **Note: For refunds, pass in the negative amount for the item. If an item was “8.95”, pass in “-8.95”.**
 * `Quantity` indicates how many of the products such as “1” “2” or “3”.
 
-<a name="refunded-returned-item"></a>
+
 ## Refunded / Returned Item
 
 Triggered when a customer returns and item or is refunded.
@@ -222,7 +225,7 @@ For an order with multiple items, set properties for each item in the cart.
 * `Price` indicates the price of the product such as “8.95”. **Note: For refunds, pass in the negative amount for the item. If an item was “8.95”, pass in “-8.95”.**
 * `Quantity` indicates how many of the products such as “1” “2” or “3”.
 
-<a name="referred-friend"></a>
+
 ## Referred Friend (or any Social Actions)
 
 Triggered when a customer refers a friend or shares their purchase through a social channel. Applicable only if your business has referrals or social sharing.

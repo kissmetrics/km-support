@@ -1,21 +1,14 @@
 ---
 layout: post
-categories: best-practices
+categories:
 title: "SaaS Revenue Essentials"
 tags: []
-author: Eric Fung
 summary: These are the events and properties you should track to make the most of our upcoming SaaS Revenue Report.
+permalink: /best-practices/saas-revenue-essentials
 ---
-<hr />
-# Table of Contents
-
-* [Section 1. Recommended Events and Properties][section1]
-* [Section 2. How do I import previous transactions?][section2]
-* [Section 3. I have already been tracking revenue. How do update my old payments with the recommended structure?][section3]
-
-We are in the process of developing a Revenue Report aimed specifically towards SaaS businesses. While it is not ready yet, this report will be designed to help you better visualize **Monthly Recurring Revenue**, especially if your customers are billed less frequently than every month.
-
-Below lists how you can structure your revenue data to prepare for this report.
+* Table of Contents
+{:toc}
+* * *
 
 This guide will use the following format:
 
@@ -30,10 +23,10 @@ When to trigger the event and any other contextual information
 
 ---
 
-<a name="section-1"></a>
+
 ## Section 1. Recommended Events and Properties
 
-<a name="subscription-billed"></a>
+
 ### Subscription Billed
 
 Triggered when a customer is successfully billed for their payment.
@@ -64,7 +57,7 @@ KM.record('Subscription Billed', {
   'Subscription Plan Level' => 'Large' });
 {% endhighlight %}
 
-<a name="subscription-canceled"></a>
+
 ### Subscription Canceled
 
 Triggered when a customer cancels their plan and stops paying you.
@@ -80,7 +73,7 @@ KM.record('Subscription Canceled', {
   'Subscription Cancelation Reason' => 'No Budget' });
 {% endhighlight %}
 
-<a name="subscription-upgrade"></a>
+
 ### Subscription Upgraded
 
 Triggered when a customer upgrades to start paying you more money.
@@ -99,7 +92,7 @@ KM.record('Subscription Upgraded', {
   'Subscription Plan Level' => 'Medium' });
 {% endhighlight %}
 
-<a name="subscription-downgraded"></a>
+
 ### Subscription Downgraded
 
 Triggered when a customer downgrades to start paying you less money.
@@ -141,17 +134,14 @@ KM.record('Subscription Refunded', {
 
 ---
 
-<a name="section-2"></a>
+
 ## Section 2. How do I import previous transactions?
 
 Please refer to our page on [Importing Data][import]. The properties are somewhat unique, so you'll most likely find yourself writing a little code to work with your backend servers or payment platform's API.
 
-<a name="section-3"></a>
+
 ## Section 3. I have already been tracking revenue. How do update my old payments with the recommended structure?
 
 Again, your best bet will be to [Import the Past Data][import]. Chances are you have a way to refer back to *who* was billed *when*...with that information, you can use the appropriate method of importing data to set the new properties you haven't been tracking, like "Subscription Billing Length".
 
 [import]: /advanced/importing-data
-[section1]: #section-1
-[section2]: #section-2
-[section3]: #section-3

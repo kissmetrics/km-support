@@ -2,13 +2,16 @@
 layout: post
 title: Events - Visits the URL
 categories: [tools, event-library]
-author: Eric Fung
 summary: Trigger events when someone visits a URL.
 permalink: /tools/event-library/events-url/index.html
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## Create the Event
 
-To track that people have **viewed** a certain page, grab the URL of the page and name the event something easy to remember. 
+To track that people have **viewed** a certain page, grab the URL of the page and name the event something easy to remember.
 
 ![Visits the URL][visits-the-url]
 
@@ -33,7 +36,7 @@ For example, let’s say you’re giving out beta invites to your site. All of t
 
 You could record visits to `yourdomain.com/beta/*/`, which encompasses all of these similar URLs. Please refer to [Wildcards][wildcards] for more examples.
 
-<a name="partial-urls"></a>
+
 ## Partial URLs
 
 Rather than typing in the domain of your site every time, you can use partial URLs. Here are some examples:
@@ -67,7 +70,6 @@ The Event Library can differentiate between two *query strings*, (the ends of so
 ## Technical Notes
 
 * Our Event Library URL detection has difficulty with *hash symbols* `#` in the URL. Considering placing `record` calls from our JavaScript Library on the pages you wish to track, especially if you are using *backbone.js*.
-* We do not support regular expressions. Please try using JavaScript Library calls for these types of events. If that does not work for you, please let us know if you are interested in seeing this functionality within the Event Library.
 
 ### Testing
 

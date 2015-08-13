@@ -2,9 +2,12 @@
 layout: post
 title: Main SaaS Funnel Use Case
 categories: use-cases
-author: Eric Fung
 summary: How to track the steps of your customer acquisition.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## How to Track the Steps of Your Customer Acquisition
 
 Acquiring a customer takes time. People need to move through multiple stages before they fully trust your business.
@@ -13,11 +16,11 @@ To track these stages, we use funnels. They show us the number of people at each
 
 Once you know where people drop off in large batches, you'll know which part of your business needs the most improvement. And once you've fixed the problem, **you'll get more customers with the same amount of traffic**.
 
-Let's walk through how to setup a funnel for your SaaS business in KISSmetrics.
+Let's walk through how to setup a funnel for your SaaS business in Kissmetrics.
 
 ### What should we be tracking?
 
-KISSmetrics funnels can be built from ANY event that you're tracking with KISSmetrics, the funnels are as flexible as it gets. For tracking the flow of your customer acquisition, here are the basic steps you'll want to track:
+Kissmetrics funnels can be built from ANY event that you're tracking with Kissmetrics, the funnels are as flexible as it gets. For tracking the flow of your customer acquisition, here are the basic steps you'll want to track:
 
 * **Visited Site**: This will be the first step of your funnel and we track this for you [automatically][visited-site]. There's nothing you need to do on this one.
 
@@ -31,7 +34,7 @@ And if you'd like an overview on how to set up events, we've outlined the basics
 
 Now that we know which events are part of the customer acquisition, let's build the funnel.
 
-## How to Build Your SaaS Funnel in KISSmetrics
+## How to Build Your SaaS Funnel in Kissmetrics
 
 First, go to the Reports tab in the navigation.
 
@@ -53,7 +56,7 @@ Your main funnel will look pretty similar to this (don't worry about picking a p
 
 Remember, you probably won't have an event called "Activated". Instead, use the event that means someone has started to use the core feature of your product. This might be "Received First Survey Response" or "Sent an Invoice".
 
-At this point, we can pick a date range and run the report which will give us the performance of our funnel: 
+At this point, we can pick a date range and run the report which will give us the performance of our funnel:
 
 ![KM-Main-SaaS-Funnel][ss5]
 
@@ -69,7 +72,7 @@ You can segment your funnel by **any** property you're tracking to see how conve
 * Customer Type
 * A/B Tests
 
-Referrers and campaigns will get tracked automatically by KISSmetrics. For the rest, you'll need to set up the events and properties to track them.
+Referrers and campaigns will get tracked automatically by Kissmetrics. For the rest, you'll need to set up the events and properties to track them.
 
 Let's segment by referrer and see what kind of data we get:
 
@@ -88,10 +91,10 @@ Comparing yourself to other products or competitors won't give you any valuable 
 When you're looking at your entire funnel and trying to decide which step gets your attention first, start with the bottle-necks. Many funnels will have one or two steps where the majority of people drop off. Find your bottle-necks and focus your time on those steps.
 
 ### 3. Test Improvements
-You'll find countless best practices for every marketing problem you find. Some will work, most won't. The only way to know which ones actually make a difference is to test them. The best way to do this is with an A/B test (also called a split test). This let's you show two versions of a page to your visitors so you can see which one gets more people to the next step. Check out [Visual Website Optimizer][vwo] or [Optimizely][optimizely] to get these up and running. Both of these tools [integrate with KISSmetrics][a-b-platforms] so that you can easily track who's going through which version of your test.
+You'll find countless best practices for every marketing problem you find. Some will work, most won't. The only way to know which ones actually make a difference is to test them. The best way to do this is with an A/B test (also called a split test). This let's you show two versions of a page to your visitors so you can see which one gets more people to the next step. Check out [Visual Website Optimizer][vwo] or [Optimizely][optimizely] to get these up and running. Both of these tools [integrate with Kissmetrics][a-b-platforms] so that you can easily track who's going through which version of your test.
 
 ### 4. Track A/B Tests Through the Entire Funnel
-Most A/B tests only track the performance of the next step. So if you're trying to get more free trials, the test would only track the conversion rate between people visiting the site and signing up for a free trial. This is dangerous and you might slow your growth by accident. On a regular basis, you'll find tests that improve the conversion rate at one step of your funnel but reduce conversion rates at later steps. By integrating your A/B test data with KISSmetrics, you can go to your funnel, select your A/B tests as the property you want to segment by, and compare conversion rates for the entire funnel. This way, you'll know which version of your test gives you the best long-term results.
+Most A/B tests only track the performance of the next step. So if you're trying to get more free trials, the test would only track the conversion rate between people visiting the site and signing up for a free trial. This is dangerous and you might slow your growth by accident. On a regular basis, you'll find tests that improve the conversion rate at one step of your funnel but reduce conversion rates at later steps. By integrating your A/B test data with Kissmetrics, you can go to your funnel, select your A/B tests as the property you want to segment by, and compare conversion rates for the entire funnel. This way, you'll know which version of your test gives you the best long-term results.
 
 [visited-site]: /apis/javascript#visited-site
 [revenue-report]: /tools/revenue-report

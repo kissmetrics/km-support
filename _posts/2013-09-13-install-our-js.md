@@ -5,7 +5,12 @@ categories: learn
 portal: university
 summary: Once you know what KPIs to begin focusing on, let's start creating events, starting with installing our JavaScript Library.
 ---
-<div id="wistia_256139b3f9" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400"></div>
+* Table of Contents
+{:toc}
+* * *
+
+<div id="wistia_256139b3f9" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
+</div>
 
 # Takeaways
 
@@ -33,9 +38,9 @@ Customers have successfully installed our JavaScript library through their tag m
 
 Content-management systems often allow plugins to help you extend your site's functionality. We provide an official [WordPress plugin][wp-plugin] - the plugin already does the job of adding the JavaScript library to every page of your WordPress installation. If you use the plugin, you won't have to go digging in the WordPress templates to manually add our JS.
 
-See if your own CMS has a KISSmetrics plugin; chances are it will also try to add the JavaScript to each page. Please check the plugin's documentation!
+See if your own CMS has a Kissmetrics plugin; chances are it will also try to add the JavaScript to each page. Please check the plugin's documentation!
 
-## If you plan to test KISSmetrics locally (`localhost`)...
+## If you plan to test Kissmetrics locally (`localhost`)...
 
 We highly recommend [creating a new API key][create-product] to separate your testing data from your actual live, production data. Additionally, read about [developing locally][local] with our JavaScript library, because its functionality depends on the existence of browser cookies.
 
@@ -52,9 +57,3 @@ Install the JS snippet on your website or a testing/staging website.
 [create-product]: /how-tos/create-site
 [local]: /advanced/local-development
 [wp-plugin]: /integrations/wordpress
-
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-</script>
-<script type="text/javascript">
-loadKMTrackableVideo("256139b3f9", "Installing KM on Individual HTML Files");
-</script>

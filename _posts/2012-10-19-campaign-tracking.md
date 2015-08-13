@@ -2,9 +2,12 @@
 layout: post
 title: How to Track Campaign URLs
 categories: how-tos
-author: Eric Fung
 summary: Different methods for tracking links to take people to your website.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 You'll likely be interested in tracking external links that point inbound to your website. By "External", I am referring to links that are not within your site itself, but are outside your site pointing people to it. This can include:
 
 * Email campaigns
@@ -28,13 +31,13 @@ Anyone who clicks the above link will land on `http://www.example.com/landing-pa
     Campaign Source: google
     Campaign Medium: email
     Campaign Name: march2012
-  
+
 * **Pros**: It's easy to set up, especially if your ads are already tagged this way.
 * **Cons**: Every UTM-tagged URL is treated as an `Ad Campaign Hit`, which may not make sense if you want to easily separate UTM-tagged email newsletters or Feedburner RSS articles from your paid ads.
 
 # II. URL API
 
-Our [URL API][url] lets you tag a link, so that anyone following that link triggers a KISSmetrics event. Just like with UTM variables, you do this by adding query strings to the destination URL. Unlike with UTM variables, you can do three main actions specific to KISSmetrics: record events, set properties, and identify people.
+Our [URL API][url] lets you tag a link, so that anyone following that link triggers a Kissmetrics event. Just like with UTM variables, you do this by adding query strings to the destination URL. Unlike with UTM variables, you can do three main actions specific to Kissmetrics: record events, set properties, and identify people.
 
 ## Example with Events and Properties
 

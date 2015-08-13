@@ -2,10 +2,13 @@
 layout: post
 title: Power Report
 categories: tools
-author: Eric Fung
 summary: The Power Report lets you manipulate all of your events and properties in different ways, like a pivot table.
 permalink: /tools/power-report/index.html
 ---
+* Table of Contents
+{:toc}
+* * *
+
 **The Power Report is available to our customers on our [Professional Plans][pricing].**
 
 The Power Report lets you manipulate all of your events and properties in nearly any way you can imagine, like an easy-to-use pivot table on all of your customer data. You have a lot of flexibility in how to report on your data. Here are three tasks unique to the Power Report:
@@ -18,7 +21,7 @@ The Power Report lets you manipulate all of your events and properties in nearly
 
 This data sheet provides some sample use cases for which the Power Report can be used, and how to create one to answer these cases.
 
-Link: [KISSmetrics Power Report Data Sheet][data-sheet]
+Link: [Kissmetrics Power Report Data Sheet][data-sheet]
 
 # Creating a Report
 
@@ -72,7 +75,7 @@ Report columns are the **columns** of the report. They provide the **initial dat
 
 The Power Report is unique because you can:
 
-* Look at *Every Person* KISSmetrics has recorded.
+* Look at *Every Person* Kissmetrics has recorded.
 * Look at *Every Time* an event was done or a property was set.
 
 ![Report Columns][ss-columns]
@@ -81,7 +84,7 @@ The Power Report is unique because you can:
 
 * **Existing Metrics**: Reuse any existing Metric that is currently in your metrics dashboard.
 * **On-the-fly Metrics**: Use any of the [Metric Calculations][calcs] just for this power report.
-* **Total People**: Look at *Every Person* KISSmetrics has recorded.
+* **Total People**: Look at *Every Person* Kissmetrics has recorded.
 * **Total Times**: Look at *Every Time* an event was done or a property was set.
 
 #### Populations
@@ -98,16 +101,37 @@ Here's what the example configuration above would look like after you run the re
 
 ![Report Results][ss-results]
 
+# Video Examples
+
+## Translating a Business Question into a Power Report
+
+<div id="wistia_7lmaiffmf4" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
+</div>
+
+In this video, we explore an example business question:
+
+> Of the people who canceled, 1) which cancelation page was seen? 2) What plan were these customers last on? 3) Exactly who canceled?
+
+## How 'Relative To' Affects a Power Report
+
+<div id="wistia_36h8v5kqfw" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
+</div>
+
+## How 'Every Value' Affects a Power Report
+
+<div id="wistia_a3pfna7kb4" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
+</div>
+
 {% include summaries/power_report_summary.html %}
 
 [pricing]: http://www.kissmetrics.com/pricing/
-[data-sheet]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/power-report/KISSmetrics-Power-Report-Data-Sheet.pdf
+[data-sheet]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/power-report/Kissmetrics-Power-Report-Data-Sheet.pdf
 
 [calcs]: /tools/metrics/metric-calculations
 [populations]: /tools/people-search#how-do-i-create-groups-in-kissmetrics-
 [people-search]: /tools/people-search
 [relative]: /tools/power-report/relative-to
 
-[ss-columns]: http://f.cl.ly/items/3s0n1W2F2K433t3P0y0A/power-report-columns.png
-[ss-segments]: http://f.cl.ly/items/0j0j050B1z0n1r1k0p1Q/power-report-segments.png
-[ss-results]: http://f.cl.ly/items/0V2A0n011o0r0q0x1x0c/power-report-results.png
+[ss-columns]: http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/power-report/report-columns.png
+[ss-segments]: http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/power-report/report-segments.png
+[ss-results]: http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/power-report/results.png

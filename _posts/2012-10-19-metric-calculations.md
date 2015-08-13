@@ -2,9 +2,12 @@
 layout: post
 title: Metric Calculations
 categories: [tools, metrics]
-author: Eric Fung
 summary: You can create metrics based on one of these calculations.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 You can create different metrics based on your existing events and properties.
 
 ## Quick Reference
@@ -19,39 +22,39 @@ Metric Calculations|Description
 [Total Value for Property][total]|Total value of a numeric property across all people you specify.
 [Average Value for Property][average-prop]| Total value of a numeric property / Either number of times property was set, or number of people with this property.
 
-[people]: #number-of-people-who-did-event
-[times]: #number-of-times-event-happened
-[average]: #average-number-of-times-event-happened-per-person
-[conversion]: #conversion-rate
-[time]: #average-time-between-events
-[total]: #total-value-for-property
-[average-prop]: #average-value-for-property
+[people]: #number_of_people_who_did_event
+[times]: #number_of_times_event_happened
+[average]: #average_number_of_times_event_happened_per_person
+[conversion]: #conversion_rate
+[time]: #average_time_between_events
+[total]: #total_value_for_property
+[average-prop]: #average_value_for_property
 
 ## Examples
 
-<a name="number-of-people-who-did-event"></a>
+
 ### Number of People Who Did Event
 Count each person a maximum of 1 time, even if they completed this event multiple times.
 
 *Example: "How many* **people** *Visited Site in the last 7 days?"*
 
-<a name="number-of-times-event-happened"></a>
+
 ### Number of Times Event Happened
 Counts each time the event was completed, regardless of the number of people involved.
 
 *Example: "How many* **times** *did people click through an Ad Campaign Hit in the last month?"*
 
-<a name="average-number-of-times-event-happened-per-person"></a>
+
 ### Average Number of Times Event Happened Per Person
 Takes the number of times an event was done and divides by the number of people who completed the event.
 
 *Example:* **On average, how many times** *did each person Purchase in the last 90 days?*
 
-<a name="conversion-rate"></a>
+
 ### Conversion Rate
 Calculates the conversion rate between two events. For someone to be counted, they need to have done **both events in order**.
 
-* **This conversion happens once.** We look for all the people who have done Event #1 in the date range of the metric. Then we calculate, of those people, how many of them performed Event #2 *for the first time ever* after doing Event #1.
+* **This conversion happens once.** We look for all the people who have done Event #1 in the date range of the metric. Then we calculate, of those people, how many of them performed Event #2 *for the first time ever* after doing Event #1. (If a person first does Event #2 before #1, then they are excluded completely.)
 
 *Example:* **At what rate** *did people Sign Up after Visiting the Site during the past week?*
 
@@ -61,7 +64,7 @@ Calculates the conversion rate between two events. For someone to be counted, th
 
 _The conversion rate's calculation method excludes the people who have already converted. You can refer to our calculation method on the [Funnels vs. Metrics][fvm] page._
 
-<a name="average-time-between-events"></a>
+
 ### Average Time Between Events
 Adds up the time elapsed between the completion of two different events, divided by the number of people who completed both events. For someone to be counted, they need to have done **both events in order**.
 
@@ -73,13 +76,13 @@ Adds up the time elapsed between the completion of two different events, divided
 
 *Example:* **On average, how much time passes** *between a person Viewing a Potential Purchase to finally Purchasing* (**focusing only on this week's data**)*?*
 
-<a name="total-value-for-property"></a>
+
 ### Total Value for Property
 Calculates total value of a numeric property across all people who meet a specific property criteria.
 
 *Example: "What is my* **Total** *Revenue from the last month?"*
 
-<a name="average-value-for-property"></a>
+
 ### Average Value for Property
 Calculates total value of a numeric property, and then divides by an amount dictated by the other options:
 
@@ -107,4 +110,4 @@ Calculates total value of a numeric property, and then divides by an amount dict
 
 *Example: "What is the* **Average** *Revenue* **of each person (including non-paying visitors)** *from the last 90 days?"*
 
-[fvm]: /tools//funnels-vs-metrics
+[fvm]: /tools/funnels-vs-metrics

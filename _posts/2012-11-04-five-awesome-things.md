@@ -2,10 +2,13 @@
 layout: post
 title: 5 awesome things you'll be able to do within a week
 categories: overview
-author: Eric Fung
-summary: 5 awesome things you can do within a week of installing KISSmetrics.
+summary: 5 awesome things you can do within a week of installing Kissmetrics.
 ---
-With KISSmetrics, you'll get the information you need to make better product and marketing decisions. KISSmetrics works through a combination of getting our Javascript on your site and setting up custom events to measure the most important behaviors that your customers take on your site.
+* Table of Contents
+{:toc}
+* * *
+
+With Kissmetrics, you'll get the information you need to make better product and marketing decisions. Kissmetrics works through a combination of getting our Javascript on your site and setting up custom events to measure the most important behaviors that your customers take on your site.
 
 Record a new event for each action you are measuring: for example, when a visitor views a landing page, or signs up, or purchases. These events are the key building blocks that will allow you to...
 

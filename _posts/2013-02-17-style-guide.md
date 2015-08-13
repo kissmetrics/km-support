@@ -1,14 +1,16 @@
 ---
 layout: post
 categories: misc
-title: "KISSmetrics Support Style Guide"
+title: "Kissmetrics Support Style Guide"
 tags: []
-author: Ian Main
-summary: A guide to help style KISSmetrics Support Articles.
+summary: A guide to help style Kissmetrics Support Articles.
 permalink: /misc/styleguide.html
 ---
+* Table of Contents
+{:toc}
+* * *
 
-This style guide will help you create visually consistant articles for the KISSmetrics Support site. Articles are written in Markdown and automatically converted to HTML. More information including a complete list of [Markdown syntax formatting can be found at Daring Fireball](http://daringfireball.net/projects/markdown/basics).
+This style guide will help you create visually consistant articles for the Kissmetrics Support site. Articles are written in Markdown and automatically converted to HTML. More information including a complete list of [Markdown syntax formatting can be found at Daring Fireball](http://daringfireball.net/projects/markdown/basics).
 
 ## Header Examples
 
@@ -63,10 +65,10 @@ The blockquote element represents a section that is being quoted from another so
 
 Here’s an example of correct usage:
 
-> KISSmetrics changed our view on what a company should be tracking. KISSmetrics tracks data that is important to your business and it shows you how to improve those numbers. Jane Park, CEO/Founder of Julep Entrepreneur
+> Kissmetrics changed our view on what a company should be tracking. Kissmetrics tracks data that is important to your business and it shows you how to improve those numbers. Jane Park, CEO/Founder of Julep Entrepreneur
 
-	> KISSmetrics changed our view on what a company should be tracking.
-	> KISSmetrics tracks data that is important to your business and it shows you how to improve those numbers.
+	> Kissmetrics changed our view on what a company should be tracking.
+	> Kissmetrics tracks data that is important to your business and it shows you how to improve those numbers.
 	> Jane Park, CEO/Founder of Julep Entrepreneur
 
 * * *
@@ -96,8 +98,6 @@ Our JavaScript code snippet looks like this:
 </script>
 {% endhighlight %}
 
-This was acheived by wrapping the code block in Pygment tags `{% highlight html %}` and `{% endhighlight %}`.
-
 You can pass a number of languages as an argument. You'll find a lot of use out of `html`, `html+ruby`, `js`, and `js+ruby` lexers. All the languages supported are listed at the [Pygments site](http://pygments.org/docs/lexers/).
 
 * * *
@@ -116,7 +116,7 @@ Markdown treats asterisks (*) and underscores (_) as indicators of emphasis. Tex
 
 ### Strong
 
-Double *’s or _’s will be wrapped with an HTML `<strong>` tag.
+Double `*`’s or `_`’s will be wrapped with an HTML `<strong>` tag.
 
 **This is an example of emphasized text**
 
@@ -124,7 +124,7 @@ Double *’s or _’s will be wrapped with an HTML `<strong>` tag.
 
 ### Code
 
-To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:
+To indicate a span of code, wrap it with backtick quotes (\`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:
 
 `Referrer` indicates the URL the visitor came from
 
@@ -230,8 +230,12 @@ Where “id” is the name of a defined image reference. Image references are de
 
 When embeding Wistia videos, use the inline API method which will look similar to this:
 
-	<div id="wistia_id" class="wistia_embed" style="width:488px;height:275px;" data-video-width="488" data-video-height="275"></div>
+    <div id="wistia_id" class="wistia_embed" style="width:488px;height:275px;" data-video-width="488" data-video-height="275">
+    </div>
 
 Then, remove any inline styles on the `<div>` tag and add the CSS class "wistia-embed" so that it looks similar to this:
 
-	<div id="wistia_id" class="wistia_embed wistia-embed" data-video-width="488" data-video-height="275"></div>
+    <div id="wistia_id" class="wistia_embed wistia-embed" data-video-width="488" data-video-height="275">
+    </div>
+
+The line break before the closing `</div>` is important for certain Markdown interpreters from adding the content below the video into the Wistia div.

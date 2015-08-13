@@ -3,9 +3,12 @@ layout: post
 title: "My Properties Don't Look Right"
 categories: troubleshooting
 tags: advanced-properties
-author: Eric Fung
 summary: Investigate more ways to report on properties, and to see why the properties may not match what you're expecting.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Our funnel reports have a feature that lets you view exactly the property you are interested in seeing. Let's take a look at an example:
 
 ![Advanced Properties 1][ssprop1]
@@ -28,7 +31,7 @@ Notice that you can adjust the report to use the first or last property in the r
 
 The top drop-down menu also has the useful "Total times" option. This is more useful for discovering how often an event occurs, rather than how many people do it. For instance, how often does someone trigger a `Purchased Item` event?
 
-"Total times" is also useful for comparing the number of visits recorded by Google Analytics against the number of visits that KISSmetrics records. Recall that Google Analytics does not combine one person's browsing history done across multiple browsers and devices, whereas KISSmetrics can.
+"Total times" is also useful for comparing the number of visits recorded by Google Analytics against the number of visits that Kissmetrics records. Recall that Google Analytics does not combine one person's browsing history done across multiple browsers and devices, whereas Kissmetrics can.
 
 ![Advanced Properties 4][ssprop4]
 

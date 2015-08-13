@@ -3,11 +3,14 @@ layout: post
 title: JavaScript Library Specifics
 categories: [apis,javascript]
 tags: [km_include, km_exclude, tracksubmit, trackclick, record, set]
-author: Eric Fung
 summary: Information on extra capabilities of our JavaScript Library, in addition to the methods common to all APIs.
 permalink: /apis/javascript/javascript-specific/index.html
 ---
-## Quick Reference
+* Table of Contents
+{:toc}
+* * *
+
+# Quick Reference
 
 [Common API Methods][common] | Description
 ---------------------------- | -----------
@@ -16,8 +19,6 @@ permalink: /apis/javascript/javascript-specific/index.html
 `_kmq.push(['record', 'EVENT_NAME', {'PROPERTY_NAME':'VALUE'}, CALLBACK_FUNCTION]);` | Records an event and executes the callback function after it's recorded.
 `_kmq.push(['set', {'PROPERTY_NAME':'VALUE'}]);` | Sets properties to the current user.
 `_kmq.push(['identify', 'IDENTITY']);` | Identifies the current person with a **unique** ID, and attributes future events from this browser to this provided ID. If the current person is 'anonymous', it also connects their 'anonymous' ID to the provided ID so we recognize both as being the same person (`alias`ing). Calling `identify` does *not* count as an "event".
-
-<a name="js-specific"></a>
 
 JavaScript-Specific Methods | Description
 --------------------------- | -----------
@@ -35,7 +36,6 @@ JavaScript-Specific Methods | Description
 `KM.rf()` | Returns `document.referrer` unless you [override where to look for the referrer][referrer].
 `KM.um("/some-url")` | Returns true or false, depending on whether the page you are currently on will match up with the Event Wizard pattern you've typed in (`"/some-url"`). This helps you test Event Wizard urls much more quickly.
 
-<a name="asynchronous-api"></a>
 ## Asynchronous API
 
 The JavaScript library loads asynchronously, in the background, just like Google Analytics' Asynchronous Tracking. It has two main benefits:
@@ -48,14 +48,44 @@ You can place the JavaScript snippet anywhere in the HTML document, but we ask t
 1. To let our script load as soon as possible, to be able to send events before the visitor leaves. Remember that page loadtimes aren't affected.
 2. To let you queue events to be triggered when the library finishes loading. This prevents JavaScript errors from cropping up if you try to call events before the script has loaded:  `ReferenceError: _kmq is not defined`
 
-<a name="anonymous-identities"></a>
+## Override the Referrer
+
+If you anticipate that your site will be hosted in an iFrame (say, within a Facebook Canvas app), then you'll want to make sure to save the true Referrer, the site that brought a person to your page, rather than the site hosting the iFrame itself.
+
+You can do this by setting the variable `KM_REFERRER` like so:
+
+{% highlight html %}
+<script type="text/javascript">
+  var KM_REFERRER = parent.document.referrer;
+  var _kmq = _kmq || [];
+  ...
+</script>
+{% endhighlight %}
+
+Even if your site is not in an iFrame, `parent.document.referrer` should still be the same as `document.referrer` and behave normally anyway.
+
+# Kissmetrics Identities
+
+The function `KM.i()` will return the visitor's Kissmetrics ID, in case you need to pass that along to another function.
+
+Remember to wrap this in a [callback function][callback] to ensure the JavaScript library has loaded before you try to fetch this information:
+
+{% highlight html %}
+<script type="text/javascript">
+_kmq.push(function()
+  { alert(KM.i()) } // Display an alert box with your current KM identity
+);
+</script>
+{% endhighlight %}
+
 ## Anonymous Identities
 
 If the JavaScript library has never seen a visitor before, it will create a randomized identity for them to attribute all of that person's events to the same browser. This lets you track this particular person's activity across sessions.
 
 The generated ID is Base64 encoded, so the IDs are generated with only these characters: `a-z, A-Z, 0-9, +, /, and =`.
 
-<a name="callback-functions"></a>
+# API Functions
+
 ## Callback Functions
 
 You can also pass in function objects as a third parameter. If you don't have properties to record, you can pass an empty hash like so:
@@ -95,10 +125,9 @@ $("body").on("kmLoaded", function() {
 
 This is most beneficial when you're working with a tag manager, where you might have to separate out the event logic from the initialization of the JS library. See the full discussion [here](https://github.com/kissmetrics/km-support/issues/11).
 
-<a name="tracking-individual-page-views"></a>
 ## Tracking Individual Page Views
 
-If you are just looking to track every page view on your site we recommend [Google Analytics][ga]. With KISSmetrics we recommend tracking only significant pages with specifically named events. You can use the Event Library to do this, or you can add a `record` command to your pages:
+If you are just looking to track every page view on your site we recommend [Google Analytics][ga]. With Kissmetrics we recommend tracking only significant pages with specifically named events. You can use the Event Library to do this, or you can add a `record` command to your pages:
 
 {% highlight js %}
 _kmq.push(['record', 'Viewed Signup']);
@@ -106,10 +135,10 @@ _kmq.push(['record', 'Viewed Signup']);
 
 So when the browser executes the line `_kmq.push(['record', 'Viewed Signup']);`, your event is recorded.
 
-<a name="tracking-clicks-trackclick"></a>
+
 ## Tracking Clicks - `trackClick`
 
-If you are just looking to track every click on your your site we recommend [Crazy Egg][crazyegg]. With KISSmetrics we recommend tracking only significant elements. To accomplish this, you can use `trackClick`. This sets up an element to record an event _only_ when the visitor has clicked on the element.
+If you are just looking to track every click on your your site we recommend [Crazy Egg][crazyegg]. With Kissmetrics we recommend tracking only significant elements. To accomplish this, you can use `trackClick`. This sets up an element to record an event _only_ when the visitor has clicked on the element.
 
 `trackClick` takes two parameters: the HTML ID or CSS class of the element you are tracking, and the name of the event to record when someone clicks said element:
 
@@ -158,10 +187,10 @@ _kmq.push(['trackClick', 'invite_link', 'Invite Friends Clicked', {
 }]);
 {% endhighlight %}
 
-<a name="tracking-outbound-link-clicks-trackclickonoutboundlink"></a>
+
 ## Tracking Outbound Link Clicks - `trackClickOnOutboundLink`
 
-The default method of tracking clicks by KISSmetrics works well for most cases. However, if you are trying to track a click on an outbound link (a link to a different website), it is possible for the browser to change pages before it has a chance to send the data to KISSmetrics. For these cases, there is an alternative function available: `trackClickOnOutboundLink`:
+The default method of tracking clicks by Kissmetrics works well for most cases. However, if you are trying to track a click on an outbound link (a link to a different website), it is possible for the browser to change pages before it has a chance to send the data to Kissmetrics. For these cases, there is an alternative function available: `trackClickOnOutboundLink`:
 
 {% highlight html %}
 <a href="http://othersite.com" id="link1">Visit Other Site</a>
@@ -173,13 +202,13 @@ The default method of tracking clicks by KISSmetrics works well for most cases. 
 This builds in time to send the event by:
 
 * Canceling the original click event's default behavior
-* Sending the data to KISSmetrics
+* Sending the data to Kissmetrics
 * Waiting 250ms
 * Redirecting the browser by setting `document.location`
 
 For this reason we don't recommend this for usual click tracking. Please make sure to test this with your site so that this performs as expected.
 
-<a name="tracking-forms-tracksubmit"></a>
+
 ## Tracking Forms - `trackSubmit`
 
 You can use the `trackSubmit` function to track when a form is submitted. This sets up the element to record an event _only_ when the visitor has submitted the form.
@@ -219,10 +248,10 @@ _kmq.push(['trackSubmit', 'signup_form', 'Sign Up Form Submitted', { 'variation'
 
 *Note: our code does not validate the contents of the form. If a visitor fills out a form incorrectly and submits it, we will* **still** *count that as a submit event. Certain events like Signups could be tracked more accurately by recording the event on the following page, or using a server-side library to record the event when an entry is created in your database.*
 
-<a name="auto-tracking-form-fields"></a>
+
 ### Auto-Tracking Form Fields
 
-By default, if you are tracking forms with `trackSubmit`, we will also capture all non-sensitive form fields as KISSmetrics properties. (We won't record [passwords, hidden, textarea fields as well as sensitive fields like credit card numbers and social security numbers][protected].)
+By default, if you are tracking forms with `trackSubmit`, we will also capture all non-sensitive form fields as Kissmetrics properties. (We won't record [passwords, hidden, textarea fields as well as sensitive fields like credit card numbers and social security numbers][protected].)
 
 You can toggle whether to automatically capture form fields in your [JavaScript Settings][js-settings], under the *Form Fields* section.
 
@@ -231,19 +260,19 @@ When the JS is set to automatically capture form fields, including these CSS cla
 * `.km_ignore`: forces us to ignore a field
 * `.km_include`: forces us to include a field we normally would not capture
 
-<a name="property-name-and-value-to-expect"></a>
+
 #### Property Name and Value to Expect
 
 For the Property Name, we use each `<input>`'s `name` attribute. *If there is no name, we cannot capture the information from that `<input>` field.*
 
 The Value for the Property will be whatever the customer enters into the form.
 
-<a name="identifying-a-person-from-a-form-field"></a>
+
 #### Identifying a Person From a Form Field
 
 If an anonymous person submits a tracked form, we also check for any fields that could be used as an identity, such as a username or email address. This is especially useful on forms where people subscribe to newsletters.
 
-We will only use an `<input>` as an identity if its Name attribute is one of the following:
+We will only use an `<input>` as an identity if its Name attribute contains one of the following:
 
 * `userid`
 * `login`
@@ -270,24 +299,19 @@ If you are unsure whether your forms behave this way, please contact your site's
 
 [jquery-submit]: http://stackoverflow.com/questions/645555/should-jquerys-form-submit-not-trigger-onsubmit-within-the-form-tag
 
-<a name="override-the-referrer"></a>
-## Override the Referrer
+# Cookies
 
-If you anticipate that your site will be hosted in an iFrame (say, within a Facebook Canvas app), then you'll want to make sure to save the true Referrer, the site that brought a person to your page, rather than the site hosting the iFrame itself.
+Kissmetrics uses these *first party* cookies on your domain. They expire after 5 years unless otherwise specified.
 
-You can do this by setting the variable `KM_REFERRER` like so:
+Cookie Name | Description
+----------- | -----------
+`km_abi` |  A unique string that is used to remember which [KM A/B test][a-b-km] variation was seen.
+`km_ai` | A person's Anonymous ID.
+`km_ni` | A person's Named ID.
+`km_lv` | Time of the last visit, to determine whether they are a returning visitor or not. Has a value of `x` if they're already designated as a returning visitor.
+`km_vs` | Set to 1 if the visitor is in an active browsing session. It expires after 30 minutes.
+`km_uq` | A URL queue that preserves unsent tracking URLs from page to page. It empties out if our tracking servers are online.
 
-{% highlight html %}
-<script type="text/javascript">
-  var KM_REFERRER = parent.document.referrer;
-  var _kmq = _kmq || [];
-  ...
-</script>
-{% endhighlight %}
-
-Even if your site is not in an iFrame, `parent.document.referrer` should still be the same as `document.referrer` and behave normally anyway.
-
-<a name="cookie-domain"></a>
 ## Cookie Domain
 
 By default, if you have put the JavaScript code on several of your subdomains, it uses the same cookies for all of your subdomains (not just `www`):
@@ -301,7 +325,7 @@ By default, if you have put the JavaScript code on several of your subdomains, i
 </script>
 {% endhighlight %}
 
-If you want to track the subdomains separately in two different accounts, you can specify a cookie domain `KM_COOKIE_DOMAIN` before the KISSmetrics Javascript is included. This might look like:
+If you want to track the subdomains separately in two different accounts, you can specify a cookie domain `KM_COOKIE_DOMAIN` before the Kissmetrics Javascript is included. This might look like:
 
 {% highlight html %}
 <script type="text/javascript">
@@ -311,31 +335,17 @@ If you want to track the subdomains separately in two different accounts, you ca
 </script>
 {% endhighlight %}
 
-<a name="get-your-current-kissmetrics-id"></a>
-## Get Your Current KISSmetrics ID
-
-The function `KM.i()` will return the visitor's KISSmetrics ID, in case you need to pass that along to another function.
-
-Remember to wrap this in a [callback function][callback] to ensure the JavaScript library has loaded before you try to fetch this information:
-
-{% highlight html %}
-<script type="text/javascript">
-_kmq.push(function()
-  { alert(KM.i()) } // Display an alert box with your current KM identity
-);
-</script>
-{% endhighlight %}
 
 [common]: /apis/common-methods
-[trackclick]: #tracking-clicks-trackclick
-[trackoutbound]: #tracking-outbound-link-clicks-trackclickonoutboundlink
-[tracksubmit]: #tracking-forms-tracksubmit
+[trackclick]: #tracking_clicks_trackclick
+[trackoutbound]: #tracking_outbound_link_clicks_trackclickonoutboundlink
+[tracksubmit]: #tracking_forms_tracksubmit
 [a-b-km]: /a-b-testing/using-km-js
-[kmi]: #get-your-current-kissmetrics-id
+[kmi]: #get_your_current_kissmetrics_id
 [clear-id]: /advanced/multiple-people-same-browser
-[callback]: #callback-functions
+[callback]: #callback_functions
 [protected]: /apis/javascript/javascript-specific/protected-form-fields
-[referrer]: #override-the-referrer
+[referrer]: #override_the_referrer
 [ga]: http://www.google.com/analytics/
 [crazyegg]: http://www.crazyegg.com/
 

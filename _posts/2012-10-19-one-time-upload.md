@@ -2,9 +2,12 @@
 layout: post
 title: One-Time CSV Upload
 categories: [integrations, csv-import]
-author: Eric Fung
 summary: Import data by uploading a single .csv file.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 This guide explains how to import data from individual .csv files.
 
 ## 1. Navigate to the Upload Area

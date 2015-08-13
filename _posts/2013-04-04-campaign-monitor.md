@@ -2,10 +2,13 @@
 layout: post
 title: Campaign Monitor
 categories: integrations
-author: Eric Fung
-summary: Import historical subscriber information from Campaign Monitor into KISSmetrics.
+summary: Import historical subscriber information from Campaign Monitor into Kissmetrics.
 published: false
 ---
+* Table of Contents
+{:toc}
+* * *
+
 [Campaign Monitor][campaign-monitor] has created a Ruby gem to import data about your subscribers.
 
 You can get instructions for installation and usage at [http://www.drewgillson.com/blog/integrate-campaignmonitor-kissmetrics/][instructions].

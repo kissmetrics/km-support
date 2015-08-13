@@ -2,9 +2,12 @@
 layout: post
 title: Relative To
 categories: [tools, power-report]
-author: Eric Fung
 summary: The Power Report has a date calculation called "Relative to [segment]". Here's what it means.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 As you use the Power Report, you may notice an option appear in the date picker for your report columns called "Relative To SEGMENT NAME". This differs from the usual calculations of "Global Date" or "Last Month" or "Last 30 days".
 
 * **Global Date Range** (or any other range of days): we'll **find the people** that belong in the report first, **then** place them into segments.
@@ -20,10 +23,10 @@ Now imagine four different people:
     Dec 9 @ 1:00 PM "Performed Event Foo"
     Dec 9 @ 2:00 PM "A/B Variation" set to "Variation A"
     Dec 9 @ 2:01 PM "Performed Event Foo"
-    
+
     Person B
     Dec 9 @ 1:00 PM "Performed Event Foo"
-    
+
     Person C
     Dec 9 @ 1:00 PM "Performed Event Foo"
     Dec 9 @ 2:00 PM "A/B Variation" set to "Variation A"
@@ -31,7 +34,7 @@ Now imagine four different people:
     Person D:
     Dec 9 @ 2:00 PM "Performed Event Foo"
     Dec 9 @ 2:00 PM "A/B Variation" set to "Variation A"
-    
+
 * **Global Date Range (December 9)**: we'll find the people that belong, and then figure out what segments they belong in. So, we report that *all 4 people* "Performed Event Foo", 3 of which (A, C, and D) were eventually assigned to the segment "Variation A", while 1 person (B) is assigned to the segment "None", representing they did not receive an "A/B Variation" property.
 
 Segment | Number of People who "Performed Event Foo"

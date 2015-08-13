@@ -3,10 +3,12 @@ layout: post
 categories: [apis, javascript]
 title: "Recreating TrackSubmit Using jQuery"
 tags: []
-author: Eric Fung
-summary: 
+summary: Track form submissions using jQuery.
 published: false
 ---
+* Table of Contents
+{:toc}
+* * *
 
 {% highlight js %}
 trackSubmitWithjQuery = function(selector, event_name, properties)

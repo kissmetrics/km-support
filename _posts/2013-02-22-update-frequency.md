@@ -3,14 +3,17 @@ layout: post
 categories: tools
 title: "How recent is my data?"
 tags: []
-author: Eric Fung
 summary: How soon will I be able to see data?
 ---
+* Table of Contents
+{:toc}
+* * *
+
 We are continually processing the data from activity that is currently happening. We'll show your site's data status in the sidebar of your dashboard:
 
 ![Data Status][data-status]
 
-KISSmetrics Report | How up-to-date is the data?
+Kissmetrics Report | How up-to-date is the data?
 --------------------------- | -----------
 [Metrics - Dashboard][dashboard] | Updated around every 24 hours. Hover over an individual metric's info icon for more details. ![Metric Dashboard][metric-dashboard]
 [Metric Detail][over-time] | As up-to-date as the last time we've processed data (about 2-5 hours).

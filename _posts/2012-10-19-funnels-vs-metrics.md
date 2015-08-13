@@ -2,9 +2,12 @@
 layout: post
 title: Conversion Calculation in Funnels vs. Metrics
 categories: tools
-author: Eric Fung
 summary: Explains how the method we use to calculate conversions in a metric is different from the one we use to calculate conversions in a funnel.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 The way conversions are calculated in funnels and in metrics differ subtly.
 
 ## Funnels:
@@ -31,7 +34,7 @@ This would be a conversion between two events, `Visited Site` and `Signed Up`.
 * If you use a funnel report, visits from both members and anonymous/non-members are counted, potentially inflating the Visited Site number and lowering the conversion rate.
 * If you use a metric, the people who have already signed up are not counted. It is calculated as:
 
-(All the people who Visited Site in the time period AND whose first Signed Up event occurred after this Visited Site) 
+(All the people who Visited Site in the time period AND whose first Signed Up event occurred after this Visited Site)
 
 divided by
 

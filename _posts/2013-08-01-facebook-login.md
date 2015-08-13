@@ -3,10 +3,13 @@ layout: post
 title: Measuring Facebook Logins and Signups
 categories: how-tos
 tags: []
-author: Eric Fung
 summary: Tap into Facebook's JS API to differentiate Logins and Signups via Facebook Connect.
 ---
-Letting your users sign up and login with their Facebook accounts is extremely convenient. On the other hand, tracking these signups and logins accurately will require combining the [Facebook JavaScript SDK][fb-js-sdk] with KISSmetrics API calls.
+* Table of Contents
+{:toc}
+* * *
+
+Letting your users sign up and login with their Facebook accounts is extremely convenient. On the other hand, tracking these signups and logins accurately will require combining the [Facebook JavaScript SDK][fb-js-sdk] with Kissmetrics API calls.
 
 ## Check Login Status
 
@@ -26,9 +29,9 @@ Either way, you can parse the `response` for the `status` of the visitor:
 * `not_authorized`. The person is logged into Facebook, but has not logged into your app.
 * `unknown`. The person is not logged into Facebook, so you don't know if they've logged into your app.
 
-## `Status` Corresponds to KISSmetrics Events
+## `Status` Corresponds to Kissmetrics Events
 
-These three statuses correspond to what call to KISSmetrics you should make:
+These three statuses correspond to what call to Kissmetrics you should make:
 
 * `connected`: [automatically log in][auto-login] and record the ***Logged In*** event upon success.
 * `not_authorized`: prompt the visitor to login with `FB.login()` and record the ***Signed Up*** event upon success.

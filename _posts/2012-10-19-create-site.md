@@ -2,10 +2,13 @@
 layout: post
 title: Create a New Site
 categories: how-tos
-author: Eric Fung
-summary: How to generate a new API key by creating a new site in your KISSmetrics account.
+summary: How to generate a new API key by creating a new site in your Kissmetrics account.
 ---
-You can generate more than one API key for your KISSmetrics account if you're managing different websites, or if you want to keep your testing/development data separate from your production site's data.
+* Table of Contents
+{:toc}
+* * *
+
+You can generate more than one API key for your Kissmetrics account if you're managing different websites, or if you want to keep your testing/development data separate from your production site's data.
 
 ## Instructions
 

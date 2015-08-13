@@ -2,9 +2,12 @@
 layout: post
 title: Tracking Refunds
 categories: how-tos
-author: Eric Fung
 summary: Track refunds as a separate event, with a negative Billing Amount property.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 If you are tracking **Billed** or **Purchased** events, then tracking refunds is a simple addition. You can add the **Refunded** event, and pass in a negative **Billing Amount** property. This will help correctly calculate metrics like `Total Lifetime Value`. Make sure to use the same property name that is tracking your revenue information, If your property name is different from **Billing Amount**.
 
 ## Example

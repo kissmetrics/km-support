@@ -2,9 +2,12 @@
 layout: post
 title: Tracking Email
 categories: how-tos
-author: Eric Fung
 summary: Tracking email performance, from beginning to end.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 When you email your customers, there are three main actions that these people do:
 
 1. The person **receives** the email.
@@ -41,7 +44,7 @@ The beacon might look like this:
 
     <img src=`http://trk.kissmetrics.com/e?_k=YOUR_API_KEY&_n=Viewed+Email&_p=john%40smith.com` />
 
-This records the `Viewed Email` event, attributed to `john@smith.com` (`@` is [URL-encoded][encoding] as `%40`), which is the same ID I used in Step 1. 
+This records the `Viewed Email` event, attributed to `john@smith.com` (`@` is [URL-encoded][encoding] as `%40`), which is the same ID I used in Step 1.
 
 ## 3. Tracking Email Clickthroughs
 

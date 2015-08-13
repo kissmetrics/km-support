@@ -2,18 +2,21 @@
 layout: post
 title: SaaS Marketing Power Report Use Case
 categories: use-cases
-author: Lars Lofgren
 summary: How to track multiple marketing metrics using the Power Report
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## How to track multiple marketing metrics using the Power Report
 
 What if we wanted to go beyond revenue metrics for our marketing campaigns and see how many signups we received or what our engagement was like? How would we get that data?
 
 Let's say we want to know the total revenue, the average revenue per person, total signups, and the average time between signup and billed (we have a free trial). We also want to see how these numbers differ between our marketing campaigns AND how they change from one month to the next. Sounds pretty complicated right?
 
-Before KISSmetrics, the only way you could answer this question was to go to your customer database and write come code that would pull out the information you needed. If you have a technical background and a basic knowledge of MySQL, this isn't such a big deal. But for the rest of us, we're completely limited to the types of reports we're able to build within our analytics platforms. Sadly, these reports aren't nearly robust enough to handle such a complicated set of data.
+Before Kissmetrics, the only way you could answer this question was to go to your customer database and write come code that would pull out the information you needed. If you have a technical background and a basic knowledge of MySQL, this isn't such a big deal. But for the rest of us, we're completely limited to the types of reports we're able to build within our analytics platforms. Sadly, these reports aren't nearly robust enough to handle such a complicated set of data.
 
-This is where the KISSmetrics Power Report gives you the flexibility you need to answer any business question you have. It's as robust as it gets. No matter how detailed or complex your question, you'll be able to pull the data you need from the Power Report. And you don't need to touch a single line of code.
+This is where the Kissmetrics Power Report gives you the flexibility you need to answer any business question you have. It's as robust as it gets. No matter how detailed or complex your question, you'll be able to pull the data you need from the Power Report. And you don't need to touch a single line of code.
 
 I'm going to show you step-by-step how to get this report built and give you a detailed guide on how the Power Report works.
 
@@ -21,7 +24,7 @@ First, let's build a SUPER simple version of the report to get our feet wet. The
 
 ## The Foundation of the Report
 
-To find your Power Reports, go to your KISSmetrics Reports.
+To find your Power Reports, go to your Kissmetrics Reports.
 
 ![KM-Nav-Bar-Reports][ss1]
 
@@ -90,7 +93,7 @@ Instead of just revenue, what if we wanted some more metrics side-by-side to get
 
 Then let's go a step further and break our timeline down by campaign medium. This will tell us which types of marketing campaigns contributed to the revenue above. With the extra metrics we'll add, we'll also know how those campaigns perform along several different goals.
 
-KISSmetrics uses UTM parameters to track campaign URLs (the same way that Google Analytics does). [Check out our guide here][campaign-urls] to learn how to do this.
+Kissmetrics uses UTM parameters to track campaign URLs (the same way that Google Analytics does). [Check out our guide here][campaign-urls] to learn how to do this.
 
 ## Building the Rest of the Report
 
@@ -144,7 +147,7 @@ Now we have a complete breakdown of our marketing channels. We know which ones a
 
 Once you have your Power Report built just the way you want it, go ahead and save it. Then it'll be ready to go whenever you want to look through your data.
 
-When you feel like your Power Report has become too large to manage, there's an "Export data" button just above your results. By clicking this button, you'll receive a CSV file at the email you've used to log into KISSmetrics.
+When you feel like your Power Report has become too large to manage, there's an "Export data" button just above your results. By clicking this button, you'll receive a CSV file at the email you've used to log into Kissmetrics.
 
 If you run into data that doesn't seem to make sense, the first thing you want to check are the dates for your segments and metrics. You'll usually want to stick with the default selection which will be the Global date or a relative date to one of your segments. But when you're editing a report, it's easy for your date selections to get switched around. If you're not using the default selection, a short message will display next to the date picker telling you what the default is.
 

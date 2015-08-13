@@ -2,10 +2,14 @@
 layout: post
 title: Events - Visits the URL
 categories: [tutorial, event-library-tutorial]
-author: Lars Lofgren
 summary: Trigger events when someone visits a URL.
 ---
-<div id="wistia_700b63755a" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400"></div>
+* Table of Contents
+{:toc}
+* * *
+
+<div id="wistia_700b63755a" class="wistia_embed wistia-embed" data-video-width="640" data-video-height="400">
+</div>
 
 ## Create the Event
 
@@ -80,9 +84,3 @@ To quickly test your URL pattern without creating an event, you can open up your
 [page-views]: /apis/javascript#page-views
 [js-settings]: https://app.kissmetrics.com/product.js_settings
 [wildcards]: /tools/event-library/events-url/wildcards
-
-<script charset="ISO-8859-1" src="http://fast.wistia.com/static/E-v1.js">
-</script>
-<script type="text/javascript">
-loadKMTrackableVideo("700b63755a", "Events: Visits the URL");
-</script>

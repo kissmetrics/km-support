@@ -3,10 +3,13 @@ layout: post
 title: Too Many Unique Event Names or Property Names
 categories: troubleshooting
 tags: [common_dev_pitfalls]
-author: Eric Fung
 summary: Having too many event names slows the experience with our app. Please avoid sending us too many event names.
 ---
-If you have over about a thousand unique event names or unique property names, it impacts the speed of browsing around the KISSmetrics site. We can handle millions of people doing the same event millions of times, but this is a matter of having too many different types of events or properties.
+* Table of Contents
+{:toc}
+* * *
+
+If you have over about a thousand unique event names or unique property names, it impacts the speed of browsing around the Kissmetrics site. We can handle millions of people doing the same event millions of times, but this is a matter of having too many different types of events or properties.
 
 ## How is it possible to end up with thousands of different events?
 
@@ -19,7 +22,7 @@ This typically happens if you write API calls in a very generic way that creates
 
 ## How should I structure my data instead?
 
-There is often a way to pass the data you're looking for as the ***value*** to a KISSmetrics property, so that we can capture all of the data while making it more manageable to report on. For example:
+There is often a way to pass the data you're looking for as the ***value*** to a Kissmetrics property, so that we can capture all of the data while making it more manageable to report on. For example:
 
 * Page views: `_kmq.push(['record', 'Page View', {'Viewed URL': document.URL}]);`
 * Viewing a product: `_kmq.push(['record', 'Viewed Potential Purchase', {'Viewed Product SKU':code-to-get-sku}]);`

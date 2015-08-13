@@ -1,11 +1,15 @@
 ---
 layout: post
 title: Developing in localhost
-categories: advanced
+categories: apis
 tags: javascript
-author: Eric Fung
-summary: Don't use KISSmetrics with `localhost` as your development environment; provide a custom domain name to set your cookies.
+summary: Don't use Kissmetrics with `localhost` as your development environment; provide a custom domain name to set your cookies.
+permalink: /advanced/local-development
 ---
+* Table of Contents
+{:toc}
+* * *
+
 When you set cookies for `localhost`, the Chrome web browser does not keep them as you navigate around. So, the parts of our JavaScript library that use cookies will behave differently than what you would normally see in production on a live site. Namely:
 
 * Your KM identity changes around when browsing from page to page.

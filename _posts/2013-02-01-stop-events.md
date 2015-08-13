@@ -2,9 +2,12 @@
 layout: post
 title: How To Stop Sending Events
 categories: how-tos
-author: Eric Fung
 summary: How to keep events from contributing to your event count.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 To stop events from counting towards your monthly quota, you'll have to make sure to keep people from generating those events. Remember that the [Event Library][event-lib] groups events into two sets, so here's how to approach stopping both types of events.
 
 ## Events Created By You

@@ -2,10 +2,13 @@
 layout: post
 title: How do I see where my traffic is coming from?
 categories: how-tos
-author: Eric Fung
 summary: How do I see where my traffic is coming from?
 ---
-If you've installed our [JavaScript Library][js], then we'll be recording where people come from to get to your site. Information about traffic sources can be seen across several KISSmetrics properties:
+* Table of Contents
+{:toc}
+* * *
+
+If you've installed our [JavaScript Library][js], then we'll be recording where people come from to get to your site. Information about traffic sources can be seen across several Kissmetrics properties:
 
 * `Referrer` - *any* site that links to your site
 * `Search Engine` and `Search Terms` - includes paid and organic search terms

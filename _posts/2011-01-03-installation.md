@@ -3,10 +3,13 @@ layout: post
 title: Installing the JavaScript Library
 categories: tutorial
 tags: [developer_portal]
-author: Lars Lofgren
 summary: Learn how to install the JavaScript Library for your site.
 permalink: /tutorial/installation/index.html
 ---
+* Table of Contents
+{:toc}
+* * *
+
 1. The first step is to install your tracking script (found in your [site settings][settings]) after the opening `<head>` tag on every page of your site. (If you're wondering if it's possible to move the script lower down the page, please [read about our recommendation][top-v-bottom].)
 
 2. Once the script has been installed, it may take anywhere from 2 to 6 hours for tracking to start. We will send you an email notification when data starts becoming available.

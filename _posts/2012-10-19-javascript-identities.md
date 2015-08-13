@@ -2,9 +2,12 @@
 layout: post
 title: Reusing the Identities Set by the JavaScript Library
 categories: [apis, javascript]
-author: Eric Fung
 summary: Our JavaScript library generates customer identities. You can obtain these identities to use them with our server-side libraries or URL API.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Our JavaScript library attempts to reduce your work in keeping track of unique people:
 
 1. It generates its own anonymous IDs to represent unknown visitors.
@@ -19,7 +22,7 @@ So if you plan to use our server-side libraries or [URL API][url], you can tap i
 
 ## Wait For Our JavaScript Library to Load
 
-Since the KISSmetrics script loads asynchronously, you'll want to make sure that the library has loaded before you try to call `KM.i()`.
+Since the Kissmetrics script loads asynchronously, you'll want to make sure that the library has loaded before you try to call `KM.i()`.
 
 To do this, wrap your call to `KM.i()` in a [callback function][callback], and push that function to `_kmq`
 

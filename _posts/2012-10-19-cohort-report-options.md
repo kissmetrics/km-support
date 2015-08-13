@@ -2,9 +2,12 @@
 layout: post
 title: Cohort Report Options
 categories: [tools, cohort-report]
-author: Eric Fung
 summary: An overview of the different options you have when generating cohort reports.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ![Cohort][cohort]
 
 ## Date Range

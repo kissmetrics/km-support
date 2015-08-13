@@ -2,9 +2,12 @@
 layout: post
 title: Tracking Social Events
 categories: how-tos
-author: Eric Fung
 summary: JavaScript commands for tracking Likes, Follows, Tweets, Shares, +1's, etc.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 Thanks to Tristan at [grasshopperherder.com][ghh] for compiling this list.
 
 [ghh]: http://grasshopperherder.com
@@ -87,7 +90,7 @@ Start by creating your button on the LinkedIn dev pages [https://developer.linke
 function linkedin_share() {
   _kmq.push(['record', 'Shared on LinkedIn']);
 }
-</script> 
-{% endhighlight %}   
+</script>
+{% endhighlight %}
 
 [linked-in]: https://developer.linkedin.com/plugins/share-button

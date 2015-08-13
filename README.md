@@ -2,20 +2,22 @@
 
 ## Dependencies
 
-You'll need a version of Ruby (we'll use 1.9.3 for the sake of example) and bundler.
+You'll need Ruby and bundler.
 
-Let's start by installing GCC, Homebrew, and RVM:
+Let's start by installing Xcode, Homebrew, and RVM. Follow the instructions on each site:
 
-* Install this bundle to get gcc-4.2: [https://github.com/kennethreitz/osx-gcc-installer](https://github.com/kennethreitz/osx-gcc-installer) Previously, xCode did not provide a compatible Ruby compiler, but this may be fixed now. You should be okay with installing the latest xCode and its Command Line Tools.
-* [Homebrew](http://brew.sh/): `ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"`
-* [RVM](https://rvm.io/): `\curl -L https://get.rvm.io | bash -s stable`
+* [Xcode](https://itunes.apple.com/us/app/xcode/id497799835)
+* [Homebrew](http://brew.sh/)
+* [RVM](https://rvm.io/)
 
 Now in a terminal:
 
-    rvm install 1.9.3
-    rvm use 1.9.3
-    gem install bundler
-    bundle install
+```
+cp .ruby-version.example .ruby-version
+cd .
+gem install bundler
+bundle install
+```
 
 ## Getting the Repository
 
@@ -24,7 +26,7 @@ If you've used Github before, it's pretty straightforward to get started.
 * You can fork the repository if you're making only one or two changes.
 * You can ask to be added as a contributor to the repository, and clone it that way.
 
-Repository is at [https://github.com/kissmetrics/km-support]() 
+Repository is at [https://github.com/kissmetrics/km-support]()
 
 # 2. To run the server:
 
@@ -42,7 +44,7 @@ Then navigate to [http://localhost:4000](http://localhost:4000).
 
 We have a Rake task available to automate the creation of a blank post. Use the command `rake post`, which you use if you're in the project directory. You can also specify options on the command line as follows:
 
-    $ rake post title="Some API" author="Eric Fung" categories=apis tags="some, tags"
+    $ rake post title="Some API" categories=apis tags="some, tags"
     Creating new post: ./_posts/2013-02-04-some-api.md
 
 This fills in some attributes each post should have, which we'll discuss below.
@@ -51,7 +53,7 @@ This fills in some attributes each post should have, which we'll discuss below.
 
 If you're putting up new images, you should compress them to minimize the amount of bandwidth used. We've been using [http://imageoptim.com/](http://imageoptim.com/).
 
-The KISSmetrics team has an S3 bucket that contains most of the support material. We're mainly using [3Hub](http://www.3hubapp.com/) to communicate with the bucket. Alternatively, you can upload individual images to [CloudApp](http://my.cl.ly/).
+The Kissmetrics team has an S3 bucket that contains most of the support material. We're mainly using [3Hub](http://www.3hubapp.com/) to communicate with the bucket. Alternatively, you can upload individual images to [CloudApp](http://my.cl.ly/).
 
 # What makes up a post?
 
@@ -60,9 +62,8 @@ Here's an example of the [YAML front matter](https://github.com/mojombo/jekyll/w
     layout: post
     title: Overview
     categories: getting-started
-    author: Eric Fung
     tags: []
-    summary: What is KISSmetrics? What can I learn from using KISSmetrics? How are we different from other analytics solutions? What should I track to make the most of KISSmetrics?
+    summary: What is Kissmetrics? What can I learn from using Kissmetrics? How are we different from other analytics solutions? What should I track to make the most of Kissmetrics?
 
 1. Layout is defaulted to "post". This is the template to use for displaying our content. We haven't made any other templates...yet.
 2. Title: What is shown at the top of the article. If using the rake task, this also initially influences the URL it'll be on, but the title and the URL don't have to be exactly the same thing.
@@ -99,11 +100,11 @@ Here is a link: [http://jekyllrb.com/docs/home/](http://jekyllrb.com/docs/home/)
 
 * If `_site` does not build, set `auto: false` in `_config.yml` and watch for the Ruby errors locally
 * The `_site` folder is automatically generated, so make sure you're not editing the files in there!
- 
+
 ## Neat Uses of Liquid
 
 * Reversing a list: `{% for page in site.categories.troubleshooting reversed %}`
 
-## Pygments 
+## Pygments
 
 You can tag code examples with Pygments for colored syntax-highlighting. Here's a reference for how to incorporate the language into your example: [http://pygments.org/docs/lexers/](http://pygments.org/docs/lexers/)

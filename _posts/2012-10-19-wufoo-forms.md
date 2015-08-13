@@ -15,7 +15,7 @@ Wufoo does provide a "[webhook][webhook]" integration. The gist is, when your cu
 
 Once your server has received the POST'ed form data, you would parse through it, because the form fields are not easily identifiable. For example, a field you set up for "First Name" might have `<input id="Field1" ...>`, which doesn't say much about what that field captured.
 
-Once you've sifted through the data, you could use our [usual libraries][libraries] to send the form submission event to KISSmetrics.
+Once you've sifted through the data, you could use our [usual libraries][libraries] to send the form submission event to Kissmetrics.
 
 Wufoo's documentation gives some good pointers towards resources for getting started, if you're relatively new at doing such things. But in the end, it looks like tracking Wufoo forms is not as simple as providing the form ID.
 

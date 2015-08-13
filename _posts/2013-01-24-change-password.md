@@ -2,9 +2,12 @@
 layout: post
 title: Change Your Password
 categories: troubleshooting
-author: Eric Fung
 summary: We require passwords to have at least 8 characters and 2 numbers/symbols.
 ---
+* Table of Contents
+{:toc}
+* * *
+
 ## Password Requirements
 
 We require passwords to have **at least 8 characters and 2 numbers or symbols**.

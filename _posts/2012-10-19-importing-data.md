@@ -1,11 +1,15 @@
 ---
 layout: post
-title: Import Existing Data Into KISSmetrics
-categories: advanced
-author: Eric Fung
-summary: Import your existing data into KISSmetrics.
+title: Import Existing Data Into Kissmetrics
+categories: integrations
+summary: Import your existing data into Kissmetrics.
+permalink: /advanced/importing-data
 ---
-Events are informative, but only starting from the day you set up the event. You may have access to past data that would be useful for KISSmetrics to know about, including past Signups, Purchases, Upgrades and Downgrades. This data can be either in your own databases or in another platform like [Shopify][shopify].
+* Table of Contents
+{:toc}
+* * *
+
+Events are informative, but only starting from the day you set up the event. You may have access to past data that would be useful for Kissmetrics to know about, including past Signups, Purchases, Upgrades and Downgrades. This data can be either in your own databases or in another platform like [Shopify][shopify].
 
 We can receive back-dated data that goes as far back as January 1, 2009.
 
@@ -22,7 +26,7 @@ This page will go over the last option, scripting the import using a server-side
 
 We make use of our [API Specifications][specs] for submitting data to our servers. Particularly, the `_t` and `_d` parameters are used to indicate the time the events originally occurred, in the past. The import can be facilitated by using code written with one of our APIs, or with a [third-party API][other].
 
-In order for this to be effective, you'll want to be consistent in how you are identifying customers. That is, ensure you use the same identities during the import as the identities that the other KISSmetrics data sources (eg. our JavaScript Library) use. Please see [Understanding Identities][identity] for more details.
+In order for this to be effective, you'll want to be consistent in how you are identifying customers. That is, ensure you use the same identities during the import as the identities that the other Kissmetrics data sources (eg. our JavaScript Library) use. Please see [Understanding Identities][identity] for more details.
 
 ### Examples of Possible Scenarios
 
@@ -39,7 +43,6 @@ For example, if you have the table below:
     +----+--------------------------+---------------------+
     |  1 | your@user.com            | 2009-10-01 00:00:00 |
     |  2 | test@kissmetrics.com     | 2009-10-01 01:00:00 |
-    |  3 | petenixey@gmail.com      | 2009-10-01 18:54:14 |
     +----+--------------------------+---------------------+
 
 You could script the import to do the following:
@@ -86,7 +89,6 @@ Your users table may have information about cancelations, and this should be rec
     +----+--------------------------+---------------------+
     |  1 | your@user.com            | 2009-10-01 00:00:00 |
     |  2 | test@kissmetrics.com     | 2009-10-01 00:00:00 |
-    |  3 | petenixey@gmail.com      | 2009-10-01 18:54:14 |
     +----+--------------------------+---------------------+
 
 {% highlight ruby %}
@@ -100,7 +102,7 @@ KM.identify("test@kissmetrics.com")
 
 #### Other Custom Events ("`Viewed Dashboard`")
 
-If you are recording every time a user visits your website, with your own events table or otherwise, then this is useful information. At KISSmetrics, we are collecting this event no more frequently than once per 30 minutes. If you collect for every visit, and you have an associated timestamp, you should send an event just for each half hours worth of visit.
+If you are recording every time a user visits your website, with your own events table or otherwise, then this is useful information. At Kissmetrics, we are collecting this event no more frequently than once per 30 minutes. If you collect for every visit, and you have an associated timestamp, you should send an event just for each half hours worth of visit.
 
     +----+---------+-------------------+---------+---------------------+
     | id | user_id | event             | plan_id | created_at          |
@@ -114,7 +116,7 @@ If you are recording every time a user visits your website, with your own events
 
 {% highlight ruby %}
 # We used emails as previous KM identities. Derive the email from the user_id.
-KM.identify("your@user.com") 
+KM.identify("your@user.com")
 KM.record "Visited Dashboard", :_t=>Time.parse("2009-10-01 14:29:42").to_i, :_d=>1, 'URL' => 'http://kissmetrics.com/dashboard', 'Referrer' => 'http://kissmetrics.com'
 KM.record "Visited Dashboard", :_t=>Time.parse("2009-10-01 16:22:12").to_i, :_d=>1, 'URL' => 'http://kissmetrics.com/dashboard', 'Referrer' => ''
 ...
