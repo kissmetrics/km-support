@@ -18,7 +18,7 @@ summary: People can be segmented in different ways within a single metric.
 
 * **Last in Date Range**: Will group your users according to the last property value they received within the date range.
 
-* **Breakdown of each**: Will group your users according to the property value they had at the time of performing the metric’s event. This is the only grouping that makes it possible for one user to be counted across multiple property values. For the metrics "Total Value for Property" and "Average Value for Property", we’ll first need to distinguish between the segmented property value and the property value we are looking to calculate.  We will refer to the segmented property value as `property value` and to the calculated value as `amount`. In this grouping, we’ll attribute the `amount` to the `property value` on the person at the time we received the `amount`.
+* **Breakdown Over Time**: Will group your users according to the property value they had at the time of performing the metric’s event. This is the only grouping that makes it possible for one user to be counted across multiple property values. For the metrics "Total Value for Property" and "Average Value for Property", we’ll first need to distinguish between the segmented property value and the property value we are looking to calculate.  We will refer to the segmented property value as `property value` and to the calculated value as `amount`. In this grouping, we’ll attribute the `amount` to the `property value` on the person at the time we received the `amount`.
 
 ## Example
 
@@ -78,9 +78,9 @@ Here is the output for each type of grouping for the date range of May, segmente
 
 | Google.com | 150 |
 
-**Breakdown of each**
+**Breakdown Over Time**
 
 | Facebook.com | 50 |
 | Google.com | 100 |
 
-Note: For the metrics "Conversion Rate" and "Average Time Between Event" -- to be grouped in any bucket using "Breakdown of each", the user must have the same value at the time of both events. Otherwise, they are excluded from calculation.
+Note: For the metrics "Conversion Rate" and "Average Time Between Event" -- to be grouped in any bucket using "Breakdown Over Time", the user must have the same value at the time of both events. Otherwise, they are excluded from calculation.
