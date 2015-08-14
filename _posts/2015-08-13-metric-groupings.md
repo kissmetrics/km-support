@@ -62,25 +62,20 @@ Lets walk through an example to show the output for each type of grouping.  In o
 
 Here is the output for each type of grouping for the date range of May, segmented by `referrer`:
 
-**First Ever**
-
-| Linkedin.com | 150 |
-
-**Last Ever**
-
-| Pinterest.com | 150 |
-
-**First in Date Range**
-
-| Facebook.com | 150 |
-
-**Last in Date Range**
-
-| Google.com | 150 |
-
-**Breakdown Over Time**
-
-| Facebook.com | 50 |
-| Google.com | 100 |
+**First Ever** |
+Linkedin.com | 150
+|
+**Last Ever** |
+Pinterest.com | 150
+|
+**First in Date Range** |
+Facebook.com | 150
+|
+**Last in Date Range** |
+Google.com | 150
+|
+**Breakdown Over Time** |
+Facebook.com | 50
+Google.com | 100
 
 Note: For the metrics "Conversion Rate" and "Average Time Between Event" -- to be grouped in any bucket using "Breakdown Over Time", the user must have the same value at the time of both events. Otherwise, they are excluded from calculation.
