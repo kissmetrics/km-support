@@ -150,13 +150,13 @@ var _kmq = _kmq || [];
 function onPlayerStateChange(event) {
   switch(event.data) {
     case YT.PlayerState.PLAYING:
-      _kmq.push(['record', 'Played Video', {'Played Video Name':videoName}]);
+      _kmq.push(['record', 'Played Video', {'Played Video Name':player.getVideoData().title}]);
       break;
     case YT.PlayerState.PAUSED:
-      _kmq.push(['record', 'Paused Video', {'Paused Video Name':videoName}]);
+      _kmq.push(['record', 'Paused Video', {'Paused Video Name':player.getVideoData().title}]);
       break;
     case YT.PlayerState.ENDED:
-      _kmq.push(['record', 'Finished Video', {'Finished Video Name':videoName}]);
+      _kmq.push(['record', 'Finished Video', {'Finished Video Name':player.getVideoData().title}]);
       break;
     default:
       return;
