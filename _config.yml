@@ -1,7 +1,7 @@
 # Jekyll Config
 permalink: none
 markdown: kramdown
-highlighter: true
+pygments: true
 exclude: [Gemfile,Gemfile.lock,Rakefile,CNAME,README.md]
 
 # Site Variables
