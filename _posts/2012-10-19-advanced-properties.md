@@ -64,9 +64,9 @@ Last referrer up to Mar 1 means we will show the referrer that drove a person to
 comparing this to the previous setting to see if people returned to your site via a different referrer within a known timeframe.
 
 
-## Last “property name” before “some step of this report” _(Default)_
+## “Property name” at the time of “some step of this report” _(Default)_
 
-Last referrer before Event 2 means we will show the referrer that drove a person to your site the most recent time prior to the second step in the selected funnel.
+We will show the most recent referrer that drove a person to your site prior to the second step in the selected funnel.
 
 **Use this for**: to see what drove a person to your site on the occasion immediately prior to them signing up, for example.
 
@@ -112,6 +112,6 @@ URL (Domain only) groups together all of the referrer URLs from the same domain,
 </ul>
 {% endfor %}
 
-[advanced1]: http://f.cl.ly/items/0M3R3a183K3D0A3Y2n0I/advanced1.png
-[advanced2]: http://f.cl.ly/items/0v3R3q0E1H440o1I2K2w/advanced2.png
-[advanced3]: http://f.cl.ly/items/0N2S3T2f2y0n0D2J1Q23/advanced3.png
+[advanced1]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/funnels/advanced1.png
+[advanced2]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/funnels/advanced2.png
+[advanced3]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/funnels/advanced3.png
