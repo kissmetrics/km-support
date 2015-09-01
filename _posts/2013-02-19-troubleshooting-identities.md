@@ -128,4 +128,4 @@ _kmq.push(['identify', 'kissmetrics.example@gmail.com']);
 [alias-regular]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/troubleshooting-identities/alias-regular.png
 [alias-zero]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/troubleshooting-identities/alias-zero.png
 [alias-vs-set]: https://s3.amazonaws.com/kissmetrics-support-files/assets/troubleshooting/troubleshooting-identities/alias-vs-set.png
-[no-alias]: http://f.cl.ly/items/2r1q1I1K0g3F192H0J3p/no-alias.png
+[no-alias]: https://kissmetrics-support-files.s3.amazonaws.com/assets/troubleshooting/troubleshooting-identities/no-alias.png
