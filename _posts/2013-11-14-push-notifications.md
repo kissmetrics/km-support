@@ -14,13 +14,13 @@ Within your application delegate's application: `didFinishLaunchingWithOptions:`
 Below the initialization of the KissmetricsAPI…
 
 {% highlight obj-c %}
-    // Check push notification alerts enabled/disabled
-    UIRemoteNotificationType enabledTypes = [[UIApplication sharedApplication] enabledRemoteNotificationTypes];
-    if (enabledTypes & UIRemoteNotificationTypeAlert) {
-        [[KISSMetricsAPI sharedAPI] setProperties:@{@"Accepts push alerts" : 1}];
-    } else {
-        [[KISSMetricsAPI sharedAPI] setProperties:@{@"Accepts push alerts" : 0}];
-    }
+// Check push notification alerts enabled/disabled
+UIRemoteNotificationType enabledTypes = [[UIApplication sharedApplication] enabledRemoteNotificationTypes];
+if (enabledTypes & UIRemoteNotificationTypeAlert) {
+    [[KISSMetricsAPI sharedAPI] setProperties:@{@"Accepts push alerts" : 1}];
+} else {
+    [[KISSMetricsAPI sharedAPI] setProperties:@{@"Accepts push alerts" : 0}];
+}
 {% endhighlight %}
 
 # 2. Tracking notifications
@@ -37,21 +37,21 @@ Capture any valuable data from the userInfo remote notification dictionary:
 ### EX: Capturing the alert message
 
  {% highlight obj-c %}
-    NSDictionary *aps = [userInfo objectForKey:@"aps"];
+NSDictionary *aps = [userInfo objectForKey:@"aps"];
 
-   if (aps) {
-    NSString *alertMsg;
+if (aps) {
+NSString *alertMsg;
 
-    id alert = [aps objectForKey:@"alert"];
-    if ([alert isKindOfClass:[NSDictionary class]]) {
-            // alert Dictionary
-            alertMsg = [alert objectForKey:@"body"];
-    } else {
-            // alert String
-            alertMsg = alert;
-    }
-        [[KISSMetricsAPI sharedAPI] recordEvent:@"Received Remote Notification" withProperties:@{@"alertMsg" : alertMsg}];
-    }
+id alert = [aps objectForKey:@"alert"];
+if ([alert isKindOfClass:[NSDictionary class]]) {
+        // alert Dictionary
+        alertMsg = [alert objectForKey:@"body"];
+} else {
+        // alert String
+        alertMsg = alert;
+}
+    [[KISSMetricsAPI sharedAPI] recordEvent:@"Received Remote Notification" withProperties:@{@"alertMsg" : alertMsg}];
+}
 {% endhighlight %}
 and/or capture any additional data that you've supplied in the push notification's JSON payload.
 
@@ -64,25 +64,25 @@ Capture any valuable data from the userInfo remote notification dictionary:
 ### EX: Capturing the alert message
 
 {% highlight obj-c %}
-    NSDictionary *userInfo = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+NSDictionary *userInfo = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
 
-    if (userInfo) {
-        NSDictionary *aps = [userInfo objectForKey:@"aps"];
+if (userInfo) {
+    NSDictionary *aps = [userInfo objectForKey:@"aps"];
 
-    if (aps) {
-        NSString *alertMsg;
+  if (aps) {
+      NSString *alertMsg;
 
-        id alert = [aps objectForKey:@"alert"];
-        if ([alert isKindOfClass:[NSDictionary class]]) {
-                // alert Dictionary
-                alertMsg = [alert objectForKey:@"body"];
-        } else {
-                // alert String
-                alertMsg = alert;
-        }
-        [[KISSMetricsAPI sharedAPI] recordEvent:@"Received Remote Notification" withProperties:@{@"alertMsg" : alertMsg}];
-    }
-    }
+      id alert = [aps objectForKey:@"alert"];
+      if ([alert isKindOfClass:[NSDictionary class]]) {
+              // alert Dictionary
+              alertMsg = [alert objectForKey:@"body"];
+      } else {
+              // alert String
+              alertMsg = alert;
+      }
+      [[KISSMetricsAPI sharedAPI] recordEvent:@"Received Remote Notification" withProperties:@{@"alertMsg" : alertMsg}];
+  }
+}
 {% endhighlight %}
 and/or capture any additional data that you've supplied in the push notification's JSON payload.
 
