@@ -35,14 +35,14 @@ The reports endpoint returns a list of reports you are authorized to access. Thi
 
 ### Request
 
-```bash
+{% highlight bash %}
 curl -i 'https://api.kissmetrics.com/core/reports'  \
   -H 'Authorization: Bearer YOUR-API-TOKEN'
-```
+{% endhighlight %}
 
 ### Response
 
-```json
+{% highlight json %}
 [
   {
     "links": [
@@ -79,7 +79,7 @@ curl -i 'https://api.kissmetrics.com/core/reports'  \
     "id": "64361c30-4a48-0131-0cbb-22000a9f1c0f"
   }
 ]
-```
+{% endhighlight %}
 
 ## Running a Report
 
@@ -94,24 +94,25 @@ The request body should contain a JSON string containing the report start date a
 
 ### Request
 
-```bash
+{% highlight bash %}
 curl -i 'https://query.kissmetrics.com/v2/products/65faf01a-ab13-1030-97f2-22000a91b1a1/reports/a05aaa60-dffd-0132-7bff-22000a9a8afc/run'  \
   -H 'Authorization: Bearer YOUR-API-TOKEN'  \
   -H 'Content-Type: application/json'  \
   -X POST  \
   -d '{"start_date": "2015-06-02T20:00:00-04:00", "end_date": "2015-06-09T19:59:59-04:00"}'
-```
+{% endhighlight %}
 
 ### Response
 
-```
+{% highlight http %}
 HTTP/1.1 202 Accepted
 Cache-Control: no-cache
 Content-Type: application/json; charset=utf-8
 Location: https://query.kissmetrics.com/v2/queries/9b85d22c-d5c0-477d-8396-0e6e3dbe81b3/status
-```
+{% endhighlight %}
 
-```json
+
+{% highlight json %}
 {
   "meta": {
     "status":202
@@ -126,7 +127,7 @@ Location: https://query.kissmetrics.com/v2/queries/9b85d22c-d5c0-477d-8396-0e6e3
     "templated":false
   }]
 }
-```
+{% endhighlight %}
 
 ## Querying Status of a Running Report
 
@@ -134,21 +135,21 @@ When initiating a report to run, the response headers will contain the location 
 
 ### Request
 
-```bash
+{% highlight bash %}
 curl -i 'https://query.kissmetrics.com/v2/queries/9b85d22c-d5c0-477d-8396-0e6e3dbe81b3/status'  \
   -H 'Authorization: Bearer YOUR-API-TOKEN'
-```
+{% endhighlight %}
 
 ### Response
 
-```
+{% highlight http %}
 HTTP/1.1 201 Created
 Cache-Control: max-age=0, private, must-revalidate
 Content-Type: application/json; charset=utf-8
 Location: https://query.kissmetrics.com/v2/queries/9b85d22c-d5c0-477d-8396-0e6e3dbe81b3/results
-```
+{% endhighlight %}
 
-```json
+{% highlight json %}
 {
   "meta": {
     "status":201
@@ -170,7 +171,7 @@ Location: https://query.kissmetrics.com/v2/queries/9b85d22c-d5c0-477d-8396-0e6e3
     "templated":false
   }]
 }
-```
+{% endhighlight %}
 
 ## Listing Results of a Report
 
@@ -178,19 +179,20 @@ When the query for a running report has completed, the response headers will con
 
 ### Request
 
-```bash
+{% highlight bash %}
 curl -i 'https://query.kissmetrics.com/v2/queries/9b85d22c-d5c0-477d-8396-0e6e3dbe81b3/results'  \
   -H 'Authorization: Bearer YOUR-API-TOKEN'
-```
+{% endhighlight %}
 
 ### Response
 
-```
+{% highlight http %}
 HTTP/1.1 200 OK
 Cache-Control: max-age=0, private, must-revalidate
 Content-Type: application/json; charset=utf-8
-```
-```json
+{% endhighlight %}
+
+{% highlight json %}
 {
   "meta":{
     "status":200
@@ -216,4 +218,4 @@ Content-Type: application/json; charset=utf-8
   }
   ]
 }
-```
+{% endhighlight %}
