@@ -207,7 +207,7 @@ Content-Type: application/json; charset=utf-8
   {
     "name":"Self",
     "rel":"self",
-    "href":"https://query.kissmetrics.com/v2/queries/9b85d22c-d5c0-477d-8396-0e6e3dbe81b3/results?limit=50\u0026offset=0",
+    "href":"https://query.kissmetrics.com/v2/queries/9b85d22c-d5c0-477d-8396-0e6e3dbe81b3/results?limit=50&offset=0",
     "templated":false
   },
   {
