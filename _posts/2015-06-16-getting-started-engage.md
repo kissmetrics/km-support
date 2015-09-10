@@ -57,13 +57,12 @@ You’ve made it to the fun part! What type of Engagement would you like to use?
 
 Depending on the Engagement type, you will have the below options to fill in:
 
-* **Heading Text**
-* **Body Text**
-* **Button Text**
-* **Clickthrough URL**
-* **Style: light or dark**
-
-Don’t forget! You also have the option to preview your edits on your own site. Select ”Preview on my site…” input your URL and select “Preview”. 
+1. Heading Text 
+2. Body Text
+3. Button Text
+4. Clickthrough URL
+5. Lightbox style - Light, Dark or Custom<br/> - Select Custom if your would like to brand your Engagement with your own custom colors.
+6. Preview on my site - this allows you to see the changes you have made on your own site. 
 
 ## Step 4: Choose Targeting
 
@@ -142,7 +141,7 @@ All you have left to do is name your campaign and schedule it.
 [SS2]: https://c1.staticflickr.com/1/470/18884933365_7eae998a9b_b.jpg
 [SS3]: https://c1.staticflickr.com/1/460/18697229388_57e102fb48_b.jpg
 [SS4]: https://c2.staticflickr.com/6/5556/18887759471_7344c033a0_b.jpg
-[SS5]: https://c1.staticflickr.com/1/328/18858693976_30149061b6_b.jpg
+[SS5]: https://kissmetrics-support-files.s3.amazonaws.com/assets/engage/engage-designs.png 
 [SS6]: https://c2.staticflickr.com/6/5534/18264821423_c51e469408_z.jpg
 [SS7]: https://c2.staticflickr.com/4/3856/18698780079_0fbf5a1029_b.jpg
 [SS8]: https://c1.staticflickr.com/1/320/18887760121_2c4ca84689_b.jpg
