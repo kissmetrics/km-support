@@ -48,5 +48,5 @@ For the purpose of housekeeping, you can delete completed entries. Note that **t
 [json-new]: https://app.kissmetrics.com/external_data/json.new
 [file-format]: /integrations/json-import
 
-[screenshot-1]: http://kissmetrics-support-files.s3.amazonaws.com/assets/integrations/json-import/json-linking-step-5.png
-[screenshot-2]: http://kissmetrics-support-files.s3.amazonaws.com/assets/integrations/json-import/json-import-preview.png
+[screenshot-1]: https://kissmetrics-support-files.s3.amazonaws.com/assets/integrations/json-import/json-linking-step-5.png
+[screenshot-2]: https://kissmetrics-support-files.s3.amazonaws.com/assets/integrations/json-import/json-import-preview.png

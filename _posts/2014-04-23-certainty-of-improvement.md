@@ -11,8 +11,8 @@ summary: How does Kissmetrics know that the improvement we see in a variant is r
 
 On the Kissmetrics A/B Test Report summary area and table area, you’ll see a percentage called the “Certainty of Improvement.” With every test there is a chance the better performing variant is actually the worse variant but just got lucky and looks like the better variant. The certainty of improvement is simply how sure we are that the improvement we see in a variant is real and not just due to luck. The A/B Test Report will determine a winner when "Certainty of Improvement" is greater than 95%.
 
-![Certainty of Improvement Summary](http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/a-b-test-report/certainty_summary.png)
-![Certainty of Improvement Table](http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/a-b-test-report/certainty_table.png)
+![Certainty of Improvement Summary](https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/a-b-test-report/certainty_summary.png)
+![Certainty of Improvement Table](https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/a-b-test-report/certainty_table.png)
 
 * * *
 
@@ -30,8 +30,8 @@ How confident is Kissmetrics in whether the improvement are not a statistical fl
 
 We calculate Certainty of Improvement using a normal approximation.
 
-![Probably of improvement](http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/a-b-test-report/test_calculation_1.png)
-![Normal approximation](http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/a-b-test-report/test_calculation_2.png)
+![Probably of improvement](https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/a-b-test-report/test_calculation_1.png)
+![Normal approximation](https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/a-b-test-report/test_calculation_2.png)
 
 Where N means the normal distribution.
 

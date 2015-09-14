@@ -103,13 +103,13 @@ JSON files that have been processed will be moved to a folder within your bucket
 
 `completed_imports/YEAR/MONTH/DAY/ORIGINAL_FILENAME.json`
 
-[screenshot-1]: http://kissmetrics-support-files.s3.amazonaws.com/assets/integrations/json-import/json-linking-step-5.png
-[screenshot-2]: http://kissmetrics-support-files.s3.amazonaws.com/assets/integrations/json-import/json-import-preview.png
+[screenshot-1]: https://kissmetrics-support-files.s3.amazonaws.com/assets/integrations/json-import/json-linking-step-5.png
+[screenshot-2]: https://kissmetrics-support-files.s3.amazonaws.com/assets/integrations/json-import/json-import-preview.png
 [1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/01-recurring-bucket.png
 [2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/02-recurring-bucket.png
 [3]: https://s3.amazonaws.com/kissmetrics-support-files/assets/integrations/csv-import/03-recurring-bucket.png
-[4]: http://kissmetrics-support-files.s3.amazonaws.com/assets/integrations/json-import/json-imports-step-3.png
-[5]: http://kissmetrics-support-files.s3.amazonaws.com/assets/integrations/json-import/json-imports-step-4.png
+[4]: https://kissmetrics-support-files.s3.amazonaws.com/assets/integrations/json-import/json-imports-step-3.png
+[5]: https://kissmetrics-support-files.s3.amazonaws.com/assets/integrations/json-import/json-imports-step-4.png
 
 [aws]: https://aws.amazon.com
 [settings]: https://app.kissmetrics.com/settings

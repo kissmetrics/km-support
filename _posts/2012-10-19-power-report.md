@@ -132,6 +132,6 @@ In this video, we explore an example business question:
 [people-search]: /tools/people-search
 [relative]: /tools/power-report/relative-to
 
-[ss-columns]: http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/power-report/report-columns.png
-[ss-segments]: http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/power-report/report-segments.png
-[ss-results]: http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/power-report/results.png
+[ss-columns]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/power-report/report-columns.png
+[ss-segments]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/power-report/report-segments.png
+[ss-results]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/power-report/results.png

@@ -60,5 +60,5 @@ Both are included in the "Week of Jan 4" cohort, but "1-2 weeks of them doing Vi
 
 Thus, the bucket for "Within 1-2 weeks of 'the week of Jan 4, 2013'" can potentially span Jan 11-23, depending on when people actually did that first Visited Site event.
 
-[explanation]: http://kissmetrics-support-files.s3.amazonaws.com/assets/troubleshooting/common-cohort-report-questions/cohort-explanation.png
+[explanation]: https://kissmetrics-support-files.s3.amazonaws.com/assets/troubleshooting/common-cohort-report-questions/cohort-explanation.png
 [power]: /tools/power-report
