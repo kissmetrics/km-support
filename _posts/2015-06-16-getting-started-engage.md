@@ -137,18 +137,15 @@ All you have left to do is name your campaign and schedule it.
 
 
 
-[SS1]: https://c2.staticflickr.com/4/3713/18264298203_304c394b88_b.jpg
-[SS2]: https://c1.staticflickr.com/1/470/18884933365_7eae998a9b_b.jpg
-[SS3]: https://c1.staticflickr.com/1/460/18697229388_57e102fb48_b.jpg
-[SS4]: https://c2.staticflickr.com/6/5556/18887759471_7344c033a0_b.jpg
-[SS5]: https://kissmetrics-support-files.s3.amazonaws.com/assets/engage/engage-designs.png 
-[SS6]: https://c2.staticflickr.com/6/5534/18264821423_c51e469408_z.jpg
-[SS7]: https://c2.staticflickr.com/4/3856/18698780079_0fbf5a1029_b.jpg
-[SS8]: https://c1.staticflickr.com/1/320/18887760121_2c4ca84689_b.jpg
-[SS9]: https://c2.staticflickr.com/6/5594/18887760201_172c3eafed_b.jpg
-[SS10]: https://c2.staticflickr.com/6/5556/18262400164_4531fb3b77_b.jpg
-[SS11]: https://c2.staticflickr.com/4/3912/18887760621_59a16208d0_b.jpg
-[SS12]: https://c2.staticflickr.com/4/3704/18697230668_92f76d2d35_b.jpg
-[SS13]: ttps://c1.staticflickr.com/1/349/18858695046_0fdba6b117_b.jpg
-[SS14]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 
-
+[SS1]: https://kissmetrics-support-files.s3.amazonaws.com/assets/engage/1-create-engagement.png
+[SS2]: https://kissmetrics-support-files.s3.amazonaws.com/assets/engage/2-pick-conversion-event.png
+[SS3]: https://kissmetrics-support-files.s3.amazonaws.com/assets/engage/3-pick-trigger.png
+[SS4]: https://kissmetrics-support-files.s3.amazonaws.com/assets/engage/4-design-action.png
+[SS5]: https://kissmetrics-support-files.s3.amazonaws.com/assets/engage/5-engage-designs.png
+[SS6]: https://kissmetrics-support-files.s3.amazonaws.com/assets/engage/6-audience.jpg
+[SS7]: https://kissmetrics-support-files.s3.amazonaws.com/assets/engage/7-placement.png
+[SS8]: https://kissmetrics-support-files.s3.amazonaws.com/assets/engage/8-frequency.png
+[SS9]: https://kissmetrics-support-files.s3.amazonaws.com/assets/engage/9-experiment.png
+[SS10]: https://kissmetrics-support-files.s3.amazonaws.com/assets/engage/10-campaign-name.png
+[SS11]: https://kissmetrics-support-files.s3.amazonaws.com/assets/engage/11-scheduling.png
+[SS12]: https://kissmetrics-support-files.s3.amazonaws.com/assets/engage/12-final-review.png
