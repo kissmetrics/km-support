@@ -120,22 +120,18 @@ If you chose to A/B test your campaign, 50% of your audience will be shown your 
 
 All you have left to do is name your campaign and schedule it.
 
-1. Enter your campaign name here.
+1.  Enter your campaign name here.
 
-![Review & Launch, Name Campaign][SS10]
+    ![Review & Launch, Name Campaign][SS10]
 
-2. If you are ready to launch your campaign now, select “Start immediately, run continuously”. Otherwise, schedule your campaign to launch using “Schedule start and end time” and filling in the date picker.
+2.  If you are ready to launch your campaign now, select “Start immediately, run continuously”. Otherwise, schedule your campaign to launch using “Schedule start and end time” and filling in the date picker.
 
-![Review & Launch, Schedule your campaign][SS11]
+    ![Review & Launch, Schedule your campaign][SS11]
 
-3. Select “Launch”.
-4. Review your campaign. If there are any changes you would like to make, hover over the appropriate area and you will see an edit option on the right hand side. Otherwise, go ahead and select “Launch”.
+3.  Select “Launch”.
+4.  Review your campaign. If there are any changes you would like to make, hover over the appropriate area and you will see an edit option on the right hand side. Otherwise, go ahead and select “Launch”.
 
-![Review & Launch, Final review][SS12]
-
-
-
-
+    ![Review & Launch, Final review][SS12]
 
 [SS1]: https://kissmetrics-support-files.s3.amazonaws.com/assets/engage/1-create-engagement.png
 [SS2]: https://kissmetrics-support-files.s3.amazonaws.com/assets/engage/2-pick-conversion-event.png
