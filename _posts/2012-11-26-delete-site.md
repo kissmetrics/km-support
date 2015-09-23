@@ -34,7 +34,7 @@ Then, click **Delete Site** to permanently delete your site.
 
 ## Closing Your Account
 
-To completely close your account, please contact us at [customeraccounts@kissmetrics.com ](customeraccounts@kissmetrics.com) to request cancelation.
+To completely close your account, please contact us at [customeraccounts@kissmetrics.com](mailto:customeraccounts@kissmetrics.com) to request cancelation.
 
 We're sorry to see you go, but we would really appreciate hearing about what influenced your cancelation.
 
