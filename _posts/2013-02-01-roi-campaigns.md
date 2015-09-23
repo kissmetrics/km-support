@@ -49,7 +49,7 @@ So if you're using the AdWords auto-tagging but want more info about your campai
 
 Now that you're recording revenue data and have been tracking your campaigns, let's pull some data.
 
-First, click on the Revenue tab at the top of your Kissmetrics account:
+First, create a new Revenue report by clicking on Reports > New Revenue Report at the top of your Kissmetrics account:
 
 ![KM-Revenue-Tab][ss1]
 
