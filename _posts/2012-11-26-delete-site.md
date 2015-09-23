@@ -2,30 +2,43 @@
 layout: post
 title: Deleting Your Site
 categories: how-tos
-summary: How to delete a Kissmetrics site and remove all the associated data.
+summary: How to delete a Kissmetrics site/product and remove all the associated data.
 ---
 * Table of Contents
 {:toc}
 * * *
 
-These are the steps to delete a Kissmetrics site to **permanently remove all the associated data.**
+# Removing a Site or Product From Your Account
 
-***This is a permanent decision, and absolutely, positively make sure you select the site you want gone.***
+You can remove sites or products to permanently remove all associated data. If you manage a lot of sites that aren't in use, this can help eliminate clutter.
 
-* Please remove the Kissmetrics code from your website and codebase.
-* From the Settings area, click on Edit Site:
+***This is a permanent decision.***
 
-![Edit Site][ss-1]
+## Step 1 - Go to Settings
 
-* Confirm the deletion by clicking the Delete Site Button:
+In the top navigation, click on **Settings, the gear icon.**
 
-![Delete Site][ss-2]
+![Clicking on Settings Gear Icon][ss-1]
 
-# Closing Your Account
+## Step 2 - Edit Site
 
-To completely close your account, please contact us at [customeraccounts@kissmetrics.com](mailto:customeraccounts@kissmetrics.com) to request cancelation.
+Click on **Edit site.**
+
+![Click on Edit Site][ss-2]
+
+## Step 3 - Delete Site
+
+Then, click **Delete Site** to permanently delete your site.
+
+![Click on Delete Site][ss-3]
+
+## Closing Your Account
+
+To completely close your account, please contact us at [customeraccounts@kissmetrics.com ](customeraccounts@kissmetrics.com) to request cancelation.
 
 We're sorry to see you go, but we would really appreciate hearing about what influenced your cancelation.
 
-[ss-1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/delete-site/edit-site.png
-[ss-2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/delete-site/delete-site.png
+
+[ss-1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/delete-site/Removing%20a%20Site%20or%20Product%20From%20Your%20Account%201.png
+[ss-2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/delete-site/Removing%20a%20Site%20or%20Product%20From%20Your%20Account%202.png
+[ss-3]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/delete-site/Removing%20a%20Site%20or%20Product%20From%20Your%20Account%203.png
