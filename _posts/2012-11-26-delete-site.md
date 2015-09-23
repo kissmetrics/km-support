@@ -14,19 +14,19 @@ You can remove sites or products to permanently remove all associated data. If y
 
 ***This is a permanent decision.***
 
-## Step 1 - Remove the Kissmetrics code
-
-Remove the Kissmetrics code from your codebase.
-
-## Step 2 - Delete the site
+## Step 1 - Go to Settings
 
 In the top navigation, click on **Settings, the gear icon.**
 
 ![Clicking on Settings Gear Icon][ss-1]
 
+## Step 2 - Edit Site
+
 Click on **Edit site.**
 
 ![Click on Edit Site][ss-2]
+
+## Step 3 - Delete Site
 
 Then, click **Delete Site** to permanently delete your site.
 
@@ -41,4 +41,4 @@ We're sorry to see you go, but we would really appreciate hearing about what inf
 
 [ss-1]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/delete-site/Removing%20a%20Site%20or%20Product%20From%20Your%20Account%201.png
 [ss-2]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/delete-site/Removing%20a%20Site%20or%20Product%20From%20Your%20Account%202.png
-[ss-3]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/delete-site/Removing%20a%20Site%20or%20Product%20From%20Your%20Account%202.png
+[ss-3]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/delete-site/Removing%20a%20Site%20or%20Product%20From%20Your%20Account%203.png
