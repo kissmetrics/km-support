@@ -15,7 +15,7 @@ You can generate more than one API key for your Kissmetrics account if you’re 
 
 ## Step 1 - Create an additional product
 
-Log into your Kissmetrics account site. In the top navigation, click on the name of your product in the top-left corner. You need to be the Owner of the account to create a new product.
+Log into your Kissmetrics account site. In the top navigation, click on the name of your product in the top-left corner. *You need to be the Owner of the account to create a new product.*
 
 ![Click Product in Upper Left Corner][ss-1]
 
@@ -23,7 +23,7 @@ The dropdown shows a menu for all the products you are managing.
 
 ## Step 2 - Create a New Product
 
-Click on Create New Product.
+Click on **Create New Product.**
 
 ![Click Create New Product][ss-2]
 
