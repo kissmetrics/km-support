@@ -12,7 +12,7 @@ summary: We recommend you do not host the JavaScript yourself, but here are the 
 
 In the JavaScript snippet we provide, you are able to assemble the URL of the JavaScript file with your API key:
 
-`https:///scripts.kissmetrics.com/REPLACE_WITH_YOUR_API_KEY.2.js`
+`https://scripts.kissmetrics.com/REPLACE_WITH_YOUR_API_KEY.2.js`
 
 Downloading the JS file is as straightforward as visiting that URL and having your browser 'Save Page As...'
 
