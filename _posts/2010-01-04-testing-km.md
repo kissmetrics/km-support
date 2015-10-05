@@ -16,6 +16,7 @@ In addition, if you create a new product, you will receive an additional API key
 {:toc}
 * * *
 
+==============================================================================================================================
 
 ## Step 1 - Go to the Product Dropdown
 
@@ -24,64 +25,61 @@ In the top navigation, click on the name of your product in the top-left corner.
 ![Go to the Product Dropdown][#1]
 
 ## Step 2 - Create a New Product
-Click on **Create New Product.** You need to be the Owner of the account to be able to create a new site.
+Click on **Create New Product.** _You need to be the [Owner][permissions] of the account to be able to create a new site._
 
-*Note: You need to be the [Owner][permissions] of the account to be able to create a new site.*
+![Create a New Product][#2]
 
-* Optionally, you can [Edit the Site's Settings][edit-site] to label this site as "Testing" or "Production".
+(Optional) To keep your products organized, you can label it as “Testing” or “Production” within [Site Settings][edit-site]. 
+
+![Create a New Product][#3]
 
 **Remember to install your testing API key only when testing, and to use your production API key for real, live/production data.**
 
+## Step 3 - Verify if your Events Are Set-Up Correctly
+There are two way to ensure that your Kissmetrics events are set-up correctly:
 
-# Testing Individual Events
-
-There are two main methods to ensure that your Kissmetrics events are set up properly.
-
-1. You can use our real-time tool [Kissmetrics Live][live] to watch for your own activity.
+1. Use the real-time tool Kissmetrics Live to watch your own activity
 2. For more technical users, you can check that there is network activity to our tracking servers.
 
+### Method 1: Use Kissmetrics' Live Feature To Verify Events
 
-## Using Kissmetrics Live
+The [Kissmetrics Live][live] feature displays in real time the people on your site and the events and properties they are triggering. 
 
-All of our users have access to using [Live][live]. This tool scans for events that are immediately happening on your site. In fact, you can even use the "My Activity" filter to load your site in a new tab, and limit Live to just your own browser's activity.
+This makes it a great debugger. You'll see if the events and properties you've set up are actually working. And you don't have to rely on other people to trigger events and properties--you can do it yourself. 
 
-![My Activity][myactivity-ss]
+Just go to your site, trigger some events and properties and see if everything in Live is firing correctly.
 
-As you step through your site, you can cross-reference in Live that your activity triggers the appropriate events. If you see events in Live, that's a good sign, and it's just a matter of time (about 2-5 hours) to allow our servers to process these recently-fired events for reporting everywhere else in our application.
+![Kissmetrics Live][#4]
 
-Read more about Live at our documentation: [Kissmetrics Live][live-doc]
+In this screenshot, the events fired correctly. I visited my homepage, and as a result, my activity fired an event and it shows up in the Live activity feed. 
+
+While Live shows real time data, it'll take 2-5 hours for this data to be used in reports. 
 
 
-## Examine Network Activity
+### Method 2: Use Your Web Browser’s Developer Tool
+For those familiar with using their web browser’s developer tools, you can also refer to the browser’s Network activity. As you browse during testing, look for requests to `trk.kissmetrics.com`; these tracking URLs will be structured according to our [API specifications][specs].
 
-For those familiar with using their web browser's developer tools, you can also refer to the browser's Network activity. As you browse during testing, look for requests to `trk.kissmetrics.com`; these tracking URLs will be structured according to our [API specifications][specs].
-
-![Network Activity][network-ss]
+![Use Your Web Browser’s Developer Tool][#5]
 
 Viewing the network requests help you confirm a few key items all at once:
 
-* Does the API key match the one for the Kissmetrics site you're using?
-* Who is the person doing the event?
-* What is the name of the event?
-* Are additional properties being passed?
+Does the API key match the one for the Kissmetrics site you’re using?
+Who is the person doing the event?
+What is the name of the event?
+Are additional properties being passed?
 
-If the response from our server is `Status Code: 200 OK` (third item from the top), then we have received the event just fine, and you can consider this event as successfully triggered. Then it's just a matter of time (about 2-5 hours) to allow our servers to process these recently-fired events for reporting everywhere else in our application.
+If the response from our server is `Status Code: 200 OK`, then we have received the event just fine, and you can consider this event as successfully triggered. 
 
+![Use Your Web Browser’s Developer Tool][#6]
 
-# Testing Data in Reports
+It will take about 2-5 hours for our servers to process these recently-fired events to show up within Kissmetrics reports. 
 
-If you suspect that Kissmetrics’ reports disagrees with the data you were expecting, the investigative process our support team uses is shown in our page for [Steps For Investigation][investigation]. Often, it comes down to the way individual events were implemented, or understanding how our [different tools][tools] calculate your data.
+##What if my data looks inaccurate?
+If the data within the Kissmetrics Reports is inaccurate, check out the article, Data Discrepancies to tackle data errors. 
 
 [#1]:https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/testing-km/How%20to%20Verify%20that%20Kissmetrics%20is%20Working%201.png
-[network-ss]:
-[myactivity-ss]: 
-
-[permissions]: 
-
-[edit-site]: 
-
-[live]: 
-[live-doc]: 
-[specs]: 
-[investigation]: 
-[tools]:
+[#2]:https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/testing-km/How%20to%20Verify%20that%20Kissmetrics%20is%20Working%202.png
+[#3]:https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/testing-km/How%20to%20Verify%20that%20Kissmetrics%20is%20Working%203.png
+[#4]:https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/testing-km/How%20to%20Verify%20that%20Kissmetrics%20is%20Working%204.png
+[#5]:https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/testing-km/How%20to%20Verify%20that%20Kissmetrics%20is%20Working%205.png
+[#6]:https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/testing-km/How%20to%20Verify%20that%20Kissmetrics%20is%20Working%206.png
