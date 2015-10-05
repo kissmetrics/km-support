@@ -6,21 +6,25 @@ tags: [developer_portal]
 summary: Learn how to test Kissmetrics and keep the test data separate from your "real" data.
 permalink: /getting-started/testing-km/index.html
 ---
+#How to Verify that Kissmetrics is Working
+
+The first time you set up Kissmetrics, you can create a Test Site and use Kissmetrics Live to verify that Kissmetrics is working. The Test Site allows you to create events without harming the real data you collect from your Production Site. 
+
+In addition, if you create a new product, you will receive an additional API key so that you can reserve it for testing purposes.
+
 * Table of Contents
 {:toc}
 * * *
 
-When you are starting out, we highly recommended that you set up a separate Test Site as a sandbox. That way, any events you create while testing will not interfere with the real data you collect from your Production site.
 
-Creating a new site provides you an additional API key, which you can reserve only for your testing. Most web applications have a configuration file management system to let you swap in the correct KM API key, depending on whether you're running in Production environment or not.
+## Step 1 - Go to the Product Dropdown
 
+In the top navigation, click on the name of your product in the top-left corner. 
 
-# Create a Separate Testing Site
+![Go to the Product Dropdown][#1]
 
-* Click the name of your site in the top-left corner. This shows a menu for all the sites you are managing.
-* Click "Create New Site", and follow our setup process.
-
-![Create Site][create-ss]
+## Step 2 - Create a New Product
+Click on **Create New Product.** You need to be the Owner of the account to be able to create a new site.
 
 *Note: You need to be the [Owner][permissions] of the account to be able to create a new site.*
 
@@ -68,16 +72,16 @@ If the response from our server is `Status Code: 200 OK` (third item from the to
 
 If you suspect that Kissmetrics’ reports disagrees with the data you were expecting, the investigative process our support team uses is shown in our page for [Steps For Investigation][investigation]. Often, it comes down to the way individual events were implemented, or understanding how our [different tools][tools] calculate your data.
 
-[create-ss]: https://s3.amazonaws.com/kissmetrics-support-files/assets/how-tos/create-site/create-site.png
-[network-ss]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/testing-km/network.png
-[myactivity-ss]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/testing-km/my-activity.png
+[#1]:https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/testing-km/How%20to%20Verify%20that%20Kissmetrics%20is%20Working%201.png
+[network-ss]:
+[myactivity-ss]: 
 
-[permissions]: /how-tos/team-permissions
+[permissions]: 
 
-[edit-site]: https://app.kissmetrics.com/product.edit
+[edit-site]: 
 
-[live]: https://app.kissmetrics.com/live
-[live-doc]: /tools/live
-[specs]: /apis/specifications
-[investigation]: /troubleshooting/data-discrepancies#steps-for-investigation
-[tools]: /tools
+[live]: 
+[live-doc]: 
+[specs]: 
+[investigation]: 
+[tools]:
