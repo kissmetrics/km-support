@@ -63,10 +63,10 @@ For those familiar with using their web browser’s developer tools, you can als
 
 Viewing the network requests help you confirm a few key items all at once:
 
-Does the API key match the one for the Kissmetrics site you’re using?
-Who is the person doing the event?
-What is the name of the event?
-Are additional properties being passed?
+*Does the API key match the one for the Kissmetrics site you’re using?
+*Who is the person doing the event?
+*What is the name of the event?
+*Are additional properties being passed?
 
 If the response from our server is `Status Code: 200 OK`, then we have received the event just fine, and you can consider this event as successfully triggered. 
 
