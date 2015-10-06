@@ -4,11 +4,11 @@ title: Understanding People, Events and Properties within Kissmetrics
 categories: getting-started
 summary: The Kissmetrics data model is comprised of three components: people, events and properties. Understanding these concepts is vital to being able to analyze the data you are collecting.
 ---
+The Kissmetrics data model is comprised of three components: people, events and properties. Understanding these concepts is vital to being able to analyze the data you are collecting.
+
 * Table of Contents
 {:toc}
 * * *
-
-The Kissmetrics data model is comprised of three components: people, events and properties. Understanding these concepts is vital to being able to analyze the data you are collecting.
 
 ## What are people?
 
@@ -42,7 +42,7 @@ Properties are additional bits of information describing your users and their ac
 
 ![Property Live][propertylive]
 
-Properties are passed in a key-value pairs. It is important to note that properties are tied to the person and not to the event.
+Properties are passed as key-value pairs. It is important to note that properties are tied to the person and not to the event.
 
 If you are using JavaScript to track on your site, you will automatically track some properties, including:
 
@@ -94,7 +94,7 @@ In this scenario, who is the person? What are the events they did? And what prop
 
 ## Next Steps
 
-Once you understand these concepts and which events you will want to track, you will need to set them up. There are a few different methods to do so, you can get started with some of the different methods [here](http://support.kissmetrics.com/tools/event-library/) and [here.](http://support.kissmetrics.com/apis/javascript/javascript-specific/index.html)
+Once you understand these concepts and which events you will want to track, you will need to set them up. There are a few different methods to do so, you can get started with the [Event Library](http://support.kissmetrics.com/tools/event-library/) or the [JavaScript Library.](http://support.kissmetrics.com/apis/javascript/javascript-specific/index.html)
 
 [personlive]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/people-events-properties/1Person.png 
 [eventlive]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/people-events-properties/2Event.png
