@@ -5,7 +5,6 @@ categories: getting-started
 tags: [identities]
 summary: Key concepts about person-based analytics you should know before using Kissmetrics.
 ---
-#Understanding Identities
 Event and property data in Kissmetrics is attached to a person. Each person has an identity.
 
 A person’s identity can be **anonymous** (we don’t know anything about this person yet) or **named** (we know something about them such as an email address.)
