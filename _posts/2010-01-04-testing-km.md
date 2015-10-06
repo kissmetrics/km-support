@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: getting-started
-title: "Testing: How to Verify Kissmetrics Is Working"
+title: "How to Verify Kissmetrics Is Working"
 tags: [developer_portal]
 summary: Learn how to test Kissmetrics and keep the test data separate from your "real" data.
 permalink: /getting-started/testing-km/index.html
