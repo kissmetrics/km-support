@@ -71,15 +71,26 @@ Now that you understand these concepts separately, let’s see how they all work
 
 In this scenario, who is the person? What are the events? And what properties should be passed?
 
-| Person:     | Janet                                                                                                                                                                                       |
-|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Events:     | Viewed Product (2x) 
-Added to Cart Signed Up                                                                                                                                                 |
-| Properties: | Returning: No Referrer: blog.highfashion.com/best_new_sites Viewed Product Name: Sapphire maxi dress Viewed Product Name: The blackout dress Added to Cart Product Name: The blackout dress |
+| Person | Events              | Properties                                     |
+|--------|---------------------|------------------------------------------------|
+| Janet  | Visited Site        | Returning: No                                  |
+|        | Viewed Product (2x) | Referrer: blog.highfashion.com/best_new_sites  |
+|        | Added to Cart       | Viewed Product Name: Sapphires maxi dress      |
+|        | Signed Up           | Viewed Product Name: The blackout dress        |
+|        |                     | Added to Cart Product Name: The blackout dress |
 
 **Example 2:** Jose is an avid user of a Saas product that helps him keep track of different list. Jose logs into his account, creates a new grocery list for the week, adds 3 items from the drop down list, saves the list and proceeds to email the list to his partner.
 
 In this scenario, who is the person? What are the events they did? And what properties should be passed?
+
+| Person | Events             | Properties                |
+|--------|--------------------|---------------------------|
+| Jose   | Visited Site       | Returning: Yes            |
+|        | Logged In          | New List Type: Grocery    |
+|        | Created New List   | Added Item: Milk          |
+|        | Added Item to List | Added Item: Bread         |
+|        | Saves List         | Added Item: Apple         |
+|        | Shares List        | Shares List Method: Email |
 
 ## Next Steps
 
