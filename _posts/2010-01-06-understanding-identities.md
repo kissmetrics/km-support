@@ -14,8 +14,6 @@ A person’s identity can be **anonymous** (we don’t know anything about this 
 {:toc}
 * * *
 
-==============================================================================================================================
-
 ## Understanding an anonymous identity
 
 Whenever a person visits your website or launches your app, Kissmetrics automatically assigns a property called **Customer ID** to that person.
