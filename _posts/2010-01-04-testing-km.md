@@ -16,8 +16,6 @@ In addition, if you create a new product, you will receive an additional API key
 {:toc}
 * * *
 
-==============================================================================================================================
-
 ## Step 1 - Go to the Product Dropdown
 
 In the top navigation, click on the name of your product in the top-left corner. 
