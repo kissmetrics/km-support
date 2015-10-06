@@ -6,53 +6,31 @@ tags: []
 summary: Our JavaScript Library is our most full-featured library and is what we recommend for most users.
 permalink: /apis/javascript/index.html
 ---
+
+Our Javascript Library is our most full-featured library and is what we recommend for most users. It has extra provisions for things like automatically handling identities and aliasing, tracking common web events and running A/B tests. 
+
+
 * Table of Contents
 {:toc}
 * * *
 
-Our Javascript Library is our most full-featured library and is what we recommend for most users. It has extra provisions for:
+## Setup
 
-* Automatically tracking identities using a variety of technologies
-* Automatically aliasing users *anonymous identities* with *named identities* you provide
-* Automatically tracking common web events (e.g. search engine traffic)
-* A/B Testing
+This article is a technical reference of everything a developer can do with the JavaScript Library. If you're looking for general instructions on how to install Kissmetrics on your site, refer to our [Installing Kissmetrics' JavaScript Tracking Code](http://support.kissmetrics.com/tutorial/installation/index.html) article.
 
-# Setup
-
-Log into your Kissmetrics account and locate your personalized code snippet in your [Site Settings][settings]. You'll be able to find your unique embed code and instructions there.
-
-The JavaScript library looks like this:
-
-{% highlight html %}
-<script type="text/javascript">
-  var _kmq = _kmq || [];
-  var _kmk = _kmk || 'foo';
-  function _kms(u){
-    setTimeout(function(){
-      var d = document, f = d.getElementsByTagName('script')[0],
-      s = d.createElement('script');
-      s.type = 'text/javascript'; s.async = true; s.src = u;
-      f.parentNode.insertBefore(s, f);
-    }, 1);
-  }
-  _kms('//i.kissmetrics.com/i.js');
-  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
-</script>
-{% endhighlight %}
-
-## Asynchronous API
+### Asynchronous API
 
 The JavaScript library loads asynchronously, in the background, just like Google Analytics' Asynchronous Tracking. It has two main benefits:
 
-* It does **not** affect your page's load times.
-* It is compatible with pages served using both HTTP or HTTPS. The `//` before the path of your JS files is a protocol-independent absolute path, which detects whether your site uses HTTP or HTTPS.
+1. It does **not** affect your page's load times.
+2. It is compatible with pages served using both HTTP or HTTPS. The `//` before the path of your JS files is a protocol-independent absolute path, which detects whether your site uses HTTP or HTTPS.
 
 You can place the JavaScript snippet anywhere in the HTML document, but we ask that you place the JavaScript snippet in the `<head>` for two reasons:
 
-1. To let our script load as soon as possible, to be able to send events before the visitor leaves. Remember that page loadtimes aren't affected.
+1. To let our script load as soon as possible, to be able to send events before the visitor leaves. Remember that page load times aren't affected.
 2. To let you queue events to be triggered when the library finishes loading. This prevents JavaScript errors from cropping up if you try to call events before the script has loaded:  `ReferenceError: _kmq is not defined`
 
-# Quick Reference
+## Quick Reference
 
 [Common API Methods][common] | Description
 ---------------------------- | -----------
@@ -73,11 +51,11 @@ JavaScript-Specific Methods | Description
 `_kmq.push(function() { } );` | You can push [callback functions][callback] to be executed when our library has fully loaded. Useful when invoking functions of the `KM` object (see examples below).
 `_kmq.push(function() {KM.record('EVENT_NAME');} );` | Equivalent to `_kmq.push(['record', 'EVENT_NAME']);`
 `KM.ab('PROPERTY_NAME', [ARRAY_OF_VALUES])` | [Initiates an A/B test][a-b-km] and sets the property that indicates which variation was randomly picked.
-`KM.i()` | Returns the [current person's ID][kmi], which can be their 'named ID' if they have one, or 'anonymous ID' if they don't.
+`KM.i()` | Returns the [current person's ID][kmi], which can be their 'named ID' if they have one or 'anonymous ID' if they don't.
 `KM.ts()` | Returns the current Unix timestamp in seconds. This is what we use to determine the current time.
 `KM.um("/some-url")` | Returns true or false, depending on whether the page you are currently on will match up with the Event Wizard pattern you've typed in (`"/some-url"`). This helps you test Event Wizard urls much more quickly.
 
-## Example Calls
+### Example Calls
 
 {% highlight html %}
 <script type="text/javascript">
@@ -104,7 +82,7 @@ _kmq.push(['record', 'Signed Up', {'_d':1, '_t':1234567890}])
 </script>
 {% endhighlight %}
 
-# Events Automatically Tracked
+## Events Automatically Tracked
 
 If you are using the JavaScript library, we automatically track certain events and properties by default:
 
@@ -147,9 +125,9 @@ The above events are familiar to Google Analytics users, but there are two thing
 
 Our experience has shown that when making business decisions, it is more useful to consider _what the visitors are doing_ over _how long they've been on the site_.
 
-You may still find this information useful. If you have that information separately recorded in your databases, you are welcome to pass that information along to us as KISSmetric properties.
+You may still find this information useful. If you have that information separately recorded in your databases, you can pass that information along to us as Kissmetric properties.
 
-# Kissmetrics Identities
+## Kissmetrics Identities
 
 The function `KM.i()` will return the visitor's Kissmetrics ID, in case you need to pass that along to another function.
 
@@ -163,15 +141,15 @@ _kmq.push(function()
 </script>
 {% endhighlight %}
 
-## Anonymous Identities
+### Anonymous Identities
 
 If the JavaScript library has never seen a visitor before, it will create a randomized identity for them to attribute all of that person's events to the same browser. This lets you track this particular person's activity across sessions.
 
 The generated ID is Base64 encoded, so the IDs are generated with only these characters: `a-z, A-Z, 0-9, +, /, and =`.
 
-# API Functions
+## API Functions
 
-## Tracking Individual Page Views
+### Tracking Individual Page Views
 
 If you are just looking to track every page view on your site we recommend [Google Analytics][ga]. With Kissmetrics we recommend tracking only significant pages with specifically named events. You can use the Event Library to do this, or you can add a `record` command to your pages:
 
@@ -181,7 +159,7 @@ _kmq.push(['record', 'Viewed Signup']);
 
 So when the browser executes the line `_kmq.push(['record', 'Viewed Signup']);`, your event is recorded.
 
-## Tracking Clicks - `trackClick`
+### Tracking Clicks - `trackClick`
 
 If you are just looking to track every click on your your site we recommend [Crazy Egg][crazyegg]. With Kissmetrics we recommend tracking only significant elements. To accomplish this, you can use `trackClick`. This sets up an element to record an event _only_ when the visitor has clicked on the element.
 
@@ -232,7 +210,7 @@ _kmq.push(['trackClick', 'invite_link', 'Invite Friends Clicked', {
 }]);
 {% endhighlight %}
 
-## Tracking Outbound Link Clicks - `trackClickOnOutboundLink`
+### Tracking Outbound Link Clicks - `trackClickOnOutboundLink`
 
 The default method of tracking clicks by Kissmetrics works well for most cases. However, if you are trying to track a click on an outbound link (a link to a different website), it is possible for the browser to change pages before it has a chance to send the data to Kissmetrics. For these cases, there is an alternative function available: `trackClickOnOutboundLink`:
 
@@ -252,7 +230,7 @@ This builds in time to send the event by:
 
 For this reason we don't recommend this for usual click tracking. Please make sure to test this with your site so that this performs as expected.
 
-## Tracking Forms - `trackSubmit`
+### Tracking Forms - `trackSubmit`
 
 You can use the `trackSubmit` function to track when a form is submitted. This sets up the element to record an event _only_ when the visitor has submitted the form.
 
@@ -291,7 +269,7 @@ _kmq.push(['trackSubmit', 'signup_form', 'Sign Up Form Submitted', { 'variation'
 
 *Note: our code does not validate the contents of the form. If a visitor fills out a form incorrectly and submits it, we will* **still** *count that as a submit event. Certain events like Signups could be tracked more accurately by recording the event on the following page, or using a server-side library to record the event when an entry is created in your database.*
 
-### Auto-Tracking Form Fields
+#### Auto-Tracking Form Fields
 
 By default, if you are tracking forms with `trackSubmit`, we will also capture all non-sensitive form fields as Kissmetrics properties. (We won't record [passwords, hidden fields, textarea fields, or sensitive fields like credit card numbers and social security numbers][protected].)
 
@@ -302,13 +280,13 @@ When the JS is set to automatically capture form fields, including these CSS cla
 * `.km_ignore`: forces us to ignore a field
 * `.km_include`: forces us to include a field we normally would not capture
 
-#### Property Name and Value to Expect
+##### Property Name and Value to Expect
 
 For the Property Name, we use each `<input>`'s `name` attribute. *If there is no name, we cannot capture the information from that `<input>` field.*
 
 The Value for the Property will be whatever the customer enters into the form.
 
-#### Identifying a Person From a Form Field
+##### Identifying a Person From a Form Field
 
 If an anonymous person submits a tracked form, we also check for any fields that could be used as an identity, such as a username or email address. This is especially useful on forms where people subscribe to newsletters.
 
@@ -323,7 +301,7 @@ If the ID includes `_`, that will also work. So `user_id`, `user_name`, and `e_m
 
 [js-settings]: https://app.kissmetrics.com/product.js_settings
 
-#### Form Fields Not Tracked
+##### Form Fields Not Tracked
 
 There are form fields we do not track:
 
@@ -335,7 +313,7 @@ We determine this by looking at the `name` attributes of each `<input>`. After i
 
     /pass|billing|creditcard|cardnum|^cc|ccnum|exp|seccode|securitycode|securitynum|cvc|cvv|ssn|socialsec|socsec|csc/i
 
-### Incompatibility with jQuery `.submit()`
+#### Incompatibility with jQuery `.submit()`
 
 `trackSubmit` works with regular HTML forms. If you trigger the submission of forms via code, like `$('form').submit()`, then this will bypass the tracking that `trackSubmit` sets up. Please refer to this [Stack Overflow][jquery-submit] discussion.
 
@@ -351,7 +329,7 @@ If you are unsure whether your forms behave this way, please contact your site's
 
 [jquery-submit]: http://stackoverflow.com/questions/645555/should-jquerys-form-submit-not-trigger-onsubmit-within-the-form-tag
 
-## Override the Referrer
+### Override the Referrer
 
 If you anticipate that your site will be hosted in an iFrame (say, within a Facebook Canvas app), then you'll want to make sure to save the true Referrer, the site that brought a person to your page, rather than the site hosting the iFrame itself.
 
@@ -365,10 +343,10 @@ You can do this by setting the variable `KM_REFERRER` like so:
 </script>
 {% endhighlight %}
 
-Even if your site is not in an iFrame, `parent.document.referrer` should still be the same as `document.referrer` and behave normally anyway.
+Even if your site is not in an iFrame, `parent.document.referrer` should still be the same as `document.referrer` and behave normally.
 
 
-## Callback Functions
+### Callback Functions
 
 You can also pass in function objects as a third parameter. If you don't have properties to record, you can pass an empty hash like so:
 
@@ -387,7 +365,7 @@ _kmq.push(function() {
 
 This can be useful if you want to record a series of events or if you have conditionals that need to be executed first.
 
-### Combining Callback Functions with jQuery
+#### Combining Callback Functions with jQuery
 
 [Jon](https://github.com/jonazri) points out that you can combine jQuery's [`trigger()`][jquery-trigger] to abstract out the event of when the KM object is loaded:
 
@@ -407,9 +385,9 @@ $("body").on("kmLoaded", function() {
 
 This is most beneficial when you're working with a tag manager, where you might have to separate out the event logic from the initialization of the JS library. See the full discussion [here](https://github.com/kissmetrics/km-support/issues/11).
 
-# Cookies
+## Cookies
 
-Kissmetrics uses these *first party* cookies on your domain. They expire after 5 years unless otherwise specified.
+Kissmetrics uses these *first-party* cookies on your domain. They expire after 5 years unless otherwise specified.
 
 Cookie Name | Description
 ----------- | -----------
@@ -420,7 +398,8 @@ Cookie Name | Description
 `km_vs` | Set to 1 if the visitor is in an active browsing session. It expires after 30 minutes.
 `km_uq` | A URL queue that preserves unsent tracking URLs from page to page. It empties out if our tracking servers are online.
 
-## Cookie Domain
+
+### Cookie Domain
 
 By default, if you have put the JavaScript code on several of your subdomains, it uses the same cookies for all of your subdomains (not just `www`):
 
@@ -443,7 +422,7 @@ If you want to track the subdomains separately in two different accounts, you ca
 </script>
 {% endhighlight %}
 
-## Testing Locally
+### Testing Locally
 
 The JavaScript Library depends on using cookies to keep your identity consistent from page to page. If you test with `localhost`, you'll need a domain on which to set cookies, which you can set up in one of two ways:
 
