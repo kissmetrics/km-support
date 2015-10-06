@@ -14,7 +14,7 @@ The Kissmetrics data model is comprised of three components: people, events and 
 
 People are the visitors on your sites. A person in Kissmetrics represents the physical person behind the computer that came to view your blog, website or app. 
 
-![Person Live][simple-api]
+![Person Live][personlive]
 
 To understand how people are identified within Kissmetrics, take a look [here.](http://support.kissmetrics.com/getting-started/understanding-identities.html)
 
@@ -23,7 +23,7 @@ To understand how people are identified within Kissmetrics, take a look [here.](
 
 Events are the actions that your users are taking on your site or within your app. 
 
-![Event Live][simple-api]
+![Event Live][eventlive]
 
 Some examples of events include:
 
@@ -40,7 +40,7 @@ For suggested events for your use case take a look at our [best practices guides
 
 Properties are additional bits of information describing your users and their actions. By using properties you are able to segment reports and dive deeper into your data.
 
-![Property Live][simple-api]
+![Property Live][propertylive]
 
 Properties are passed in a key-value pairs. It is important to note that properties are tied to the person and not to the event.
 
@@ -73,14 +73,20 @@ In this scenario, who is the person? What are the events? And what properties sh
 
 | Person:     | Janet                                                                                                                                                                                       |
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Events:     | Viewed Product (2x) Added to Cart Signed Up                                                                                                                                                 |
+| Events:     | Viewed Product (2x) 
+Added to Cart Signed Up                                                                                                                                                 |
 | Properties: | Returning: No Referrer: blog.highfashion.com/best_new_sites Viewed Product Name: Sapphire maxi dress Viewed Product Name: The blackout dress Added to Cart Product Name: The blackout dress |
 
+**Example 2:** Jose is an avid user of a Saas product that helps him keep track of different list. Jose logs into his account, creates a new grocery list for the week, adds 3 items from the drop down list, saves the list and proceeds to email the list to his partner.
+
+In this scenario, who is the person? What are the events they did? And what properties should be passed?
+
+## Next Steps
+
+Once you understand these concepts and which events you will want to track, you will need to set them up. There are a few different methods to do so, you can get started with some of the different methods [here](http://support.kissmetrics.com/tools/event-library/) and [here.](http://support.kissmetrics.com/apis/javascript/javascript-specific/index.html)
+
+[personlive]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/people-events-properties/1Person.png 
+[eventlive]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/people-events-properties/2Event.png
+[propertylive]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/people-events-properties/3Prop.png
 
 
-[simple-api]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/simple-api.png
-
-[best-practices]: /best-practices
-[prop-options]: /advanced/advanced-properties
-[power-report]: /tools/power-report
-[data-ways]: /getting-started/ways-to-send-us-data
