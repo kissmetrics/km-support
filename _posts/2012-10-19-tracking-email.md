@@ -14,7 +14,7 @@ When you email your customers, there are three main actions that these people do
 2. The person **opens** the email.
 3. The person **clicks through** the email to get to your website.
 
-If you use Mailchimp, take a look at our [Mailchimp][mailchimp] integration. If you do not use Mailchimp, here are some ways to track emails using our APIs.
+If you use Mailchimp, take a look at our [Mailchimp integration][mailchimp]. If you do not use Mailchimp, here are some ways to track emails using our APIs.
 
 ## 1. Tracking Email Sends/Receives
 
