@@ -71,11 +71,11 @@ Last thing: there's a black circle in the bottommost bar (5th icon from the left
 
 # Console
 
-In the console you can run JavaScript commands. Our [JavaScript Library specifics][js-specific] has a reference on available commands.
+In the console you can run JavaScript commands. Our [JavaScript Library documentation][js-specific] has a reference on available commands.
 
 [![Console Panel][console-ss]][console-ss]
 
-[js-specific]: /apis/javascript/javascript-specific
+[js-specific]: /apis/javascript/
 
 [network-ss]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/testing-km/network.png
 [elements-ss]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/testing-km/elements.png

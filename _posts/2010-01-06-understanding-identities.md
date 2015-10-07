@@ -229,7 +229,7 @@ Kissmetrics lets you incorporate data from several data sources from integration
 [common-methods]: /apis/common-methods
 [js-ids]: /apis/javascript/javascript-identities.html
 [url-api]: /apis/url.html
-[id-from-form]: /apis/javascript/javascript-specific/#identifying-a-person-from-a-form-field
+[id-from-form]: /apis/javascript/#identifying-a-person-from-a-form-field
 [mult-domains]: /apis/javascript/tracking-multiple-domains
 
 [js-ids-info]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/understanding-identities/js-ids.pdf

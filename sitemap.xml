@@ -18,11 +18,11 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/getting-started/testing-km/using-dev-tools.html</loc>
-        <lastmod>2015-09-29T14:43:26-07:00</lastmod>
+        <lastmod>2015-10-06T16:50:16-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/getting-started/understanding-identities.html</loc>
-        <lastmod>2015-09-29T14:43:26-07:00</lastmod>
+        <lastmod>2015-10-06T16:51:02-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/getting-started/faq.html</loc>
@@ -76,13 +76,13 @@
         <loc>
             http://support.kissmetrics.com/tutorial/event-library-tutorial/events-clicks-tutorial.html
         </loc>
-        <lastmod>2015-09-29T14:43:26-07:00</lastmod>
+        <lastmod>2015-10-06T16:58:44-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://support.kissmetrics.com/tutorial/event-library-tutorial/events-form-tutorial.html
         </loc>
-        <lastmod>2015-09-29T14:43:26-07:00</lastmod>
+        <lastmod>2015-10-06T16:59:32-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tutorial/metrics-intro.html</loc>
@@ -146,11 +146,11 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/how-tos/dynamic-elements.html</loc>
-        <lastmod>2015-09-29T14:43:26-07:00</lastmod>
+        <lastmod>2015-10-06T16:59:56-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/best-practices/ecommerce-essentials.html</loc>
-        <lastmod>2015-09-29T14:43:26-07:00</lastmod>
+        <lastmod>2015-10-06T17:00:30-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tools/event-library/index.html</loc>
@@ -158,11 +158,11 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tools/event-library/events-clicks.html</loc>
-        <lastmod>2015-09-29T14:43:26-07:00</lastmod>
+        <lastmod>2015-10-06T17:01:21-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tools/event-library/events-form.html</loc>
-        <lastmod>2015-09-29T14:43:26-07:00</lastmod>
+        <lastmod>2015-10-06T17:01:50-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/tools/event-library/events-url/index.html</loc>
@@ -210,7 +210,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/apis/javascript/javascript-identities.html</loc>
-        <lastmod>2015-09-29T14:43:26-07:00</lastmod>
+        <lastmod>2015-10-06T17:02:14-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/apis/javascript/javascript-settings.html</loc>
@@ -620,11 +620,11 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/apis/javascript/index.html</loc>
-        <lastmod>2015-10-06T15:31:09-07:00</lastmod>
+        <lastmod>2015-10-06T17:03:08-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/apis/common-methods.html</loc>
-        <lastmod>2015-09-29T14:43:26-07:00</lastmod>
+        <lastmod>2015-10-06T17:03:27-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/apis/specifications.html</loc>
@@ -664,7 +664,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/learn/recording-your-first-js-event.html</loc>
-        <lastmod>2015-09-29T14:43:26-07:00</lastmod>
+        <lastmod>2015-10-06T17:03:47-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/learn/creating-your-first-report.html</loc>
@@ -840,7 +840,7 @@
     </url>
     <url>
         <loc>http://support.kissmetrics.com/</loc>
-        <lastmod>2015-10-06T15:31:09-07:00</lastmod>
+        <lastmod>2015-10-06T17:03:47-07:00</lastmod>
     </url>
     <url>
         <loc>http://support.kissmetrics.com/integrations/</loc>

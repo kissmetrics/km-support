@@ -61,4 +61,4 @@ _kmq.push(['identify', <?php echo $generated.id ?>])
 This treats *your* random ID as a 'named' ID, so you'll have to explicitly call `alias` when they truly become identified, after a **Signup** or **Login** or **Subscription** type of event.
 
 [url]: /apis/url
-[callback]: /apis/javascript/javascript-specific#callback-functions
+[callback]: /apis/javascript#callback-functions

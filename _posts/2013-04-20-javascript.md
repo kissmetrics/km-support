@@ -462,4 +462,4 @@ if (!window.location.host.match(/localhost/)) {
 [fields-not-tracked]: /apis/javascript/javascript-specific/protected-form-fields
 
 [common]: /apis/common-methods
-[js-specific]: /apis/javascript/javascript-specific
+[js-specific]: /apis/javascript

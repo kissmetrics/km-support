@@ -127,7 +127,7 @@ Use one of these carts? Learn more about integrating Kissmetrics with your cart:
 * [UltraCart][ultracart]
 * [Magento Go or Magento One-Page Checkout][magento]
 
-[form-fields]: /apis/javascript/javascript-specific#auto-tracking-form-fields
+[form-fields]: /apis/javascript#auto-tracking-form-fields
 [ultracart]: /integrations/ultracart
 [magento]: /integrations/magento-km
 

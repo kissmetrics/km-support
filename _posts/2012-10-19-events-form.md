@@ -67,6 +67,6 @@ How do we know to call the new Kissmetrics properties "Firstname" and "Lastname"
   * If you use **Ajax** to [dynamically load a form][dyn] into the page after the page has loaded (`document.ready()`).
 * Currently, the Event Library takes only a *single* HTML ID or a *single* class name. If you'd like to use the full range of nested CSS selectors, please use JavaScript Library calls to set up these types of events.
 
-[trackSubmit]: /apis/javascript/javascript-specific#tracking-forms
+[trackSubmit]: /apis/javascript/#tracking-forms---tracksubmit
 [example-form]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/event-library/events-form/example-form.png
 [dyn]: /how-tos/dynamic-elements

@@ -108,5 +108,5 @@ KM.record('Signed Up', {'_d' : 1, '_t' : 1234567890});
 KM.set({'gender' : 'male'});
 {% endhighlight %}
 
-[js]: /apis/javascript/javascript-specific
+[js]: /apis/javascript
 [id]: /getting-started/understanding-identities
