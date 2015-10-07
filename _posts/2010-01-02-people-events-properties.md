@@ -1,89 +1,103 @@
 ---
 layout: post
-title: Your Data Is All People, Events and Properties
+title: Understanding People, Events and Properties within Kissmetrics
 categories: getting-started
-summary: All the data in Kissmetrics comes down to three groups - people, events and properties.
+summary: "The Kissmetrics data model is comprised of three components: people, events and properties. Understanding these concepts is vital to being able to analyze the data you are collecting."
 ---
+The Kissmetrics data model is comprised of three components: people, events and properties. Understanding these concepts is vital to being able to analyze the data you are collecting.
+
 * Table of Contents
 {:toc}
 * * *
 
-All the data in Kissmetrics is in the form **people**, **events** and **properties**. In short, these indicate who your users are, what they do, and additional information about them (which lets you group similar people together).
+## What are people?
 
-![Simple API][simple-api]
+People are the visitors on your sites. A person in Kissmetrics represents the physical person behind the computer that came to view your blog, website or app.
 
-# People
+![Person Live][personlive]
 
-The core unit in Kissmetrics is a person, and we really do mean a ***person*** -- a human being, not a unique visit or a session. You may often be looking at aggregate reports of user behavior, but at the end of the day, it's possible to see data for each individual person.
+To understand how people are identified within Kissmetrics, take a look [here.](http://support.kissmetrics.com/getting-started/understanding-identities.html)
 
-People are represented by "**identities**", usually more than one. There are two types:
 
-* ***Named Identities***: a *recognizable* word or phrase that represents a person:
-  * `foo@example.com`
-  * `User #12345`
-  * `Facebook ID #67890`
-* ***Anonymous Identities***: a *randomly-generated* string that represents a person before you know who they are:
-  * `y75Fe33597qBqkR4obZZYV+wF3Y=`
-  * `6j1KH1zrwBS6T2iIsixvpfnCnxY=`
+## What are events?
 
-When Kissmetrics is appropriately implemented, you can follow a person's lifecycle with your product from when they were just any other visitor to when they finally sign up and repeatedly log in.
+Events are the actions that your users are taking on your site or within your app.
 
-# Events
+![Event Live][eventlive]
 
-People interact with your site or application. Think of **events** as the *actions* your users do. For example:
+Some examples of events include:
 
-* Started a browsing session (`Visited Site`)
-* `Saw homepage`
-* `Saw landing page`
-* `Downloaded app`
-* `Subscribed to newsletter`
-* `Opened Email`
-* `Signed up`
-* `Shared content` (on Twitter or Facebook, for example)
-* `Billed` or `Purchased` (ie. paid you)
+| Event Name               | Description                                                                      |
+|--------------------------|----------------------------------------------------------------------------------|
+| Signed Up                | This event will be triggered when a visitor completes the sign up                |
+| Logged in                | The event will be triggered anytime a visitor logs into your site or application |
+| Completed check out      | This event will be triggered when a visitor completes the checkout process       |
+| Subscribed to newsletter | This event will be triggered when a visitor subscribes to your newsletter        |
 
-These *actions* aren't limited to just visiting a particular URL. The event might happen on one of your servers, or even happen offline (the customer responds to your sales person's phone call, for example). To handle such a variety of actions, Kissmetrics provides a [large number of ways for you to send us this data][data-ways].
+For suggested events for your use case take a look at our [best practices guides.](http://support.kissmetrics.com/best-practices/)
 
-Our [Best Practices][best-practices] are a great start to introduce you to important events to record. We have guides for SaaS and e-commerce businesses.
+## What are properties?
 
-# Properties
+Properties are additional bits of information describing your users and their actions. By using properties you are able to segment reports and dive deeper into your data.
 
-***Properties*** indicate additional information about each person. Primarily, properties let you segment similar people into groups (using the "**values**" of a property) based on one criteria (this is the "**property**" itself). Here are some example properties, with their corresponding values:
+![Property Live][propertylive]
 
-* Gender (example values could be "`Male`" or "`Female`")
-* Which referral website URL brought the person to your site? (An example value is "`http://www.google.com`")
-* Is this a returning visitor? (eg. "`Yes`" or "`No`")
-* Which A/B test variation did they see? (eg. "`Original`", "`June 2 variation`" or "`August variation`")
-* Which plan did they signed up for? (eg. "`Enterprise`", "`Premium`" or "`Free`")
+Properties are passed as key-value pairs. It is important to note that properties are tied to the person and not to the event.
 
-Properties can be numeric too:
+If you are using JavaScript to track on your site, you will automatically track some properties, including:
 
-* Amount of revenue gained from a transaction (eg. "`49.99`" or "`-10.50`" for a refund)
-* Age (eg. "`21`")
+| Property Name   | Description                                                      | Property Value Example     |
+|-----------------|------------------------------------------------------------------|----------------------------|
+| Device Type     | This is the device being used by the user                        | Smartphone                 |
+| Browser         | This is the browser that is being used by the user               | Chrome                     |
+| Continent       | This is the Continent where the user is accessing your site from | North America              |
+| Campaign Source | When a link directing to your site is using UTM parameters       | Linkedin                   |
+| Referrer        | The URl that the visitor came from                               | www.example.com/blog/post1 |
 
-Numeric properties are special, because our reports can do some math in finding sums, averages, mins, and maxes. For example, for a numeric `Revenue` property, you'd be able to:
+The automatically tracked properties are a great start but you will also want to track your own. Some examples are:
 
-* Find the total revenue, across all transactions and all people
-* Find the average transaction size, or the smallest/min, or the largest/max.
-* Find the average net revenue per person (sum up the revenue per person and take the average across all people)
+| Property Name       | Description                                        | Property Value Example |
+|---------------------|----------------------------------------------------|------------------------|
+| Plan Type           | The name of the plan the user signed up for        | Starter                |
+| Product Viewed Name | The name of the product the user viewed            | Leather Notebook       |
+| Promo Code Used     | The promo code that was used during checkout       | SUMMERSALE             |
+| Video Played Name   | The name of the video that was watched by the user | Beginners Guide        |
 
-The best part is that Kissmetrics saves all the values of each property; nothing is ever "overwritten". This lets you toggle the [report options][prop-options] to show the First Value or Last Value set, and with the [Power Report][power-report], even show Every Value ever set across many people at a time.
+## Examples
 
-## Properties Are Saved to Each Person
+Now that you understand these concepts separately, let’s see how they all work together.
 
-Whether you record properties as part of an event or set them individually, Kissmetrics remembers the property ***as being associated with the person***. This lets you use properties to segment reports in ways you may not have expected.
+**Example 1:** Janet is a first-time visitor to your ecommerce site. She originally arrived at the site from a post she saw on a fashion blog. While she was on your site, she viewed 2 dresses, added 1 to her shopping cart, created an account and ultimately left without buying anything.
 
-For example, you can look at the correlation between last month's A/B test and the number of upgrades this month. Most other analytics solutions would require you to re-record the A/B test property when the Upgrade occurs.
+In this scenario, who is the person? What are the events? And what properties should be passed?
 
-Again, our [Best Practices][best-practices] are a great start to introduce you to important properties to record. We have guides for SaaS and e-commerce businesses.
+| Person | Events              | Properties                                     |
+|--------|---------------------|------------------------------------------------|
+| Janet  | Visited Site        | Returning: No                                  |
+|        | Viewed Product (2x) | Referrer: blog.highfashion.com/best_new_sites  |
+|        | Added to Cart       | Viewed Product Name: Sapphires maxi dress      |
+|        | Signed Up           | Viewed Product Name: The blackout dress        |
+|        |                     | Added to Cart Product Name: The blackout dress |
 
-## Naming Properties
+**Example 2:** Jose is an avid user of a Saas product that helps him keep track of different list. Jose logs into his account, creates a new grocery list for the week, adds 3 items from the drop down list, saves the list and proceeds to email the list to his partner.
 
-Generally, you can name your properties whatever you like, as long as it is meaningful to you. The only restriction is that we'll not accept properties that are an underscore and another letter, like `_a`, `_A`, `_t`, `_d`, etc. These are reserved for our API for special purposes.
+In this scenario, who is the person? What are the events they did? And what properties should be passed?
 
-[simple-api]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/simple-api.png
+| Person | Events             | Properties                |
+|--------|--------------------|---------------------------|
+| Jose   | Visited Site       | Returning: Yes            |
+|        | Logged In          | New List Type: Grocery    |
+|        | Created New List   | Added Item: Milk          |
+|        | Added Item to List | Added Item: Bread         |
+|        | Saves List         | Added Item: Apple         |
+|        | Shares List        | Shares List Method: Email |
 
-[best-practices]: /best-practices
-[prop-options]: /advanced/advanced-properties
-[power-report]: /tools/power-report
-[data-ways]: /getting-started/ways-to-send-us-data
+## Next Steps
+
+Once you understand these concepts and which events you will want to track, you will need to set them up. There are a few different methods to do so, you can get started with the [Event Library](http://support.kissmetrics.com/tools/event-library/) or the [JavaScript Library.](http://support.kissmetrics.com/apis/javascript/javascript-specific/index.html)
+
+[personlive]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/people-events-properties/1Person.png
+[eventlive]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/people-events-properties/2Event.png
+[propertylive]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/people-events-properties/3Prop.png
+
+
