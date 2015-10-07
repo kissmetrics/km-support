@@ -31,4 +31,4 @@ More detailed instructions coming soon!
 * The Event Library has trouble if you use **Ajax** to dynamically load page elements after the page has loaded (`document.ready()`). Our script scans the page once for the elements on which to instrument tracking.
 * Currently, the Event Library takes only a *single* HTML ID or a *single* class name. If you'd like to use the full range of nested CSS selectors, please try using JavaScript Library calls for these types of events. If that does not work for you, please let us know if you are interested in seeing this functionality within the Event Library.
 
-[trackClick]: /apis/javascript/javascript-specific#tracking-clicks
+[trackClick]: /apis/javascript/#tracking-clicks---trackclick

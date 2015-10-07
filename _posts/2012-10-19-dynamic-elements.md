@@ -12,4 +12,4 @@ Your site might include **dynamic elements** -- those forms or buttons that are 
 
 Developers should call our `trackClick` and `trackSubmit` API functions after dynamic elements are loaded, so that they can be tracked correctly. Please refer to our [JavaScript Library documentation][js] for more information.
 
-[js]: /apis/javascript/javascript-specific
+[js]: /apis/javascript

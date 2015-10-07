@@ -36,4 +36,4 @@ More detailed instructions coming soon!
   * If you use **Ajax** to dynamically load a form into the page after the page has loaded (`document.ready()`).
 * Currently, the Event Library takes only a *single* HTML ID or a *single* class name. If you'd like to use the full range of nested CSS selectors, please try using JavaScript Library calls for these types of events. If that does not work for you, please let us know if you are interested in seeing this functionality within the Event Library.
 
-[trackSubmit]: /apis/javascript/javascript-specific#tracking-forms
+[trackSubmit]: /apis/javascript/#tracking-forms---tracksubmit

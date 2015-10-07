@@ -45,4 +45,3 @@ Tell your developer that if she wants to use any other code library, she can rea
 
 [1]: http://support.kissmetrics.com/apis/javascript/index.html#quick-reference
 [2]: http://support.kissmetrics.com/apis/common-methods.html#identify
-
