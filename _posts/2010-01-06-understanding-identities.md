@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Understanding Identities
+title: Understanding identities
 categories: getting-started
 tags: [identities]
 summary: Key concepts about person-based analytics you should know before using Kissmetrics.
