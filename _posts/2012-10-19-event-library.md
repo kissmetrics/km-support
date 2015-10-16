@@ -71,9 +71,9 @@ One thing to keep in mind is that an event must have data associated with it bef
 
 [categories]: https://s3.amazonaws.com/kissmetrics-support-files/assets/tools/event-library/event-categories.png
 
-[create-1]: /tutorial/event-library-tutorial/events-url-tutorial
-[create-2]: /tutorial/event-library-tutorial/events-clicks-tutorial
-[create-3]: /tutorial/event-library-tutorial/events-form-tutorial
+[create-1]: /tutorial/event-library-tutorial/events-url
+[create-2]: /tutorial/event-library-tutorial/events-clicks
+[create-3]: /tutorial/event-library-tutorial/events-form
 
 [display]: https://app.kissmetrics.com/product.edit/#props
 [count]: https://app.kissmetrics.com/product.event_prop_breakdown/
