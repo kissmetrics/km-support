@@ -14,7 +14,6 @@ The best practice for naming and implementing analytics is to track only what yo
 
 ## How should I structure my data?
 
-
 We like to recommend that you think of structuring your data as if you were describing something that happened in the past.
 
 For example, you could tell your coworker that *“600 people signed up for the app by clicking the top right button last month.”*
@@ -76,4 +75,4 @@ We are happy to work with your development team to plan, strategize and help pro
 
 Want help structuring your data and naming them? Contact us at <customeraccounts@kissmetrics.com> and we’ll help you plan your analytics strategy.
 
-[TwitterSignupSS]: https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/how-to-name-and-structure-your-data/TwitterSignUp.png
+[TwitterSignupSS]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/how-to-name-and-structure-your-data/TwitterSignUp.png
