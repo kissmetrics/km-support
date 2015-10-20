@@ -1,10 +1,8 @@
 ---
 layout: post
-categories: getting started
+categories: getting-started
 title: "Quickstart Guide: Install Kissmetrics’ JavaScript Tracking Code, Create Custom Events and Properties, and Identify Users"
-tags: []
-summary: In this post, we'll be go through each step you need to take to: (1) get the JavaScript code on every page of your site, (2) understand what the Kissmetrics JavaScript snippet tracks, (3)  create custom events and properties, and (4) identify users of your product or service.
-
+summary: "In this post, we'll be go through each step you need to take to: (1) get the JavaScript code on every page of your site, (2) understand what the Kissmetrics JavaScript snippet tracks, (3)  create custom events and properties, and (4) identify users of your product or service."
 ---
 Before you can get data into your Kissmetrics account, you'll first need to install the JavaScript tracking code on every webpage of your site. This code is unique and specific to your account.
 
@@ -14,19 +12,20 @@ In this post, we'll be go through each step you need to take to: (1) get the Jav
 {:toc}
 ***
 
-Four Ways to Edit Your Website’s Source Code
+##Four Ways to Edit Your Website’s Source Code
 There are plenty of ways to edit your website's source code:
-Method 1 -- Use Git
+###Method 1 - Use Git
 You can make source code changes through git and push it to your web server. 
-Method 2 -- Download all your HTML files from the web server, edit them in a text editor, and re-upload them to the web server.
+###Method 2 - Download all your HTML files from the web server, edit them in a text editor, and re-upload them to the web server.
 You can download the HTML files via FTP from your web server. Once downloaded, make changes to the code for every page, and re-upload them back to the web server. 
-Method 3 -- Using Content Management Systems (CMS)
+###Method 3 - Using Content Management Systems (CMS)
 If you're using a CMS, you'll need to install the tracking snippet into your template. However your template is built, make sure the JavaScript snippet is tracking on every page of your site. 
 
 For Wordpress, you also have the option to download the plugin and install it. 
 
-You can download the plugin here. 
-Method 4 -- Make Source Code Changes Through Your Web Host's Console
+You can download the plugin [here](https://wordpress.org/plugins/kiss-metrics/).
+
+###Method 4 - Make Source Code Changes Through Your Web Host's Console
 If your site is hosted through a traditional managed web hosting service, you may be more comfortable inserting the tracking code through the web console. 
 
 Whichever method you choose, you'll need to make sure you push all code changes live at once. If some pages have the tracking code installed and others don't, you'll get lower quality data. 
@@ -37,14 +36,13 @@ Choose whichever method works best for you, and then grab your tracking script.
 Where to Find Your Kissmetrics JavaScript Snippet
 Your unique tracking code can be found in the settings of your Kissmetrics account. 
 
-Step 1 -- Go To Product Settings
+###Step 1 - Go To Product Settings
 Go to any page within the Kissmetrics web app and click on Settings:
 
 [insert Installing Kissmetrics' JavaScript Tracking Code 1.png]
 
-Step 2 -- Copy the JavaScript Tracking Code to Your Clipboard
+###Step 2 - Copy the JavaScript Tracking Code to Your Clipboard
 Scroll down to locate your JavaScript Tracking Code and copy it. Be sure to copy all the code, from <script to </script>. 
-
 
 [insert Installing Kissmetrics' JavaScript Tracking Code 2.png] 
 
@@ -60,21 +58,17 @@ You can install the tracking snippet on both HTTP and the more secure HTTPS page
 
 By installing the JavaScript tracking snippet, Kissmetrics will track all subdomains seamlessly. For example, if you install the snippet onto the main homepage -- kissmetrics.com, we will track all subdomains under your URL such as app.kissmetrics.com, blog.kissmetrics.com, and grow.kissmetrics.com domains. If you have subdomains, don't hesitate to insert the tracking snippet if you'd like to track the pages within that subdomain. 
 
-Step 3 - Insert the Tracking Code
+###Step 3 - Insert the Tracking Code
 We've copied our JavaScript tracking code and now we need to edit our website's source code. To start, we'll first locate the <head> tag at the top:
-
-
 
 [insert Installing Kissmetrics' JavaScript Tracking Code 3.png]
 
 Make some space for it and paste the tracking code:
 
-
-
 [insert Installing Kissmetrics' JavaScript Tracking Code 4.png]
 
 That's all there is to it! After it is live on your server, Kissmetrics will automatically start sending you some events. 
-What the Kissmetrics JavaScript Snippet Tracks Automatically
+##What the Kissmetrics JavaScript Snippet Tracks Automatically
 Once you install the tracking code on your site, you will start to see your data within the hour. 
 
 Some events and properties are automatically tracked and will start appearing when the data comes in:
@@ -88,13 +82,10 @@ URL tells you which URL a new visitor first landed on. With the Funnel Report, y
 
 Returning triggers when the person comes back to your site. If the person returns, they'll be assigned a 1 next to the property. The time between visits must be 30 minutes or longer for the Returning property to trigger. If they visit your site, leave and return 25 minutes later, Returning won't trigger. At least 30 minutes must elapse for "Returning" to set. When looking at the person details report, you'll see how many times the person has returned:
 
-
-
 [insert Installing Kissmetrics' JavaScript Tracking Code 5.png] 
 Caption: The "x13" box next to the Returning property indicates the person has returned to our site 13 times since their first visit. When we hover over the box we see when Kissmetrics first saw them return as well as when they most recently returned. 
 
 You can segment people by their Returning property in a Funnel Report. Here's how that looks:
-
 
 [insert insert Installing Kissmetrics' JavaScript Tracking Code 6.png]
 
@@ -121,10 +112,9 @@ Page View triggers when a person views any page of your site. It contains two pr
 
 By default, we do not track pageviews. In many cases, having this enabled will quickly use up your Kissmetrics event limits. You can turn it on or off by simply flipping a switch in your JavaScript settings:
 
-
 [insert insert Installing Kissmetrics' JavaScript Tracking Code 7.png]
 
-Creating Custom Events and Properties
+##Creating Custom Events and Properties
 To get more of the metrics that matter to your business, you'll need to set up custom events and properties. There are undoubtedly some metrics that matter more to your business than others, but generally there are a few metrics you'll want to set up right away:
 
 Sign Up - An important metric for nearly all online businesses, sign up indicates when a visitor converted to a user. You'll want to tell Kissmetrics when to trigger this event. 
@@ -136,17 +126,15 @@ Entering checkout - Typically the second to last step (payment/places order) of 
 
 The first time you set up Kissmetrics, focus on the key events of your business. Core steps of your business, your main features, payments, and cancellations should all get set up. You can build out more specific events as you use Kissmetrics more heavily.
 
-Verify Events and Properties Are Working with Kissmetrics Live Feature
+##Verify Events and Properties Are Working with Kissmetrics Live Feature
 The Kissmetrics Live feature displays in real time the people on your site and the events and properties they are triggering. You can navigate to Live by selecting it in the top navigation.
 
-
 [insert insert Installing Kissmetrics' JavaScript Tracking Code 8.png]
-
 
 This makes it a great debugger. You'll see if the events and properties you've set up are actually working. And you don't have to rely on other people to trigger events and properties - you can do it yourself. Just go to your site, trigger some events and properties and see if everything in Live is firing correctly.
 
 While Live shows real time data, it'll take an hour for this data to be able to be used in reports.  
-Identifying People
+##Identifying People
 Kissmetrics is a powerful people tracking analytics platform. You can identify people and track what they do on your website. For example, if a visitor named John visits your website, we can track what he does in real time: he visits the homepage and he came from a Google referral.  
 
 But, before you can identify people, you'll first need to tell Kissmetrics how you identify users of your product or service. The tracking code you've inserted can only assign the anonymous ID, it does not inherently know how you identify people. 
@@ -163,7 +151,7 @@ All previous activity while they were under an anonymous ID will merge with thei
 To learn more about setting up identities, check out our support document which covers setting this up. You may need to talk to your developer to get help pulling the identifier information from your back end. 
 
 You'll want to put the identify code anywhere on your website where you identify users. This can be a sign up page, registration page, form field, etc.
-Recap: 3 Steps for Installing the Kissmetrics JavaScript
+##identifying people: 3 Steps for Installing the Kissmetrics JavaScript
 Let's recap a few of the main points:
 
 Install the JavaScript tracking code right below the <head> tag. There are a variety of ways to get the tracking snippet on your website's source code. Whatever method you choose, you'll want to make sure Kissmetrics is one of the first elements that loads. Placing the code near the top will accomplish that. 
@@ -171,6 +159,3 @@ Once installed, tell Kissmetrics how to identify users. If you don't do this, al
 Set up custom events. For Kissmetrics to have the biggest impact on your business, you'll need to set up the metrics that matter to your company's performance. 
 
 Once you have everything correctly set up, you'll be able to start running reports and pulling insights that matter to your business.
-
-
-
