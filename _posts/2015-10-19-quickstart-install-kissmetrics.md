@@ -135,7 +135,8 @@ The Kissmetrics Live feature displays in real time the people on your site and t
 
 This makes it a great debugger. You'll see if the events and properties you've set up are actually working. And you don't have to rely on other people to trigger events and properties - you can do it yourself. Just go to your site, trigger some events and properties and see if everything in Live is firing correctly.
 
-While Live shows real time data, it'll take an hour for this data to be able to be used in reports.  
+While Live shows real time data, it'll take an hour for this data to be able to be used in reports. 
+
 ##Identifying People
 Kissmetrics is a powerful [people tracking](https://blog.kissmetrics.com/tracking-people-with-analytics/) analytics platform. You can identify people and track what they do on your website. For example, if a visitor named John visits your website, we can track what he does in real time: he visits the homepage and he came from a Google referral.  
 
@@ -152,7 +153,8 @@ All previous activity while they were under an anonymous ID will merge with thei
 To learn more about setting up identities, check out our [support document](http://support.kissmetrics.com/getting-started/understanding-identities.html) which covers setting this up. You may need to talk to your developer to get help pulling the identifier information from your back end. 
 
 You'll want to put the identify code anywhere on your website where you identify users. This can be a sign up page, registration page, form field, etc.
-##identifying people: 3 Steps for Installing the Kissmetrics JavaScript
+
+##Identifying people: 3 Steps for Installing the Kissmetrics JavaScript
 Let's recap a few of the main points:
 
 1. **Install the JavaScript tracking code right below the <head> tag.** There are a variety of ways to get the tracking snippet on your website's source code. Whatever method you choose, you'll want to make sure Kissmetrics is one of the first elements that loads. Placing the code near the top will accomplish that. 
