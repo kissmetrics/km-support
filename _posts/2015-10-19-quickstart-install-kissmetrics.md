@@ -70,90 +70,88 @@ Once you install the tracking code on your site, you will start to see your data
 
 Some [events and properties](https://blog.kissmetrics.com/people-events-and-properties/) are automatically tracked and will start appearing when the data comes in:
 
-Event: Visited Site 
+**Event: Visited Site**
 This event triggers when a person visits any page of your site that has the JavaScript tracking code. Along with this information, the properties Referrer, URL, and Returning are tracked. 
 
-Referrer records the URL the person came from. This property is particularly useful for learning where your customers came from. Using a Funnel Report, you can segment visitors by referrer to learn which referrers not only bring the most visitors, but more importantly which referrers bring the most customers. 
+**Referrer** records the URL the person came from. This property is particularly useful for learning where your customers came from. Using a Funnel Report, you can segment visitors by referrer to learn which referrers not only bring the most visitors, but more importantly which referrers bring the most customers. 
 
-URL tells you which URL a new visitor first landed on. With the Funnel Report, you'll be able to segment people by this URL and test pages against each other to see which ones led to conversion. 
+**URL** tells you which URL a new visitor first landed on. With the Funnel Report, you'll be able to segment people by this URL and test pages against each other to see which ones led to conversion. 
 
-Returning triggers when the person comes back to your site. If the person returns, they'll be assigned a 1 next to the property. The time between visits must be 30 minutes or longer for the Returning property to trigger. If they visit your site, leave and return 25 minutes later, Returning won't trigger. At least 30 minutes must elapse for "Returning" to set. When looking at the person details report, you'll see how many times the person has returned:
+**Returning** triggers when the person comes back to your site. If the person returns, they'll be assigned a 1 next to the property. The time between visits must be 30 minutes or longer for the Returning property to trigger. If they visit your site, leave and return 25 minutes later, Returning won't trigger. At least 30 minutes must elapse for "Returning" to set. When looking at the person details report, you'll see how many times the person has returned:
 
-[insert Installing Kissmetrics' JavaScript Tracking Code 5.png] 
-Caption: The "x13" box next to the Returning property indicates the person has returned to our site 13 times since their first visit. When we hover over the box we see when Kissmetrics first saw them return as well as when they most recently returned. 
+![Install Kissmetrics][5]
+*The "x13" box next to the Returning property indicates the person has returned to our site 13 times since their first visit. When we hover over the box we see when Kissmetrics first saw them return as well as when they most recently returned.* 
 
 You can segment people by their Returning property in a Funnel Report. Here's how that looks:
 
-[insert insert Installing Kissmetrics' JavaScript Tracking Code 6.png]
-
+![Install Kissmetrics][6]
 Here we see a typical signup funnel; we're tracking people who visit our site, view the features page and signup. People are segmented by the Returning property. We're seeing how new vs returning visitors convert through the funnel. While most of the people that come to our site are new visitors, we actually get more signups from returning visitors. This tells us that most people make more than one visit before they decide to sign up. 
 
-Event: Ad Campaign Hit
+**Event: Ad Campaign Hit**
 We trigger ad campaign hits whenever we see a UTM parameter which is the standard way to track campaigns in Google Analytics. So we pick up the exact same data. Kissmetrics captures the following UTM variables as properties:
 
-Campaign Source
-Campaign Medium
-Campaign Terms
-Campaign Content
-Campaign Name
+⋅⋅1.Campaign Source
+⋅⋅1.Campaign Medium
+⋅⋅1.Campaign Terms
+⋅⋅1.Campaign Content
+⋅⋅1.Campaign Name
 
 When Kissmetrics recognizes these variables, they'll be sorted and stored under properties. 
 
 We also trigger ad campaign hits when we see a gclid parameter. This is used by the AdWords autotagging. Google keeps the data in the gclid data hidden so we can't track all your AdWords data automatically. But we can trigger ad campaign hit events for these visitors.
 
-Event: Search Engine Hit
+**Event: Search Engine Hit**
 If a person comes to your site via an organic search, Kissmetrics will trigger the event as "Search Engine Hit". The property Search Engine indicate which search engine they used, and Search Terms indicate the query. Due to Google hiding much of this data, many queries will return as "Not Provided," just as they do in Google Analytics. 
 
-Event: Page View
+**Event: Page View**
 Page View triggers when a person views any page of your site. It contains two properties - Viewed URL and Referrer. Viewed URL shows the pages the person viewed. Referrer shows the last page viewed. 
 
-By default, we do not track pageviews. In many cases, having this enabled will quickly use up your Kissmetrics event limits. You can turn it on or off by simply flipping a switch in your JavaScript settings:
+By default, we do not track pageviews. In many cases, having this enabled will quickly use up your Kissmetrics event limits. You can turn it on or off by simply flipping a switch in your [JavaScript settings](https://app.kissmetrics.com/product.js_settings):
 
-[insert insert Installing Kissmetrics' JavaScript Tracking Code 7.png]
+![Install Kissmetrics][7]
 
 ##Creating Custom Events and Properties
 To get more of the metrics that matter to your business, you'll need to set up custom events and properties. There are undoubtedly some metrics that matter more to your business than others, but generally there are a few metrics you'll want to set up right away:
 
-Sign Up - An important metric for nearly all online businesses, sign up indicates when a visitor converted to a user. You'll want to tell Kissmetrics when to trigger this event. 
-Using features - SaaS and mobile apps should create events for when a person uses a feature. For Kissmetrics, we have events that trigger after a person runs any report. Using this data, we can understand our feature engagement and see how many new users actually start using the app after they get into it for the first time. 
-Payment - This event goes for any business. All companies need to be paid, and Kissmetrics can trigger an event for when that payment happens, and a property that details the payment amount. 
-Viewing product pages - Triggering an event anytime someone views a product can help you discover not only which products get viewed the most, but which products convert to purchases. Viewing a product page is also a fundamental step in an eCommerce acquisition funnel. 
-Product added to cart - Another fundamental step of the eCommerce acquisition funnel is converting from viewing product to moving that product into their cart. 
-Entering checkout - Typically the second to last step (payment/places order) of the acquisition funnel is when they convert from product added to cart to entering checkout. You'll need to include this event if you want to understand how many people intend to buy and how many of those people actually end up buying. If many of them enter checkout, you can assume they are intending to buy. If there's a big dropoff from this event to completing purchase, you know you'll need to focus on your checkout process and find the areas where people abandon. 
+* _Sign Up_ - An important metric for nearly all online businesses, sign up indicates when a visitor converted to a user. You'll want to tell Kissmetrics when to trigger this event. 
+* _Using features_ - SaaS and mobile apps should create events for when a person uses a feature. For Kissmetrics, we have events that trigger after a person runs any report. Using this data, we can understand our feature engagement and see how many new users actually start using the app after they get into it for the first time. 
+* _Payment_ - This event goes for any business. All companies need to be paid, and Kissmetrics can trigger an event for when that payment happens, and a property that details the payment amount. 
+* _Viewing product pages_ - Triggering an event anytime someone views a product can help you discover not only which products get viewed the most, but which products convert to purchases. Viewing a product page is also a fundamental step in an eCommerce acquisition funnel. 
+* _Product added to cart_ - Another fundamental step of the eCommerce acquisition funnel is converting from viewing product to moving that product into their cart. 
+* _Entering checkout_ - Typically the second to last step (payment/places order) of the acquisition funnel is when they convert from product added to cart to entering checkout. You'll need to include this event if you want to understand how many people intend to buy and how many of those people actually end up buying. If many of them enter checkout, you can assume they are intending to buy. If there's a big dropoff from this event to completing purchase, you know you'll need to focus on your checkout process and find the areas where people abandon. 
 
 The first time you set up Kissmetrics, focus on the key events of your business. Core steps of your business, your main features, payments, and cancellations should all get set up. You can build out more specific events as you use Kissmetrics more heavily.
 
 ##Verify Events and Properties Are Working with Kissmetrics Live Feature
 The Kissmetrics Live feature displays in real time the people on your site and the events and properties they are triggering. You can navigate to Live by selecting it in the top navigation.
 
-[insert insert Installing Kissmetrics' JavaScript Tracking Code 8.png]
+![Install Kissmetrics][8]
 
 This makes it a great debugger. You'll see if the events and properties you've set up are actually working. And you don't have to rely on other people to trigger events and properties - you can do it yourself. Just go to your site, trigger some events and properties and see if everything in Live is firing correctly.
 
 While Live shows real time data, it'll take an hour for this data to be able to be used in reports.  
 ##Identifying People
-Kissmetrics is a powerful people tracking analytics platform. You can identify people and track what they do on your website. For example, if a visitor named John visits your website, we can track what he does in real time: he visits the homepage and he came from a Google referral.  
+Kissmetrics is a powerful [people tracking](https://blog.kissmetrics.com/tracking-people-with-analytics/) analytics platform. You can identify people and track what they do on your website. For example, if a visitor named John visits your website, we can track what he does in real time: he visits the homepage and he came from a Google referral.  
 
 But, before you can identify people, you'll first need to tell Kissmetrics how you identify users of your product or service. The tracking code you've inserted can only assign the anonymous ID, it does not inherently know how you identify people. 
 
-For brand new visitors, Kissmetrics will assign people cookies and anonymous identities until you identify them. New people will be assigned an anonymous ID, such as p2fvF3kGwdjQPxTO6yYKy8qocPA=. 
+For brand new visitors, Kissmetrics will assign people cookies and anonymous identities until you identify them. New people will be assigned an **anonymous ID**, such as _p2fvF3kGwdjQPxTO6yYKy8qocPA=_. 
 
-[image: Installing Kissmetrics' JavaScript Tracking Code  9.png]
+![Install Kissmetrics][9]
 They'll appear like this until you identify them for Kissmetrics. Once they are identified, they'll be assigned a named ID, such as an email address, account ID #, Facebook ID, etc. This named ID needs to be unique to that person. Most of our customers use email addresses as the named ID. You don't have to choose email addresses. However you identify users now should be how you'll identify them in Kissmetrics. 
 
-[image: Installing Kissmetrics' JavaScript Tracking Code  9.png ]
-
+![Install Kissmetrics][10]
 All previous activity while they were under an anonymous ID will merge with their current named ID when they are identified. All the touchpoints Kissmetrics has captured from them before they were identified will be merged into their named ID. You'll see all their pre-purchase activities including what steps led them to converting to registration and paying you.
 
-To learn more about setting up identities, check out our support document which covers setting this up. You may need to talk to your developer to get help pulling the identifier information from your back end. 
+To learn more about setting up identities, check out our [support document](http://support.kissmetrics.com/getting-started/understanding-identities.html) which covers setting this up. You may need to talk to your developer to get help pulling the identifier information from your back end. 
 
 You'll want to put the identify code anywhere on your website where you identify users. This can be a sign up page, registration page, form field, etc.
 ##identifying people: 3 Steps for Installing the Kissmetrics JavaScript
 Let's recap a few of the main points:
 
-Install the JavaScript tracking code right below the <head> tag. There are a variety of ways to get the tracking snippet on your website's source code. Whatever method you choose, you'll want to make sure Kissmetrics is one of the first elements that loads. Placing the code near the top will accomplish that. 
-Once installed, tell Kissmetrics how to identify users. If you don't do this, all people who come to your website will only assigned an anonymous ID. This will likely require some help from one of your developers. 
-Set up custom events. For Kissmetrics to have the biggest impact on your business, you'll need to set up the metrics that matter to your company's performance. 
+1. **Install the JavaScript tracking code right below the <head> tag.** There are a variety of ways to get the tracking snippet on your website's source code. Whatever method you choose, you'll want to make sure Kissmetrics is one of the first elements that loads. Placing the code near the top will accomplish that. 
+2. **Once installed, tell Kissmetrics how to identify users.** If you don't do this, all people who come to your website will only assigned an anonymous ID. This will likely require some help from one of your developers. 
+3. **Set up custom events.** For Kissmetrics to have the biggest impact on your business, you'll need to set up the metrics that matter to your company's performance. 
 
 Once you have everything correctly set up, you'll be able to start running reports and pulling insights that matter to your business.
 
