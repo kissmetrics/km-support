@@ -33,13 +33,13 @@ Whichever method you choose, you'll need to make sure you push all code changes 
 Some sites also employ a staging server, which serves as a tool to test the changes made to the site. It's all private to the company, the public doesn't use the staging server. If the changes on the staging server look good, they are then pushed to the production server, where it is live for the public. 
 
 Choose whichever method works best for you, and then grab your tracking script. 
-Where to Find Your Kissmetrics JavaScript Snippet
+##Where to Find Your Kissmetrics JavaScript Snippet
 Your unique tracking code can be found in the settings of your Kissmetrics account. 
 
 ###Step 1 - Go To Product Settings
 Go to any page within the Kissmetrics web app and click on Settings:
 
-[insert Installing Kissmetrics' JavaScript Tracking Code 1.png]
+![Install Kissmetrics][1]
 
 ###Step 2 - Copy the JavaScript Tracking Code to Your Clipboard
 Scroll down to locate your JavaScript Tracking Code and copy it. Be sure to copy all the code, from <script to </script>. 
@@ -159,3 +159,14 @@ Once installed, tell Kissmetrics how to identify users. If you don't do this, al
 Set up custom events. For Kissmetrics to have the biggest impact on your business, you'll need to set up the metrics that matter to your company's performance. 
 
 Once you have everything correctly set up, you'll be able to start running reports and pulling insights that matter to your business.
+
+[1]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/quickstart%20guide%3A%20install%20Kissmetrics%E2%80%99%20JavaScript%20tracking%20code/Installing%20Kissmetrics%27%20JavaScript%20Tracking%20Code%201.png
+[2]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/quickstart%20guide%3A%20install%20Kissmetrics%E2%80%99%20JavaScript%20tracking%20code/Installing%20Kissmetrics%27%20JavaScript%20Tracking%20Code%202.png
+[3]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/quickstart%20guide%3A%20install%20Kissmetrics%E2%80%99%20JavaScript%20tracking%20code/Installing%20Kissmetrics%27%20JavaScript%20Tracking%20Code%202.png
+[4]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/quickstart%20guide%3A%20install%20Kissmetrics%E2%80%99%20JavaScript%20tracking%20code/Installing%20Kissmetrics%27%20JavaScript%20Tracking%20Code%204.png
+[5]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/quickstart%20guide%3A%20install%20Kissmetrics%E2%80%99%20JavaScript%20tracking%20code/Installing%20Kissmetrics%27%20JavaScript%20Tracking%20Code%205.png
+[6]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/quickstart%20guide%3A%20install%20Kissmetrics%E2%80%99%20JavaScript%20tracking%20code/Installing%20Kissmetrics%27%20JavaScript%20Tracking%20Code%206.png
+[7]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/quickstart%20guide%3A%20install%20Kissmetrics%E2%80%99%20JavaScript%20tracking%20code/Installing%20Kissmetrics%27%20JavaScript%20Tracking%20Code%207.png
+[8]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/quickstart%20guide%3A%20install%20Kissmetrics%E2%80%99%20JavaScript%20tracking%20code/Installing%20Kissmetrics%27%20JavaScript%20Tracking%20Code%208.png
+[9]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/quickstart%20guide%3A%20install%20Kissmetrics%E2%80%99%20JavaScript%20tracking%20code/Installing%20Kissmetrics%27%20JavaScript%20Tracking%20Code%209.png
+[10]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/quickstart%20guide%3A%20install%20Kissmetrics%E2%80%99%20JavaScript%20tracking%20code/Installing%20Kissmetrics%27%20JavaScript%20Tracking%20Code%2010.png
