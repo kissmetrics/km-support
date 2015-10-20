@@ -97,7 +97,7 @@ You can segment people by their Returning property in a Funnel Report. Here's ho
 
 Here we see a typical signup funnel; we're tracking people who visit our site, view the features page and signup. People are segmented by the Returning property. We're seeing how new vs returning visitors convert through the funnel. While most of the people that come to our site are new visitors, we actually get more signups from returning visitors. This tells us that most people make more than one visit before they decide to sign up. 
 
-**Event: Ad Campaign Hit**
+**Event: Ad Campaign Hit**<br>
 We trigger ad campaign hits whenever we see a UTM parameter which is the standard way to track campaigns in Google Analytics. So we pick up the exact same data. Kissmetrics captures the following UTM variables as properties:
 
 * Campaign Source
