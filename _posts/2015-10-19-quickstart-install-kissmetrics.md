@@ -66,9 +66,11 @@ By installing the JavaScript tracking snippet, Kissmetrics will track all subdom
 We've copied our JavaScript tracking code and now we need to edit our website's source code. To start, we'll first locate the <head> tag at the top:
 
 ![Install Kissmetrics][3]
+
 Make some space for it and paste the tracking code:
 
 ![Install Kissmetrics][4]
+
 That's all there is to it! After it is live on your server, Kissmetrics will automatically start sending you some events.
 
 ##What the Kissmetrics JavaScript Snippet Tracks Automatically
@@ -86,11 +88,13 @@ This event triggers when a person visits any page of your site that has the Java
 **Returning** triggers when the person comes back to your site. If the person returns, they'll be assigned a 1 next to the property. The time between visits must be 30 minutes or longer for the Returning property to trigger. If they visit your site, leave and return 25 minutes later, Returning won't trigger. At least 30 minutes must elapse for "Returning" to set. When looking at the person details report, you'll see how many times the person has returned:
 
 ![Install Kissmetrics][5]
+
 *The "x13" box next to the Returning property indicates the person has returned to our site 13 times since their first visit. When we hover over the box we see when Kissmetrics first saw them return as well as when they most recently returned.* 
 
 You can segment people by their Returning property in a Funnel Report. Here's how that looks:
 
 ![Install Kissmetrics][6]
+
 Here we see a typical signup funnel; we're tracking people who visit our site, view the features page and signup. People are segmented by the Returning property. We're seeing how new vs returning visitors convert through the funnel. While most of the people that come to our site are new visitors, we actually get more signups from returning visitors. This tells us that most people make more than one visit before they decide to sign up. 
 
 **Event: Ad Campaign Hit**
@@ -145,16 +149,18 @@ But, before you can identify people, you'll first need to tell Kissmetrics how y
 For brand new visitors, Kissmetrics will assign people cookies and anonymous identities until you identify them. New people will be assigned an **anonymous ID**, such as _p2fvF3kGwdjQPxTO6yYKy8qocPA=_. 
 
 ![Install Kissmetrics][10]
+
 They'll appear like this until you identify them for Kissmetrics. Once they are identified, they'll be assigned a named ID, such as an email address, account ID #, Facebook ID, etc. This named ID needs to be unique to that person. Most of our customers use email addresses as the named ID. You don't have to choose email addresses. However you identify users now should be how you'll identify them in Kissmetrics. 
 
 ![Install Kissmetrics][9]
+
 All previous activity while they were under an anonymous ID will merge with their current named ID when they are identified. All the touchpoints Kissmetrics has captured from them before they were identified will be merged into their named ID. You'll see all their pre-purchase activities including what steps led them to converting to registration and paying you.
 
 To learn more about setting up identities, check out our [support document](http://support.kissmetrics.com/getting-started/understanding-identities.html) which covers setting this up. You may need to talk to your developer to get help pulling the identifier information from your back end. 
 
 You'll want to put the identify code anywhere on your website where you identify users. This can be a sign up page, registration page, form field, etc.
 
-##Identifying people: 3 Steps for Installing the Kissmetrics JavaScript
+##Identifying People: 3 Steps for Installing the Kissmetrics JavaScript
 Let's recap a few of the main points:
 
 1. **Install the JavaScript tracking code right below the <head> tag.** There are a variety of ways to get the tracking snippet on your website's source code. Whatever method you choose, you'll want to make sure Kissmetrics is one of the first elements that loads. Placing the code near the top will accomplish that. 
