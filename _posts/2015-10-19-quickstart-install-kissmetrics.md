@@ -41,7 +41,7 @@ Go to any page within the Kissmetrics web app and click on Settings:
 
 ![Install Kissmetrics][1]
 ###Step 2 - Copy the JavaScript Tracking Code to Your Clipboard
-Scroll down to locate your JavaScript Tracking Code and copy it. Be sure to copy all the code, from <script to </script>. 
+Scroll down to locate your JavaScript Tracking Code and copy it. Be sure to copy all the code, from `<script>` to `</script>`. 
 
 ![Install Kissmetrics][2]
 
@@ -51,11 +51,11 @@ Webpages load from top to bottom, and if a person leaves a page before it has fi
 
 You'll get higher quality data when you place it right below the <head> tag on all your pages This is an important point that cannot be overlooked. 
 
-The tracking code loads asynchronously, which means that it will not affect page load times. If you think of webpages as a highway, asynchronous content loads on a separate lane from the rest of your HTML content. This means that it will not slow down the load times of your other website content. 
+The tracking code loads asynchronously, which means that **it will not affect page load times.** If you think of webpages as a highway, asynchronous content loads on a separate lane from the rest of your HTML content. This means that it will not slow down the load times of your other website content. 
 
 You can install the tracking snippet on both HTTP and the more secure HTTPS pages. Use the same tracking snippet for each page, no special cases are required for either. Kissmetrics will track people regardless. 
 
-By installing the JavaScript tracking snippet, Kissmetrics will track all subdomains seamlessly. For example, if you install the snippet onto the main homepage -- kissmetrics.com, we will track all subdomains under your URL such as app.kissmetrics.com, blog.kissmetrics.com, and grow.kissmetrics.com domains. If you have subdomains, don't hesitate to insert the tracking snippet if you'd like to track the pages within that subdomain. 
+By installing the JavaScript tracking snippet, Kissmetrics will track all subdomains seamlessly. For example, if you install the snippet onto the main homepage -- *kissmetrics.com*, we will track all subdomains under your URL such as *app.kissmetrics.com*, *blog.kissmetrics.com*, and *grow.kissmetrics.com* domains. If you have subdomains, don't hesitate to insert the tracking snippet if you'd like to track the pages within that subdomain. 
 
 ###Step 3 - Insert the Tracking Code
 We've copied our JavaScript tracking code and now we need to edit our website's source code. To start, we'll first locate the <head> tag at the top:
@@ -90,20 +90,20 @@ Here we see a typical signup funnel; we're tracking people who visit our site, v
 **Event: Ad Campaign Hit**
 We trigger ad campaign hits whenever we see a UTM parameter which is the standard way to track campaigns in Google Analytics. So we pick up the exact same data. Kissmetrics captures the following UTM variables as properties:
 
-⋅⋅1.Campaign Source
-⋅⋅1.Campaign Medium
-⋅⋅1.Campaign Terms
-⋅⋅1.Campaign Content
-⋅⋅1.Campaign Name
+* Campaign Source
+* Campaign Medium
+* Campaign Terms
+* Campaign Content
+* Campaign Name
 
 When Kissmetrics recognizes these variables, they'll be sorted and stored under properties. 
 
 We also trigger ad campaign hits when we see a gclid parameter. This is used by the AdWords autotagging. Google keeps the data in the gclid data hidden so we can't track all your AdWords data automatically. But we can trigger ad campaign hit events for these visitors.
 
-**Event: Search Engine Hit**
-If a person comes to your site via an organic search, Kissmetrics will trigger the event as "Search Engine Hit". The property Search Engine indicate which search engine they used, and Search Terms indicate the query. Due to Google hiding much of this data, many queries will return as "Not Provided," just as they do in Google Analytics. 
+**Event: Search Engine Hit**<br>
+If a person comes to your site via an organic search, Kissmetrics will trigger the event as "Search Engine Hit". The property **Search Engine** indicate which search engine they used, and **Search Terms** indicate the query. Due to Google hiding much of this data, many queries will return as "Not Provided," just as they do in Google Analytics. 
 
-**Event: Page View**
+**Event: Page View**<br>
 Page View triggers when a person views any page of your site. It contains two properties - Viewed URL and Referrer. Viewed URL shows the pages the person viewed. Referrer shows the last page viewed. 
 
 By default, we do not track pageviews. In many cases, having this enabled will quickly use up your Kissmetrics event limits. You can turn it on or off by simply flipping a switch in your [JavaScript settings](https://app.kissmetrics.com/product.js_settings):
@@ -113,12 +113,12 @@ By default, we do not track pageviews. In many cases, having this enabled will q
 ##Creating Custom Events and Properties
 To get more of the metrics that matter to your business, you'll need to set up custom events and properties. There are undoubtedly some metrics that matter more to your business than others, but generally there are a few metrics you'll want to set up right away:
 
-* _Sign Up_ - An important metric for nearly all online businesses, sign up indicates when a visitor converted to a user. You'll want to tell Kissmetrics when to trigger this event. 
-* _Using features_ - SaaS and mobile apps should create events for when a person uses a feature. For Kissmetrics, we have events that trigger after a person runs any report. Using this data, we can understand our feature engagement and see how many new users actually start using the app after they get into it for the first time. 
-* _Payment_ - This event goes for any business. All companies need to be paid, and Kissmetrics can trigger an event for when that payment happens, and a property that details the payment amount. 
-* _Viewing product pages_ - Triggering an event anytime someone views a product can help you discover not only which products get viewed the most, but which products convert to purchases. Viewing a product page is also a fundamental step in an eCommerce acquisition funnel. 
-* _Product added to cart_ - Another fundamental step of the eCommerce acquisition funnel is converting from viewing product to moving that product into their cart. 
-* _Entering checkout_ - Typically the second to last step (payment/places order) of the acquisition funnel is when they convert from product added to cart to entering checkout. You'll need to include this event if you want to understand how many people intend to buy and how many of those people actually end up buying. If many of them enter checkout, you can assume they are intending to buy. If there's a big dropoff from this event to completing purchase, you know you'll need to focus on your checkout process and find the areas where people abandon. 
+* **Sign Up** - An important metric for nearly all online businesses, sign up indicates when a visitor converted to a user. You'll want to tell Kissmetrics when to trigger this event. 
+* **Using features** - SaaS and mobile apps should create events for when a person uses a feature. For Kissmetrics, we have events that trigger after a person runs any report. Using this data, we can understand our feature engagement and see how many new users actually start using the app after they get into it for the first time. 
+* **Payment** - This event goes for any business. All companies need to be paid, and Kissmetrics can trigger an event for when that payment happens, and a property that details the payment amount. 
+* **Viewing product pages** - Triggering an event anytime someone views a product can help you discover not only which products get viewed the most, but which products convert to purchases. Viewing a product page is also a fundamental step in an eCommerce acquisition funnel. 
+* **Product added to cart** - Another fundamental step of the eCommerce acquisition funnel is converting from viewing product to moving that product into their cart. 
+* **Entering checkout** - Typically the second to last step (payment/places order) of the acquisition funnel is when they convert from product added to cart to entering checkout. You'll need to include this event if you want to understand how many people intend to buy and how many of those people actually end up buying. If many of them enter checkout, you can assume they are intending to buy. If there's a big dropoff from this event to completing purchase, you know you'll need to focus on your checkout process and find the areas where people abandon. 
 
 The first time you set up Kissmetrics, focus on the key events of your business. Core steps of your business, your main features, payments, and cancellations should all get set up. You can build out more specific events as you use Kissmetrics more heavily.
 
@@ -137,10 +137,10 @@ But, before you can identify people, you'll first need to tell Kissmetrics how y
 
 For brand new visitors, Kissmetrics will assign people cookies and anonymous identities until you identify them. New people will be assigned an **anonymous ID**, such as _p2fvF3kGwdjQPxTO6yYKy8qocPA=_. 
 
-![Install Kissmetrics][9]
+![Install Kissmetrics][10]
 They'll appear like this until you identify them for Kissmetrics. Once they are identified, they'll be assigned a named ID, such as an email address, account ID #, Facebook ID, etc. This named ID needs to be unique to that person. Most of our customers use email addresses as the named ID. You don't have to choose email addresses. However you identify users now should be how you'll identify them in Kissmetrics. 
 
-![Install Kissmetrics][10]
+![Install Kissmetrics][9]
 All previous activity while they were under an anonymous ID will merge with their current named ID when they are identified. All the touchpoints Kissmetrics has captured from them before they were identified will be merged into their named ID. You'll see all their pre-purchase activities including what steps led them to converting to registration and paying you.
 
 To learn more about setting up identities, check out our [support document](http://support.kissmetrics.com/getting-started/understanding-identities.html) which covers setting this up. You may need to talk to your developer to get help pulling the identifier information from your back end. 
