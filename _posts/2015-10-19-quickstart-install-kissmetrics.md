@@ -14,10 +14,13 @@ In this post, we'll be go through each step you need to take to: (1) get the Jav
 
 ##Four Ways to Edit Your Website’s Source Code
 There are plenty of ways to edit your website's source code:
+
 ###Method 1 - Use Git
 You can make source code changes through git and push it to your web server. 
+
 ###Method 2 - Download all your HTML files from the web server, edit them in a text editor, and re-upload them to the web server.
 You can download the HTML files via FTP from your web server. Once downloaded, make changes to the code for every page, and re-upload them back to the web server. 
+
 ###Method 3 - Using Content Management Systems (CMS)
 If you're using a CMS, you'll need to install the tracking snippet into your template. However your template is built, make sure the JavaScript snippet is tracking on every page of your site. 
 
@@ -33,6 +36,7 @@ Whichever method you choose, you'll need to make sure you push all code changes 
 Some sites also employ a staging server, which serves as a tool to test the changes made to the site. It's all private to the company, the public doesn't use the staging server. If the changes on the staging server look good, they are then pushed to the production server, where it is live for the public. 
 
 Choose whichever method works best for you, and then grab your tracking script. 
+
 ##Where to Find Your Kissmetrics JavaScript Snippet
 Your unique tracking code can be found in the settings of your Kissmetrics account. 
 
@@ -40,6 +44,7 @@ Your unique tracking code can be found in the settings of your Kissmetrics accou
 Go to any page within the Kissmetrics web app and click on Settings:
 
 ![Install Kissmetrics][1]
+
 ###Step 2 - Copy the JavaScript Tracking Code to Your Clipboard
 Scroll down to locate your JavaScript Tracking Code and copy it. Be sure to copy all the code, from `<script>` to `</script>`. 
 
@@ -64,7 +69,8 @@ We've copied our JavaScript tracking code and now we need to edit our website's 
 Make some space for it and paste the tracking code:
 
 ![Install Kissmetrics][4]
-That's all there is to it! After it is live on your server, Kissmetrics will automatically start sending you some events. 
+That's all there is to it! After it is live on your server, Kissmetrics will automatically start sending you some events.
+
 ##What the Kissmetrics JavaScript Snippet Tracks Automatically
 Once you install the tracking code on your site, you will start to see your data within the hour. 
 
