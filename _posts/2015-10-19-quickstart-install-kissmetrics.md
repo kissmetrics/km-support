@@ -40,11 +40,10 @@ Your unique tracking code can be found in the settings of your Kissmetrics accou
 Go to any page within the Kissmetrics web app and click on Settings:
 
 ![Install Kissmetrics][1]
-
 ###Step 2 - Copy the JavaScript Tracking Code to Your Clipboard
 Scroll down to locate your JavaScript Tracking Code and copy it. Be sure to copy all the code, from <script to </script>. 
 
-[insert Installing Kissmetrics' JavaScript Tracking Code 2.png] 
+![Install Kissmetrics][2]
 
 You'll need to insert this code in the <head> section of every page for your site or app. We recommend placing it as high up in the <head> section as possible. You'll want Kissmetrics to load first so that you can track any clicks or interactions with any plugins you may have. 
 
@@ -61,17 +60,15 @@ By installing the JavaScript tracking snippet, Kissmetrics will track all subdom
 ###Step 3 - Insert the Tracking Code
 We've copied our JavaScript tracking code and now we need to edit our website's source code. To start, we'll first locate the <head> tag at the top:
 
-[insert Installing Kissmetrics' JavaScript Tracking Code 3.png]
-
+![Install Kissmetrics][3]
 Make some space for it and paste the tracking code:
 
-[insert Installing Kissmetrics' JavaScript Tracking Code 4.png]
-
+![Install Kissmetrics][4]
 That's all there is to it! After it is live on your server, Kissmetrics will automatically start sending you some events. 
 ##What the Kissmetrics JavaScript Snippet Tracks Automatically
 Once you install the tracking code on your site, you will start to see your data within the hour. 
 
-Some events and properties are automatically tracked and will start appearing when the data comes in:
+Some [events and properties](https://blog.kissmetrics.com/people-events-and-properties/) are automatically tracked and will start appearing when the data comes in:
 
 Event: Visited Site 
 This event triggers when a person visits any page of your site that has the JavaScript tracking code. Along with this information, the properties Referrer, URL, and Returning are tracked. 
