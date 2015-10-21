@@ -160,7 +160,7 @@ To learn more about setting up identities, check out our [support document](http
 
 You'll want to put the identify code anywhere on your website where you identify users. This can be a sign up page, registration page, form field, etc.
 
-##Identifying People: 3 Steps for Installing the Kissmetrics JavaScript
+##Recap: 3 Steps for Installing the Kissmetrics JavaScript
 Let's recap a few of the main points:
 
 1. **Install the JavaScript tracking code right below the <head> tag.** There are a variety of ways to get the tracking snippet on your website's source code. Whatever method you choose, you'll want to make sure Kissmetrics is one of the first elements that loads. Placing the code near the top will accomplish that. 
