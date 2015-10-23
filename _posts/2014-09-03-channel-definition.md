@@ -72,9 +72,9 @@ This group will contain the top-level domains of any traffic that doesn't fit in
 
 Any people that have a site visit with a direct referrer. This will not have an Origin.
 
-### 7. None
+### 7. Unknown
 
-If a visit doesn’t any of the above rules, we’ll place them into the None channel. If you see traffic organized into None, it may be from data that you imported from a database or CSV upload. This data usually doesn't contain acquisition/visit data unless you include it in the upload.
+If a visit doesn’t any of the above rules, we’ll place them into the Unknown channel. If you see traffic organized into Unknown, it may be from data that you imported from a database or CSV upload. This data usually doesn't contain acquisition/visit data unless you include it in the upload.
 
 [Google UTM]: https://support.google.com/analytics/answer/1033863?hl=en&ref_topic=1032998
 [Google gclid]: https://support.google.com/analytics/answer/1033981?hl=en
