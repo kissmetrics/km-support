@@ -15,7 +15,7 @@ summary: Have you ever wondered if Events are case sensitive? Or how many unique
 
 * Commas (,), and colons (:) will be changed to spaces, so an event “foo:bar,baz” will be saved as “foo bar baz”.
 
-* Event names are not case sensitive. For example “Signed Up” and “signed up” will be treated as the same event. 
+* Event names are **not** case sensitive. For example “Signed Up” and “signed up” will be treated as the same event. 
 
 * Events that share the same name will be aggregated.
 
@@ -32,10 +32,11 @@ summary: Have you ever wondered if Events are case sensitive? Or how many unique
 
 * Commas (,), and colons (:) will be changed to spaces, so an event “foo:bar,baz” will be saved as “foo bar baz”.
 
-* Property names are not case sensitive. For example “Plan Type” and “plan type” will be treated as the same property. 
-Properties that share the same name will be aggregated. An example of this is, if the “Billed Amount” is set in three different areas, it will all contribute to the same “Billed Amount”.
+* Property names are **not** case sensitive. For example “Plan Type” and “plan type” will be treated as the same property. 
 
-* The value of the property is case sensitive. Example, if you set “Plan Type” : “Gold” and “Plan Type” : “gold”, you’ll see both values, “Gold” and “gold” for the property “Plan Type”.
+*Properties that share the same name will be aggregated. An example of this is, if the “Billed Amount” is set in three different areas, it will all contribute to the same “Billed Amount”.
+
+* The value of the property **is** case sensitive. Example, if you set “Plan Type” : “Gold” and “Plan Type” : “gold”, you’ll see both values, “Gold” and “gold” for the property “Plan Type”.
 
 * Each Kissmetrics product can have up to 65,535 unique property names. 
 
