@@ -34,7 +34,7 @@ summary: Have you ever wondered if Events are case sensitive? Or how many unique
 
 * Property names are **not** case sensitive. For example “Plan Type” and “plan type” will be treated as the same property. 
 
-*Properties that share the same name will be aggregated. An example of this is, if the “Billed Amount” is set in three different areas, it will all contribute to the same “Billed Amount”.
+* Properties that share the same name will be aggregated. An example of this is, if the “Billed Amount” is set in three different areas, it will all contribute to the same “Billed Amount”.
 
 * The value of the property **is** case sensitive. Example, if you set “Plan Type” : “Gold” and “Plan Type” : “gold”, you’ll see both values, “Gold” and “gold” for the property “Plan Type”.
 
