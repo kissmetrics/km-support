@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Technical Limitations
+title: Technical Notes on Events and Properties
 categories: getting-started
 tags: [common_dev_pitfalls]
-summary: Consider these limitations as you are structuring your data and naming events and properties.
+summary: Have you ever wondered if Events are case sensitive? Or how many unique Property names you can have? This document has more information about the technical limitations related to how Events and Properties.
 ---
 * Table of Contents
 {:toc}
