@@ -2,7 +2,7 @@
 layout: post
 title: Understanding People, Events and Properties within Kissmetrics
 categories: getting-started
-summary: The Kissmetrics data model is comprised of three components: people, events and properties. Understanding these concepts is vital to being able to analyze the data you are collecting.
+summary: "The Kissmetrics data model is comprised of three components: people, events and properties. Understanding these concepts is vital to being able to analyze the data you are collecting."
 ---
 The Kissmetrics data model is comprised of three components: people, events and properties. Understanding these concepts is vital to being able to analyze the data you are collecting.
 
@@ -12,7 +12,7 @@ The Kissmetrics data model is comprised of three components: people, events and 
 
 ## What are people?
 
-People are the visitors on your sites. A person in Kissmetrics represents the physical person behind the computer that came to view your blog, website or app. 
+People are the visitors on your sites. A person in Kissmetrics represents the physical person behind the computer that came to view your blog, website or app.
 
 ![Person Live][personlive]
 
@@ -21,7 +21,7 @@ To understand how people are identified within Kissmetrics, take a look [here.](
 
 ## What are events?
 
-Events are the actions that your users are taking on your site or within your app. 
+Events are the actions that your users are taking on your site or within your app.
 
 ![Event Live][eventlive]
 
@@ -96,7 +96,7 @@ In this scenario, who is the person? What are the events they did? And what prop
 
 Once you understand these concepts and which events you will want to track, you will need to set them up. There are a few different methods to do so, you can get started with the [Event Library](http://support.kissmetrics.com/tools/event-library/) or the [JavaScript Library.](http://support.kissmetrics.com/apis/javascript/javascript-specific/index.html)
 
-[personlive]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/people-events-properties/1Person.png 
+[personlive]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/people-events-properties/1Person.png
 [eventlive]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/people-events-properties/2Event.png
 [propertylive]: https://kissmetrics-support-files.s3.amazonaws.com/assets/getting-started/people-events-properties/3Prop.png
 

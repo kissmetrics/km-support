@@ -60,7 +60,7 @@ _kmq.push(['record', A_STRING_WITH_YOUR_EVENT_NAME]);
 [using-ew]: #using_event_wizard
 [using-api]: #using_javascript_api
 [video-api]: /how-tos/tracking-video
-[js-specific]: /apis/javascript/javascript-specific
+[js-specific]: /apis/javascript
 [too-many-events]: /troubleshooting/too-many-event-names
 [click-tutorial]: /tutorial/event-library-tutorial/events-clicks-tutorial
 [form-tutorial]: /tutorial/event-library-tutorial/events-form-tutorial
