@@ -4,6 +4,8 @@ title: How to Rename Events and Properties
 categories: tutorial
 summary: Learn to properly rename Events and Properties to help you and your team understand what is being tracked on your website.
 ---
+Learn to properly rename Events and Properties to help you and your team understand what is being tracked on your website.
+
 * Table of Contents
 {:toc}
 * * *
