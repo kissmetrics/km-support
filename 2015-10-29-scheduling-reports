@@ -1,0 +1,20 @@
+---
+layout: post
+title: Scheduling Reports
+categories: reporting-tools
+tags: []
+summary: Learn how to get report data without having to login to Kissmetrics to run reports.
+---
+
+You’ll often access the same reports in Kissmetrics, and scheduling a report export lets you:
+
++ **Save time.** Get report data without having to login to Kissmetrics to run reports.
++ **Schedule and go.** Schedule reports to run automatically and be delivered to your inbox daily, weekly, or monthly.
++ **Automate emails.** Automatically email reports to teammates, clients, or stakeholders on a schedule that you control.
++ **Manage marketing data.** Send reports as CSV files so that you can create custom marketing spreadsheets with other data in your marketing stack.
+
+* Table of Contents
+{:toc}
+* * *
+
+## Which reports can I schedule to export?
