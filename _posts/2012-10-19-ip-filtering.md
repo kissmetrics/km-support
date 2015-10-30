@@ -13,7 +13,7 @@ summary: Here are options for filtering certain people from generating Kissmetri
 For most customers, internal traffic is such a small volume compared to their overall traffic that it does not have an impact on their conversion rates.  Customers who do heavy internal QA testing usually prefer to set up a separate Kissmetrics site for their staging/development environment so that their testing activity is recorded under a separate Kissmetrics API key.
 
 However, if there is a specific reason why your internal traffic needs to be ignored, we'd like to hear it.  We're always interested in hearing customer feedback that may tip us off to use cases we hadn't anticipated.
- 
+
 ### Notes on the Alternatives
 
 * There is no way to exclude certain data after the fact.
