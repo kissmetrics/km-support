@@ -182,9 +182,9 @@ Need to have more people getting a scheduled report? Email (feedback@kissmetrics
 [7b]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/scheduling-reports/Scheduling%20Reports%207b.png
 [8]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/scheduling-reports/Scheduling%20Reports%208.png
 [9]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/scheduling-reports/Scheduling%20Reports%209.png
-[10]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/scheduling-reports/Scheduling%20Reports%210.png
-[11]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/scheduling-reports/Scheduling%20Reports%211.png
-[12]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/scheduling-reports/Scheduling%20Reports%212.png
-[13]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/scheduling-reports/Scheduling%20Reports%213.png
-[14]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/scheduling-reports/Scheduling%20Reports%214.png
-[15]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/scheduling-reports/Scheduling%20Reports%215.png
+[10]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/scheduling-reports/Scheduling%20Reports%2010.png
+[11]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/scheduling-reports/Scheduling%20Reports%2011.png
+[12]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/scheduling-reports/Scheduling%20Reports%2012.png
+[13]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/scheduling-reports/Scheduling%20Reports%2013.png
+[14]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/scheduling-reports/Scheduling%20Reports%2014.png
+[15]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/scheduling-reports/Scheduling%20Reports%2015.png
