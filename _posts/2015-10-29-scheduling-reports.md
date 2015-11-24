@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scheduling Reports
-categories: reporting-tools
+categories: tools
 tags: []
 summary: Learn how to get report data without having to login to Kissmetrics to run reports.
 ---
