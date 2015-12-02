@@ -16,13 +16,13 @@ We are continually processing the data from activity that is currently happening
 Kissmetrics Report | How up-to-date is the data?
 --------------------------- | -----------
 [Metrics - Dashboard][dashboard] | Updated around every 24 hours. Hover over an individual metric's info icon for more details. ![Metric Dashboard][metric-dashboard]
-[Metric Detail][over-time] | As up-to-date as the last time we've processed data (about 2-5 hours).
-[Revenue Report][revenue] | As up-to-date as the last time we've processed data (about 2-5 hours).
-[Funnel Report][funnel] | As up-to-date as the last time we've processed data (about 2-5 hours).
-[Cohort Report][cohort] | As up-to-date as the last time we've processed data (about 2-5 hours).
-[Power Report][power] | As up-to-date as the last time we've processed data (about 2-5 hours).
-[People Search][people-search] | As up-to-date as the last time we've processed data (about 2-5 hours).
-[Individual Person Details][person-details] | As up-to-date as the last time we've processed data (about 2-5 hours).
+[Metric Detail][over-time] | As up-to-date as the last time we've processed data (up to 30 minutes).
+[Revenue Report][revenue] | As up-to-date as the last time we've processed data (up to 30 minutes).
+[Funnel Report][funnel] | As up-to-date as the last time we've processed data (up to 30 minutes).
+[Cohort Report][cohort] | As up-to-date as the last time we've processed data (up to 30 minutes).
+[Power Report][power] | As up-to-date as the last time we've processed data (up to 30 minutes).
+[People Search][people-search] | As up-to-date as the last time we've processed data (up to 30 minutes).
+[Individual Person Details][person-details] | As up-to-date as the last time we've processed data (up to 30 minutes).
 [Live][live] | Displays activity in realtime, as it is happening.
 
 [dashboard]: /tools/metrics#dashboard

@@ -49,7 +49,7 @@ As you browse during testing, look for requests to `trk.kissmetrics.com`; these 
 
 Referring to the screenshot, there are some things to note:
 
-* `Status Code: 200 OK`. That means our tracking server received the event just fine, and you can consider this event as successfully triggered. Then it's just a matter of time (about 2-5 hours) to allow our servers to process these recently-fired events for reporting everywhere else in our application.
+* `Status Code: 200 OK`. That means our tracking server received the event just fine, and you can consider this event as successfully triggered. Then it's just a matter of time (up to 30 minutes) to allow our servers to process these recently-fired events for reporting everywhere else in our application.
 * There's a group of information called `Query String Parameters`. Again, these refer to our API specifications, and it's straightforward to understand what these mean:
   - `_n`: View Sign Up Page (name of the event being recorded)
   - `_k`: the API key

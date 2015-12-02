@@ -49,7 +49,7 @@ Just go to your site, trigger some events and properties and see if everything i
 
 In this screenshot, the events fired correctly. I visited my homepage, and as a result, my activity fired an event and it shows up in the Live activity feed.
 
-While Live shows real time data, it'll take 2-5 hours for this data to be used in reports.
+While Live shows real time data, it'll take several minutes (up to 30 minutes) for this data to be used in reports.
 
 
 ### Method 2: Use Your Web Browser’s Developer Tool
@@ -68,7 +68,7 @@ If the response from our server is `Status Code: 200 OK`, then we have received 
 
 ![Use Your Web Browser’s Developer Tool][#6]
 
-It will take about 2-5 hours for our servers to process these recently-fired events to show up within Kissmetrics reports.
+It will take several minutes (up to 30 minutes) for our servers to process these recently-fired events to show up within Kissmetrics reports.
 
 ##What if my data looks inaccurate?
 If the data within the Kissmetrics Reports is inaccurate, check out the article, [Data Discrepancies][5] to tackle data errors.
