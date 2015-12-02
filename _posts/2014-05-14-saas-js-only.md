@@ -69,7 +69,7 @@ Be sure to look at our [integration page][integration] to see if you can easily 
 
 # Troubleshooting
 
-You will need to use our [Live Stream][testing-with-live] or your [browser’s developer tools][testing-with-browser] to make sure the events and properties are coming in correctly. You do not need to wait the 2 hours to see if the information is correct. This will speed up your implementation tremendously.
+You will need to use our [Live Stream][testing-with-live] or your [browser’s developer tools][testing-with-browser] to make sure the events and properties are coming in correctly. You do not need to wait 30 minutes to see if the information is correct. This will speed up your implementation tremendously.
 
 
 [saas-essentials]: /best-practices/saas-essentials

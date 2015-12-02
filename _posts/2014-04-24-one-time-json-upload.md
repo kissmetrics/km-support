@@ -35,7 +35,7 @@ If your file is formatted correctly, we'll show you a preview of the events and 
 
 ## 4. Complete the Upload
 
-Once everything looks good, confirm the upload. Just as with any other data source that is bringing in events and properties, please wait **2-5 hours** for the data to become available in your reports.
+Once everything looks good, confirm the upload. Just as with any other data source that is bringing in events and properties, please wait **30 minutes** for the data to become available in your reports.
 
 ## 5. Check the Status
 
