@@ -4,6 +4,8 @@ title: Scheduling Reports
 categories: tools
 tags: []
 summary: Learn how to get report data without having to login to Kissmetrics to run reports.
+redirect_from:
+  - /tools/scheduled-exports.html
 ---
 
 You’ll often access the same reports in Kissmetrics, and scheduling a report export lets you:
