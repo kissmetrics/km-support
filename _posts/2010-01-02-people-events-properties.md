@@ -67,7 +67,7 @@ The automatically tracked properties are a great start but you will also want to
 
 Now that you understand these concepts separately, let’s see how they all work together.
 
-**Example 1:** Janet is a first-time visitor to your ecommerce site. She originally arrived at the site from a post she saw on a fashion blog. While she was on your site, she viewed 2 dresses, added 1 to her shopping cart, created an account and ultimately left without buying anything.
+**Example 1:** Janet is a first-time visitor to your e-commerce site. She originally arrived at the site from a post she saw on a fashion blog. While she was on your site, she viewed 2 dresses, added 1 to her shopping cart, created an account and ultimately left without buying anything.
 
 In this scenario, who is the person? What are the events? And what properties should be passed?
 
