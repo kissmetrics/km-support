@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "API Update June 29, 2015"
+title: "API Update June 29, 2015 (in beta)"
 tags: []
 summary: Work with your Kissmetrics data via our core API.
 ---
