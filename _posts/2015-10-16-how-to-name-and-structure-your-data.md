@@ -31,6 +31,44 @@ Here is a code example that you can share with your developer to track a Sign Up
 
 Notice that this logs one event (`Signed Up`) with one property (`Sign Up Button Type`). We can add more properties to describe other Sign Up buttons if we want to.
 
+## What are some common naming mistakes?
+
+The reason why we want to make sure you are naming your events, properties, and property value correctly is so that you can report back on these metrics properly. Think of events as steps you want to see in a funnel report. You wouldn’t want to mix a user’s action along with their attributes in step of the funnel report. 
+
+To highlight the right ways to name events, we’ve provided the following examples:
+
+**Incorrect way** (putting specific URL path in the event name):
+
+* Event: Visited blog post www.blog.com/123
+
+**Correct way**:
+
+* Event: Visited Blog Post
+* Property Name: Blog Title 
+* Property Value: Blog-Title-Goes-Here
+
+**Incorrect way** (naming an event with a full description of the event) :
+
+* Event: Signed up for basic plan 
+
+**Correct way**:
+
+* Event: Signed Up
+* Property Name: Plan Name
+* Property Value: Basic Plan
+
+**Incorrect way**  (naming an event with specifics such as the product and color):
+
+* Event: Added blue t-shirt to cart
+
+**Correct way**:
+
+* Event: Added to Cart
+* Property Name: Product name
+* Property Value: T-shirt
+* Property Name: Product color
+* Property Value: Blue
+
 ## How many events and properties should I have?
 
 Most of our customers have around 20 key events they track on their website or app.
