@@ -8,17 +8,21 @@ summary: Learn how to implement analytics without code or developers
 
 Click to Track is a tool that lets you implement analytics on your website without any code or developer by simply clicking on elements you want to track. You’ll need to install the Kissmetrics JavaScript snippet on your website before you can use Click to Track.
 
-Compatibility:
+## Compatibility
+
+### Platforms
 
 Click to Track currently works on websites and may work for web apps depending on how your app is developed. Click to Track works best in Chrome and Firefox browsers. Safari browser users may need to change their security settings to allow Click to Track to load iFrames in the browser.
 
-Click to track currently supports tracking URLs (wildcards and Regex), clicking on elements (using HTML classes or IDs), and forms (for sign ups, logins, checkout, lead generation, newsletters, and more).
+### What you can track
+
+Click to track currently supports tracking visits to URLs (wildcards and Regex), clicks on elements (using HTML classes or IDs), and form submissions (for sign ups, logins, checkout, lead generation, newsletters, and more).
 
 * Table of Contents
 {:toc}
 * * *
 
-## Which reports can I schedule to export?
+## How to use Click to Track to define and track events
 
 ### Step 1 - Hover over Events dropdown in the navigation
 Hover over the *Events* dropdown in Kissmetrics to find the *Click to Track* tool. Click on *Click to Track*.
