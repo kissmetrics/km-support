@@ -8,7 +8,7 @@ summary: Learn how to implement analytics without code or developers
 
 <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:62.5% 0 28px 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_04uy27h4uo videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div>
 
-Click to Track is a tool that lets you implement analytics on your website without any code or developer by simply clicking on elements you want to track. You’ll need to install the Kissmetrics JavaScript snippet on your website before you can use Click to Track.
+Click to Track is a tool that lets you implement analytics on your website without any code or developer by simply clicking on elements you want to track. You’ll need to [install the Kissmetrics JavaScript snippet][install the Kissmetrics JavaScript snippet] on your website before you can use Click to Track.
 
 ## Compatibility
 
@@ -50,7 +50,7 @@ In Edit Mode, you can hover over elements that you want to track and preview wha
 ![Edit Mode][4]
 
 ### Step 6 - Name your event
-Once you click on an element on your website, a small window will show up that has an Event Name field. We recommend reading (How to Name and Structure Your Data)(http://support.kissmetrics.com/getting-started/how-to-name-and-structure-your-data.html) on tips on how to name or structure your data. *Enter what you want to name your event*.
+Once you click on an element on your website, a small window will show up that has an Event Name field. We recommend reading [How to Name and Structure Your Data][How to Name and Structure Your Data] on tips on how to name or structure your data. *Enter what you want to name your event*.
 ![Name Event][5]
 
 ### Step 7 (Optional) - Add a property to your event
@@ -94,3 +94,5 @@ Having issues with Click to Track or have questions about naming and structuring
 [10]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/click-to-track/CTT10.jpg
 [11]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/click-to-track/CTT11.jpg
 [12]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/click-to-track/CTT12.jpg
+[How to Name and Structure Your Data]: http://support.kissmetrics.com/getting-started/how-to-name-and-structure-your-data.html
+[install the Kissmetrics JavaScript snippet]: http://support.kissmetrics.com/apis/javascript/
