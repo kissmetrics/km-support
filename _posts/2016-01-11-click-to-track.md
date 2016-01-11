@@ -6,13 +6,19 @@ tags: []
 summary: Learn how to implement analytics without code or developers
 ---
 
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:62.5% 0 28px 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_04uy27h4uo videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div>
+
 Click to Track is a tool that lets you implement analytics on your website without any code or developer by simply clicking on elements you want to track. You’ll need to install the Kissmetrics JavaScript snippet on your website before you can use Click to Track.
 
 ## Compatibility
 
 ### Platforms
 
-Click to Track currently works on websites and may work for web apps depending on how your app is developed. Click to Track works best in Chrome and Firefox browsers. Safari browser users may need to change their security settings to allow Click to Track to load iFrames in the browser.
+Click to Track currently works on websites and may work for web apps depending on how your app is developed. Click to Track works best in Chrome and Firefox browsers.
+
+Safari browser users may need to change their security settings to allow Click to Track to load iFrames in the browser. To do this, go to Settings -> Privacy and change Cookies and website data to Always allow.
+
+![Safari Security Settings][12]
 
 ### What you can track
 
@@ -87,3 +93,4 @@ Having issues with Click to Track or have questions about naming and structuring
 [9]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/click-to-track/CTT9.jpg
 [10]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/click-to-track/CTT10.jpg
 [11]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/click-to-track/CTT11.jpg
+[12]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/click-to-track/CTT12.jpg
