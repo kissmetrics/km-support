@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Click To Track
+title: How to create events using Click to Track
 categories: tools
 tags: []
 summary: Learn how to implement analytics without code or developers
@@ -16,7 +16,7 @@ Click to Track is a tool that lets you implement analytics on your website witho
 
 Click to Track currently works on websites and may work for web apps depending on how your app is developed. Click to Track works best in Chrome and Firefox browsers.
 
-Safari browser users may need to change their security settings to allow Click to Track to load iFrames in the browser. To do this, go to Settings -> Privacy and change Cookies and website data to Always allow.
+Safari browser users may need to change their security settings to allow Click to Track to load iFrames in the browser. To do this, go to *Settings -> Privacy* and **change *Cookies and website data* to Always allow**.
 
 ![Safari Security Settings][12]
 
@@ -31,11 +31,11 @@ Click to track currently supports tracking visits to URLs (wildcards and Regex),
 ## How to use Click to Track to define and track events
 
 ### Step 1 - Hover over Events dropdown in the navigation
-Hover over the *Events* dropdown in Kissmetrics to find the *Click to Track* tool. Click on *Click to Track*.
+Hover over the **Events** dropdown in Kissmetrics to find the Click to Track tool. **Click on Click to Track**.
 ![Click To Track Nav Dropdown][1]
 
 ### Step 2 - Enter your website’s URL
-Think about a page on your website that has things that you want to track so that you can analyze what people do on your website. *Enter that page’s URL into the URL field*.
+Think about a page on your website that has things that you want to track so that you can analyze what people do on your website. **Enter that page’s URL into the URL field**.
 ![Enter URL][2]
 
 ### Step 3 - Go through the Click to Track tutorial
@@ -43,32 +43,32 @@ The Click to Track tutorial loads automatically if you’ve never used the featu
 ![Click To Track Tutorial][3]
 
 ### Step 4 - Use Navigate Mode to browse your website and find something you want to track
-In Navigate Mode, you can browse your website normally until find something you want to track. When you find a button, link, or element on your website that you want to track, *click Edit Mode*.
+In Navigate Mode, you can browse your website normally until find something you want to track. When you find a button, link, or element on your website that you want to track, **click Edit Mode**.
 
 ### Step 5 - Click Edit Mode to click on an element you want to track
-In Edit Mode, you can hover over elements that you want to track and preview what you want to track  When you find a button, link, or element on your website that you want to track, *click on the button, link, or element you want to track*.
+In Edit Mode, you can hover over elements that you want to track and preview what you want to track  When you find a button, link, or element on your website that you want to track, **click on the button, link, or element you want to track**.
 ![Edit Mode][4]
 
 ### Step 6 - Name your event
-Once you click on an element on your website, a small window will show up that has an Event Name field. We recommend reading [How to Name and Structure Your Data][How to Name and Structure Your Data] on tips on how to name or structure your data. *Enter what you want to name your event*.
+Once you click on an element on your website, a small window will show up that has an Event Name field. We recommend reading [How to Name and Structure Your Data][How to Name and Structure Your Data] on tips on how to name or structure your data. **Enter what you want to name your event**.
 ![Name Event][5]
 
 ### Step 7 (Optional) - Add a property to your event
-If you want to describe the event a user does on your site such as where a button is located i.e. Top Right VS Bottom of the Page, or what size a product i.e. Small or Large *click the More Options button then click the Add Property button*.
+If you want to describe the event a user does on your site such as where a button is located i.e. Top Right VS Bottom of the Page, or what size a product i.e. Small or Large **click the More Options button then click the Add Property button**.
 ![Add Property][6]
 
-Enter what you want to name your Property. We recommend broad property names such as Sign Up Bottom Location or Product SKU. You can either get the property value from your website’s page or type the property value in yourself manually. Once you’re happy with your property, click Save.
+Enter what you want to name your Property. We recommend broad property names such as Sign Up Bottom Location or Product SKU. You can either get the property value from your website’s page or type the property value in yourself manually. Once you’re happy with your property, **click Save**.
 ![Add Property Name and Value][7]
 
 ### Step 8 - Save your event
-Once you’re happy with your event, click Save.
+Once you’re happy with your event, **click Save**.
 
 ![Save Event][8]
 
 Awesome! You’ve setup your first event and Kissmetrics will record an event when users perform the action that you have defined with your tracking rule.
 
 ### Step 9 - Find events you’ve defined in the Defined Events menu
-The Defined Events menu contains all of the events you’ve defined for the page. *Hover over an event in the list to see what element on the page is being tracked*.
+The Defined Events menu contains all of the events you’ve defined for the page. **Hover over an event in the list to see what element on the page is being tracked**.
 ![Defined Events][9]
 
 You can also find events by looking for the blue triangles and hovering over them to see the element that is being tracked.
