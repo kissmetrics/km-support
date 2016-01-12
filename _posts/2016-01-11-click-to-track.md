@@ -82,7 +82,7 @@ The Event Manager contains all of the events you’ve tracked across your websit
 ![Event Manager][11]
 
 
-Having issues with Click to Track or have questions about naming and structuring your events? Email (support@kissmetrics.com)(support@kissmetrics.com) to let us know.
+Having issues with Click to Track or have questions about naming and structuring your events? Email support@kissmetrics.com to let us know.
 
 
 [1]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/click-to-track/CTT1.jpg
