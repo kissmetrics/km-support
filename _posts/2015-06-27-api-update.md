@@ -133,6 +133,8 @@ Location: https://query.kissmetrics.com/v2/queries/9b85d22c-d5c0-477d-8396-0e6e3
 
 When initiating a report to run, the response headers will contain the location to obtain the status of the report job.
 
+You should check the status of the query until it is completed. Once completed, you can retrieve results for the query.
+
 ### Request
 
 {% highlight bash %}
@@ -140,7 +142,33 @@ curl -i 'https://query.kissmetrics.com/v2/queries/9b85d22c-d5c0-477d-8396-0e6e3d
   -H 'Authorization: Bearer YOUR-API-TOKEN'
 {% endhighlight %}
 
-### Response
+### Query Not Completed Response
+
+{% highlight http %}
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+{% endhighlight %}
+
+{% highlight json %}
+{
+  "meta": {
+    "status":200
+  },
+  "data":{
+    "completed":false,
+    "progress":0.5
+  },
+  "links":[{
+    "name":"Self",
+    "rel":"self",
+    "href":"https://query.kissmetrics.com/v2/queries/9b85d22c-d5c0-477d-8396-0e6e3dbe81b3/status",
+    "templated":false
+  }]
+}
+{% endhighlight %}
+
+### Query Completed Response
 
 {% highlight http %}
 HTTP/1.1 201 Created
