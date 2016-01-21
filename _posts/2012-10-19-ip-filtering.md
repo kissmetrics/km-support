@@ -72,6 +72,7 @@ You would need to replace your default Kissmetrics JS code with something like t
 {% highlight html %}
 <script type="text/javascript">
 var _kmq = _kmq || [];
+var _kmk = _kmk || 'YOUR KISSMETRICS KEY HERE';
 function _kms(u){ setTimeout(function() {
 var s = document.createElement('script');
   var f = document.getElementsByTagName('script')[0];
