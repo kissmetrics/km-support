@@ -116,7 +116,7 @@ Ryan viewed product details 3 times and purchased 1 time in January.
 
 Log into Kissmetrics and select "Add new metric"
 
-![image alt text](image_0.png)
+![Add new metric][1]
 
 ###Step 2
 
@@ -143,3 +143,6 @@ Click "Save metric" and view it in your [dashboard](https://app.kissmetrics.com/
 ##What other metrics can I track?
 
 Here’s a full list of [metrics](http://support.kissmetrics.com/tools/metrics/metric-calculations) you can place in your dashboard.
+
+
+[1]: http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/average-times/Add-new-metric.png
