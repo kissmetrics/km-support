@@ -24,15 +24,7 @@ For example, you can see:
 
 First, this metric finds the total average number of times an event happens before a conversion event happened. Then, we’ll divide by the number of times the conversion event happened in the date range.
 
-<table>
-  <tr>
-    <td>Average =</td>
-    <td>(# of times first event occurs from either the beginning of time or from the first occurrence of the conversion event before the date range)
-
-(# of times conversion event within the date range)</td>
-  </tr>
-</table>
-
+![Average calculation][2]
 
 For someone to be counted, they need to have 1) done the first event before the conversion event, and 2) done the conversion event in the date range. 
 
@@ -146,3 +138,4 @@ Here’s a full list of [metrics](http://support.kissmetrics.com/tools/metrics/m
 
 
 [1]: http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/average-times/Add-new-metric.png
+[2]: http://kissmetrics-support-files.s3.amazonaws.com/assets/tools/average-times/average-calc.png
