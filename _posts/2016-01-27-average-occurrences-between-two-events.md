@@ -18,7 +18,7 @@ For example, you can see:
 
 2. The number of PDFs on average someone downloads before they sign up for a free trial
 
-3. How many times on average someone uses feature A in the trial before they purchase
+3. How many times on average someone uses feature A before they purchase
 
 ##How it’s calculated
 
@@ -26,7 +26,7 @@ First, this metric finds the total average number of times an event happens befo
 
 ![Average calculation][2]
 
-For someone to be counted, they need to have 1) done the first event before the conversion event, and 2) done the conversion event in the date range. 
+For someone to be counted, they need to have done the conversion event in the date range. 
 
 **Example**: On average, how many times does someone view the product details page before purchasing in the month of January?
 
@@ -84,7 +84,7 @@ In this instance:
 </table>
 
 
-**Total average: 2.33 times **
+**Total average: 2.2 times **
 
 Let’s dive deeper to see how we got that average. 
 
