@@ -30,11 +30,7 @@ You'll need to insert this code in the <head> section of every page for your sit
 Webpages load from top to bottom, and if a person leaves a page before it has finished loading, you run the chance of the tracking code not running. If the tracking code doesn't run, Kissmetrics won't know that a person ever visited the page. This can cause some discrepancies in your data, and placing the tracking snippet at the top of the page is the best way to avoid those discrepancies.
 
 ###Step 3 - Insert the Tracking Code
-We've copied our JavaScript tracking code and now we need to edit our website's source code. To start, we'll first locate the <head> tag at the top:
-
-![Install Kissmetrics][3]
-
-Make some space for it and paste the tracking code:
+We've copied our JavaScript tracking code and now we need to edit our website's source code. To start, we'll first locate the <head> tag at the top, then make some space and paste in the tracking code:
 
 ![Install Kissmetrics][4]
 
