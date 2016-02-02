@@ -42,7 +42,7 @@ Once you install the tracking code on your site, you will start to see your data
 Some [events and properties](https://blog.kissmetrics.com/people-events-and-properties/) are automatically tracked and will start appearing when the data comes in: Visited Site, Ad Campaign Hit, Search Engine Hit and (disabled by default) Page View. You can find more information on those events in our [Javascript Library](http://support.kissmetrics.com/apis/javascript/index.html#events-automatically-tracked) article.
 
 ##Creating Custom Events and Properties
-To get more of the metrics that matter to your business, you'll need to set up custom events and properties. There are undoubtedly some metrics that matter more to your business than others, but generally there are a few metrics you'll want to set up right away:
+To get more of the metrics that matter to your business, you'll need to set up custom events and properties. The easiest way to get started with custom events is to use our [click-to-track feature](http://support.kissmetrics.com/tools/click-to-track.html). There are undoubtedly some metrics that matter more to your business than others, but generally there are a few metrics you'll want to set up right away:
 
 * **Sign Up** - An important metric for nearly all online businesses, sign up indicates when a visitor converted to a user. You'll want to tell Kissmetrics when to trigger this event.
 * **Using features** - SaaS and mobile apps should create events for when a person uses a key feature. For Kissmetrics, we have events that trigger after a person runs any report. This helps us better understand our user engagement.
