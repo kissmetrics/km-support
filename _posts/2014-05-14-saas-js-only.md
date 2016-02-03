@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "SaaS JavaScript Code Examples"
-categories:
+categories: best-practices
 tags:
 summary: This is the syntax of the API calls for our SaaS Essentials.
-permalink: /best-practices/saas-essentials/js-examples
 ---
 * Table of Contents
 {:toc}
