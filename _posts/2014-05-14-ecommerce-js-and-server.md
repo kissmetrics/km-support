@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "E-Commerce JavaScript and Server-Side Code Examples"
-categories:
+categories: best-practices
 tags:
 summary: This is the syntax of the API calls for our E-commerce Essentials.
-permalink: /best-practices/ecommerce-essentials/js-and-server-side-examples
 ---
 * Table of Contents
 {:toc}
