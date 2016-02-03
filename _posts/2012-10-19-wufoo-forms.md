@@ -7,7 +7,7 @@ summary: Measuring submissions of your Wufoo forms.
 ---
 Wufoo's forms are loaded 1) through JavaScript that dynamically places the form on your page, and 2) the form is placed in an iFrame.
 
-Both of these behaviors makes tracking a Wufoo form too difficult for our JavaScript Library and the Event Library to interact directly with the form.
+Both of these behaviors makes tracking a Wufoo form too difficult for our JavaScript Library and the Event Library to interact directly with the form. 
 
 ## The Alternative
 
