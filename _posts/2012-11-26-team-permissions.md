@@ -29,7 +29,7 @@ All **View Only** permissions, plus:
 * Create and edit reports
 * Access to using Event Library to create events
 * Access to editing the site's name and properties' and events' names
-* Ability to delete site
+* Ability to delete site.
 
 ## Owner
 
