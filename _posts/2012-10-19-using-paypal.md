@@ -48,9 +48,9 @@ _kmq.push(['record', 'Completed Purchase', {
 In addition, you should be able to designate each "line item" in the purchase. For each line item, they can attach these JavaScript Library calls for however many items:
 
 {% highlight js %}
-_kmq.push(['set', {'Item ID' : get_item_ID, 'Item Price' : get_price_here}]);
-_kmq.push(['set', {'Item ID' : get_item_ID, 'Item Price' : get_price_here}]);
-_kmq.push(['set', {'Item ID' : get_item_ID, 'Item Price' : get_price_here}]);
+_kmq.push(['set', {'Purchased Product Name' : get_item_ID, 'Purchased Product Price' : get_price_here}]);
+_kmq.push(['set', {'Purchased Product Name' : get_item_ID, 'Purchased Product Price' : get_price_here}]);
+_kmq.push(['set', {'Purchased Product Name' : get_item_ID, 'Purchased Product Price' : get_price_here}]);
 {% endhighlight %}
 
 Once again, `get_item_ID` and `get_price_here` should be replaced by JavaScript code that grabs the appropriate information from your database.
