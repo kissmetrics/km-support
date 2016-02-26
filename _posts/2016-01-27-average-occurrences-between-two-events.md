@@ -8,7 +8,7 @@ summary: Learn how to calculate the average number of times an event happens bef
 {:toc}
 * * *
 
-#How do I calculate average number of times an event happens before a conversion event?
+# How do I calculate average number of times an event happens before a conversion event?
 
 You can calculate the average number of times (not duration) someone performs an event before performing a second event by setting up a metric called, "Average Number of Times an Event Happens Before Conversion Event." 
 
@@ -20,7 +20,7 @@ For example, you can see:
 
 3. How many times on average someone uses feature A before they purchase
 
-##How it’s calculated
+## How it’s calculated
 
 First, this metric finds the total average number of times an event happens before a conversion event happened. Then, we’ll divide by the number of times the conversion event happened in the date range.
 
@@ -102,37 +102,37 @@ Ryan’s average: 3/1 = 3
 
 Ryan viewed product details 3 times and purchased 1 time in January. 
 
-##How to set up Average Number of Times an Event Happens Before Conversion Event
+## How to set up Average Number of Times an Event Happens Before Conversion Event
 
-###Step 1
+### Step 1
 
 Log into Kissmetrics and select "Add new metric"
 
 ![Add new metric][1]
 
-###Step 2
+### Step 2
 
 Select "Average Number of Times an Event Happens Before Conversion Event" and “Continue with this metric” 
 
-###Step 3
+### Step 3
 
 Name your metric. (Suggestion: Average Number of Times ___________ Before ____________) 
 
-###Step 4
+### Step 4
 
 Select your first event. (example: Viewed product page)
 
-###Step 5
+### Step 5
 
 Select your conversion event. (example: Purchased)
 
 *Optional*: Choose a property and property value to filter this metric’s results (example: property=country, property value=Canada)
 
-###Step 6
+### Step 6
 
 Click "Save metric" and view it in your [dashboard](https://app.kissmetrics.com/metrics). 
 
-##What other metrics can I track?
+## What other metrics can I track?
 
 Here’s a full list of [metrics](http://support.kissmetrics.com/tools/metrics/metric-calculations) you can place in your dashboard.
 
