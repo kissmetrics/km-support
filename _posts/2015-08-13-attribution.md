@@ -41,9 +41,6 @@ Will group your users according to the last property value they received within 
 
 Will group your users according to the property value they had at the time of performing the metric’s event. This is the only attribution model that makes it possible for one user to be counted across multiple property values or touchpoints.
 
-For the metrics "Total Value for Property" and "Average Value for Property", we’ll first need to distinguish between the segmented property value and the property value we are looking to calculate.  We will refer to the segmented property value as `property value` and to the calculated value as `amount`. In this grouping, we’ll attribute the `amount` to the `property value` on the person at the time we received the `amount`.
-
-
 ## Attribution Model Examples
 
 Lets walk through an example to show the output for each type of attribution model.  In our example, let's create a metric for "Total Value for Property" where our calculated property will be `revenue`. In our example, Bob will receive the following events and properties on the following dates:
