@@ -10,13 +10,13 @@ summary: Assign credit for conversions to touchpoints in a customer's journey
 
 ## Attribution
 
-Attribution is a method for assigning credit for sales and conversions to touchpoints in a customer's lifecycle throughout your website or app. Attribution is available across all Kissmetrics reports.
+Attribution is a method for assigning credit for sales and conversions to touchpoints in a customer's lifecycle throughout your website or app. Attribution is available across most Kissmetrics reports.
 
 ## Attribution Models
 
 An attribution model is the rule that figures out how to credit sales and conversions to touchpoints in conversion paths. Each model groups customers into buckets based on how they interact with your website or app.
 
-For example, the Breakdown Over Time model in Kissmetrics assigns 100% credit to the final touchpoint/click that immediately precede sales or conversions. In contrast, the First Ever model assigns 100% credit to touchpoints that brought the customer in when we first saw them come to the site or app as an anonymous user.
+For example, the Last Touch model in Kissmetrics assigns 100% credit to the final touchpoint/click that immediately precede sales or conversions. In contrast, the First Ever model assigns 100% credit to touchpoints that brought the customer in when we first saw them come to the site or app as an anonymous user.
 
 ## Kissmetrics Attribution Models
 
@@ -37,9 +37,9 @@ Will group your users according to the first property value they received within
 
 Will group your users according to the last property value they received within the date range.
 
-### Breakdown Over Time (available only in Metrics)
+### Last Touch (available only in Metrics)
 
-Will group your users according to the property value they had at the time of performing the metric’s event. This is the only attribution model that makes it possible for one user to be counted across multiple property values or touchpoints.
+Will group your users according to the property value they had at the time of performing the metric’s event. This is the only attribution model that makes it possible for one user to be counted across multiple property values or touchpoints.  For example: If I purchase from both San Francisco and Los Angeles, it would show that one person purchased in San Francisco and one person purchased in Los Angeles even though I'm the same person.
 
 ## Attribution Model Examples
 
@@ -95,8 +95,8 @@ Facebook.com | 150
 **Last in Date Range** |
 Google.com | 150
 |
-**Breakdown Over Time** |
+**Last Touch** |
 Facebook.com | 50
 Google.com | 100
 
-Note: For the metrics "Conversion Rate" and "Average Time Between Event" -- to be grouped in any bucket using "Breakdown Over Time", the user must have the same value at the time of both events. Otherwise, they are excluded from calculation.
+Note: For the metrics "Conversion Rate" and "Average Time Between Event" -- to be grouped in any bucket using "Last Touch", the user must have the same value at the time of both events. Otherwise, they are excluded from calculation.
