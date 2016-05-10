@@ -116,6 +116,16 @@ When you add a property column to your search results, you can choose to see:
 * The *Last Value* that people recorded
 * The *date* that people first recorded the property ("First Time")
 * The *date* that people last recorded the property ("Last Time")
+ 
+# Identity Search
+
+In addition to finding groups of people, the People Search has an Identity Search feature (the second tab at the top of the report) which allows you to search for a specific identity. If you're looking for someone in particular - a certain power user, or perhaps a test identity used to test your events and properties - you can enter that ID into this search to pull up a profile for that user.
+
+![Identity Search][ss03]
+
+If you don't know the entire ID, you can enter a partial one instead. If your test ID is "marthatest1@sometest.com" and you enter just the name "martha," the search will find "marthatest1@sometest.com," as well as any other ID containing the name "martha."
+
+Just like the regular People Search, you have the option of adding data columns to the Identity Search, if desired.
 
 # Saving Your People Search
 
@@ -142,6 +152,7 @@ Just be sure to replace "UNIX_TIMESTAMP" with the appropriate column/row value y
 
 [ss01]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/people-search/PRAttachProp.png
 [ss02]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/people-search/PRCompletedSequential.png
+[ss03]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/people-search/PRIDSearch.png
 [ss06]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/people-search/PRCompleted.png
 [ss08]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/people-search/PRNested.png
 [ss11]: https://kissmetrics-support-files.s3.amazonaws.com/assets/tools/people-search/PRColumns.png
