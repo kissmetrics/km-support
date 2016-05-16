@@ -9,7 +9,7 @@ permalink: /tools/power-report/index.html
 {:toc}
 * * *
 
-**The Power Report is available to our customers on our [Professional Plans][pricing].**
+**The Power Report is available to our customers on our [Power Plan][pricing].**
 
 The Power Report lets you manipulate all of your events and properties in nearly any way you can imagine, like an easy-to-use pivot table on all of your customer data. You have a lot of flexibility in how to report on your data. Here are three tasks unique to the Power Report:
 
