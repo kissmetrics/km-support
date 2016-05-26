@@ -44,6 +44,8 @@ Have you ever wondered if Events are case sensitive? Or how many unique Property
 
 * The values of properties can be text or numbers (8 KB of data, in theory). We do not support JSON-structured values.
 
+* For each person, we save the last 1000 instances of each property. For example, we’ll remember the last 1000 times that “steve@apple.com” recorded a value for "Viewed URL" before we forget the oldest URL he viewed. 
+
 * We keep data from 2009, going forward. We will not be able to store your imported data from 2008 or before.
 
 * The type of property is determined by the value. If you pass in a string "123", Kissmetrics will treat that as the integer 123.
