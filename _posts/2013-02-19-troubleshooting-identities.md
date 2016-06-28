@@ -50,7 +50,7 @@ KM.record("Event 1")
 KM.record("Event 2")
 {% endhighlight %}
 
-Because the person never records data while `identifed` as kissmetrics@example.com, that alias never shows up in that person's details, not even as a historic Customer ID. That means you won't be able to look up the person in People Search by the email address, despite the 'alias' call.
+Because the person never records data while `identified` as kissmetrics@example.com, that alias never shows up in that person's details, not even as a historic Customer ID. That means you won't be able to look up the person in People Search by the email address, despite the 'alias' call.
 
 ![Alias Zero][alias-zero]
 
