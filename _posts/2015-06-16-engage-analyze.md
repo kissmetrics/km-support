@@ -8,7 +8,7 @@ summary: You can find more details about how Engage and Analyze work together he
 {:toc}
 * * *
 
-# Events in Analyze
+# Events in Analyzee
 
 When you create a campaign in Engage you will pass events to Analyze. The events that are passed to Analyze follow the naming convention of “campaign name -” + the following, for example “Test Campaign - eligible”. 
 
