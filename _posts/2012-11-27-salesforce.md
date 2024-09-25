@@ -9,7 +9,7 @@ published: true
 {:toc}
 * * *
 
-**This integration requires:**
+**Integration requirements:**
 
 * A Salesforce account. The integration requires the ability to [create a Visualforce page][visualforce-page], which should be available in every edition.
 * An existing Kissmetrics account in which people are identified by email address. Read more about [Understanding Identities][identities].
