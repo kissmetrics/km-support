@@ -35,11 +35,97 @@ These three statuses correspond to what call to Kissmetrics you should make:
 
 * `connected`: [automatically log in][auto-login] and record the ***Logged In*** event upon success.
 * `not_authorized`: prompt the visitor to login with `FB.login()` and record the ***Signed Up*** event upon success.
-* `unknown`: prompt the visitor to login with `FB.login()`. Upon successful login, fetch more info (with `FB.api` perhaps) and record ***Logged In*** *or* ***Signed Up*** based on the results.
+* `unknown`: prompt the visitor to login with `FB.login()` and assume a sign up (though they might have signed out of your app, and want to sign in again).
 
 ## Code Example
 
-We have not personally worked with the Facebook SDK, so we don't have a working code example to provide. Please contribute below if you have recommendations!
+When asking for information from the user via Facebook login, you get their email and basic profile information by default. If you want anymore information you need to have your app reviewed.
+
+[Public profile reference](https://developers.facebook.com/docs/facebook-login/permissions#reference-public_profile)
+
+Code example modified from [Facebook](https://developers.facebook.com/docs/facebook-login/web):
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Facebook Login JavaScript Example</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script>
+  //This is called when FB knows who a user is
+  function statusChangeCallback(response) {
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      fblogin();
+    } else if (response.status === 'not_authorized') {
+      // The person is logged into Facebook, but not your app.
+    } else {
+      // The person is not logged into Facebook
+    }
+  }
+  
+  //Boilerplate...
+  var buttonClicked = false;
+  function checkLoginState() {
+    buttonClicked = true;
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '{your-app-id}',
+    cookie     : true,
+    xfbml      : true,
+    version    : 'v2.5'
+  });
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  //Grab the data we need, and identify the user
+  function fblogin() {
+    FB.api('/me', {fields: 'id,name,email,gender,locale,age_range,picture'}, function(response) {
+      //Track login
+      if(buttonClicked){
+        _kmq.push(['record', 'Signed In' ,{type : 'facebook'}]);
+      }else{
+        _kmq.push(['record', 'Logged In' ,{type : 'facebook'}]);
+      }
+      
+      //Identify user by email
+      //NB: a user might have signed in with a mobile no, or declined to give you their email
+      //You might want to use their FB UUID instead
+      _kmq.push(['identify', response.email]);
+      //_kmq.push(['identify', response.id]);
+      
+      //Save properties to user
+      _kmq.push(['set', {'name' : response.name}]);
+      _kmq.push(['set', {'gender' : response.gender}]);
+    });
+  }
+</script>
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+</body>
+</html>
+```
+
+This code tracks a user logging in / signing up with Facebook, and then identifies them and sets properties to them.
 
 [fb-js-sdk]: https://developers.facebook.com/docs/reference/javascript/
 [login-flow]: https://developers.facebook.com/docs/facebook-login/login-flow-for-web/
